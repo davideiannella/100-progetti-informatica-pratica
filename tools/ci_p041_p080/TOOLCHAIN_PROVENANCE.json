@@ -1,0 +1,76 @@
+{
+  "verified_utc": "2026-10-22T19:56:26.413039+00:00",
+  "actions": [
+    {
+      "action": "actions/checkout",
+      "ref": "v7.0.1",
+      "primary_release_url": "https://github.com/actions/checkout/releases/tag/v7.0.1",
+      "verification": "Official release page opened successfully; full release tag selected, no version inferred from date."
+    },
+    {
+      "action": "actions/setup-python",
+      "ref": "v7.1.0",
+      "primary_release_url": "https://github.com/actions/setup-python/releases/tag/v7.1.0",
+      "verification": "Official release page opened successfully; full release tag selected, no version inferred from date."
+    },
+    {
+      "action": "actions/setup-java",
+      "ref": "v6.0.0",
+      "primary_release_url": "https://github.com/actions/setup-java/releases/tag/v6.0.0",
+      "verification": "Official release page opened successfully; full release tag selected, no version inferred from date."
+    },
+    {
+      "action": "actions/setup-dotnet",
+      "ref": "v6.0.0",
+      "primary_release_url": "https://github.com/actions/setup-dotnet/releases/tag/v6.0.0",
+      "verification": "Official release page opened successfully; full release tag selected, no version inferred from date."
+    },
+    {
+      "action": "actions/upload-artifact",
+      "ref": "v7.0.2",
+      "primary_release_url": "https://github.com/actions/upload-artifact/releases/tag/v7.0.2",
+      "verification": "Official release page opened successfully; full release tag selected, no version inferred from date."
+    }
+  ],
+  "kind": {
+    "version": "0.33.0",
+    "primary_release_url": "https://github.com/kubernetes-sigs/kind/releases/tag/v0.33.0",
+    "official_installation": "https://kind.sigs.k8s.io/docs/user/quick-start/",
+    "checksum_publication_documentation": "https://github.com/kubernetes-sigs/kind/blob/main/RELEASE.md",
+    "checksum_asset": "https://github.com/kubernetes-sigs/kind/releases/download/v0.33.0/kind-linux-amd64.sha256sum",
+    "checksum_policy": "Workflow downloads the official release checksum and verifies the downloaded binary before install. Expected checksum and binary must both be available: failure stops the job. This authoring environment could open release/documentation pages but could not retrieve binary assets; actual binary checksum verification is therefore a GitHub job step, not a claimed completed local check.",
+    "historical_evidence": "Collaudi/Storico/github_actions_20261017/P056_results.json"
+  },
+  "kubernetes_node": {
+    "image": "kindest/node:v1.37.0@sha256:a1ed56cfb0e7b93589bdf97c8cd566405a265939e3620fc4f5de89adff580ae5",
+    "primary_release_url": "https://github.com/kubernetes-sigs/kind/releases/tag/v0.33.0",
+    "verification": "Exact default image and digest read in the official release notes."
+  },
+  "kubectl": {
+    "version": "1.37.1",
+    "primary_download_page": "https://kubernetes.io/releases/download/",
+    "checksum_instructions": "https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/",
+    "checksum_asset": "https://dl.k8s.io/release/v1.37.1/bin/linux/amd64/kubectl.sha256",
+    "historical_evidence": "Collaudi/Storico/github_actions_20261017/P056_results.json",
+    "checksum_policy": "Downloaded official SHA-256 must match before install; checksum file retained in CI artifact."
+  },
+  "dotnet": {
+    "sdk": "8.0.426",
+    "primary_download_page": "https://dotnet.microsoft.com/en-us/download/dotnet/8.0",
+    "historical_evidence": [
+      "Collaudi/Storico/environment_p041_p060.json",
+      "Collaudi/Storico/validation_p041_p060.json",
+      "Sorgenti/projects/P042/README.md"
+    ],
+    "note": "Historical environment records SDK8.0.426 and runtime8.0.26. Current official SDK8.0.426 page lists bundled runtime8.0.32; the workflow requests SDK8.0.426 and records the actual dotnet --info rather than asserting the old runtime."
+  },
+  "requirements_sources": {
+    "numpy/scipy/scikit-learn/cryptography": "Sorgenti/requirements-p061-p080.txt",
+    "fastapi/pydantic/uvicorn": "Sorgenti/projects/P054/requirements.txt",
+    "httpx": "Sorgenti/projects/P054/requirements-test.txt",
+    "psycopg[binary]": "Sorgenti/projects/P055/api/requirements.txt",
+    "PyYAML": "Sorgenti/projects/P055/requirements-test.txt and P056/requirements-test.txt",
+    "Pillow": "Sorgenti/projects/P057/README.md"
+  },
+  "unchanged": "No original source, tests, SOURCE_SHA256 manifest or existing P081-P100 workflow edited."
+}

@@ -1,0 +1,12 @@
+# Direct dependencies copied from the frozen project requirements / README files.
+numpy==2.3.5
+scipy==1.17.0
+scikit-learn==1.8.0
+cryptography==50.0.2
+fastapi==0.143.2
+pydantic==2.14.1
+uvicorn==0.54.0
+httpx==0.28.1
+psycopg[binary]==3.3.6
+PyYAML==6.0.3
+Pillow==12.1.0

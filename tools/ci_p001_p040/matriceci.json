@@ -1,0 +1,1530 @@
+[
+  {
+    "project": "P001",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_queue_manager.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_queue_manager.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_queue_manager.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_queue_manager.py"
+      }
+    ]
+  },
+  {
+    "project": "P002",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_p002.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p002.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p002.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p002.py"
+      }
+    ]
+  },
+  {
+    "project": "P003",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_p003.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p003.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p003.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p003.py"
+      }
+    ]
+  },
+  {
+    "project": "P004",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_p004.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p004.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p004.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p004.py"
+      }
+    ]
+  },
+  {
+    "project": "P005",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_lru_cache.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_lru_cache.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_lru_cache.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_lru_cache.py"
+      }
+    ]
+  },
+  {
+    "project": "P006",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_p006.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p006.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p006.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p006.py"
+      }
+    ]
+  },
+  {
+    "project": "P007",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_p007.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p007.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p007.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p007.py"
+      }
+    ]
+  },
+  {
+    "project": "P008",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_p008.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p008.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p008.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p008.py"
+      }
+    ]
+  },
+  {
+    "project": "P009",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12",
+      "pandas 2.2.3"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_p009.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p009.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p009.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p009.py"
+      }
+    ]
+  },
+  {
+    "project": "P010",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12",
+      "sqlite3 bundled with selected Python; database in memory"
+    ],
+    "scope": "Original SQLite/schema/transaction assertions executed against real in-memory SQLite; actual engine version recorded by runtime.",
+    "test_files": [
+      "tests/test_p010.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p010.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p010.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p010.py"
+      }
+    ]
+  },
+  {
+    "project": "P011",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_p011.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p011.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p011.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p011.py"
+      }
+    ]
+  },
+  {
+    "project": "P012",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_p012.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p012.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p012.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p012.py"
+      }
+    ]
+  },
+  {
+    "project": "P013",
+    "environment": [
+      "Ubuntu 24.04",
+      "JDK 17; java -ea"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/LibraryTest.java"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "java",
+          "-m",
+          "jdk.compiler/com.sun.tools.javac.Main",
+          "-Xlint:all",
+          "-d",
+          "build",
+          "src/LibraryApp.java",
+          "tests/LibraryTest.java"
+        ],
+        "kind": "build",
+        "input_files": [
+          "src/LibraryApp.java",
+          "tests/LibraryTest.java"
+        ],
+        "timeout": 180
+      },
+      {
+        "argv": [
+          "java",
+          "-ea",
+          "-cp",
+          "build",
+          "LibraryTest"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/LibraryTest.java"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/LibraryTest.java"
+      }
+    ]
+  },
+  {
+    "project": "P014",
+    "environment": [
+      "Ubuntu 24.04",
+      "JDK 17; java -ea"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/SeatBookingTest.java"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "java",
+          "-m",
+          "jdk.compiler/com.sun.tools.javac.Main",
+          "-Xlint:all",
+          "-d",
+          "build",
+          "src/SeatBooking.java",
+          "tests/SeatBookingTest.java"
+        ],
+        "kind": "build",
+        "input_files": [
+          "src/SeatBooking.java",
+          "tests/SeatBookingTest.java"
+        ],
+        "timeout": 180
+      },
+      {
+        "argv": [
+          "java",
+          "-ea",
+          "-cp",
+          "build",
+          "SeatBookingTest"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/SeatBookingTest.java"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/SeatBookingTest.java"
+      }
+    ]
+  },
+  {
+    "project": "P015",
+    "environment": [
+      "Ubuntu 24.04",
+      "JDK 17; java -ea"
+    ],
+    "scope": "Both original Java TCP broadcast, UTF-8 and shutdown integration suites, on local sockets.",
+    "test_files": [
+      "tests/ChatIntegrationTest.java",
+      "tests/ChatShutdownTest.java"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "java",
+          "-m",
+          "jdk.compiler/com.sun.tools.javac.Main",
+          "-Xlint:all",
+          "-d",
+          "build",
+          "src/ChatServer.java",
+          "tests/ChatIntegrationTest.java",
+          "tests/ChatShutdownTest.java"
+        ],
+        "kind": "build",
+        "input_files": [
+          "src/ChatServer.java",
+          "tests/ChatIntegrationTest.java",
+          "tests/ChatShutdownTest.java"
+        ],
+        "timeout": 180
+      },
+      {
+        "argv": [
+          "java",
+          "-ea",
+          "-cp",
+          "build",
+          "ChatIntegrationTest"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/ChatIntegrationTest.java"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/ChatIntegrationTest.java"
+      },
+      {
+        "argv": [
+          "java",
+          "-ea",
+          "-cp",
+          "build",
+          "ChatShutdownTest"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/ChatShutdownTest.java"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/ChatShutdownTest.java"
+      }
+    ]
+  },
+  {
+    "project": "P016",
+    "environment": [
+      "Ubuntu 24.04",
+      "GCC C11 + UBSan",
+      "Python 3.12; Linux /proc"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_cli.py",
+      "tests/test_process_monitor.c"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_cli.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_cli.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_cli.py"
+      },
+      {
+        "argv": [
+          "gcc",
+          "-std=c11",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-O1",
+          "-g",
+          "-fsanitize=undefined",
+          "-fno-sanitize-recover=all",
+          "tests/test_process_monitor.c",
+          "-o",
+          "build/test_process_monitor"
+        ],
+        "kind": "build",
+        "input_files": [
+          "tests/test_process_monitor.c"
+        ],
+        "timeout": 180
+      },
+      {
+        "argv": [
+          "./build/test_process_monitor"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_process_monitor.c"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_process_monitor.c"
+      }
+    ]
+  },
+  {
+    "project": "P017",
+    "environment": [
+      "Ubuntu 24.04",
+      "GCC C11 + UBSan"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_ring_buffer.c"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "gcc",
+          "-std=c11",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-O1",
+          "-g",
+          "-fsanitize=undefined",
+          "-fno-sanitize-recover=all",
+          "tests/test_ring_buffer.c",
+          "src/ring_buffer.c",
+          "-o",
+          "build/test_ring_buffer"
+        ],
+        "kind": "build",
+        "input_files": [
+          "tests/test_ring_buffer.c",
+          "src/ring_buffer.c",
+          "src/ring_buffer.h"
+        ],
+        "timeout": 180
+      },
+      {
+        "argv": [
+          "./build/test_ring_buffer"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_ring_buffer.c"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_ring_buffer.c"
+      }
+    ]
+  },
+  {
+    "project": "P018",
+    "environment": [
+      "Ubuntu 24.04",
+      "GCC C11 + UBSan"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_pc.c",
+      "tests/test_pc_failures.c"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "gcc",
+          "-std=c11",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-O1",
+          "-g",
+          "-fsanitize=undefined",
+          "-fno-sanitize-recover=all",
+          "tests/test_pc.c",
+          "-pthread",
+          "-o",
+          "build/test_pc"
+        ],
+        "kind": "build",
+        "input_files": [
+          "tests/test_pc.c"
+        ],
+        "timeout": 180
+      },
+      {
+        "argv": [
+          "./build/test_pc"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_pc.c"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_pc.c"
+      },
+      {
+        "argv": [
+          "gcc",
+          "-std=c11",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-O1",
+          "-g",
+          "-fsanitize=undefined",
+          "-fno-sanitize-recover=all",
+          "tests/test_pc_failures.c",
+          "-pthread",
+          "-Wl,--wrap=pthread_mutex_init",
+          "-Wl,--wrap=pthread_cond_init",
+          "-Wl,--wrap=pthread_create",
+          "-o",
+          "build/test_pc_failures"
+        ],
+        "kind": "build",
+        "input_files": [
+          "tests/test_pc_failures.c"
+        ],
+        "timeout": 180
+      },
+      {
+        "argv": [
+          "./build/test_pc_failures"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_pc_failures.c"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_pc_failures.c"
+      }
+    ]
+  },
+  {
+    "project": "P019",
+    "environment": [
+      "Ubuntu 24.04",
+      "G++ C++17 + UBSan"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_dispatcher.cpp"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "g++",
+          "-std=c++17",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-O1",
+          "-g",
+          "-fsanitize=undefined",
+          "-fno-sanitize-recover=all",
+          "tests/test_dispatcher.cpp",
+          "-o",
+          "build/test_dispatcher"
+        ],
+        "kind": "build",
+        "input_files": [
+          "tests/test_dispatcher.cpp"
+        ],
+        "timeout": 180
+      },
+      {
+        "argv": [
+          "./build/test_dispatcher"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_dispatcher.cpp"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_dispatcher.cpp"
+      }
+    ]
+  },
+  {
+    "project": "P020",
+    "environment": [
+      "Ubuntu 24.04",
+      "G++ C++17 + UBSan"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_inventory.cpp",
+      "tests/test_inventory_limits.cpp"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "g++",
+          "-std=c++17",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-O1",
+          "-g",
+          "-fsanitize=undefined",
+          "-fno-sanitize-recover=all",
+          "tests/test_inventory.cpp",
+          "-o",
+          "build/test_inventory"
+        ],
+        "kind": "build",
+        "input_files": [
+          "tests/test_inventory.cpp"
+        ],
+        "timeout": 180
+      },
+      {
+        "argv": [
+          "./build/test_inventory"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_inventory.cpp"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_inventory.cpp"
+      },
+      {
+        "argv": [
+          "g++",
+          "-std=c++17",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-O1",
+          "-g",
+          "-fsanitize=undefined",
+          "-fno-sanitize-recover=all",
+          "tests/test_inventory_limits.cpp",
+          "-o",
+          "build/test_inventory_limits"
+        ],
+        "kind": "build",
+        "input_files": [
+          "tests/test_inventory_limits.cpp"
+        ],
+        "timeout": 180
+      },
+      {
+        "argv": [
+          "./build/test_inventory_limits"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_inventory_limits.cpp"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_inventory_limits.cpp"
+      }
+    ]
+  },
+  {
+    "project": "P021",
+    "environment": [
+      "Ubuntu 24.04",
+      "G++ C++17 + UBSan"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_traffic.cpp"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "g++",
+          "-std=c++17",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-O1",
+          "-g",
+          "-fsanitize=undefined",
+          "-fno-sanitize-recover=all",
+          "tests/test_traffic.cpp",
+          "-o",
+          "build/test_traffic"
+        ],
+        "kind": "build",
+        "input_files": [
+          "tests/test_traffic.cpp"
+        ],
+        "timeout": 180
+      },
+      {
+        "argv": [
+          "./build/test_traffic"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_traffic.cpp"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_traffic.cpp"
+      }
+    ]
+  },
+  {
+    "project": "P022",
+    "environment": [
+      "Ubuntu 24.04",
+      ".NET SDK 8 + net8.0 runtime; no external NuGet feeds"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/Program.cs"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "dotnet",
+          "restore",
+          "tests/P022.Tests.csproj",
+          "--configfile",
+          "NuGet.ci.config"
+        ],
+        "kind": "restore",
+        "input_files": [
+          "tests/P022.Tests.csproj"
+        ],
+        "timeout": 240
+      },
+      {
+        "argv": [
+          "dotnet",
+          "run",
+          "--no-restore",
+          "--project",
+          "tests/P022.Tests.csproj"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/P022.Tests.csproj",
+          "tests/Program.cs"
+        ],
+        "timeout": 240,
+        "suite_file": "tests/Program.cs"
+      }
+    ]
+  },
+  {
+    "project": "P023",
+    "environment": [
+      "Ubuntu 24.04",
+      ".NET SDK 8 + net8.0 runtime; no external NuGet feeds",
+      "Python 3.12; HTTP on loopback"
+    ],
+    "scope": "Debug build of original ASP.NET Core project and its real HTTP/concurrent requests suite; local ephemeral port.",
+    "test_files": [
+      "tests/test_http.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "dotnet",
+          "restore",
+          "src/P023.csproj",
+          "--configfile",
+          "NuGet.ci.config"
+        ],
+        "kind": "restore",
+        "input_files": [
+          "src/P023.csproj"
+        ],
+        "timeout": 240
+      },
+      {
+        "argv": [
+          "dotnet",
+          "build",
+          "src/P023.csproj",
+          "--no-restore",
+          "--configuration",
+          "Debug"
+        ],
+        "kind": "build",
+        "input_files": [
+          "src/P023.csproj"
+        ],
+        "timeout": 240
+      },
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_http.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_http.py"
+        ],
+        "timeout": 120,
+        "suite_file": "tests/test_http.py"
+      }
+    ]
+  },
+  {
+    "project": "P024",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12",
+      "sqlite3 bundled with selected Python; database in memory"
+    ],
+    "scope": "Original SQLite/schema/transaction assertions executed against real in-memory SQLite; actual engine version recorded by runtime.",
+    "test_files": [
+      "tests/test_database.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_database.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_database.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_database.py"
+      }
+    ]
+  },
+  {
+    "project": "P025",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12",
+      "sqlite3 bundled with selected Python; database in memory"
+    ],
+    "scope": "Original SQLite/schema/transaction assertions executed against real in-memory SQLite; actual engine version recorded by runtime.",
+    "test_files": [
+      "tests/test_p025.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p025.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p025.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p025.py"
+      }
+    ]
+  },
+  {
+    "project": "P026",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12",
+      "sqlite3 bundled with selected Python; database in memory"
+    ],
+    "scope": "Original SQLite/schema/transaction assertions executed against real in-memory SQLite; actual engine version recorded by runtime.",
+    "test_files": [
+      "tests/test_p026.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p026.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p026.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p026.py"
+      }
+    ]
+  },
+  {
+    "project": "P027",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12",
+      "sqlite3 bundled with selected Python; database in memory"
+    ],
+    "scope": "Original SQLite/schema/transaction assertions executed against real in-memory SQLite; actual engine version recorded by runtime.",
+    "test_files": [
+      "tests/test_p027.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p027.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p027.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p027.py"
+      }
+    ]
+  },
+  {
+    "project": "P028",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12",
+      "sqlite3 bundled with selected Python; database in memory"
+    ],
+    "scope": "Original SQLite/schema/transaction assertions executed against real in-memory SQLite; actual engine version recorded by runtime.",
+    "test_files": [
+      "tests/test_p028.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p028.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p028.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p028.py"
+      }
+    ]
+  },
+  {
+    "project": "P029",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12",
+      "sqlite3 bundled with selected Python; database in memory"
+    ],
+    "scope": "Original SQLite/schema/transaction assertions executed against real in-memory SQLite; actual engine version recorded by runtime.",
+    "test_files": [
+      "tests/test_p029.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p029.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p029.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p029.py"
+      }
+    ]
+  },
+  {
+    "project": "P030",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12",
+      "sqlite3 bundled with selected Python; database in memory"
+    ],
+    "scope": "Original SQLite/schema/transaction assertions executed against real in-memory SQLite; actual engine version recorded by runtime.",
+    "test_files": [
+      "tests/test_p030.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p030.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p030.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p030.py"
+      }
+    ]
+  },
+  {
+    "project": "P031",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12",
+      "MongoDB 8.0.14 service container; mongosh in that image"
+    ],
+    "scope": "Both original Python model suites plus original telemetry_examples.js in MongoDB and 12 executed assertions for BSON Date, metrics, compound index, filter, ordering and limit.",
+    "test_files": [
+      "tests/test_invalid_metrics.py",
+      "tests/test_p031.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_invalid_metrics.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_invalid_metrics.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_invalid_metrics.py"
+      },
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p031.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p031.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p031.py"
+      }
+    ],
+    "engine": "MongoDB 8.0.14",
+    "engine_commands": [
+      [
+        "docker",
+        "exec",
+        "-i",
+        "{MONGO_CONTAINER_ID}",
+        "mongosh",
+        "--quiet",
+        "--file",
+        "/dev/stdin"
+      ]
+    ]
+  },
+  {
+    "project": "P032",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12",
+      "Neo4j 5.26.0 service container; cypher-shell in that image"
+    ],
+    "scope": "Original Python shortest-path suite plus original mobility.cypher executed twice in real Neo4j; six assertion queries verify version, node/edge counts, edge weights/direction and optimal path/cost.",
+    "test_files": [
+      "tests/test_p032.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p032.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p032.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p032.py"
+      }
+    ],
+    "engine": "Neo4j 5.26.0",
+    "engine_commands": [
+      [
+        "docker",
+        "exec",
+        "-i",
+        "{NEO4J_CONTAINER_ID}",
+        "cypher-shell",
+        "--format",
+        "plain"
+      ]
+    ]
+  },
+  {
+    "project": "P033",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12",
+      "sqlite3 bundled with selected Python; database in memory"
+    ],
+    "scope": "Original SQLite/schema/transaction assertions executed against real in-memory SQLite; actual engine version recorded by runtime.",
+    "test_files": [
+      "tests/test_p033.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p033.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p033.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p033.py"
+      }
+    ]
+  },
+  {
+    "project": "P034",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_p034.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p034.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p034.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p034.py"
+      }
+    ]
+  },
+  {
+    "project": "P035",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12",
+      "sqlite3 bundled with selected Python; database in memory"
+    ],
+    "scope": "Original SQLite/schema/transaction assertions executed against real in-memory SQLite; actual engine version recorded by runtime.",
+    "test_files": [
+      "tests/test_p035.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p035.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p035.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p035.py"
+      }
+    ]
+  },
+  {
+    "project": "P036",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/test_capacity_types.py",
+      "tests/test_gym_domain.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_capacity_types.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_capacity_types.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_capacity_types.py"
+      },
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_gym_domain.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_gym_domain.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_gym_domain.py"
+      }
+    ]
+  },
+  {
+    "project": "P037",
+    "environment": [
+      "Ubuntu 24.04",
+      "Python 3.12",
+      "FastAPI 0.143.2; Pydantic 2.14.1; HTTPX 0.28.1"
+    ],
+    "scope": "Original FastAPI TestClient contract suite in-process; no HTTP server or deployment claim.",
+    "test_files": [
+      "tests/test_p037.py"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "{python}",
+          "-B",
+          "tests/test_p037.py"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/test_p037.py"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/test_p037.py"
+      }
+    ]
+  },
+  {
+    "project": "P038",
+    "environment": [
+      "Ubuntu 24.04",
+      "JDK 17; java -ea"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/TicketingConcurrentTest.java",
+      "tests/TicketingTest.java"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "java",
+          "-m",
+          "jdk.compiler/com.sun.tools.javac.Main",
+          "-Xlint:all",
+          "-d",
+          "build",
+          "src/Ticketing.java",
+          "tests/TicketingConcurrentTest.java",
+          "tests/TicketingTest.java"
+        ],
+        "kind": "build",
+        "input_files": [
+          "src/Ticketing.java",
+          "tests/TicketingConcurrentTest.java",
+          "tests/TicketingTest.java"
+        ],
+        "timeout": 180
+      },
+      {
+        "argv": [
+          "java",
+          "-ea",
+          "-cp",
+          "build",
+          "TicketingConcurrentTest"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/TicketingConcurrentTest.java"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/TicketingConcurrentTest.java"
+      },
+      {
+        "argv": [
+          "java",
+          "-ea",
+          "-cp",
+          "build",
+          "TicketingTest"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/TicketingTest.java"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/TicketingTest.java"
+      }
+    ]
+  },
+  {
+    "project": "P039",
+    "environment": [
+      "Ubuntu 24.04",
+      "JDK 17; java -ea"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/FoodDeliveryLimitsTest.java",
+      "tests/FoodDeliveryTest.java"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "java",
+          "-m",
+          "jdk.compiler/com.sun.tools.javac.Main",
+          "-Xlint:all",
+          "-d",
+          "build",
+          "src/FoodDelivery.java",
+          "tests/FoodDeliveryLimitsTest.java",
+          "tests/FoodDeliveryTest.java"
+        ],
+        "kind": "build",
+        "input_files": [
+          "src/FoodDelivery.java",
+          "tests/FoodDeliveryLimitsTest.java",
+          "tests/FoodDeliveryTest.java"
+        ],
+        "timeout": 180
+      },
+      {
+        "argv": [
+          "java",
+          "-ea",
+          "-cp",
+          "build",
+          "FoodDeliveryLimitsTest"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/FoodDeliveryLimitsTest.java"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/FoodDeliveryLimitsTest.java"
+      },
+      {
+        "argv": [
+          "java",
+          "-ea",
+          "-cp",
+          "build",
+          "FoodDeliveryTest"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/FoodDeliveryTest.java"
+        ],
+        "timeout": 180,
+        "suite_file": "tests/FoodDeliveryTest.java"
+      }
+    ]
+  },
+  {
+    "project": "P040",
+    "environment": [
+      "Ubuntu 24.04",
+      ".NET SDK 8 + net8.0 runtime; no external NuGet feeds"
+    ],
+    "scope": "All preserved executable test files; assertions enabled.",
+    "test_files": [
+      "tests/Program.cs"
+    ],
+    "steps": [
+      {
+        "argv": [
+          "dotnet",
+          "restore",
+          "tests/P040.Tests.csproj",
+          "--configfile",
+          "NuGet.ci.config"
+        ],
+        "kind": "restore",
+        "input_files": [
+          "tests/P040.Tests.csproj"
+        ],
+        "timeout": 240
+      },
+      {
+        "argv": [
+          "dotnet",
+          "run",
+          "--no-restore",
+          "--project",
+          "tests/P040.Tests.csproj"
+        ],
+        "kind": "suite",
+        "input_files": [
+          "tests/P040.Tests.csproj",
+          "tests/Program.cs"
+        ],
+        "timeout": 240,
+        "suite_file": "tests/Program.cs"
+      }
+    ]
+  }
+]

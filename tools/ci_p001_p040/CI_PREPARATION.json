@@ -1,0 +1,65 @@
+{
+  "status": "READY_FOR_GITHUB_EXECUTION",
+  "source_root": "r23/baseline/Sorgenti",
+  "destination": "tools/ci_p001_p040/",
+  "publish_files": [
+    "runner.py",
+    "matriceci.json",
+    "requirements.txt"
+  ],
+  "workflow_fragment": "job.yml",
+  "project_count": 40,
+  "original_test_files": 48,
+  "original_suite_entries": 48,
+  "new_engine_suites": 2,
+  "expected_full_suite_count": 50,
+  "static_checks": {
+    "python_ast": "PASS",
+    "workflow_yaml": "PASS",
+    "matrix_inventory": "PASS",
+    "original_source_hashes": "PASS"
+  },
+  "local_results": {
+    "projects_selected": 36,
+    "projects_complete_pass": 34,
+    "projects_with_engine_skip": 2,
+    "original_suites_executed": 44,
+    "original_suites_passed": 44,
+    "known_unittest_tests": 60,
+    "runner_exit_code": 2,
+    "overall_status": "SKIP",
+    "sqlite_version": "3.53.1"
+  },
+  "not_executed_locally": {
+    "P022": "dotnet unavailable",
+    "P023": "dotnet unavailable",
+    "P037": "FastAPI and HTTPX unavailable",
+    "P040": "dotnet unavailable",
+    "P031_engine": "Docker/MongoDB unavailable",
+    "P032_engine": "Docker/Neo4j unavailable"
+  },
+  "failure_contract_probes": "RUNNER_CONTRACT_CHECKS.json: eight meaningful PASS checks for nonzero assertion failure, skip reporting, zero tests, timeout, unsafe paths and sanitized output",
+  "historical_sources": [
+    "Collaudi/Storico/validation.json",
+    "Collaudi/Storico/engine_validation.json",
+    "Collaudi/Storico/extended_validation.json",
+    "Sorgenti/projects/P001..P040/README.md",
+    "all 48 preserved executable test files"
+  ],
+  "historical_missing_suite": "extended_validation.json records 13 tests in extended_tests.py, but the script is absent from the delivered source and audit trees. It cannot be rerun faithfully and is not counted in the new CI; no silent reconstruction.",
+  "immutability": {
+    "status": "PASS",
+    "files_checked": 299,
+    "manifest_sha256": "c4363377ef6f23165cccdde19a3ce2449fa468bfed96c575721f97cd415ba32c",
+    "mismatches": []
+  },
+  "network_scope": "Original suites use local/in-process tests, local sockets and SQLite. New engine probes use docker exec into dedicated GitHub service containers; no host ports published. .NET restore uses an empty NuGet feed configuration because no PackageReference is present. Dependency/toolchain installation occurs explicitly in workflow setup.",
+  "dependency_pins": "Pandas 2.2.3 matches local validation; FastAPI/Pydantic/HTTPX pins are reused from preserved P054 requirements. CI records pip freeze; this is a new environment, not a claim of historical byte-identical reproduction.",
+  "files_sha256": {
+    "runner.py": "f0c2cfe70e635338710f8cb291c961b67dc94ecfc86cc61942605a549edefd3d",
+    "matriceci.json": "8cd7ed2433581c5be687ca3cfa2537c7c73a8b0a39963dbdf57f1c4b0ac8ee4d",
+    "requirements.txt": "0f741a082596ac9cbfe3a0641091019e67bc29ddc6720707aa7dce82e1c779f7",
+    "job.yml": "082b904c87b0f8bf17f31de48b9479f43f2dbeaaed5b266b52e6c948ec2d4b69"
+  },
+  "github_execution_status": "NOT_YET_EXECUTED"
+}

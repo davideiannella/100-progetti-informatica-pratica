@@ -1,0 +1,6 @@
+# New CI environment; these pins do not claim to reconstruct the P001–P040 historical runtime.
+pandas==2.2.3
+# FastAPI family pins reused from the preserved P054 requirements.
+fastapi==0.143.2
+pydantic==2.14.1
+httpx==0.28.1

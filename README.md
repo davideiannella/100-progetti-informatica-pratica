@@ -1,52 +1,48 @@
 # 100 progetti di informatica pratica
 
-Sorgenti e test dei cento laboratori del libro di **Davide Iannella**. Il percorso è pensato per studenti e autodidatti con basi di programmazione e per professionisti junior che desiderano esercitarsi su problemi concreti.
+[![P001–P080 su Ubuntu](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p001-p080.yml/badge.svg?branch=main)](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p001-p080.yml)
+[![P081–P100 su Linux e Windows](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p081-p100.yml/badge.svg?branch=main)](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p081-p100.yml)
 
-Ogni cartella `projects/P001` … `projects/P100` contiene il codice del laboratorio, i suoi test e un README con ambiente, dipendenze e comandi. I capitoli, la copertina e i file editoriali del libro sono distribuiti separatamente.
+Codice, test e istruzioni dei cento laboratori del libro di **Davide Iannella**. Per studenti, autodidatti con basi di programmazione e professionisti junior: programmazione, dati, reti, sistemi, sicurezza e intelligenza artificiale, con modelli ed esempi locali riproducibili.
 
 ## Iniziare
 
-Scarica il repository con **Code → Download ZIP**, estrailo in un percorso breve (per esempio `C:\ip` oppure `~/ip`) e apri il README del progetto scelto. Esegui i comandi dalla sua cartella, salvo indicazione diversa. Puoi anche usare Git:
+1. Scarica **Code → Download ZIP** ed estrai l’archivio, oppure clona il repository:
 
-```text
-git clone https://github.com/davideiannella/100-progetti-informatica-pratica.git
-cd 100-progetti-informatica-pratica
-```
+   ```text
+   git clone https://github.com/davideiannella/100-progetti-informatica-pratica.git
+   cd 100-progetti-informatica-pratica
+   ```
 
-Per Python crea un ambiente virtuale dedicato e installa soltanto i requisiti del laboratorio. Esempio da Linux, dalla radice del repository:
+2. Scegli un laboratorio nel [catalogo dei 100 progetti](docs/CATALOGO.md). Per un primo esercizio Python puoi partire da [P001](projects/P001/README.md).
+3. Prepara l’[ambiente Linux, Windows o WSL](docs/AMBIENTI.md) e segui **Requisiti**, **Preparazione** e **Test** nel README del progetto. Esegui i comandi dalla cartella indicata: i linguaggi e le dipendenze cambiano fra i laboratori.
 
-```sh
-python3.12 -m venv .venv
-. .venv/bin/activate
-```
+Alcuni progetti espongono solo funzioni e classi: il loro punto di ingresso eseguibile è la suite di test. Ogni README distingue l’avvio dimostrativo dalle verifiche.
 
-Da Windows, con il Prompt dei comandi:
+## Dove trovare i materiali
 
-```bat
-py -3.12 -m venv .venv
-.venv\Scripts\activate.bat
-```
+| Percorso | Contenuto |
+|---|---|
+| [projects](projects) | Cento cartelle autonome, da `P001` a `P100`, con README, sorgenti e test |
+| [Catalogo](docs/CATALOGO.md) | Titoli, linguaggi e collegamenti ai singoli laboratori |
+| [Ambienti](docs/AMBIENTI.md) | Interpreti, compilatori, dipendenze e differenze fra sistemi |
+| [collaudi](collaudi/README.md) | Esiti, log, versioni, provenienza e limiti delle prove |
+| [tools](tools) | Script che coordinano i collaudi del repository |
+| [SOURCE_SHA256.json](SOURCE_SHA256.json) | Impronte dei file sorgenti per controllarne l’integrità |
 
-Da PowerShell puoi invocare direttamente `.venv\Scripts\python.exe`, senza cambiare i criteri di esecuzione del sistema. Nei comandi dei README `python` indica l’interprete dell’ambiente virtuale attivo. Verificalo con `python --version`.
+## Verifiche automatiche
 
-Python 3.12 e 3.13 sono i riferimenti dei laboratori P061–P100; i requisiti condivisi sono `requirements-p061-p080.txt` e `requirements-p081-p100.txt`. I progetti precedenti comprendono anche Java 17, C/C++, .NET 8 e database: consulta sempre il README specifico. I laboratori che richiedono POSIX o `/proc` si eseguono su Linux; da Windows usa WSL e conserva i file nel filesystem Linux. Docker e Kubernetes richiedono i rispettivi strumenti, con container Linux.
+| Workflow | Ambiente e perimetro |
+|---|---|
+| [P001–P080](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p001-p080.yml) | Ubuntu; strumenti e servizi distinti per gruppo di progetti |
+| [P081–P100](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p081-p100.yml) | Ubuntu e Windows, ciascuno con Python 3.12 e 3.13 |
 
-## Verifiche
-
-Il workflow [Collaudo pubblico P081 P100 Linux e Windows](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p081-p100.yml) esegue le venti suite P081–P100 su Ubuntu e Windows, con Python 3.12 e 3.13. Controlla lo stato e i log della singola esecuzione: la presenza del workflow non significa che sia già terminato con successo.
-
-Ogni job verifica il manifest `SOURCE_SHA256.json`, compila i sessanta file Python P081–P100 e richiede **377 metodi di test senza skip**. Per ripetere questa verifica, dopo aver installato `requirements-p081-p100.txt`:
-
-```text
-python -B tools/collaudo_p081_p100.py
-```
-
-Gli esiti locali vengono scritti in `test-results`. I test verificano i casi e gli ambienti documentati. Le simulazioni locali non certificano dispositivi, impianti, infrastrutture cloud o sistemi di produzione. Per gli altri ottanta laboratori segui i test nel relativo README; questo workflow non li esegue.
+I badge mostrano lo stato del workflow. Per verificare una versione, apri il relativo run e controlla **commit, job e log**. La matrice P081–P100 ripete gli stessi 377 test distinti in quattro ambienti. Le prove Ubuntu di P001–P080 non attestano una verifica nativa Windows; simulazioni e dati sintetici restano entro il perimetro descritto nei README e nei [registri](collaudi/README.md).
 
 ## Versioni e segnalazioni
 
-Per accompagnare un’edizione del libro conserva l’identificativo del commit usato. Il ramo `main` può ricevere correzioni successive. Una segnalazione utile indica progetto, commit, sistema operativo, versioni, comando eseguito, risultato atteso e messaggio completo di errore, senza dati personali o segreti.
+Conserva il commit associato alla copia che usi: `main` può cambiare. Per segnalare un problema indica progetto, commit, sistema operativo, versioni, comando e messaggio completo di errore, rimuovendo dati personali e credenziali.
 
-## Licenza
+## Licenza e libro
 
-Il codice originale e la documentazione tecnica presenti in questo repository sono disponibili con [licenza MIT](LICENSE), gratuitamente, anche per uso commerciale, nel rispetto delle sue condizioni. Il libro, le copertine e gli altri materiali editoriali non sono concessi con questa licenza. Le dipendenze di terzi mantengono le rispettive licenze.
+Il codice originale e la documentazione tecnica del repository sono **gratuiti**, con [licenza MIT](LICENSE), anche per uso commerciale nel rispetto delle sue condizioni. Le dipendenze conservano le proprie licenze. **Libro, copertine e altri materiali editoriali hanno diritti separati** e non sono concessi dalla licenza MIT del repository.

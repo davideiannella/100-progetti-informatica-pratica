@@ -1,0 +1,194 @@
+name: Collaudo pubblico P001 P080 Ubuntu con database e container
+'on':
+  push:
+    branches:
+    - main
+    paths:
+    - projects/P00*/**
+    - projects/P01*/**
+    - projects/P02*/**
+    - projects/P03*/**
+    - projects/P04*/**
+    - projects/P05*/**
+    - projects/P06*/**
+    - projects/P07*/**
+    - projects/P080/**
+    - tools/ci_p001_p040/**
+    - tools/ci_p041_p080/**
+    - SOURCE_SHA256.json
+    - .github/workflows/collaudo-p001-p080.yml
+    - '!projects/**/README.md'
+  workflow_dispatch: {}
+permissions:
+  contents: read
+concurrency:
+  group: collaudo-p001-p080-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  p001-p040:
+    name: P001–P040 / Python, Java, C, C++, .NET, MongoDB, Neo4j
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    services:
+      mongodb:
+        image: mongo:8.0.14
+        options: --health-cmd "mongosh --quiet --eval 'db.adminCommand({ping:1})'" --health-interval 10s --health-timeout
+          5s --health-retries 12
+      neo4j:
+        image: neo4j:5.26.0
+        env:
+          NEO4J_AUTH: none
+          NEO4J_server_memory_heap_initial__size: 256m
+          NEO4J_server_memory_heap_max__size: 512m
+          NEO4J_server_memory_pagecache_size: 256m
+        options: --health-cmd "cypher-shell 'RETURN 1;'" --health-interval 10s --health-timeout 10s --health-retries
+          18
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: '17'
+    - uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+    - name: Install C and C++ compilers
+      run: sudo apt-get update && sudo apt-get install --yes build-essential
+    - name: Install the reviewed Python dependency set
+      run: python -m pip install -r tools/ci_p001_p040/requirements.txt
+    - name: Record installed package versions
+      run: 'mkdir -p artifacts/p001-p040
+
+        python -m pip freeze > artifacts/p001-p040/requirements-effective.txt
+
+        '
+    - name: Execute every suite and both real database engines
+      env:
+        MONGO_CONTAINER_ID: ${{ job.services.mongodb.id }}
+        NEO4J_CONTAINER_ID: ${{ job.services.neo4j.id }}
+      run: python tools/ci_p001_p040/runner.py --root . --output artifacts/p001-p040
+    - name: Preserve outcomes, including failures
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: p001-p040-complete-validation
+        path: artifacts/p001-p040/
+        if-no-files-found: error
+  p041-p080-core:
+    name: P041-P053 and P057-P080 / Ubuntu / Python 3.12
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: read
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONHASHSEED: '0'
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      DOTNET_CLI_TELEMETRY_OPTOUT: '1'
+    steps:
+    - uses: actions/checkout@v7.0.1
+      with:
+        persist-credentials: false
+    - uses: actions/setup-python@v7.1.0
+      with:
+        python-version: '3.12'
+    - uses: actions/setup-java@v6.0.0
+      with:
+        distribution: temurin
+        java-version: '17'
+    - uses: actions/setup-dotnet@v6.0.0
+      with:
+        dotnet-version: 8.0.426
+    - name: Prepare evidence directory
+      run: mkdir -p ci-results/p041-p080-core
+    - name: Install pinned project dependencies
+      run: python -m pip install -r tools/ci_p041_p080/requirements.txt
+    - name: Record toolchains and effective dependencies
+      run: 'python --version > ci-results/p041-p080-core/python.txt
+
+        java -version > ci-results/p041-p080-core/java.txt 2>&1
+
+        dotnet --info > ci-results/p041-p080-core/dotnet.txt
+
+        openssl version > ci-results/p041-p080-core/openssl.txt
+
+        python -m pip freeze > ci-results/p041-p080-core/requirements-effective.txt
+
+        '
+    - name: Execute all local suites and documented demos
+      run: python tools/ci_p041_p080/runner.py --sources . --out ci-results/p041-p080-core --projects 41-53,57-80
+    - uses: actions/upload-artifact@v7.0.2
+      if: ${{ always() }}
+      with:
+        name: p041-p080-core-${{ github.run_id }}-${{ github.run_attempt }}
+        path: 'ci-results/p041-p080-core/
+
+          !ci-results/p041-p080-core/work/
+
+          '
+        if-no-files-found: error
+        retention-days: 30
+  p054-p056-runtime:
+    name: P0${{ matrix.project }} / real container runtime
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+        - 54
+        - 55
+        - 56
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONHASHSEED: '0'
+      KIND_EXPERIMENTAL_PROVIDER: docker
+    steps:
+    - uses: actions/checkout@v7.0.1
+      with:
+        persist-credentials: false
+    - uses: actions/setup-python@v7.1.0
+      with:
+        python-version: '3.12'
+    - name: Prepare evidence directory
+      run: mkdir -p ci-results/p0${{ matrix.project }}-runtime
+    - name: Install pinned project dependencies
+      run: python -m pip install -r tools/ci_p041_p080/requirements.txt
+    - name: Install historical kind and kubectl toolchains
+      if: ${{ matrix.project == 56 }}
+      shell: bash
+      run: "set -euo pipefail\ncurl --fail --location --retry 3 --output /tmp/kind https://kind.sigs.k8s.io/dl/v0.33.0/kind-linux-amd64\n\
+        curl --fail --location --retry 3 --output /tmp/kind.sha256sum https://github.com/kubernetes-sigs/kind/releases/download/v0.33.0/kind-linux-amd64.sha256sum\n\
+        curl --fail --location --retry 3 --output /tmp/kubectl https://dl.k8s.io/release/v1.37.1/bin/linux/amd64/kubectl\n\
+        curl --fail --location --retry 3 --output /tmp/kubectl.sha256 https://dl.k8s.io/release/v1.37.1/bin/linux/amd64/kubectl.sha256\n\
+        python - <<'PY'\nimport hashlib\nfrom pathlib import Path\nfor binary, checksum in (('kind', 'kind.sha256sum'),\
+        \ ('kubectl', 'kubectl.sha256')):\n    expected = Path('/tmp', checksum).read_text().split()[0]\n    actual\
+        \ = hashlib.sha256(Path('/tmp', binary).read_bytes()).hexdigest()\n    if actual != expected:\n        raise\
+        \ SystemExit(f'{binary}: SHA-256 mismatch')\n    print(f'{binary}: SHA-256 verified {actual}')\nPY\ncp /tmp/kind.sha256sum\
+        \ /tmp/kubectl.sha256 ci-results/p056-runtime/\nsudo install -m 0755 /tmp/kind /usr/local/bin/kind\nsudo\
+        \ install -m 0755 /tmp/kubectl /usr/local/bin/kubectl\n"
+    - name: Record effective dependencies
+      run: python -m pip freeze > ci-results/p0${{ matrix.project }}-runtime/requirements-effective.txt
+    - name: Execute local suites and actual Docker or Kubernetes checks
+      run: python tools/ci_p041_p080/runner.py --sources . --out ci-results/p0${{ matrix.project }}-runtime --projects
+        ${{ matrix.project }}
+    - uses: actions/upload-artifact@v7.0.2
+      if: ${{ always() }}
+      with:
+        name: p0${{ matrix.project }}-runtime-${{ github.run_id }}-${{ github.run_attempt }}
+        path: 'ci-results/p0${{ matrix.project }}-runtime/
+
+          !ci-results/p0${{ matrix.project }}-runtime/work/
+
+          '
+        if-no-files-found: error
+        retention-days: 30

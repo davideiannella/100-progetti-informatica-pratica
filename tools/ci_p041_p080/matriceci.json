@@ -1,0 +1,715 @@
+{
+  "schema": "p041-p080-ci-matrix.v1",
+  "platform": "ubuntu-24.04",
+  "python": "3.12",
+  "source_policy": "Copy each frozen project into output/work. Never modify source files or SOURCE_SHA256. SHA-256 checked before/after for every original project file.",
+  "project_count": 40,
+  "projects": [
+    {
+      "project": "P041",
+      "title": "P041 — Motore di notifiche con il pattern Strategy",
+      "language": "Java",
+      "job": "core",
+      "test_files": [
+        "tests/NotificationsTest.java"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": null,
+      "scope": "Java Strategy: programmi di assert con -ea, nessun servizio messaggi reale.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P042",
+      "title": "P042 — Pagamenti simulati con idempotenza",
+      "language": "C#",
+      "job": "core",
+      "test_files": [
+        "tests/Program.cs"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": null,
+      "scope": "C#/.NET: pagamenti simulati in memoria, idempotenza e 100 chiamate concorrenti.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P043",
+      "title": "P043 — Parcheggio software guidato dai test",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_edges.py",
+        "tests/test_p043.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 2,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P044",
+      "title": "P044 — Conservare versioni immutabili dei documenti",
+      "language": "Java",
+      "job": "core",
+      "test_files": [
+        "tests/DocumentEdgesTest.java",
+        "tests/DocumentVersioningTest.java"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": null,
+      "scope": "Java: versionamento documenti in memoria, snapshot e aggiornamenti concorrenti.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 2,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P045",
+      "title": "P045 — Pianificare subnet IPv4 per un campus",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_network_plan.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [
+        "src/network_plan.py"
+      ],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P046",
+      "title": "P046 — VLAN e regole di accesso fra segmenti",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p046.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P047",
+      "title": "P047 — Seguire una richiesta Web su TCP",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p047.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P048",
+      "title": "P048 — Provare TCP e UDP con socket locali",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_edges.py",
+        "tests/test_p048.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": null,
+      "scope": "Socket TCP/UDP reali su loopback; nessuna prova Internet.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 2,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P049",
+      "title": "P049 — Trasferire file con frame e controllo di integrità",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_edges.py",
+        "tests/test_p049.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": null,
+      "scope": "Trasferimenti su socket locali e integrità dei frame.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 2,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P050",
+      "title": "P050 — Stimare gli access point di un magazzino",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p050.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P051",
+      "title": "P051 — Confrontare FCFS, SJF e Round Robin",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p051.py",
+        "tests/test_reference.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 2,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P052",
+      "title": "P052 — Verificare uno stato sicuro con il banchiere",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p052.py",
+        "tests/test_reference.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 2,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P053",
+      "title": "P053 — Simulare FIFO, LRU e Clock per le pagine",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p053.py",
+        "tests/test_reference.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 2,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P054",
+      "title": "P054 — Preparare una release riproducibile di un’API",
+      "language": "Python",
+      "job": "container-runtime",
+      "test_files": [
+        "tests/test_app.py",
+        "tests/test_http.py",
+        "tests/test_release_builder.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [
+        "tools/build_release.py",
+        "tools/live_http_test.py"
+      ],
+      "runtime": "docker_api",
+      "scope": "Suite Python, Uvicorn HTTP reale, ZIP riproducibile e container Docker con HTTP/non-root.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 3,
+      "expected_runtime_checks": 5
+    },
+    {
+      "project": "P055",
+      "title": "P055 — Collegare Web API e database con Compose",
+      "language": "Python",
+      "job": "container-runtime",
+      "test_files": [
+        "tests/test_p055.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": "compose_stack",
+      "scope": "Test SQLite/configurazione distinti dallo stack Docker reale Nginx-API-PostgreSQL e persistenza dopo riavvii.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 6
+    },
+    {
+      "project": "P056",
+      "title": "P056 — Tre repliche e controlli di salute in Kubernetes",
+      "language": "Python",
+      "job": "container-runtime",
+      "test_files": [
+        "tests/test_p056.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": "kubernetes_cluster",
+      "scope": "Test YAML distinti dal cluster kind reale: 3 repliche ready, Service/DNS/HTTP, ricreazione Pod, liveness e recupero.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 10
+    },
+    {
+      "project": "P057",
+      "title": "P057 — Una funzione per verificare immagini e metadati",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p057.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": null,
+      "scope": "Funzione locale Pillow con immagini sintetiche; nessun deployment serverless o cloud.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P058",
+      "title": "P058 — Creare backup e ripristinare senza perdere il target",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_edges.py",
+        "tests/test_p058.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [
+        "demo_corrupt_backup.py"
+      ],
+      "runtime": null,
+      "scope": "Backup/ripristino locali con hard link; nessuna prova di durabilità hardware.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 2,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P059",
+      "title": "P059 — Modellare cache e bilanciamento fra backend sani",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_edges.py",
+        "tests/test_p059.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [],
+      "runtime": null,
+      "scope": "Simulazione locale di cache e bilanciamento; nessun CDN o bilanciatore esterno.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 2,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P060",
+      "title": "P060 — Pipeline CI con test e integrità della release",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_calc.py",
+        "tests/test_edges.py",
+        "tests/test_p060.py"
+      ],
+      "test_entrypoint": null,
+      "demo_files": [
+        "build_release.py"
+      ],
+      "runtime": null,
+      "scope": "Suite locali e builder eseguiti su GitHub dal runner di gruppo; il workflow annidato del laboratorio resta soltanto configurazione ispezionata, senza deploy.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 3,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P061",
+      "title": "P061 — Capire se un servizio sta bene: log, metriche e alert",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p061.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/observability.py"
+      ],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P062",
+      "title": "P062 — Ripartire dopo un guasto: replica e failover di lettura",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p062.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/dr.py"
+      ],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P063",
+      "title": "P063 — Login sicuro: scrypt, TOTP, blocco dei tentativi e sessioni",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_auth_service.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/auth_service.py"
+      ],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P064",
+      "title": "P064 — Difendere un’applicazione dalla SQL Injection",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p064.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/safe_search.py"
+      ],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P065",
+      "title": "P065 — Protezione Web da XSS e CSRF: contesto HTML e token di sessione",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p065.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/web_defense.py"
+      ],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P066",
+      "title": "P066 — Proteggere un’API: token firmati, ruoli e limite delle richieste",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p066.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/auth_api.py"
+      ],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P067",
+      "title": "P067 — HTTPS sotto il cofano: TLS, certificati e PKI",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p067.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/cert_check.py"
+      ],
+      "runtime": null,
+      "scope": "TLS reale su loopback, certificati temporanei e permessi POSIX su Ubuntu.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P068",
+      "title": "P068 — Segmentazione di rete con firewall e rilevamento dei login falliti",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p068.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/network_defense.py"
+      ],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P069",
+      "title": "P069 — Hardening Linux: un audit riproducibile di permessi e configurazione",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p069.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/hardening_audit.py"
+      ],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P070",
+      "title": "P070 — Ransomware: integrità del backup e risposta all’incidente",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p070.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/incident_response.py"
+      ],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P071",
+      "title": "P071 — Trovare le minacce prima del codice: STRIDE e priorità ordinali",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p071.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/threat_model.py"
+      ],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P072",
+      "title": "P072 — Mini-SOC: trasformare log sintetici in alert verificabili",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p072.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/mini_soc.py"
+      ],
+      "runtime": null,
+      "scope": "Suite locali dei sorgenti congelati; risultati limitati al modello e ai casi dichiarati dal laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P073",
+      "title": "P073 — Previsione dei consumi energetici",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p073.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/energy_regression.py",
+        "examples.py"
+      ],
+      "runtime": null,
+      "scope": "Regressione su dati sintetici; nessuna misura applicativa esterna.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P074",
+      "title": "P074 — Classificazione del rischio di abbandono di un servizio",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p074.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/churn.py",
+        "examples.py"
+      ],
+      "runtime": null,
+      "scope": "Classificazione su dati sintetici; metriche sul corpus del laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P075",
+      "title": "P075 — Scoprire transazioni insolite con anomaly detection",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p075.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/anomaly.py",
+        "examples.py"
+      ],
+      "runtime": null,
+      "scope": "Anomalie sintetiche; metriche sul corpus del laboratorio.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P076",
+      "title": "P076 — Consigliare corsi in base agli interessi: recommender system",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p076.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/recommender.py",
+        "examples.py"
+      ],
+      "runtime": null,
+      "scope": "Similarità coseno deterministica su vettori manuali; nessun training.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P077",
+      "title": "P077 — Leggere e smistare ticket automaticamente con NLP",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p077.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/ticket_nlp.py"
+      ],
+      "runtime": null,
+      "scope": "NLP su ticket inventati, split e astensione; nessun help desk reale.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P078",
+      "title": "P078 — Computer Vision per classificare rifiuti: un laboratorio su palette sintetiche",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p078.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/waste_cv.py"
+      ],
+      "runtime": null,
+      "scope": "Palette RGB sintetiche; nessuna fotografia o valutazione dei rifiuti reali.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P079",
+      "title": "P079 — Previsione della domanda di magazzino",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p079.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/forecast.py"
+      ],
+      "runtime": null,
+      "scope": "Domanda sintetica, rolling/ricorsivo; nessun magazzino reale.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    },
+    {
+      "project": "P080",
+      "title": "P080 — Assistente con citazioni: retrieval ed estrazione, senza LLM",
+      "language": "Python",
+      "job": "core",
+      "test_files": [
+        "tests/test_p080.py"
+      ],
+      "test_entrypoint": "run_tests.py",
+      "demo_files": [
+        "src/rag.py"
+      ],
+      "runtime": null,
+      "scope": "Retrieval estrattivo locale senza LLM o API esterne.",
+      "unit_count_policy": "Conteggi runtime dei metodi unittest; gli script con assert non strutturati sono contati come suite, senza inventare il numero di casi.",
+      "expected_suite_processes": 1,
+      "expected_runtime_checks": 0
+    }
+  ]
+}
