@@ -1,133 +1,14 @@
-﻿2026-10-22T00:45:06.8349951Z Current runner version: '2.338.0'
-2026-10-22T00:45:06.8384193Z ##[group]Runner Image Provisioner
-2026-10-22T00:45:06.8385573Z Hosted Compute Agent
-2026-10-22T00:45:06.8386920Z Version: 20261012.601
-2026-10-22T00:45:06.8388088Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
-2026-10-22T00:45:06.8389544Z Build Date: 2026-10-12T17:48:21Z
-2026-10-22T00:45:06.8390650Z Worker ID: {b7629071-8d7e-4475-b4ee-9408fc5c6226}
-2026-10-22T00:45:06.8392075Z Region: eastus
-2026-10-22T00:45:06.8393066Z Cloud: Azure
-2026-10-22T00:45:06.8393881Z ##[endgroup]
-2026-10-22T00:45:06.8396962Z ##[group]Operating System
-2026-10-22T00:45:06.8398045Z Ubuntu
-2026-10-22T00:45:06.8399127Z 24.04.5
-2026-10-22T00:45:06.8399990Z LTS
-2026-10-22T00:45:06.8400763Z ##[endgroup]
-2026-10-22T00:45:06.8401783Z ##[group]Runner Image
-2026-10-22T00:45:06.8402859Z Image: ubuntu-24.04
-2026-10-22T00:45:06.8404303Z Version: 20261012.334.1
-2026-10-22T00:45:06.8406685Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
-2026-10-22T00:45:06.8409551Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
-2026-10-22T00:45:06.8411887Z ##[endgroup]
-2026-10-22T00:45:06.8413831Z ##[group]GITHUB_TOKEN Permissions
-2026-10-22T00:45:06.8417005Z Contents: read
-2026-10-22T00:45:06.8418160Z Metadata: read
-2026-10-22T00:45:06.8419219Z ##[endgroup]
-2026-10-22T00:45:06.8422200Z Secret source: Actions
-2026-10-22T00:45:06.8423706Z Cache mode: write
-2026-10-22T00:45:06.8425130Z Prepare workflow directory
-2026-10-22T00:45:06.8897403Z Prepare all required actions
-2026-10-22T00:45:06.8967479Z Getting action download info
-2026-10-22T00:45:07.0851879Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
-2026-10-22T00:45:07.1991395Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
-2026-10-22T00:45:07.4936870Z Complete job name: ubuntu-latest Python 3.12
-2026-10-22T00:45:07.5703746Z ##[group]Run actions/checkout@v4
-2026-10-22T00:45:07.5704681Z with:
-2026-10-22T00:45:07.5705301Z   repository: davideiannella/100-progetti-informatica-pratica
-2026-10-22T00:45:07.5709711Z   token: ***
-2026-10-22T00:45:07.5710176Z   ssh-strict: true
-2026-10-22T00:45:07.5710624Z   ssh-user: git
-2026-10-22T00:45:07.5711082Z   persist-credentials: true
-2026-10-22T00:45:07.5711576Z   clean: true
-2026-10-22T00:45:07.5712033Z   sparse-checkout-cone-mode: true
-2026-10-22T00:45:07.5712564Z   fetch-depth: 1
-2026-10-22T00:45:07.5713001Z   fetch-tags: false
-2026-10-22T00:45:07.5713449Z   show-progress: true
-2026-10-22T00:45:07.5713897Z   lfs: false
-2026-10-22T00:45:07.5714309Z   submodules: false
-2026-10-22T00:45:07.5714777Z   set-safe-directory: true
-2026-10-22T00:45:07.5715281Z   allow-unsafe-pr-checkout: false
-2026-10-22T00:45:07.5716068Z ##[endgroup]
-2026-10-22T00:45:07.6735623Z Syncing repository: davideiannella/100-progetti-informatica-pratica
-2026-10-22T00:45:07.6738930Z ##[group]Getting Git version info
-2026-10-22T00:45:07.6740636Z Working directory is '<ambiente_di_test>'
-2026-10-22T00:45:07.6742900Z [command]<ambiente_di_test> version
-2026-10-22T00:45:07.6824995Z git version 2.55.0
-2026-10-22T00:45:07.6850855Z ##[endgroup]
-2026-10-22T00:45:07.6869250Z Temporarily overriding HOME='<ambiente_di_test>' before making global git config changes
-2026-10-22T00:45:07.6871705Z Adding repository directory to the temporary git global config as a safe directory
-2026-10-22T00:45:07.6877219Z [command]<ambiente_di_test> config --global --add safe.directory <ambiente_di_test>
-2026-10-22T00:45:07.6934033Z Deleting the contents of '<ambiente_di_test>'
-2026-10-22T00:45:07.6944570Z ##[group]Initializing the repository
-2026-10-22T00:45:07.6946856Z [command]<ambiente_di_test> init <ambiente_di_test>
-2026-10-22T00:45:07.7067857Z hint: Using 'master' as the name for the initial branch. This default branch name
-2026-10-22T00:45:07.7069207Z hint: will change to "main" in Git 3.0. To configure the initial branch name
-2026-10-22T00:45:07.7070238Z hint: to use in all of your new repositories, which will suppress this warning,
-2026-10-22T00:45:07.7071032Z hint: call:
-2026-10-22T00:45:07.7071764Z hint:
-2026-10-22T00:45:07.7072328Z hint: 	git config --global init.defaultBranch <name>
-2026-10-22T00:45:07.7072994Z hint:
-2026-10-22T00:45:07.7073614Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-2026-10-22T00:45:07.7074637Z hint: 'development'. The just-created branch can be renamed via this command:
-2026-10-22T00:45:07.7075443Z hint:
-2026-10-22T00:45:07.7075881Z hint: 	git branch -m <name>
-2026-10-22T00:45:07.7076692Z hint:
-2026-10-22T00:45:07.7077446Z hint: Disable this message with "git config set advice.defaultBranchName false"
-2026-10-22T00:45:07.7084103Z Initialized empty Git repository in <ambiente_di_test>
-2026-10-22T00:45:07.7095211Z [command]<ambiente_di_test> remote add origin https://github.com/davideiannella/100-progetti-informatica-pratica
-2026-10-22T00:45:07.7146913Z ##[endgroup]
-2026-10-22T00:45:07.7148414Z ##[group]Disabling automatic garbage collection
-2026-10-22T00:45:07.7151464Z [command]<ambiente_di_test> config --local gc.auto 0
-2026-10-22T00:45:07.7188941Z ##[endgroup]
-2026-10-22T00:45:07.7189712Z ##[group]Setting up auth
-2026-10-22T00:45:07.7198019Z [command]<ambiente_di_test> config --local --name-only --get-regexp core\.sshCommand
-2026-10-22T00:45:07.7240449Z [command]<ambiente_di_test> submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-2026-10-22T00:45:07.7613772Z [command]<ambiente_di_test> config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-2026-10-22T00:45:07.7652422Z [command]<ambiente_di_test> submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-2026-10-22T00:45:07.7897797Z [command]<ambiente_di_test> config --local --name-only --get-regexp ^includeIf\.gitdir:
-2026-10-22T00:45:07.7931841Z [command]<ambiente_di_test> submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
-2026-10-22T00:45:07.8169583Z [command]<ambiente_di_test> config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-2026-10-22T00:45:07.8215295Z ##[endgroup]
-2026-10-22T00:45:07.8229812Z ##[group]Fetching the repository
-2026-10-22T00:45:07.8231347Z [command]<ambiente_di_test> -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +32e201b1fb1258c4e7c77d32af323b966647b908:refs/remotes/origin/main
-2026-10-22T00:45:08.1755627Z From https://github.com/davideiannella/100-progetti-informatica-pratica
-2026-10-22T00:45:08.1757291Z  * [new ref]         32e201b1fb1258c4e7c77d32af323b966647b908 -> origin/main
-2026-10-22T00:45:08.1761241Z ##[endgroup]
-2026-10-22T00:45:08.1762539Z ##[group]Determining the checkout info
-2026-10-22T00:45:08.1765070Z ##[endgroup]
-2026-10-22T00:45:08.1773037Z [command]<ambiente_di_test> sparse-checkout disable
-2026-10-22T00:45:08.1832267Z [command]<ambiente_di_test> config --local --unset-all extensions.worktreeConfig
-2026-10-22T00:45:08.1869178Z ##[group]Checking out the ref
-2026-10-22T00:45:08.1875003Z [command]<ambiente_di_test> checkout --progress --force -B main refs/remotes/origin/main
-2026-10-22T00:45:08.2227048Z Switched to a new branch 'main'
-2026-10-22T00:45:08.2233002Z branch 'main' set up to track 'origin/main'.
-2026-10-22T00:45:08.2248024Z ##[endgroup]
-2026-10-22T00:45:08.2309086Z [command]<ambiente_di_test> log -1 --format=%H
-2026-10-22T00:45:08.2335445Z 32e201b1fb1258c4e7c77d32af323b966647b908
-2026-10-22T00:45:08.2711681Z ##[group]Run actions/setup-python@v5
-2026-10-22T00:45:08.2713160Z with:
-2026-10-22T00:45:08.2714111Z   python-version: 3.12
-2026-10-22T00:45:08.2715188Z   check-latest: false
-2026-10-22T00:45:08.2724982Z   token: ***
-2026-10-22T00:45:08.2725995Z   update-environment: true
-2026-10-22T00:45:08.2727332Z   allow-prereleases: false
-2026-10-22T00:45:08.2728460Z   freethreaded: false
-2026-10-22T00:45:08.2729506Z ##[endgroup]
-2026-10-22T00:45:08.4047274Z ##[group]Installed versions
-2026-10-22T00:45:08.4625936Z (node:2313) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-10-22T00:45:08.4627341Z (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-10-22T00:45:08.4628242Z Successfully set up CPython (3.12.15)
-2026-10-22T00:45:08.4628977Z ##[endgroup]
+# Log pubblico sanificato; estratto operativo, non log integrale del runner.
+# Provenienza: https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280/job/119571737066
+# Job: ubuntu-latest Python 3.12
+# Esito ufficiale: PASS
+# Intervallo registrato: 2026-10-22T00:45:06.8384193Z — 2026-10-22T00:45:32.8851640Z
+# SHA-256 della copia di ingresso conservata privatamente: 94f582ca65b734d5ecb6c83ffd2c2cb8e2dcfdf7db9318271523d743df43e456
+# Omesse sezioni di preparazione/checkout/autenticazione e metadati interni del runner.
+# Conservati comandi operativi, output, errori e codici di uscita presenti; gli identificatori di ambiente sono sostituiti.
+
 2026-10-22T00:45:08.4847249Z ##[group]Run python -m pip install -r requirements-p081-p100.txt
-2026-10-22T00:45:08.4848270Z [36;1mpython -m pip install -r requirements-p081-p100.txt[0m
-2026-10-22T00:45:08.5481185Z shell: <ambiente_di_test> -e {0}
-2026-10-22T00:45:08.5481617Z env:
-2026-10-22T00:45:08.5482013Z   pythonLocation: <ambiente_di_test>
-2026-10-22T00:45:08.5482633Z   PKG_CONFIG_PATH: <ambiente_di_test>
-2026-10-22T00:45:08.5483236Z   Python_ROOT_DIR: <ambiente_di_test>
-2026-10-22T00:45:08.5483782Z   Python2_ROOT_DIR: <ambiente_di_test>
-2026-10-22T00:45:08.5484329Z   Python3_ROOT_DIR: <ambiente_di_test>
-2026-10-22T00:45:08.5484866Z   LD_LIBRARY_PATH: <ambiente_di_test>
+2026-10-22T00:45:08.4848270Z python -m pip install -r requirements-p081-p100.txt
 2026-10-22T00:45:08.5485315Z ##[endgroup]
 2026-10-22T00:45:12.2767359Z Collecting numpy==2.3.5 (from -r requirements-p081-p100.txt (line 2))
 2026-10-22T00:45:12.5086622Z   Downloading numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
@@ -158,15 +39,7 @@
 2026-10-22T00:45:25.6181968Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
 2026-10-22T00:45:25.6182718Z [notice] To update, run: pip install --upgrade pip
 2026-10-22T00:45:25.6809394Z ##[group]Run python -B tools/collaudo_p081_p100.py
-2026-10-22T00:45:25.6809856Z [36;1mpython -B tools/collaudo_p081_p100.py[0m
-2026-10-22T00:45:25.6876513Z shell: <ambiente_di_test> -e {0}
-2026-10-22T00:45:25.6876788Z env:
-2026-10-22T00:45:25.6877118Z   pythonLocation: <ambiente_di_test>
-2026-10-22T00:45:25.6877577Z   PKG_CONFIG_PATH: <ambiente_di_test>
-2026-10-22T00:45:25.6878026Z   Python_ROOT_DIR: <ambiente_di_test>
-2026-10-22T00:45:25.6878448Z   Python2_ROOT_DIR: <ambiente_di_test>
-2026-10-22T00:45:25.6878846Z   Python3_ROOT_DIR: <ambiente_di_test>
-2026-10-22T00:45:25.6879240Z   LD_LIBRARY_PATH: <ambiente_di_test>
+2026-10-22T00:45:25.6809856Z python -B tools/collaudo_p081_p100.py
 2026-10-22T00:45:25.6879568Z ##[endgroup]
 2026-10-22T00:45:25.9470224Z {"project": "P081", "returncode": 0, "test_methods": 14, "expected_test_methods": 14, "skipped": 0, "status": "PASS"}
 2026-10-22T00:45:26.0350853Z {"project": "P082", "returncode": 0, "test_methods": 12, "expected_test_methods": 12, "skipped": 0, "status": "PASS"}
@@ -373,22 +246,3 @@
 2026-10-22T00:45:32.4691503Z   "failed_projects": []
 2026-10-22T00:45:32.4691708Z }
 2026-10-22T00:45:32.4691888Z COLLAUDO_SUMMARY_END
-2026-10-22T00:45:32.4872646Z Post job cleanup.
-2026-10-22T00:45:32.6088321Z (node:2387) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-10-22T00:45:32.6089338Z (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-10-22T00:45:32.6291150Z Post job cleanup.
-2026-10-22T00:45:32.7175205Z [command]<ambiente_di_test> version
-2026-10-22T00:45:32.7220505Z git version 2.55.0
-2026-10-22T00:45:32.7261289Z Temporarily overriding HOME='<ambiente_di_test>' before making global git config changes
-2026-10-22T00:45:32.7262749Z Adding repository directory to the temporary git global config as a safe directory
-2026-10-22T00:45:32.7268420Z [command]<ambiente_di_test> config --global --add safe.directory <ambiente_di_test>
-2026-10-22T00:45:32.7308145Z [command]<ambiente_di_test> config --local --name-only --get-regexp core\.sshCommand
-2026-10-22T00:45:32.7346002Z [command]<ambiente_di_test> submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-2026-10-22T00:45:32.7602685Z [command]<ambiente_di_test> config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-2026-10-22T00:45:32.7636526Z http.https://github.com/.extraheader
-2026-10-22T00:45:32.7648747Z [command]<ambiente_di_test> config --local --unset-all http.https://github.com/.extraheader
-2026-10-22T00:45:32.7699902Z [command]<ambiente_di_test> submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-2026-10-22T00:45:32.7942867Z [command]<ambiente_di_test> config --local --name-only --get-regexp ^includeIf\.gitdir:
-2026-10-22T00:45:32.7992031Z [command]<ambiente_di_test> submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
-2026-10-22T00:45:32.8544646Z Cleaning up orphan processes
-2026-10-22T00:45:32.8851640Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

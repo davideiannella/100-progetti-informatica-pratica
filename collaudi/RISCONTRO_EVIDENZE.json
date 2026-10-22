@@ -114,7 +114,7 @@
     },
     "public_vendor_email_retained": "docker-maint@nginx.com, etichetta pubblica dell’immagine Nginx",
     "reviewed_nonsecret_markers": [
-      "GITHUB_TOKEN Permissions e token: *** già mascherati da GitHub",
+      "Riferimenti alla configurazione di accesso del checkout rimossi nelle copie pubbliche; nessun valore di credenziale pubblicato.",
       "serviceAccountToken/path: token nei soli manifest Kubernetes, senza valori di credenziale",
       "password_authentication come booleano di configurazione sintetica",
       "Alice e indirizzi IP di documentazione negli esempi sintetici"
@@ -215,5 +215,6 @@
     "all_decompressed_bytes_match_frozen_copies": true,
     "original_input_digest_count": 137,
     "all_original_and_sanitized_source_digests_unchanged": true
-  }
+  },
+  "current_public_log_policy": "I log pubblici sono estratti operativi sanificati; gli esiti e i contatori restano quelli delle esecuzioni documentate."
 }

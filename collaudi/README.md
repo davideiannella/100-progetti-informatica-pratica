@@ -1,6 +1,14 @@
 # Esiti e output dei collaudi
 
-Questa cartella raccoglie evidenze già prodotte per i laboratori di **100 progetti di informatica pratica**. Permette di leggere gli esiti, confrontare gli output e risalire all’ambiente della prova. La preparazione della raccolta non ha eseguito nuove suite né modificato i sorgenti.
+Questa cartella raccoglie i risultati dei collaudi dei laboratori di **100 progetti di informatica pratica**: le nuove esecuzioni pubbliche P001–P080, la matrice P081–P100 e le evidenze storiche conservate. Permette di confrontare esiti e output con l’ambiente effettivo di ogni prova. I sorgenti e i test originali restano invariati.
+
+## Collaudo pubblico P001–P080
+
+Il [run 39849393701](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701), commit `44cd421247ca2bfe838baa735cf6180134f80464`, ha concluso **80 progetti su 80 e cinque job su cinque con successo** il 22 ottobre 2026 su Ubuntu 24.04. Le prove comprendono MongoDB e Neo4j reali, Docker, Docker Compose e un cluster Kubernetes kind reale nel runner.
+
+La [raccolta CI_P001_P080](CI_P001_P080/README.md) conserva riepiloghi e log operativi sanificati dei due tentativi, con SHA-256 pubblici verificati; i digest ufficiali degli artifact originali sono riportati separatamente. Il [riepilogo per progetto](CI_P001_P080/RIEPILOGO.json) distingue 101 suite originali, 1420 metodi `unittest`, 18 asserzioni dei motori database, 21 controlli runtime e 29 demo. Queste categorie non si sommano fra loro. Tutte le 299 impronte dei sorgenti sono verificate prima e dopo senza differenze.
+
+Il primo run aveva quattro job riusciti e un errore nel controllo Neo4j aggiunto al runner; le 48 suite originali P001–P040 erano già riuscite. Il confronto e i log del fallimento restano consultabili. P001–P080 sono verificati su Ubuntu; non è una matrice nativa Windows e non sono deployment su provider cloud.
 
 ## P081–P100: quattro job pubblici riusciti
 
@@ -21,7 +29,7 @@ I riepiloghi sono stati confrontati con il JSON compreso fra `COLLAUDO_SUMMARY_B
 
 Il workflow stampa il risultato aggregato di ciascuna suite; per i casi riusciti non riversa nel log pubblico tutto lo stdout/stderr dei singoli test. Per leggere anche i nomi dei test e gli output dettagliati è disponibile [OUTPUT_DETTAGLIATI_STORICI_LINUX.json](ci_P081_P100/OUTPUT_DETTAGLIATI_STORICI_LINUX.json): contiene la distinta esecuzione locale Linux del **21 ottobre 2026**, con 377 metodi e Python 3.12.14. I digest dei suoi 60 file Python coincidono con i sorgenti consegnati. I risultati non sono attribuiti ai quattro job pubblici; quel summary locale non elenca separatamente tutte le versioni delle dipendenze.
 
-## P001–P080: che cosa è stato verificato
+## P001–P080: evidenze storiche conservate
 
 La [panoramica per progetto](storico/PANORAMICA_P001_P080.md) e l’[indice JSON](storico/INDICE_P001_P080.json) riportano stato, perimetro e limiti degli ottanta laboratori precedenti. Il [registro aggregato completo, compresso in gzip](storico/EVIDENZE_P001_P080.json.gz) conserva comandi, codici di uscita e output storici. Gli [ambienti registrati](storico/AMBIENTI_STORICI.json) restano distinti per gruppo.
 
@@ -31,7 +39,7 @@ La [panoramica per progetto](storico/PANORAMICA_P001_P080.md) e l’[indice JSON
 
 Questi registri non attestano un collaudo nativo Windows di P001–P080. Per i laboratori POSIX, `/proc` o permessi di file, seguire le istruzioni Linux/WSL dei README. Un modello di rete, scheduling, replica o rischio non dimostra il funzionamento di apparati o infrastrutture reali. Le metriche su dati sintetici non misurano la qualità su dati operativi.
 
-## P054–P056: distinguere il tentativo locale dai runtime remoti
+## P054–P056: storia del tentativo locale e dei runtime remoti
 
 Il [tentativo locale del 17 ottobre](storico/DOCKER_LOCALE_BLOCCATO.json) registra il daemon Docker **bloccato**, **zero immagini costruite, zero servizi Compose avviati e zero cluster Kubernetes creati**. Il controllo delle configurazioni non viene presentato come esecuzione di container.
 
@@ -88,7 +96,7 @@ Per la sua suite usare invece `python -B run_tests.py`. P067 e P069 richiedono L
 
 ## Consultare i registri compressi
 
-I due registri più voluminosi sono distribuiti integralmente in formato `.json.gz`: [P056](storico/P056_runtime_results.json.gz) e [P001–P080](storico/EVIDENZE_P001_P080.json.gz). La compressione conserva ogni byte delle rispettive copie sanificate già verificate: nessun comando, stdout o stderr è stato abbreviato. Il [riepilogo P056](storico/P056_runtime_results.summary.json) e l’[indice P001–P080](storico/INDICE_P001_P080.json) permettono una prima lettura senza decompressione.
+I due registri più voluminosi sono distribuiti integralmente in formato `.json.gz`: [P056](storico/P056_runtime_results.json.gz) e [P001–P080](storico/EVIDENZE_P001_P080.json.gz). La compressione conserva ogni byte delle copie sanificate distribuite. I metadati identificativi del runtime sono sostituiti; comandi, esiti numerici, codici di uscita, avvisi ed errori restano consultabili. Il [riepilogo P056](storico/P056_runtime_results.summary.json) e l’[indice P001–P080](storico/INDICE_P001_P080.json) permettono una prima lettura senza decompressione.
 
 Con 7-Zip, aprire il file `.gz` ed estrarre il JSON. In alternativa, dalla radice del repository salvare ed eseguire questo codice Python:
 
@@ -109,10 +117,12 @@ for record in manifest["distribution_compression"]["archives"]:
     print(output, len(data), "byte; SHA-256 verificato")
 ```
 
-I digest dei file gzip e dei JSON decompressi sono distinti e riportati nella provenienza. Le impronte dei 137 originali e delle relative copie sanificate restano quelle della raccolta di partenza. Questa preparazione modifica solo il formato di distribuzione e i rimandi documentali; non aggiunge esiti di esecuzioni successive.
+I digest dei file gzip e dei JSON decompressi sono distinti e riportati nella provenienza. Le impronte dei 137 originali restano quelle della raccolta di partenza. Gli hash dei derivati pubblici riflettono anche la successiva rimozione dei metadati interni. La sanificazione non aggiunge esecuzioni né cambia risultati numerici.
 
 ## Integrità e sanificazione
 
-[PROVENIENZA_SANIFICAZIONE.json](PROVENIENZA_SANIFICAZIONE.json) registra i digest SHA-256 degli originali, delle copie sanificate e dei file pubblici. Gli originali integrali restano conservati separatamente. I percorsi assoluti dell’host o del runner sono sostituiti con `<ambiente_di_test>` per non pubblicare nomi e strutture degli ambienti di lavoro. I percorsi delle API e dei container, i numeri, gli esiti, i tempi, gli avvisi e gli errori delle prove sono preservati. La maschera `***` presente nei log Actions era già applicata da GitHub.
+[PROVENIENZA_SANIFICAZIONE.json](PROVENIENZA_SANIFICAZIONE.json) distingue digest degli originali e delle copie pubbliche. [SANIFICAZIONE_LOG.json](SANIFICAZIONE_LOG.json) documenta la revisione dei log CI, compresi i quattro job P081–P100. Gli originali integrali sono conservati separatamente nell’archivio personale.
 
-I riepiloghi e gli indici sono documenti derivati esplicitamente identificati; non vengono presentati come stdout. Gli output contengono dati sintetici o identificativi tecnici temporanei delle prove. L’unico indirizzo email nei registri è quello pubblico dei manutentori dell’immagine Nginx, proveniente dalle etichette Docker. La [verifica della raccolta](RISCONTRO_EVIDENZE.json) comprende la ricerca di percorsi privati e formati comuni di credenziali, oltre al confronto degli esiti. Non contiene chiavi private, token di accesso o dati personali dell’autore.
+Le copie pubbliche omettono preparazione del runner, checkout, configurazione di accesso e pulizia finale. Percorsi host, identificatori runtime e indirizzi interni sono sostituiti da segnaposto. Rimangono comandi operativi, output dei test, errori, codici di uscita, date e URL pubblici di provenienza. I dati numerici degli esperimenti e i sorgenti non cambiano. I log non sono presentati come integrali.
+
+Gli artifact ZIP originali e le loro parti non sono distribuiti qui. I digest ufficiali si riferiscono ai download originali; gli SHA-256 del catalogo pubblico si riferiscono ai derivati sanificati. La prova fallita del primo tentativo P001–P080 resta documentata insieme al successivo run riuscito.

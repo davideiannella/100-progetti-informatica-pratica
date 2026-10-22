@@ -1,0 +1,143 @@
+# Log pubblico sanificato; estratto operativo, non log integrale del runner.
+# Provenienza: https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071206842
+# Job: P054 / real container runtime
+# Esito ufficiale: success
+# Intervallo registrato: 2026-10-22T20:30:13.3449497Z — 2026-10-22T20:30:47.8433433Z
+# SHA-256 della copia di ingresso conservata privatamente: 39f1c90dd1d0a9efc19503ee57d0e2a5f7c91c994fd7a329433e7ff811ab493d
+# Omesse sezioni di preparazione/checkout/autenticazione e metadati interni del runner.
+# Conservati comandi operativi, output, errori e codici di uscita presenti; gli identificatori di ambiente sono sostituiti.
+
+2026-10-22T20:30:16.7493486Z ##[group]Run mkdir -p ci-results/p054-runtime
+2026-10-22T20:30:16.7494006Z mkdir -p ci-results/p054-runtime
+2026-10-22T20:30:16.7749272Z ##[endgroup]
+2026-10-22T20:30:16.7871829Z ##[group]Run python -m pip install -r tools/ci_p041_p080/requirements.txt
+2026-10-22T20:30:16.7872132Z python -m pip install -r tools/ci_p041_p080/requirements.txt
+2026-10-22T20:30:16.7920263Z ##[endgroup]
+2026-10-22T20:30:17.5459374Z Collecting numpy==2.3.5 (from -r tools/ci_p041_p080/requirements.txt (line 2))
+2026-10-22T20:30:17.6169511Z   Downloading numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-10-22T20:30:17.7260567Z Collecting scipy==1.17.0 (from -r tools/ci_p041_p080/requirements.txt (line 3))
+2026-10-22T20:30:17.7415835Z   Downloading scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-10-22T20:30:17.8014306Z Collecting scikit-learn==1.8.0 (from -r tools/ci_p041_p080/requirements.txt (line 4))
+2026-10-22T20:30:17.8166386Z   Downloading scikit_learn-1.8.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+2026-10-22T20:30:17.9364675Z Collecting cryptography==50.0.2 (from -r tools/ci_p041_p080/requirements.txt (line 5))
+2026-10-22T20:30:17.9533601Z   Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.4 kB)
+2026-10-22T20:30:17.9874550Z Collecting fastapi==0.143.2 (from -r tools/ci_p041_p080/requirements.txt (line 6))
+2026-10-22T20:30:18.0029330Z   Downloading fastapi-0.143.2-py3-none-any.whl.metadata (26 kB)
+2026-10-22T20:30:18.0849258Z Collecting pydantic==2.14.1 (from -r tools/ci_p041_p080/requirements.txt (line 7))
+2026-10-22T20:30:18.1007468Z   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+2026-10-22T20:30:18.1436257Z Collecting uvicorn==0.54.0 (from -r tools/ci_p041_p080/requirements.txt (line 8))
+2026-10-22T20:30:18.1593023Z   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+2026-10-22T20:30:18.1827285Z Collecting httpx==0.28.1 (from -r tools/ci_p041_p080/requirements.txt (line 9))
+2026-10-22T20:30:18.1979112Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+2026-10-22T20:30:18.2341874Z Collecting psycopg==3.3.6 (from psycopg[binary]==3.3.6->-r tools/ci_p041_p080/requirements.txt (line 10))
+2026-10-22T20:30:18.2512668Z   Downloading psycopg-3.3.6-py3-none-any.whl.metadata (4.4 kB)
+2026-10-22T20:30:18.2976703Z Collecting PyYAML==6.0.3 (from -r tools/ci_p041_p080/requirements.txt (line 11))
+2026-10-22T20:30:18.3131568Z   Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+2026-10-22T20:30:18.4097377Z Collecting Pillow==12.1.0 (from -r tools/ci_p041_p080/requirements.txt (line 12))
+2026-10-22T20:30:18.4273658Z   Downloading pillow-12.1.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+2026-10-22T20:30:18.4540075Z Collecting joblib>=1.3.0 (from scikit-learn==1.8.0->-r tools/ci_p041_p080/requirements.txt (line 4))
+2026-10-22T20:30:18.4703148Z   Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+2026-10-22T20:30:18.4911501Z Collecting threadpoolctl>=3.2.0 (from scikit-learn==1.8.0->-r tools/ci_p041_p080/requirements.txt (line 4))
+2026-10-22T20:30:18.5064902Z   Downloading threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+2026-10-22T20:30:18.5716847Z Collecting cffi>=2.0.0 (from cryptography==50.0.2->-r tools/ci_p041_p080/requirements.txt (line 5))
+2026-10-22T20:30:18.5868500Z   Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+2026-10-22T20:30:18.6126142Z Collecting starlette>=0.46.0 (from fastapi==0.143.2->-r tools/ci_p041_p080/requirements.txt (line 6))
+2026-10-22T20:30:18.6279741Z   Downloading starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+2026-10-22T20:30:18.6508366Z Collecting typing-extensions>=4.8.0 (from fastapi==0.143.2->-r tools/ci_p041_p080/requirements.txt (line 6))
+2026-10-22T20:30:18.6664412Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-10-22T20:30:18.6866182Z Collecting typing-inspection>=0.4.2 (from fastapi==0.143.2->-r tools/ci_p041_p080/requirements.txt (line 6))
+2026-10-22T20:30:18.7018299Z   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+2026-10-22T20:30:18.7211486Z Collecting annotated-doc>=0.0.2 (from fastapi==0.143.2->-r tools/ci_p041_p080/requirements.txt (line 6))
+2026-10-22T20:30:18.7368568Z   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+2026-10-22T20:30:18.7671642Z Collecting opentelemetry-api>=1.44.0 (from fastapi==0.143.2->-r tools/ci_p041_p080/requirements.txt (line 6))
+2026-10-22T20:30:18.7828851Z   Downloading opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+2026-10-22T20:30:18.8043662Z Collecting annotated-types>=0.6.0 (from pydantic==2.14.1->-r tools/ci_p041_p080/requirements.txt (line 7))
+2026-10-22T20:30:18.8194804Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+2026-10-22T20:30:19.2183523Z Collecting pydantic-core==2.50.1 (from pydantic==2.14.1->-r tools/ci_p041_p080/requirements.txt (line 7))
+2026-10-22T20:30:19.2350701Z   Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+2026-10-22T20:30:19.2597251Z Collecting click>=7.0 (from uvicorn==0.54.0->-r tools/ci_p041_p080/requirements.txt (line 8))
+2026-10-22T20:30:19.2749580Z   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+2026-10-22T20:30:19.3031291Z Collecting h11>=0.8 (from uvicorn==0.54.0->-r tools/ci_p041_p080/requirements.txt (line 8))
+2026-10-22T20:30:19.3192519Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+2026-10-22T20:30:19.3436349Z Collecting anyio (from httpx==0.28.1->-r tools/ci_p041_p080/requirements.txt (line 9))
+2026-10-22T20:30:19.3587831Z   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+2026-10-22T20:30:19.3826783Z Collecting certifi (from httpx==0.28.1->-r tools/ci_p041_p080/requirements.txt (line 9))
+2026-10-22T20:30:19.3981478Z   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+2026-10-22T20:30:19.4206326Z Collecting httpcore==1.* (from httpx==0.28.1->-r tools/ci_p041_p080/requirements.txt (line 9))
+2026-10-22T20:30:19.4357346Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+2026-10-22T20:30:19.4580560Z Collecting idna (from httpx==0.28.1->-r tools/ci_p041_p080/requirements.txt (line 9))
+2026-10-22T20:30:19.4732768Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+2026-10-22T20:30:19.5734516Z Collecting psycopg-binary==3.3.6 (from psycopg[binary]==3.3.6->-r tools/ci_p041_p080/requirements.txt (line 10))
+2026-10-22T20:30:19.5888271Z   Downloading psycopg_binary-3.3.6-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.7 kB)
+2026-10-22T20:30:19.6116527Z Collecting pycparser (from cffi>=2.0.0->cryptography==50.0.2->-r tools/ci_p041_p080/requirements.txt (line 5))
+2026-10-22T20:30:19.6269522Z   Downloading pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
+2026-10-22T20:30:19.6492975Z Collecting cloudpickle>=3.0 (from joblib>=1.3.0->scikit-learn==1.8.0->-r tools/ci_p041_p080/requirements.txt (line 4))
+2026-10-22T20:30:19.6653999Z   Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+2026-10-22T20:30:19.6917675Z Downloading numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+2026-10-22T20:30:19.9323438Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 72.9 MB/s  0:00:00
+2026-10-22T20:30:19.9481166Z Downloading scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.0 MB)
+2026-10-22T20:30:20.3020163Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.0/35.0 MB 98.9 MB/s  0:00:00
+2026-10-22T20:30:20.3242861Z Downloading scikit_learn-1.8.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (8.9 MB)
+2026-10-22T20:30:20.3919765Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.9/8.9 MB 132.2 MB/s  0:00:00
+2026-10-22T20:30:20.4078141Z Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+2026-10-22T20:30:20.4379538Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 158.8 MB/s  0:00:00
+2026-10-22T20:30:20.4541835Z Downloading fastapi-0.143.2-py3-none-any.whl (144 kB)
+2026-10-22T20:30:20.4721918Z Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+2026-10-22T20:30:20.5018183Z Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+2026-10-22T20:30:20.5188273Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+2026-10-22T20:30:20.5363374Z Downloading psycopg-3.3.6-py3-none-any.whl (215 kB)
+2026-10-22T20:30:20.5537793Z Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+2026-10-22T20:30:20.5576034Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 231.1 MB/s  0:00:00
+2026-10-22T20:30:20.5751981Z Downloading pillow-12.1.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.0 MB)
+2026-10-22T20:30:20.6413470Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 105.9 MB/s  0:00:00
+2026-10-22T20:30:20.6567385Z Downloading psycopg_binary-3.3.6-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.2 MB)
+2026-10-22T20:30:20.6902388Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 154.7 MB/s  0:00:00
+2026-10-22T20:30:20.7057445Z Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+2026-10-22T20:30:20.7199877Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 147.7 MB/s  0:00:00
+2026-10-22T20:30:20.7359574Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+2026-10-22T20:30:20.7527875Z Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+2026-10-22T20:30:20.7692700Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+2026-10-22T20:30:20.7857334Z Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+2026-10-22T20:30:20.8024128Z Downloading click-8.5.0-py3-none-any.whl (125 kB)
+2026-10-22T20:30:20.8194971Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+2026-10-22T20:30:20.8360339Z Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+2026-10-22T20:30:20.8615478Z Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+2026-10-22T20:30:20.8778476Z Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+2026-10-22T20:30:20.8944930Z Downloading starlette-1.9.0-py3-none-any.whl (80 kB)
+2026-10-22T20:30:20.9110708Z Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+2026-10-22T20:30:20.9280210Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+2026-10-22T20:30:21.0645208Z Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+2026-10-22T20:30:21.0811235Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-10-22T20:30:21.0979175Z Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+2026-10-22T20:30:21.1145998Z Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+2026-10-22T20:30:21.1313831Z Downloading pycparser-3.12-py3-none-any.whl (62 kB)
+2026-10-22T20:30:21.3031419Z Installing collected packages: typing-extensions, threadpoolctl, PyYAML, pycparser, psycopg-binary, Pillow, numpy, idna, h11, cloudpickle, click, certifi, annotated-types, annotated-doc, uvicorn, typing-inspection, scipy, pydantic-core, psycopg, opentelemetry-api, joblib, httpcore, cffi, anyio, starlette, scikit-learn, pydantic, httpx, cryptography, fastapi
+2026-10-22T20:30:27.7866991Z 
+2026-10-22T20:30:27.7885633Z Successfully installed Pillow-12.1.0 PyYAML-6.0.3 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 certifi-2026.10.19 cffi-2.1.1 click-8.5.0 cloudpickle-3.1.2 cryptography-50.0.2 fastapi-0.143.2 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 joblib-1.6.0 numpy-2.3.5 opentelemetry-api-1.45.1 psycopg-3.3.6 psycopg-binary-3.3.6 pycparser-3.12 pydantic-2.14.1 pydantic-core-2.50.1 scikit-learn-1.8.0 scipy-1.17.0 starlette-1.9.0 threadpoolctl-3.7.0 typing-extensions-4.16.0 typing-inspection-0.4.4 uvicorn-0.54.0
+2026-10-22T20:30:27.7892008Z 
+2026-10-22T20:30:27.7892253Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+2026-10-22T20:30:27.7892660Z [notice] To update, run: pip install --upgrade pip
+2026-10-22T20:30:27.8938951Z ##[group]Run python -m pip freeze > ci-results/p054-runtime/requirements-effective.txt
+2026-10-22T20:30:27.8939313Z python -m pip freeze > ci-results/p054-runtime/requirements-effective.txt
+2026-10-22T20:30:27.8995625Z ##[endgroup]
+2026-10-22T20:30:28.0912105Z ##[group]Run python tools/ci_p041_p080/runner.py --sources . --out ci-results/p054-runtime --projects 54
+2026-10-22T20:30:28.0912770Z python tools/ci_p041_p080/runner.py --sources . --out ci-results/p054-runtime --projects 54
+2026-10-22T20:30:28.0988671Z ##[endgroup]
+2026-10-22T20:30:28.5931460Z P054 001: test_app PASS
+2026-10-22T20:30:28.9058009Z P054 002: test_http PASS
+2026-10-22T20:30:28.9764649Z P054 003: test_release_builder PASS
+2026-10-22T20:30:29.0069370Z P054 004: demo_build_release PASS
+2026-10-22T20:30:29.6385608Z P054 005: demo_live_http_test PASS
+2026-10-22T20:30:29.8374700Z P054 006: docker_info PASS
+2026-10-22T20:30:44.0372143Z P054 007: docker_build PASS
+2026-10-22T20:30:44.2096801Z P054 008: container_start PASS
+2026-10-22T20:30:44.2222880Z P054 009: container_inspect PASS
+2026-10-22T20:30:46.2480605Z P054 010: P054 Docker health HTTP PASS
+2026-10-22T20:30:46.2500050Z P054 011: P054 Docker POST PASS
+2026-10-22T20:30:46.2516943Z P054 012: P054 Docker GET PASS
+2026-10-22T20:30:46.2548302Z P054 013: P054 Docker invalid input PASS
+2026-10-22T20:30:46.2548938Z P054 014: P054 Docker non-root PASS
+2026-10-22T20:30:46.2651195Z P054 015: container_logs PASS
+2026-10-22T20:30:46.3725670Z P054 016: container_cleanup PASS
+2026-10-22T20:30:46.3736898Z P054 017: original_files_unchanged PASS
+2026-10-22T20:30:46.3742586Z P054 018: required_suites_and_runtime_checks PASS

@@ -1,0 +1,280 @@
+# Log pubblico sanificato; estratto operativo, non log integrale del runner.
+# Provenienza: https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39847787696/job/120065582204
+# Job: P041-P053 and P057-P080 / Ubuntu / Python 3.12
+# Esito ufficiale: success
+# Intervallo registrato: 2026-10-22T20:19:10.7210255Z — 2026-10-22T20:20:50.0842929Z
+# SHA-256 della copia di ingresso conservata privatamente: f7e448caec3fa51b9d21dd0e94d7e5845b328f71118635ca221ba50882f88af5
+# Omesse sezioni di preparazione/checkout/autenticazione e metadati interni del runner.
+# Conservati comandi operativi, output, errori e codici di uscita presenti; gli identificatori di ambiente sono sostituiti.
+
+2026-10-22T20:19:21.6588713Z ##[group]Run mkdir -p ci-results/p041-p080-core
+2026-10-22T20:19:21.6589175Z mkdir -p ci-results/p041-p080-core
+2026-10-22T20:19:21.6851090Z ##[endgroup]
+2026-10-22T20:19:21.7018945Z ##[group]Run python -m pip install -r tools/ci_p041_p080/requirements.txt
+2026-10-22T20:19:21.7019494Z python -m pip install -r tools/ci_p041_p080/requirements.txt
+2026-10-22T20:19:21.7090560Z ##[endgroup]
+2026-10-22T20:19:22.8121853Z Collecting numpy==2.3.5 (from -r tools/ci_p041_p080/requirements.txt (line 2))
+2026-10-22T20:19:22.8772977Z   Downloading numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-10-22T20:19:23.0304498Z Collecting scipy==1.17.0 (from -r tools/ci_p041_p080/requirements.txt (line 3))
+2026-10-22T20:19:23.0381263Z   Downloading scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-10-22T20:19:23.1407765Z Collecting scikit-learn==1.8.0 (from -r tools/ci_p041_p080/requirements.txt (line 4))
+2026-10-22T20:19:23.1482831Z   Downloading scikit_learn-1.8.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+2026-10-22T20:19:23.3373112Z Collecting cryptography==50.0.2 (from -r tools/ci_p041_p080/requirements.txt (line 5))
+2026-10-22T20:19:23.3467151Z   Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.4 kB)
+2026-10-22T20:19:23.3912718Z Collecting fastapi==0.143.2 (from -r tools/ci_p041_p080/requirements.txt (line 6))
+2026-10-22T20:19:23.3987552Z   Downloading fastapi-0.143.2-py3-none-any.whl.metadata (26 kB)
+2026-10-22T20:19:23.5079411Z Collecting pydantic==2.14.1 (from -r tools/ci_p041_p080/requirements.txt (line 7))
+2026-10-22T20:19:23.5156033Z   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+2026-10-22T20:19:23.5563859Z Collecting uvicorn==0.54.0 (from -r tools/ci_p041_p080/requirements.txt (line 8))
+2026-10-22T20:19:23.5642344Z   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+2026-10-22T20:19:23.5876549Z Collecting httpx==0.28.1 (from -r tools/ci_p041_p080/requirements.txt (line 9))
+2026-10-22T20:19:23.5954072Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+2026-10-22T20:19:23.6160478Z Collecting psycopg==3.3.6 (from psycopg[binary]==3.3.6->-r tools/ci_p041_p080/requirements.txt (line 10))
+2026-10-22T20:19:23.6231832Z   Downloading psycopg-3.3.6-py3-none-any.whl.metadata (4.4 kB)
+2026-10-22T20:19:23.6822817Z Collecting PyYAML==6.0.3 (from -r tools/ci_p041_p080/requirements.txt (line 11))
+2026-10-22T20:19:23.6896750Z   Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+2026-10-22T20:19:23.8608393Z Collecting Pillow==12.1.0 (from -r tools/ci_p041_p080/requirements.txt (line 12))
+2026-10-22T20:19:23.8700892Z   Downloading pillow-12.1.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+2026-10-22T20:19:23.8988937Z Collecting joblib>=1.3.0 (from scikit-learn==1.8.0->-r tools/ci_p041_p080/requirements.txt (line 4))
+2026-10-22T20:19:23.9116502Z   Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+2026-10-22T20:19:23.9278517Z Collecting threadpoolctl>=3.2.0 (from scikit-learn==1.8.0->-r tools/ci_p041_p080/requirements.txt (line 4))
+2026-10-22T20:19:23.9351548Z   Downloading threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+2026-10-22T20:19:24.0437467Z Collecting cffi>=2.0.0 (from cryptography==50.0.2->-r tools/ci_p041_p080/requirements.txt (line 5))
+2026-10-22T20:19:24.0511887Z   Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+2026-10-22T20:19:24.0825691Z Collecting starlette>=0.46.0 (from fastapi==0.143.2->-r tools/ci_p041_p080/requirements.txt (line 6))
+2026-10-22T20:19:24.0902172Z   Downloading starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+2026-10-22T20:19:24.1116275Z Collecting typing-extensions>=4.8.0 (from fastapi==0.143.2->-r tools/ci_p041_p080/requirements.txt (line 6))
+2026-10-22T20:19:24.1186933Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-10-22T20:19:24.1329891Z Collecting typing-inspection>=0.4.2 (from fastapi==0.143.2->-r tools/ci_p041_p080/requirements.txt (line 6))
+2026-10-22T20:19:24.1401647Z   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+2026-10-22T20:19:24.1540833Z Collecting annotated-doc>=0.0.2 (from fastapi==0.143.2->-r tools/ci_p041_p080/requirements.txt (line 6))
+2026-10-22T20:19:24.1610339Z   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+2026-10-22T20:19:24.1860572Z Collecting opentelemetry-api>=1.44.0 (from fastapi==0.143.2->-r tools/ci_p041_p080/requirements.txt (line 6))
+2026-10-22T20:19:24.1965506Z   Downloading opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+2026-10-22T20:19:24.2110042Z Collecting annotated-types>=0.6.0 (from pydantic==2.14.1->-r tools/ci_p041_p080/requirements.txt (line 7))
+2026-10-22T20:19:24.2182077Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+2026-10-22T20:19:25.0152905Z Collecting pydantic-core==2.50.1 (from pydantic==2.14.1->-r tools/ci_p041_p080/requirements.txt (line 7))
+2026-10-22T20:19:25.0240023Z   Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+2026-10-22T20:19:25.0466127Z Collecting click>=7.0 (from uvicorn==0.54.0->-r tools/ci_p041_p080/requirements.txt (line 8))
+2026-10-22T20:19:25.0545169Z   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+2026-10-22T20:19:25.0708077Z Collecting h11>=0.8 (from uvicorn==0.54.0->-r tools/ci_p041_p080/requirements.txt (line 8))
+2026-10-22T20:19:25.0836304Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+2026-10-22T20:19:25.1063310Z Collecting anyio (from httpx==0.28.1->-r tools/ci_p041_p080/requirements.txt (line 9))
+2026-10-22T20:19:25.1134281Z   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+2026-10-22T20:19:25.1367060Z Collecting certifi (from httpx==0.28.1->-r tools/ci_p041_p080/requirements.txt (line 9))
+2026-10-22T20:19:25.1439355Z   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+2026-10-22T20:19:25.1632738Z Collecting httpcore==1.* (from httpx==0.28.1->-r tools/ci_p041_p080/requirements.txt (line 9))
+2026-10-22T20:19:25.1706976Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+2026-10-22T20:19:25.1908465Z Collecting idna (from httpx==0.28.1->-r tools/ci_p041_p080/requirements.txt (line 9))
+2026-10-22T20:19:25.2007740Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+2026-10-22T20:19:25.3545392Z Collecting psycopg-binary==3.3.6 (from psycopg[binary]==3.3.6->-r tools/ci_p041_p080/requirements.txt (line 10))
+2026-10-22T20:19:25.3618528Z   Downloading psycopg_binary-3.3.6-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.7 kB)
+2026-10-22T20:19:25.3831997Z Collecting pycparser (from cffi>=2.0.0->cryptography==50.0.2->-r tools/ci_p041_p080/requirements.txt (line 5))
+2026-10-22T20:19:25.3909760Z   Downloading pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
+2026-10-22T20:19:25.4096247Z Collecting cloudpickle>=3.0 (from joblib>=1.3.0->scikit-learn==1.8.0->-r tools/ci_p041_p080/requirements.txt (line 4))
+2026-10-22T20:19:25.4165386Z   Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+2026-10-22T20:19:25.4379122Z Downloading numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+2026-10-22T20:19:25.7361594Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 58.8 MB/s  0:00:00
+2026-10-22T20:19:25.7435787Z Downloading scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.0 MB)
+2026-10-22T20:19:26.0331083Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.0/35.0 MB 121.3 MB/s  0:00:00
+2026-10-22T20:19:26.0405363Z Downloading scikit_learn-1.8.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (8.9 MB)
+2026-10-22T20:19:26.1154276Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.9/8.9 MB 121.5 MB/s  0:00:00
+2026-10-22T20:19:26.1228057Z Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+2026-10-22T20:19:26.1439686Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 238.4 MB/s  0:00:00
+2026-10-22T20:19:26.1984838Z Downloading fastapi-0.143.2-py3-none-any.whl (144 kB)
+2026-10-22T20:19:26.2079321Z Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+2026-10-22T20:19:26.2178565Z Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+2026-10-22T20:19:26.2270060Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+2026-10-22T20:19:26.2357823Z Downloading psycopg-3.3.6-py3-none-any.whl (215 kB)
+2026-10-22T20:19:26.2452545Z Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+2026-10-22T20:19:26.2510623Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 164.1 MB/s  0:00:00
+2026-10-22T20:19:26.2623765Z Downloading pillow-12.1.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.0 MB)
+2026-10-22T20:19:26.3003778Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 192.7 MB/s  0:00:00
+2026-10-22T20:19:26.3079472Z Downloading psycopg_binary-3.3.6-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.2 MB)
+2026-10-22T20:19:26.3307802Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 263.8 MB/s  0:00:00
+2026-10-22T20:19:26.3388815Z Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+2026-10-22T20:19:26.3499234Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 249.7 MB/s  0:00:00
+2026-10-22T20:19:26.3568730Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+2026-10-22T20:19:26.3657859Z Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+2026-10-22T20:19:26.3743945Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+2026-10-22T20:19:26.3835979Z Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+2026-10-22T20:19:26.3942864Z Downloading click-8.5.0-py3-none-any.whl (125 kB)
+2026-10-22T20:19:26.4043777Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+2026-10-22T20:19:26.4129198Z Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+2026-10-22T20:19:26.4237693Z Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+2026-10-22T20:19:26.4325685Z Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+2026-10-22T20:19:26.4409934Z Downloading starlette-1.9.0-py3-none-any.whl (80 kB)
+2026-10-22T20:19:26.4496644Z Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+2026-10-22T20:19:26.4583430Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+2026-10-22T20:19:26.4670414Z Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+2026-10-22T20:19:26.4754774Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-10-22T20:19:26.4843437Z Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+2026-10-22T20:19:26.4931472Z Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+2026-10-22T20:19:26.5023792Z Downloading pycparser-3.12-py3-none-any.whl (62 kB)
+2026-10-22T20:19:26.7902675Z Installing collected packages: typing-extensions, threadpoolctl, PyYAML, pycparser, psycopg-binary, Pillow, numpy, idna, h11, cloudpickle, click, certifi, annotated-types, annotated-doc, uvicorn, typing-inspection, scipy, pydantic-core, psycopg, opentelemetry-api, joblib, httpcore, cffi, anyio, starlette, scikit-learn, pydantic, httpx, cryptography, fastapi
+2026-10-22T20:19:37.6378821Z 
+2026-10-22T20:19:37.6410942Z Successfully installed Pillow-12.1.0 PyYAML-6.0.3 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 certifi-2026.10.19 cffi-2.1.1 click-8.5.0 cloudpickle-3.1.2 cryptography-50.0.2 fastapi-0.143.2 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 joblib-1.6.0 numpy-2.3.5 opentelemetry-api-1.45.1 psycopg-3.3.6 psycopg-binary-3.3.6 pycparser-3.12 pydantic-2.14.1 pydantic-core-2.50.1 scikit-learn-1.8.0 scipy-1.17.0 starlette-1.9.0 threadpoolctl-3.7.0 typing-extensions-4.16.0 typing-inspection-0.4.4 uvicorn-0.54.0
+2026-10-22T20:19:37.6420422Z 
+2026-10-22T20:19:37.6420910Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+2026-10-22T20:19:37.6421524Z [notice] To update, run: pip install --upgrade pip
+2026-10-22T20:19:37.7766972Z ##[group]Run python --version > ci-results/p041-p080-core/python.txt
+2026-10-22T20:19:37.7767503Z python --version > ci-results/p041-p080-core/python.txt
+2026-10-22T20:19:37.7767944Z java -version > ci-results/p041-p080-core/java.txt 2>&1
+2026-10-22T20:19:37.7768345Z dotnet --info > ci-results/p041-p080-core/dotnet.txt
+2026-10-22T20:19:37.7768752Z openssl version > ci-results/p041-p080-core/openssl.txt
+2026-10-22T20:19:37.7769238Z python -m pip freeze > ci-results/p041-p080-core/requirements-effective.txt
+2026-10-22T20:19:37.7838895Z ##[endgroup]
+2026-10-22T20:19:39.2750030Z ##[group]Run python tools/ci_p041_p080/runner.py --sources . --out ci-results/p041-p080-core --projects 41-53,57-80
+2026-10-22T20:19:39.2750932Z python tools/ci_p041_p080/runner.py --sources . --out ci-results/p041-p080-core --projects 41-53,57-80
+2026-10-22T20:19:39.2822548Z ##[endgroup]
+2026-10-22T20:19:40.7797723Z P041 001: javac_compile PASS
+2026-10-22T20:19:40.8489428Z P041 002: NotificationsTest PASS
+2026-10-22T20:19:40.8497737Z P041 003: original_files_unchanged PASS
+2026-10-22T20:19:40.8502124Z P041 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:48.9934110Z P042 001: dotnet_assertion_suite PASS
+2026-10-22T20:19:48.9947146Z P042 002: original_files_unchanged PASS
+2026-10-22T20:19:48.9950605Z P042 003: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:49.0534828Z P043 001: test_edges PASS
+2026-10-22T20:19:49.0978114Z P043 002: test_p043 PASS
+2026-10-22T20:19:49.0992503Z P043 003: original_files_unchanged PASS
+2026-10-22T20:19:49.0998211Z P043 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:49.9789454Z P044 001: javac_compile PASS
+2026-10-22T20:19:50.0583977Z P044 002: DocumentEdgesTest PASS
+2026-10-22T20:19:50.0968992Z P044 003: DocumentVersioningTest PASS
+2026-10-22T20:19:50.0980676Z P044 004: original_files_unchanged PASS
+2026-10-22T20:19:50.0985555Z P044 005: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:50.2663960Z P045 001: test_network_plan PASS
+2026-10-22T20:19:50.3059752Z P045 002: demo_network_plan PASS
+2026-10-22T20:19:50.3067497Z P045 003: original_files_unchanged PASS
+2026-10-22T20:19:50.3072017Z P045 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:50.3485235Z P046 001: test_p046 PASS
+2026-10-22T20:19:50.3491944Z P046 002: original_files_unchanged PASS
+2026-10-22T20:19:50.3496311Z P046 003: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:50.3794348Z P047 001: test_p047 PASS
+2026-10-22T20:19:50.3801147Z P047 002: original_files_unchanged PASS
+2026-10-22T20:19:50.3805511Z P047 003: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:50.4190584Z P048 001: test_edges PASS
+2026-10-22T20:19:50.4539655Z P048 002: test_p048 PASS
+2026-10-22T20:19:50.4548616Z P048 003: original_files_unchanged PASS
+2026-10-22T20:19:50.4552681Z P048 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:50.4997745Z P049 001: test_edges PASS
+2026-10-22T20:19:50.5380757Z P049 002: test_p049 PASS
+2026-10-22T20:19:50.5389925Z P049 003: original_files_unchanged PASS
+2026-10-22T20:19:50.5394542Z P049 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:50.5833322Z P050 001: test_p050 PASS
+2026-10-22T20:19:50.5841252Z P050 002: original_files_unchanged PASS
+2026-10-22T20:19:50.5847425Z P050 003: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:50.6154232Z P051 001: test_p051 PASS
+2026-10-22T20:19:50.6516649Z P051 002: test_reference PASS
+2026-10-22T20:19:50.6525393Z P051 003: original_files_unchanged PASS
+2026-10-22T20:19:50.6529734Z P051 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:50.6837579Z P052 001: test_p052 PASS
+2026-10-22T20:19:50.7255212Z P052 002: test_reference PASS
+2026-10-22T20:19:50.7263891Z P052 003: original_files_unchanged PASS
+2026-10-22T20:19:50.7268238Z P052 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:50.7572657Z P053 001: test_p053 PASS
+2026-10-22T20:19:50.8028652Z P053 002: test_reference PASS
+2026-10-22T20:19:50.8037361Z P053 003: original_files_unchanged PASS
+2026-10-22T20:19:50.8041473Z P053 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:50.9062883Z P057 001: test_p057 PASS
+2026-10-22T20:19:50.9070166Z P057 002: original_files_unchanged PASS
+2026-10-22T20:19:50.9074616Z P057 003: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:50.9544205Z P058 001: test_edges PASS
+2026-10-22T20:19:50.9924405Z P058 002: test_p058 PASS
+2026-10-22T20:19:51.0303972Z P058 003: demo_demo_corrupt_backup PASS
+2026-10-22T20:19:51.0330370Z P058 004: original_files_unchanged PASS
+2026-10-22T20:19:51.0335443Z P058 005: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:51.0642349Z P059 001: test_edges PASS
+2026-10-22T20:19:51.0918201Z P059 002: test_p059 PASS
+2026-10-22T20:19:51.0927500Z P059 003: original_files_unchanged PASS
+2026-10-22T20:19:51.0932107Z P059 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:51.1833322Z P060 001: test_calc PASS
+2026-10-22T20:19:51.2865039Z P060 002: test_edges PASS
+2026-10-22T20:19:51.3659475Z P060 003: test_p060 PASS
+2026-10-22T20:19:51.4092315Z P060 004: demo_build_release PASS
+2026-10-22T20:19:51.4106816Z P060 005: original_files_unchanged PASS
+2026-10-22T20:19:51.4112111Z P060 006: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:51.5229488Z P061 001: unittest_project_suite PASS
+2026-10-22T20:19:51.5604543Z P061 002: demo_observability PASS
+2026-10-22T20:19:51.5614550Z P061 003: original_files_unchanged PASS
+2026-10-22T20:19:51.5619227Z P061 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:19:51.6900487Z P062 001: unittest_project_suite PASS
+2026-10-22T20:19:51.7254584Z P062 002: demo_dr PASS
+2026-10-22T20:19:51.7264096Z P062 003: original_files_unchanged PASS
+2026-10-22T20:19:51.7268323Z P062 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:02.8774500Z P063 001: unittest_project_suite PASS
+2026-10-22T20:20:03.9177119Z P063 002: demo_auth_service PASS
+2026-10-22T20:20:03.9186540Z P063 003: original_files_unchanged PASS
+2026-10-22T20:20:03.9190895Z P063 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:04.0313345Z P064 001: unittest_project_suite PASS
+2026-10-22T20:20:04.0519472Z P064 002: demo_safe_search PASS
+2026-10-22T20:20:04.0528957Z P064 003: original_files_unchanged PASS
+2026-10-22T20:20:04.0533350Z P064 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:04.1725899Z P065 001: unittest_project_suite PASS
+2026-10-22T20:20:04.2144493Z P065 002: demo_web_defense PASS
+2026-10-22T20:20:04.2153802Z P065 003: original_files_unchanged PASS
+2026-10-22T20:20:04.2158315Z P065 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:04.4398825Z P066 001: unittest_project_suite PASS
+2026-10-22T20:20:04.4714173Z P066 002: demo_auth_api PASS
+2026-10-22T20:20:04.4723729Z P066 003: original_files_unchanged PASS
+2026-10-22T20:20:04.4728372Z P066 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:04.7207039Z P067 001: unittest_project_suite PASS
+2026-10-22T20:20:04.8322974Z P067 002: demo_cert_check PASS
+2026-10-22T20:20:04.8332775Z P067 003: original_files_unchanged PASS
+2026-10-22T20:20:04.8337596Z P067 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:05.1342257Z P068 001: unittest_project_suite PASS
+2026-10-22T20:20:05.1526429Z P068 002: demo_network_defense PASS
+2026-10-22T20:20:05.1536777Z P068 003: original_files_unchanged PASS
+2026-10-22T20:20:05.1542191Z P068 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:05.2725531Z P069 001: unittest_project_suite PASS
+2026-10-22T20:20:05.2981079Z P069 002: demo_hardening_audit PASS
+2026-10-22T20:20:05.2992918Z P069 003: original_files_unchanged PASS
+2026-10-22T20:20:05.2998228Z P069 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:05.4214906Z P070 001: unittest_project_suite PASS
+2026-10-22T20:20:05.4593486Z P070 002: demo_incident_response PASS
+2026-10-22T20:20:05.4604663Z P070 003: original_files_unchanged PASS
+2026-10-22T20:20:05.4609570Z P070 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:05.5546734Z P071 001: unittest_project_suite PASS
+2026-10-22T20:20:05.5679570Z P071 002: demo_threat_model PASS
+2026-10-22T20:20:05.5689762Z P071 003: original_files_unchanged PASS
+2026-10-22T20:20:05.5694172Z P071 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:06.0685433Z P072 001: unittest_project_suite PASS
+2026-10-22T20:20:06.0928497Z P072 002: demo_mini_soc PASS
+2026-10-22T20:20:06.0938598Z P072 003: original_files_unchanged PASS
+2026-10-22T20:20:06.0944919Z P072 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:07.6607196Z P073 001: unittest_project_suite PASS
+2026-10-22T20:20:08.7782357Z P073 002: demo_energy_regression PASS
+2026-10-22T20:20:09.9769726Z P073 003: demo_examples PASS
+2026-10-22T20:20:09.9780944Z P073 004: original_files_unchanged PASS
+2026-10-22T20:20:09.9787194Z P073 005: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:12.7887411Z P074 001: unittest_project_suite PASS
+2026-10-22T20:20:13.9376181Z P074 002: demo_churn PASS
+2026-10-22T20:20:15.1731173Z P074 003: demo_examples PASS
+2026-10-22T20:20:15.1743227Z P074 004: original_files_unchanged PASS
+2026-10-22T20:20:15.1750435Z P074 005: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:32.4088916Z P075 001: unittest_project_suite PASS
+2026-10-22T20:20:33.7695937Z P075 002: demo_anomaly PASS
+2026-10-22T20:20:35.6077350Z P075 003: demo_examples PASS
+2026-10-22T20:20:35.6093286Z P075 004: original_files_unchanged PASS
+2026-10-22T20:20:35.6099412Z P075 005: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:35.8864476Z P076 001: unittest_project_suite PASS
+2026-10-22T20:20:35.9751861Z P076 002: demo_recommender PASS
+2026-10-22T20:20:36.0722737Z P076 003: demo_examples PASS
+2026-10-22T20:20:36.0734288Z P076 004: original_files_unchanged PASS
+2026-10-22T20:20:36.0740230Z P076 005: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:37.5552783Z P077 001: unittest_project_suite PASS
+2026-10-22T20:20:38.7893857Z P077 002: demo_ticket_nlp PASS
+2026-10-22T20:20:38.7904361Z P077 003: original_files_unchanged PASS
+2026-10-22T20:20:38.7909935Z P077 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:40.4389822Z P078 001: unittest_project_suite PASS
+2026-10-22T20:20:41.7102473Z P078 002: demo_waste_cv PASS
+2026-10-22T20:20:41.7114535Z P078 003: original_files_unchanged PASS
+2026-10-22T20:20:41.7120322Z P078 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:43.3384949Z P079 001: unittest_project_suite PASS
+2026-10-22T20:20:44.5336614Z P079 002: demo_forecast PASS
+2026-10-22T20:20:44.5348102Z P079 003: original_files_unchanged PASS
+2026-10-22T20:20:44.5355432Z P079 004: required_suites_and_runtime_checks PASS
+2026-10-22T20:20:46.0090620Z P080 001: unittest_project_suite PASS
+2026-10-22T20:20:47.1972488Z P080 002: demo_rag PASS
+2026-10-22T20:20:47.1983726Z P080 003: original_files_unchanged PASS
+2026-10-22T20:20:47.1988706Z P080 004: required_suites_and_runtime_checks PASS

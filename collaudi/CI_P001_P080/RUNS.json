@@ -1,0 +1,28 @@
+{
+  "runs": [
+    {
+      "id": 39847787696,
+      "run_number": 1,
+      "run_attempt": 1,
+      "head_sha": "30babaf161101b104948b9857db4c5ff1b2a2cc5",
+      "path": ".github/workflows/collaudo-p001-p080.yml",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39847787696",
+      "created_at": "2026-10-22T20:19:06Z",
+      "updated_at": "2026-10-22T20:22:14Z"
+    },
+    {
+      "id": 39849393701,
+      "run_number": 2,
+      "run_attempt": 1,
+      "head_sha": "44cd421247ca2bfe838baa735cf6180134f80464",
+      "path": ".github/workflows/collaudo-p001-p080.yml",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701",
+      "created_at": "2026-10-22T20:30:08Z",
+      "updated_at": "2026-10-22T20:33:27Z"
+    }
+  ]
+}

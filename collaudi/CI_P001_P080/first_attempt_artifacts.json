@@ -1,0 +1,99 @@
+{
+  "artifacts": [
+    {
+      "id": 12456855256,
+      "name": "p041-p080-core-39847787696-1",
+      "size_in_bytes": 280858,
+      "url": "https://api.github.com/repos/davideiannella/100-progetti-informatica-pratica/actions/artifacts/12456855256",
+      "archive_download_url": "https://api.github.com/repos/davideiannella/100-progetti-informatica-pratica/actions/artifacts/12456855256/zip",
+      "expired": false,
+      "created_at": "2026-10-22T20:20:49Z",
+      "expires_at": "2026-11-21T20:20:47Z",
+      "updated_at": "2026-10-22T20:20:49Z",
+      "digest": "sha256:ed7dc1ce183b220b0357311826133616f3c2b4625c15e80c7cd5b28cef6c8ef2",
+      "workflow_run": {
+        "id": 39847787696,
+        "repository_id": 1429034454,
+        "head_repository_id": 1429034454,
+        "head_branch": "main",
+        "head_sha": "30babaf161101b104948b9857db4c5ff1b2a2cc5"
+      }
+    },
+    {
+      "id": 12456840054,
+      "name": "p054-runtime-39847787696-1",
+      "size_in_bytes": 33762,
+      "url": "https://api.github.com/repos/davideiannella/100-progetti-informatica-pratica/actions/artifacts/12456840054",
+      "archive_download_url": "https://api.github.com/repos/davideiannella/100-progetti-informatica-pratica/actions/artifacts/12456840054/zip",
+      "expired": false,
+      "created_at": "2026-10-22T20:19:52Z",
+      "expires_at": "2026-11-21T20:19:51Z",
+      "updated_at": "2026-10-22T20:19:52Z",
+      "digest": "sha256:26cf58548d0530686d625529d7389320fad5793577c0be115d01e59754b8d39f",
+      "workflow_run": {
+        "id": 39847787696,
+        "repository_id": 1429034454,
+        "head_repository_id": 1429034454,
+        "head_branch": "main",
+        "head_sha": "30babaf161101b104948b9857db4c5ff1b2a2cc5"
+      }
+    },
+    {
+      "id": 12456645947,
+      "name": "p056-runtime-39847787696-1",
+      "size_in_bytes": 132430,
+      "url": "https://api.github.com/repos/davideiannella/100-progetti-informatica-pratica/actions/artifacts/12456645947",
+      "archive_download_url": "https://api.github.com/repos/davideiannella/100-progetti-informatica-pratica/actions/artifacts/12456645947/zip",
+      "expired": false,
+      "created_at": "2026-10-22T20:22:12Z",
+      "expires_at": "2026-11-21T20:22:11Z",
+      "updated_at": "2026-10-22T20:22:12Z",
+      "digest": "sha256:4929a160ebfb914ac949b2757a3f22d43a11c5476ed20ea75b3dd524a222cd5e",
+      "workflow_run": {
+        "id": 39847787696,
+        "repository_id": 1429034454,
+        "head_repository_id": 1429034454,
+        "head_branch": "main",
+        "head_sha": "30babaf161101b104948b9857db4c5ff1b2a2cc5"
+      }
+    },
+    {
+      "id": 12455384661,
+      "name": "p001-p040-complete-validation",
+      "size_in_bytes": 35192,
+      "url": "https://api.github.com/repos/davideiannella/100-progetti-informatica-pratica/actions/artifacts/12455384661",
+      "archive_download_url": "https://api.github.com/repos/davideiannella/100-progetti-informatica-pratica/actions/artifacts/12455384661/zip",
+      "expired": false,
+      "created_at": "2026-10-22T20:21:12Z",
+      "expires_at": "2027-01-20T20:19:06Z",
+      "updated_at": "2026-10-22T20:21:12Z",
+      "digest": "sha256:ebfd1909f1becfb58d6ac3f7ebc92b22e98c6c70d7034c2c1516c39f9a0d5845",
+      "workflow_run": {
+        "id": 39847787696,
+        "repository_id": 1429034454,
+        "head_repository_id": 1429034454,
+        "head_branch": "main",
+        "head_sha": "30babaf161101b104948b9857db4c5ff1b2a2cc5"
+      }
+    },
+    {
+      "id": 12455348645,
+      "name": "p055-runtime-39847787696-1",
+      "size_in_bytes": 45441,
+      "url": "https://api.github.com/repos/davideiannella/100-progetti-informatica-pratica/actions/artifacts/12455348645",
+      "archive_download_url": "https://api.github.com/repos/davideiannella/100-progetti-informatica-pratica/actions/artifacts/12455348645/zip",
+      "expired": false,
+      "created_at": "2026-10-22T20:20:21Z",
+      "expires_at": "2026-11-21T20:20:20Z",
+      "updated_at": "2026-10-22T20:20:21Z",
+      "digest": "sha256:5d9b21f88bead3d6e5c4489c0cd579522f80e87d5365dbda86a29c35c027aec5",
+      "workflow_run": {
+        "id": 39847787696,
+        "repository_id": 1429034454,
+        "head_repository_id": 1429034454,
+        "head_branch": "main",
+        "head_sha": "30babaf161101b104948b9857db4c5ff1b2a2cc5"
+      }
+    }
+  ]
+}

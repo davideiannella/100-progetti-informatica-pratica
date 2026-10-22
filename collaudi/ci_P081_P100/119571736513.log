@@ -1,119 +1,14 @@
-﻿2026-10-22T00:45:08.3300343Z Current runner version: '2.338.0'
-2026-10-22T00:45:08.3339441Z ##[group]Runner Image Provisioner
-2026-10-22T00:45:08.3340805Z Hosted Compute Agent
-2026-10-22T00:45:08.3341868Z Version: 20261002.596
-2026-10-22T00:45:08.3343006Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
-2026-10-22T00:45:08.3344388Z Build Date: 2026-10-02T22:28:27Z
-2026-10-22T00:45:08.3346021Z Worker ID: {56714b4b-9ed8-4547-9761-897bf827febc}
-2026-10-22T00:45:08.3347391Z Region: northcentralus
-2026-10-22T00:45:08.3348514Z Cloud: Azure
-2026-10-22T00:45:08.3349468Z ##[endgroup]
-2026-10-22T00:45:08.3351513Z ##[group]Operating System
-2026-10-22T00:45:08.3352652Z Microsoft Windows Server 2025
-2026-10-22T00:45:08.3353767Z 10.0.26100
-2026-10-22T00:45:08.3354798Z Datacenter
-2026-10-22T00:45:08.3355740Z ##[endgroup]
-2026-10-22T00:45:08.3356749Z ##[group]Runner Image
-2026-10-22T00:45:08.3357838Z Image: windows-2025-vs2026
-2026-10-22T00:45:08.3358935Z Version: 20261007.264.1
-2026-10-22T00:45:08.3361493Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20261007.264/images/windows/Windows2025-VS2026-Readme.md
-2026-10-22T00:45:08.3364970Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20261007.264
-2026-10-22T00:45:08.3367159Z ##[endgroup]
-2026-10-22T00:45:08.3369266Z ##[group]GITHUB_TOKEN Permissions
-2026-10-22T00:45:08.3388211Z Contents: read
-2026-10-22T00:45:08.3389233Z Metadata: read
-2026-10-22T00:45:08.3390263Z ##[endgroup]
-2026-10-22T00:45:08.3393047Z Secret source: Actions
-2026-10-22T00:45:08.3394589Z Cache mode: write
-2026-10-22T00:45:08.3395743Z Prepare workflow directory
-2026-10-22T00:45:08.3741295Z Prepare all required actions
-2026-10-22T00:45:08.3790032Z Getting action download info
-2026-10-22T00:45:08.5695428Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
-2026-10-22T00:45:11.4800065Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
-2026-10-22T00:45:13.3468015Z Complete job name: windows-latest Python 3.13
-2026-10-22T00:45:14.6516566Z ##[group]Run actions/checkout@v4
-2026-10-22T00:45:14.6517342Z with:
-2026-10-22T00:45:14.6517710Z   repository: davideiannella/100-progetti-informatica-pratica
-2026-10-22T00:45:14.6522139Z   token: ***
-2026-10-22T00:45:14.6522358Z   ssh-strict: true
-2026-10-22T00:45:14.6522579Z   ssh-user: git
-2026-10-22T00:45:14.6522819Z   persist-credentials: true
-2026-10-22T00:45:14.6523045Z   clean: true
-2026-10-22T00:45:14.6523207Z   sparse-checkout-cone-mode: true
-2026-10-22T00:45:14.6523416Z   fetch-depth: 1
-2026-10-22T00:45:14.6523575Z   fetch-tags: false
-2026-10-22T00:45:14.6523730Z   show-progress: true
-2026-10-22T00:45:14.6523886Z   lfs: false
-2026-10-22T00:45:14.6524037Z   submodules: false
-2026-10-22T00:45:14.6524187Z   set-safe-directory: true
-2026-10-22T00:45:14.6524376Z   allow-unsafe-pr-checkout: false
-2026-10-22T00:45:14.6524804Z ##[endgroup]
-2026-10-22T00:45:14.9488494Z Syncing repository: davideiannella/100-progetti-informatica-pratica
-2026-10-22T00:45:14.9489712Z ##[group]Getting Git version info
-2026-10-22T00:45:14.9490109Z Working directory is '<ambiente_di_test>'
-2026-10-22T00:45:15.6082460Z [command]"<ambiente_di_test>" version
-2026-10-22T00:45:22.2324494Z git version 2.56.0.windows.2
-2026-10-22T00:45:22.2373492Z ##[endgroup]
-2026-10-22T00:45:22.2386855Z Temporarily overriding HOME='<ambiente_di_test>' before making global git config changes
-2026-10-22T00:45:22.2387876Z Adding repository directory to the temporary git global config as a safe directory
-2026-10-22T00:45:22.2396754Z [command]"<ambiente_di_test>" config --global --add safe.directory <ambiente_di_test>
-2026-10-22T00:45:22.6476474Z Deleting the contents of '<ambiente_di_test>'
-2026-10-22T00:45:22.6481301Z ##[group]Initializing the repository
-2026-10-22T00:45:22.6492409Z [command]"<ambiente_di_test>" init <ambiente_di_test>
-2026-10-22T00:45:24.7057544Z Initialized empty Git repository in <ambiente_di_test>
-2026-10-22T00:45:24.7103797Z [command]"<ambiente_di_test>" remote add origin https://github.com/davideiannella/100-progetti-informatica-pratica
-2026-10-22T00:45:25.3095955Z ##[endgroup]
-2026-10-22T00:45:25.3096658Z ##[group]Disabling automatic garbage collection
-2026-10-22T00:45:25.3103815Z [command]"<ambiente_di_test>" config --local gc.auto 0
-2026-10-22T00:45:25.3436842Z ##[endgroup]
-2026-10-22T00:45:25.3437296Z ##[group]Setting up auth
-2026-10-22T00:45:25.3463581Z [command]"<ambiente_di_test>" config --local --name-only --get-regexp core\.sshCommand
-2026-10-22T00:45:25.3775971Z [command]"<ambiente_di_test>" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
-2026-10-22T00:45:32.0369806Z [command]"<ambiente_di_test>" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-2026-10-22T00:45:32.0684347Z [command]"<ambiente_di_test>" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
-2026-10-22T00:45:32.6098450Z [command]"<ambiente_di_test>" config --local --name-only --get-regexp ^includeIf\.gitdir:
-2026-10-22T00:45:32.6441611Z [command]"<ambiente_di_test>" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
-2026-10-22T00:45:33.2071770Z [command]"<ambiente_di_test>" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
-2026-10-22T00:45:33.2408495Z ##[endgroup]
-2026-10-22T00:45:33.2409211Z ##[group]Fetching the repository
-2026-10-22T00:45:33.2419288Z [command]"<ambiente_di_test>" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +32e201b1fb1258c4e7c77d32af323b966647b908:refs/remotes/origin/main
-2026-10-22T00:45:43.4765628Z From https://github.com/davideiannella/100-progetti-informatica-pratica
-2026-10-22T00:45:43.4766585Z  * [new ref]         32e201b1fb1258c4e7c77d32af323b966647b908 -> origin/main
-2026-10-22T00:45:43.4803756Z ##[endgroup]
-2026-10-22T00:45:43.4813684Z ##[group]Determining the checkout info
-2026-10-22T00:45:43.4814599Z ##[endgroup]
-2026-10-22T00:45:43.4818110Z [command]"<ambiente_di_test>" sparse-checkout disable
-2026-10-22T00:45:43.5242145Z [command]"<ambiente_di_test>" config --local --unset-all extensions.worktreeConfig
-2026-10-22T00:45:43.5543570Z ##[group]Checking out the ref
-2026-10-22T00:45:43.5553268Z [command]"<ambiente_di_test>" checkout --progress --force -B main refs/remotes/origin/main
-2026-10-22T00:45:43.8575186Z Switched to a new branch 'main'
-2026-10-22T00:45:43.8627220Z branch 'main' set up to track 'origin/main'.
-2026-10-22T00:45:43.8676475Z ##[endgroup]
-2026-10-22T00:45:43.9119799Z [command]"<ambiente_di_test>" log -1 --format=%H
-2026-10-22T00:45:43.9392535Z 32e201b1fb1258c4e7c77d32af323b966647b908
-2026-10-22T00:45:43.9796832Z ##[group]Run actions/setup-python@v5
-2026-10-22T00:45:43.9797108Z with:
-2026-10-22T00:45:43.9797275Z   python-version: 3.13
-2026-10-22T00:45:43.9797459Z   check-latest: false
-2026-10-22T00:45:43.9799684Z   token: ***
-2026-10-22T00:45:43.9799855Z   update-environment: true
-2026-10-22T00:45:43.9800042Z   allow-prereleases: false
-2026-10-22T00:45:43.9800209Z   freethreaded: false
-2026-10-22T00:45:43.9800370Z ##[endgroup]
-2026-10-22T00:45:44.1078182Z ##[group]Installed versions
-2026-10-22T00:45:44.1158021Z (node:4128) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-10-22T00:45:44.1160612Z (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-10-22T00:45:44.1161073Z Successfully set up CPython (3.13.16)
-2026-10-22T00:45:44.1176847Z ##[endgroup]
+# Log pubblico sanificato; estratto operativo, non log integrale del runner.
+# Provenienza: https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280/job/119571736513
+# Job: windows-latest Python 3.13
+# Esito ufficiale: PASS
+# Intervallo registrato: 2026-10-22T00:45:08.3339441Z — 2026-10-22T00:46:14.2657062Z
+# SHA-256 della copia di ingresso conservata privatamente: b8b0c3c3277ad2ad9a510600526ff4ac5c9896bac219be0d3e31230975e6dff9
+# Omesse sezioni di preparazione/checkout/autenticazione e metadati interni del runner.
+# Conservati comandi operativi, output, errori e codici di uscita presenti; gli identificatori di ambiente sono sostituiti.
+
 2026-10-22T00:45:44.1432390Z ##[group]Run python -m pip install -r requirements-p081-p100.txt
-2026-10-22T00:45:44.1432885Z [36;1mpython -m pip install -r requirements-p081-p100.txt[0m
-2026-10-22T00:45:44.2615962Z shell: <ambiente_di_test> -command ". '{0}'"
-2026-10-22T00:45:44.2616261Z env:
-2026-10-22T00:45:44.2616485Z   pythonLocation: <ambiente_di_test>
-2026-10-22T00:45:44.2616867Z   PKG_CONFIG_PATH: <ambiente_di_test>
-2026-10-22T00:45:44.2617222Z   Python_ROOT_DIR: <ambiente_di_test>
-2026-10-22T00:45:44.2617526Z   Python2_ROOT_DIR: <ambiente_di_test>
-2026-10-22T00:45:44.2617845Z   Python3_ROOT_DIR: <ambiente_di_test>
+2026-10-22T00:45:44.1432885Z python -m pip install -r requirements-p081-p100.txt
 2026-10-22T00:45:44.2618078Z ##[endgroup]
 2026-10-22T00:45:49.7329505Z Collecting numpy==2.3.5 (from -r requirements-p081-p100.txt (line 2))
 2026-10-22T00:45:49.7671708Z   Downloading numpy-2.3.5-cp313-cp313-win_amd64.whl.metadata (60 kB)
@@ -144,14 +39,7 @@
 2026-10-22T00:46:05.9419636Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
 2026-10-22T00:46:05.9420152Z [notice] To update, run: python.exe -m pip install --upgrade pip
 2026-10-22T00:46:06.1016393Z ##[group]Run python -B tools/collaudo_p081_p100.py
-2026-10-22T00:46:06.1016753Z [36;1mpython -B tools/collaudo_p081_p100.py[0m
-2026-10-22T00:46:06.1073566Z shell: <ambiente_di_test> -command ". '{0}'"
-2026-10-22T00:46:06.1074026Z env:
-2026-10-22T00:46:06.1074244Z   pythonLocation: <ambiente_di_test>
-2026-10-22T00:46:06.1074615Z   PKG_CONFIG_PATH: <ambiente_di_test>
-2026-10-22T00:46:06.1074968Z   Python_ROOT_DIR: <ambiente_di_test>
-2026-10-22T00:46:06.1075291Z   Python2_ROOT_DIR: <ambiente_di_test>
-2026-10-22T00:46:06.1075596Z   Python3_ROOT_DIR: <ambiente_di_test>
+2026-10-22T00:46:06.1016753Z python -B tools/collaudo_p081_p100.py
 2026-10-22T00:46:06.1075839Z ##[endgroup]
 2026-10-22T00:46:06.6065668Z {"project": "P081", "returncode": 0, "test_methods": 14, "expected_test_methods": 14, "skipped": 0, "status": "PASS"}
 2026-10-22T00:46:06.6993292Z {"project": "P082", "returncode": 0, "test_methods": 12, "expected_test_methods": 12, "skipped": 0, "status": "PASS"}
@@ -358,22 +246,3 @@
 2026-10-22T00:46:12.2591046Z   "failed_projects": []
 2026-10-22T00:46:12.2591265Z }
 2026-10-22T00:46:12.2591459Z COLLAUDO_SUMMARY_END
-2026-10-22T00:46:12.3791317Z Post job cleanup.
-2026-10-22T00:46:12.4934356Z (node:5712) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-10-22T00:46:12.4934926Z (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-10-22T00:46:12.5474143Z Post job cleanup.
-2026-10-22T00:46:12.6886263Z [command]"<ambiente_di_test>" version
-2026-10-22T00:46:12.7174393Z git version 2.56.0.windows.2
-2026-10-22T00:46:12.7233295Z Temporarily overriding HOME='<ambiente_di_test>' before making global git config changes
-2026-10-22T00:46:12.7234247Z Adding repository directory to the temporary git global config as a safe directory
-2026-10-22T00:46:12.7243587Z [command]"<ambiente_di_test>" config --global --add safe.directory <ambiente_di_test>
-2026-10-22T00:46:12.7571678Z [command]"<ambiente_di_test>" config --local --name-only --get-regexp core\.sshCommand
-2026-10-22T00:46:12.7859763Z [command]"<ambiente_di_test>" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
-2026-10-22T00:46:13.2736581Z [command]"<ambiente_di_test>" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-2026-10-22T00:46:13.3001168Z http.https://github.com/.extraheader
-2026-10-22T00:46:13.3037117Z [command]"<ambiente_di_test>" config --local --unset-all http.https://github.com/.extraheader
-2026-10-22T00:46:13.3335926Z [command]"<ambiente_di_test>" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
-2026-10-22T00:46:13.7765186Z [command]"<ambiente_di_test>" config --local --name-only --get-regexp ^includeIf\.gitdir:
-2026-10-22T00:46:13.8053935Z [command]"<ambiente_di_test>" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
-2026-10-22T00:46:14.2567251Z Cleaning up orphan processes
-2026-10-22T00:46:14.2657062Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

@@ -1,0 +1,167 @@
+{
+  "policy": "Copie pubbliche derivate: omessi preparazione del runner, checkout, configurazione di accesso e pulizia finale; sostituiti percorsi host, identificatori e indirizzi di rete interni. Conservati comandi operativi, output, errori, codici di uscita, date e provenienza pubblica. Nessuna nuova esecuzione e nessuna modifica ai sorgenti o ai risultati numerici. Gli ZIP ufficiali e le loro parti non sono distribuiti nel repository.",
+  "max_public_file_bytes": 90000,
+  "files": [
+    {
+      "file": "tentativo_1/job_120065582005.log",
+      "kind": "sanitized_operational_job_log",
+      "job_id": 120065582005,
+      "run_id": 39847787696,
+      "provenance_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39847787696/job/120065582005",
+      "bytes": 15380,
+      "sha256": "c71400c7f0e211830b27dafce01f29f9adaf980ae4dd13c3eee59d3b94305f00",
+      "input_sha256": "d8ac4a8c181748ec3b9584f1efafe2fbfc9df403850498fb83959519cc7cd6cd",
+      "input_bytes": 37383,
+      "recombined_sha256": "c71400c7f0e211830b27dafce01f29f9adaf980ae4dd13c3eee59d3b94305f00",
+      "compression": "none",
+      "storage": "single_file"
+    },
+    {
+      "file": "tentativo_1/job_120065581891.log",
+      "kind": "sanitized_operational_job_log",
+      "job_id": 120065581891,
+      "run_id": 39847787696,
+      "provenance_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39847787696/job/120065581891",
+      "bytes": 15264,
+      "sha256": "3bcb24be10b1f71fa0e8426e83d2a41f707058006866f8d958520207dee4a957",
+      "input_sha256": "4f2f156b17946fa50bb260af7514d7205eab96c1f850c1587ddc231c7d879987",
+      "input_bytes": 37266,
+      "recombined_sha256": "3bcb24be10b1f71fa0e8426e83d2a41f707058006866f8d958520207dee4a957",
+      "compression": "none",
+      "storage": "single_file"
+    },
+    {
+      "file": "tentativo_1/job_120065581446.log",
+      "kind": "sanitized_operational_job_log",
+      "job_id": 120065581446,
+      "run_id": 39847787696,
+      "provenance_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39847787696/job/120065581446",
+      "bytes": 22031,
+      "sha256": "a9e75db7b3fdc7b990d851a2cca6b24d78f1a4a6146465c42ec5284100bd9403",
+      "input_sha256": "101ae342e35d796fd0151770b89e4baaf325cce961bed9985939a616ec5ebc10",
+      "input_bytes": 45022,
+      "recombined_sha256": "a9e75db7b3fdc7b990d851a2cca6b24d78f1a4a6146465c42ec5284100bd9403",
+      "compression": "none",
+      "storage": "single_file"
+    },
+    {
+      "file": "tentativo_1/job_120065582204.log",
+      "kind": "sanitized_operational_job_log",
+      "job_id": 120065582204,
+      "run_id": 39847787696,
+      "provenance_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39847787696/job/120065582204",
+      "bytes": 24645,
+      "sha256": "8573fdc508a28dd863ca4529a00185536ddeceaa3ea8fa4844c61468b4f70d4c",
+      "input_sha256": "f7e448caec3fa51b9d21dd0e94d7e5845b328f71118635ca221ba50882f88af5",
+      "input_bytes": 57114,
+      "recombined_sha256": "8573fdc508a28dd863ca4529a00185536ddeceaa3ea8fa4844c61468b4f70d4c",
+      "compression": "none",
+      "storage": "single_file"
+    },
+    {
+      "file": "tentativo_1/job_120065582119.log",
+      "kind": "sanitized_operational_job_log",
+      "job_id": 120065582119,
+      "run_id": 39847787696,
+      "provenance_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39847787696/job/120065582119",
+      "bytes": 78359,
+      "sha256": "03a0412baf10c77361ac0c7f83a5b966e69ee01f0c0b4f1fc1264c55a8579e07",
+      "input_sha256": "14e8e88e80edf05252e878b8f021491f45c52a2887ffabc16a59a42341e84217",
+      "input_bytes": 234869,
+      "recombined_sha256": "03a0412baf10c77361ac0c7f83a5b966e69ee01f0c0b4f1fc1264c55a8579e07",
+      "compression": "none",
+      "storage": "single_file"
+    },
+    {
+      "file": "tentativo_2/job_120071207033.log",
+      "kind": "sanitized_operational_job_log",
+      "job_id": 120071207033,
+      "run_id": 39849393701,
+      "provenance_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071207033",
+      "bytes": 22140,
+      "sha256": "5c8a835b9ed0886312f091c2c1b198cb1f795a4a4559481d2291c43f5fbedf11",
+      "input_sha256": "5ea6aae5cf34a7dc6fd63fa793ca22eabed9b363864af76bb78e6781b934e722",
+      "input_bytes": 45132,
+      "recombined_sha256": "5c8a835b9ed0886312f091c2c1b198cb1f795a4a4559481d2291c43f5fbedf11",
+      "compression": "none",
+      "storage": "single_file"
+    },
+    {
+      "file": "tentativo_2/job_120071206842.log",
+      "kind": "sanitized_operational_job_log",
+      "job_id": 120071206842,
+      "run_id": 39849393701,
+      "provenance_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071206842",
+      "bytes": 15263,
+      "sha256": "302ad025c9b2d551543c30d3f6ec5f61ea2dd7d4b91fc4196e66cc535f3031d0",
+      "input_sha256": "39f1c90dd1d0a9efc19503ee57d0e2a5f7c91c994fd7a329433e7ff811ab493d",
+      "input_bytes": 37268,
+      "recombined_sha256": "302ad025c9b2d551543c30d3f6ec5f61ea2dd7d4b91fc4196e66cc535f3031d0",
+      "compression": "none",
+      "storage": "single_file"
+    },
+    {
+      "file": "tentativo_2/job_120071206976.log",
+      "kind": "sanitized_operational_job_log",
+      "job_id": 120071206976,
+      "run_id": 39849393701,
+      "provenance_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071206976",
+      "bytes": 15382,
+      "sha256": "0b2954d49c537b0655920eb1fc085df03e3b52f09c5e98bfdf6ac656f3221b48",
+      "input_sha256": "7c92a77750d7724acbe29d4647782ebe3ec527fc26ba234955908c2e99e61d44",
+      "input_bytes": 37387,
+      "recombined_sha256": "0b2954d49c537b0655920eb1fc085df03e3b52f09c5e98bfdf6ac656f3221b48",
+      "compression": "none",
+      "storage": "single_file"
+    },
+    {
+      "file": "tentativo_2/job_120071206449.log",
+      "kind": "sanitized_operational_job_log",
+      "job_id": 120071206449,
+      "run_id": 39849393701,
+      "provenance_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071206449",
+      "bytes": 24708,
+      "sha256": "5335ead7ec530964f5d6e4c9e70f66f14fbfeba578cfb14ab4ad65804e6ad7f4",
+      "input_sha256": "b26b910287080455fc68da753dbbb7858dbae3d804f20e079cfdc577dd5c8991",
+      "input_bytes": 57173,
+      "recombined_sha256": "5335ead7ec530964f5d6e4c9e70f66f14fbfeba578cfb14ab4ad65804e6ad7f4",
+      "compression": "none",
+      "storage": "single_file"
+    },
+    {
+      "file": "tentativo_2/job_120071206795.log",
+      "kind": "sanitized_operational_job_log",
+      "job_id": 120071206795,
+      "run_id": 39849393701,
+      "provenance_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071206795",
+      "bytes": 79003,
+      "sha256": "29f11ebb9e9e1bd00be0ec46bf73867faa81b814a3f9361e7c0904f005cc4d27",
+      "input_sha256": "64c9e0d2361e6769833088c2447b2e545bc55d837ec186c6c6a8917597e56d55",
+      "input_bytes": 272973,
+      "recombined_sha256": "29f11ebb9e9e1bd00be0ec46bf73867faa81b814a3f9361e7c0904f005cc4d27",
+      "compression": "none",
+      "storage": "single_file"
+    }
+  ],
+  "official_artifacts": {
+    "metadata_files": [
+      "artifacts.json",
+      "first_attempt_artifacts.json"
+    ],
+    "download_verification_files": [
+      "download_verification.json",
+      "first_attempt_download_verification.json"
+    ],
+    "distribution": "private_archive_only",
+    "digest_note": "I digest GitHub degli artifact si riferiscono ai download originali; gli SHA-256 dei file pubblici identificano le copie derivate sanificate."
+  },
+  "complete_summary": {
+    "file": "RIEPILOGO_COMPLETO.json.gz",
+    "sha256": "41d9cc7e42a52c3b9eec5a7fa6f5d3f7b1192c3b2a63671b606f288f66d6672f",
+    "bytes": 9797,
+    "uncompressed_sha256": "42e20ea5419f11a4ef64580f3ff6129fce777ff42381470bfebfa1a38304d304",
+    "uncompressed_bytes": 112810,
+    "kind": "sanitized_derived_json",
+    "compression": "gzip deterministic mtime=0"
+  }
+}
