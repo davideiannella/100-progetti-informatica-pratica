@@ -173,7 +173,7 @@ print('CI_ENGINE_RESULT=' + JSON.stringify({status:'PASS',checks:checks,version:
         "MATCH ()-[r:CONNECTS]->() RETURN 'CI_ASSERT_edges' AS check, count(r)=3 AS passed;",
         "MATCH (a:Stop)-[r:CONNECTS]->(b:Stop) WITH a,b,r ORDER BY a.id,b.id WITH collect(a.id+'>'+b.id+':'+toString(r.minutes)) AS edges RETURN 'CI_ASSERT_edge_values' AS check, edges=['A>B:5','A>C:20','B>C:7'] AS passed;",
         "MATCH p=(:Stop {id:'A'})-[:CONNECTS*1..4]->(:Stop {id:'C'}) WITH p,reduce(total=0,r IN relationships(p)|total+r.minutes) AS minutes ORDER BY minutes LIMIT 1 RETURN 'CI_ASSERT_shortest' AS check, minutes=12 AND [n IN nodes(p)|n.id]=['A','B','C'] AS passed;",
-        "MATCH p=(:Stop {id:'C'})-[:CONNECTS*1..4]->(:Stop {id:'A'}) RETURN 'CI_ASSERT_direction' AS check, count(p)=0 AS passed;",
+        "MATCH p=(:Stop {id:'C'})-[:CONNECTS*1..4]->(:Stop {id:'A'}) WITH count(p) AS n RETURN 'CI_ASSERT_direction' AS check, n=0 AS passed;",
     ]
     script = 'MATCH (n) DETACH DELETE n;\n' + original + '\n' + original + '\n' + '\n'.join(checks)
     result = execute(['docker', 'exec', '-i', container, 'cypher-shell', '--format', 'plain'],
@@ -208,6 +208,15 @@ def run_project(entry: dict, root: Path, workspace: Path, replacements: dict[str
     replacements[str(copied)] = f'<WORK>/{pid}'
     steps = []
     blocked = False
+    if any(step['argv'][0] == 'dotnet' for step in entry['steps']):
+        # La macchina hosted contiene anche SDK successivi: selezione esplicita
+        # nella copia temporanea, senza cambiare i file originali del progetto.
+        (copied / 'global.json').write_text(json.dumps({'sdk': {'version': '8.0.426', 'rollForward': 'disable'}}))
+        version = execute(['dotnet', '--version'], copied, replacements, kind='toolchain')
+        if version['status'] == 'PASS' and version['stdout'].strip() != '8.0.426':
+            version.update(status='FAIL', reason='Expected .NET SDK 8.0.426')
+        steps.append(version)
+        blocked = version['status'] != 'PASS'
     for step in entry['steps']:
         if blocked:
             steps.append({'kind': step['kind'], 'suite_file': step.get('suite_file'), 'status': 'NOT_RUN',

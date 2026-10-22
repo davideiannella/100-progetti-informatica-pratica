@@ -314,6 +314,10 @@ def execute_project(entry, sources, out, skip_runtime):
             for file in entry["test_files"]:
                 ev.run(["java", "-ea", "-cp", "build", Path(file).stem], name=Path(file).stem, kind="test_suite", strict=False)
         elif entry["language"] == "C#":
+            (work / "global.json").write_text(json.dumps({"sdk": {"version": "8.0.426", "rollForward": "disable"}}))
+            version = ev.run(["dotnet", "--version"], name="dotnet_sdk_version", kind="toolchain")
+            if version["stdout"].strip() != "8.0.426":
+                raise RuntimeError("Expected .NET SDK 8.0.426 in the temporary project copy")
             ev.run(["dotnet", "run", "--project", "tests/P042.Tests.csproj"], name="dotnet_assertion_suite", kind="test_suite", strict=False)
         elif (work / "run_tests.py").is_file():
             ev.run([sys.executable, "-B", "run_tests.py"], name="unittest_project_suite", kind="test_suite", timeout=900, strict=False)
