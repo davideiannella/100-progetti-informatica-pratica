@@ -1,0 +1,64 @@
+{
+  "source_visibility": "private",
+  "provenance": "GitHub Actions storico: registri esportati dal repository di collaudo non pubblico. Gli URL privati non sono riportati; run ID e commit restano invariati.",
+  "date_local": "2026-10-17",
+  "overall": "passed",
+  "projects": {
+    "P054": {
+      "overall": "passed",
+      "run_id": 38981849010,
+      "commit": "9cc5ac72d0d2136aed1fe3d6db9104bf984d9a99",
+      "assertions": 5,
+      "commands": 8,
+      "command_failures": 0
+    },
+    "P055": {
+      "overall": "passed",
+      "run_id": 38981849010,
+      "commit": "9cc5ac72d0d2136aed1fe3d6db9104bf984d9a99",
+      "assertions": 6,
+      "commands": 11,
+      "command_failures": 0
+    },
+    "P056": {
+      "overall": "passed",
+      "run_id": 38982515580,
+      "commit": "ec904133995c4c57d1be447f75a4e2d68d49946b",
+      "assertions": 9,
+      "commands": 128,
+      "command_failures": 0
+    }
+  },
+  "runs": [
+    {
+      "id": 38981849010,
+      "commit": "9cc5ac72d0d2136aed1fe3d6db9104bf984d9a99",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-16T23:31:02Z",
+      "updated_at": "2026-10-16T23:36:00Z"
+    },
+    {
+      "id": 38982515580,
+      "commit": "ec904133995c4c57d1be447f75a4e2d68d49946b",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-16T23:38:42Z",
+      "updated_at": "2026-10-16T23:41:42Z"
+    }
+  ],
+  "versions": {
+    "docker": "28.0.4",
+    "compose": "2.38.2",
+    "kind": "0.33.0",
+    "kubectl": "1.37.1",
+    "kubernetes_server": "1.37.0",
+    "postgresql": "17.11",
+    "python_host": "3.12.3"
+  },
+  "assertions_total": 20,
+  "first_p056_attempt": "Timeout in fault injection; SIGSTOP from same PID namespace did not stop PID 1",
+  "runner_correction": "Signal from containerd runtime in dedicated kind node; verified liveness event and restartCount 1 with Ready true",
+  "application_source_changed": false,
+  "previous_p001_p040_suites_rerun": false
+}

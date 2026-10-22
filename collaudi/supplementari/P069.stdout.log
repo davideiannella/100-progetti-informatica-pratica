@@ -1,0 +1,157 @@
+{
+  "files": [
+    {
+      "mode": "0600",
+      "findings": [],
+      "mode_unchanged": true,
+      "content_unchanged": true
+    },
+    {
+      "mode": "0644",
+      "findings": [
+        "group-readable",
+        "world-readable"
+      ],
+      "mode_unchanged": true,
+      "content_unchanged": true
+    },
+    {
+      "mode": "0606",
+      "findings": [
+        "world-readable",
+        "world-writable"
+      ],
+      "mode_unchanged": true,
+      "content_unchanged": true
+    },
+    {
+      "mode": "0777",
+      "findings": [
+        "group-readable",
+        "group-writable",
+        "group-executable",
+        "world-readable",
+        "world-writable",
+        "world-executable",
+        "owner-executable"
+      ],
+      "mode_unchanged": true,
+      "content_unchanged": true
+    }
+  ],
+  "symlink_findings": [
+    "symbolic-link"
+  ],
+  "secure_config": {
+    "password_authentication": false,
+    "permit_root_login": false,
+    "automatic_security_updates": true
+  },
+  "secure_findings": [],
+  "incomplete_findings": [
+    "missing:permit_root_login",
+    "missing:automatic_security_updates"
+  ],
+  "configurations": [
+    {
+      "configuration": {
+        "password_authentication": false,
+        "permit_root_login": false,
+        "automatic_security_updates": false
+      },
+      "findings": [
+        "security-updates-disabled"
+      ]
+    },
+    {
+      "configuration": {
+        "password_authentication": false,
+        "permit_root_login": false,
+        "automatic_security_updates": true
+      },
+      "findings": []
+    },
+    {
+      "configuration": {
+        "password_authentication": false,
+        "permit_root_login": true,
+        "automatic_security_updates": false
+      },
+      "findings": [
+        "ssh-root-login-enabled",
+        "security-updates-disabled"
+      ]
+    },
+    {
+      "configuration": {
+        "password_authentication": false,
+        "permit_root_login": true,
+        "automatic_security_updates": true
+      },
+      "findings": [
+        "ssh-root-login-enabled"
+      ]
+    },
+    {
+      "configuration": {
+        "password_authentication": true,
+        "permit_root_login": false,
+        "automatic_security_updates": false
+      },
+      "findings": [
+        "ssh-password-auth-enabled",
+        "security-updates-disabled"
+      ]
+    },
+    {
+      "configuration": {
+        "password_authentication": true,
+        "permit_root_login": false,
+        "automatic_security_updates": true
+      },
+      "findings": [
+        "ssh-password-auth-enabled"
+      ]
+    },
+    {
+      "configuration": {
+        "password_authentication": true,
+        "permit_root_login": true,
+        "automatic_security_updates": false
+      },
+      "findings": [
+        "ssh-password-auth-enabled",
+        "ssh-root-login-enabled",
+        "security-updates-disabled"
+      ]
+    },
+    {
+      "configuration": {
+        "password_authentication": true,
+        "permit_root_login": true,
+        "automatic_security_updates": true
+      },
+      "findings": [
+        "ssh-password-auth-enabled",
+        "ssh-root-login-enabled"
+      ]
+    }
+  ],
+  "permission_modes": 4096,
+  "finding_occurrences": {
+    "world-executable": 2048,
+    "world-writable": 2048,
+    "world-readable": 2048,
+    "group-executable": 2048,
+    "group-writable": 2048,
+    "group-readable": 2048,
+    "owner-executable": 2048,
+    "sticky-bit": 2048,
+    "setgid": 2048,
+    "setuid": 2048
+  },
+  "invalid_config": {
+    "status": "RIFIUTATO",
+    "reason": "i valori devono essere bool, non stringhe o interi"
+  }
+}

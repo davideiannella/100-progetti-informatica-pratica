@@ -1,0 +1,1313 @@
+[
+  {
+    "project": "P001",
+    "title": "Gestione code in uno sportello servizi",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_queue_manager.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P002",
+    "title": "Analisi dei consumi domestici da CSV",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p002.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P003",
+    "title": "Rubrica con ricerca e ordinamento",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p003.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P004",
+    "title": "Scheduler di interventi con coda di priorità",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p004.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P005",
+    "title": "Cache LRU con accesso in tempo costante",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_lru_cache.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P006",
+    "title": "Pianificatore di percorsi su grafo",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p006.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P007",
+    "title": "Suggerimenti di testo con un Trie",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p007.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P008",
+    "title": "Rilevatore di duplicati e quasi-duplicati",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p008.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P009",
+    "title": "Analisi socio-demografica con Pandas",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p009.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P010",
+    "title": "Pipeline ETL per dati aperti",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p010.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P011",
+    "title": "Analizzatore di log con espressioni regolari",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p011.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P012",
+    "title": "Ottimizzazione di consegne con programmazione dinamica",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p012.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P013",
+    "title": "Biblioteca digitale a oggetti",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "java -ea -cp build LibraryTest"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P014",
+    "title": "Prenotazioni concorrenti senza duplicati",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "java -ea -cp build SeatBookingTest"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P015",
+    "title": "Chat con client e server TCP",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 3,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "javac -Xlint:all -d build src/ChatServer.java tests/ChatIntegrationTest.java tests/ChatShutdownTest.java",
+      "java -ea -cp build ChatIntegrationTest",
+      "java -ea -cp build ChatShutdownTest"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P016",
+    "title": "Monitor di processi da riga di comando",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 3,
+    "unittest_cases_reported": null,
+    "scope": "Processi del filesystem /proc Linux; non osserva i processi nativi Windows.",
+    "test_commands": [
+      "gcc -std=c11 -Wall -Wextra -Werror -O1 -g -fsanitize=undefined -fno-sanitize-recover=all tests/test_process_monitor.c -o build/test_process_monitor",
+      "./build/test_process_monitor",
+      "python tests/test_cli.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P017",
+    "title": "Buffer circolare: gestire dati continui con memoria fissa",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "gcc -std=c11 -Wall -Wextra -Werror -O1 -g -fsanitize=undefined -fno-sanitize-recover=all tests/test_ring_buffer.c src/ring_buffer.c -o build/test_ring_buffer",
+      "./build/test_ring_buffer"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P018",
+    "title": "Sincronizzare produttore e consumatore",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 4,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "gcc -std=c11 -Wall -Wextra -Werror -O1 -g -fsanitize=undefined -fno-sanitize-recover=all tests/test_pc.c -pthread -o build/test_pc",
+      "./build/test_pc",
+      "gcc -std=c11 -Wall -Wextra -Werror -O1 -g -fsanitize=undefined -fno-sanitize-recover=all tests/test_pc_failures.c -pthread -Wl,--wrap=pthread_mutex_init -Wl,--wrap=pthread_cond_init -Wl,--wrap=pthread_create -o build/test_pc_failures",
+      "./build/test_pc_failures"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P019",
+    "title": "Coda di emergenze in C++ con priority_queue e STL",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "g++ -std=c++17 -Wall -Wextra -Werror -O1 -g -fsanitize=undefined -fno-sanitize-recover=all tests/test_dispatcher.cpp -o build/test_dispatcher",
+      "./build/test_dispatcher"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P020",
+    "title": "Memoria C++ con RAII e smart pointer",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 4,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "g++ -std=c++17 -Wall -Wextra -Werror -O1 -g -fsanitize=undefined -fno-sanitize-recover=all tests/test_inventory.cpp -o build/test_inventory",
+      "./build/test_inventory",
+      "g++ -std=c++17 -Wall -Wextra -Werror -O1 -g -fsanitize=undefined -fno-sanitize-recover=all tests/test_inventory_limits.cpp -o build/test_inventory_limits",
+      "./build/test_inventory_limits"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P021",
+    "title": "Simulare una coda di traffico",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "g++ -std=c++17 tests/test_traffic.cpp -o test_progetto",
+      "./test_progetto"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P022",
+    "title": "Nucleo .NET per manutenzioni e ordini di lavoro",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 3,
+    "unittest_cases_reported": null,
+    "scope": "Nucleo .NET e console; non collaudo di interfaccia WPF. Compilazione storica adattata al contenitore.",
+    "test_commands": [
+      "dotnet run --project tests/P022.Tests.csproj"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P023",
+    "title": "API .NET per attività concorrenti",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "API compilata con MSBuild e test HTTP reali con concorrenza",
+    "test_commands": [
+      "python tests/test_http.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P024",
+    "title": "Database di province comuni e imprese",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_database.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P025",
+    "title": "Sistema di prenotazioni sanitarie",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p025.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P026",
+    "title": "Carriera universitaria ed esami",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p026.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P027",
+    "title": "Gestione palestra e abbonamenti",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p027.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P028",
+    "title": "E-commerce: ordini, magazzino e pagamenti simulati",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p028.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P029",
+    "title": "Hotel booking senza overbooking",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p029.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P030",
+    "title": "Biblioteca SQL: automatizzare regole con trigger e viste",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p030.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P031",
+    "title": "Salvare telemetria IoT in MongoDB",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Modello Python e controllo statico iniziali; prova separata del motore MongoDB 8.0.14 nel registro dedicato.",
+    "test_commands": [
+      "python tests/test_invalid_metrics.py",
+      "python tests/test_p031.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": "MOTORI_P031_P032.json"
+  },
+  {
+    "project": "P032",
+    "title": "Grafo di mobilità urbana",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Modello Python e controllo statico iniziali; prova separata del motore Neo4j 5.26.0 nel registro dedicato.",
+    "test_commands": [
+      "python tests/test_p032.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": "MOTORI_P031_P032.json"
+  },
+  {
+    "project": "P033",
+    "title": "Analisi delle vendite con uno schema a stella",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p033.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P034",
+    "title": "Collegare record di archivi diversi",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p034.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P035",
+    "title": "Ruoli e auditing nel database",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_p035.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P036",
+    "title": "Progettare una palestra con UML",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "python tests/test_capacity_types.py",
+      "python tests/test_gym_domain.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P037",
+    "title": "API REST per trasporto pubblico",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Contratto FastAPI locale: non deployment pubblico.",
+    "test_commands": [
+      "python tests/test_p037.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P038",
+    "title": "Ticketing eventi: requisiti e diagrammi",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 3,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "java -ea -cp build TicketingTest",
+      "java -ea -cp build TicketingConcurrentTest"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P039",
+    "title": "Food delivery e confini tra servizi",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 3,
+    "unittest_cases_reported": null,
+    "scope": "Suite disponibile e casi aggiuntivi presenti",
+    "test_commands": [
+      "java -ea -cp build FoodDeliveryTest",
+      "java -ea -cp build FoodDeliveryLimitsTest"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P040",
+    "title": "Segnalazioni civiche con Clean Architecture",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P001_P040",
+    "commands_recorded": 3,
+    "unittest_cases_reported": null,
+    "scope": "Test funzionali .NET con compilazione Roslyn adattata al contenitore.",
+    "test_commands": [
+      "dotnet run --project tests/P040.Tests.csproj"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P041",
+    "title": "Motore di notifiche con il pattern Strategy",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Suite locale e casi documentati nel registro storico.",
+    "test_commands": [
+      "javac -d build src/Notifications.java tests/NotificationsTest.java",
+      "java -ea -cp build NotificationsTest"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P042",
+    "title": "Pagamenti simulati con idempotenza",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Suite locale e casi documentati nel registro storico.",
+    "test_commands": [
+      "dotnet run --project tests/P042.Tests.csproj"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P043",
+    "title": "Parcheggio software guidato dai test",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Suite locale e casi documentati nel registro storico.",
+    "test_commands": [
+      "python tests/test_p043.py",
+      "python tests/test_edges.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P044",
+    "title": "Conservare versioni immutabili dei documenti",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 3,
+    "unittest_cases_reported": null,
+    "scope": "Suite locale e casi documentati nel registro storico.",
+    "test_commands": [
+      "javac -d build src/DocumentVersioning.java tests/DocumentVersioningTest.java tests/DocumentEdgesTest.java",
+      "java -ea -cp build DocumentVersioningTest",
+      "java -ea -cp build DocumentEdgesTest"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P045",
+    "title": "Pianificare subnet IPv4 per un campus",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Piano di rete calcolato; non rete fisica installata.",
+    "test_commands": [
+      "python tests/test_network_plan.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P046",
+    "title": "VLAN e regole di accesso fra segmenti",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Modello VLAN/subnet/ACL; non configurazione di switch reali.",
+    "test_commands": [
+      "python tests/test_p046.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P047",
+    "title": "Seguire una richiesta Web su TCP",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Modello di stati del percorso web; non esecuzione di un browser.",
+    "test_commands": [
+      "python tests/test_p047.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P048",
+    "title": "Provare TCP e UDP con socket locali",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Socket TCP/UDP reali soltanto su localhost.",
+    "test_commands": [
+      "python tests/test_p048.py",
+      "python tests/test_edges.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P049",
+    "title": "Trasferire file con frame e controllo di integrità",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Trasferimento con frame e SHA-256 su socket locali.",
+    "test_commands": [
+      "python tests/test_p049.py",
+      "python tests/test_edges.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P050",
+    "title": "Stimare gli access point di un magazzino",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Modello di capacità Wi-Fi; non misurazione radio.",
+    "test_commands": [
+      "python tests/test_p050.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P051",
+    "title": "Confrontare FCFS, SJF e Round Robin",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Simulazione di scheduling, con confronti contro un modello di riferimento.",
+    "test_commands": [
+      "python tests/test_p051.py",
+      "python tests/test_reference.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P052",
+    "title": "Verificare uno stato sicuro con il banchiere",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Algoritmo di sicurezza del banchiere, con confronto esaustivo su stati generati.",
+    "test_commands": [
+      "python tests/test_p052.py",
+      "python tests/test_reference.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P053",
+    "title": "Simulare FIFO, LRU e Clock per le pagine",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Simulazione di sostituzione pagine; non modifica della memoria del sistema.",
+    "test_commands": [
+      "python tests/test_p053.py",
+      "python tests/test_reference.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P054",
+    "title": "Preparare una release riproducibile di un’API",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 4,
+    "unittest_cases_reported": null,
+    "scope": "Test locali e HTTP; runtime Docker reale riuscito successivamente su runner remoto Linux.",
+    "test_commands": [
+      "python tests/test_app.py",
+      "python tests/test_http.py",
+      "python tests/test_release_builder.py",
+      "python tools/live_http_test.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": "P054_runtime_results.json"
+  },
+  {
+    "project": "P055",
+    "title": "Collegare Web API e database con Compose",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Prima configurazione/SQLite, poi HTTP con PGlite; runtime Compose con Nginx e PostgreSQL 17.11 riuscito successivamente su runner remoto Linux.",
+    "test_commands": [
+      "python tests/test_p055.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": "P055_runtime_results.json"
+  },
+  {
+    "project": "P056",
+    "title": "Tre repliche e controlli di salute in Kubernetes",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Prima YAML e HTTP locale; runtime Kubernetes con kind riuscito successivamente. Il primo tentativo remoto aveva fallito la prova di fault injection.",
+    "test_commands": [
+      "python tests/test_p056.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": "P056_runtime_results.json.gz"
+  },
+  {
+    "project": "P057",
+    "title": "Una funzione per verificare immagini e metadati",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 1,
+    "unittest_cases_reported": null,
+    "scope": "Suite locale e casi documentati nel registro storico.",
+    "test_commands": [
+      "python tests/test_p057.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P058",
+    "title": "Creare backup e ripristinare senza perdere il target",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Suite locale e casi documentati nel registro storico.",
+    "test_commands": [
+      "python tests/test_p058.py",
+      "python tests/test_edges.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P059",
+    "title": "Modellare cache e bilanciamento fra backend sani",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 2,
+    "unittest_cases_reported": null,
+    "scope": "Modello di bilanciamento, failover e cache; non infrastruttura distribuita di produzione.",
+    "test_commands": [
+      "python tests/test_p059.py",
+      "python tests/test_edges.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P060",
+    "title": "Pipeline CI con test e integrità della release",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P041_P060",
+    "commands_recorded": 3,
+    "unittest_cases_reported": null,
+    "scope": "Test/build del simulatore CI locale; non attestazione di un’esecuzione GitHub Actions di questo progetto.",
+    "test_commands": [
+      "python -m unittest discover -s tests -v"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P061",
+    "title": "Capire se un servizio sta bene: log, metriche e alert",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 9,
+    "scope": "Monitoraggio di finestre di dati sintetici; non sistema operativo di osservabilità.",
+    "test_commands": [
+      "python run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P062",
+    "title": "Ripartire dopo un guasto: replica e failover di lettura",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 10,
+    "scope": "Replica e partizioni simulate in memoria; non cluster distribuito reale.",
+    "test_commands": [
+      "python run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P063",
+    "title": "Login sicuro: scrypt, TOTP, blocco dei tentativi e sessioni",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 19,
+    "scope": "Autenticazione didattica con SQLite e vettori di prova; non servizio pubblicato.",
+    "test_commands": [
+      "python run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P064",
+    "title": "Difendere un’applicazione dalla SQL Injection",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 8,
+    "scope": "Suite locale e casi documentati nel registro storico.",
+    "test_commands": [
+      "python run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P065",
+    "title": "Protezione Web da XSS e CSRF: contesto HTML e token di sessione",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 13,
+    "scope": "Suite locale e casi documentati nel registro storico.",
+    "test_commands": [
+      "python run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P066",
+    "title": "Proteggere un’API: token firmati, ruoli e limite delle richieste",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 25,
+    "scope": "Token e rate limiter didattici; non collaudo di sicurezza di un servizio di produzione.",
+    "test_commands": [
+      "python run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P067",
+    "title": "HTTPS sotto il cofano: TLS, certificati e PKI",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 14,
+    "scope": "Handshake TLS reale su loopback con certificati temporanei; requisiti POSIX per i permessi.",
+    "test_commands": [
+      "python -B run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P068",
+    "title": "Segmentazione di rete con firewall e rilevamento dei login falliti",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 107,
+    "scope": "Policy di rete e sequenze sintetiche; non modifica del firewall.",
+    "test_commands": [
+      "python -B run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P069",
+    "title": "Hardening Linux: un audit riproducibile di permessi e configurazione",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 8,
+    "scope": "File temporanei, permessi POSIX e configurazioni sintetiche; non hardening del sistema ospite.",
+    "test_commands": [
+      "python -B run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P070",
+    "title": "Ransomware: integrità del backup e risposta all’incidente",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 108,
+    "scope": "Workflow tabletop e prova di integrità/ripristino di dati sintetici.",
+    "test_commands": [
+      "python -B run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P071",
+    "title": "Trovare le minacce prima del codice: STRIDE e priorità ordinali",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 8,
+    "scope": "Modello di minacce e punteggi didattici; non stima empirica del rischio.",
+    "test_commands": [
+      "python -B run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P072",
+    "title": "Mini-SOC: trasformare log sintetici in alert verificabili",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 111,
+    "scope": "Analisi di log sintetici; non monitoraggio di account reali.",
+    "test_commands": [
+      "python -B run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P073",
+    "title": "Previsione dei consumi energetici",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 111,
+    "scope": "Regressione su dati sintetici; risultati dipendenti dal generatore e dall’ambiente numerico.",
+    "test_commands": [
+      "python -B run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P074",
+    "title": "Classificazione del rischio di abbandono di un servizio",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 111,
+    "scope": "Classificazione su dati sintetici; non validazione su una popolazione reale.",
+    "test_commands": [
+      "python -B run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P075",
+    "title": "Scoprire transazioni insolite con anomaly detection",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 110,
+    "scope": "Anomalie sintetiche; non misura della qualità su incidenti reali.",
+    "test_commands": [
+      "python -B run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P076",
+    "title": "Consigliare corsi in base agli interessi: recommender system",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 112,
+    "scope": "Catalogo e vettori didattici; non sistema di raccomandazione in produzione.",
+    "test_commands": [
+      "python -B run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P077",
+    "title": "Leggere e smistare ticket automaticamente con NLP",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 115,
+    "scope": "Classificazione testuale locale con dataset didattico; nessun servizio esterno.",
+    "test_commands": [
+      "python run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P078",
+    "title": "Computer Vision per classificare rifiuti: un laboratorio su palette sintetiche",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 113,
+    "scope": "Immagini sintetiche e controlli della scorciatoia cromatica; non riconoscimento visivo generale.",
+    "test_commands": [
+      "python run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P079",
+    "title": "Previsione della domanda di magazzino",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 113,
+    "scope": "Serie sintetiche e controlli di leakage; non previsione operativa.",
+    "test_commands": [
+      "python run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  },
+  {
+    "project": "P080",
+    "title": "Assistente con citazioni: retrieval ed estrazione, senza LLM",
+    "historical_status": "passed",
+    "historical_platform": "Linux",
+    "windows_native_tested": false,
+    "record_section": "P061_P080",
+    "commands_recorded": 1,
+    "unittest_cases_reported": 114,
+    "scope": "Ricerca e citazioni da corpus didattico locale; non servizio generativo esterno.",
+    "test_commands": [
+      "python run_tests.py"
+    ],
+    "evidence_file": "EVIDENZE_P001_P080.json.gz",
+    "additional_runtime_evidence": null
+  }
+]

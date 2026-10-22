@@ -1,0 +1,54 @@
+{
+  "payload_hex": "6f7264696e653d34320a",
+  "payload_size": 10,
+  "echo_equal": true,
+  "tls_version": "TLSv1.3",
+  "cipher": "TLS_AES_256_GCM_SHA384",
+  "peer_sha256": "eef9abc7674866337ba465b76032fe50bcef7ba86e1a226e4e90217237f57385",
+  "fingerprint_equal": true,
+  "key_mode_octal": "0600",
+  "rejections": [
+    {
+      "case": "hostname",
+      "status": "RIFIUTATO",
+      "error_class": "SSLCertVerificationError",
+      "verify_code": 62,
+      "verify_message": "Hostname mismatch, certificate is not valid for 'altro.invalid'."
+    },
+    {
+      "case": "ip_non_in_SAN",
+      "status": "RIFIUTATO",
+      "error_class": "SSLCertVerificationError",
+      "verify_code": 64,
+      "verify_message": "IP address mismatch, certificate is not valid for '127.0.0.1'."
+    },
+    {
+      "case": "ca_sconosciuta",
+      "status": "RIFIUTATO",
+      "error_class": "SSLCertVerificationError",
+      "verify_code": 20,
+      "verify_message": "unable to get local issuer certificate"
+    },
+    {
+      "case": "scaduto",
+      "status": "RIFIUTATO",
+      "error_class": "SSLCertVerificationError",
+      "verify_code": 10,
+      "verify_message": "certificate has expired"
+    },
+    {
+      "case": "futuro",
+      "status": "RIFIUTATO",
+      "error_class": "SSLCertVerificationError",
+      "verify_code": 9,
+      "verify_message": "certificate is not yet valid"
+    },
+    {
+      "case": "eku_client",
+      "status": "RIFIUTATO",
+      "error_class": "SSLCertVerificationError",
+      "verify_code": 26,
+      "verify_message": "unsuitable certificate purpose"
+    }
+  ]
+}

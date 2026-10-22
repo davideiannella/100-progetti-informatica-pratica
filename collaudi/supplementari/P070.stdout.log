@@ -1,0 +1,73 @@
+{
+  "backup_hex": "6f7264696e653d34320a",
+  "bytes_restored": 10,
+  "trusted_sha256": "2f88fec832f9e90b5b38f8ec9a3217df6f2f2db881389baa4baf588d9ed4b30b",
+  "evidence": {
+    "sha256": "2f88fec832f9e90b5b38f8ec9a3217df6f2f2db881389baa4baf588d9ed4b30b",
+    "size": 10
+  },
+  "states": [
+    "DETECTED",
+    "CONTAINED",
+    "ERADICATED",
+    "RECOVERED",
+    "LESSONS_LEARNED"
+  ],
+  "actions": [
+    {
+      "from": "DETECTED",
+      "to": "CONTAINED",
+      "action": "isolare nel tabletop",
+      "has_evidence": false
+    },
+    {
+      "from": "CONTAINED",
+      "to": "ERADICATED",
+      "action": "documentare rimozione della causa",
+      "has_evidence": false
+    },
+    {
+      "from": "ERADICATED",
+      "to": "RECOVERED",
+      "action": "ripristino provato",
+      "has_evidence": true
+    },
+    {
+      "from": "RECOVERED",
+      "to": "LESSONS_LEARNED",
+      "action": "registrare miglioramenti",
+      "has_evidence": false
+    }
+  ],
+  "alteration": {
+    "status": "RIFIUTATO",
+    "reason": "integrità del backup non verificata"
+  },
+  "assets": [
+    {
+      "name": "ordini",
+      "criticality": 1,
+      "max_downtime_min": 30
+    },
+    {
+      "name": "pagamenti",
+      "criticality": 1,
+      "max_downtime_min": 10
+    },
+    {
+      "name": "catalogo",
+      "criticality": 2,
+      "max_downtime_min": 5
+    }
+  ],
+  "priority": [
+    "pagamenti",
+    "ordini",
+    "catalogo"
+  ],
+  "exercise_priority": [
+    "backup",
+    "checkout",
+    "analytics"
+  ]
+}

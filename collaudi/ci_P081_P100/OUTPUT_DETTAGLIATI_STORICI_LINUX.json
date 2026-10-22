@@ -1,0 +1,1348 @@
+{
+  "provenance": "Esecuzione locale Linux del 21 ottobre 2026, distinta dai quattro job pubblici del 22 ottobre. Include stdout e stderr originali; nessuna nuova esecuzione.",
+  "dependency_note": "Le versioni dei pacchetti non sono elencate separatamente in questo summary locale; per le versioni effettive della matrice pubblica usare i quattro summary del 22 ottobre.",
+  "summary": {
+    "started_utc": "2026-10-21T20:38:50.501370+00:00",
+    "finished_utc": "2026-10-21T20:38:59.082377+00:00",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "projects": 20,
+    "passed": 20,
+    "failed": 0,
+    "unittest_cases_reported": 377,
+    "compiled_python_files": 60,
+    "source_integrity": {
+      "manifest": "SOURCE_SHA256_P081_P100.json",
+      "checked_files": 133,
+      "status": "PASS",
+      "changed": []
+    },
+    "results": [
+      {
+        "project": "P081",
+        "started_utc": "2026-10-21T20:38:50.501370+00:00",
+        "finished_utc": "2026-10-21T20:38:50.566461+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.0651,
+        "unittest_cases_reported": 14,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P081.stdout.log",
+        "stderr": "P081.stderr.log"
+      },
+      {
+        "project": "P082",
+        "started_utc": "2026-10-21T20:38:50.570735+00:00",
+        "finished_utc": "2026-10-21T20:38:50.669106+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.0984,
+        "unittest_cases_reported": 12,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P082.stdout.log",
+        "stderr": "P082.stderr.log"
+      },
+      {
+        "project": "P083",
+        "started_utc": "2026-10-21T20:38:50.679120+00:00",
+        "finished_utc": "2026-10-21T20:38:50.770008+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.0909,
+        "unittest_cases_reported": 22,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P083.stdout.log",
+        "stderr": "P083.stderr.log"
+      },
+      {
+        "project": "P084",
+        "started_utc": "2026-10-21T20:38:50.773649+00:00",
+        "finished_utc": "2026-10-21T20:38:50.841505+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.0679,
+        "unittest_cases_reported": 15,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P084.stdout.log",
+        "stderr": "P084.stderr.log"
+      },
+      {
+        "project": "P085",
+        "started_utc": "2026-10-21T20:38:50.847029+00:00",
+        "finished_utc": "2026-10-21T20:38:50.914285+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.0673,
+        "unittest_cases_reported": 17,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P085.stdout.log",
+        "stderr": "P085.stderr.log"
+      },
+      {
+        "project": "P086",
+        "started_utc": "2026-10-21T20:38:50.923120+00:00",
+        "finished_utc": "2026-10-21T20:38:50.991436+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.0683,
+        "unittest_cases_reported": 18,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P086.stdout.log",
+        "stderr": "P086.stderr.log"
+      },
+      {
+        "project": "P087",
+        "started_utc": "2026-10-21T20:38:51.000498+00:00",
+        "finished_utc": "2026-10-21T20:38:51.091476+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.091,
+        "unittest_cases_reported": 23,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P087.stdout.log",
+        "stderr": "P087.stderr.log"
+      },
+      {
+        "project": "P088",
+        "started_utc": "2026-10-21T20:38:51.096196+00:00",
+        "finished_utc": "2026-10-21T20:38:51.170280+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.0741,
+        "unittest_cases_reported": 22,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P088.stdout.log",
+        "stderr": "P088.stderr.log"
+      },
+      {
+        "project": "P089",
+        "started_utc": "2026-10-21T20:38:51.181354+00:00",
+        "finished_utc": "2026-10-21T20:38:54.983932+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 3.8026,
+        "unittest_cases_reported": 18,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P089.stdout.log",
+        "stderr": "P089.stderr.log"
+      },
+      {
+        "project": "P090",
+        "started_utc": "2026-10-21T20:38:54.999218+00:00",
+        "finished_utc": "2026-10-21T20:38:56.890591+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 1.8916,
+        "unittest_cases_reported": 19,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P090.stdout.log",
+        "stderr": "P090.stderr.log"
+      },
+      {
+        "project": "P091",
+        "started_utc": "2026-10-21T20:38:56.894109+00:00",
+        "finished_utc": "2026-10-21T20:38:56.974928+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.0808,
+        "unittest_cases_reported": 13,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P091.stdout.log",
+        "stderr": "P091.stderr.log"
+      },
+      {
+        "project": "P092",
+        "started_utc": "2026-10-21T20:38:56.989537+00:00",
+        "finished_utc": "2026-10-21T20:38:57.170121+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.1933,
+        "unittest_cases_reported": 22,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P092.stdout.log",
+        "stderr": "P092.stderr.log"
+      },
+      {
+        "project": "P093",
+        "started_utc": "2026-10-21T20:38:57.197165+00:00",
+        "finished_utc": "2026-10-21T20:38:57.360569+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.1634,
+        "unittest_cases_reported": 22,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P093.stdout.log",
+        "stderr": "P093.stderr.log"
+      },
+      {
+        "project": "P094",
+        "started_utc": "2026-10-21T20:38:57.367022+00:00",
+        "finished_utc": "2026-10-21T20:38:57.517757+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.1508,
+        "unittest_cases_reported": 20,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P094.stdout.log",
+        "stderr": "P094.stderr.log"
+      },
+      {
+        "project": "P095",
+        "started_utc": "2026-10-21T20:38:57.525511+00:00",
+        "finished_utc": "2026-10-21T20:38:57.672004+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.1465,
+        "unittest_cases_reported": 26,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P095.stdout.log",
+        "stderr": "P095.stderr.log"
+      },
+      {
+        "project": "P096",
+        "started_utc": "2026-10-21T20:38:57.679649+00:00",
+        "finished_utc": "2026-10-21T20:38:57.841661+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.1621,
+        "unittest_cases_reported": 19,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P096.stdout.log",
+        "stderr": "P096.stderr.log"
+      },
+      {
+        "project": "P097",
+        "started_utc": "2026-10-21T20:38:57.849568+00:00",
+        "finished_utc": "2026-10-21T20:38:58.062359+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.2128,
+        "unittest_cases_reported": 14,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P097.stdout.log",
+        "stderr": "P097.stderr.log"
+      },
+      {
+        "project": "P098",
+        "started_utc": "2026-10-21T20:38:58.072909+00:00",
+        "finished_utc": "2026-10-21T20:38:58.631630+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.5588,
+        "unittest_cases_reported": 17,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P098.stdout.log",
+        "stderr": "P098.stderr.log"
+      },
+      {
+        "project": "P099",
+        "started_utc": "2026-10-21T20:38:58.673815+00:00",
+        "finished_utc": "2026-10-21T20:38:58.913472+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.2397,
+        "unittest_cases_reported": 20,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P099.stdout.log",
+        "stderr": "P099.stderr.log"
+      },
+      {
+        "project": "P100",
+        "started_utc": "2026-10-21T20:38:58.927261+00:00",
+        "finished_utc": "2026-10-21T20:38:59.080195+00:00",
+        "command": [
+          "<ambiente_di_test>",
+          "-B",
+          "run_tests.py"
+        ],
+        "cwd": "<ambiente_di_test>",
+        "exit_code": 0,
+        "timeout": false,
+        "duration_seconds": 0.1529,
+        "unittest_cases_reported": 24,
+        "passed": true,
+        "zero_tests_rejected": false,
+        "skips_or_unexpected_ok_suffix": false,
+        "compiled_python_files": 3,
+        "compile_errors": [],
+        "stdout": "P100.stdout.log",
+        "stderr": "P100.stderr.log"
+      }
+    ]
+  },
+  "sixty_python_file_digests_match_delivered_sources": true,
+  "file_digests": [
+    {
+      "project": "P081",
+      "path": "run_tests.py",
+      "sha256": "54534a9c3465cb1c3af187625ebbf4caee4961d3a4ca6786db5347a5d093da48",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P081",
+      "path": "src/rag_guard.py",
+      "sha256": "d15bb03f31b98b49ea39f0697355f169e687b94a59b3c068c796fcbc27a2719a",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P081",
+      "path": "tests/test_p081.py",
+      "sha256": "0156f7f60307f6623c1d921a7c971f6818d4fd5b310ca89eaf6de25808a26de3",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P082",
+      "path": "run_tests.py",
+      "sha256": "54534a9c3465cb1c3af187625ebbf4caee4961d3a4ca6786db5347a5d093da48",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P082",
+      "path": "src/governance.py",
+      "sha256": "66bb64a18c4bf4249c6addf9d45e7c3f402ea8fa25a9ad3a2f60cfd9c43979a4",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P082",
+      "path": "tests/test_p082.py",
+      "sha256": "586538d34fb83b5eff3a9c93ba7435e9493442cfc67686831221d429ed1560d8",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P083",
+      "path": "run_tests.py",
+      "sha256": "54534a9c3465cb1c3af187625ebbf4caee4961d3a4ca6786db5347a5d093da48",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P083",
+      "path": "src/iot_simulator.py",
+      "sha256": "3c1e77675e1260f55ce2b44ec1e6f982c96dc163dac566aef504d45c0dcf1bf7",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P083",
+      "path": "tests/test_iot_simulator.py",
+      "sha256": "9402a93de8f40ca0ac1922d0b62eb257522cdcfc8ff8acec2944428050accb48",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P084",
+      "path": "run_tests.py",
+      "sha256": "54534a9c3465cb1c3af187625ebbf4caee4961d3a4ca6786db5347a5d093da48",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P084",
+      "path": "src/irrigation.py",
+      "sha256": "3a9d6f9253f8625d41f2d72e2ab8c8f1583ade574f8cf1e0dccdfd6277bbf313",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P084",
+      "path": "tests/test_p084.py",
+      "sha256": "10184320090146bada59cafda15c2513089233e3ba72fb8fc57977adabdaaeaf",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P085",
+      "path": "run_tests.py",
+      "sha256": "54534a9c3465cb1c3af187625ebbf4caee4961d3a4ca6786db5347a5d093da48",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P085",
+      "path": "src/access.py",
+      "sha256": "4ee2786b8282af84007ff4b2595f5858b7dd2260b4c3a3b54527d5fd4d086d5f",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P085",
+      "path": "tests/test_p085.py",
+      "sha256": "d3ce0d9ac9accf131d4bac6f776c766904cd50f24732059570b78bda2a7527c6",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P086",
+      "path": "run_tests.py",
+      "sha256": "e75c05713ff12544335f9046d46dd46049a255fb41f07b1e5207c981510367df",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P086",
+      "path": "src/air_monitor.py",
+      "sha256": "82195fef5a08c77d12ab4472b0653d09ac98bb79e4c9f46484bcbd723fbe2887",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P086",
+      "path": "tests/test_p086.py",
+      "sha256": "9e977c2692faff0cd4f70c77f12fb22f4b34900e422259a6c1e8200fce6f211a",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P087",
+      "path": "run_tests.py",
+      "sha256": "e75c05713ff12544335f9046d46dd46049a255fb41f07b1e5207c981510367df",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P087",
+      "path": "src/smart_meter.py",
+      "sha256": "8b401c49824b3d895d337ec0ebf1c063d9d937d710021313a2f4ccd6863c4541",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P087",
+      "path": "tests/test_p087.py",
+      "sha256": "6a10d6c9f7264f036c513586f254ddd5b1560152d5c8ec7fbad5b903004bb7a4",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P088",
+      "path": "run_tests.py",
+      "sha256": "e75c05713ff12544335f9046d46dd46049a255fb41f07b1e5207c981510367df",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P088",
+      "path": "src/smart_parking.py",
+      "sha256": "a291c73014cd2fbf1af6e65b012d86ca9ce434967e3b86df5b83ba7532b7ac31",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P088",
+      "path": "tests/test_p088.py",
+      "sha256": "01ff4a759f4d28246f38699692797aa1d7a7f14f45c6a9572a4969a1c5f7847d",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P089",
+      "path": "run_tests.py",
+      "sha256": "e75c05713ff12544335f9046d46dd46049a255fb41f07b1e5207c981510367df",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P089",
+      "path": "src/cv_waste_synthetic.py",
+      "sha256": "f503add39fd437559eadc77542df76d936242ab04ff93a00c87e26442126baaa",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P089",
+      "path": "tests/test_cv_waste_synthetic.py",
+      "sha256": "f50dd63401cd3e972e823b5984cccb94619784733364c31a24b080651911afb5",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P090",
+      "path": "run_tests.py",
+      "sha256": "e75c05713ff12544335f9046d46dd46049a255fb41f07b1e5207c981510367df",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P090",
+      "path": "src/maintenance_ml.py",
+      "sha256": "476617e468c78e9d20de9eac705c3c2c7be40c1c1d026f10052385543be5c4bd",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P090",
+      "path": "tests/test_p090.py",
+      "sha256": "98a179523188178cf615e0f66b34bc949a73af8d5e1652ef87cb772dbefd1beb",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P091",
+      "path": "run_tests.py",
+      "sha256": "89c0933603bd8e5df837faf6a34c642b43c354dd142974a0f43a1e8abe0c2aac",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P091",
+      "path": "src/home_safety.py",
+      "sha256": "5609a458f06856555b87db184f63e096a1f49dad2bdf7f0eaf1a459e4d6599e4",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P091",
+      "path": "tests/test_p091.py",
+      "sha256": "d5aa9f4285b311d1a0843a540328d56d536281e2ec7f1a95267436c62661e32d",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P092",
+      "path": "run_tests.py",
+      "sha256": "89c0933603bd8e5df837faf6a34c642b43c354dd142974a0f43a1e8abe0c2aac",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P092",
+      "path": "src/fleet_update.py",
+      "sha256": "70e44843d4ca2aa835b606940b2ec2ad8c8b1867622ec170b006a04b3858c8e2",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P092",
+      "path": "tests/test_p092.py",
+      "sha256": "57ae6562d301df89838aeb07c56e8dda8c047e8ebad04d0a0379f4b039f062fe",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P093",
+      "path": "run_tests.py",
+      "sha256": "89c0933603bd8e5df837faf6a34c642b43c354dd142974a0f43a1e8abe0c2aac",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P093",
+      "path": "src/smart_factory.py",
+      "sha256": "d9593e64be2763bfba3ceb94b4dd6ba68279597c44b406ecbf9bc908b94cbc06",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P093",
+      "path": "tests/test_p093.py",
+      "sha256": "a374b68a80914e94fb7325d73b23e425103831fd10f0fd9a9da56fed90c26736",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P094",
+      "path": "run_tests.py",
+      "sha256": "89c0933603bd8e5df837faf6a34c642b43c354dd142974a0f43a1e8abe0c2aac",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P094",
+      "path": "src/smart_city.py",
+      "sha256": "5736bd192eaeaf57de8597bddbe3e17659e537fb358dbb86a021743c309e38ca",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P094",
+      "path": "tests/test_p094.py",
+      "sha256": "b7611303bb32d75129611750f43e676f4f6d0e8298d97baff632b60bac0337da",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P095",
+      "path": "run_tests.py",
+      "sha256": "89c0933603bd8e5df837faf6a34c642b43c354dd142974a0f43a1e8abe0c2aac",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P095",
+      "path": "src/telemonitoring.py",
+      "sha256": "9b929b96b58751fd60c8a33eebbf91629a621486fd7f0030f113113c8ed4ec97",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P095",
+      "path": "tests/test_p095.py",
+      "sha256": "81cd45c4a6e689f4cd2882bcbc76078e0e7fef1022427b21eed538dc9d6bda3f",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P096",
+      "path": "run_tests.py",
+      "sha256": "9f134fdd311b91a479f2b78427cd2b8c435fc698c29ae1b670edad9a02d5ebe6",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P096",
+      "path": "src/ecommerce.py",
+      "sha256": "035741db0b15f038b56883e25ae6d69b27cba4ec5c3d3cb66d752da6b772dba4",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P096",
+      "path": "tests/test_p096.py",
+      "sha256": "ce2b55e913294eb189ae657abd16104d9280f306c80cc9a2ec8f0f2adfa94b9b",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P097",
+      "path": "run_tests.py",
+      "sha256": "9f134fdd311b91a479f2b78427cd2b8c435fc698c29ae1b670edad9a02d5ebe6",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P097",
+      "path": "src/smart_building.py",
+      "sha256": "bc0c53f9f2d4a8dfc96bb62da303fdb8b4ff5c1de89f2a28ac13ecde840e1e63",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P097",
+      "path": "tests/test_p097.py",
+      "sha256": "7bdfe0a6e9e0bc91fe4ef4dba8616334f2c8da33ac2934a77e20539f2ab8aa87",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P098",
+      "path": "run_tests.py",
+      "sha256": "9f134fdd311b91a479f2b78427cd2b8c435fc698c29ae1b670edad9a02d5ebe6",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P098",
+      "path": "src/resilient_monitor.py",
+      "sha256": "18bd65e6002e4cd5de34ec7407436f9c1eb1601bffda3e9cb29f33b6af4a83c1",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P098",
+      "path": "tests/test_p098.py",
+      "sha256": "873cc3a6dc9513051e0934ad37510a600a7532ad450cf0124e526a2742650bcc",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P099",
+      "path": "run_tests.py",
+      "sha256": "9f134fdd311b91a479f2b78427cd2b8c435fc698c29ae1b670edad9a02d5ebe6",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P099",
+      "path": "src/logistics.py",
+      "sha256": "e6f4507c211673614604c9f19893e38ee38a548996fb3627c7d960a41427a9a5",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P099",
+      "path": "tests/test_p099.py",
+      "sha256": "711a2490706400e1980c931442c8edc2bd61a86d77868ffe046b8104a3b9435e",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P100",
+      "path": "run_tests.py",
+      "sha256": "9f134fdd311b91a479f2b78427cd2b8c435fc698c29ae1b670edad9a02d5ebe6",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P100",
+      "path": "src/smart_waste_platform.py",
+      "sha256": "1326728e51a1efa8c2f60b99fb1be5bf819491c1c418db3ab6930665a32a9a0f",
+      "compilation": "PASS"
+    },
+    {
+      "project": "P100",
+      "path": "tests/test_smart_waste_platform.py",
+      "sha256": "41035f15d21b8f3a66622984d50189e54bcea5a020f87a473037a2b52651f18b",
+      "compilation": "PASS"
+    }
+  ],
+  "results": [
+    {
+      "project": "P081",
+      "started_utc": "2026-10-21T20:38:50.501370+00:00",
+      "finished_utc": "2026-10-21T20:38:50.566461+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.0651,
+      "unittest_cases_reported": 14,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P081.stdout.log",
+      "stderr": "P081.stderr.log",
+      "stdout_content": "",
+      "stdout_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_content": "test_all_rules_are_exercised (test_p081.GuardTest.test_all_rules_are_exercised) ... ok\ntest_annotation_preserves_original_text (test_p081.GuardTest.test_annotation_preserves_original_text) ... ok\ntest_benign_is_still_untrusted (test_p081.GuardTest.test_benign_is_still_untrusted) ... ok\ntest_case_and_whitespace (test_p081.GuardTest.test_case_and_whitespace) ... ok\ntest_direct_attack_has_two_signals (test_p081.GuardTest.test_direct_attack_has_two_signals) ... ok\ntest_empty_string_is_untrusted_data (test_p081.GuardTest.test_empty_string_is_untrusted_data) ... ok\ntest_fixture_exposes_false_positive_and_negative (test_p081.GuardTest.test_fixture_exposes_false_positive_and_negative) ... ok\ntest_instruction_policy_ignores_claimed_authority (test_p081.GuardTest.test_instruction_policy_ignores_claimed_authority) ... ok\ntest_invalid_types (test_p081.GuardTest.test_invalid_types) ... ok\ntest_italian_paraphrase_is_missed (test_p081.GuardTest.test_italian_paraphrase_is_missed) ... ok\ntest_length_boundary (test_p081.GuardTest.test_length_boundary) ... ok\ntest_quote_is_false_positive (test_p081.GuardTest.test_quote_is_false_positive) ... ok\ntest_repeated_pattern_is_one_signal (test_p081.GuardTest.test_repeated_pattern_is_one_signal) ... ok\ntest_returned_signals_are_independent (test_p081.GuardTest.test_returned_signals_are_independent) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.002s\n\nOK\n",
+      "stderr_original_sha256": "90d1632b1d43009bc9f817e8821b7c1552f3654ac61d49ab122d7f574dd89f79"
+    },
+    {
+      "project": "P082",
+      "started_utc": "2026-10-21T20:38:50.570735+00:00",
+      "finished_utc": "2026-10-21T20:38:50.669106+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.0984,
+      "unittest_cases_reported": 12,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P082.stdout.log",
+      "stderr": "P082.stderr.log",
+      "stdout_content": "",
+      "stdout_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_content": "test_demo_reports_two_operational_gaps (test_p082.GovernanceTest.test_demo_reports_two_operational_gaps) ... ok\ntest_empty_lists_every_control_in_stable_order (test_p082.GovernanceTest.test_empty_lists_every_control_in_stable_order) ... ok\ntest_false_and_absent_are_missing (test_p082.GovernanceTest.test_false_and_absent_are_missing) ... ok\ntest_full_checklist_only (test_p082.GovernanceTest.test_full_checklist_only) ... ok\ntest_input_is_not_modified_and_missing_is_fresh (test_p082.GovernanceTest.test_input_is_not_modified_and_missing_is_fresh) ... ok\ntest_input_order_does_not_change_report_order (test_p082.GovernanceTest.test_input_order_does_not_change_report_order) ... ok\ntest_non_mapping_rejected (test_p082.GovernanceTest.test_non_mapping_rejected) ... ok\ntest_record_length_boundary (test_p082.GovernanceTest.test_record_length_boundary) ... ok\ntest_record_rejects_each_missing_or_invalid_field (test_p082.GovernanceTest.test_record_rejects_each_missing_or_invalid_field) ... ok\ntest_record_trims_all_fields (test_p082.GovernanceTest.test_record_trims_all_fields) ... ok\ntest_truthy_non_booleans_are_rejected (test_p082.GovernanceTest.test_truthy_non_booleans_are_rejected) ... ok\ntest_unknown_key_catches_typo (test_p082.GovernanceTest.test_unknown_key_catches_typo) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.001s\n\nOK\n",
+      "stderr_original_sha256": "2f7c180ae0734edb1908841756d89fa91c53dac3054417f9c9360594ab9d16cc"
+    },
+    {
+      "project": "P083",
+      "started_utc": "2026-10-21T20:38:50.679120+00:00",
+      "finished_utc": "2026-10-21T20:38:50.770008+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.0909,
+      "unittest_cases_reported": 22,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P083.stdout.log",
+      "stderr": "P083.stderr.log",
+      "stdout_content": "",
+      "stdout_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_content": "test_bad_clock_does_not_advance_sequence_or_rng (test_iot_simulator.IoTSimulatorTest.test_bad_clock_does_not_advance_sequence_or_rng) ... ok\ntest_bad_numbers_and_booleans_are_rejected (test_iot_simulator.IoTSimulatorTest.test_bad_numbers_and_booleans_are_rejected) ... ok\ntest_broker_rejects_bad_topic_callback_and_duplicate_subscription (test_iot_simulator.IoTSimulatorTest.test_broker_rejects_bad_topic_callback_and_duplicate_subscription) ... ok\ntest_conflicting_duplicate_is_rejected_without_rounding_away_difference (test_iot_simulator.IoTSimulatorTest.test_conflicting_duplicate_is_rejected_without_rounding_away_difference) ... ok\ntest_demo_is_three_ordered_events_and_no_persistent_transport (test_iot_simulator.IoTSimulatorTest.test_demo_is_three_ordered_events_and_no_persistent_transport) ... ok\ntest_device_and_sensor_configuration_are_validated (test_iot_simulator.IoTSimulatorTest.test_device_and_sensor_configuration_are_validated) ... ok\ntest_devices_have_independent_sequences (test_iot_simulator.IoTSimulatorTest.test_devices_have_independent_sequences) ... ok\ntest_failed_flush_keeps_unsent_head (test_iot_simulator.IoTSimulatorTest.test_failed_flush_keeps_unsent_head) ... ok\ntest_identical_retry_is_acknowledged_without_duplicate (test_iot_simulator.IoTSimulatorTest.test_identical_retry_is_acknowledged_without_duplicate) ... ok\ntest_malformed_json_duplicate_keys_and_wrong_root_are_rejected (test_iot_simulator.IoTSimulatorTest.test_malformed_json_duplicate_keys_and_wrong_root_are_rejected) ... ok\ntest_numeric_envelope_includes_boundaries (test_iot_simulator.IoTSimulatorTest.test_numeric_envelope_includes_boundaries) ... ok\ntest_offline_buffers_without_delivery (test_iot_simulator.IoTSimulatorTest.test_offline_buffers_without_delivery) ... ok\ntest_partial_callback_failure_can_retry_without_duplicate_at_collector (test_iot_simulator.IoTSimulatorTest.test_partial_callback_failure_can_retry_without_duplicate_at_collector) ... ok\ntest_publish_delivers_valid_schema (test_iot_simulator.IoTSimulatorTest.test_publish_delivers_valid_schema) ... ok\ntest_reconnection_delivers_old_events_before_new_sample (test_iot_simulator.IoTSimulatorTest.test_reconnection_delivers_old_events_before_new_sample) ... ok\ntest_returned_messages_cannot_corrupt_history_or_deduplication (test_iot_simulator.IoTSimulatorTest.test_returned_messages_cannot_corrupt_history_or_deduplication) ... ok\ntest_schema_and_fields_are_exact (test_iot_simulator.IoTSimulatorTest.test_schema_and_fields_are_exact) ... ok\ntest_seed_and_clock_are_reproducible (test_iot_simulator.IoTSimulatorTest.test_seed_and_clock_are_reproducible) ... ok\ntest_sequence_requires_nonnegative_integer (test_iot_simulator.IoTSimulatorTest.test_sequence_requires_nonnegative_integer) ... ok\ntest_timestamp_requires_explicit_utc (test_iot_simulator.IoTSimulatorTest.test_timestamp_requires_explicit_utc) ... ok\ntest_topic_and_payload_device_must_match (test_iot_simulator.IoTSimulatorTest.test_topic_and_payload_device_must_match) ... ok\ntest_unseen_out_of_order_is_rejected_but_old_retry_is_allowed (test_iot_simulator.IoTSimulatorTest.test_unseen_out_of_order_is_rejected_but_old_retry_is_allowed) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 0.005s\n\nOK\n",
+      "stderr_original_sha256": "d968b0d4b7b89e2301a5a9abdb46c3b676f78734091d0155bcb3ec303e58b092"
+    },
+    {
+      "project": "P084",
+      "started_utc": "2026-10-21T20:38:50.773649+00:00",
+      "finished_utc": "2026-10-21T20:38:50.841505+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.0679,
+      "unittest_cases_reported": 15,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P084.stdout.log",
+      "stderr": "P084.stderr.log",
+      "stdout_content": "",
+      "stdout_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_content": "test_above_high_threshold_turns_off (test_p084.IrrigationTest.test_above_high_threshold_turns_off) ... ok\ntest_below_low_threshold_turns_on (test_p084.IrrigationTest.test_below_low_threshold_turns_on) ... ok\ntest_default_is_off_without_a_control_step (test_p084.IrrigationTest.test_default_is_off_without_a_control_step) ... ok\ntest_demo_values_are_executable (test_p084.IrrigationTest.test_demo_values_are_executable) ... ok\ntest_exact_high_threshold_does_not_turn_off (test_p084.IrrigationTest.test_exact_high_threshold_does_not_turn_off) ... ok\ntest_exact_low_threshold_does_not_turn_on (test_p084.IrrigationTest.test_exact_low_threshold_does_not_turn_on) ... ok\ntest_history_and_result_cannot_modify_internal_history (test_p084.IrrigationTest.test_history_and_result_cannot_modify_internal_history) ... ok\ntest_invalid_initial_numbers_and_bounds (test_p084.IrrigationTest.test_invalid_initial_numbers_and_bounds) ... ok\ntest_invalid_step_is_atomic (test_p084.IrrigationTest.test_invalid_step_is_atomic) ... ok\ntest_old_pump_is_used_before_new_decision (test_p084.IrrigationTest.test_old_pump_is_used_before_new_decision) ... ok\ntest_rain_and_evaporation_contribute_once (test_p084.IrrigationTest.test_rain_and_evaporation_contribute_once) ... ok\ntest_same_moisture_in_deadband_keeps_previous_state (test_p084.IrrigationTest.test_same_moisture_in_deadband_keeps_previous_state) ... ok\ntest_saturation_at_zero_and_hundred (test_p084.IrrigationTest.test_saturation_at_zero_and_hundred) ... ok\ntest_threshold_extremes_remain_strict (test_p084.IrrigationTest.test_threshold_extremes_remain_strict) ... ok\ntest_thresholds_are_finite_ordered_and_bounded (test_p084.IrrigationTest.test_thresholds_are_finite_ordered_and_bounded) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.002s\n\nOK\n",
+      "stderr_original_sha256": "94d492a748ac7b861caa09b4df1b7bcb6d9051d47d7f5631aacc3b353df4924f"
+    },
+    {
+      "project": "P085",
+      "started_utc": "2026-10-21T20:38:50.847029+00:00",
+      "finished_utc": "2026-10-21T20:38:50.914285+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.0673,
+      "unittest_cases_reported": 17,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P085.stdout.log",
+      "stderr": "P085.stderr.log",
+      "stdout_content": "",
+      "stdout_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_content": "test_audit_snapshot_and_policy_are_protected (test_p085.AccessTest.test_audit_snapshot_and_policy_are_protected) ... ok\ntest_badge_fields_are_validated (test_p085.AccessTest.test_badge_fields_are_validated) ... ok\ntest_badge_is_frozen (test_p085.AccessTest.test_badge_is_frozen) ... ok\ntest_demo_totals_and_reasons (test_p085.AccessTest.test_demo_totals_and_reasons) ... ok\ntest_duplicate_attempts_and_call_order_are_preserved (test_p085.AccessTest.test_duplicate_attempts_and_call_order_are_preserved) ... ok\ntest_duplicate_cannot_replace_privileges (test_p085.AccessTest.test_duplicate_cannot_replace_privileges) ... ok\ntest_inactive_badge_is_denied (test_p085.AccessTest.test_inactive_badge_is_denied) ... ok\ntest_invalid_timestamp_is_rejected_before_audit (test_p085.AccessTest.test_invalid_timestamp_is_rejected_before_audit) ... ok\ntest_length_boundaries (test_p085.AccessTest.test_length_boundaries) ... ok\ntest_malformed_request_does_not_modify_state (test_p085.AccessTest.test_malformed_request_does_not_modify_state) ... ok\ntest_permission_matrix (test_p085.AccessTest.test_permission_matrix) ... ok\ntest_registration_requires_badge (test_p085.AccessTest.test_registration_requires_badge) ... ok\ntest_revoke_changes_future_decisions_and_is_idempotent (test_p085.AccessTest.test_revoke_changes_future_decisions_and_is_idempotent) ... ok\ntest_revoke_unknown_does_not_create_badge (test_p085.AccessTest.test_revoke_unknown_does_not_create_badge) ... ok\ntest_trimmed_identifier_collision_is_rejected (test_p085.AccessTest.test_trimmed_identifier_collision_is_rejected) ... ok\ntest_unknown_badge_is_audited (test_p085.AccessTest.test_unknown_badge_is_audited) ... ok\ntest_unknown_zone_has_distinct_reason (test_p085.AccessTest.test_unknown_zone_has_distinct_reason) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.001s\n\nOK\n",
+      "stderr_original_sha256": "d1bd7f574ea13bac2b48e7999203827690b09bb5ada3ca065d71e1a4c69aaffb"
+    },
+    {
+      "project": "P086",
+      "started_utc": "2026-10-21T20:38:50.923120+00:00",
+      "finished_utc": "2026-10-21T20:38:50.991436+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.0683,
+      "unittest_cases_reported": 18,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P086.stdout.log",
+      "stderr": "P086.stderr.log",
+      "stdout_content": "",
+      "stdout_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_content": "test_alert_equality_is_not_exceedance (test_p086.AirMonitorTests.test_alert_equality_is_not_exceedance) ... ok\ntest_alert_event_has_origin_and_time (test_p086.AirMonitorTests.test_alert_event_has_origin_and_time) ... ok\ntest_alerts_are_independent (test_p086.AirMonitorTests.test_alerts_are_independent) ... ok\ntest_configurable_thresholds (test_p086.AirMonitorTests.test_configurable_thresholds) ... ok\ntest_device_and_schema (test_p086.AirMonitorTests.test_device_and_schema) ... ok\ntest_duplicate_timestamp_rejected (test_p086.AirMonitorTests.test_duplicate_timestamp_rejected) ... ok\ntest_empty_summary (test_p086.AirMonitorTests.test_empty_summary) ... ok\ntest_history_and_readings_cannot_be_edited (test_p086.AirMonitorTests.test_history_and_readings_cannot_be_edited) ... ok\ntest_invalid_reading_is_atomic (test_p086.AirMonitorTests.test_invalid_reading_is_atomic) ... ok\ntest_invalid_thresholds (test_p086.AirMonitorTests.test_invalid_thresholds) ... ok\ntest_late_event_does_not_change_state (test_p086.AirMonitorTests.test_late_event_does_not_change_state) ... ok\ntest_nonfinite_and_wrong_numeric_types (test_p086.AirMonitorTests.test_nonfinite_and_wrong_numeric_types) ... ok\ntest_order_is_per_device (test_p086.AirMonitorTests.test_order_is_per_device) ... ok\ntest_out_of_range (test_p086.AirMonitorTests.test_out_of_range) ... ok\ntest_range_endpoints (test_p086.AirMonitorTests.test_range_endpoints) ... ok\ntest_summary_real_values (test_p086.AirMonitorTests.test_summary_real_values) ... ok\ntest_units_are_explicit (test_p086.AirMonitorTests.test_units_are_explicit) ... ok\ntest_valid_reading (test_p086.AirMonitorTests.test_valid_reading) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.004s\n\nOK\n",
+      "stderr_original_sha256": "5d64e4aeb36dfce4315e0e0ca6016529e7b70c196078848b6ca07b252468be10"
+    },
+    {
+      "project": "P087",
+      "started_utc": "2026-10-21T20:38:51.000498+00:00",
+      "finished_utc": "2026-10-21T20:38:51.091476+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.091,
+      "unittest_cases_reported": 23,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P087.stdout.log",
+      "stderr": "P087.stderr.log",
+      "stdout_content": "",
+      "stdout_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_content": "test_collector_conflicting_id_rejected (test_p087.SmartMeterTests.test_collector_conflicting_id_rejected) ... ok\ntest_collector_duplicate_ignored (test_p087.SmartMeterTests.test_collector_duplicate_ignored) ... ok\ntest_demo_and_weighted_average (test_p087.SmartMeterTests.test_demo_and_weighted_average) ... ok\ntest_empty_collector_summary (test_p087.SmartMeterTests.test_empty_collector_summary) ... ok\ntest_inconsistent_energy_and_total_rejected (test_p087.SmartMeterTests.test_inconsistent_energy_and_total_rejected) ... ok\ntest_initial_time_and_register (test_p087.SmartMeterTests.test_initial_time_and_register) ... ok\ntest_invalid_alert_limit (test_p087.SmartMeterTests.test_invalid_alert_limit) ... ok\ntest_invalid_event_schema (test_p087.SmartMeterTests.test_invalid_event_schema) ... ok\ntest_invalid_identifiers (test_p087.SmartMeterTests.test_invalid_identifiers) ... ok\ntest_invalid_initial_values (test_p087.SmartMeterTests.test_invalid_initial_values) ... ok\ntest_invalid_power_and_time (test_p087.SmartMeterTests.test_invalid_power_and_time) ... ok\ntest_meter_id_conflict_is_atomic (test_p087.SmartMeterTests.test_meter_id_conflict_is_atomic) ... ok\ntest_meter_retry_is_idempotent (test_p087.SmartMeterTests.test_meter_retry_is_idempotent) ... ok\ntest_missing_interval_then_replay (test_p087.SmartMeterTests.test_missing_interval_then_replay) ... ok\ntest_nonincreasing_time_rejected (test_p087.SmartMeterTests.test_nonincreasing_time_rejected) ... ok\ntest_overflow_rejected (test_p087.SmartMeterTests.test_overflow_rejected) ... ok\ntest_overlap_and_reordered_event_rejected (test_p087.SmartMeterTests.test_overlap_and_reordered_event_rejected) ... ok\ntest_power_alert_threshold_is_strict (test_p087.SmartMeterTests.test_power_alert_threshold_is_strict) ... ok\ntest_seconds_to_hours (test_p087.SmartMeterTests.test_seconds_to_hours) ... ok\ntest_unrepresentable_increment_rejected (test_p087.SmartMeterTests.test_unrepresentable_increment_rejected) ... ok\ntest_variable_intervals (test_p087.SmartMeterTests.test_variable_intervals) ... ok\ntest_wrong_device_rejected (test_p087.SmartMeterTests.test_wrong_device_rejected) ... ok\ntest_zero_power_is_valid (test_p087.SmartMeterTests.test_zero_power_is_valid) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.003s\n\nOK\n",
+      "stderr_original_sha256": "367d09adfa7b20ad7e9f20a5ad5a61b7652783a12116fe4b4be0b308620c6f56"
+    },
+    {
+      "project": "P088",
+      "started_utc": "2026-10-21T20:38:51.096196+00:00",
+      "finished_utc": "2026-10-21T20:38:51.170280+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.0741,
+      "unittest_cases_reported": 22,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P088.stdout.log",
+      "stderr": "P088.stderr.log",
+      "stdout_content": "",
+      "stdout_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_content": "test_capacity_never_overflows (test_p088.ParkingTests.test_capacity_never_overflows) ... ok\ntest_conflicting_id_rejected_without_changes (test_p088.ParkingTests.test_conflicting_id_rejected_without_changes) ... ok\ntest_demo_values_and_cached_old_snapshot (test_p088.ParkingTests.test_demo_values_and_cached_old_snapshot) ... ok\ntest_duplicate_enter_has_no_effect (test_p088.ParkingTests.test_duplicate_enter_has_no_effect) ... ok\ntest_duplicate_exit_after_new_arrival_is_safe (test_p088.ParkingTests.test_duplicate_exit_after_new_arrival_is_safe) ... ok\ntest_enter_and_exit_duration (test_p088.ParkingTests.test_enter_and_exit_duration) ... ok\ntest_equal_time_events_are_allowed (test_p088.ParkingTests.test_equal_time_events_are_allowed) ... ok\ntest_exit_empty_spot (test_p088.ParkingTests.test_exit_empty_spot) ... ok\ntest_exit_wrong_vehicle (test_p088.ParkingTests.test_exit_wrong_vehicle) ... ok\ntest_initial_capacity (test_p088.ParkingTests.test_initial_capacity) ... ok\ntest_invalid_capacity (test_p088.ParkingTests.test_invalid_capacity) ... ok\ntest_invalid_ids (test_p088.ParkingTests.test_invalid_ids) ... ok\ntest_invalid_input_is_atomic (test_p088.ParkingTests.test_invalid_input_is_atomic) ... ok\ntest_invalid_kind_and_schema (test_p088.ParkingTests.test_invalid_kind_and_schema) ... ok\ntest_invalid_spot_types_and_bounds (test_p088.ParkingTests.test_invalid_spot_types_and_bounds) ... ok\ntest_invalid_times (test_p088.ParkingTests.test_invalid_times) ... ok\ntest_late_unique_event_rejected (test_p088.ParkingTests.test_late_unique_event_rejected) ... ok\ntest_no_negative_occupancy_after_repeated_exit (test_p088.ParkingTests.test_no_negative_occupancy_after_repeated_exit) ... ok\ntest_rejected_retry_keeps_original_result (test_p088.ParkingTests.test_rejected_retry_keeps_original_result) ... ok\ntest_rejection_does_not_advance_time_watermark (test_p088.ParkingTests.test_rejection_does_not_advance_time_watermark) ... ok\ntest_snapshot_and_audit_do_not_expose_mutable_state (test_p088.ParkingTests.test_snapshot_and_audit_do_not_expose_mutable_state) ... ok\ntest_vehicle_cannot_occupy_two_spots (test_p088.ParkingTests.test_vehicle_cannot_occupy_two_spots) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 0.002s\n\nOK\n",
+      "stderr_original_sha256": "6315e86bbac61b4abc23c21ae10bba9ae7a1a8fb4ba633cdb8337a1d4ddedda1"
+    },
+    {
+      "project": "P089",
+      "started_utc": "2026-10-21T20:38:51.181354+00:00",
+      "finished_utc": "2026-10-21T20:38:54.983932+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 3.8026,
+      "unittest_cases_reported": 18,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P089.stdout.log",
+      "stderr": "P089.stderr.log",
+      "stdout_content": "",
+      "stdout_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_content": "test_all_classes_generate_rgb_images (test_cv_waste_synthetic.SyntheticCVTests.test_all_classes_generate_rgb_images) ... ok\ntest_dataset_count_seed_and_bounds (test_cv_waste_synthetic.SyntheticCVTests.test_dataset_count_seed_and_bounds) ... ok\ntest_features_are_finite_and_bounded (test_cv_waste_synthetic.SyntheticCVTests.test_features_are_finite_and_bounded) ... ok\ntest_features_have_known_order_and_dimension (test_cv_waste_synthetic.SyntheticCVTests.test_features_have_known_order_and_dimension) ... ok\ntest_features_reject_unsupported_images (test_cv_waste_synthetic.SyntheticCVTests.test_features_reject_unsupported_images) ... ok\ntest_fit_receives_only_training_rows (test_cv_waste_synthetic.SyntheticCVTests.test_fit_receives_only_training_rows) ... ok\ntest_generation_is_deterministic (test_cv_waste_synthetic.SyntheticCVTests.test_generation_is_deterministic) ... ok\ntest_generator_rejects_unknown_class_and_rng (test_cv_waste_synthetic.SyntheticCVTests.test_generator_rejects_unknown_class_and_rng) ... ok\ntest_image_size_constraints (test_cv_waste_synthetic.SyntheticCVTests.test_image_size_constraints) ... ok\ntest_invalid_probability_vectors (test_cv_waste_synthetic.SyntheticCVTests.test_invalid_probability_vectors) ... ok\ntest_invalid_review_thresholds (test_cv_waste_synthetic.SyntheticCVTests.test_invalid_review_thresholds) ... ok\ntest_metrics_match_confusion_matrix_and_baseline (test_cv_waste_synthetic.SyntheticCVTests.test_metrics_match_confusion_matrix_and_baseline) ... ok\ntest_pipeline_is_reproducible (test_cv_waste_synthetic.SyntheticCVTests.test_pipeline_is_reproducible) ... ok\ntest_probability_labels_and_ties_are_explicit (test_cv_waste_synthetic.SyntheticCVTests.test_probability_labels_and_ties_are_explicit) ... ok\ntest_review_counts_cover_the_test_set (test_cv_waste_synthetic.SyntheticCVTests.test_review_counts_cover_the_test_set) ... ok\ntest_review_threshold_is_inclusive (test_cv_waste_synthetic.SyntheticCVTests.test_review_threshold_is_inclusive) ... ok\ntest_split_is_disjoint_complete_and_balanced (test_cv_waste_synthetic.SyntheticCVTests.test_split_is_disjoint_complete_and_balanced) ... ok\ntest_training_requires_enough_samples_for_stratification (test_cv_waste_synthetic.SyntheticCVTests.test_training_requires_enough_samples_for_stratification) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 1.881s\n\nOK\n",
+      "stderr_original_sha256": "a0a7385d3cb2f0c0f3c1ffe9a58f6c7c7d9303d11a96f9a4efd012c49b05f27a"
+    },
+    {
+      "project": "P090",
+      "started_utc": "2026-10-21T20:38:54.999218+00:00",
+      "finished_utc": "2026-10-21T20:38:56.890591+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 1.8916,
+      "unittest_cases_reported": 19,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P090.stdout.log",
+      "stderr": "P090.stderr.log",
+      "stdout_content": "",
+      "stdout_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_content": "test_baseline_and_missed_anomalies_are_visible (test_p090.MaintenanceTests.test_baseline_and_missed_anomalies_are_visible) ... ok\ntest_confusion_matrix_reconstructs_metrics (test_p090.MaintenanceTests.test_confusion_matrix_reconstructs_metrics) ... ok\ntest_constant_signal_has_no_ac_component (test_p090.MaintenanceTests.test_constant_signal_has_no_ac_component) ... ok\ntest_experiment_is_reproducible (test_p090.MaintenanceTests.test_experiment_is_reproducible) ... ok\ntest_feature_constraints_on_generated_signals (test_p090.MaintenanceTests.test_feature_constraints_on_generated_signals) ... ok\ntest_frequency_cutoff_includes_40_hz (test_p090.MaintenanceTests.test_frequency_cutoff_includes_40_hz) ... ok\ntest_generator_rejects_invalid_label_and_rng (test_p090.MaintenanceTests.test_generator_rejects_invalid_label_and_rng) ... ok\ntest_generator_seed_is_reproducible (test_p090.MaintenanceTests.test_generator_seed_is_reproducible) ... ok\ntest_invalid_attention_threshold (test_p090.MaintenanceTests.test_invalid_attention_threshold) ... ok\ntest_invalid_sample_rates (test_p090.MaintenanceTests.test_invalid_sample_rates) ... ok\ntest_invalid_seeds (test_p090.MaintenanceTests.test_invalid_seeds) ... ok\ntest_invalid_signal_shapes_and_types (test_p090.MaintenanceTests.test_invalid_signal_shapes_and_types) ... ok\ntest_large_finite_amplitudes_do_not_overflow (test_p090.MaintenanceTests.test_large_finite_amplitudes_do_not_overflow) ... ok\ntest_nonfinite_signal_values (test_p090.MaintenanceTests.test_nonfinite_signal_values) ... ok\ntest_odd_length_spectral_weights (test_p090.MaintenanceTests.test_odd_length_spectral_weights) ... ok\ntest_scaler_is_fitted_only_on_training (test_p090.MaintenanceTests.test_scaler_is_fitted_only_on_training) ... ok\ntest_sine_rms_and_frequency_ratio (test_p090.MaintenanceTests.test_sine_rms_and_frequency_ratio) ... ok\ntest_split_is_disjoint_and_stratified (test_p090.MaintenanceTests.test_split_is_disjoint_and_stratified) ... ok\ntest_zero_signal (test_p090.MaintenanceTests.test_zero_signal) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.151s\n\nOK\n",
+      "stderr_original_sha256": "b9a5a37c8288e06e7143ea2f0a05d0c7b9bcf347a296039606eac69ea00e40ac"
+    },
+    {
+      "project": "P091",
+      "started_utc": "2026-10-21T20:38:56.894109+00:00",
+      "finished_utc": "2026-10-21T20:38:56.974928+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.0808,
+      "unittest_cases_reported": 13,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P091.stdout.log",
+      "stderr": "P091.stderr.log",
+      "stdout_content": "test_both_prioritizes_state_without_losing_water_action (test_p091.SafetyTests.test_both_prioritizes_state_without_losing_water_action) ... ok\ntest_demo_has_six_samples_and_four_transitions (test_p091.SafetyTests.test_demo_has_six_samples_and_four_transitions) ... ok\ntest_fire_to_water_transition (test_p091.SafetyTests.test_fire_to_water_transition) ... ok\ntest_instances_do_not_share_state (test_p091.SafetyTests.test_instances_do_not_share_state) ... ok\ntest_invalid_booleans_rejected_without_mutation (test_p091.SafetyTests.test_invalid_booleans_rejected_without_mutation) ... ok\ntest_normal_has_no_actions_or_transition (test_p091.SafetyTests.test_normal_has_no_actions_or_transition) ... ok\ntest_offline_decision_and_ordered_single_flush (test_p091.SafetyTests.test_offline_decision_and_ordered_single_flush) ... ok\ntest_repeated_sample_does_not_duplicate_notification (test_p091.SafetyTests.test_repeated_sample_does_not_duplicate_notification) ... ok\ntest_return_to_normal_is_automatic_in_this_simulation (test_p091.SafetyTests.test_return_to_normal_is_automatic_in_this_simulation) ... ok\ntest_returned_lists_do_not_modify_controller (test_p091.SafetyTests.test_returned_lists_do_not_modify_controller) ... ok\ntest_same_state_different_hazard_is_recorded (test_p091.SafetyTests.test_same_state_different_hazard_is_recorded) ... ok\ntest_smoke_requests_two_local_actions (test_p091.SafetyTests.test_smoke_requests_two_local_actions) ... ok\ntest_water_requests_valve (test_p091.SafetyTests.test_water_requests_valve) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.002s\n\nOK\n",
+      "stdout_original_sha256": "f2068224a0d9850479fd56b210ebea293f9e37adb1106644b467a6307b15edb0",
+      "stderr_content": "",
+      "stderr_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "project": "P092",
+      "started_utc": "2026-10-21T20:38:56.989537+00:00",
+      "finished_utc": "2026-10-21T20:38:57.170121+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.1933,
+      "unittest_cases_reported": 22,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P092.stdout.log",
+      "stderr": "P092.stderr.log",
+      "stdout_content": "test_audit_is_copied_and_excludes_shared_secret (test_p092.UpdateTests.test_audit_is_copied_and_excludes_shared_secret) ... ok\ntest_demo_reports_simulated_rollback_and_replay_rejection (test_p092.UpdateTests.test_demo_reports_simulated_rollback_and_replay_rejection) ... ok\ntest_device_constructor_validation (test_p092.UpdateTests.test_device_constructor_validation) ... ok\ntest_digest_types_lengths_and_non_ascii_rejected (test_p092.UpdateTests.test_digest_types_lengths_and_non_ascii_rejected) ... ok\ntest_equal_older_or_invalid_current_version_rejected (test_p092.UpdateTests.test_equal_older_or_invalid_current_version_rejected) ... ok\ntest_health_failure_does_not_consume_version (test_p092.UpdateTests.test_health_failure_does_not_consume_version) ... ok\ntest_health_failure_restores_complete_modeled_snapshot (test_p092.UpdateTests.test_health_failure_restores_complete_modeled_snapshot) ... ok\ntest_health_requires_bool_and_has_no_effect_on_invalid_input (test_p092.UpdateTests.test_health_requires_bool_and_has_no_effect_on_invalid_input) ... ok\ntest_manifest_field_tampering_rejected (test_p092.UpdateTests.test_manifest_field_tampering_rejected) ... ok\ntest_manifest_matches_independent_hmac_calculation (test_p092.UpdateTests.test_manifest_matches_independent_hmac_calculation) ... ok\ntest_missing_extra_or_path_fields_rejected (test_p092.UpdateTests.test_missing_extra_or_path_fields_rejected) ... ok\ntest_payload_contract (test_p092.UpdateTests.test_payload_contract) ... ok\ntest_payload_tampering_rejected_without_state_change (test_p092.UpdateTests.test_payload_tampering_rejected_without_state_change) ... ok\ntest_replay_after_apply_does_not_replace_previous (test_p092.UpdateTests.test_replay_after_apply_does_not_replace_previous) ... ok\ntest_rollback_once_does_not_toggle (test_p092.UpdateTests.test_rollback_once_does_not_toggle) ... ok\ntest_rollback_preserves_high_watermark_against_replay (test_p092.UpdateTests.test_rollback_preserves_high_watermark_against_replay) ... ok\ntest_secret_contract (test_p092.UpdateTests.test_secret_contract) ... ok\ntest_serialization_key_order_does_not_change_verification (test_p092.UpdateTests.test_serialization_key_order_does_not_change_verification) ... ok\ntest_valid_update_stores_version_and_payload (test_p092.UpdateTests.test_valid_update_stores_version_and_payload) ... ok\ntest_version_boundaries_are_inclusive (test_p092.UpdateTests.test_version_boundaries_are_inclusive) ... ok\ntest_versions_reject_bool_nan_fraction_and_out_of_range (test_p092.UpdateTests.test_versions_reject_bool_nan_fraction_and_out_of_range) ... ok\ntest_wrong_key_rejected (test_p092.UpdateTests.test_wrong_key_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 0.005s\n\nOK\n",
+      "stdout_original_sha256": "d762ca3c5008446e55e3825c37eb248532e0e53d3baeba212bd9f72a4cf1040a",
+      "stderr_content": "",
+      "stderr_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "project": "P093",
+      "started_utc": "2026-10-21T20:38:57.197165+00:00",
+      "finished_utc": "2026-10-21T20:38:57.360569+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.1634,
+      "unittest_cases_reported": 22,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P093.stdout.log",
+      "stderr": "P093.stderr.log",
+      "stdout_content": "test_all_scrap_has_zero_quality (test_p093.FactoryTests.test_all_scrap_has_zero_quality) ... ok\ntest_count_contract_rejects_bool_float_and_out_of_range (test_p093.FactoryTests.test_count_contract_rejects_bool_float_and_out_of_range) ... ok\ntest_decimal_cycle_boundary_does_not_reject_float_rounding (test_p093.FactoryTests.test_decimal_cycle_boundary_does_not_reject_float_rounding) ... ok\ntest_decimal_planned_boundary_is_bounded_only_within_tolerance (test_p093.FactoryTests.test_decimal_planned_boundary_is_bounded_only_within_tolerance) ... ok\ntest_demo_reports_two_machines_and_one_rule_signal (test_p093.FactoryTests.test_demo_reports_two_machines_and_one_rule_signal) ... ok\ntest_empty_plant_has_no_mean (test_p093.FactoryTests.test_empty_plant_has_no_mean) ... ok\ntest_finite_numeric_fields_reject_nan_inf_bool_and_strings (test_p093.FactoryTests.test_finite_numeric_fields_reject_nan_inf_bool_and_strings) ... ok\ntest_impossible_cycle_or_zero_runtime_production_rejected (test_p093.FactoryTests.test_impossible_cycle_or_zero_runtime_production_rejected) ... ok\ntest_known_availability_performance_quality_and_oee (test_p093.FactoryTests.test_known_availability_performance_quality_and_oee) ... ok\ntest_maintenance_limit_must_be_finite_nonnegative (test_p093.FactoryTests.test_maintenance_limit_must_be_finite_nonnegative) ... ok\ntest_maintenance_threshold_is_strict (test_p093.FactoryTests.test_maintenance_threshold_is_strict) ... ok\ntest_mean_oee_is_arithmetic_not_a_weighted_plant_oee (test_p093.FactoryTests.test_mean_oee_is_arithmetic_not_a_weighted_plant_oee) ... ok\ntest_names_must_be_nonempty_bounded_strings (test_p093.FactoryTests.test_names_must_be_nonempty_bounded_strings) ... ok\ntest_negative_measurements_rejected (test_p093.FactoryTests.test_negative_measurements_rejected) ... ok\ntest_perfect_machine_at_upper_bound (test_p093.FactoryTests.test_perfect_machine_at_upper_bound) ... ok\ntest_plant_keeps_its_own_machine_sequence (test_p093.FactoryTests.test_plant_keeps_its_own_machine_sequence) ... ok\ntest_plant_rejects_duplicate_machine_names (test_p093.FactoryTests.test_plant_rejects_duplicate_machine_names) ... ok\ntest_plant_rejects_non_twin_members (test_p093.FactoryTests.test_plant_rejects_non_twin_members) ... ok\ntest_runtime_cannot_exceed_planned_time (test_p093.FactoryTests.test_runtime_cannot_exceed_planned_time) ... ok\ntest_runtime_without_production_has_zero_quality_by_convention (test_p093.FactoryTests.test_runtime_without_production_has_zero_quality_by_convention) ... ok\ntest_stopped_machine_has_zero_components (test_p093.FactoryTests.test_stopped_machine_has_zero_components) ... ok\ntest_validated_twin_is_immutable (test_p093.FactoryTests.test_validated_twin_is_immutable) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 0.004s\n\nOK\n",
+      "stdout_original_sha256": "651820a7b02bbc45b4cd8a19104c2ca2d1298a69159132fac5451a57d09495af",
+      "stderr_content": "",
+      "stderr_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "project": "P094",
+      "started_utc": "2026-10-21T20:38:57.367022+00:00",
+      "finished_utc": "2026-10-21T20:38:57.517757+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.1508,
+      "unittest_cases_reported": 20,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P094.stdout.log",
+      "stderr": "P094.stderr.log",
+      "stdout_content": "test_capacity_contract (test_p094.CityTests.test_capacity_contract) ... ok\ntest_conflicting_event_id_is_rejected_across_streams (test_p094.CityTests.test_conflicting_event_id_is_rejected_across_streams) ... ok\ntest_demo_has_eight_records_and_two_free_stalls (test_p094.CityTests.test_demo_has_eight_records_and_two_free_stalls) ... ok\ntest_duplicate_parking_event_is_idempotent (test_p094.CityTests.test_duplicate_parking_event_is_idempotent) ... ok\ntest_duplicate_traffic_and_air_do_not_bias_mean (test_p094.CityTests.test_duplicate_traffic_and_air_do_not_bias_mean) ... ok\ntest_empty_measurements_are_unknown_not_zero (test_p094.CityTests.test_empty_measurements_are_unknown_not_zero) ... ok\ntest_event_metadata_contract (test_p094.CityTests.test_event_metadata_contract) ... ok\ntest_event_snapshot_cannot_mutate_internal_history (test_p094.CityTests.test_event_snapshot_cannot_mutate_internal_history) ... ok\ntest_large_finite_values_do_not_overflow_the_mean (test_p094.CityTests.test_large_finite_values_do_not_overflow_the_mean) ... ok\ntest_limits_are_validated_even_without_samples (test_p094.CityTests.test_limits_are_validated_even_without_samples) ... ok\ntest_numeric_validation_rejects_nonfinite_bool_negative_and_text (test_p094.CityTests.test_numeric_validation_rejects_nonfinite_bool_negative_and_text) ... ok\ntest_occupy_and_release_stall (test_p094.CityTests.test_occupy_and_release_stall) ... ok\ntest_parking_identifier_and_bool_contract (test_p094.CityTests.test_parking_identifier_and_bool_contract) ... ok\ntest_public_snapshot_uses_aggregate_allowlist (test_p094.CityTests.test_public_snapshot_uses_aggregate_allowlist) ... ok\ntest_records_keep_source_zone_timestamp_and_unit (test_p094.CityTests.test_records_keep_source_zone_timestamp_and_unit) ... ok\ntest_stale_or_concurrent_parking_event_cannot_revert_state (test_p094.CityTests.test_stale_or_concurrent_parking_event_cannot_revert_state) ... ok\ntest_three_samples_match_hand_calculation (test_p094.CityTests.test_three_samples_match_hand_calculation) ... ok\ntest_threshold_equality_does_not_trigger_alert (test_p094.CityTests.test_threshold_equality_does_not_trigger_alert) ... ok\ntest_units_cannot_be_silently_mixed (test_p094.CityTests.test_units_cannot_be_silently_mixed) ... ok\ntest_zero_readings_are_valid (test_p094.CityTests.test_zero_readings_are_valid) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.004s\n\nOK\n",
+      "stdout_original_sha256": "e8645515db5cb4a2815cee264d496d32e4396080f5d674378c107a2059346f55",
+      "stderr_content": "",
+      "stderr_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "project": "P095",
+      "started_utc": "2026-10-21T20:38:57.525511+00:00",
+      "finished_utc": "2026-10-21T20:38:57.672004+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.1465,
+      "unittest_cases_reported": 26,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P095.stdout.log",
+      "stderr": "P095.stderr.log",
+      "stdout_content": "test_artificial_bounds_are_inclusive (test_p095.MonitorTests.test_artificial_bounds_are_inclusive) ... ok\ntest_below_or_above_range_opens_review (test_p095.MonitorTests.test_below_or_above_range_opens_review) ... ok\ntest_changed_close_cannot_overwrite_existing_note (test_p095.MonitorTests.test_changed_close_cannot_overwrite_existing_note) ... ok\ntest_close_unknown_ok_or_invalid_note_fails (test_p095.MonitorTests.test_close_unknown_ok_or_invalid_note_fails) ... ok\ntest_configuration_is_copied (test_p095.MonitorTests.test_configuration_is_copied) ... ok\ntest_conflicting_duplicate_cannot_replace_reading (test_p095.MonitorTests.test_conflicting_duplicate_cannot_replace_reading) ... ok\ntest_degenerate_range_accepts_only_its_single_bound (test_p095.MonitorTests.test_degenerate_range_accepts_only_its_single_bound) ... ok\ntest_demo_has_three_synthetic_readings_and_one_closed_request (test_p095.MonitorTests.test_demo_has_three_synthetic_readings_and_one_closed_request) ... ok\ntest_duplicate_reading_is_idempotent (test_p095.MonitorTests.test_duplicate_reading_is_idempotent) ... ok\ntest_identical_close_is_idempotent (test_p095.MonitorTests.test_identical_close_is_idempotent) ... ok\ntest_ingestor_and_unknown_identity_cannot_view (test_p095.MonitorTests.test_ingestor_and_unknown_identity_cannot_view) ... ok\ntest_inside_range_is_ok_without_pending_review (test_p095.MonitorTests.test_inside_range_is_ok_without_pending_review) ... ok\ntest_large_integer_boundaries_cannot_silently_lose_precision (test_p095.MonitorTests.test_large_integer_boundaries_cannot_silently_lose_precision) ... ok\ntest_metric_event_id_and_unit_are_validated (test_p095.MonitorTests.test_metric_event_id_and_unit_are_validated) ... ok\ntest_numeric_values_reject_nan_infinity_bool_and_text (test_p095.MonitorTests.test_numeric_values_reject_nan_infinity_bool_and_text) ... ok\ntest_range_configuration_rejects_invalid_shape_or_values (test_p095.MonitorTests.test_range_configuration_rejects_invalid_shape_or_values) ... ok\ntest_reading_is_immutable (test_p095.MonitorTests.test_reading_is_immutable) ... ok\ntest_readings_and_bounds_share_float_normalization (test_p095.MonitorTests.test_readings_and_bounds_share_float_normalization) ... ok\ntest_retry_ingest_after_close_does_not_reopen_request (test_p095.MonitorTests.test_retry_ingest_after_close_does_not_reopen_request) ... ok\ntest_returned_event_view_and_audit_do_not_mutate_storage (test_p095.MonitorTests.test_returned_event_view_and_audit_do_not_mutate_storage) ... ok\ntest_reviewer_closes_request_and_preserves_rule_classification (test_p095.MonitorTests.test_reviewer_closes_request_and_preserves_rule_classification) ... ok\ntest_roles_must_be_explicit_and_known (test_p095.MonitorTests.test_roles_must_be_explicit_and_known) ... ok\ntest_synthetic_patient_code_required (test_p095.MonitorTests.test_synthetic_patient_code_required) ... ok\ntest_timestamps_are_nonnegative_integer_simulated_seconds (test_p095.MonitorTests.test_timestamps_are_nonnegative_integer_simulated_seconds) ... ok\ntest_unknown_metric_and_wrong_object_do_not_enter_history (test_p095.MonitorTests.test_unknown_metric_and_wrong_object_do_not_enter_history) ... ok\ntest_viewer_cannot_ingest_or_close_and_denials_are_audited (test_p095.MonitorTests.test_viewer_cannot_ingest_or_close_and_denials_are_audited) ... ok\n\n----------------------------------------------------------------------\nRan 26 tests in 0.006s\n\nOK\n",
+      "stdout_original_sha256": "7ec40faec5319b698a5e92e80515c8bcb075e2c10e29e4dbefc0d734939522c3",
+      "stderr_content": "",
+      "stderr_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "project": "P096",
+      "started_utc": "2026-10-21T20:38:57.679649+00:00",
+      "finished_utc": "2026-10-21T20:38:57.841661+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.1621,
+      "unittest_cases_reported": 19,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P096.stdout.log",
+      "stderr": "P096.stderr.log",
+      "stdout_content": "test_methods=19; executed=19; failures=0; errors=0\n",
+      "stdout_original_sha256": "7cfbd936f0653b0bdbb7b42252a8146436e4797b3433a5f721ebb59e51f09857",
+      "stderr_content": "test_catalog_rejects_duplicates_and_invalid_metadata (test_p096.EcommerceTests.test_catalog_rejects_duplicates_and_invalid_metadata) ... ok\ntest_create_reserves_once_and_publishes (test_p096.EcommerceTests.test_create_reserves_once_and_publishes) ... ok\ntest_demo_numbers (test_p096.EcommerceTests.test_demo_numbers) ... ok\ntest_exact_stock_can_be_allocated_then_exhausted (test_p096.EcommerceTests.test_exact_stock_can_be_allocated_then_exhausted) ... ok\ntest_insufficient_and_unknown_stock_do_not_create (test_p096.EcommerceTests.test_insufficient_and_unknown_stock_do_not_create) ... ok\ntest_invalid_identifiers_are_rejected (test_p096.EcommerceTests.test_invalid_identifiers_are_rejected) ... ok\ntest_invalid_order_quantities_are_rejected_before_mutation (test_p096.EcommerceTests.test_invalid_order_quantities_are_rejected_before_mutation) ... ok\ntest_invalid_transition_and_post_shipping_refund (test_p096.EcommerceTests.test_invalid_transition_and_post_shipping_refund) ... ok\ntest_inventory_set_requires_nonnegative_integer (test_p096.EcommerceTests.test_inventory_set_requires_nonnegative_integer) ... ok\ntest_local_create_rollback_after_publisher_failure (test_p096.EcommerceTests.test_local_create_rollback_after_publisher_failure) ... ok\ntest_local_refund_rollback_after_publisher_failure (test_p096.EcommerceTests.test_local_refund_rollback_after_publisher_failure) ... ok\ntest_recommendations_are_sorted_and_category_only (test_p096.EcommerceTests.test_recommendations_are_sorted_and_category_only) ... ok\ntest_refund_restores_stock_once (test_p096.EcommerceTests.test_refund_restores_stock_once) ... ok\ntest_refunded_order_cannot_ship_and_unknown_cannot_refund (test_p096.EcommerceTests.test_refunded_order_cannot_ship_and_unknown_cannot_refund) ... ok\ntest_retry_after_refund_does_not_reopen_order (test_p096.EcommerceTests.test_retry_after_refund_does_not_reopen_order) ... ok\ntest_retry_conflict_leaves_all_state_unchanged (test_p096.EcommerceTests.test_retry_conflict_leaves_all_state_unchanged) ... ok\ntest_retry_is_idempotent (test_p096.EcommerceTests.test_retry_is_idempotent) ... ok\ntest_returned_snapshots_do_not_mutate_internal_state (test_p096.EcommerceTests.test_returned_snapshots_do_not_mutate_internal_state) ... ok\ntest_shipping_and_delivery_are_idempotent (test_p096.EcommerceTests.test_shipping_and_delivery_are_idempotent) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.002s\n\nOK\n",
+      "stderr_original_sha256": "e4fd7f264894b0efedcd3cb24b9e4ae4ddc9194bba7053e96886419770c8e380"
+    },
+    {
+      "project": "P097",
+      "started_utc": "2026-10-21T20:38:57.849568+00:00",
+      "finished_utc": "2026-10-21T20:38:58.062359+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.2128,
+      "unittest_cases_reported": 14,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P097.stdout.log",
+      "stderr": "P097.stderr.log",
+      "stdout_content": "test_methods=14; executed=14; failures=0; errors=0\n",
+      "stdout_original_sha256": "0d9e7e1315eee6bba24040da0c1b609af32d5d10f34aa1e323e22a5b4e798177",
+      "stderr_content": "test_alarm_is_virtual_and_independent_from_hvac (test_p097.BuildingTests.test_alarm_is_virtual_and_independent_from_hvac) ... ok\ntest_boundaries_are_off (test_p097.BuildingTests.test_boundaries_are_off) ... ok\ntest_cooling_uses_distinct_rate (test_p097.BuildingTests.test_cooling_uses_distinct_rate) ... ok\ntest_deadband_has_no_memory_hysteresis (test_p097.BuildingTests.test_deadband_has_no_memory_hysteresis) ... ok\ntest_demo_numbers (test_p097.BuildingTests.test_demo_numbers) ... ok\ntest_energy_sums_power_times_duration (test_p097.BuildingTests.test_energy_sums_power_times_duration) ... ok\ntest_heating_cooling_and_off (test_p097.BuildingTests.test_heating_cooling_and_off) ... ok\ntest_invalid_alarm_adds_nothing (test_p097.BuildingTests.test_invalid_alarm_adds_nothing) ... ok\ntest_invalid_control_does_not_change_hvac (test_p097.BuildingTests.test_invalid_control_does_not_change_hvac) ... ok\ntest_invalid_duration_does_not_change_energy (test_p097.BuildingTests.test_invalid_duration_does_not_change_energy) ... ok\ntest_invalid_names_and_duplicate_zones (test_p097.BuildingTests.test_invalid_names_and_duplicate_zones) ... ok\ntest_invalid_temperatures_leave_previous_state (test_p097.BuildingTests.test_invalid_temperatures_leave_previous_state) ... ok\ntest_occupied_requires_boolean (test_p097.BuildingTests.test_occupied_requires_boolean) ... ok\ntest_unoccupied_is_eco_even_when_cold (test_p097.BuildingTests.test_unoccupied_is_eco_even_when_cold) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.007s\n\nOK\n",
+      "stderr_original_sha256": "b5e14fdc69a97974689f8c4708f6ccd2afb197c79c41349b737fe2b2b804d461"
+    },
+    {
+      "project": "P098",
+      "started_utc": "2026-10-21T20:38:58.072909+00:00",
+      "finished_utc": "2026-10-21T20:38:58.631630+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.5588,
+      "unittest_cases_reported": 17,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P098.stdout.log",
+      "stderr": "P098.stderr.log",
+      "stdout_content": "test_methods=17; executed=17; failures=0; errors=0\n",
+      "stdout_original_sha256": "dd4786d48189c540e25cdbb8a0e4f4c84596ba3bf35c408f7cf0421b82c40878",
+      "stderr_content": "test_collector_validation_error_preserves_head (test_p098.MonitorTests.test_collector_validation_error_preserves_head) ... ok\ntest_conflicting_duplicate_is_rejected (test_p098.MonitorTests.test_conflicting_duplicate_is_rejected) ... ok\ntest_demo_numbers (test_p098.MonitorTests.test_demo_numbers) ... ok\ntest_devices_have_independent_sequences (test_p098.MonitorTests.test_devices_have_independent_sequences) ... ok\ntest_duplicate_ack_has_no_second_effect (test_p098.MonitorTests.test_duplicate_ack_has_no_second_effect) ... ok\ntest_invalid_event_schema_and_sequence (test_p098.MonitorTests.test_invalid_event_schema_and_sequence) ... ok\ntest_invalid_identity_and_online_flag (test_p098.MonitorTests.test_invalid_identity_and_online_flag) ... ok\ntest_invalid_samples_do_not_consume_sequence (test_p098.MonitorTests.test_invalid_samples_do_not_consume_sequence) ... ok\ntest_lost_ack_replay_deduplicates_then_continues (test_p098.MonitorTests.test_lost_ack_replay_deduplicates_then_continues) ... ok\ntest_network_error_before_acceptance_keeps_all_events (test_p098.MonitorTests.test_network_error_before_acceptance_keeps_all_events) ... ok\ntest_new_event_gap_is_rejected (test_p098.MonitorTests.test_new_event_gap_is_rejected) ... ok\ntest_offline_retains_fifo (test_p098.MonitorTests.test_offline_retains_fifo) ... ok\ntest_partial_flush_keeps_head_and_suffix_on_error (test_p098.MonitorTests.test_partial_flush_keeps_head_and_suffix_on_error) ... ok\ntest_reconnect_drains_in_order (test_p098.MonitorTests.test_reconnect_drains_in_order) ... ok\ntest_restart_loses_ram_state_and_detects_sequence_conflict (test_p098.MonitorTests.test_restart_loses_ram_state_and_detects_sequence_conflict) ... ok\ntest_snapshots_do_not_modify_buffer_or_collector (test_p098.MonitorTests.test_snapshots_do_not_modify_buffer_or_collector) ... ok\ntest_wrong_or_missing_ack_cannot_discard_event (test_p098.MonitorTests.test_wrong_or_missing_ack_cannot_discard_event) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.005s\n\nOK\n",
+      "stderr_original_sha256": "8c57dbcec081d401a67c1fbceff56fc34dd09f0535a3fe6982f05b1b994128d7"
+    },
+    {
+      "project": "P099",
+      "started_utc": "2026-10-21T20:38:58.673815+00:00",
+      "finished_utc": "2026-10-21T20:38:58.913472+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.2397,
+      "unittest_cases_reported": 20,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P099.stdout.log",
+      "stderr": "P099.stderr.log",
+      "stdout_content": "test_methods=20; executed=20; failures=0; errors=0\n",
+      "stdout_original_sha256": "2cf868e8df8be5730694df96318ff931d6d3a574848a976013a9999b576df6d2",
+      "stderr_content": "test_all_negative_or_nonfinite_weights_rejected_even_off_path (test_p099.LogisticsTests.test_all_negative_or_nonfinite_weights_rejected_even_off_path) ... ok\ntest_demo_numbers (test_p099.LogisticsTests.test_demo_numbers) ... ok\ntest_disconnected_and_unknown_nodes (test_p099.LogisticsTests.test_disconnected_and_unknown_nodes) ... ok\ntest_eta_is_separate_arithmetic (test_p099.LogisticsTests.test_eta_is_separate_arithmetic) ... ok\ntest_graph_shape_and_missing_destination_rejected (test_p099.LogisticsTests.test_graph_shape_and_missing_destination_rejected) ... ok\ntest_invalid_history_and_window (test_p099.LogisticsTests.test_invalid_history_and_window) ... ok\ntest_mean_near_float_limit_stays_finite (test_p099.LogisticsTests.test_mean_near_float_limit_stays_finite) ... ok\ntest_moving_average_uses_last_k (test_p099.LogisticsTests.test_moving_average_uses_last_k) ... ok\ntest_overflowing_route_is_rejected (test_p099.LogisticsTests.test_overflowing_route_is_rejected) ... ok\ntest_parallel_edges_choose_cheaper (test_p099.LogisticsTests.test_parallel_edges_choose_cheaper) ... ok\ntest_route_improves_direct_cost (test_p099.LogisticsTests.test_route_improves_direct_cost) ... ok\ntest_routing_is_deterministic_across_input_order (test_p099.LogisticsTests.test_routing_is_deterministic_across_input_order) ... ok\ntest_shipment_cannot_skip_or_repeat_state_with_new_id (test_p099.LogisticsTests.test_shipment_cannot_skip_or_repeat_state_with_new_id) ... ok\ntest_shipment_transitions_and_idempotent_retry (test_p099.LogisticsTests.test_shipment_transitions_and_idempotent_retry) ... ok\ntest_tracking_conflict_and_nonincreasing_time_rejected (test_p099.LogisticsTests.test_tracking_conflict_and_nonincreasing_time_rejected) ... ok\ntest_tracking_invalid_values_do_not_mutate (test_p099.LogisticsTests.test_tracking_invalid_values_do_not_mutate) ... ok\ntest_tracking_snapshot_and_terminal_state (test_p099.LogisticsTests.test_tracking_snapshot_and_terminal_state) ... ok\ntest_warehouse_allocation_and_insufficiency (test_p099.LogisticsTests.test_warehouse_allocation_and_insufficiency) ... ok\ntest_warehouse_invalid_quantities_do_not_mutate (test_p099.LogisticsTests.test_warehouse_invalid_quantities_do_not_mutate) ... ok\ntest_zero_weights_cycles_and_same_node (test_p099.LogisticsTests.test_zero_weights_cycles_and_same_node) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.004s\n\nOK\n",
+      "stderr_original_sha256": "3cc7f0422f7021b12a252f455c02dd75ab3934a09268464b79fb6f0a42827644"
+    },
+    {
+      "project": "P100",
+      "started_utc": "2026-10-21T20:38:58.927261+00:00",
+      "finished_utc": "2026-10-21T20:38:59.080195+00:00",
+      "command": [
+        "<ambiente_di_test>",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<ambiente_di_test>",
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 0.1529,
+      "unittest_cases_reported": 24,
+      "passed": true,
+      "zero_tests_rejected": false,
+      "skips_or_unexpected_ok_suffix": false,
+      "compiled_python_files": 3,
+      "compile_errors": [],
+      "stdout": "P100.stdout.log",
+      "stderr": "P100.stderr.log",
+      "stdout_content": "test_methods=24; executed=24; failures=0; errors=0\n",
+      "stdout_original_sha256": "177e35a1ff6c550e9781d9208993b1b6fce8f10f952c2bc58c6287c95dd23e9c",
+      "stderr_content": "test_canonical_json_has_stable_key_order_and_rejects_non_json (test_smart_waste_platform.SmartWastePlatformTests.test_canonical_json_has_stable_key_order_and_rejects_non_json) ... ok\ntest_confidence_boundaries_and_boolean_rejection (test_smart_waste_platform.SmartWastePlatformTests.test_confidence_boundaries_and_boolean_rejection) ... ok\ntest_demo_numbers (test_smart_waste_platform.SmartWastePlatformTests.test_demo_numbers) ... ok\ntest_duplicate_conflicting_content_rejected (test_smart_waste_platform.SmartWastePlatformTests.test_duplicate_conflicting_content_rejected) ... ok\ntest_event_ids_are_scoped_to_device (test_smart_waste_platform.SmartWastePlatformTests.test_event_ids_are_scoped_to_device) ... ok\ntest_file_database_survives_close_and_keeps_dedup (test_smart_waste_platform.SmartWastePlatformTests.test_file_database_survives_close_and_keeps_dedup) ... ok\ntest_fill_boundaries_alert_is_greater_or_equal_80 (test_smart_waste_platform.SmartWastePlatformTests.test_fill_boundaries_alert_is_greater_or_equal_80) ... ok\ntest_helper_does_not_invent_model_results (test_smart_waste_platform.SmartWastePlatformTests.test_helper_does_not_invent_model_results) ... ok\ntest_helper_rejects_explicit_empty_or_boolean_timestamp (test_smart_waste_platform.SmartWastePlatformTests.test_helper_rejects_explicit_empty_or_boolean_timestamp) ... ok\ntest_identical_retry_does_not_duplicate_event_or_alert (test_smart_waste_platform.SmartWastePlatformTests.test_identical_retry_does_not_duplicate_event_or_alert) ... ok\ntest_invalid_event_ids_and_sql_injection_are_rejected (test_smart_waste_platform.SmartWastePlatformTests.test_invalid_event_ids_and_sql_injection_are_rejected) ... ok\ntest_malformed_mac_rejected_without_comparison_crash (test_smart_waste_platform.SmartWastePlatformTests.test_malformed_mac_rejected_without_comparison_crash) ... ok\ntest_memory_databases_do_not_persist (test_smart_waste_platform.SmartWastePlatformTests.test_memory_databases_do_not_persist) ... ok\ntest_nonfinite_numbers_rejected_before_any_write (test_smart_waste_platform.SmartWastePlatformTests.test_nonfinite_numbers_rejected_before_any_write) ... ok\ntest_payload_mutation_after_ingestion_cannot_change_database (test_smart_waste_platform.SmartWastePlatformTests.test_payload_mutation_after_ingestion_cannot_change_database) ... ok\ntest_random_secret_and_repr_do_not_expose_it (test_smart_waste_platform.SmartWastePlatformTests.test_random_secret_and_repr_do_not_expose_it) ... ok\ntest_registry_rejects_bad_ids_duplicates_and_short_secrets (test_smart_waste_platform.SmartWastePlatformTests.test_registry_rejects_bad_ids_duplicates_and_short_secrets) ... ok\ntest_schema_exact_no_images_or_unknown_event_types (test_smart_waste_platform.SmartWastePlatformTests.test_schema_exact_no_images_or_unknown_event_types) ... ok\ntest_sql_errors_are_not_silently_treated_as_duplicates (test_smart_waste_platform.SmartWastePlatformTests.test_sql_errors_are_not_silently_treated_as_duplicates) ... ok\ntest_tampered_payload_and_wrong_secret_rejected (test_smart_waste_platform.SmartWastePlatformTests.test_tampered_payload_and_wrong_secret_rejected) ... ok\ntest_timestamp_must_be_parseable_and_timezone_aware (test_smart_waste_platform.SmartWastePlatformTests.test_timestamp_must_be_parseable_and_timezone_aware) ... ok\ntest_transaction_rolls_back_event_if_alert_creation_fails (test_smart_waste_platform.SmartWastePlatformTests.test_transaction_rolls_back_event_if_alert_creation_fails) ... ok\ntest_unknown_device_rejected (test_smart_waste_platform.SmartWastePlatformTests.test_unknown_device_rejected) ... ok\ntest_valid_event_and_class_counts (test_smart_waste_platform.SmartWastePlatformTests.test_valid_event_and_class_counts) ... ok\n\n----------------------------------------------------------------------\nRan 24 tests in 0.025s\n\nOK\n",
+      "stderr_original_sha256": "c57ac8043efe9a722f4644ae32ab12be0d2a4c87a6ff68232e3c9c80fd41d4ea"
+    }
+  ]
+}

@@ -1,0 +1,917 @@
+{
+  "policy_matrix": [
+    {
+      "src": "internet",
+      "dst": "internet",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "internet",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "internet",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "internet",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "dmz",
+      "service": "https",
+      "allowed": true
+    },
+    {
+      "src": "internet",
+      "dst": "dmz",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "dmz",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "dmz",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "app",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "app",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "app",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "app",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "db",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "db",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "db",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "db",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "guest",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "guest",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "guest",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "guest",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "management",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "management",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "management",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "internet",
+      "dst": "management",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "internet",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "internet",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "internet",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "internet",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "dmz",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "dmz",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "dmz",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "dmz",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "app",
+      "service": "https",
+      "allowed": true
+    },
+    {
+      "src": "dmz",
+      "dst": "app",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "app",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "app",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "db",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "db",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "db",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "db",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "guest",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "guest",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "guest",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "guest",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "management",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "management",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "management",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "dmz",
+      "dst": "management",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "internet",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "internet",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "internet",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "internet",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "dmz",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "dmz",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "dmz",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "dmz",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "app",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "app",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "app",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "app",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "db",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "db",
+      "service": "postgres",
+      "allowed": true
+    },
+    {
+      "src": "app",
+      "dst": "db",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "db",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "guest",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "guest",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "guest",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "guest",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "management",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "management",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "management",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "app",
+      "dst": "management",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "internet",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "internet",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "internet",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "internet",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "dmz",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "dmz",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "dmz",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "dmz",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "app",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "app",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "app",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "app",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "db",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "db",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "db",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "db",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "guest",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "guest",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "guest",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "guest",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "management",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "management",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "management",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "db",
+      "dst": "management",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "internet",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "internet",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "internet",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "internet",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "dmz",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "dmz",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "dmz",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "dmz",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "app",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "app",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "app",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "app",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "db",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "db",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "db",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "db",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "guest",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "guest",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "guest",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "guest",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "management",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "management",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "management",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "guest",
+      "dst": "management",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "internet",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "internet",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "internet",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "internet",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "dmz",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "dmz",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "dmz",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "dmz",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "app",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "app",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "app",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "app",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "db",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "db",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "db",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "db",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "guest",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "guest",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "guest",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "guest",
+      "service": "unknown",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "management",
+      "service": "https",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "management",
+      "service": "postgres",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "management",
+      "service": "ssh",
+      "allowed": false
+    },
+    {
+      "src": "management",
+      "dst": "management",
+      "service": "unknown",
+      "allowed": false
+    }
+  ],
+  "allowed_count": 3,
+  "denied_count": 141,
+  "threshold": 3,
+  "window": 10,
+  "timeline": [
+    {
+      "ts": 0,
+      "alert": false,
+      "retained": [
+        0
+      ]
+    },
+    {
+      "ts": 5,
+      "alert": false,
+      "retained": [
+        0,
+        5
+      ]
+    },
+    {
+      "ts": 10,
+      "alert": true,
+      "retained": [
+        0,
+        5,
+        10
+      ]
+    },
+    {
+      "ts": 21,
+      "alert": false,
+      "retained": [
+        21
+      ]
+    }
+  ],
+  "exercise_ts": [
+    20,
+    25,
+    30,
+    31
+  ],
+  "exercise_alerts": [
+    false,
+    false,
+    true,
+    true
+  ]
+}

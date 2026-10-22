@@ -1,0 +1,32 @@
+[
+  {
+    "project": "P055",
+    "status": "passed",
+    "scope": "HTTP reale, psycopg e PostgreSQL WASM PGlite",
+    "database_version": "PostgreSQL 18.3 (PGlite 0.5.8) on wasm32-unknown-emscripten, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit",
+    "cases": [
+      "health",
+      "insert",
+      "duplicate 409",
+      "SQL injection literal",
+      "blank 422",
+      "persistence across API restart"
+    ],
+    "not_executed": [
+      "Nginx runtime",
+      "Docker Compose runtime",
+      "PostgreSQL 17 native"
+    ]
+  },
+  {
+    "project": "P056",
+    "status": "passed",
+    "scope": "HTTP reale health/readiness/404",
+    "not_executed": [
+      "Kubernetes cluster",
+      "image build",
+      "three Pods",
+      "Pod restart"
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "kind": "Riepilogo derivato del registro storico integrale; non è una nuova esecuzione.",
+  "project": "P056",
+  "full_log": "P056_runtime_results.json.gz",
+  "uncompressed_bytes": 1213939,
+  "uncompressed_sha256": "aa77d925727ebf76404065253bf895fc14adfbbd1045ea4c81ed25cd117a882a",
+  "commands": 128,
+  "failed_commands": 0,
+  "assertions": 9,
+  "assertions_passed": 9,
+  "assertion_results": [
+    {
+      "test": "P056 three ready replicas",
+      "passed": true
+    },
+    {
+      "test": "P056 Service endpoints",
+      "passed": true
+    },
+    {
+      "test": "P056 in-cluster Service HTTP",
+      "passed": true
+    },
+    {
+      "test": "P056 in-cluster Service HTTP",
+      "passed": true
+    },
+    {
+      "test": "P056 in-cluster Service HTTP",
+      "passed": true
+    },
+    {
+      "test": "P056 Service HTTP",
+      "passed": true
+    },
+    {
+      "test": "P056 Pod recreated",
+      "passed": true
+    },
+    {
+      "test": "P056 liveness restart",
+      "passed": true
+    },
+    {
+      "test": "P056 liveness failure observed",
+      "passed": true
+    }
+  ],
+  "recorded_final_result": {
+    "overall": "passed",
+    "project": "P056",
+    "mode": "runtime",
+    "reason": null
+  },
+  "scope_note": "Runtime storico Linux con Docker/kind; non attribuito ai nuovi job pubblici P001–P080. Tutti i comandi e gli stdout/stderr sono nel file gzip."
+}

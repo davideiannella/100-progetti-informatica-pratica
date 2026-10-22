@@ -1,0 +1,6 @@
+primo_caso: {"id": 380, "probabilita": 0.5432642500772994, "vero": 0, "predetto": 1}
+soglia: 0.3 {"accuracy": 0.5333333333333333, "precision": 0.4666666666666667, "recall": 1.0, "f1": 0.6363636363636364, "positive_rate": 0.4083333333333333, "brier": 0.21123896147258148, "log_loss": 0.611369609617441, "roc_auc": 0.706812302385743, "confusion_matrix": [[15, 56], [0, 49]]}
+soglia: 0.5 {"accuracy": 0.6916666666666667, "precision": 0.6428571428571429, "recall": 0.5510204081632653, "f1": 0.5934065934065934, "positive_rate": 0.4083333333333333, "brier": 0.21123896147258148, "log_loss": 0.611369609617441, "roc_auc": 0.706812302385743, "confusion_matrix": [[56, 15], [22, 27]]}
+soglia: 0.7 {"accuracy": 0.6333333333333333, "precision": 0.7272727272727273, "recall": 0.16326530612244897, "f1": 0.26666666666666666, "positive_rate": 0.4083333333333333, "brier": 0.21123896147258148, "log_loss": 0.611369609617441, "roc_auc": 0.706812302385743, "confusion_matrix": [[68, 3], [41, 8]]}
+uguaglianza_0_5: [[0, 0], [0, 1]]
+esercizio: {"accuracy": 0.5, "precision": 0.5, "recall": 0.5, "f1": 0.5, "positive_rate": 0.5, "brier": 0.21749999999999997, "log_loss": 0.5827461418789359, "roc_auc": 0.75, "confusion_matrix": [[1, 1], [1, 1]]}

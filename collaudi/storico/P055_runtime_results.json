@@ -1,0 +1,221 @@
+[
+  {
+    "command": [
+      "docker",
+      "info",
+      "--format",
+      "{{.ServerVersion}}"
+    ],
+    "cwd": "<ambiente_di_test>",
+    "exit_code": 0,
+    "stdout": "28.0.4\n",
+    "stderr": "",
+    "seconds": 0.25
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "version"
+    ],
+    "cwd": "<ambiente_di_test>",
+    "exit_code": 0,
+    "stdout": "Docker Compose version v2.38.2\n",
+    "stderr": "",
+    "seconds": 0.06
+  },
+  {
+    "command": [
+      "kubectl",
+      "version",
+      "--client",
+      "-o",
+      "json"
+    ],
+    "cwd": "<ambiente_di_test>",
+    "exit_code": 0,
+    "stdout": "{\n  \"clientVersion\": {\n    \"major\": \"1\",\n    \"minor\": \"37\",\n    \"gitVersion\": \"v1.37.1\",\n    \"gitCommit\": \"f78e722310e50bcaca9276be22276d9e91d91308\",\n    \"gitTreeState\": \"clean\",\n    \"buildDate\": \"2026-10-06T00:00:00Z\",\n    \"goVersion\": \"go1.26.8\",\n    \"compiler\": \"gc\",\n    \"platform\": \"linux/amd64\"\n  },\n  \"kustomizeVersion\": \"v5.8.1\"\n}\n",
+    "stderr": "",
+    "seconds": 0.09
+  },
+  {
+    "command": [
+      "kind",
+      "version"
+    ],
+    "cwd": "<ambiente_di_test>",
+    "exit_code": 0,
+    "stdout": "kind v0.33.0 go1.26.7 linux/amd64\n",
+    "stderr": "",
+    "seconds": 0.0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-f",
+      "<ambiente_di_test>",
+      "-p",
+      "libro-84b8337033-p055",
+      "config",
+      "--quiet"
+    ],
+    "cwd": "<ambiente_di_test>",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.17
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-f",
+      "<ambiente_di_test>",
+      "-p",
+      "libro-84b8337033-p055",
+      "up",
+      "-d",
+      "--build",
+      "--wait",
+      "--wait-timeout",
+      "120"
+    ],
+    "cwd": "<ambiente_di_test>",
+    "exit_code": 0,
+    "stdout": "#1 [internal] load local bake definitions\n#1 reading from stdin 512B done\n#1 DONE 0.0s\n\n#2 [internal] load build definition from Dockerfile\n#2 DONE 0.0s\n\n#2 [internal] load build definition from Dockerfile\n#2 transferring dockerfile: 287B done\n#2 DONE 0.0s\n\n#3 [internal] load metadata for docker.io/library/python:3.12-slim\n#3 ...\n\n#4 [auth] library/python:pull token for registry-1.docker.io\n#4 DONE 0.0s\n\n#3 [internal] load metadata for docker.io/library/python:3.12-slim\n#3 DONE 0.8s\n\n#5 [internal] load .dockerignore\n#5 transferring context: 2B done\n#5 DONE 0.0s\n\n#6 [internal] load build context\n#6 transferring context: 1.71kB done\n#6 DONE 0.0s\n\n#7 [1/5] FROM docker.io/library/python:3.12-slim@sha256:a6e34c598f2467ed0e9a8d349809fcd8b5c603269512df273a0bb1784edc11b1\n#7 resolve docker.io/library/python:3.12-slim@sha256:a6e34c598f2467ed0e9a8d349809fcd8b5c603269512df273a0bb1784edc11b1 done\n#7 sha256:6912e23eb44595b44dc6d9882b34f305ad6f6e9667cec70b13e5dbc4f8cd97f4 0B / 12.12MB 0.1s\n#7 sha256:a6e34c598f2467ed0e9a8d349809fcd8b5c603269512df273a0bb1784edc11b1 10.37kB / 10.37kB done\n#7 sha256:2b4f19dae3a777dfc3b76730bda1e82e1f66ab2a2686fa93ca78edbfb4f04ffe 1.75kB / 1.75kB done\n#7 sha256:df18428df8a0f9189c84e7424d214b4c50092af1f9dca5842a00c41c39bda316 5.66kB / 5.66kB done\n#7 sha256:ecc510c1e359bdc007b39802570bb7e4dec7d6ebccf357c3201a74299113e05e 6.29MB / 29.84MB 0.1s\n#7 sha256:75b6a36c64a1cf3520fc4b4aae4739d5caa8a6a05c27835a920a61784c9c32f8 0B / 1.29MB 0.1s\n#7 sha256:ecc510c1e359bdc007b39802570bb7e4dec7d6ebccf357c3201a74299113e05e 29.84MB / 29.84MB 0.1s done\n#7 sha256:75b6a36c64a1cf3520fc4b4aae4739d5caa8a6a05c27835a920a61784c9c32f8 1.29MB / 1.29MB 0.2s done\n#7 extracting sha256:ecc510c1e359bdc007b39802570bb7e4dec7d6ebccf357c3201a74299113e05e 0.1s\n#7 sha256:bbc5a12237474ec0b23b5051260d56d6436a24d70d9cad961adebe7a037ed813 0B / 249B 0.2s\n#7 sha256:6912e23eb44595b44dc6d9882b34f305ad6f6e9667cec70b13e5dbc4f8cd97f4 12.12MB / 12.12MB 0.3s done\n#7 sha256:bbc5a12237474ec0b23b5051260d56d6436a24d70d9cad961adebe7a037ed813 249B / 249B 0.2s done\n#7 extracting sha256:ecc510c1e359bdc007b39802570bb7e4dec7d6ebccf357c3201a74299113e05e 1.1s done\n#7 extracting sha256:75b6a36c64a1cf3520fc4b4aae4739d5caa8a6a05c27835a920a61784c9c32f8 0.1s\n#7 extracting sha256:75b6a36c64a1cf3520fc4b4aae4739d5caa8a6a05c27835a920a61784c9c32f8 0.1s done\n#7 extracting sha256:6912e23eb44595b44dc6d9882b34f305ad6f6e9667cec70b13e5dbc4f8cd97f4\n#7 extracting sha256:6912e23eb44595b44dc6d9882b34f305ad6f6e9667cec70b13e5dbc4f8cd97f4 0.6s done\n#7 extracting sha256:bbc5a12237474ec0b23b5051260d56d6436a24d70d9cad961adebe7a037ed813\n#7 extracting sha256:bbc5a12237474ec0b23b5051260d56d6436a24d70d9cad961adebe7a037ed813 done\n#7 DONE 2.3s\n\n#8 [2/5] WORKDIR /app\n#8 DONE 0.0s\n\n#9 [3/5] COPY requirements.txt .\n#9 DONE 0.0s\n\n#10 [4/5] RUN pip install --no-cache-dir -r requirements.txt && useradd --create-home appuser\n#10 1.540 Collecting fastapi==0.143.2 (from -r requirements.txt (line 1))\n#10 1.559   Downloading fastapi-0.143.2-py3-none-any.whl.metadata (26 kB)\n#10 1.669 Collecting pydantic==2.14.1 (from -r requirements.txt (line 2))\n#10 1.672   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)\n#10 1.708 Collecting uvicorn==0.54.0 (from -r requirements.txt (line 3))\n#10 1.711   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)\n#10 1.726 Collecting psycopg==3.3.6 (from psycopg[binary]==3.3.6->-r requirements.txt (line 4))\n#10 1.728   Downloading psycopg-3.3.6-py3-none-any.whl.metadata (4.4 kB)\n#10 1.773 Collecting starlette>=0.46.0 (from fastapi==0.143.2->-r requirements.txt (line 1))\n#10 1.776   Downloading starlette-1.8.0-py3-none-any.whl.metadata (6.6 kB)\n#10 1.801 Collecting typing-extensions>=4.8.0 (from fastapi==0.143.2->-r requirements.txt (line 1))\n#10 1.804   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)\n#10 1.811 Collecting typing-inspection>=0.4.2 (from fastapi==0.143.2->-r requirements.txt (line 1))\n#10 1.813   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)\n#10 1.819 Collecting annotated-doc>=0.0.2 (from fastapi==0.143.2->-r requirements.txt (line 1))\n#10 1.821   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)\n#10 1.840 Collecting opentelemetry-api>=1.44.0 (from fastapi==0.143.2->-r requirements.txt (line 1))\n#10 1.843   Downloading opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)\n#10 1.850 Collecting annotated-types>=0.6.0 (from pydantic==2.14.1->-r requirements.txt (line 2))\n#10 1.853   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)\n#10 2.470 Collecting pydantic-core==2.50.1 (from pydantic==2.14.1->-r requirements.txt (line 2))\n#10 2.476   Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)\n#10 2.496 Collecting click>=7.0 (from uvicorn==0.54.0->-r requirements.txt (line 3))\n#10 2.499   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)\n#10 2.507 Collecting h11>=0.8 (from uvicorn==0.54.0->-r requirements.txt (line 3))\n#10 2.512   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)\n#10 2.646 Collecting psycopg-binary==3.3.6 (from psycopg[binary]==3.3.6->-r requirements.txt (line 4))\n#10 2.650   Downloading psycopg_binary-3.3.6-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.7 kB)\n#10 2.676 Collecting anyio<5,>=4.0.0 (from starlette>=0.46.0->fastapi==0.143.2->-r requirements.txt (line 1))\n#10 2.679   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)\n#10 2.699 Collecting idna>=2.8 (from anyio<5,>=4.0.0->starlette>=0.46.0->fastapi==0.143.2->-r requirements.txt (line 1))\n#10 2.702   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)\n#10 2.709 Downloading fastapi-0.143.2-py3-none-any.whl (144 kB)\n#10 2.714 Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)\n#10 2.721 Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)\n#10 2.725 Downloading psycopg-3.3.6-py3-none-any.whl (215 kB)\n#10 2.729 Downloading psycopg_binary-3.3.6-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.2 MB)\n#10 2.750    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 297.6 MB/s eta 0:00:00\n#10 2.754 Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)\n#10 2.760    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 419.0 MB/s eta 0:00:00\n#10 2.764 Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)\n#10 2.766 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)\n#10 2.770 Downloading click-8.5.0-py3-none-any.whl (125 kB)\n#10 2.774 Downloading h11-0.16.0-py3-none-any.whl (37 kB)\n#10 2.777 Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)\n#10 2.780 Downloading starlette-1.8.0-py3-none-any.whl (79 kB)\n#10 2.782 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)\n#10 2.785 Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)\n#10 2.789 Downloading anyio-4.15.1-py3-none-any.whl (132 kB)\n#10 2.792 Downloading idna-3.20-py3-none-any.whl (69 kB)\n#10 2.842 Installing collected packages: typing-extensions, psycopg-binary, idna, h11, click, annotated-types, annotated-doc, uvicorn, typing-inspection, pydantic-core, psycopg, opentelemetry-api, anyio, starlette, pydantic, fastapi\n#10 3.920 Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 click-8.5.0 fastapi-0.143.2 h11-0.16.0 idna-3.20 opentelemetry-api-1.45.1 psycopg-3.3.6 psycopg-binary-3.3.6 pydantic-2.14.1 pydantic-core-2.50.1 starlette-1.8.0 typing-extensions-4.16.0 typing-inspection-0.4.4 uvicorn-0.54.0\n#10 3.920 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.\n#10 4.005 \n#10 4.005 [notice] A new release of pip is available: 25.0.1 -> 26.2.1\n#10 4.005 [notice] To update, run: pip install --upgrade pip\n#10 DONE 4.2s\n\n#11 [5/5] COPY app.py .\n#11 DONE 0.0s\n\n#12 exporting to image\n#12 exporting layers\n#12 exporting layers 0.9s done\n#12 writing image sha256:f2c309cf8ed8d3fde53d9cf02a49e805e70ae8e19788aa7f0fe5d473423f76a3 done\n#12 naming to docker.io/library/libro-84b8337033-p055-api done\n#12 DONE 0.9s\n\n#13 resolving provenance for metadata file\n#13 DONE 0.0s\n",
+    "stderr": " web Pulling \n db Pulling \n 589002ba0eae Pulling fs layer \n 1d9cbdb003be Pulling fs layer \n e914c6e98e37 Pulling fs layer \n d631a49fb4f7 Pulling fs layer \n 8f7c784e2471 Pulling fs layer \n 44fa0a5a779f Pulling fs layer \n 98104829f3fe Pulling fs layer \n 0151c82f84a9 Pulling fs layer \n 8f7c784e2471 Waiting \n 44fa0a5a779f Waiting \n 98104829f3fe Waiting \n 0151c82f84a9 Waiting \n d631a49fb4f7 Waiting \n e2de96513ba9 Already exists \n 4ece9a32c307 Pulling fs layer \n 43f9814c9a3b Pulling fs layer \n 3333950675b2 Pulling fs layer \n f3b07e8a357c Pulling fs layer \n eb805f20f060 Pulling fs layer \n 7ccdb0dcae74 Pulling fs layer \n 93a3470d5852 Pulling fs layer \n b0a0d9d2abf2 Pulling fs layer \n a8a481ae6efc Pulling fs layer \n 4ece9a32c307 Waiting \n 43f9814c9a3b Waiting \n 3333950675b2 Waiting \n f3b07e8a357c Waiting \n eb805f20f060 Waiting \n 7ccdb0dcae74 Waiting \n 93a3470d5852 Waiting \n b0a0d9d2abf2 Waiting \n a8a481ae6efc Waiting \n e914c6e98e37 Downloading [==================================================>]     626B/626B\n 589002ba0eae Downloading [>                                                  ]  48.51kB/3.862MB\n e914c6e98e37 Verifying Checksum \n e914c6e98e37 Download complete \n 1d9cbdb003be Downloading [>                                                  ]  32.13kB/1.834MB\n 1d9cbdb003be Downloading [==================================================>]  1.834MB/1.834MB\n 1d9cbdb003be Verifying Checksum \n 1d9cbdb003be Download complete \n 589002ba0eae Verifying Checksum \n 589002ba0eae Download complete \n 589002ba0eae Extracting [>                                                  ]  65.54kB/3.862MB\n 589002ba0eae Extracting [==============================================>    ]  3.604MB/3.862MB\n 589002ba0eae Extracting [==================================================>]  3.862MB/3.862MB\n 589002ba0eae Extracting [==================================================>]  3.862MB/3.862MB\n 589002ba0eae Pull complete \n 1d9cbdb003be Extracting [>                                                  ]  32.77kB/1.834MB\n 1d9cbdb003be Extracting [==================================================>]  1.834MB/1.834MB\n 1d9cbdb003be Extracting [==================================================>]  1.834MB/1.834MB\n d631a49fb4f7 Downloading [==================================================>]     956B/956B\n d631a49fb4f7 Verifying Checksum \n d631a49fb4f7 Download complete \n 8f7c784e2471 Downloading [==================================================>]     405B/405B\n 8f7c784e2471 Verifying Checksum \n 8f7c784e2471 Download complete \n 44fa0a5a779f Downloading [==================================================>]   1.21kB/1.21kB\n 44fa0a5a779f Verifying Checksum \n 44fa0a5a779f Download complete \n 1d9cbdb003be Pull complete \n e914c6e98e37 Extracting [==================================================>]     626B/626B\n e914c6e98e37 Extracting [==================================================>]     626B/626B\n e914c6e98e37 Pull complete \n d631a49fb4f7 Extracting [==================================================>]     956B/956B\n d631a49fb4f7 Extracting [==================================================>]     956B/956B\n d631a49fb4f7 Pull complete \n 8f7c784e2471 Extracting [==================================================>]     405B/405B\n 8f7c784e2471 Extracting [==================================================>]     405B/405B\n 8f7c784e2471 Pull complete \n 44fa0a5a779f Extracting [==================================================>]   1.21kB/1.21kB\n 44fa0a5a779f Extracting [==================================================>]   1.21kB/1.21kB\n 98104829f3fe Downloading [==================================================>]  1.398kB/1.398kB\n 98104829f3fe Verifying Checksum \n 98104829f3fe Download complete \n 4ece9a32c307 Downloading [==================================================>]     968B/968B\n 4ece9a32c307 Verifying Checksum \n 4ece9a32c307 Download complete \n 44fa0a5a779f Pull complete \n 4ece9a32c307 Extracting [==================================================>]     968B/968B\n 4ece9a32c307 Extracting [==================================================>]     968B/968B\n 98104829f3fe Extracting [==================================================>]  1.398kB/1.398kB\n 98104829f3fe Extracting [==================================================>]  1.398kB/1.398kB\n 98104829f3fe Pull complete \n 4ece9a32c307 Pull complete \n 0151c82f84a9 Downloading [>                                                  ]  212.3kB/20.25MB\n 0151c82f84a9 Download complete \n 0151c82f84a9 Extracting [>                                                  ]  229.4kB/20.25MB\n 43f9814c9a3b Downloading [>                                                  ]  15.79kB/901.4kB\n 43f9814c9a3b Verifying Checksum \n 43f9814c9a3b Download complete \n 43f9814c9a3b Extracting [=>                                                 ]  32.77kB/901.4kB\n 0151c82f84a9 Extracting [========>                                          ]  3.441MB/20.25MB\n 3333950675b2 Downloading [==================================================>]     116B/116B\n 3333950675b2 Verifying Checksum \n 3333950675b2 Download complete \n 43f9814c9a3b Extracting [==================================================>]  901.4kB/901.4kB\n 43f9814c9a3b Pull complete \n 3333950675b2 Extracting [==================================================>]     116B/116B\n 3333950675b2 Extracting [==================================================>]     116B/116B\n 3333950675b2 Pull complete \n f3b07e8a357c Downloading [>                                                  ]  535.2kB/112.4MB\n 0151c82f84a9 Extracting [==================>                                ]  7.569MB/20.25MB\n f3b07e8a357c Downloading [==========>                                        ]  24.04MB/112.4MB\n 0151c82f84a9 Extracting [===========================>                       ]  11.01MB/20.25MB\n eb805f20f060 Downloading [=================>                                 ]    3.5kB/9.999kB\n eb805f20f060 Downloading [==================================================>]  9.999kB/9.999kB\n eb805f20f060 Verifying Checksum \n eb805f20f060 Download complete \n 7ccdb0dcae74 Downloading [==================================================>]     128B/128B\n 7ccdb0dcae74 Verifying Checksum \n 7ccdb0dcae74 Download complete \n f3b07e8a357c Downloading [=====================>                             ]  48.52MB/112.4MB\n 0151c82f84a9 Extracting [==================================>                ]  13.99MB/20.25MB\n f3b07e8a357c Downloading [=================================>                 ]  76.23MB/112.4MB\n 0151c82f84a9 Extracting [===========================================>       ]  17.43MB/20.25MB\n 93a3470d5852 Downloading [==================================================>]     169B/169B\n 93a3470d5852 Verifying Checksum \n 93a3470d5852 Download complete \n b0a0d9d2abf2 Downloading [============================>                      ]    3.5kB/6.111kB\n b0a0d9d2abf2 Downloading [==================================================>]  6.111kB/6.111kB\n b0a0d9d2abf2 Verifying Checksum \n b0a0d9d2abf2 Download complete \n f3b07e8a357c Downloading [============================================>      ]  99.65MB/112.4MB\n f3b07e8a357c Verifying Checksum \n f3b07e8a357c Download complete \n 0151c82f84a9 Extracting [=================================================> ]  20.19MB/20.25MB\n f3b07e8a357c Extracting [>                                                  ]  557.1kB/112.4MB\n 0151c82f84a9 Extracting [==================================================>]  20.25MB/20.25MB\n a8a481ae6efc Downloading [==================================================>]     183B/183B\n a8a481ae6efc Verifying Checksum \n a8a481ae6efc Download complete \n f3b07e8a357c Extracting [>                                                  ]  2.228MB/112.4MB\n f3b07e8a357c Extracting [=>                                                 ]  3.342MB/112.4MB\n f3b07e8a357c Extracting [====>                                              ]  10.58MB/112.4MB\n f3b07e8a357c Extracting [=======>                                           ]  17.83MB/112.4MB\n 0151c82f84a9 Pull complete \n f3b07e8a357c Extracting [===========>                                       ]  25.07MB/112.4MB\n web Pulled \n f3b07e8a357c Extracting [==============>                                    ]  32.31MB/112.4MB\n f3b07e8a357c Extracting [=================>                                 ]  39.55MB/112.4MB\n f3b07e8a357c Extracting [====================>                              ]  46.79MB/112.4MB\n f3b07e8a357c Extracting [========================>                          ]  54.03MB/112.4MB\n f3b07e8a357c Extracting [=========================>                         ]  57.93MB/112.4MB\n f3b07e8a357c Extracting [===========================>                       ]  62.39MB/112.4MB\n f3b07e8a357c Extracting [==============================>                    ]  69.63MB/112.4MB\n f3b07e8a357c Extracting [=================================>                 ]  76.32MB/112.4MB\n f3b07e8a357c Extracting [====================================>              ]  81.89MB/112.4MB\n f3b07e8a357c Extracting [====================================>              ]     83MB/112.4MB\n f3b07e8a357c Extracting [======================================>            ]  85.79MB/112.4MB\n f3b07e8a357c Extracting [=======================================>           ]  89.13MB/112.4MB\n f3b07e8a357c Extracting [=========================================>         ]  93.03MB/112.4MB\n f3b07e8a357c Extracting [===========================================>       ]  97.48MB/112.4MB\n f3b07e8a357c Extracting [============================================>      ]  99.16MB/112.4MB\n f3b07e8a357c Extracting [===============================================>   ]  107.5MB/112.4MB\n f3b07e8a357c Extracting [==================================================>]  112.4MB/112.4MB\n f3b07e8a357c Pull complete \n eb805f20f060 Extracting [==================================================>]  9.999kB/9.999kB\n eb805f20f060 Extracting [==================================================>]  9.999kB/9.999kB\n eb805f20f060 Pull complete \n 7ccdb0dcae74 Extracting [==================================================>]     128B/128B\n 7ccdb0dcae74 Extracting [==================================================>]     128B/128B\n 7ccdb0dcae74 Pull complete \n 93a3470d5852 Extracting [==================================================>]     169B/169B\n 93a3470d5852 Extracting [==================================================>]     169B/169B\n 93a3470d5852 Pull complete \n b0a0d9d2abf2 Extracting [==================================================>]  6.111kB/6.111kB\n b0a0d9d2abf2 Extracting [==================================================>]  6.111kB/6.111kB\n b0a0d9d2abf2 Pull complete \n a8a481ae6efc Extracting [==================================================>]     183B/183B\n a8a481ae6efc Extracting [==================================================>]     183B/183B\n a8a481ae6efc Pull complete \n db Pulled \n api  Built\n Network libro-84b8337033-p055_default  Creating\n Network libro-84b8337033-p055_default  Created\n Volume \"libro-84b8337033-p055_dbdata\"  Creating\n Volume \"libro-84b8337033-p055_dbdata\"  Created\n Container libro-84b8337033-p055-db-1  Creating\n Container libro-84b8337033-p055-db-1  Created\n Container libro-84b8337033-p055-api-1  Creating\n Container libro-84b8337033-p055-api-1  Created\n Container libro-84b8337033-p055-web-1  Creating\n Container libro-84b8337033-p055-web-1  Created\n Container libro-84b8337033-p055-db-1  Starting\n Container libro-84b8337033-p055-db-1  Started\n Container libro-84b8337033-p055-db-1  Waiting\n Container libro-84b8337033-p055-db-1  Healthy\n Container libro-84b8337033-p055-api-1  Starting\n Container libro-84b8337033-p055-api-1  Started\n Container libro-84b8337033-p055-api-1  Waiting\n Container libro-84b8337033-p055-api-1  Healthy\n Container libro-84b8337033-p055-web-1  Starting\n Container libro-84b8337033-p055-web-1  Started\n Container libro-84b8337033-p055-db-1  Waiting\n Container libro-84b8337033-p055-web-1  Waiting\n Container libro-84b8337033-p055-api-1  Waiting\n Container libro-84b8337033-p055-api-1  Healthy\n Container libro-84b8337033-p055-web-1  Healthy\n Container libro-84b8337033-p055-db-1  Healthy\n",
+    "seconds": 27.21
+  },
+  {
+    "test": "P055 create via Nginx",
+    "passed": true,
+    "detail": "Nginx → API → PostgreSQL"
+  },
+  {
+    "test": "P055 duplicate",
+    "passed": true,
+    "detail": "HTTP 409"
+  },
+  {
+    "test": "P055 invalid",
+    "passed": true,
+    "detail": "HTTP 422"
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-f",
+      "<ambiente_di_test>",
+      "-p",
+      "libro-84b8337033-p055",
+      "restart",
+      "api"
+    ],
+    "cwd": "<ambiente_di_test>",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": " Container libro-84b8337033-p055-api-1  Restarting\n Container libro-84b8337033-p055-api-1  Started\n",
+    "seconds": 0.5
+  },
+  {
+    "test": "P055 persistence",
+    "passed": true,
+    "detail": "record presente dopo riavvio API"
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-f",
+      "<ambiente_di_test>",
+      "-p",
+      "libro-84b8337033-p055",
+      "exec",
+      "-T",
+      "db",
+      "psql",
+      "-U",
+      "app",
+      "-d",
+      "appdb",
+      "-Atc",
+      "SHOW server_version;"
+    ],
+    "cwd": "<ambiente_di_test>",
+    "exit_code": 0,
+    "stdout": "17.11\n",
+    "stderr": "",
+    "seconds": 0.11
+  },
+  {
+    "test": "P055 native PostgreSQL 17",
+    "passed": true,
+    "detail": "17.11"
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-f",
+      "<ambiente_di_test>",
+      "-p",
+      "libro-84b8337033-p055",
+      "restart",
+      "db"
+    ],
+    "cwd": "<ambiente_di_test>",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": " Container libro-84b8337033-p055-db-1  Restarting\n Container libro-84b8337033-p055-db-1  Started\n",
+    "seconds": 0.31
+  },
+  {
+    "test": "P055 DB restart persistence",
+    "passed": true,
+    "detail": "record presente dopo riavvio PostgreSQL"
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-f",
+      "<ambiente_di_test>",
+      "-p",
+      "libro-84b8337033-p055",
+      "ps",
+      "--format",
+      "json"
+    ],
+    "cwd": "<ambiente_di_test>",
+    "exit_code": 0,
+    "stdout": "{\"Command\":\"\\\"uvicorn app:app --h…\\\"\",\"CreatedAt\":\"2026-10-16 23:31:27 +0000 UTC\",\"ExitCode\":0,\"Health\":\"starting\",\"ID\":\"67115a9fdc66\",\"Image\":\"libro-84b8337033-p055-api\",\"Labels\":\"com.docker.compose.depends_on=db:service_healthy:false,com.docker.compose.service=api,com.docker.compose.version=2.38.2,com.docker.compose.project.config_files=<ambiente_di_test>,com.docker.compose.project.working_dir=<ambiente_di_test>,com.docker.compose.config-hash=6b867f2954326f41eedbfcca1267c4433f32fab1c4ad33ba910dcb4118e2cffd,com.docker.compose.container-number=1,com.docker.compose.oneoff=False,com.docker.compose.project=libro-84b8337033-p055\",\"LocalVolumes\":\"0\",\"Mounts\":\"\",\"Name\":\"libro-84b8337033-p055-api-1\",\"Names\":\"libro-84b8337033-p055-api-1\",\"Networks\":\"libro-84b8337033-p055_default\",\"Ports\":\"8000/tcp\",\"Project\":\"libro-84b8337033-p055\",\"Publishers\":[{\"URL\":\"\",\"TargetPort\":8000,\"PublishedPort\":0,\"Protocol\":\"tcp\"}],\"RunningFor\":\"15 seconds ago\",\"Service\":\"api\",\"Size\":\"0B\",\"State\":\"running\",\"Status\":\"Up 2 seconds (health: starting)\"}\n{\"Command\":\"\\\"docker-entrypoint.s…\\\"\",\"CreatedAt\":\"2026-10-16 23:31:27 +0000 UTC\",\"ExitCode\":0,\"Health\":\"starting\",\"ID\":\"0df01f29900e\",\"Image\":\"postgres:17-alpine\",\"Labels\":\"com.docker.compose.container-number=1,com.docker.compose.image=sha256:79bd7c99e923138f136f8009d6bffa66e21e9d4fda5c0c561b00fc9c90cfe537,com.docker.compose.project=libro-84b8337033-p055,com.docker.compose.project.working_dir=<ambiente_di_test>,com.docker.compose.service=db,com.docker.compose.version=2.38.2,com.docker.compose.config-hash=cfd04ca8bd7a58273ea9f7dff5d698241f9bae7cc6b63fc4c6ff141b6cf9a5ca,com.docker.compose.depends_on=,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=<ambiente_di_test>\",\"LocalVolumes\":\"1\",\"Mounts\":\"libro-84b83370…\",\"Name\":\"libro-84b8337033-p055-db-1\",\"Names\":\"libro-84b8337033-p055-db-1\",\"Networks\":\"libro-84b8337033-p055_default\",\"Ports\":\"5432/tcp\",\"Project\":\"libro-84b8337033-p055\",\"Publishers\":[{\"URL\":\"\",\"TargetPort\":5432,\"PublishedPort\":0,\"Protocol\":\"tcp\"}],\"RunningFor\":\"15 seconds ago\",\"Service\":\"db\",\"Size\":\"0B\",\"State\":\"running\",\"Status\":\"Up Less than a second (health: starting)\"}\n{\"Command\":\"\\\"/docker-entrypoint.…\\\"\",\"CreatedAt\":\"2026-10-16 23:31:27 +0000 UTC\",\"ExitCode\":0,\"Health\":\"\",\"ID\":\"e105296155ba\",\"Image\":\"nginx:1.28-alpine\",\"Labels\":\"com.docker.compose.oneoff=False,com.docker.compose.project=libro-84b8337033-p055,com.docker.compose.service=web,maintainer=NGINX Docker Maintainers \\u003cdocker-maint@nginx.com\\u003e,com.docker.compose.config-hash=a0e5b6b98526863017586dfae1b074f92c98f931d111d9c32db5a2584e17bad2,com.docker.compose.container-number=1,com.docker.compose.project.config_files=<ambiente_di_test>,com.docker.compose.project.working_dir=<ambiente_di_test>,com.docker.compose.version=2.38.2,com.docker.compose.depends_on=api:service_healthy:false,com.docker.compose.image=sha256:dc73b49f5124cf2ee538dfbdfbd121f0b4ccdcb20fea30f3a81bd477c02e2bb5\",\"LocalVolumes\":\"0\",\"Mounts\":\"<ambiente_di_test>\",\"Name\":\"libro-84b8337033-p055-web-1\",\"Names\":\"libro-84b8337033-p055-web-1\",\"Networks\":\"libro-84b8337033-p055_default\",\"Ports\":\"127.0.0.1:8080-\\u003e80/tcp\",\"Project\":\"libro-84b8337033-p055\",\"Publishers\":[{\"URL\":\"127.0.0.1\",\"TargetPort\":80,\"PublishedPort\":8080,\"Protocol\":\"tcp\"}],\"RunningFor\":\"15 seconds ago\",\"Service\":\"web\",\"Size\":\"0B\",\"State\":\"running\",\"Status\":\"Up 3 seconds\"}\n",
+    "stderr": "",
+    "seconds": 0.08
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-f",
+      "<ambiente_di_test>",
+      "-p",
+      "libro-84b8337033-p055",
+      "down",
+      "--volumes",
+      "--remove-orphans"
+    ],
+    "cwd": "<ambiente_di_test>",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": " Container libro-84b8337033-p055-web-1  Stopping\n Container libro-84b8337033-p055-web-1  Stopped\n Container libro-84b8337033-p055-web-1  Removing\n Container libro-84b8337033-p055-web-1  Removed\n Container libro-84b8337033-p055-api-1  Stopping\n Container libro-84b8337033-p055-api-1  Stopped\n Container libro-84b8337033-p055-api-1  Removing\n Container libro-84b8337033-p055-api-1  Removed\n Container libro-84b8337033-p055-db-1  Stopping\n Container libro-84b8337033-p055-db-1  Stopped\n Container libro-84b8337033-p055-db-1  Removing\n Container libro-84b8337033-p055-db-1  Removed\n Volume libro-84b8337033-p055_dbdata  Removing\n Network libro-84b8337033-p055_default  Removing\n Network libro-84b8337033-p055_default  Removed\n Volume libro-84b8337033-p055_dbdata  Removed\n",
+    "seconds": 0.73
+  },
+  {
+    "overall": "passed",
+    "project": "P055",
+    "mode": "runtime",
+    "reason": null
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-17",
+  "docker": "29.9.1",
+  "compose": "5.6.0",
+  "kubectl": "1.37.1",
+  "kind": "0.33.0",
+  "kubeconform": "0.8.0",
+  "compose_native_config": "passed",
+  "kubernetes_manifest_schema": {
+    "resources": [],
+    "summary": {
+      "valid": 2,
+      "invalid": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "docker_daemon": "blocked",
+  "images_built": 0,
+  "compose_services_started": 0,
+  "kubernetes_clusters_created": 0,
+  "blocker": "Unix socket creation denied (operation not permitted); mount operations also denied",
+  "runtime_deployment_validation": "incomplete",
+  "p001_p040_retested": false
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "project": "P031",
+    "engine": "MongoDB",
+    "version": "8.0.14",
+    "status": "passed",
+    "scope": "Script originale eseguito in mongosh; BSON Date, indice composto, inserimenti e ordinamento verificati",
+    "output": ""
+  },
+  {
+    "project": "P032",
+    "engine": "Neo4j",
+    "version": "Neo4j/5.26.0",
+    "status": "passed",
+    "scope": "Cypher originale eseguito; percorso pesato, direzione e ripetibilità MERGE verificati",
+    "output": "Costo 12, percorso A B C, tre fermate e tre archi anche dopo seconda esecuzione"
+  }
+]

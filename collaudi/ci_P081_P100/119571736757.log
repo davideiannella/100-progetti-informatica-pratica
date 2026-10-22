@@ -1,0 +1,394 @@
+﻿2026-10-22T00:45:07.1290361Z Current runner version: '2.338.0'
+2026-10-22T00:45:07.1310412Z ##[group]Runner Image Provisioner
+2026-10-22T00:45:07.1311222Z Hosted Compute Agent
+2026-10-22T00:45:07.1311735Z Version: 20261015.610
+2026-10-22T00:45:07.1312276Z Commit: 267fdb4e8bbec4ab5ea31367f3a00d5c480c7656
+2026-10-22T00:45:07.1312880Z Build Date: 2026-10-14T17:06:54Z
+2026-10-22T00:45:07.1313530Z Worker ID: {52daca5f-d88c-4bfd-bacf-5708e897715c}
+2026-10-22T00:45:07.1314151Z Region: centralus
+2026-10-22T00:45:07.1314600Z Cloud: Azure
+2026-10-22T00:45:07.1315044Z ##[endgroup]
+2026-10-22T00:45:07.1316468Z ##[group]Operating System
+2026-10-22T00:45:07.1317010Z Ubuntu
+2026-10-22T00:45:07.1317457Z 24.04.5
+2026-10-22T00:45:07.1317910Z LTS
+2026-10-22T00:45:07.1318340Z ##[endgroup]
+2026-10-22T00:45:07.1318823Z ##[group]Runner Image
+2026-10-22T00:45:07.1319300Z Image: ubuntu-24.04
+2026-10-22T00:45:07.1319936Z Version: 20261018.339.1
+2026-10-22T00:45:07.1320985Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261018.339/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-22T00:45:07.1322260Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261018.339
+2026-10-22T00:45:07.1323043Z ##[endgroup]
+2026-10-22T00:45:07.1323967Z ##[group]GITHUB_TOKEN Permissions
+2026-10-22T00:45:07.1325888Z Contents: read
+2026-10-22T00:45:07.1326634Z Metadata: read
+2026-10-22T00:45:07.1327116Z ##[endgroup]
+2026-10-22T00:45:07.1328800Z Secret source: Actions
+2026-10-22T00:45:07.1329782Z Cache mode: write
+2026-10-22T00:45:07.1330363Z Prepare workflow directory
+2026-10-22T00:45:07.2303569Z Prepare all required actions
+2026-10-22T00:45:07.2345363Z Getting action download info
+2026-10-22T00:45:07.4700179Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-22T00:45:07.6847713Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-10-22T00:45:07.8881937Z Complete job name: ubuntu-latest Python 3.13
+2026-10-22T00:45:07.9457287Z ##[group]Run actions/checkout@v4
+2026-10-22T00:45:07.9458015Z with:
+2026-10-22T00:45:07.9458561Z   repository: davideiannella/100-progetti-informatica-pratica
+2026-10-22T00:45:07.9462431Z   token: ***
+2026-10-22T00:45:07.9462872Z   ssh-strict: true
+2026-10-22T00:45:07.9463312Z   ssh-user: git
+2026-10-22T00:45:07.9463760Z   persist-credentials: true
+2026-10-22T00:45:07.9464237Z   clean: true
+2026-10-22T00:45:07.9464716Z   sparse-checkout-cone-mode: true
+2026-10-22T00:45:07.9465215Z   fetch-depth: 1
+2026-10-22T00:45:07.9465670Z   fetch-tags: false
+2026-10-22T00:45:07.9466115Z   show-progress: true
+2026-10-22T00:45:07.9466541Z   lfs: false
+2026-10-22T00:45:07.9466982Z   submodules: false
+2026-10-22T00:45:07.9467416Z   set-safe-directory: true
+2026-10-22T00:45:07.9467879Z   allow-unsafe-pr-checkout: false
+2026-10-22T00:45:07.9468533Z ##[endgroup]
+2026-10-22T00:45:08.0321721Z Syncing repository: davideiannella/100-progetti-informatica-pratica
+2026-10-22T00:45:08.0323638Z ##[group]Getting Git version info
+2026-10-22T00:45:08.0324524Z Working directory is '<ambiente_di_test>'
+2026-10-22T00:45:08.0325746Z [command]<ambiente_di_test> version
+2026-10-22T00:45:08.0373427Z git version 2.55.0
+2026-10-22T00:45:08.0390971Z ##[endgroup]
+2026-10-22T00:45:08.0402358Z Temporarily overriding HOME='<ambiente_di_test>' before making global git config changes
+2026-10-22T00:45:08.0405033Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-22T00:45:08.0407135Z [command]<ambiente_di_test> config --global --add safe.directory <ambiente_di_test>
+2026-10-22T00:45:08.0449170Z Deleting the contents of '<ambiente_di_test>'
+2026-10-22T00:45:08.0452953Z ##[group]Initializing the repository
+2026-10-22T00:45:08.0458839Z [command]<ambiente_di_test> init <ambiente_di_test>
+2026-10-22T00:45:08.0535810Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-22T00:45:08.0537206Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-22T00:45:08.0538325Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-22T00:45:08.0539392Z hint: call:
+2026-10-22T00:45:08.0540067Z hint:
+2026-10-22T00:45:08.0540694Z hint: 	git config --global init.defaultBranch <name>
+2026-10-22T00:45:08.0541548Z hint:
+2026-10-22T00:45:08.0542129Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-22T00:45:08.0542944Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-22T00:45:08.0543633Z hint:
+2026-10-22T00:45:08.0544041Z hint: 	git branch -m <name>
+2026-10-22T00:45:08.0544505Z hint:
+2026-10-22T00:45:08.0545123Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-22T00:45:08.0546331Z Initialized empty Git repository in <ambiente_di_test>
+2026-10-22T00:45:08.0555462Z [command]<ambiente_di_test> remote add origin https://github.com/davideiannella/100-progetti-informatica-pratica
+2026-10-22T00:45:08.0591504Z ##[endgroup]
+2026-10-22T00:45:08.0592736Z ##[group]Disabling automatic garbage collection
+2026-10-22T00:45:08.0594462Z [command]<ambiente_di_test> config --local gc.auto 0
+2026-10-22T00:45:08.0620848Z ##[endgroup]
+2026-10-22T00:45:08.0621837Z ##[group]Setting up auth
+2026-10-22T00:45:08.0626964Z [command]<ambiente_di_test> config --local --name-only --get-regexp core\.sshCommand
+2026-10-22T00:45:08.0654681Z [command]<ambiente_di_test> submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-22T00:45:08.0929978Z [command]<ambiente_di_test> config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-22T00:45:08.0985339Z [command]<ambiente_di_test> submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-22T00:45:08.1172107Z [command]<ambiente_di_test> config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-22T00:45:08.1198094Z [command]<ambiente_di_test> submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-22T00:45:08.1366405Z [command]<ambiente_di_test> config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-22T00:45:08.1402561Z ##[endgroup]
+2026-10-22T00:45:08.1403495Z ##[group]Fetching the repository
+2026-10-22T00:45:08.1413067Z [command]<ambiente_di_test> -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +32e201b1fb1258c4e7c77d32af323b966647b908:refs/remotes/origin/main
+2026-10-22T00:45:08.5863679Z From https://github.com/davideiannella/100-progetti-informatica-pratica
+2026-10-22T00:45:08.5865551Z  * [new ref]         32e201b1fb1258c4e7c77d32af323b966647b908 -> origin/main
+2026-10-22T00:45:08.5868724Z ##[endgroup]
+2026-10-22T00:45:08.5870289Z ##[group]Determining the checkout info
+2026-10-22T00:45:08.5871817Z ##[endgroup]
+2026-10-22T00:45:08.5878019Z [command]<ambiente_di_test> sparse-checkout disable
+2026-10-22T00:45:08.5928803Z [command]<ambiente_di_test> config --local --unset-all extensions.worktreeConfig
+2026-10-22T00:45:08.5959247Z ##[group]Checking out the ref
+2026-10-22T00:45:08.5964218Z [command]<ambiente_di_test> checkout --progress --force -B main refs/remotes/origin/main
+2026-10-22T00:45:08.6177688Z Switched to a new branch 'main'
+2026-10-22T00:45:08.6182999Z branch 'main' set up to track 'origin/main'.
+2026-10-22T00:45:08.6188325Z ##[endgroup]
+2026-10-22T00:45:08.6222402Z [command]<ambiente_di_test> log -1 --format=%H
+2026-10-22T00:45:08.6243830Z 32e201b1fb1258c4e7c77d32af323b966647b908
+2026-10-22T00:45:08.6594296Z ##[group]Run actions/setup-python@v5
+2026-10-22T00:45:08.6595737Z with:
+2026-10-22T00:45:08.6596650Z   python-version: 3.13
+2026-10-22T00:45:08.6597690Z   check-latest: false
+2026-10-22T00:45:08.6607167Z   token: ***
+2026-10-22T00:45:08.6608164Z   update-environment: true
+2026-10-22T00:45:08.6609324Z   allow-prereleases: false
+2026-10-22T00:45:08.6610622Z   freethreaded: false
+2026-10-22T00:45:08.6611659Z ##[endgroup]
+2026-10-22T00:45:08.7808097Z ##[group]Installed versions
+2026-10-22T00:45:08.7872640Z (node:2097) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-22T00:45:08.7876101Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-22T00:45:08.7878385Z Successfully set up CPython (3.13.16)
+2026-10-22T00:45:08.7880983Z ##[endgroup]
+2026-10-22T00:45:08.8081975Z ##[group]Run python -m pip install -r requirements-p081-p100.txt
+2026-10-22T00:45:08.8084706Z [36;1mpython -m pip install -r requirements-p081-p100.txt[0m
+2026-10-22T00:45:08.8419087Z shell: <ambiente_di_test> -e {0}
+2026-10-22T00:45:08.8420381Z env:
+2026-10-22T00:45:08.8421537Z   pythonLocation: <ambiente_di_test>
+2026-10-22T00:45:08.8423156Z   PKG_CONFIG_PATH: <ambiente_di_test>
+2026-10-22T00:45:08.8424764Z   Python_ROOT_DIR: <ambiente_di_test>
+2026-10-22T00:45:08.8426298Z   Python2_ROOT_DIR: <ambiente_di_test>
+2026-10-22T00:45:08.8427755Z   Python3_ROOT_DIR: <ambiente_di_test>
+2026-10-22T00:45:08.8429286Z   LD_LIBRARY_PATH: <ambiente_di_test>
+2026-10-22T00:45:08.8430718Z ##[endgroup]
+2026-10-22T00:45:12.3683135Z Collecting numpy==2.3.5 (from -r requirements-p081-p100.txt (line 2))
+2026-10-22T00:45:12.4663451Z   Downloading numpy-2.3.5-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-10-22T00:45:12.5897055Z Collecting scipy==1.17.0 (from -r requirements-p081-p100.txt (line 3))
+2026-10-22T00:45:12.6067511Z   Downloading scipy-1.17.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-10-22T00:45:12.7071992Z Collecting scikit-learn==1.8.0 (from -r requirements-p081-p100.txt (line 4))
+2026-10-22T00:45:12.7258791Z   Downloading scikit_learn-1.8.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+2026-10-22T00:45:12.7596916Z Collecting joblib==1.5.3 (from -r requirements-p081-p100.txt (line 5))
+2026-10-22T00:45:12.7750362Z   Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+2026-10-22T00:45:12.7986554Z Collecting threadpoolctl==3.6.0 (from -r requirements-p081-p100.txt (line 6))
+2026-10-22T00:45:12.8153294Z   Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+2026-10-22T00:45:12.9424739Z Collecting Pillow==12.3.0 (from -r requirements-p081-p100.txt (line 7))
+2026-10-22T00:45:12.9581661Z   Downloading pillow-12.3.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+2026-10-22T00:45:12.9881187Z Downloading numpy-2.3.5-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+2026-10-22T00:45:13.7872348Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 21.6 MB/s  0:00:00
+2026-10-22T00:45:13.8040598Z Downloading scipy-1.17.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.0 MB)
+2026-10-22T00:45:14.3142116Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.0/35.0 MB 68.6 MB/s  0:00:00
+2026-10-22T00:45:14.3307978Z Downloading scikit_learn-1.8.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (8.9 MB)
+2026-10-22T00:45:14.4283320Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.9/8.9 MB 90.8 MB/s  0:00:00
+2026-10-22T00:45:14.4488555Z Downloading joblib-1.5.3-py3-none-any.whl (309 kB)
+2026-10-22T00:45:14.4681983Z Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+2026-10-22T00:45:14.4888628Z Downloading pillow-12.3.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+2026-10-22T00:45:14.5590033Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 98.8 MB/s  0:00:00
+2026-10-22T00:45:14.8006801Z Installing collected packages: threadpoolctl, Pillow, numpy, joblib, scipy, scikit-learn
+2026-10-22T00:45:21.6157051Z 
+2026-10-22T00:45:21.6170932Z Successfully installed Pillow-12.3.0 joblib-1.5.3 numpy-2.3.5 scikit-learn-1.8.0 scipy-1.17.0 threadpoolctl-3.6.0
+2026-10-22T00:45:21.6177992Z 
+2026-10-22T00:45:21.6178786Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+2026-10-22T00:45:21.6179896Z [notice] To update, run: pip install --upgrade pip
+2026-10-22T00:45:21.6911683Z ##[group]Run python -B tools/collaudo_p081_p100.py
+2026-10-22T00:45:21.6912148Z [36;1mpython -B tools/collaudo_p081_p100.py[0m
+2026-10-22T00:45:21.6946481Z shell: <ambiente_di_test> -e {0}
+2026-10-22T00:45:21.6946904Z env:
+2026-10-22T00:45:21.6947320Z   pythonLocation: <ambiente_di_test>
+2026-10-22T00:45:21.6947959Z   PKG_CONFIG_PATH: <ambiente_di_test>
+2026-10-22T00:45:21.6948489Z   Python_ROOT_DIR: <ambiente_di_test>
+2026-10-22T00:45:21.6948951Z   Python2_ROOT_DIR: <ambiente_di_test>
+2026-10-22T00:45:21.6949401Z   Python3_ROOT_DIR: <ambiente_di_test>
+2026-10-22T00:45:21.6950061Z   LD_LIBRARY_PATH: <ambiente_di_test>
+2026-10-22T00:45:21.6950476Z ##[endgroup]
+2026-10-22T00:45:21.9428795Z {"project": "P081", "returncode": 0, "test_methods": 14, "expected_test_methods": 14, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:22.0162868Z {"project": "P082", "returncode": 0, "test_methods": 12, "expected_test_methods": 12, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:22.1003287Z {"project": "P083", "returncode": 0, "test_methods": 22, "expected_test_methods": 22, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:22.1740901Z {"project": "P084", "returncode": 0, "test_methods": 15, "expected_test_methods": 15, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:22.2545512Z {"project": "P085", "returncode": 0, "test_methods": 17, "expected_test_methods": 17, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:22.3327761Z {"project": "P086", "returncode": 0, "test_methods": 18, "expected_test_methods": 18, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:22.4129052Z {"project": "P087", "returncode": 0, "test_methods": 23, "expected_test_methods": 23, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:22.4931607Z {"project": "P088", "returncode": 0, "test_methods": 22, "expected_test_methods": 22, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:25.1787600Z {"project": "P089", "returncode": 0, "test_methods": 18, "expected_test_methods": 18, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:26.2709348Z {"project": "P090", "returncode": 0, "test_methods": 19, "expected_test_methods": 19, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:26.3442022Z {"project": "P091", "returncode": 0, "test_methods": 13, "expected_test_methods": 13, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:26.4230684Z {"project": "P092", "returncode": 0, "test_methods": 22, "expected_test_methods": 22, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:26.5011361Z {"project": "P093", "returncode": 0, "test_methods": 22, "expected_test_methods": 22, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:26.5791748Z {"project": "P094", "returncode": 0, "test_methods": 20, "expected_test_methods": 20, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:26.6571459Z {"project": "P095", "returncode": 0, "test_methods": 26, "expected_test_methods": 26, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:26.7328581Z {"project": "P096", "returncode": 0, "test_methods": 19, "expected_test_methods": 19, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:26.8055859Z {"project": "P097", "returncode": 0, "test_methods": 14, "expected_test_methods": 14, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:26.8817290Z {"project": "P098", "returncode": 0, "test_methods": 17, "expected_test_methods": 17, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:26.9577595Z {"project": "P099", "returncode": 0, "test_methods": 20, "expected_test_methods": 20, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:28.0098388Z {"project": "P100", "returncode": 0, "test_methods": 24, "expected_test_methods": 24, "skipped": 0, "status": "PASS"}
+2026-10-22T00:45:28.0106314Z COLLAUDO_SUMMARY_BEGIN
+2026-10-22T00:45:28.0107320Z {
+2026-10-22T00:45:28.0107973Z   "python": "3.13.16 (main, Oct  1 2026, 02:37:54) [GCC 13.3.0]",
+2026-10-22T00:45:28.0108705Z   "system": "Linux",
+2026-10-22T00:45:28.0109885Z   "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+2026-10-22T00:45:28.0110636Z   "github_run_id": "39701559280",
+2026-10-22T00:45:28.0111327Z   "github_sha": "32e201b1fb1258c4e7c77d32af323b966647b908",
+2026-10-22T00:45:28.0112022Z   "hashes_verified": 299,
+2026-10-22T00:45:28.0112542Z   "hash_mismatches": [],
+2026-10-22T00:45:28.0113153Z   "dependencies": {
+2026-10-22T00:45:28.0113644Z     "numpy": "2.3.5",
+2026-10-22T00:45:28.0114132Z     "scipy": "1.17.0",
+2026-10-22T00:45:28.0114646Z     "scikit-learn": "1.8.0",
+2026-10-22T00:45:28.0115162Z     "joblib": "1.5.3",
+2026-10-22T00:45:28.0115726Z     "threadpoolctl": "3.6.0",
+2026-10-22T00:45:28.0116167Z     "Pillow": "12.3.0"
+2026-10-22T00:45:28.0116463Z   },
+2026-10-22T00:45:28.0116806Z   "projects": [
+2026-10-22T00:45:28.0117119Z     {
+2026-10-22T00:45:28.0117513Z       "project": "P081",
+2026-10-22T00:45:28.0117854Z       "returncode": 0,
+2026-10-22T00:45:28.0118156Z       "test_methods": 14,
+2026-10-22T00:45:28.0118533Z       "expected_test_methods": 14,
+2026-10-22T00:45:28.0118895Z       "skipped": 0,
+2026-10-22T00:45:28.0119261Z       "status": "PASS"
+2026-10-22T00:45:28.0119743Z     },
+2026-10-22T00:45:28.0120031Z     {
+2026-10-22T00:45:28.0120375Z       "project": "P082",
+2026-10-22T00:45:28.0120723Z       "returncode": 0,
+2026-10-22T00:45:28.0121148Z       "test_methods": 12,
+2026-10-22T00:45:28.0121521Z       "expected_test_methods": 12,
+2026-10-22T00:45:28.0121871Z       "skipped": 0,
+2026-10-22T00:45:28.0122191Z       "status": "PASS"
+2026-10-22T00:45:28.0122494Z     },
+2026-10-22T00:45:28.0122783Z     {
+2026-10-22T00:45:28.0123112Z       "project": "P083",
+2026-10-22T00:45:28.0123440Z       "returncode": 0,
+2026-10-22T00:45:28.0123776Z       "test_methods": 22,
+2026-10-22T00:45:28.0124116Z       "expected_test_methods": 22,
+2026-10-22T00:45:28.0124514Z       "skipped": 0,
+2026-10-22T00:45:28.0124836Z       "status": "PASS"
+2026-10-22T00:45:28.0125135Z     },
+2026-10-22T00:45:28.0125426Z     {
+2026-10-22T00:45:28.0125731Z       "project": "P084",
+2026-10-22T00:45:28.0126086Z       "returncode": 0,
+2026-10-22T00:45:28.0126424Z       "test_methods": 15,
+2026-10-22T00:45:28.0126753Z       "expected_test_methods": 15,
+2026-10-22T00:45:28.0127088Z       "skipped": 0,
+2026-10-22T00:45:28.0127418Z       "status": "PASS"
+2026-10-22T00:45:28.0127763Z     },
+2026-10-22T00:45:28.0128061Z     {
+2026-10-22T00:45:28.0128337Z       "project": "P085",
+2026-10-22T00:45:28.0128640Z       "returncode": 0,
+2026-10-22T00:45:28.0129005Z       "test_methods": 17,
+2026-10-22T00:45:28.0129354Z       "expected_test_methods": 17,
+2026-10-22T00:45:28.0129987Z       "skipped": 0,
+2026-10-22T00:45:28.0130339Z       "status": "PASS"
+2026-10-22T00:45:28.0130748Z     },
+2026-10-22T00:45:28.0131100Z     {
+2026-10-22T00:45:28.0131405Z       "project": "P086",
+2026-10-22T00:45:28.0131761Z       "returncode": 0,
+2026-10-22T00:45:28.0132121Z       "test_methods": 18,
+2026-10-22T00:45:28.0132471Z       "expected_test_methods": 18,
+2026-10-22T00:45:28.0132891Z       "skipped": 0,
+2026-10-22T00:45:28.0133321Z       "status": "PASS"
+2026-10-22T00:45:28.0133809Z     },
+2026-10-22T00:45:28.0134124Z     {
+2026-10-22T00:45:28.0134423Z       "project": "P087",
+2026-10-22T00:45:28.0134836Z       "returncode": 0,
+2026-10-22T00:45:28.0135179Z       "test_methods": 23,
+2026-10-22T00:45:28.0135521Z       "expected_test_methods": 23,
+2026-10-22T00:45:28.0135953Z       "skipped": 0,
+2026-10-22T00:45:28.0136295Z       "status": "PASS"
+2026-10-22T00:45:28.0136690Z     },
+2026-10-22T00:45:28.0136983Z     {
+2026-10-22T00:45:28.0137269Z       "project": "P088",
+2026-10-22T00:45:28.0137650Z       "returncode": 0,
+2026-10-22T00:45:28.0138249Z       "test_methods": 22,
+2026-10-22T00:45:28.0138671Z       "expected_test_methods": 22,
+2026-10-22T00:45:28.0139146Z       "skipped": 0,
+2026-10-22T00:45:28.0139763Z       "status": "PASS"
+2026-10-22T00:45:28.0140247Z     },
+2026-10-22T00:45:28.0140623Z     {
+2026-10-22T00:45:28.0141129Z       "project": "P089",
+2026-10-22T00:45:28.0141598Z       "returncode": 0,
+2026-10-22T00:45:28.0142023Z       "test_methods": 18,
+2026-10-22T00:45:28.0142706Z       "expected_test_methods": 18,
+2026-10-22T00:45:28.0143186Z       "skipped": 0,
+2026-10-22T00:45:28.0143633Z       "status": "PASS"
+2026-10-22T00:45:28.0144073Z     },
+2026-10-22T00:45:28.0144415Z     {
+2026-10-22T00:45:28.0144821Z       "project": "P090",
+2026-10-22T00:45:28.0145278Z       "returncode": 0,
+2026-10-22T00:45:28.0145740Z       "test_methods": 19,
+2026-10-22T00:45:28.0146282Z       "expected_test_methods": 19,
+2026-10-22T00:45:28.0146760Z       "skipped": 0,
+2026-10-22T00:45:28.0147083Z       "status": "PASS"
+2026-10-22T00:45:28.0147430Z     },
+2026-10-22T00:45:28.0147737Z     {
+2026-10-22T00:45:28.0148051Z       "project": "P091",
+2026-10-22T00:45:28.0148398Z       "returncode": 0,
+2026-10-22T00:45:28.0148796Z       "test_methods": 13,
+2026-10-22T00:45:28.0149322Z       "expected_test_methods": 13,
+2026-10-22T00:45:28.0150093Z       "skipped": 0,
+2026-10-22T00:45:28.0150568Z       "status": "PASS"
+2026-10-22T00:45:28.0150949Z     },
+2026-10-22T00:45:28.0151236Z     {
+2026-10-22T00:45:28.0151601Z       "project": "P092",
+2026-10-22T00:45:28.0151989Z       "returncode": 0,
+2026-10-22T00:45:28.0152354Z       "test_methods": 22,
+2026-10-22T00:45:28.0152740Z       "expected_test_methods": 22,
+2026-10-22T00:45:28.0153126Z       "skipped": 0,
+2026-10-22T00:45:28.0153485Z       "status": "PASS"
+2026-10-22T00:45:28.0153885Z     },
+2026-10-22T00:45:28.0154216Z     {
+2026-10-22T00:45:28.0154565Z       "project": "P093",
+2026-10-22T00:45:28.0154924Z       "returncode": 0,
+2026-10-22T00:45:28.0155307Z       "test_methods": 22,
+2026-10-22T00:45:28.0155760Z       "expected_test_methods": 22,
+2026-10-22T00:45:28.0156136Z       "skipped": 0,
+2026-10-22T00:45:28.0156529Z       "status": "PASS"
+2026-10-22T00:45:28.0156861Z     },
+2026-10-22T00:45:28.0157165Z     {
+2026-10-22T00:45:28.0157517Z       "project": "P094",
+2026-10-22T00:45:28.0157905Z       "returncode": 0,
+2026-10-22T00:45:28.0158308Z       "test_methods": 20,
+2026-10-22T00:45:28.0158700Z       "expected_test_methods": 20,
+2026-10-22T00:45:28.0159111Z       "skipped": 0,
+2026-10-22T00:45:28.0159504Z       "status": "PASS"
+2026-10-22T00:45:28.0160008Z     },
+2026-10-22T00:45:28.0160339Z     {
+2026-10-22T00:45:28.0160677Z       "project": "P095",
+2026-10-22T00:45:28.0161032Z       "returncode": 0,
+2026-10-22T00:45:28.0161532Z       "test_methods": 26,
+2026-10-22T00:45:28.0161974Z       "expected_test_methods": 26,
+2026-10-22T00:45:28.0162402Z       "skipped": 0,
+2026-10-22T00:45:28.0162749Z       "status": "PASS"
+2026-10-22T00:45:28.0163077Z     },
+2026-10-22T00:45:28.0163462Z     {
+2026-10-22T00:45:28.0163789Z       "project": "P096",
+2026-10-22T00:45:28.0164170Z       "returncode": 0,
+2026-10-22T00:45:28.0164619Z       "test_methods": 19,
+2026-10-22T00:45:28.0165110Z       "expected_test_methods": 19,
+2026-10-22T00:45:28.0165723Z       "skipped": 0,
+2026-10-22T00:45:28.0166100Z       "status": "PASS"
+2026-10-22T00:45:28.0167050Z     },
+2026-10-22T00:45:28.0167459Z     {
+2026-10-22T00:45:28.0167842Z       "project": "P097",
+2026-10-22T00:45:28.0168367Z       "returncode": 0,
+2026-10-22T00:45:28.0168764Z       "test_methods": 14,
+2026-10-22T00:45:28.0169122Z       "expected_test_methods": 14,
+2026-10-22T00:45:28.0169727Z       "skipped": 0,
+2026-10-22T00:45:28.0170105Z       "status": "PASS"
+2026-10-22T00:45:28.0170588Z     },
+2026-10-22T00:45:28.0170882Z     {
+2026-10-22T00:45:28.0171170Z       "project": "P098",
+2026-10-22T00:45:28.0171584Z       "returncode": 0,
+2026-10-22T00:45:28.0171953Z       "test_methods": 17,
+2026-10-22T00:45:28.0172367Z       "expected_test_methods": 17,
+2026-10-22T00:45:28.0172949Z       "skipped": 0,
+2026-10-22T00:45:28.0173299Z       "status": "PASS"
+2026-10-22T00:45:28.0173693Z     },
+2026-10-22T00:45:28.0174032Z     {
+2026-10-22T00:45:28.0174418Z       "project": "P099",
+2026-10-22T00:45:28.0174773Z       "returncode": 0,
+2026-10-22T00:45:28.0175102Z       "test_methods": 20,
+2026-10-22T00:45:28.0175503Z       "expected_test_methods": 20,
+2026-10-22T00:45:28.0175901Z       "skipped": 0,
+2026-10-22T00:45:28.0176321Z       "status": "PASS"
+2026-10-22T00:45:28.0176690Z     },
+2026-10-22T00:45:28.0176972Z     {
+2026-10-22T00:45:28.0177285Z       "project": "P100",
+2026-10-22T00:45:28.0177680Z       "returncode": 0,
+2026-10-22T00:45:28.0178026Z       "test_methods": 24,
+2026-10-22T00:45:28.0178461Z       "expected_test_methods": 24,
+2026-10-22T00:45:28.0178838Z       "skipped": 0,
+2026-10-22T00:45:28.0179177Z       "status": "PASS"
+2026-10-22T00:45:28.0179796Z     }
+2026-10-22T00:45:28.0180065Z   ],
+2026-10-22T00:45:28.0180365Z   "compiled_files": 60,
+2026-10-22T00:45:28.0180694Z   "test_methods": 377,
+2026-10-22T00:45:28.0181021Z   "status": "PASS",
+2026-10-22T00:45:28.0181415Z   "failed_projects": []
+2026-10-22T00:45:28.0181755Z }
+2026-10-22T00:45:28.0182104Z COLLAUDO_SUMMARY_END
+2026-10-22T00:45:28.0337567Z Post job cleanup.
+2026-10-22T00:45:28.1369389Z (node:2181) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-22T00:45:28.1370297Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-22T00:45:28.1526755Z Post job cleanup.
+2026-10-22T00:45:28.2288959Z [command]<ambiente_di_test> version
+2026-10-22T00:45:28.2322612Z git version 2.55.0
+2026-10-22T00:45:28.2350733Z Temporarily overriding HOME='<ambiente_di_test>' before making global git config changes
+2026-10-22T00:45:28.2354610Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-22T00:45:28.2356117Z [command]<ambiente_di_test> config --global --add safe.directory <ambiente_di_test>
+2026-10-22T00:45:28.2386064Z [command]<ambiente_di_test> config --local --name-only --get-regexp core\.sshCommand
+2026-10-22T00:45:28.2414027Z [command]<ambiente_di_test> submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-22T00:45:28.2608292Z [command]<ambiente_di_test> config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-22T00:45:28.2630168Z http.https://github.com/.extraheader
+2026-10-22T00:45:28.2638139Z [command]<ambiente_di_test> config --local --unset-all http.https://github.com/.extraheader
+2026-10-22T00:45:28.2665138Z [command]<ambiente_di_test> submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-22T00:45:28.2868503Z [command]<ambiente_di_test> config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-22T00:45:28.2900805Z [command]<ambiente_di_test> submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-22T00:45:28.3253756Z Cleaning up orphan processes
+2026-10-22T00:45:28.3494919Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

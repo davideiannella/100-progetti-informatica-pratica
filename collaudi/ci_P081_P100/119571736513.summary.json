@@ -1,0 +1,186 @@
+{
+  "python": "3.13.16 (tags/v3.13.16:cbc944f, Sep 30 2026, 19:17:50) [MSC v.1944 64 bit (AMD64)]",
+  "system": "Windows",
+  "platform": "Windows-2025Server-10.0.26100-SP0",
+  "github_run_id": "39701559280",
+  "github_sha": "32e201b1fb1258c4e7c77d32af323b966647b908",
+  "hashes_verified": 299,
+  "hash_mismatches": [],
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0",
+    "Pillow": "12.3.0"
+  },
+  "projects": [
+    {
+      "project": "P081",
+      "returncode": 0,
+      "test_methods": 14,
+      "expected_test_methods": 14,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P082",
+      "returncode": 0,
+      "test_methods": 12,
+      "expected_test_methods": 12,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P083",
+      "returncode": 0,
+      "test_methods": 22,
+      "expected_test_methods": 22,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P084",
+      "returncode": 0,
+      "test_methods": 15,
+      "expected_test_methods": 15,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P085",
+      "returncode": 0,
+      "test_methods": 17,
+      "expected_test_methods": 17,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P086",
+      "returncode": 0,
+      "test_methods": 18,
+      "expected_test_methods": 18,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P087",
+      "returncode": 0,
+      "test_methods": 23,
+      "expected_test_methods": 23,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P088",
+      "returncode": 0,
+      "test_methods": 22,
+      "expected_test_methods": 22,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P089",
+      "returncode": 0,
+      "test_methods": 18,
+      "expected_test_methods": 18,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P090",
+      "returncode": 0,
+      "test_methods": 19,
+      "expected_test_methods": 19,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P091",
+      "returncode": 0,
+      "test_methods": 13,
+      "expected_test_methods": 13,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P092",
+      "returncode": 0,
+      "test_methods": 22,
+      "expected_test_methods": 22,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P093",
+      "returncode": 0,
+      "test_methods": 22,
+      "expected_test_methods": 22,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P094",
+      "returncode": 0,
+      "test_methods": 20,
+      "expected_test_methods": 20,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P095",
+      "returncode": 0,
+      "test_methods": 26,
+      "expected_test_methods": 26,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P096",
+      "returncode": 0,
+      "test_methods": 19,
+      "expected_test_methods": 19,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P097",
+      "returncode": 0,
+      "test_methods": 14,
+      "expected_test_methods": 14,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P098",
+      "returncode": 0,
+      "test_methods": 17,
+      "expected_test_methods": 17,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P099",
+      "returncode": 0,
+      "test_methods": 20,
+      "expected_test_methods": 20,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    {
+      "project": "P100",
+      "returncode": 0,
+      "test_methods": 24,
+      "expected_test_methods": 24,
+      "skipped": 0,
+      "status": "PASS"
+    }
+  ],
+  "compiled_files": 60,
+  "test_methods": 377,
+  "status": "PASS",
+  "failed_projects": [],
+  "job_id": 119571736513,
+  "job_name": "windows-latest Python 3.13",
+  "run_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280"
+}

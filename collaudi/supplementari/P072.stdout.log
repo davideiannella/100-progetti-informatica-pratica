@@ -1,0 +1,109 @@
+{
+  "threshold": 3,
+  "window": 10,
+  "allowed_countries": [
+    "IT",
+    "SM",
+    "VA"
+  ],
+  "input_lines": [
+    "ts=0 event=login_failed src_ip=203.0.113.9 user=alice",
+    "ts=5 event=login_failed src_ip=203.0.113.9 user=alice",
+    "ts=10 event=login_failed src_ip=203.0.113.9 user=alice",
+    "ts=11 event=admin_login src_ip=198.51.100.2 user=alice country=US",
+    "ts=12 event=admin_login src_ip=198.51.100.2 user=alice",
+    "ts=13 event=login_failed event=admin_login"
+  ],
+  "results": [
+    {
+      "line": 1,
+      "alerts": []
+    },
+    {
+      "line": 2,
+      "alerts": []
+    },
+    {
+      "line": 3,
+      "alerts": [
+        {
+          "rule": "repeated_login_failures",
+          "src_ip": "203.0.113.9",
+          "count": 3,
+          "ts": 10,
+          "window": 10
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "alerts": [
+        {
+          "rule": "admin_login_unusual_country",
+          "user": "alice",
+          "country": "US",
+          "ts": 11
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "alerts": [
+        {
+          "rule": "missing_country",
+          "user": "alice",
+          "ts": 12
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "alerts": [
+        {
+          "rule": "invalid_event",
+          "reason": "chiave non valida o duplicata"
+        }
+      ]
+    }
+  ],
+  "quoted_input": "ts=14 event=login_success src_ip=2001:0db8:0:0:0:0:0:1 user=\"Alice B\" note=a=b",
+  "normalized": {
+    "ts": 14,
+    "event": "login_success",
+    "src_ip": "2001:db8::1",
+    "user": "Alice B",
+    "note": "a=b"
+  },
+  "exercise_lines": [
+    "ts=0 event=login_failed src_ip=203.0.113.1 user=alice",
+    "ts=5 event=login_success src_ip=203.0.113.1 user=alice",
+    "ts=10 event=login_failed src_ip=203.0.113.1 user=alice",
+    "ts=21 event=login_failed src_ip=203.0.113.1 user=alice"
+  ],
+  "exercise_results": [
+    {
+      "line": 1,
+      "alerts": []
+    },
+    {
+      "line": 2,
+      "alerts": []
+    },
+    {
+      "line": 3,
+      "alerts": [
+        {
+          "rule": "repeated_login_failures",
+          "src_ip": "203.0.113.1",
+          "count": 2,
+          "ts": 10,
+          "window": 10
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "alerts": []
+    }
+  ]
+}

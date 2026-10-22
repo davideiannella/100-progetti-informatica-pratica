@@ -1,0 +1,219 @@
+{
+  "kind": "Riscontro statico dei registri storici, senza esecuzione delle suite",
+  "new_suite_runs": 0,
+  "ci_public_run": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280",
+  "ci_summary_vs_log": [
+    {
+      "job_id": "119571736513",
+      "system": "Windows",
+      "python": "3.13.16 (tags/v3.13.16:cbc944f, Sep 30 2026, 19:17:50) [MSC v.1944 64 bit (AMD64)]",
+      "summary_matches_embedded_log_json": true,
+      "suites": 20,
+      "test_methods": 377,
+      "skipped": 0,
+      "compiled_files": 60,
+      "hashes_verified": 299,
+      "all_projects_pass": true,
+      "hash_mismatches": []
+    },
+    {
+      "job_id": "119571736757",
+      "system": "Linux",
+      "python": "3.13.16 (main, Oct  1 2026, 02:37:54) [GCC 13.3.0]",
+      "summary_matches_embedded_log_json": true,
+      "suites": 20,
+      "test_methods": 377,
+      "skipped": 0,
+      "compiled_files": 60,
+      "hashes_verified": 299,
+      "all_projects_pass": true,
+      "hash_mismatches": []
+    },
+    {
+      "job_id": "119571736870",
+      "system": "Windows",
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "summary_matches_embedded_log_json": true,
+      "suites": 20,
+      "test_methods": 377,
+      "skipped": 0,
+      "compiled_files": 60,
+      "hashes_verified": 299,
+      "all_projects_pass": true,
+      "hash_mismatches": []
+    },
+    {
+      "job_id": "119571737066",
+      "system": "Linux",
+      "python": "3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]",
+      "summary_matches_embedded_log_json": true,
+      "suites": 20,
+      "test_methods": 377,
+      "skipped": 0,
+      "compiled_files": 60,
+      "hashes_verified": 299,
+      "all_projects_pass": true,
+      "hash_mismatches": []
+    }
+  ],
+  "historical_P001_P040_projects": 40,
+  "historical_P041_P060_projects": 20,
+  "historical_P061_P080_projects": 20,
+  "historical_P061_P080_unittest_cases_reported": 1339,
+  "historical_P061_P080_counts_match_logs": true,
+  "supplemental_examples": 10,
+  "supplemental_exit_zero": 10,
+  "supplemental_empty_stderr": 10,
+  "supplemental_original_digests_match": true,
+  "docker_local_images_built": 0,
+  "docker_local_runtime_validation": "incomplete",
+  "docker_remote_results": [
+    {
+      "project": "P054",
+      "commands": 8,
+      "failed_commands": 0,
+      "assertions": 5,
+      "all_assertions_passed": true,
+      "final_status": "passed"
+    },
+    {
+      "project": "P055",
+      "commands": 11,
+      "failed_commands": 0,
+      "assertions": 6,
+      "all_assertions_passed": true,
+      "final_status": "passed"
+    },
+    {
+      "project": "P056",
+      "commands": 128,
+      "failed_commands": 0,
+      "assertions": 9,
+      "all_assertions_passed": true,
+      "final_status": "passed"
+    }
+  ],
+  "redaction": "Solo percorsi assoluti host/runner sostituiti con <ambiente_di_test>; nessun risultato numerico o stdout ricostruito.",
+  "detailed_P081_P100_local_logs": {
+    "date": "2026-10-21",
+    "platform": "Linux",
+    "test_methods": 377,
+    "sixty_python_files_match_current_sources": true,
+    "counts_match_logs": true,
+    "distinct_from_public_matrix": true
+  },
+  "sensitive_data_scan": {
+    "scope": "Tutti i file pubblici della raccolta prima della finalizzazione dei digest",
+    "findings": {
+      "private_paths_or_repository_name": [],
+      "private_key_material": [],
+      "github_credentials": [],
+      "cloud_access_keys": [],
+      "jwt_values": [],
+      "unmasked_authorization": []
+    },
+    "public_vendor_email_retained": "docker-maint@nginx.com, etichetta pubblica dell’immagine Nginx",
+    "reviewed_nonsecret_markers": [
+      "GITHUB_TOKEN Permissions e token: *** già mascherati da GitHub",
+      "serviceAccountToken/path: token nei soli manifest Kubernetes, senza valori di credenziale",
+      "password_authentication come booleano di configurazione sintetica",
+      "Alice e indirizzi IP di documentazione negli esempi sintetici"
+    ]
+  },
+  "supplemental_reproduction_commands_checked": [
+    {
+      "project": "P067",
+      "readme_command": "python -B worked_example.py",
+      "script_exists_in_delivered_sources": true,
+      "matches_historical_execution_metadata": true
+    },
+    {
+      "project": "P068",
+      "readme_command": "python -B worked_example.py",
+      "script_exists_in_delivered_sources": true,
+      "matches_historical_execution_metadata": true
+    },
+    {
+      "project": "P069",
+      "readme_command": "python -B worked_example.py",
+      "script_exists_in_delivered_sources": true,
+      "matches_historical_execution_metadata": true
+    },
+    {
+      "project": "P070",
+      "readme_command": "python -B worked_example.py",
+      "script_exists_in_delivered_sources": true,
+      "matches_historical_execution_metadata": true
+    },
+    {
+      "project": "P071",
+      "readme_command": "python -B worked_example.py",
+      "script_exists_in_delivered_sources": true,
+      "matches_historical_execution_metadata": true
+    },
+    {
+      "project": "P072",
+      "readme_command": "python -B worked_example.py",
+      "script_exists_in_delivered_sources": true,
+      "matches_historical_execution_metadata": true
+    },
+    {
+      "project": "P073",
+      "readme_command": "python -B examples.py",
+      "script_exists_in_delivered_sources": true,
+      "matches_historical_execution_metadata": true
+    },
+    {
+      "project": "P074",
+      "readme_command": "python -B examples.py",
+      "script_exists_in_delivered_sources": true,
+      "matches_historical_execution_metadata": true
+    },
+    {
+      "project": "P075",
+      "readme_command": "python -B examples.py",
+      "script_exists_in_delivered_sources": true,
+      "matches_historical_execution_metadata": true
+    },
+    {
+      "project": "P076",
+      "readme_command": "python -B examples.py",
+      "script_exists_in_delivered_sources": true,
+      "matches_historical_execution_metadata": true
+    }
+  ],
+  "collection_status": "Copie di distribuzione con due archivi gzip deterministici; originali congelati invariati; nessuna nuova suite eseguita.",
+  "distribution_compression": {
+    "archives": [
+      {
+        "file": "storico/P056_runtime_results.json.gz",
+        "bytes": 18506,
+        "sha256": "f3473e219dcbe03bc563a135f2ca1060b34737c2829519a457c19eab3eb5df1c",
+        "uncompressed_filename": "storico/P056_runtime_results.json",
+        "uncompressed_bytes": 1213939,
+        "uncompressed_sha256": "aa77d925727ebf76404065253bf895fc14adfbbd1045ea4c81ed25cd117a882a",
+        "decompressed_bytes_identical_to_frozen_copy": true,
+        "format": "gzip",
+        "gzip_mtime": 0,
+        "gzip_filename_header": "",
+        "compression_level": 9
+      },
+      {
+        "file": "storico/EVIDENZE_P001_P080.json.gz",
+        "bytes": 33624,
+        "sha256": "c376ed1228ae04e66553b518ac76142744e7ed232ac4d426efbfd85eca441fd0",
+        "uncompressed_filename": "storico/EVIDENZE_P001_P080.json",
+        "uncompressed_bytes": 263323,
+        "uncompressed_sha256": "afec564e73f55adcfdaa75c65c334f323f54df1c11aed15880b0e6e6a8a72b26",
+        "decompressed_bytes_identical_to_frozen_copy": true,
+        "format": "gzip",
+        "gzip_mtime": 0,
+        "gzip_filename_header": "",
+        "compression_level": 9
+      }
+    ],
+    "all_decompressed_bytes_match_frozen_copies": true,
+    "original_input_digest_count": 137,
+    "all_original_and_sanitized_source_digests_unchanged": true
+  }
+}

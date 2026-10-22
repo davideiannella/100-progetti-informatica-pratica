@@ -1,0 +1,196 @@
+{
+  "threat": {
+    "component": "login",
+    "category": "Spoofing",
+    "likelihood": 4,
+    "impact": 4,
+    "score": 16,
+    "band": "high",
+    "mitigation": "MFA + rate limit",
+    "rationale": "Credenziali riutilizzate; accesso agli ordini"
+  },
+  "mitigation_hypothesis": {
+    "likelihood": 2,
+    "impact": 4,
+    "score": 8,
+    "band": "medium"
+  },
+  "categories": {
+    "S": "Spoofing",
+    "T": "Tampering",
+    "R": "Repudiation",
+    "I": "Information Disclosure",
+    "D": "Denial of Service",
+    "E": "Elevation of Privilege"
+  },
+  "matrix": [
+    {
+      "likelihood": 1,
+      "impact": 1,
+      "score": 1,
+      "band": "low"
+    },
+    {
+      "likelihood": 1,
+      "impact": 2,
+      "score": 2,
+      "band": "low"
+    },
+    {
+      "likelihood": 1,
+      "impact": 3,
+      "score": 3,
+      "band": "low"
+    },
+    {
+      "likelihood": 1,
+      "impact": 4,
+      "score": 4,
+      "band": "low"
+    },
+    {
+      "likelihood": 1,
+      "impact": 5,
+      "score": 5,
+      "band": "low"
+    },
+    {
+      "likelihood": 2,
+      "impact": 1,
+      "score": 2,
+      "band": "low"
+    },
+    {
+      "likelihood": 2,
+      "impact": 2,
+      "score": 4,
+      "band": "low"
+    },
+    {
+      "likelihood": 2,
+      "impact": 3,
+      "score": 6,
+      "band": "medium"
+    },
+    {
+      "likelihood": 2,
+      "impact": 4,
+      "score": 8,
+      "band": "medium"
+    },
+    {
+      "likelihood": 2,
+      "impact": 5,
+      "score": 10,
+      "band": "medium"
+    },
+    {
+      "likelihood": 3,
+      "impact": 1,
+      "score": 3,
+      "band": "low"
+    },
+    {
+      "likelihood": 3,
+      "impact": 2,
+      "score": 6,
+      "band": "medium"
+    },
+    {
+      "likelihood": 3,
+      "impact": 3,
+      "score": 9,
+      "band": "medium"
+    },
+    {
+      "likelihood": 3,
+      "impact": 4,
+      "score": 12,
+      "band": "medium"
+    },
+    {
+      "likelihood": 3,
+      "impact": 5,
+      "score": 15,
+      "band": "high"
+    },
+    {
+      "likelihood": 4,
+      "impact": 1,
+      "score": 4,
+      "band": "low"
+    },
+    {
+      "likelihood": 4,
+      "impact": 2,
+      "score": 8,
+      "band": "medium"
+    },
+    {
+      "likelihood": 4,
+      "impact": 3,
+      "score": 12,
+      "band": "medium"
+    },
+    {
+      "likelihood": 4,
+      "impact": 4,
+      "score": 16,
+      "band": "high"
+    },
+    {
+      "likelihood": 4,
+      "impact": 5,
+      "score": 20,
+      "band": "high"
+    },
+    {
+      "likelihood": 5,
+      "impact": 1,
+      "score": 5,
+      "band": "low"
+    },
+    {
+      "likelihood": 5,
+      "impact": 2,
+      "score": 10,
+      "band": "medium"
+    },
+    {
+      "likelihood": 5,
+      "impact": 3,
+      "score": 15,
+      "band": "high"
+    },
+    {
+      "likelihood": 5,
+      "impact": 4,
+      "score": 20,
+      "band": "high"
+    },
+    {
+      "likelihood": 5,
+      "impact": 5,
+      "score": 25,
+      "band": "high"
+    }
+  ],
+  "band_counts": {
+    "low": 10,
+    "medium": 9,
+    "high": 6
+  },
+  "residual_combinations": 225,
+  "exercise_initial": [
+    15,
+    "high"
+  ],
+  "exercise_residual": [
+    10,
+    "medium"
+  ],
+  "invalid_scale": {
+    "status": "RIFIUTATO",
+    "reason": "likelihood e impact: interi 1..5; bool e float esclusi"
+  }
+}
