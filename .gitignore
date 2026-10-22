@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+bin/
+obj/
+test-results/
+output/
+release.zip

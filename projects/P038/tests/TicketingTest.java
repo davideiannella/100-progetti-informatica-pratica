@@ -1,0 +1,1 @@
+public class TicketingTest{public static void main(String[]a){TicketService s=new TicketService();s.add(new Event("E", "Evento",1));s.book("E","U1");assert s.booked("E")==1;boolean full=false;try{s.book("E","U2");}catch(IllegalStateException e){full=true;}assert full;s.cancel("E","U1");assert s.booked("E")==0;System.out.println("P038: ticketing PASS");}}

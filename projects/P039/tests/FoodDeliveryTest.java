@@ -1,0 +1,1 @@
+public class FoodDeliveryTest{public static void main(String[]a){OrderService o=new OrderService();o.create("O1","R1",2000);assert o.get("O1").status()==OrderStatus.CREATED;o.transition("O1",OrderStatus.ACCEPTED);assert o.get("O1").status()==OrderStatus.ACCEPTED;DeliveryService d=new DeliveryService();assert d.etaMinutes(4)==22;System.out.println("P039: domain services PASS");}}

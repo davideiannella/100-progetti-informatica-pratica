@@ -1,0 +1,69 @@
+# P089 — Rifiuti disegnati: una pipeline di visione sintetica
+
+Classifica rappresentazioni sintetiche di rifiuti senza usare fotografie di materiali reali.
+
+Tutti i comandi partono dalla cartella `projects/P089`. I blocchi seguenti usano la sintassi di Linux/Bash.
+
+## Requisiti e versioni
+
+Linguaggio: Python.
+
+- Python 3.12 o 3.13 come riferimento verificato
+- Python 3.12.14 (collaudo Linux storico)
+- Python 3.12.15 (collaudo Linux storico)
+- Python 3.13.16 (collaudo Linux storico)
+
+Dipendenze:
+
+- NumPy 2.3.5
+- scikit-learn 1.8.0
+- SciPy 1.17.0
+- joblib 1.5.3
+- threadpoolctl 3.6.0
+- Pillow 12.3.0
+
+## Preparazione
+
+Comandi per una shell Linux/Bash dalla cartella projects/P089. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale.
+
+```bash
+python3.12 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r ../../requirements-p081-p100.txt
+```
+
+## Avvio
+
+```bash
+python src/cv_waste_synthetic.py
+```
+
+## Test
+
+```bash
+python run_tests.py
+```
+
+## Perimetro del laboratorio
+
+- Il file requirements-p081-p100.txt prepara l’ambiente condiviso del gruppo: può includere pacchetti usati da altri progetti.
+- Nessun servizio o hardware per demo e test. L’installazione iniziale dei pacchetti richiede accesso al repository dei pacchetti o una copia locale delle dipendenze.
+
+## Windows
+
+Windows nativo plausibile in base ai sorgenti e ai test Python, che non richiedono Bash, /proc o API POSIX. Questa valutazione statica non equivale a un collaudo sul sistema. Anche l’installazione dei pacchetti fissati deve essere verificata nell’ambiente Windows scelto. Nessun test Windows nativo è attestato da questo README.
+
+Per la parte Python nativa, dal **Prompt dei comandi (cmd.exe)**, nella cartella del progetto:
+
+```bat
+py -3.12 -m venv .venv
+.venv\Scripts\activate.bat
+```
+
+Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+
+## Collaudi documentati
+
+Collaudi del 21 ottobre 2026: 18 metodi di test del progetto superati su Linux con Python 3.12.14, su Ubuntu in GitHub Actions con Python 3.12.15 e con Python 3.13.16. Sono risultati storici distinti da un collaudo Windows. Nessuna suite è stata rieseguita per preparare questo README.
+
+Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.

@@ -1,0 +1,1 @@
+public class DocumentVersioningTest{public static void main(String[]a){DocumentStore s=new DocumentStore();s.create("D","v1","anna");assert s.latest("D").number()==1;s.update("D","v2","luca");assert s.latest("D").number()==2;assert s.history("D").size()==2;System.out.println("P044: document versioning PASS");}}
