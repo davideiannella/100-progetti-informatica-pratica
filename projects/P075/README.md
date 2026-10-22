@@ -33,6 +33,14 @@ python -m pip install -r ../../requirements-p061-p080.txt
 python -B src/anomaly.py
 ```
 
+## Esempio documentale
+
+Stampa il primo caso di anomalia, il confronto fra valori di contamination e le metriche dell’esercizio. Dalla cartella `projects/P075`, con l’ambiente Python preparato:
+
+```bash
+python -B examples.py
+```
+
 ## Test
 
 ```bash

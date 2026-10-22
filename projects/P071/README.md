@@ -29,6 +29,14 @@ python3.12 -m venv .venv
 python -B src/threat_model.py
 ```
 
+## Esempio documentale
+
+Stampa le scale di rischio e i casi STRIDE degli esempi, inclusi i controlli sui valori non validi. Dalla cartella `projects/P071`, con l’ambiente Python preparato:
+
+```bash
+python -B worked_example.py
+```
+
 ## Test
 
 ```bash

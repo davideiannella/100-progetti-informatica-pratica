@@ -29,6 +29,14 @@ python3.12 -m venv .venv
 python -B src/network_defense.py
 ```
 
+## Esempio documentale
+
+Stampa la matrice delle regole di rete e le sequenze di login falliti usate negli esempi, senza modificare il firewall. Dalla cartella `projects/P068`, con l’ambiente Python preparato:
+
+```bash
+python -B worked_example.py
+```
+
 ## Test
 
 ```bash

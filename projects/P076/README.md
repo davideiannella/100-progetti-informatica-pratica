@@ -31,6 +31,14 @@ python -m pip install -r ../../requirements-p061-p080.txt
 python -B src/recommender.py
 ```
 
+## Esempio documentale
+
+Stampa le raccomandazioni degli esempi, le parità, il catalogo vuoto e le esclusioni dell’esercizio. Dalla cartella `projects/P076`, con l’ambiente Python preparato:
+
+```bash
+python -B examples.py
+```
+
 ## Test
 
 ```bash

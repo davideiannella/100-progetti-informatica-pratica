@@ -29,6 +29,16 @@ python3.12 -m venv .venv
 python -B src/hardening_audit.py
 ```
 
+## Esempio documentale
+
+Riproduce i casi sui permessi, sul collegamento simbolico e sulle configurazioni sintetiche. Crea soltanto file temporanei, rimossi al termine. Dalla cartella `projects/P069`, con l’ambiente Python preparato:
+
+```bash
+python -B worked_example.py
+```
+
+Eseguire su Linux; da Windows usare WSL e una cartella nel filesystem Linux, per conservare la semantica dei permessi POSIX.
+
 ## Test
 
 ```bash

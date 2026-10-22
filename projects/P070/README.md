@@ -29,6 +29,14 @@ python3.12 -m venv .venv
 python -B src/incident_response.py
 ```
 
+## Esempio documentale
+
+Riproduce il controllo di integrità dei byte di backup, le transizioni dell’incidente e le priorità di ripristino. Dalla cartella `projects/P070`, con l’ambiente Python preparato:
+
+```bash
+python -B worked_example.py
+```
+
 ## Test
 
 ```bash

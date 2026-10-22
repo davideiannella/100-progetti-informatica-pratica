@@ -29,6 +29,14 @@ python3.12 -m venv .venv
 python -B src/mini_soc.py
 ```
 
+## Esempio documentale
+
+Riproduce i log sintetici, la normalizzazione e gli avvisi degli esempi. Dalla cartella `projects/P072`, con l’ambiente Python preparato:
+
+```bash
+python -B worked_example.py
+```
+
 ## Test
 
 ```bash

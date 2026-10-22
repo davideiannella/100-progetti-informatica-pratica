@@ -32,6 +32,16 @@ python -m pip install -r ../../requirements-p061-p080.txt
 python -B src/cert_check.py
 ```
 
+## Esempio documentale
+
+Riproduce lo scambio TLS su loopback e i sei rifiuti dei certificati non validi. Certificati e chiavi sono creati in directory temporanee e rimossi al termine. Dalla cartella `projects/P067`, con l’ambiente Python preparato:
+
+```bash
+python -B worked_example.py
+```
+
+Eseguire su Linux; da Windows usare WSL e una cartella nel filesystem Linux, per conservare la semantica dei permessi POSIX.
+
 ## Test
 
 ```bash

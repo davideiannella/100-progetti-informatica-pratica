@@ -33,6 +33,14 @@ python -m pip install -r ../../requirements-p061-p080.txt
 python -B src/churn.py
 ```
 
+## Esempio documentale
+
+Stampa il primo caso di classificazione, il confronto fra soglie e le metriche dell’esercizio. Dalla cartella `projects/P074`, con l’ambiente Python preparato:
+
+```bash
+python -B examples.py
+```
+
 ## Test
 
 ```bash

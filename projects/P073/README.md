@@ -33,6 +33,14 @@ python -m pip install -r ../../requirements-p061-p080.txt
 python -B src/energy_regression.py
 ```
 
+## Esempio documentale
+
+Stampa i casi numerici, le metriche manuali e l’esperimento senza rumore descritti nel capitolo. Dalla cartella `projects/P073`, con l’ambiente Python preparato:
+
+```bash
+python -B examples.py
+```
+
 ## Test
 
 ```bash
