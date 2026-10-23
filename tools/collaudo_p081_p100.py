@@ -49,10 +49,17 @@ def main():
             row = {"project": name, "returncode": result.returncode, "test_methods": count,
                    "expected_test_methods": expected, "skipped": skipped, "status": "PASS" if ok else "FAIL"}
             summary["projects"].append(row)
+            row["stdout_file"] = f"{name}.stdout.txt"
+            row["stderr_file"] = f"{name}.stderr.txt"
             print(json.dumps(row), flush=True)
+            print(f"=== {name} STDOUT_BEGIN ===", flush=True)
+            print(result.stdout if result.stdout else "(nessun testo emesso su stdout)", end="" if result.stdout.endswith("\n") else "\n", flush=True)
+            print(f"=== {name} STDOUT_END ===", flush=True)
+            print(f"=== {name} STDERR_BEGIN ===", flush=True)
+            print(result.stderr if result.stderr else "(nessun testo emesso su stderr)", end="" if result.stderr.endswith("\n") else "\n", flush=True)
+            print(f"=== {name} STDERR_END ===", flush=True)
             if not ok:
                 failures.append(name)
-                print(combined[-12000:], flush=True)
     summary["test_methods"] = sum(x["test_methods"] for x in summary["projects"])
     summary["status"] = "PASS" if not failures else "FAIL"
     summary["failed_projects"] = failures
