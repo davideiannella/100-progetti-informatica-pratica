@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "project": "P013",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12457560243,
+      "artifact_name": "p001-p040-complete-validation",
+      "member": "P013.json",
+      "bytes": 2271,
+      "sha256": "0f2bdf5177d80e6f93fca5d029dbfac49bba42ad75e1baa40023f03e7c1eab28"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_step_1.stdout.txt",
+      "source_record": "P013.json",
+      "source_member_or_pointer": "P013.json#/steps/0/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "build",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_step_1.stderr.txt",
+      "source_record": "P013.json",
+      "source_member_or_pointer": "P013.json#/steps/0/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "build",
+      "input_bytes": 845,
+      "input_sha256": "361fae41f8cd17ef86be0602914d7ecf2cc9dad0e726c4240485271c1d4af5c2",
+      "bytes": 845,
+      "sha256": "361fae41f8cd17ef86be0602914d7ecf2cc9dad0e726c4240485271c1d4af5c2",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_tests_LibraryTest.java.stdout.txt",
+      "source_record": "P013.json",
+      "source_member_or_pointer": "P013.json#/steps/1/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "suite",
+      "input_bytes": 18,
+      "input_sha256": "fb3b98f93207d46d01add9e36c3315c1673f7962a3811d9d1f24d3e014bb2e12",
+      "bytes": 18,
+      "sha256": "fb3b98f93207d46d01add9e36c3315c1673f7962a3811d9d1f24d3e014bb2e12",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_tests_LibraryTest.java.stderr.txt",
+      "source_record": "P013.json",
+      "source_member_or_pointer": "P013.json#/steps/1/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 1542,
+    "sha256": "bff52bec7764f83606f14b832bd76c3bb975674d82ae7d2f8b6ed57bd6772e93"
+  },
+  "readme": {
+    "bytes": 2909,
+    "sha256": "8f6b021976e23fc602756f4e13062c3b41e1c23ca7a4f0b5b4e937cc16d23f69"
+  }
+}

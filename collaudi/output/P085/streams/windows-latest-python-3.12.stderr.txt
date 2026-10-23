@@ -1,0 +1,22 @@
+test_audit_snapshot_and_policy_are_protected (test_p085.AccessTest.test_audit_snapshot_and_policy_are_protected) ... ok
+test_badge_fields_are_validated (test_p085.AccessTest.test_badge_fields_are_validated) ... ok
+test_badge_is_frozen (test_p085.AccessTest.test_badge_is_frozen) ... ok
+test_demo_totals_and_reasons (test_p085.AccessTest.test_demo_totals_and_reasons) ... ok
+test_duplicate_attempts_and_call_order_are_preserved (test_p085.AccessTest.test_duplicate_attempts_and_call_order_are_preserved) ... ok
+test_duplicate_cannot_replace_privileges (test_p085.AccessTest.test_duplicate_cannot_replace_privileges) ... ok
+test_inactive_badge_is_denied (test_p085.AccessTest.test_inactive_badge_is_denied) ... ok
+test_invalid_timestamp_is_rejected_before_audit (test_p085.AccessTest.test_invalid_timestamp_is_rejected_before_audit) ... ok
+test_length_boundaries (test_p085.AccessTest.test_length_boundaries) ... ok
+test_malformed_request_does_not_modify_state (test_p085.AccessTest.test_malformed_request_does_not_modify_state) ... ok
+test_permission_matrix (test_p085.AccessTest.test_permission_matrix) ... ok
+test_registration_requires_badge (test_p085.AccessTest.test_registration_requires_badge) ... ok
+test_revoke_changes_future_decisions_and_is_idempotent (test_p085.AccessTest.test_revoke_changes_future_decisions_and_is_idempotent) ... ok
+test_revoke_unknown_does_not_create_badge (test_p085.AccessTest.test_revoke_unknown_does_not_create_badge) ... ok
+test_trimmed_identifier_collision_is_rejected (test_p085.AccessTest.test_trimmed_identifier_collision_is_rejected) ... ok
+test_unknown_badge_is_audited (test_p085.AccessTest.test_unknown_badge_is_audited) ... ok
+test_unknown_zone_has_distinct_reason (test_p085.AccessTest.test_unknown_zone_has_distinct_reason) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.002s
+
+OK

@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "project": "P022",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12457560243,
+      "artifact_name": "p001-p040-complete-validation",
+      "member": "P022.json",
+      "bytes": 1915,
+      "sha256": "12acff7e2a59f13cc1a19e57bd1ea83f83df648eb91aaca0fb35ba539f44b0c3"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_step_1.stdout.txt",
+      "source_record": "P022.json",
+      "source_member_or_pointer": "P022.json#/steps/0/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "toolchain",
+      "input_bytes": 8,
+      "input_sha256": "ad418015125b9365f85d03123d06b2547b517a1effdddee93dbb5d4570d8fc03",
+      "bytes": 8,
+      "sha256": "ad418015125b9365f85d03123d06b2547b517a1effdddee93dbb5d4570d8fc03",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_step_1.stderr.txt",
+      "source_record": "P022.json",
+      "source_member_or_pointer": "P022.json#/steps/0/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "toolchain",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_step_2.stdout.txt",
+      "source_record": "P022.json",
+      "source_member_or_pointer": "P022.json#/steps/1/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "restore",
+      "input_bytes": 149,
+      "input_sha256": "57bb091d52801dda0c8eed9afd4de25140256b45f6ce5a1719b5e6f87e78d62c",
+      "bytes": 149,
+      "sha256": "57bb091d52801dda0c8eed9afd4de25140256b45f6ce5a1719b5e6f87e78d62c",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_step_2.stderr.txt",
+      "source_record": "P022.json",
+      "source_member_or_pointer": "P022.json#/steps/1/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "restore",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/003_tests_Program.cs.stdout.txt",
+      "source_record": "P022.json",
+      "source_member_or_pointer": "P022.json#/steps/2/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 2,
+      "kind": "suite",
+      "input_bytes": 62,
+      "input_sha256": "288fe444d2addf10e392dd877615dc69c6c399d83860ca06ad0965363ff4c96d",
+      "bytes": 62,
+      "sha256": "288fe444d2addf10e392dd877615dc69c6c399d83860ca06ad0965363ff4c96d",
+      "transformations": {}
+    },
+    {
+      "file": "streams/003_tests_Program.cs.stderr.txt",
+      "source_record": "P022.json",
+      "source_member_or_pointer": "P022.json#/steps/2/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 2,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 1903,
+    "sha256": "7feb0887fad6814e79202948fad4a87d0ef1e57e12f05b15f3bbf924383c0f6a"
+  },
+  "readme": {
+    "bytes": 3247,
+    "sha256": "932f7d87bd9f3c267c207e553c51f9facefddaff74607d9adfa39308b1fdea63"
+  }
+}

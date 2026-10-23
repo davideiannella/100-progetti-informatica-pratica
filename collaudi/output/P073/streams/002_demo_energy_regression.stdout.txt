@@ -1,0 +1,9 @@
+P073 — 180 esempi di training; 60 esempi di test sintetici
+mae: 0.998918
+rmse: 1.257565
+baseline_mae: 5.284454
+baseline_rmse: 6.401148
+raw_temperature_mae: 3.497307
+intercetta: 17.883517
+coefficienti: 0.782513, 8.464744, 0.070671
+prima previsione: 35.924931 vero: 34.788974

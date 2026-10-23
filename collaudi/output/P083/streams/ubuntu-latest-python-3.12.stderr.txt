@@ -1,0 +1,27 @@
+test_bad_clock_does_not_advance_sequence_or_rng (test_iot_simulator.IoTSimulatorTest.test_bad_clock_does_not_advance_sequence_or_rng) ... ok
+test_bad_numbers_and_booleans_are_rejected (test_iot_simulator.IoTSimulatorTest.test_bad_numbers_and_booleans_are_rejected) ... ok
+test_broker_rejects_bad_topic_callback_and_duplicate_subscription (test_iot_simulator.IoTSimulatorTest.test_broker_rejects_bad_topic_callback_and_duplicate_subscription) ... ok
+test_conflicting_duplicate_is_rejected_without_rounding_away_difference (test_iot_simulator.IoTSimulatorTest.test_conflicting_duplicate_is_rejected_without_rounding_away_difference) ... ok
+test_demo_is_three_ordered_events_and_no_persistent_transport (test_iot_simulator.IoTSimulatorTest.test_demo_is_three_ordered_events_and_no_persistent_transport) ... ok
+test_device_and_sensor_configuration_are_validated (test_iot_simulator.IoTSimulatorTest.test_device_and_sensor_configuration_are_validated) ... ok
+test_devices_have_independent_sequences (test_iot_simulator.IoTSimulatorTest.test_devices_have_independent_sequences) ... ok
+test_failed_flush_keeps_unsent_head (test_iot_simulator.IoTSimulatorTest.test_failed_flush_keeps_unsent_head) ... ok
+test_identical_retry_is_acknowledged_without_duplicate (test_iot_simulator.IoTSimulatorTest.test_identical_retry_is_acknowledged_without_duplicate) ... ok
+test_malformed_json_duplicate_keys_and_wrong_root_are_rejected (test_iot_simulator.IoTSimulatorTest.test_malformed_json_duplicate_keys_and_wrong_root_are_rejected) ... ok
+test_numeric_envelope_includes_boundaries (test_iot_simulator.IoTSimulatorTest.test_numeric_envelope_includes_boundaries) ... ok
+test_offline_buffers_without_delivery (test_iot_simulator.IoTSimulatorTest.test_offline_buffers_without_delivery) ... ok
+test_partial_callback_failure_can_retry_without_duplicate_at_collector (test_iot_simulator.IoTSimulatorTest.test_partial_callback_failure_can_retry_without_duplicate_at_collector) ... ok
+test_publish_delivers_valid_schema (test_iot_simulator.IoTSimulatorTest.test_publish_delivers_valid_schema) ... ok
+test_reconnection_delivers_old_events_before_new_sample (test_iot_simulator.IoTSimulatorTest.test_reconnection_delivers_old_events_before_new_sample) ... ok
+test_returned_messages_cannot_corrupt_history_or_deduplication (test_iot_simulator.IoTSimulatorTest.test_returned_messages_cannot_corrupt_history_or_deduplication) ... ok
+test_schema_and_fields_are_exact (test_iot_simulator.IoTSimulatorTest.test_schema_and_fields_are_exact) ... ok
+test_seed_and_clock_are_reproducible (test_iot_simulator.IoTSimulatorTest.test_seed_and_clock_are_reproducible) ... ok
+test_sequence_requires_nonnegative_integer (test_iot_simulator.IoTSimulatorTest.test_sequence_requires_nonnegative_integer) ... ok
+test_timestamp_requires_explicit_utc (test_iot_simulator.IoTSimulatorTest.test_timestamp_requires_explicit_utc) ... ok
+test_topic_and_payload_device_must_match (test_iot_simulator.IoTSimulatorTest.test_topic_and_payload_device_must_match) ... ok
+test_unseen_out_of_order_is_rejected_but_old_retry_is_allowed (test_iot_simulator.IoTSimulatorTest.test_unseen_out_of_order_is_rejected_but_old_retry_is_allowed) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.005s
+
+OK

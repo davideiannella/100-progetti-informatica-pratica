@@ -1,0 +1,36 @@
+{
+  "project": "P006",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P006.json",
+    "bytes": 994,
+    "sha256": "4dcea8bcbdf9e74e1d7fdbebdd9cf12c5fd4690d03b9fd29994780bb2e5ffb72"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "Python 3.12"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_p006.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_p006.py",
+      "exit_code": 0,
+      "test_count": 3,
+      "count_basis": "unittest runtime report",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.137,
+      "stdout_file": "streams/001_tests_test_p006.py.stdout.txt",
+      "stderr_file": "streams/001_tests_test_p006.py.stderr.txt"
+    }
+  ]
+}

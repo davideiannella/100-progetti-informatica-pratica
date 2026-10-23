@@ -1,0 +1,13 @@
+test_exhaustive_4096_permission_modes (test_p069.HardeningTests.test_exhaustive_4096_permission_modes) ... ok
+test_exhaustive_boolean_configurations (test_p069.HardeningTests.test_exhaustive_boolean_configurations) ... ok
+test_missing_is_explicit_not_pass (test_p069.HardeningTests.test_missing_is_explicit_not_pass) ... ok
+test_mode_contract (test_p069.HardeningTests.test_mode_contract) ... ok
+test_non_regular_and_missing (test_p069.HardeningTests.test_non_regular_and_missing) ... ok
+test_real_sandbox_files_read_only_audit (test_p069.HardeningTests.test_real_sandbox_files_read_only_audit) ... ok
+test_strings_bool_and_unknown_config (test_p069.HardeningTests.test_strings_bool_and_unknown_config) ... ok
+test_symlink_not_followed (test_p069.HardeningTests.test_symlink_not_followed) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.015s
+
+OK

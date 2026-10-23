@@ -1,0 +1,19 @@
+tests/TicketingConcurrentTest.java:6: warning: auxiliary class TicketService in src/Ticketing.java should not be accessed from outside its own source file
+        TicketService service = new TicketService();
+        ^
+tests/TicketingConcurrentTest.java:6: warning: auxiliary class TicketService in src/Ticketing.java should not be accessed from outside its own source file
+        TicketService service = new TicketService();
+                                    ^
+tests/TicketingConcurrentTest.java:7: warning: auxiliary class Event in src/Ticketing.java should not be accessed from outside its own source file
+        service.add(new Event("E", "Evento", 1));
+                        ^
+tests/TicketingTest.java:1: warning: auxiliary class TicketService in src/Ticketing.java should not be accessed from outside its own source file
+public class TicketingTest{public static void main(String[]a){TicketService s=new TicketService();s.add(new Event("E", "Evento",1));s.book("E","U1");assert s.booked("E")==1;boolean full=false;try{s.book("E","U2");}catch(IllegalStateException e){full=true;}assert full;s.cancel("E","U1");assert s.booked("E")==0;System.out.println("P038: ticketing PASS");}}
+                                                              ^
+tests/TicketingTest.java:1: warning: auxiliary class TicketService in src/Ticketing.java should not be accessed from outside its own source file
+public class TicketingTest{public static void main(String[]a){TicketService s=new TicketService();s.add(new Event("E", "Evento",1));s.book("E","U1");assert s.booked("E")==1;boolean full=false;try{s.book("E","U2");}catch(IllegalStateException e){full=true;}assert full;s.cancel("E","U1");assert s.booked("E")==0;System.out.println("P038: ticketing PASS");}}
+                                                                                  ^
+tests/TicketingTest.java:1: warning: auxiliary class Event in src/Ticketing.java should not be accessed from outside its own source file
+public class TicketingTest{public static void main(String[]a){TicketService s=new TicketService();s.add(new Event("E", "Evento",1));s.book("E","U1");assert s.booked("E")==1;boolean full=false;try{s.book("E","U2");}catch(IllegalStateException e){full=true;}assert full;s.cancel("E","U1");assert s.booked("E")==0;System.out.println("P038: ticketing PASS");}}
+                                                                                                            ^
+6 warnings

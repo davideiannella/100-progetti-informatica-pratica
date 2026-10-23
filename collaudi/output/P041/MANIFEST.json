@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "project": "P041",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12456886835,
+      "artifact_name": "p041-p080-core-39849393701-1",
+      "member": "P041/results.json",
+      "bytes": 2199,
+      "sha256": "0b75e033712f59aa881e00a0320d711e328982d43105ff7f61318d2b1c2f04f8"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_javac_compile.stdout.txt",
+      "source_record": "P041/results.json",
+      "source_member_or_pointer": "P041/001_javac_compile.stdout.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "command",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_javac_compile.stderr.txt",
+      "source_record": "P041/results.json",
+      "source_member_or_pointer": "P041/001_javac_compile.stderr.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "command",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_NotificationsTest.stdout.txt",
+      "source_record": "P041/results.json",
+      "source_member_or_pointer": "P041/002_NotificationsTest.stdout.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "test_suite",
+      "input_bytes": 43,
+      "input_sha256": "56da610ff2302d891a2f7f6a39d70b9683e67820fd478c436795e7cb5e8a9afb",
+      "bytes": 43,
+      "sha256": "56da610ff2302d891a2f7f6a39d70b9683e67820fd478c436795e7cb5e8a9afb",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_NotificationsTest.stderr.txt",
+      "source_record": "P041/results.json",
+      "source_member_or_pointer": "P041/002_NotificationsTest.stderr.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "test_suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [
+    {
+      "step_index": 0,
+      "input_canonical_sha256": "222604f57fa484cd14ccff3f3fb3b2d35881f0fd69feca4ad2a0f641b3f25f15",
+      "output_canonical_sha256": "5a695b9ed7cfc92f046a4f71c10aa855bb07062d79a9daa3e49644ca1cc709cb",
+      "transformations": {
+        "runner_workspace_prefix": 1
+      }
+    },
+    {
+      "step_index": 1,
+      "input_canonical_sha256": "7c47d26a95470733e20f02d4d8a23fef452e0b03221e3c1ac0c327b9bb5164d4",
+      "output_canonical_sha256": "986be5155c0ac02a883e732b86f8b1509cba8726840e0173bed857f3e04f4da1",
+      "transformations": {
+        "runner_workspace_prefix": 1
+      }
+    }
+  ],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 2005,
+    "sha256": "4d4bf817219b0001e1f1afc64a42281507589cb922527bac2a784803d2ac4482"
+  },
+  "readme": {
+    "bytes": 2947,
+    "sha256": "5c713a35ccf4b9629df1c3e173e4b3c840dae08d1ae7f45acbff741b09ed221a"
+  }
+}

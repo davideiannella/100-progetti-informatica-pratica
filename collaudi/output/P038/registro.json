@@ -1,0 +1,80 @@
+{
+  "project": "P038",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P038.json",
+    "bytes": 4520,
+    "sha256": "b15bbf5f1f0061eb3054e3e5200d9d8951c455a8936f147dd2005f42adf2c3bb"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "JDK 17; java -ea"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "java",
+        "-m",
+        "jdk.compiler/com.sun.tools.javac.Main",
+        "-Xlint:all",
+        "-d",
+        "build",
+        "src/Ticketing.java",
+        "tests/TicketingConcurrentTest.java",
+        "tests/TicketingTest.java"
+      ],
+      "kind": "build",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.777,
+      "stdout_file": "streams/001_step_1.stdout.txt",
+      "stderr_file": "streams/001_step_1.stderr.txt"
+    },
+    {
+      "command": [
+        "java",
+        "-ea",
+        "-cp",
+        "build",
+        "TicketingConcurrentTest"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/TicketingConcurrentTest.java",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.076,
+      "stdout_file": "streams/002_tests_TicketingConcurrentTest.java.stdout.txt",
+      "stderr_file": "streams/002_tests_TicketingConcurrentTest.java.stderr.txt"
+    },
+    {
+      "command": [
+        "java",
+        "-ea",
+        "-cp",
+        "build",
+        "TicketingTest"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/TicketingTest.java",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.038,
+      "stdout_file": "streams/003_tests_TicketingTest.java.stdout.txt",
+      "stderr_file": "streams/003_tests_TicketingTest.java.stderr.txt"
+    }
+  ]
+}

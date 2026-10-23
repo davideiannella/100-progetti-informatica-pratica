@@ -1,0 +1,7 @@
+tests/SeatBookingTest.java:7: warning: auxiliary class SeatBookingService in src/SeatBooking.java should not be accessed from outside its own source file
+        SeatBookingService s = new SeatBookingService(3);
+        ^
+tests/SeatBookingTest.java:7: warning: auxiliary class SeatBookingService in src/SeatBooking.java should not be accessed from outside its own source file
+        SeatBookingService s = new SeatBookingService(3);
+                                   ^
+2 warnings

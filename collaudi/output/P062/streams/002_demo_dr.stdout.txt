@@ -1,0 +1,4 @@
+Esposizione: {'pending_writes': 1, 'affected_keys': ['ordine-1'], 'recovery_point': 10.0, 'potential_loss_window_s': 15.0}
+Failover di lettura: ('ricevuto', 'zona-b')
+Durata ripristino simulata: 3.0 s
+Divergenze dopo recupero: []

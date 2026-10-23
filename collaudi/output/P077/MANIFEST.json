@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "project": "P077",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12456886835,
+      "artifact_name": "p041-p080-core-39849393701-1",
+      "member": "P077/results.json",
+      "bytes": 13334,
+      "sha256": "735ceb7531833cd40cc896e504fa9c17560c49eaf341159a6f7cbe0b98597c67"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_unittest_project_suite.stdout.txt",
+      "source_record": "P077/results.json",
+      "source_member_or_pointer": "P077/001_unittest_project_suite.stdout.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "test_suite",
+      "input_bytes": 166,
+      "input_sha256": "e6ad18fdda2cb2a72a1e9c2323a170088ce6fbf6a582f43ad7dde318455dc731",
+      "bytes": 166,
+      "sha256": "e6ad18fdda2cb2a72a1e9c2323a170088ce6fbf6a582f43ad7dde318455dc731",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_unittest_project_suite.stderr.txt",
+      "source_record": "P077/results.json",
+      "source_member_or_pointer": "P077/001_unittest_project_suite.stderr.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "test_suite",
+      "input_bytes": 7292,
+      "input_sha256": "1fe2840aef5161f6c2a7db4a4dcedf9fd6ca1fa8791e55ed67432421ccd8763b",
+      "bytes": 7292,
+      "sha256": "1fe2840aef5161f6c2a7db4a4dcedf9fd6ca1fa8791e55ed67432421ccd8763b",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_demo_ticket_nlp.stdout.txt",
+      "source_record": "P077/results.json",
+      "source_member_or_pointer": "P077/002_demo_ticket_nlp.stdout.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "demo",
+      "input_bytes": 2985,
+      "input_sha256": "e9f5d3cba9a8aa7a920d6a20921b510f4f31bd69e543feabd446ec297bf297e0",
+      "bytes": 2985,
+      "sha256": "e9f5d3cba9a8aa7a920d6a20921b510f4f31bd69e543feabd446ec297bf297e0",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_demo_ticket_nlp.stderr.txt",
+      "source_record": "P077/results.json",
+      "source_member_or_pointer": "P077/002_demo_ticket_nlp.stderr.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "demo",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [
+    {
+      "step_index": 0,
+      "input_canonical_sha256": "bfedf674619eb3c7013b0ab5e1d83709ac00fab1689c4edac46d04e56f9af6d1",
+      "output_canonical_sha256": "078337fdee304b76f1b3d8f29924b8b005ce75da56eac3cc810748d4c13982dc",
+      "transformations": {
+        "python_host_prefix": 1,
+        "runner_workspace_prefix": 1
+      }
+    },
+    {
+      "step_index": 1,
+      "input_canonical_sha256": "b75128e61bba3e6e1c946fba9f9054e7978161c3c7716073592a451a2f4243b2",
+      "output_canonical_sha256": "e322e9820bc5d71a767485cf202ce9ccdf38ccd3467771ea370bb3490f15c332",
+      "transformations": {
+        "python_host_prefix": 1,
+        "runner_workspace_prefix": 1
+      }
+    }
+  ],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 2085,
+    "sha256": "8b87eab38ae562c30279edc0513a8cabb606c4bda2fc8af4a1f3febdab2b011a"
+  },
+  "readme": {
+    "bytes": 13320,
+    "sha256": "d307af39a604b516e0686190e6e590d466c8679bb95bc7eae54d9fdd4be77c3a"
+  }
+}

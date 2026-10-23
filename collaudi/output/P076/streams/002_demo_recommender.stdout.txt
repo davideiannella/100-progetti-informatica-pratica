@@ -1,0 +1,7 @@
+P076 — profilo [1, 0, 1, 1]; ranking completo
+ml: 1.000000
+python: 0.816497
+sql: 0.816497
+java: 0.408248
+reti: 0.408248
+Escludendo ml: python, sql, java

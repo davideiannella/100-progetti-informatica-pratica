@@ -1,0 +1,101 @@
+{
+  "project": "P020",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P020.json",
+    "bytes": 2403,
+    "sha256": "58aa6f961cab11785daabaf718b8416103851cf819ba15f6c3389fee27b722dd"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "G++ C++17 + UBSan"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O1",
+        "-g",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "tests/test_inventory.cpp",
+        "-o",
+        "build/test_inventory"
+      ],
+      "kind": "build",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.689,
+      "stdout_file": "streams/001_step_1.stdout.txt",
+      "stderr_file": "streams/001_step_1.stderr.txt"
+    },
+    {
+      "command": [
+        "./build/test_inventory"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_inventory.cpp",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.002,
+      "stdout_file": "streams/002_tests_test_inventory.cpp.stdout.txt",
+      "stderr_file": "streams/002_tests_test_inventory.cpp.stderr.txt"
+    },
+    {
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O1",
+        "-g",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "tests/test_inventory_limits.cpp",
+        "-o",
+        "build/test_inventory_limits"
+      ],
+      "kind": "build",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.341,
+      "stdout_file": "streams/003_step_3.stdout.txt",
+      "stderr_file": "streams/003_step_3.stderr.txt"
+    },
+    {
+      "command": [
+        "./build/test_inventory_limits"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_inventory_limits.cpp",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.002,
+      "stdout_file": "streams/004_tests_test_inventory_limits.cpp.stdout.txt",
+      "stderr_file": "streams/004_tests_test_inventory_limits.cpp.stderr.txt"
+    }
+  ]
+}

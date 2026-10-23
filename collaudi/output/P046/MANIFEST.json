@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "project": "P046",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12456886835,
+      "artifact_name": "p041-p080-core-39849393701-1",
+      "member": "P046/results.json",
+      "bytes": 1716,
+      "sha256": "592151f5a2a3c547264f9da4e121ea90f2ffd87bb7004e823883c394a0912a2c"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_test_p046.stdout.txt",
+      "source_record": "P046/results.json",
+      "source_member_or_pointer": "P046/001_test_p046.stdout.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "test_suite",
+      "input_bytes": 33,
+      "input_sha256": "e3c5605a4d680b325328b7441d96595ec44c1fd0bb533ba62a91d6e546704a72",
+      "bytes": 33,
+      "sha256": "e3c5605a4d680b325328b7441d96595ec44c1fd0bb533ba62a91d6e546704a72",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_test_p046.stderr.txt",
+      "source_record": "P046/results.json",
+      "source_member_or_pointer": "P046/001_test_p046.stderr.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "test_suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [
+    {
+      "step_index": 0,
+      "input_canonical_sha256": "352258877a7b1624b3f61ae7bb9a0f2cbfd5990f965e89c8465b5066bebe1068",
+      "output_canonical_sha256": "501768c8706d926cd8dab7ed44c3f71f9155c7a249db66bf2181028b6f18fdc9",
+      "transformations": {
+        "python_host_prefix": 1,
+        "runner_workspace_prefix": 1
+      }
+    }
+  ],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 1444,
+    "sha256": "c35f3f928ca01b979fbf96f5476283c21c047ac639d5e84bdf9159c347806953"
+  },
+  "readme": {
+    "bytes": 2349,
+    "sha256": "46c514f77b40b3787b434e1dcab791afa92e6854e26cf037c78d4ca37e86dfcd"
+  }
+}

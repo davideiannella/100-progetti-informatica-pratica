@@ -1,0 +1,3 @@
+  Determining projects to restore...
+  Restored <WORK>/P022/src/P022.csproj (in 113 ms).
+  Restored <WORK>/P022/tests/P022.Tests.csproj (in 124 ms).

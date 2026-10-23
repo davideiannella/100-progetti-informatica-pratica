@@ -1,0 +1,1 @@
+P040: validazione, persistenza, duplicati e contratto repository PASS

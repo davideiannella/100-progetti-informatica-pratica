@@ -1,0 +1,19 @@
+test_compatibility_api_normalizes_fingerprint (test_p067.TLSLabTests.test_compatibility_api_normalizes_fingerprint) ... ok
+test_expired_certificate_rejected (test_p067.TLSLabTests.test_expired_certificate_rejected) ... ok
+test_fingerprint_is_sha256_of_der (test_p067.TLSLabTests.test_fingerprint_is_sha256_of_der) ... ok
+test_future_certificate_rejected (test_p067.TLSLabTests.test_future_certificate_rejected) ... ok
+test_hostname_rejected (test_p067.TLSLabTests.test_hostname_rejected) ... ok
+test_invalid_lab_parameters (test_p067.TLSLabTests.test_invalid_lab_parameters) ... ok
+test_ip_is_not_dns_san (test_p067.TLSLabTests.test_ip_is_not_dns_san) ... ok
+test_malformed_certificate_rejected (test_p067.TLSLabTests.test_malformed_certificate_rejected) ... ok
+test_new_files_and_private_key_mode (test_p067.TLSLabTests.test_new_files_and_private_key_mode) ... ok
+test_payload_boundaries (test_p067.TLSLabTests.test_payload_boundaries) ... ok
+test_real_handshake_and_echo (test_p067.TLSLabTests.test_real_handshake_and_echo) ... ok
+test_unknown_ca_rejected (test_p067.TLSLabTests.test_unknown_ca_rejected) ... ok
+test_wrong_extended_key_usage_rejected (test_p067.TLSLabTests.test_wrong_extended_key_usage_rejected) ... ok
+test_wrong_private_key_rejected (test_p067.TLSLabTests.test_wrong_private_key_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.079s
+
+OK

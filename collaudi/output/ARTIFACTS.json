@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "original_archives_distribution": "private_only",
+  "artifacts": [
+    {
+      "run_id": 39849393701,
+      "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+      "artifact_id": 12457560243,
+      "name": "p001-p040-complete-validation",
+      "zip_bytes": 35317,
+      "official_sha256": "67b3d380df32042503d771063cba161b5126fdcaa5b0fa94f18f2f873a60b2a7",
+      "actual_sha256": "67b3d380df32042503d771063cba161b5126fdcaa5b0fa94f18f2f873a60b2a7",
+      "digest_verified": true,
+      "original_zip_published": false
+    },
+    {
+      "run_id": 39849393701,
+      "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+      "artifact_id": 12456886835,
+      "name": "p041-p080-core-39849393701-1",
+      "zip_bytes": 281345,
+      "official_sha256": "0120600b45c57b2f898ac32451193fcdf5ad50513501cf019a627a615b60a54b",
+      "actual_sha256": "0120600b45c57b2f898ac32451193fcdf5ad50513501cf019a627a615b60a54b",
+      "digest_verified": true,
+      "original_zip_published": false
+    },
+    {
+      "run_id": 39849393701,
+      "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+      "artifact_id": 12456527740,
+      "name": "p055-runtime-39849393701-1",
+      "zip_bytes": 46052,
+      "official_sha256": "37771036845b8ca90082cd4db7a159cf104bc84b98747f65f19687671da1f840",
+      "actual_sha256": "37771036845b8ca90082cd4db7a159cf104bc84b98747f65f19687671da1f840",
+      "digest_verified": true,
+      "original_zip_published": false
+    },
+    {
+      "run_id": 39849393701,
+      "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+      "artifact_id": 12456382691,
+      "name": "p056-runtime-39849393701-1",
+      "zip_bytes": 131100,
+      "official_sha256": "d6411d2b58fa3d11bb74dea9119d77818c3a08b3f1ff4c4992723043a075df90",
+      "actual_sha256": "d6411d2b58fa3d11bb74dea9119d77818c3a08b3f1ff4c4992723043a075df90",
+      "digest_verified": true,
+      "original_zip_published": false
+    },
+    {
+      "run_id": 39849393701,
+      "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+      "artifact_id": 12456212870,
+      "name": "p054-runtime-39849393701-1",
+      "zip_bytes": 33682,
+      "official_sha256": "ce3f0684640875cc4940c5584e6f0256a176b662b65717508a3f5d35b5f80bc1",
+      "actual_sha256": "ce3f0684640875cc4940c5584e6f0256a176b662b65717508a3f5d35b5f80bc1",
+      "digest_verified": true,
+      "original_zip_published": false
+    },
+    {
+      "run_id": 39893701054,
+      "commit": "3ab7bdfedb20a443bd71fe4e4ffe3c1dd67bd707",
+      "artifact_id": 12476170749,
+      "name": "output-p081-p100-ubuntu-latest-python-3.12",
+      "zip_bytes": 16357,
+      "official_sha256": "e8dbe23776abf282f8b90b41d0e6537f0bbe5116c4f1bebb6a285adb4348d0ca",
+      "actual_sha256": "e8dbe23776abf282f8b90b41d0e6537f0bbe5116c4f1bebb6a285adb4348d0ca",
+      "digest_verified": true,
+      "original_zip_published": false,
+      "summary_file": "ambienti/ubuntu-latest-python-3.12.summary.json",
+      "summary_sha256": "8f0ead6eec0c6e1658742ab2768df54a691393e2acd6a86fec6a41d666b6f849"
+    },
+    {
+      "run_id": 39893701054,
+      "commit": "3ab7bdfedb20a443bd71fe4e4ffe3c1dd67bd707",
+      "artifact_id": 12476095990,
+      "name": "output-p081-p100-ubuntu-latest-python-3.13",
+      "zip_bytes": 16357,
+      "official_sha256": "672006584bb6420b9d955b01b459dcbe68cbb09bda0fae45f6e9df2a0e3fb05b",
+      "actual_sha256": "672006584bb6420b9d955b01b459dcbe68cbb09bda0fae45f6e9df2a0e3fb05b",
+      "digest_verified": true,
+      "original_zip_published": false,
+      "summary_file": "ambienti/ubuntu-latest-python-3.13.summary.json",
+      "summary_sha256": "b46cad959b393e3276ebbfc4c941560eaadb48b94e69e0364e11ebb7c50b34db"
+    },
+    {
+      "run_id": 39893701054,
+      "commit": "3ab7bdfedb20a443bd71fe4e4ffe3c1dd67bd707",
+      "artifact_id": 12475927047,
+      "name": "output-p081-p100-windows-latest-python-3.12",
+      "zip_bytes": 16482,
+      "official_sha256": "86d91f9c2c8ea12e8c9f7e55b96d5f946f35206b9de9cb85486811e3decb0992",
+      "actual_sha256": "86d91f9c2c8ea12e8c9f7e55b96d5f946f35206b9de9cb85486811e3decb0992",
+      "digest_verified": true,
+      "original_zip_published": false,
+      "summary_file": "ambienti/windows-latest-python-3.12.summary.json",
+      "summary_sha256": "d1f594bc70f1b19f3a7e4a17b0a98608acb4116d572851a443048e8e2a6338f3"
+    },
+    {
+      "run_id": 39893701054,
+      "commit": "3ab7bdfedb20a443bd71fe4e4ffe3c1dd67bd707",
+      "artifact_id": 12475826902,
+      "name": "output-p081-p100-windows-latest-python-3.13",
+      "zip_bytes": 16482,
+      "official_sha256": "3e37fc7ce580a2627e4f232bfac4f93d640402cbe4adb4d86043defd0676366a",
+      "actual_sha256": "3e37fc7ce580a2627e4f232bfac4f93d640402cbe4adb4d86043defd0676366a",
+      "digest_verified": true,
+      "original_zip_published": false,
+      "summary_file": "ambienti/windows-latest-python-3.13.summary.json",
+      "summary_sha256": "14e808c6137f1a35a41d4aec375b1a5357031349ab8742db224976a4112ee040"
+    }
+  ]
+}

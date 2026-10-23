@@ -1,0 +1,36 @@
+{
+  "project": "P005",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P005.json",
+    "bytes": 1008,
+    "sha256": "bbbeaa4c4509b2a65f4a017d66d60ce776e5757bc571618bb02f5b3164d73bfb"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "Python 3.12"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_lru_cache.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_lru_cache.py",
+      "exit_code": 0,
+      "test_count": 8,
+      "count_basis": "unittest runtime report",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.14,
+      "stdout_file": "streams/001_tests_test_lru_cache.py.stdout.txt",
+      "stderr_file": "streams/001_tests_test_lru_cache.py.stderr.txt"
+    }
+  ]
+}

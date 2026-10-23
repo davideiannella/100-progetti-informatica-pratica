@@ -1,0 +1,36 @@
+{
+  "project": "P001",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P001.json",
+    "bytes": 1016,
+    "sha256": "95e9fa5c7c27ba5304091d69ba5eaa2ea694e5566dddd59f6617a930dda9894e"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "Python 3.12"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_queue_manager.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_queue_manager.py",
+      "exit_code": 0,
+      "test_count": 7,
+      "count_basis": "unittest runtime report",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.099,
+      "stdout_file": "streams/001_tests_test_queue_manager.py.stdout.txt",
+      "stderr_file": "streams/001_tests_test_queue_manager.py.stderr.txt"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "project": "P018",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P018.json",
+    "bytes": 2510,
+    "sha256": "73696dd1a19ae09e03d22c04932eacaed1e018454b7f644ae779202e74572ebe"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "GCC C11 + UBSan"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "gcc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O1",
+        "-g",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "tests/test_pc.c",
+        "-pthread",
+        "-o",
+        "build/test_pc"
+      ],
+      "kind": "build",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.13,
+      "stdout_file": "streams/001_step_1.stdout.txt",
+      "stderr_file": "streams/001_step_1.stderr.txt"
+    },
+    {
+      "command": [
+        "./build/test_pc"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_pc.c",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.002,
+      "stdout_file": "streams/002_tests_test_pc.c.stdout.txt",
+      "stderr_file": "streams/002_tests_test_pc.c.stderr.txt"
+    },
+    {
+      "command": [
+        "gcc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O1",
+        "-g",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "tests/test_pc_failures.c",
+        "-pthread",
+        "-Wl,--wrap=pthread_mutex_init",
+        "-Wl,--wrap=pthread_cond_init",
+        "-Wl,--wrap=pthread_create",
+        "-o",
+        "build/test_pc_failures"
+      ],
+      "kind": "build",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.089,
+      "stdout_file": "streams/003_step_3.stdout.txt",
+      "stderr_file": "streams/003_step_3.stderr.txt"
+    },
+    {
+      "command": [
+        "./build/test_pc_failures"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_pc_failures.c",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.002,
+      "stdout_file": "streams/004_tests_test_pc_failures.c.stdout.txt",
+      "stderr_file": "streams/004_tests_test_pc_failures.c.stderr.txt"
+    }
+  ]
+}

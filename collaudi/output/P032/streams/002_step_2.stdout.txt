@@ -1,0 +1,16 @@
+p, minutes
+(:Stop {name: "Centro", id: "A"})-[:CONNECTS {minutes: 5}]->(:Stop {name: "Stazione", id: "B"})-[:CONNECTS {minutes: 7}]->(:Stop {name: "Universita", id: "C"}), 12
+p, minutes
+(:Stop {name: "Centro", id: "A"})-[:CONNECTS {minutes: 5}]->(:Stop {name: "Stazione", id: "B"})-[:CONNECTS {minutes: 7}]->(:Stop {name: "Universita", id: "C"}), 12
+check, passed
+"CI_ASSERT_version", TRUE
+check, passed
+"CI_ASSERT_nodes", TRUE
+check, passed
+"CI_ASSERT_edges", TRUE
+check, passed
+"CI_ASSERT_edge_values", TRUE
+check, passed
+"CI_ASSERT_shortest", TRUE
+check, passed
+"CI_ASSERT_direction", TRUE

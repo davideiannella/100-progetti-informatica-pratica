@@ -1,0 +1,18 @@
+test_both_prioritizes_state_without_losing_water_action (test_p091.SafetyTests.test_both_prioritizes_state_without_losing_water_action) ... ok
+test_demo_has_six_samples_and_four_transitions (test_p091.SafetyTests.test_demo_has_six_samples_and_four_transitions) ... ok
+test_fire_to_water_transition (test_p091.SafetyTests.test_fire_to_water_transition) ... ok
+test_instances_do_not_share_state (test_p091.SafetyTests.test_instances_do_not_share_state) ... ok
+test_invalid_booleans_rejected_without_mutation (test_p091.SafetyTests.test_invalid_booleans_rejected_without_mutation) ... ok
+test_normal_has_no_actions_or_transition (test_p091.SafetyTests.test_normal_has_no_actions_or_transition) ... ok
+test_offline_decision_and_ordered_single_flush (test_p091.SafetyTests.test_offline_decision_and_ordered_single_flush) ... ok
+test_repeated_sample_does_not_duplicate_notification (test_p091.SafetyTests.test_repeated_sample_does_not_duplicate_notification) ... ok
+test_return_to_normal_is_automatic_in_this_simulation (test_p091.SafetyTests.test_return_to_normal_is_automatic_in_this_simulation) ... ok
+test_returned_lists_do_not_modify_controller (test_p091.SafetyTests.test_returned_lists_do_not_modify_controller) ... ok
+test_same_state_different_hazard_is_recorded (test_p091.SafetyTests.test_same_state_different_hazard_is_recorded) ... ok
+test_smoke_requests_two_local_actions (test_p091.SafetyTests.test_smoke_requests_two_local_actions) ... ok
+test_water_requests_valve (test_p091.SafetyTests.test_water_requests_valve) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.002s
+
+OK

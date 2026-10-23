@@ -1,0 +1,4 @@
+Categoria: Spoofing
+Rischio iniziale: 16 high
+Ipotesi dopo mitigazione: 8 medium
+Scala booleana: RIFIUTATA

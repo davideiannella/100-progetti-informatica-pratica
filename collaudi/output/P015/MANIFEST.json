@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "project": "P015",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12457560243,
+      "artifact_name": "p001-p040-complete-validation",
+      "member": "P015.json",
+      "bytes": 2333,
+      "sha256": "e09195b03faee8e8c9512d384a59fd9c4c5704fe062440fcb765777f7a828474"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_step_1.stdout.txt",
+      "source_record": "P015.json",
+      "source_member_or_pointer": "P015.json#/steps/0/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "build",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_step_1.stderr.txt",
+      "source_record": "P015.json",
+      "source_member_or_pointer": "P015.json#/steps/0/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "build",
+      "input_bytes": 311,
+      "input_sha256": "ba47b872a391a2bb722663bf2680f1b37f11d2dbf0d91806f35110a16325ec5f",
+      "bytes": 311,
+      "sha256": "ba47b872a391a2bb722663bf2680f1b37f11d2dbf0d91806f35110a16325ec5f",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_tests_ChatIntegrationTest.java.stdout.txt",
+      "source_record": "P015.json",
+      "source_member_or_pointer": "P015.json#/steps/1/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "suite",
+      "input_bytes": 25,
+      "input_sha256": "43303ec1752b12c01b7ebefe44c997eeee752ac3f03eee73f4d7bf2b1119a6a1",
+      "bytes": 25,
+      "sha256": "43303ec1752b12c01b7ebefe44c997eeee752ac3f03eee73f4d7bf2b1119a6a1",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_tests_ChatIntegrationTest.java.stderr.txt",
+      "source_record": "P015.json",
+      "source_member_or_pointer": "P015.json#/steps/1/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/003_tests_ChatShutdownTest.java.stdout.txt",
+      "source_record": "P015.json",
+      "source_member_or_pointer": "P015.json#/steps/2/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 2,
+      "kind": "suite",
+      "input_bytes": 60,
+      "input_sha256": "879902a3cae15d7f7b6d754def47728fbed41e2f410b53d75775d09033061500",
+      "bytes": 60,
+      "sha256": "879902a3cae15d7f7b6d754def47728fbed41e2f410b53d75775d09033061500",
+      "transformations": {}
+    },
+    {
+      "file": "streams/003_tests_ChatShutdownTest.java.stderr.txt",
+      "source_record": "P015.json",
+      "source_member_or_pointer": "P015.json#/steps/2/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 2,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 2176,
+    "sha256": "9cb6361f4eb0a8371ecc70d85d8263239b374cdeab095c43bacc7f894e5709cb"
+  },
+  "readme": {
+    "bytes": 3541,
+    "sha256": "1862e79bac0a75af0a9f36bcb5c30434e14e8af2ec8869a0394cc82cfe28b582"
+  }
+}

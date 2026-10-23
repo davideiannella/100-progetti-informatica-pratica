@@ -1,0 +1,60 @@
+{
+  "project": "P013",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P013.json",
+    "bytes": 2271,
+    "sha256": "0f2bdf5177d80e6f93fca5d029dbfac49bba42ad75e1baa40023f03e7c1eab28"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "JDK 17; java -ea"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "java",
+        "-m",
+        "jdk.compiler/com.sun.tools.javac.Main",
+        "-Xlint:all",
+        "-d",
+        "build",
+        "src/LibraryApp.java",
+        "tests/LibraryTest.java"
+      ],
+      "kind": "build",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 3.482,
+      "stdout_file": "streams/001_step_1.stdout.txt",
+      "stderr_file": "streams/001_step_1.stderr.txt"
+    },
+    {
+      "command": [
+        "java",
+        "-ea",
+        "-cp",
+        "build",
+        "LibraryTest"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/LibraryTest.java",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.083,
+      "stdout_file": "streams/002_tests_LibraryTest.java.stdout.txt",
+      "stderr_file": "streams/002_tests_LibraryTest.java.stderr.txt"
+    }
+  ]
+}

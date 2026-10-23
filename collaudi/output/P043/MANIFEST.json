@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "project": "P043",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12456886835,
+      "artifact_name": "p041-p080-core-39849393701-1",
+      "member": "P043/results.json",
+      "bytes": 2222,
+      "sha256": "d1b5496f2dece8bcc7dd4f5be82475aab3625340d07e2de56a53e3bce908d9c5"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_test_edges.stdout.txt",
+      "source_record": "P043/results.json",
+      "source_member_or_pointer": "P043/001_test_edges.stdout.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "test_suite",
+      "input_bytes": 22,
+      "input_sha256": "5e4ae8c849085707d6053e1bd3423da9b5952ecf33795ab3dc76d72a73c68253",
+      "bytes": 22,
+      "sha256": "5e4ae8c849085707d6053e1bd3423da9b5952ecf33795ab3dc76d72a73c68253",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_test_edges.stderr.txt",
+      "source_record": "P043/results.json",
+      "source_member_or_pointer": "P043/001_test_edges.stderr.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "test_suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_test_p043.stdout.txt",
+      "source_record": "P043/results.json",
+      "source_member_or_pointer": "P043/002_test_p043.stdout.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "test_suite",
+      "input_bytes": 23,
+      "input_sha256": "c5a85e69ba0fa34b68e625fcdf9be555916a03ab585064e30e5c83d4b2a00c2e",
+      "bytes": 23,
+      "sha256": "c5a85e69ba0fa34b68e625fcdf9be555916a03ab585064e30e5c83d4b2a00c2e",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_test_p043.stderr.txt",
+      "source_record": "P043/results.json",
+      "source_member_or_pointer": "P043/002_test_p043.stderr.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "test_suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [
+    {
+      "step_index": 0,
+      "input_canonical_sha256": "c88782cbfb18f503de175950c834a82436879e0da16f1e8d503d565791c8dc70",
+      "output_canonical_sha256": "67e0ccc9b4084e979e963c4498d731e646ccd485b7d920636e18c54ed33fe037",
+      "transformations": {
+        "python_host_prefix": 1,
+        "runner_workspace_prefix": 1
+      }
+    },
+    {
+      "step_index": 1,
+      "input_canonical_sha256": "5dc40752d5d698e62819257f4a5b87792e20ddd91726d6be726893daca2a97af",
+      "output_canonical_sha256": "7c2925e17c8c0fcd788dcc57afc0f7e4f80e26ac05cd19e2a4af51064deacc47",
+      "transformations": {
+        "python_host_prefix": 1,
+        "runner_workspace_prefix": 1
+      }
+    }
+  ],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 1922,
+    "sha256": "b27b803924b2bbd2d06d144045fd988045bafa90f18e471f44791e986d8532a3"
+  },
+  "readme": {
+    "bytes": 2810,
+    "sha256": "87f18bb7490bcbc23437fc9c73690a1804b8387880d57a09a09af11e0b54c79e"
+  }
+}

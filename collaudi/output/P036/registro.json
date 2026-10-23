@@ -1,0 +1,53 @@
+{
+  "project": "P036",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P036.json",
+    "bytes": 1548,
+    "sha256": "4df03a0a976ced79830df01b640b282f84ff190c9a837f2f6e92f373da3a546a"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "Python 3.12"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_capacity_types.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_capacity_types.py",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.069,
+      "stdout_file": "streams/001_tests_test_capacity_types.py.stdout.txt",
+      "stderr_file": "streams/001_tests_test_capacity_types.py.stderr.txt"
+    },
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_gym_domain.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_gym_domain.py",
+      "exit_code": 0,
+      "test_count": 7,
+      "count_basis": "unittest runtime report",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.135,
+      "stdout_file": "streams/002_tests_test_gym_domain.py.stdout.txt",
+      "stderr_file": "streams/002_tests_test_gym_domain.py.stderr.txt"
+    }
+  ]
+}

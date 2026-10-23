@@ -1,0 +1,5 @@
+Algoritmo password: scrypt
+Primo login: True
+Stesso TOTP riutilizzato: False
+Sessione valida: True
+Dopo logout: False

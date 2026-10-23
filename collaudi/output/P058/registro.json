@@ -1,0 +1,88 @@
+{
+  "project": "P058",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12456886835,
+    "artifact_name": "p041-p080-core-39849393701-1",
+    "member": "P058/results.json",
+    "bytes": 2786,
+    "sha256": "4c1f74f1d0a62e3ede94b76b3103bdc98653a45b68475d34a57836a478b464d8"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04 x86_64",
+    "Python 3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "kind": "test_suite",
+      "name": "test_edges",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_edges.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P058",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.031,
+      "unittest": null,
+      "sequence": 1,
+      "stdout_file": "streams/001_test_edges.stdout.txt",
+      "stderr_file": "streams/001_test_edges.stderr.txt"
+    },
+    {
+      "kind": "test_suite",
+      "name": "test_p058",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_p058.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P058",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.028,
+      "unittest": null,
+      "sequence": 2,
+      "stdout_file": "streams/002_test_p058.stdout.txt",
+      "stderr_file": "streams/002_test_p058.stderr.txt"
+    },
+    {
+      "kind": "demo",
+      "name": "demo_demo_corrupt_backup",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "demo_corrupt_backup.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P058",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.027,
+      "unittest": null,
+      "sequence": 3,
+      "stdout_file": "streams/003_demo_demo_corrupt_backup.stdout.txt",
+      "stderr_file": "streams/003_demo_demo_corrupt_backup.stderr.txt"
+    },
+    {
+      "kind": "source_integrity",
+      "name": "original_files_unchanged",
+      "status": "PASS",
+      "files": 5,
+      "changed": [],
+      "sequence": 4
+    },
+    {
+      "kind": "coverage",
+      "name": "required_suites_and_runtime_checks",
+      "status": "PASS",
+      "suite_processes_expected": 2,
+      "suite_processes_executed": 2,
+      "runtime_checks_expected": 0,
+      "runtime_checks_passed": 0,
+      "sequence": 5
+    }
+  ]
+}

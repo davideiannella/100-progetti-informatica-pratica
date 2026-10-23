@@ -1,0 +1,54 @@
+{
+  "project": "P046",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12456886835,
+    "artifact_name": "p041-p080-core-39849393701-1",
+    "member": "P046/results.json",
+    "bytes": 1716,
+    "sha256": "592151f5a2a3c547264f9da4e121ea90f2ffd87bb7004e823883c394a0912a2c"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04 x86_64",
+    "Python 3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "kind": "test_suite",
+      "name": "test_p046",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_p046.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P046",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.026,
+      "unittest": null,
+      "sequence": 1,
+      "stdout_file": "streams/001_test_p046.stdout.txt",
+      "stderr_file": "streams/001_test_p046.stderr.txt"
+    },
+    {
+      "kind": "source_integrity",
+      "name": "original_files_unchanged",
+      "status": "PASS",
+      "files": 3,
+      "changed": [],
+      "sequence": 2
+    },
+    {
+      "kind": "coverage",
+      "name": "required_suites_and_runtime_checks",
+      "status": "PASS",
+      "suite_processes_expected": 1,
+      "suite_processes_executed": 1,
+      "runtime_checks_expected": 0,
+      "runtime_checks_passed": 0,
+      "sequence": 3
+    }
+  ]
+}

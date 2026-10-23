@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "project": "P018",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12457560243,
+      "artifact_name": "p001-p040-complete-validation",
+      "member": "P018.json",
+      "bytes": 2510,
+      "sha256": "73696dd1a19ae09e03d22c04932eacaed1e018454b7f644ae779202e74572ebe"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_step_1.stdout.txt",
+      "source_record": "P018.json",
+      "source_member_or_pointer": "P018.json#/steps/0/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "build",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_step_1.stderr.txt",
+      "source_record": "P018.json",
+      "source_member_or_pointer": "P018.json#/steps/0/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "build",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_tests_test_pc.c.stdout.txt",
+      "source_record": "P018.json",
+      "source_member_or_pointer": "P018.json#/steps/1/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "suite",
+      "input_bytes": 39,
+      "input_sha256": "cfbdb67680296273209accd3f8dcea330910eeb309277b50690502a552a941b4",
+      "bytes": 39,
+      "sha256": "cfbdb67680296273209accd3f8dcea330910eeb309277b50690502a552a941b4",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_tests_test_pc.c.stderr.txt",
+      "source_record": "P018.json",
+      "source_member_or_pointer": "P018.json#/steps/1/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/003_step_3.stdout.txt",
+      "source_record": "P018.json",
+      "source_member_or_pointer": "P018.json#/steps/2/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 2,
+      "kind": "build",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/003_step_3.stderr.txt",
+      "source_record": "P018.json",
+      "source_member_or_pointer": "P018.json#/steps/2/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 2,
+      "kind": "build",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/004_tests_test_pc_failures.c.stdout.txt",
+      "source_record": "P018.json",
+      "source_member_or_pointer": "P018.json#/steps/3/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 3,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/004_tests_test_pc_failures.c.stderr.txt",
+      "source_record": "P018.json",
+      "source_member_or_pointer": "P018.json#/steps/3/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 3,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 2784,
+    "sha256": "fe486b7293d514a5595c06bb98559bab84af8828b6895ad84c94628cf66626d6"
+  },
+  "readme": {
+    "bytes": 4003,
+    "sha256": "2bf6eae03f97571bdb55ae8723af4bdd4566b728bf5deff106b47abf24460686"
+  }
+}

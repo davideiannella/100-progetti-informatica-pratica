@@ -1,0 +1,25 @@
+test_capacity_contract (test_p094.CityTests.test_capacity_contract) ... ok
+test_conflicting_event_id_is_rejected_across_streams (test_p094.CityTests.test_conflicting_event_id_is_rejected_across_streams) ... ok
+test_demo_has_eight_records_and_two_free_stalls (test_p094.CityTests.test_demo_has_eight_records_and_two_free_stalls) ... ok
+test_duplicate_parking_event_is_idempotent (test_p094.CityTests.test_duplicate_parking_event_is_idempotent) ... ok
+test_duplicate_traffic_and_air_do_not_bias_mean (test_p094.CityTests.test_duplicate_traffic_and_air_do_not_bias_mean) ... ok
+test_empty_measurements_are_unknown_not_zero (test_p094.CityTests.test_empty_measurements_are_unknown_not_zero) ... ok
+test_event_metadata_contract (test_p094.CityTests.test_event_metadata_contract) ... ok
+test_event_snapshot_cannot_mutate_internal_history (test_p094.CityTests.test_event_snapshot_cannot_mutate_internal_history) ... ok
+test_large_finite_values_do_not_overflow_the_mean (test_p094.CityTests.test_large_finite_values_do_not_overflow_the_mean) ... ok
+test_limits_are_validated_even_without_samples (test_p094.CityTests.test_limits_are_validated_even_without_samples) ... ok
+test_numeric_validation_rejects_nonfinite_bool_negative_and_text (test_p094.CityTests.test_numeric_validation_rejects_nonfinite_bool_negative_and_text) ... ok
+test_occupy_and_release_stall (test_p094.CityTests.test_occupy_and_release_stall) ... ok
+test_parking_identifier_and_bool_contract (test_p094.CityTests.test_parking_identifier_and_bool_contract) ... ok
+test_public_snapshot_uses_aggregate_allowlist (test_p094.CityTests.test_public_snapshot_uses_aggregate_allowlist) ... ok
+test_records_keep_source_zone_timestamp_and_unit (test_p094.CityTests.test_records_keep_source_zone_timestamp_and_unit) ... ok
+test_stale_or_concurrent_parking_event_cannot_revert_state (test_p094.CityTests.test_stale_or_concurrent_parking_event_cannot_revert_state) ... ok
+test_three_samples_match_hand_calculation (test_p094.CityTests.test_three_samples_match_hand_calculation) ... ok
+test_threshold_equality_does_not_trigger_alert (test_p094.CityTests.test_threshold_equality_does_not_trigger_alert) ... ok
+test_units_cannot_be_silently_mixed (test_p094.CityTests.test_units_cannot_be_silently_mixed) ... ok
+test_zero_readings_are_valid (test_p094.CityTests.test_zero_readings_are_valid) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.002s
+
+OK

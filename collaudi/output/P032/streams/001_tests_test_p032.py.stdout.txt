@@ -1,0 +1,1 @@
+P032: shortest path PASS; Cypher STATIC QA

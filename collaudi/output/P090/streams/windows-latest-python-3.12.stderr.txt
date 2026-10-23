@@ -1,0 +1,24 @@
+test_baseline_and_missed_anomalies_are_visible (test_p090.MaintenanceTests.test_baseline_and_missed_anomalies_are_visible) ... ok
+test_confusion_matrix_reconstructs_metrics (test_p090.MaintenanceTests.test_confusion_matrix_reconstructs_metrics) ... ok
+test_constant_signal_has_no_ac_component (test_p090.MaintenanceTests.test_constant_signal_has_no_ac_component) ... ok
+test_experiment_is_reproducible (test_p090.MaintenanceTests.test_experiment_is_reproducible) ... ok
+test_feature_constraints_on_generated_signals (test_p090.MaintenanceTests.test_feature_constraints_on_generated_signals) ... ok
+test_frequency_cutoff_includes_40_hz (test_p090.MaintenanceTests.test_frequency_cutoff_includes_40_hz) ... ok
+test_generator_rejects_invalid_label_and_rng (test_p090.MaintenanceTests.test_generator_rejects_invalid_label_and_rng) ... ok
+test_generator_seed_is_reproducible (test_p090.MaintenanceTests.test_generator_seed_is_reproducible) ... ok
+test_invalid_attention_threshold (test_p090.MaintenanceTests.test_invalid_attention_threshold) ... ok
+test_invalid_sample_rates (test_p090.MaintenanceTests.test_invalid_sample_rates) ... ok
+test_invalid_seeds (test_p090.MaintenanceTests.test_invalid_seeds) ... ok
+test_invalid_signal_shapes_and_types (test_p090.MaintenanceTests.test_invalid_signal_shapes_and_types) ... ok
+test_large_finite_amplitudes_do_not_overflow (test_p090.MaintenanceTests.test_large_finite_amplitudes_do_not_overflow) ... ok
+test_nonfinite_signal_values (test_p090.MaintenanceTests.test_nonfinite_signal_values) ... ok
+test_odd_length_spectral_weights (test_p090.MaintenanceTests.test_odd_length_spectral_weights) ... ok
+test_scaler_is_fitted_only_on_training (test_p090.MaintenanceTests.test_scaler_is_fitted_only_on_training) ... ok
+test_sine_rms_and_frequency_ratio (test_p090.MaintenanceTests.test_sine_rms_and_frequency_ratio) ... ok
+test_split_is_disjoint_and_stratified (test_p090.MaintenanceTests.test_split_is_disjoint_and_stratified) ... ok
+test_zero_signal (test_p090.MaintenanceTests.test_zero_signal) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.101s
+
+OK

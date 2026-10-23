@@ -1,0 +1,18 @@
+test_100_seeded_html_roundtrips (test_p065.WebDefenseTests.test_100_seeded_html_roundtrips) ... ok
+test_cross_session_token_is_rejected (test_p065.WebDefenseTests.test_cross_session_token_is_rejected) ... ok
+test_csp_is_on_failure_responses_too (test_p065.WebDefenseTests.test_csp_is_on_failure_responses_too) ... ok
+test_expiration_exact_boundary (test_p065.WebDefenseTests.test_expiration_exact_boundary) ... ok
+test_generated_token_properties (test_p065.WebDefenseTests.test_generated_token_properties) ... ok
+test_get_cannot_modify_state (test_p065.WebDefenseTests.test_get_cannot_modify_state) ... ok
+test_html_encoding_quotes_ampersand_and_script (test_p065.WebDefenseTests.test_html_encoding_quotes_ampersand_and_script) ... ok
+test_input_limits_and_unknown_session (test_p065.WebDefenseTests.test_input_limits_and_unknown_session) ... ok
+test_logout_invalidates_csrf (test_p065.WebDefenseTests.test_logout_invalidates_csrf) ... ok
+test_missing_wrong_and_malformed_csrf_deny_without_mutation (test_p065.WebDefenseTests.test_missing_wrong_and_malformed_csrf_deny_without_mutation) ... ok
+test_request_modifies_state_and_encodes_output (test_p065.WebDefenseTests.test_request_modifies_state_and_encodes_output) ... ok
+test_session_expiry_overflow_and_precision_rejected (test_p065.WebDefenseTests.test_session_expiry_overflow_and_precision_rejected) ... ok
+test_token_reusable_inside_its_session (test_p065.WebDefenseTests.test_token_reusable_inside_its_session) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.009s
+
+OK

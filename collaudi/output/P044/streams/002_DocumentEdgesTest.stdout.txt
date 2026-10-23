@@ -1,0 +1,1 @@
+P044 PASS: snapshot immutabile e 100 aggiornamenti concorrenti

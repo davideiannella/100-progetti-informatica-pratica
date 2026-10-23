@@ -1,0 +1,37 @@
+tests/FoodDeliveryLimitsTest.java:3: warning: auxiliary class DeliveryService in src/FoodDelivery.java should not be accessed from outside its own source file
+        DeliveryService delivery = new DeliveryService();
+        ^
+tests/FoodDeliveryLimitsTest.java:3: warning: auxiliary class DeliveryService in src/FoodDelivery.java should not be accessed from outside its own source file
+        DeliveryService delivery = new DeliveryService();
+                                       ^
+tests/FoodDeliveryLimitsTest.java:8: warning: auxiliary class OrderService in src/FoodDelivery.java should not be accessed from outside its own source file
+        OrderService orders = new OrderService();
+        ^
+tests/FoodDeliveryLimitsTest.java:8: warning: auxiliary class OrderService in src/FoodDelivery.java should not be accessed from outside its own source file
+        OrderService orders = new OrderService();
+                                  ^
+tests/FoodDeliveryLimitsTest.java:14: warning: auxiliary class OrderStatus in src/FoodDelivery.java should not be accessed from outside its own source file
+        assert orders.get("O").status() == OrderStatus.CREATED;
+                                           ^
+tests/FoodDeliveryTest.java:1: warning: auxiliary class OrderService in src/FoodDelivery.java should not be accessed from outside its own source file
+public class FoodDeliveryTest{public static void main(String[]a){OrderService o=new OrderService();o.create("O1","R1",2000);assert o.get("O1").status()==OrderStatus.CREATED;o.transition("O1",OrderStatus.ACCEPTED);assert o.get("O1").status()==OrderStatus.ACCEPTED;DeliveryService d=new DeliveryService();assert d.etaMinutes(4)==22;System.out.println("P039: domain services PASS");}}
+                                                                 ^
+tests/FoodDeliveryTest.java:1: warning: auxiliary class OrderService in src/FoodDelivery.java should not be accessed from outside its own source file
+public class FoodDeliveryTest{public static void main(String[]a){OrderService o=new OrderService();o.create("O1","R1",2000);assert o.get("O1").status()==OrderStatus.CREATED;o.transition("O1",OrderStatus.ACCEPTED);assert o.get("O1").status()==OrderStatus.ACCEPTED;DeliveryService d=new DeliveryService();assert d.etaMinutes(4)==22;System.out.println("P039: domain services PASS");}}
+                                                                                    ^
+tests/FoodDeliveryTest.java:1: warning: auxiliary class OrderStatus in src/FoodDelivery.java should not be accessed from outside its own source file
+public class FoodDeliveryTest{public static void main(String[]a){OrderService o=new OrderService();o.create("O1","R1",2000);assert o.get("O1").status()==OrderStatus.CREATED;o.transition("O1",OrderStatus.ACCEPTED);assert o.get("O1").status()==OrderStatus.ACCEPTED;DeliveryService d=new DeliveryService();assert d.etaMinutes(4)==22;System.out.println("P039: domain services PASS");}}
+                                                                                                                                                         ^
+tests/FoodDeliveryTest.java:1: warning: auxiliary class OrderStatus in src/FoodDelivery.java should not be accessed from outside its own source file
+public class FoodDeliveryTest{public static void main(String[]a){OrderService o=new OrderService();o.create("O1","R1",2000);assert o.get("O1").status()==OrderStatus.CREATED;o.transition("O1",OrderStatus.ACCEPTED);assert o.get("O1").status()==OrderStatus.ACCEPTED;DeliveryService d=new DeliveryService();assert d.etaMinutes(4)==22;System.out.println("P039: domain services PASS");}}
+                                                                                                                                                                                               ^
+tests/FoodDeliveryTest.java:1: warning: auxiliary class OrderStatus in src/FoodDelivery.java should not be accessed from outside its own source file
+public class FoodDeliveryTest{public static void main(String[]a){OrderService o=new OrderService();o.create("O1","R1",2000);assert o.get("O1").status()==OrderStatus.CREATED;o.transition("O1",OrderStatus.ACCEPTED);assert o.get("O1").status()==OrderStatus.ACCEPTED;DeliveryService d=new DeliveryService();assert d.etaMinutes(4)==22;System.out.println("P039: domain services PASS");}}
+                                                                                                                                                                                                                                                  ^
+tests/FoodDeliveryTest.java:1: warning: auxiliary class DeliveryService in src/FoodDelivery.java should not be accessed from outside its own source file
+public class FoodDeliveryTest{public static void main(String[]a){OrderService o=new OrderService();o.create("O1","R1",2000);assert o.get("O1").status()==OrderStatus.CREATED;o.transition("O1",OrderStatus.ACCEPTED);assert o.get("O1").status()==OrderStatus.ACCEPTED;DeliveryService d=new DeliveryService();assert d.etaMinutes(4)==22;System.out.println("P039: domain services PASS");}}
+                                                                                                                                                                                                                                                                       ^
+tests/FoodDeliveryTest.java:1: warning: auxiliary class DeliveryService in src/FoodDelivery.java should not be accessed from outside its own source file
+public class FoodDeliveryTest{public static void main(String[]a){OrderService o=new OrderService();o.create("O1","R1",2000);assert o.get("O1").status()==OrderStatus.CREATED;o.transition("O1",OrderStatus.ACCEPTED);assert o.get("O1").status()==OrderStatus.ACCEPTED;DeliveryService d=new DeliveryService();assert d.etaMinutes(4)==22;System.out.println("P039: domain services PASS");}}
+                                                                                                                                                                                                                                                                                             ^
+12 warnings

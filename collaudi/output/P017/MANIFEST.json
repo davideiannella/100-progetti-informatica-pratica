@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "project": "P017",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12457560243,
+      "artifact_name": "p001-p040-complete-validation",
+      "member": "P017.json",
+      "bytes": 1464,
+      "sha256": "ade24f9a2d878d300312a3467b85b5839dc820772ca89c017bc8b7aab0e5d186"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_step_1.stdout.txt",
+      "source_record": "P017.json",
+      "source_member_or_pointer": "P017.json#/steps/0/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "build",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_step_1.stderr.txt",
+      "source_record": "P017.json",
+      "source_member_or_pointer": "P017.json#/steps/0/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "build",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_tests_test_ring_buffer.c.stdout.txt",
+      "source_record": "P017.json",
+      "source_member_or_pointer": "P017.json#/steps/1/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "suite",
+      "input_bytes": 23,
+      "input_sha256": "af7128c49be43382c169253f86d6124f7c48701e2514277525b9f3551928df34",
+      "bytes": 23,
+      "sha256": "af7128c49be43382c169253f86d6124f7c48701e2514277525b9f3551928df34",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_tests_test_ring_buffer.c.stderr.txt",
+      "source_record": "P017.json",
+      "source_member_or_pointer": "P017.json#/steps/1/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 1600,
+    "sha256": "1ecfe9e5148a4e78471ffed05cd3995e45c888b731ed511fe03958f9308f52cb"
+  },
+  "readme": {
+    "bytes": 2963,
+    "sha256": "48987084029da8f5d2074a5ce118c27f969804b4f43d6d52fc8af24cb920b028"
+  }
+}

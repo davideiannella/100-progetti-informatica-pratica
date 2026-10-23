@@ -1,0 +1,60 @@
+{
+  "project": "P021",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P021.json",
+    "bytes": 1453,
+    "sha256": "8e54751df64ff5e2eee6a46f5dc8340d4b7b5966214a7cf394434898d05168a7"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "G++ C++17 + UBSan"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O1",
+        "-g",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "tests/test_traffic.cpp",
+        "-o",
+        "build/test_traffic"
+      ],
+      "kind": "build",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.875,
+      "stdout_file": "streams/001_step_1.stdout.txt",
+      "stderr_file": "streams/001_step_1.stderr.txt"
+    },
+    {
+      "command": [
+        "./build/test_traffic"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_traffic.cpp",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.002,
+      "stdout_file": "streams/002_tests_test_traffic.cpp.stdout.txt",
+      "stderr_file": "streams/002_tests_test_traffic.cpp.stderr.txt"
+    }
+  ]
+}

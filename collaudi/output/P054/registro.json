@@ -1,0 +1,309 @@
+{
+  "project": "P054",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12456212870,
+    "artifact_name": "p054-runtime-39849393701-1",
+    "member": "P054/results.json",
+    "bytes": 29290,
+    "sha256": "69cff3be07de4ac64c7db9d7d43b2d6b89812aaabf5d7ed348a40dfc29bb1474"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04 x86_64",
+    "Python 3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "kind": "test_suite",
+      "name": "test_app",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_app.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p054-runtime/work/P054",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.328,
+      "unittest": {
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "subcases": null
+      },
+      "sequence": 1,
+      "stdout_file": "streams/001_test_app.stdout.txt",
+      "stderr_file": "streams/001_test_app.stderr.txt"
+    },
+    {
+      "kind": "test_suite",
+      "name": "test_http",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_http.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p054-runtime/work/P054",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.312,
+      "unittest": null,
+      "sequence": 2,
+      "stdout_file": "streams/002_test_http.stdout.txt",
+      "stderr_file": "streams/002_test_http.stderr.txt"
+    },
+    {
+      "kind": "test_suite",
+      "name": "test_release_builder",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_release_builder.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p054-runtime/work/P054",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.07,
+      "unittest": {
+        "tests_run": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "subcases": null
+      },
+      "sequence": 3,
+      "stdout_file": "streams/003_test_release_builder.stdout.txt",
+      "stderr_file": "streams/003_test_release_builder.stderr.txt"
+    },
+    {
+      "kind": "demo",
+      "name": "demo_build_release",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tools/build_release.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p054-runtime/work/P054",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.03,
+      "unittest": null,
+      "sequence": 4,
+      "stdout_file": "streams/004_demo_build_release.stdout.txt",
+      "stderr_file": "streams/004_demo_build_release.stderr.txt"
+    },
+    {
+      "kind": "demo",
+      "name": "demo_live_http_test",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tools/live_http_test.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p054-runtime/work/P054",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.631,
+      "unittest": null,
+      "sequence": 5,
+      "stdout_file": "streams/005_demo_live_http_test.stdout.txt",
+      "stderr_file": "streams/005_demo_live_http_test.stderr.txt"
+    },
+    {
+      "kind": "command",
+      "name": "docker_info",
+      "command": [
+        "docker",
+        "info"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p054-runtime/work/P054",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.198,
+      "unittest": null,
+      "sequence": 6,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "docker_build",
+      "command": [
+        "docker",
+        "build",
+        "-t",
+        "<RUNTIME_NAME_001>:1",
+        "."
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p054-runtime/work/P054",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 14.199,
+      "unittest": null,
+      "sequence": 7,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "container_start",
+      "command": [
+        "docker",
+        "run",
+        "-d",
+        "--name",
+        "<RUNTIME_NAME_001>",
+        "-p",
+        "127.0.0.1::8000",
+        "<RUNTIME_NAME_001>:1"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p054-runtime/work/P054",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.172,
+      "unittest": null,
+      "sequence": 8,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "container_inspect",
+      "command": [
+        "docker",
+        "inspect",
+        "<RUNTIME_NAME_001>"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p054-runtime/work/P054",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.011,
+      "unittest": null,
+      "sequence": 9,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P054 Docker health HTTP",
+      "status": "PASS",
+      "detail": [
+        200,
+        {
+          "status": "ok"
+        }
+      ],
+      "sequence": 10
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P054 Docker POST",
+      "status": "PASS",
+      "detail": [
+        200,
+        {
+          "id": 1,
+          "name": "router",
+          "quantity": 2
+        }
+      ],
+      "sequence": 11
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P054 Docker GET",
+      "status": "PASS",
+      "detail": [
+        200,
+        {
+          "id": 1,
+          "name": "router",
+          "quantity": 2
+        }
+      ],
+      "sequence": 12
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P054 Docker invalid input",
+      "status": "PASS",
+      "detail": [
+        422,
+        {
+          "detail": [
+            {
+              "type": "greater_than_equal",
+              "loc": [
+                "body",
+                "quantity"
+              ],
+              "msg": "Input should be greater than or equal to 0",
+              "input": -1,
+              "ctx": {
+                "ge": 0
+              }
+            }
+          ]
+        }
+      ],
+      "sequence": 13
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P054 Docker non-root",
+      "status": "PASS",
+      "detail": "appuser",
+      "sequence": 14
+    },
+    {
+      "kind": "diagnostic",
+      "name": "container_logs",
+      "command": [
+        "docker",
+        "logs",
+        "<RUNTIME_NAME_001>"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p054-runtime/work/P054",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.011,
+      "unittest": null,
+      "sequence": 15,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "cleanup",
+      "name": "container_cleanup",
+      "command": [
+        "docker",
+        "rm",
+        "-f",
+        "<RUNTIME_NAME_001>"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p054-runtime/work/P054",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.107,
+      "unittest": null,
+      "sequence": 16,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "source_integrity",
+      "name": "original_files_unchanged",
+      "status": "PASS",
+      "files": 10,
+      "changed": [],
+      "sequence": 17
+    },
+    {
+      "kind": "coverage",
+      "name": "required_suites_and_runtime_checks",
+      "status": "PASS",
+      "suite_processes_expected": 3,
+      "suite_processes_executed": 3,
+      "runtime_checks_expected": 5,
+      "runtime_checks_passed": 5,
+      "sequence": 18
+    }
+  ]
+}

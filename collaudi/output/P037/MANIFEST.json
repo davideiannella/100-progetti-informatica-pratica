@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "project": "P037",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12457560243,
+      "artifact_name": "p001-p040-complete-validation",
+      "member": "P037.json",
+      "bytes": 1315,
+      "sha256": "64edc61d4d876bc8a8690c1b40990d682cb3fb35f6ec98ac16b8f31e476a8606"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_tests_test_p037.py.stdout.txt",
+      "source_record": "P037.json",
+      "source_member_or_pointer": "P037.json#/steps/0/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "suite",
+      "input_bytes": 28,
+      "input_sha256": "05a13de78e81b70e7dd95bcd56b50ef36d72cde0de008d301a3afd4d57a55977",
+      "bytes": 28,
+      "sha256": "05a13de78e81b70e7dd95bcd56b50ef36d72cde0de008d301a3afd4d57a55977",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_tests_test_p037.py.stderr.txt",
+      "source_record": "P037.json",
+      "source_member_or_pointer": "P037.json#/steps/0/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "suite",
+      "input_bytes": 274,
+      "input_sha256": "1f565195e5104b2bc8d735e71d410ba1e3bc43e7971518feb631024165309646",
+      "bytes": 248,
+      "sha256": "3cf19821fe0006108c42462a59236c3ac389fc88e1e75e1b9bcffddac777c48b",
+      "transformations": {
+        "python_host_prefix": 1
+      }
+    }
+  ],
+  "metadata_changes": [
+    {
+      "step_index": 0,
+      "input_canonical_sha256": "7dfcb3e547ed69b27ff4e5a7db2dc5ade9646fe7bcf2e35efe5774b87c5442ae",
+      "output_canonical_sha256": "5d9b974dbbcd40e931631e5fd5739fac7da777efe781eab3ead74902dc8f8c54",
+      "transformations": {
+        "python_host_prefix": 1
+      }
+    }
+  ],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 1030,
+    "sha256": "32f451d82a571f67b9f101eb49a2d16e32fe1b438ceaf952cf6a93021416f6d3"
+  },
+  "readme": {
+    "bytes": 2540,
+    "sha256": "d791a005b84bf8f811b1cb41c4016880f750ef24da7159902fd42f8a710da02a"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "project": "P032",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P032.json",
+    "bytes": 2558,
+    "sha256": "c26a4e907270128c28831c8a6df11326973fcd4e15d4ed1e37a102452a119517"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "Python 3.12",
+    "Neo4j 5.26.0 service container; cypher-shell in that image"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_p032.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_p032.py",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.028,
+      "stdout_file": "streams/001_tests_test_p032.py.stdout.txt",
+      "stderr_file": "streams/001_tests_test_p032.py.stderr.txt"
+    },
+    {
+      "command": [
+        "docker",
+        "exec",
+        "-i",
+        "<CONTAINER_ID_001>",
+        "cypher-shell",
+        "--format",
+        "plain"
+      ],
+      "kind": "engine_suite",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": 6,
+      "count_basis": "executed Neo4j assertion queries",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 4.504,
+      "assertions": {
+        "CI_ASSERT_version": true,
+        "CI_ASSERT_nodes": true,
+        "CI_ASSERT_edges": true,
+        "CI_ASSERT_edge_values": true,
+        "CI_ASSERT_shortest": true,
+        "CI_ASSERT_direction": true
+      },
+      "stdout_file": "streams/002_step_2.stdout.txt",
+      "stderr_file": "streams/002_step_2.stderr.txt"
+    }
+  ]
+}

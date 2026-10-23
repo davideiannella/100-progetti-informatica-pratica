@@ -1,0 +1,24 @@
+test_catalog_rejects_duplicates_and_invalid_metadata (test_p096.EcommerceTests.test_catalog_rejects_duplicates_and_invalid_metadata) ... ok
+test_create_reserves_once_and_publishes (test_p096.EcommerceTests.test_create_reserves_once_and_publishes) ... ok
+test_demo_numbers (test_p096.EcommerceTests.test_demo_numbers) ... ok
+test_exact_stock_can_be_allocated_then_exhausted (test_p096.EcommerceTests.test_exact_stock_can_be_allocated_then_exhausted) ... ok
+test_insufficient_and_unknown_stock_do_not_create (test_p096.EcommerceTests.test_insufficient_and_unknown_stock_do_not_create) ... ok
+test_invalid_identifiers_are_rejected (test_p096.EcommerceTests.test_invalid_identifiers_are_rejected) ... ok
+test_invalid_order_quantities_are_rejected_before_mutation (test_p096.EcommerceTests.test_invalid_order_quantities_are_rejected_before_mutation) ... ok
+test_invalid_transition_and_post_shipping_refund (test_p096.EcommerceTests.test_invalid_transition_and_post_shipping_refund) ... ok
+test_inventory_set_requires_nonnegative_integer (test_p096.EcommerceTests.test_inventory_set_requires_nonnegative_integer) ... ok
+test_local_create_rollback_after_publisher_failure (test_p096.EcommerceTests.test_local_create_rollback_after_publisher_failure) ... ok
+test_local_refund_rollback_after_publisher_failure (test_p096.EcommerceTests.test_local_refund_rollback_after_publisher_failure) ... ok
+test_recommendations_are_sorted_and_category_only (test_p096.EcommerceTests.test_recommendations_are_sorted_and_category_only) ... ok
+test_refund_restores_stock_once (test_p096.EcommerceTests.test_refund_restores_stock_once) ... ok
+test_refunded_order_cannot_ship_and_unknown_cannot_refund (test_p096.EcommerceTests.test_refunded_order_cannot_ship_and_unknown_cannot_refund) ... ok
+test_retry_after_refund_does_not_reopen_order (test_p096.EcommerceTests.test_retry_after_refund_does_not_reopen_order) ... ok
+test_retry_conflict_leaves_all_state_unchanged (test_p096.EcommerceTests.test_retry_conflict_leaves_all_state_unchanged) ... ok
+test_retry_is_idempotent (test_p096.EcommerceTests.test_retry_is_idempotent) ... ok
+test_returned_snapshots_do_not_mutate_internal_state (test_p096.EcommerceTests.test_returned_snapshots_do_not_mutate_internal_state) ... ok
+test_shipping_and_delivery_are_idempotent (test_p096.EcommerceTests.test_shipping_and_delivery_are_idempotent) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK

@@ -1,0 +1,354 @@
+{
+  "project": "P055",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12456527740,
+    "artifact_name": "p055-runtime-39849393701-1",
+    "member": "P055/results.json",
+    "bytes": 52403,
+    "sha256": "f0bb7d4b18442cbb8ecea533cf3ebc0834cea852f6a7b8008bbde8a029689005"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04 x86_64",
+    "Python 3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "kind": "test_suite",
+      "name": "test_p055",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_p055.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p055-runtime/work/P055",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.096,
+      "unittest": null,
+      "sequence": 1,
+      "stdout_file": "streams/001_test_p055.stdout.txt",
+      "stderr_file": "streams/001_test_p055.stderr.txt"
+    },
+    {
+      "kind": "command",
+      "name": "docker_info",
+      "command": [
+        "docker",
+        "info"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p055-runtime/work/P055",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 3.174,
+      "unittest": null,
+      "sequence": 2,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "compose_version",
+      "command": [
+        "docker",
+        "compose",
+        "version"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p055-runtime/work/P055",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.066,
+      "unittest": null,
+      "sequence": 3,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "compose_config",
+      "command": [
+        "docker",
+        "compose",
+        "-f",
+        "compose.yaml",
+        "-p",
+        "<RUNTIME_NAME_001>",
+        "config",
+        "--quiet"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p055-runtime/work/P055",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.13,
+      "unittest": null,
+      "sequence": 4,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "compose_up",
+      "command": [
+        "docker",
+        "compose",
+        "-f",
+        "compose.yaml",
+        "-p",
+        "<RUNTIME_NAME_001>",
+        "up",
+        "-d",
+        "--build",
+        "--wait",
+        "--wait-timeout",
+        "180"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p055-runtime/work/P055",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 26.364,
+      "unittest": null,
+      "sequence": 5,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P055 create through Nginx/API/PostgreSQL",
+      "status": "PASS",
+      "detail": [
+        201,
+        {
+          "id": 1,
+          "name": "<RUNTIME_RECORD_001>"
+        }
+      ],
+      "sequence": 6
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P055 duplicate HTTP 409",
+      "status": "PASS",
+      "detail": [
+        409,
+        {
+          "detail": "duplicate"
+        }
+      ],
+      "sequence": 7
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P055 invalid input HTTP 422",
+      "status": "PASS",
+      "detail": [
+        422,
+        {
+          "detail": [
+            {
+              "type": "value_error",
+              "loc": [
+                "body",
+                "name"
+              ],
+              "msg": "Value error, blank name",
+              "input": " ",
+              "ctx": {
+                "error": {}
+              }
+            }
+          ]
+        }
+      ],
+      "sequence": 8
+    },
+    {
+      "kind": "command",
+      "name": "restart_api",
+      "command": [
+        "docker",
+        "compose",
+        "-f",
+        "compose.yaml",
+        "-p",
+        "<RUNTIME_NAME_001>",
+        "restart",
+        "api"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p055-runtime/work/P055",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.473,
+      "unittest": null,
+      "sequence": 9,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P055 persistence after api restart",
+      "status": "PASS",
+      "detail": [
+        200,
+        [
+          {
+            "id": 1,
+            "name": "<RUNTIME_RECORD_001>"
+          }
+        ]
+      ],
+      "sequence": 10
+    },
+    {
+      "kind": "command",
+      "name": "restart_db",
+      "command": [
+        "docker",
+        "compose",
+        "-f",
+        "compose.yaml",
+        "-p",
+        "<RUNTIME_NAME_001>",
+        "restart",
+        "db"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p055-runtime/work/P055",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.282,
+      "unittest": null,
+      "sequence": 11,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P055 persistence after db restart",
+      "status": "PASS",
+      "detail": [
+        200,
+        [
+          {
+            "id": 1,
+            "name": "<RUNTIME_RECORD_001>"
+          }
+        ]
+      ],
+      "sequence": 12
+    },
+    {
+      "kind": "command",
+      "name": "postgresql_version",
+      "command": [
+        "docker",
+        "compose",
+        "-f",
+        "compose.yaml",
+        "-p",
+        "<RUNTIME_NAME_001>",
+        "exec",
+        "-T",
+        "db",
+        "psql",
+        "-U",
+        "app",
+        "-d",
+        "appdb",
+        "-Atc",
+        "SHOW server_version;"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p055-runtime/work/P055",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.111,
+      "unittest": null,
+      "sequence": 13,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P055 native PostgreSQL major version",
+      "status": "PASS",
+      "detail": "17.11",
+      "sequence": 14
+    },
+    {
+      "kind": "diagnostic",
+      "name": "compose_status",
+      "command": [
+        "docker",
+        "compose",
+        "-f",
+        "compose.yaml",
+        "-p",
+        "<RUNTIME_NAME_001>",
+        "ps",
+        "--format",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p055-runtime/work/P055",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.08,
+      "unittest": null,
+      "sequence": 15,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "diagnostic",
+      "name": "compose_logs",
+      "command": [
+        "docker",
+        "compose",
+        "-f",
+        "compose.yaml",
+        "-p",
+        "<RUNTIME_NAME_001>",
+        "logs",
+        "--no-color"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p055-runtime/work/P055",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.081,
+      "unittest": null,
+      "sequence": 16,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "cleanup",
+      "name": "compose_cleanup",
+      "command": [
+        "docker",
+        "compose",
+        "-f",
+        "compose.yaml",
+        "-p",
+        "<RUNTIME_NAME_001>",
+        "down",
+        "--volumes",
+        "--remove-orphans"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p055-runtime/work/P055",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.746,
+      "unittest": null,
+      "sequence": 17,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "source_integrity",
+      "name": "original_files_unchanged",
+      "status": "PASS",
+      "files": 9,
+      "changed": [],
+      "sequence": 18
+    },
+    {
+      "kind": "coverage",
+      "name": "required_suites_and_runtime_checks",
+      "status": "PASS",
+      "suite_processes_expected": 1,
+      "suite_processes_executed": 1,
+      "runtime_checks_expected": 6,
+      "runtime_checks_passed": 6,
+      "sequence": 19
+    }
+  ]
+}

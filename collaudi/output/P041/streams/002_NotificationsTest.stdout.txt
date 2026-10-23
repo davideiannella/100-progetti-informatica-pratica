@@ -1,0 +1,1 @@
+P041: Strategy/Factory-style channels PASS

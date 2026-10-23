@@ -1,0 +1,15 @@
+test_100_seeded_partition_scenarios (test_p062.DisasterRecoveryTests.test_100_seeded_partition_scenarios) ... ok
+test_both_down_and_missing_key_fail (test_p062.DisasterRecoveryTests.test_both_down_and_missing_key_fail) ... ok
+test_catchup_and_idempotence (test_p062.DisasterRecoveryTests.test_catchup_and_idempotence) ... ok
+test_clock_and_interval_validation (test_p062.DisasterRecoveryTests.test_clock_and_interval_validation) ... ok
+test_invalid_initial_topology (test_p062.DisasterRecoveryTests.test_invalid_initial_topology) ... ok
+test_replication_and_read_failover (test_p062.DisasterRecoveryTests.test_replication_and_read_failover) ... ok
+test_stale_update_is_exposed (test_p062.DisasterRecoveryTests.test_stale_update_is_exposed) ... ok
+test_unreplicated_new_key_and_multiple_updates (test_p062.DisasterRecoveryTests.test_unreplicated_new_key_and_multiple_updates) ... ok
+test_values_do_not_alias (test_p062.DisasterRecoveryTests.test_values_do_not_alias) ... ok
+test_write_primary_down_is_rejected (test_p062.DisasterRecoveryTests.test_write_primary_down_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.015s
+
+OK

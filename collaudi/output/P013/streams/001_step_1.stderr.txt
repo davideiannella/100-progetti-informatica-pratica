@@ -1,0 +1,13 @@
+tests/LibraryTest.java:5: warning: auxiliary class LibraryService in src/LibraryApp.java should not be accessed from outside its own source file
+        LibraryService s = new LibraryService();
+        ^
+tests/LibraryTest.java:5: warning: auxiliary class LibraryService in src/LibraryApp.java should not be accessed from outside its own source file
+        LibraryService s = new LibraryService();
+                               ^
+tests/LibraryTest.java:6: warning: auxiliary class Book in src/LibraryApp.java should not be accessed from outside its own source file
+        s.addBook(new Book("B1","Libro"));
+                      ^
+tests/LibraryTest.java:7: warning: auxiliary class User in src/LibraryApp.java should not be accessed from outside its own source file
+        s.addUser(new User("U1","Anna"));
+                      ^
+4 warnings

@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "project": "P039",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12457560243,
+      "artifact_name": "p001-p040-complete-validation",
+      "member": "P039.json",
+      "bytes": 8340,
+      "sha256": "0b9c2cf54d803a94048b1da7ef1aee0c08fcd6da1bd77b602c5d423a9c0e3fb7"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_step_1.stdout.txt",
+      "source_record": "P039.json",
+      "source_member_or_pointer": "P039.json#/steps/0/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "build",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_step_1.stderr.txt",
+      "source_record": "P039.json",
+      "source_member_or_pointer": "P039.json#/steps/0/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "build",
+      "input_bytes": 6244,
+      "input_sha256": "94a3de5011d432904e08440ba1734db575a23290396ab29e3ed509bc2ba8eabd",
+      "bytes": 6244,
+      "sha256": "94a3de5011d432904e08440ba1734db575a23290396ab29e3ed509bc2ba8eabd",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_tests_FoodDeliveryLimitsTest.java.stdout.txt",
+      "source_record": "P039.json",
+      "source_member_or_pointer": "P039.json#/steps/1/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "suite",
+      "input_bytes": 38,
+      "input_sha256": "d2208a859a08424fe5f49139b5ab4b6bca02d5c3343e7d2229387b37219c6448",
+      "bytes": 38,
+      "sha256": "d2208a859a08424fe5f49139b5ab4b6bca02d5c3343e7d2229387b37219c6448",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_tests_FoodDeliveryLimitsTest.java.stderr.txt",
+      "source_record": "P039.json",
+      "source_member_or_pointer": "P039.json#/steps/1/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/003_tests_FoodDeliveryTest.java.stdout.txt",
+      "source_record": "P039.json",
+      "source_member_or_pointer": "P039.json#/steps/2/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 2,
+      "kind": "suite",
+      "input_bytes": 27,
+      "input_sha256": "6dee207a342d0d8028142b7472d1b5ec38a8cec621e5ebb3cda8ed887963ecfb",
+      "bytes": 27,
+      "sha256": "6dee207a342d0d8028142b7472d1b5ec38a8cec621e5ebb3cda8ed887963ecfb",
+      "transformations": {}
+    },
+    {
+      "file": "streams/003_tests_FoodDeliveryTest.java.stderr.txt",
+      "source_record": "P039.json",
+      "source_member_or_pointer": "P039.json#/steps/2/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 2,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 2194,
+    "sha256": "5fa3bdf7e5161f7ef05221e9da808cc3315bd5acfacdacbc01d717f748054d77"
+  },
+  "readme": {
+    "bytes": 3539,
+    "sha256": "fe9906f4ba73ae0882cebe27de93db05ed058fd2aea14124e161c5285d5f32cc"
+  }
+}

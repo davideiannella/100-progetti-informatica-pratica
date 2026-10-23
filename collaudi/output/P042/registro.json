@@ -1,0 +1,71 @@
+{
+  "project": "P042",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12456886835,
+    "artifact_name": "p041-p080-core-39849393701-1",
+    "member": "P042/results.json",
+    "bytes": 2157,
+    "sha256": "b2b4aa3a0eb904fd290d1fbe88f3bdd45049e5e51c9c7e8c75359eaf8d801380"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04 x86_64",
+    "Python 3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "kind": "toolchain",
+      "name": "dotnet_sdk_version",
+      "command": [
+        "dotnet",
+        "--version"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P042",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.068,
+      "unittest": null,
+      "sequence": 1,
+      "stdout_file": "streams/001_dotnet_sdk_version.stdout.txt",
+      "stderr_file": "streams/001_dotnet_sdk_version.stderr.txt"
+    },
+    {
+      "kind": "test_suite",
+      "name": "dotnet_assertion_suite",
+      "command": [
+        "dotnet",
+        "run",
+        "--project",
+        "tests/P042.Tests.csproj"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P042",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 2.702,
+      "unittest": null,
+      "sequence": 2,
+      "stdout_file": "streams/002_dotnet_assertion_suite.stdout.txt",
+      "stderr_file": "streams/002_dotnet_assertion_suite.stderr.txt"
+    },
+    {
+      "kind": "source_integrity",
+      "name": "original_files_unchanged",
+      "status": "PASS",
+      "files": 5,
+      "changed": [],
+      "sequence": 3
+    },
+    {
+      "kind": "coverage",
+      "name": "required_suites_and_runtime_checks",
+      "status": "PASS",
+      "suite_processes_expected": 1,
+      "suite_processes_executed": 1,
+      "runtime_checks_expected": 0,
+      "runtime_checks_passed": 0,
+      "sequence": 4
+    }
+  ]
+}

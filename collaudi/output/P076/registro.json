@@ -1,0 +1,94 @@
+{
+  "project": "P076",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12456886835,
+    "artifact_name": "p041-p080-core-39849393701-1",
+    "member": "P076/results.json",
+    "bytes": 22231,
+    "sha256": "a011adc20c3a16087aaee25cf9012997f956da49448cb32f1f30e47206cef5d8"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04 x86_64",
+    "Python 3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "kind": "test_suite",
+      "name": "unittest_project_suite",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P076",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.155,
+      "unittest": {
+        "tests_run": 112,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "subcases": 0
+      },
+      "sequence": 1,
+      "stdout_file": "streams/001_unittest_project_suite.stdout.txt",
+      "stderr_file": "streams/001_unittest_project_suite.stderr.txt"
+    },
+    {
+      "kind": "demo",
+      "name": "demo_recommender",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "src/recommender.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P076",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.055,
+      "unittest": null,
+      "sequence": 2,
+      "stdout_file": "streams/002_demo_recommender.stdout.txt",
+      "stderr_file": "streams/002_demo_recommender.stderr.txt"
+    },
+    {
+      "kind": "demo",
+      "name": "demo_examples",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "examples.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P076",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.06,
+      "unittest": null,
+      "sequence": 3,
+      "stdout_file": "streams/003_demo_examples.stdout.txt",
+      "stderr_file": "streams/003_demo_examples.stderr.txt"
+    },
+    {
+      "kind": "source_integrity",
+      "name": "original_files_unchanged",
+      "status": "PASS",
+      "files": 5,
+      "changed": [],
+      "sequence": 4
+    },
+    {
+      "kind": "coverage",
+      "name": "required_suites_and_runtime_checks",
+      "status": "PASS",
+      "suite_processes_expected": 1,
+      "suite_processes_executed": 1,
+      "runtime_checks_expected": 0,
+      "runtime_checks_passed": 0,
+      "sequence": 5
+    }
+  ]
+}

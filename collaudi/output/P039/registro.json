@@ -1,0 +1,80 @@
+{
+  "project": "P039",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P039.json",
+    "bytes": 8340,
+    "sha256": "0b9c2cf54d803a94048b1da7ef1aee0c08fcd6da1bd77b602c5d423a9c0e3fb7"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "JDK 17; java -ea"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "java",
+        "-m",
+        "jdk.compiler/com.sun.tools.javac.Main",
+        "-Xlint:all",
+        "-d",
+        "build",
+        "src/FoodDelivery.java",
+        "tests/FoodDeliveryLimitsTest.java",
+        "tests/FoodDeliveryTest.java"
+      ],
+      "kind": "build",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.605,
+      "stdout_file": "streams/001_step_1.stdout.txt",
+      "stderr_file": "streams/001_step_1.stderr.txt"
+    },
+    {
+      "command": [
+        "java",
+        "-ea",
+        "-cp",
+        "build",
+        "FoodDeliveryLimitsTest"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/FoodDeliveryLimitsTest.java",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.041,
+      "stdout_file": "streams/002_tests_FoodDeliveryLimitsTest.java.stdout.txt",
+      "stderr_file": "streams/002_tests_FoodDeliveryLimitsTest.java.stderr.txt"
+    },
+    {
+      "command": [
+        "java",
+        "-ea",
+        "-cp",
+        "build",
+        "FoodDeliveryTest"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/FoodDeliveryTest.java",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.038,
+      "stdout_file": "streams/003_tests_FoodDeliveryTest.java.stdout.txt",
+      "stderr_file": "streams/003_tests_FoodDeliveryTest.java.stderr.txt"
+    }
+  ]
+}

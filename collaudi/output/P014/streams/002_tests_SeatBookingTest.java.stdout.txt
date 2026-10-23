@@ -1,0 +1,1 @@
+P014: concorrenza PASS; prenotazioni riuscite sullo stesso posto = 1

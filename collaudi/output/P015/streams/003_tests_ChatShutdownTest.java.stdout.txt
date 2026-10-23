@@ -1,0 +1,1 @@
+P015: UTF-8, chiusura con client attivo e doppia close PASS

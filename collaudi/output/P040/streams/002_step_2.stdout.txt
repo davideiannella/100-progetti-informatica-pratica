@@ -1,0 +1,3 @@
+  Determining projects to restore...
+  Restored <WORK>/P040/tests/P040.Tests.csproj (in 94 ms).
+  Restored <WORK>/P040/src/P040.csproj (in 85 ms).

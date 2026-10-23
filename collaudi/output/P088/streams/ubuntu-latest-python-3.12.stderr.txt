@@ -1,0 +1,27 @@
+test_capacity_never_overflows (test_p088.ParkingTests.test_capacity_never_overflows) ... ok
+test_conflicting_id_rejected_without_changes (test_p088.ParkingTests.test_conflicting_id_rejected_without_changes) ... ok
+test_demo_values_and_cached_old_snapshot (test_p088.ParkingTests.test_demo_values_and_cached_old_snapshot) ... ok
+test_duplicate_enter_has_no_effect (test_p088.ParkingTests.test_duplicate_enter_has_no_effect) ... ok
+test_duplicate_exit_after_new_arrival_is_safe (test_p088.ParkingTests.test_duplicate_exit_after_new_arrival_is_safe) ... ok
+test_enter_and_exit_duration (test_p088.ParkingTests.test_enter_and_exit_duration) ... ok
+test_equal_time_events_are_allowed (test_p088.ParkingTests.test_equal_time_events_are_allowed) ... ok
+test_exit_empty_spot (test_p088.ParkingTests.test_exit_empty_spot) ... ok
+test_exit_wrong_vehicle (test_p088.ParkingTests.test_exit_wrong_vehicle) ... ok
+test_initial_capacity (test_p088.ParkingTests.test_initial_capacity) ... ok
+test_invalid_capacity (test_p088.ParkingTests.test_invalid_capacity) ... ok
+test_invalid_ids (test_p088.ParkingTests.test_invalid_ids) ... ok
+test_invalid_input_is_atomic (test_p088.ParkingTests.test_invalid_input_is_atomic) ... ok
+test_invalid_kind_and_schema (test_p088.ParkingTests.test_invalid_kind_and_schema) ... ok
+test_invalid_spot_types_and_bounds (test_p088.ParkingTests.test_invalid_spot_types_and_bounds) ... ok
+test_invalid_times (test_p088.ParkingTests.test_invalid_times) ... ok
+test_late_unique_event_rejected (test_p088.ParkingTests.test_late_unique_event_rejected) ... ok
+test_no_negative_occupancy_after_repeated_exit (test_p088.ParkingTests.test_no_negative_occupancy_after_repeated_exit) ... ok
+test_rejected_retry_keeps_original_result (test_p088.ParkingTests.test_rejected_retry_keeps_original_result) ... ok
+test_rejection_does_not_advance_time_watermark (test_p088.ParkingTests.test_rejection_does_not_advance_time_watermark) ... ok
+test_snapshot_and_audit_do_not_expose_mutable_state (test_p088.ParkingTests.test_snapshot_and_audit_do_not_expose_mutable_state) ... ok
+test_vehicle_cannot_occupy_two_spots (test_p088.ParkingTests.test_vehicle_cannot_occupy_two_spots) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.002s
+
+OK

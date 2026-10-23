@@ -1,0 +1,5 @@
+Finestra vuota: ['no_data']
+Richieste=4; disponibilità=100.00%; media=112.5 ms
+Alert: []
+{"component": "catalogo", "latency_ms": 500.0, "ok": false, "trace_id": "trace-lab-1"}
+Dopo il guasto: disponibilità=80.00%; alert=['availability']

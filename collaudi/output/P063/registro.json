@@ -1,0 +1,77 @@
+{
+  "project": "P063",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12456886835,
+    "artifact_name": "p041-p080-core-39849393701-1",
+    "member": "P063/results.json",
+    "bytes": 4974,
+    "sha256": "e7fd0c6985a4e70bbbd16a8c3a81c9ec1aca062120691cd26de938219a65b40d"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04 x86_64",
+    "Python 3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "kind": "test_suite",
+      "name": "unittest_project_suite",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P063",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 6.949,
+      "unittest": {
+        "tests_run": 19,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "subcases": 133
+      },
+      "sequence": 1,
+      "stdout_file": "streams/001_unittest_project_suite.stdout.txt",
+      "stderr_file": "streams/001_unittest_project_suite.stderr.txt"
+    },
+    {
+      "kind": "demo",
+      "name": "demo_auth_service",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "src/auth_service.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P063",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.623,
+      "unittest": null,
+      "sequence": 2,
+      "stdout_file": "streams/002_demo_auth_service.stdout.txt",
+      "stderr_file": "streams/002_demo_auth_service.stderr.txt"
+    },
+    {
+      "kind": "source_integrity",
+      "name": "original_files_unchanged",
+      "status": "PASS",
+      "files": 4,
+      "changed": [],
+      "sequence": 3
+    },
+    {
+      "kind": "coverage",
+      "name": "required_suites_and_runtime_checks",
+      "status": "PASS",
+      "suite_processes_expected": 1,
+      "suite_processes_executed": 1,
+      "runtime_checks_expected": 0,
+      "runtime_checks_passed": 0,
+      "sequence": 4
+    }
+  ]
+}

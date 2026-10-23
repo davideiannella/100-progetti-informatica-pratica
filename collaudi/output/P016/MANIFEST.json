@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "project": "P016",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12457560243,
+      "artifact_name": "p001-p040-complete-validation",
+      "member": "P016.json",
+      "bytes": 2029,
+      "sha256": "ae102e259e6c40ccaedf0d8a5ce94553f06d5b64d8cae2eb140f8d97b1b033ed"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_tests_test_cli.py.stdout.txt",
+      "source_record": "P016.json",
+      "source_member_or_pointer": "P016.json#/steps/0/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "suite",
+      "input_bytes": 59,
+      "input_sha256": "c90e05d72c3ecb3c0e0e5134043b8680929e95b1519dd454e9400d9ef1c73f82",
+      "bytes": 59,
+      "sha256": "c90e05d72c3ecb3c0e0e5134043b8680929e95b1519dd454e9400d9ef1c73f82",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_tests_test_cli.py.stderr.txt",
+      "source_record": "P016.json",
+      "source_member_or_pointer": "P016.json#/steps/0/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_step_2.stdout.txt",
+      "source_record": "P016.json",
+      "source_member_or_pointer": "P016.json#/steps/1/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "build",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_step_2.stderr.txt",
+      "source_record": "P016.json",
+      "source_member_or_pointer": "P016.json#/steps/1/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "build",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/003_tests_test_process_monitor.c.stdout.txt",
+      "source_record": "P016.json",
+      "source_member_or_pointer": "P016.json#/steps/2/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 2,
+      "kind": "suite",
+      "input_bytes": 58,
+      "input_sha256": "3c65349e586c614c0e3f4478bebfdfdf41f48178a1edce63c35a6ffbe9e112c3",
+      "bytes": 58,
+      "sha256": "3c65349e586c614c0e3f4478bebfdfdf41f48178a1edce63c35a6ffbe9e112c3",
+      "transformations": {}
+    },
+    {
+      "file": "streams/003_tests_test_process_monitor.c.stderr.txt",
+      "source_record": "P016.json",
+      "source_member_or_pointer": "P016.json#/steps/2/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 2,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [
+    {
+      "step_index": 0,
+      "input_canonical_sha256": "87f42f4798cb00c88484c458870e5a68555c9571c00ba6b42e8a418771208751",
+      "output_canonical_sha256": "7839c920d06db89e1be4c9bebb46aab1dc9777e97aac692d3fad108f4d4ef5be",
+      "transformations": {
+        "python_host_prefix": 1
+      }
+    }
+  ],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 2142,
+    "sha256": "f638ddc3bbb03a9b52fb67f1b3f1c7df16fcfd5e9b196c57ff82a6e44b0afb0c"
+  },
+  "readme": {
+    "bytes": 3554,
+    "sha256": "cb5f4b8412c4ac53958dbfb4a64a61ae68dcea4dce42e1850e98f263e4eb5fee"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "project": "P096",
+  "run_id": 39893701054,
+  "commit": "3ab7bdfedb20a443bd71fe4e4ffe3c1dd67bd707",
+  "environments": [
+    {
+      "environment": "ubuntu-latest-python-3.12",
+      "artifact_id": 12476170749,
+      "summary_sha256": "8f0ead6eec0c6e1658742ab2768df54a691393e2acd6a86fec6a41d666b6f849",
+      "interpreter": "3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]",
+      "command_from_harness": [
+        "sys.executable",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd_relative_to_repository": "projects/P096",
+      "project_result": {
+        "project": "P096",
+        "returncode": 0,
+        "test_methods": 19,
+        "expected_test_methods": 19,
+        "skipped": 0,
+        "status": "PASS",
+        "stdout_file": "P096.stdout.txt",
+        "stderr_file": "P096.stderr.txt"
+      }
+    },
+    {
+      "environment": "ubuntu-latest-python-3.13",
+      "artifact_id": 12476095990,
+      "summary_sha256": "b46cad959b393e3276ebbfc4c941560eaadb48b94e69e0364e11ebb7c50b34db",
+      "interpreter": "3.13.16 (main, Oct  1 2026, 02:37:54) [GCC 13.3.0]",
+      "command_from_harness": [
+        "sys.executable",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd_relative_to_repository": "projects/P096",
+      "project_result": {
+        "project": "P096",
+        "returncode": 0,
+        "test_methods": 19,
+        "expected_test_methods": 19,
+        "skipped": 0,
+        "status": "PASS",
+        "stdout_file": "P096.stdout.txt",
+        "stderr_file": "P096.stderr.txt"
+      }
+    },
+    {
+      "environment": "windows-latest-python-3.12",
+      "artifact_id": 12475927047,
+      "summary_sha256": "d1f594bc70f1b19f3a7e4a17b0a98608acb4116d572851a443048e8e2a6338f3",
+      "interpreter": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "command_from_harness": [
+        "sys.executable",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd_relative_to_repository": "projects/P096",
+      "project_result": {
+        "project": "P096",
+        "returncode": 0,
+        "test_methods": 19,
+        "expected_test_methods": 19,
+        "skipped": 0,
+        "status": "PASS",
+        "stdout_file": "P096.stdout.txt",
+        "stderr_file": "P096.stderr.txt"
+      }
+    },
+    {
+      "environment": "windows-latest-python-3.13",
+      "artifact_id": 12475826902,
+      "summary_sha256": "14e808c6137f1a35a41d4aec375b1a5357031349ab8742db224976a4112ee040",
+      "interpreter": "3.13.16 (tags/v3.13.16:cbc944f, Sep 30 2026, 19:17:50) [MSC v.1944 64 bit (AMD64)]",
+      "command_from_harness": [
+        "sys.executable",
+        "-B",
+        "run_tests.py"
+      ],
+      "cwd_relative_to_repository": "projects/P096",
+      "project_result": {
+        "project": "P096",
+        "returncode": 0,
+        "test_methods": 19,
+        "expected_test_methods": 19,
+        "skipped": 0,
+        "status": "PASS",
+        "stdout_file": "P096.stdout.txt",
+        "stderr_file": "P096.stderr.txt"
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "project": "P043",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12456886835,
+    "artifact_name": "p041-p080-core-39849393701-1",
+    "member": "P043/results.json",
+    "bytes": 2222,
+    "sha256": "d1b5496f2dece8bcc7dd4f5be82475aab3625340d07e2de56a53e3bce908d9c5"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04 x86_64",
+    "Python 3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "kind": "test_suite",
+      "name": "test_edges",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_edges.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P043",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.027,
+      "unittest": null,
+      "sequence": 1,
+      "stdout_file": "streams/001_test_edges.stdout.txt",
+      "stderr_file": "streams/001_test_edges.stderr.txt"
+    },
+    {
+      "kind": "test_suite",
+      "name": "test_p043",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_p043.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P043",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.025,
+      "unittest": null,
+      "sequence": 2,
+      "stdout_file": "streams/002_test_p043.stdout.txt",
+      "stderr_file": "streams/002_test_p043.stderr.txt"
+    },
+    {
+      "kind": "source_integrity",
+      "name": "original_files_unchanged",
+      "status": "PASS",
+      "files": 4,
+      "changed": [],
+      "sequence": 3
+    },
+    {
+      "kind": "coverage",
+      "name": "required_suites_and_runtime_checks",
+      "status": "PASS",
+      "suite_processes_expected": 2,
+      "suite_processes_executed": 2,
+      "runtime_checks_expected": 0,
+      "runtime_checks_passed": 0,
+      "sequence": 4
+    }
+  ]
+}

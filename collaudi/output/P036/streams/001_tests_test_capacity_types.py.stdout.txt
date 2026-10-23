@@ -1,0 +1,1 @@
+P036: capienza intera positiva, rifiuto booleani e frazioni PASS

@@ -1,0 +1,12 @@
+P074 — 380 esempi di training; 120 esempi di test sintetici; soglia 0.5
+accuracy: 0.691667
+precision: 0.642857
+recall: 0.551020
+f1: 0.593407
+brier: 0.211239
+log_loss: 0.611370
+roc_auc: 0.706812
+matrice [[TN, FP], [FN, TP]]: [[56, 15], [22, 27]]
+baseline_accuracy: 0.591667
+baseline_brier: 0.243800
+prima probabilità: 0.543264 etichetta: 0

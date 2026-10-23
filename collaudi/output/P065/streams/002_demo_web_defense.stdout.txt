@@ -1,0 +1,5 @@
+Richiesta valida: 200
+HTML: <p>&lt;b&gt;Ciao&lt;/b&gt; &amp; arrivederci</p>
+Token mancante: 403
+Sessione scaduta: 403
+CSP: default-src 'none'; script-src 'none'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'

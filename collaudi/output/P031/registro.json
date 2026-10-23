@@ -1,0 +1,77 @@
+{
+  "project": "P031",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P031.json",
+    "bytes": 2298,
+    "sha256": "eb4b0fc1e299d354f3423b3273b937e68bcba147e255d48c75f788482ff251e3"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "Python 3.12",
+    "MongoDB 8.0.14 service container; mongosh in that image"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_invalid_metrics.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_invalid_metrics.py",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.038,
+      "stdout_file": "streams/001_tests_test_invalid_metrics.py.stdout.txt",
+      "stderr_file": "streams/001_tests_test_invalid_metrics.py.stderr.txt"
+    },
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_p031.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_p031.py",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.038,
+      "stdout_file": "streams/002_tests_test_p031.py.stdout.txt",
+      "stderr_file": "streams/002_tests_test_p031.py.stderr.txt"
+    },
+    {
+      "command": [
+        "docker",
+        "exec",
+        "-i",
+        "<CONTAINER_ID_001>",
+        "mongosh",
+        "--quiet",
+        "--file",
+        "/dev/stdin"
+      ],
+      "kind": "engine_suite",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": 12,
+      "count_basis": "executed MongoDB assertions",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.685,
+      "engine_version": "8.0.14",
+      "stdout_file": "streams/003_step_3.stdout.txt",
+      "stderr_file": "streams/003_step_3.stderr.txt"
+    }
+  ]
+}

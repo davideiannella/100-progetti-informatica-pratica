@@ -1,0 +1,20 @@
+test_above_high_threshold_turns_off (test_p084.IrrigationTest.test_above_high_threshold_turns_off) ... ok
+test_below_low_threshold_turns_on (test_p084.IrrigationTest.test_below_low_threshold_turns_on) ... ok
+test_default_is_off_without_a_control_step (test_p084.IrrigationTest.test_default_is_off_without_a_control_step) ... ok
+test_demo_values_are_executable (test_p084.IrrigationTest.test_demo_values_are_executable) ... ok
+test_exact_high_threshold_does_not_turn_off (test_p084.IrrigationTest.test_exact_high_threshold_does_not_turn_off) ... ok
+test_exact_low_threshold_does_not_turn_on (test_p084.IrrigationTest.test_exact_low_threshold_does_not_turn_on) ... ok
+test_history_and_result_cannot_modify_internal_history (test_p084.IrrigationTest.test_history_and_result_cannot_modify_internal_history) ... ok
+test_invalid_initial_numbers_and_bounds (test_p084.IrrigationTest.test_invalid_initial_numbers_and_bounds) ... ok
+test_invalid_step_is_atomic (test_p084.IrrigationTest.test_invalid_step_is_atomic) ... ok
+test_old_pump_is_used_before_new_decision (test_p084.IrrigationTest.test_old_pump_is_used_before_new_decision) ... ok
+test_rain_and_evaporation_contribute_once (test_p084.IrrigationTest.test_rain_and_evaporation_contribute_once) ... ok
+test_same_moisture_in_deadband_keeps_previous_state (test_p084.IrrigationTest.test_same_moisture_in_deadband_keeps_previous_state) ... ok
+test_saturation_at_zero_and_hundred (test_p084.IrrigationTest.test_saturation_at_zero_and_hundred) ... ok
+test_threshold_extremes_remain_strict (test_p084.IrrigationTest.test_threshold_extremes_remain_strict) ... ok
+test_thresholds_are_finite_ordered_and_bounded (test_p084.IrrigationTest.test_thresholds_are_finite_ordered_and_bounded) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.001s
+
+OK

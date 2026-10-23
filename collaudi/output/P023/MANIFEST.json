@@ -1,0 +1,148 @@
+{
+  "schema": 1,
+  "project": "P023",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12457560243,
+      "artifact_name": "p001-p040-complete-validation",
+      "member": "P023.json",
+      "bytes": 2495,
+      "sha256": "d8e3e7f89e50feae671a42a06c9d99c78535992793c3900ee741bc5f0c36578d"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_step_1.stdout.txt",
+      "source_record": "P023.json",
+      "source_member_or_pointer": "P023.json#/steps/0/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "toolchain",
+      "input_bytes": 8,
+      "input_sha256": "ad418015125b9365f85d03123d06b2547b517a1effdddee93dbb5d4570d8fc03",
+      "bytes": 8,
+      "sha256": "ad418015125b9365f85d03123d06b2547b517a1effdddee93dbb5d4570d8fc03",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_step_1.stderr.txt",
+      "source_record": "P023.json",
+      "source_member_or_pointer": "P023.json#/steps/0/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "toolchain",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_step_2.stdout.txt",
+      "source_record": "P023.json",
+      "source_member_or_pointer": "P023.json#/steps/1/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "restore",
+      "input_bytes": 88,
+      "input_sha256": "42e0811211d484aaf28dfd546b141815f14cf998a056777e1c69a9b2e7a15d79",
+      "bytes": 88,
+      "sha256": "42e0811211d484aaf28dfd546b141815f14cf998a056777e1c69a9b2e7a15d79",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_step_2.stderr.txt",
+      "source_record": "P023.json",
+      "source_member_or_pointer": "P023.json#/steps/1/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "restore",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/003_step_3.stdout.txt",
+      "source_record": "P023.json",
+      "source_member_or_pointer": "P023.json#/steps/2/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 2,
+      "kind": "build",
+      "input_bytes": 128,
+      "input_sha256": "e088516f7250ea0d8750ccbaab8517c292e6ece28a2beff8bb30d534f3308865",
+      "bytes": 128,
+      "sha256": "e088516f7250ea0d8750ccbaab8517c292e6ece28a2beff8bb30d534f3308865",
+      "transformations": {}
+    },
+    {
+      "file": "streams/003_step_3.stderr.txt",
+      "source_record": "P023.json",
+      "source_member_or_pointer": "P023.json#/steps/2/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 2,
+      "kind": "build",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/004_tests_test_http.py.stdout.txt",
+      "source_record": "P023.json",
+      "source_member_or_pointer": "P023.json#/steps/3/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 3,
+      "kind": "suite",
+      "input_bytes": 83,
+      "input_sha256": "bc675b5ae364dee6e7f252b1b78e605545ac1af4abb19d7c2daa95f784e409b4",
+      "bytes": 83,
+      "sha256": "bc675b5ae364dee6e7f252b1b78e605545ac1af4abb19d7c2daa95f784e409b4",
+      "transformations": {}
+    },
+    {
+      "file": "streams/004_tests_test_http.py.stderr.txt",
+      "source_record": "P023.json",
+      "source_member_or_pointer": "P023.json#/steps/3/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 3,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [
+    {
+      "step_index": 3,
+      "input_canonical_sha256": "4b89dc83039d8486d576ea4bea220ca77e13018050a52586527c666dce7ad3b8",
+      "output_canonical_sha256": "cbe39b765a600625bee97031eea512312bb73750896b8749f76bd1526da499f1",
+      "transformations": {
+        "python_host_prefix": 1
+      }
+    }
+  ],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 2380,
+    "sha256": "775cd27315f82cd6d064f03041c15b9a070f7d4983b3db93fabb2e933edeae1d"
+  },
+  "readme": {
+    "bytes": 3639,
+    "sha256": "2343b495439799a0551c519a477af2e1be6cb940572b2ab96f86037de241d10b"
+  }
+}

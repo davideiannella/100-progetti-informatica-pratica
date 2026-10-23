@@ -1,0 +1,1 @@
+P055 PASS: SQLite e struttura Compose; runtime container separato

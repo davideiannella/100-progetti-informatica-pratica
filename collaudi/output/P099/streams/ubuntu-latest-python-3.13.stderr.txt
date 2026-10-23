@@ -1,0 +1,25 @@
+test_all_negative_or_nonfinite_weights_rejected_even_off_path (test_p099.LogisticsTests.test_all_negative_or_nonfinite_weights_rejected_even_off_path) ... ok
+test_demo_numbers (test_p099.LogisticsTests.test_demo_numbers) ... ok
+test_disconnected_and_unknown_nodes (test_p099.LogisticsTests.test_disconnected_and_unknown_nodes) ... ok
+test_eta_is_separate_arithmetic (test_p099.LogisticsTests.test_eta_is_separate_arithmetic) ... ok
+test_graph_shape_and_missing_destination_rejected (test_p099.LogisticsTests.test_graph_shape_and_missing_destination_rejected) ... ok
+test_invalid_history_and_window (test_p099.LogisticsTests.test_invalid_history_and_window) ... ok
+test_mean_near_float_limit_stays_finite (test_p099.LogisticsTests.test_mean_near_float_limit_stays_finite) ... ok
+test_moving_average_uses_last_k (test_p099.LogisticsTests.test_moving_average_uses_last_k) ... ok
+test_overflowing_route_is_rejected (test_p099.LogisticsTests.test_overflowing_route_is_rejected) ... ok
+test_parallel_edges_choose_cheaper (test_p099.LogisticsTests.test_parallel_edges_choose_cheaper) ... ok
+test_route_improves_direct_cost (test_p099.LogisticsTests.test_route_improves_direct_cost) ... ok
+test_routing_is_deterministic_across_input_order (test_p099.LogisticsTests.test_routing_is_deterministic_across_input_order) ... ok
+test_shipment_cannot_skip_or_repeat_state_with_new_id (test_p099.LogisticsTests.test_shipment_cannot_skip_or_repeat_state_with_new_id) ... ok
+test_shipment_transitions_and_idempotent_retry (test_p099.LogisticsTests.test_shipment_transitions_and_idempotent_retry) ... ok
+test_tracking_conflict_and_nonincreasing_time_rejected (test_p099.LogisticsTests.test_tracking_conflict_and_nonincreasing_time_rejected) ... ok
+test_tracking_invalid_values_do_not_mutate (test_p099.LogisticsTests.test_tracking_invalid_values_do_not_mutate) ... ok
+test_tracking_snapshot_and_terminal_state (test_p099.LogisticsTests.test_tracking_snapshot_and_terminal_state) ... ok
+test_warehouse_allocation_and_insufficiency (test_p099.LogisticsTests.test_warehouse_allocation_and_insufficiency) ... ok
+test_warehouse_invalid_quantities_do_not_mutate (test_p099.LogisticsTests.test_warehouse_invalid_quantities_do_not_mutate) ... ok
+test_zero_weights_cycles_and_same_node (test_p099.LogisticsTests.test_zero_weights_cycles_and_same_node) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.002s
+
+OK

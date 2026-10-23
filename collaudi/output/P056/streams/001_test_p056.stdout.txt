@@ -1,0 +1,1 @@
+P056 PASS: YAML, selettori, porte e probe coerenti; cluster non eseguito

@@ -1,0 +1,73 @@
+{
+  "project": "P022",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P022.json",
+    "bytes": 1915,
+    "sha256": "12acff7e2a59f13cc1a19e57bd1ea83f83df648eb91aaca0fb35ba539f44b0c3"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    ".NET SDK 8 + net8.0 runtime; no external NuGet feeds"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "dotnet",
+        "--version"
+      ],
+      "kind": "toolchain",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.107,
+      "stdout_file": "streams/001_step_1.stdout.txt",
+      "stderr_file": "streams/001_step_1.stderr.txt"
+    },
+    {
+      "command": [
+        "dotnet",
+        "restore",
+        "tests/P022.Tests.csproj",
+        "--configfile",
+        "NuGet.ci.config"
+      ],
+      "kind": "restore",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 1.842,
+      "stdout_file": "streams/002_step_2.stdout.txt",
+      "stderr_file": "streams/002_step_2.stderr.txt"
+    },
+    {
+      "command": [
+        "dotnet",
+        "run",
+        "--no-restore",
+        "--project",
+        "tests/P022.Tests.csproj"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/Program.cs",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 3.049,
+      "stdout_file": "streams/003_tests_Program.cs.stdout.txt",
+      "stderr_file": "streams/003_tests_Program.cs.stderr.txt"
+    }
+  ]
+}

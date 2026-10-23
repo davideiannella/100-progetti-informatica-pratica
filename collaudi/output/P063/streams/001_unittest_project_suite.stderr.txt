@@ -1,0 +1,24 @@
+test_audit_has_no_secrets (test_auth_service.AuthenticationTests.test_audit_has_no_secrets) ... ok
+test_bad_credentials_have_generic_message (test_auth_service.AuthenticationTests.test_bad_credentials_have_generic_message) ... ok
+test_corrupted_hash_fails_closed (test_auth_service.AuthenticationTests.test_corrupted_hash_fails_closed) ... ok
+test_lockout_exact_boundary (test_auth_service.AuthenticationTests.test_lockout_exact_boundary) ... ok
+test_logout_and_unknown_token (test_auth_service.AuthenticationTests.test_logout_and_unknown_token) ... ok
+test_malformed_totp_is_rejected (test_auth_service.AuthenticationTests.test_malformed_totp_is_rejected) ... ok
+test_password_is_scrypt_not_cleartext (test_auth_service.AuthenticationTests.test_password_is_scrypt_not_cleartext) ... ok
+test_registration_constraints_and_duplicate (test_auth_service.AuthenticationTests.test_registration_constraints_and_duplicate) ... ok
+test_replay_state_survives_database_reopen (test_auth_service.AuthenticationTests.test_replay_state_survives_database_reopen) ... ok
+test_secret_and_configuration_validation (test_auth_service.AuthenticationTests.test_secret_and_configuration_validation) ... ok
+test_session_expires_at_exact_deadline_and_is_removed (test_auth_service.AuthenticationTests.test_session_expires_at_exact_deadline_and_is_removed) ... ok
+test_success_resets_failure_counter (test_auth_service.AuthenticationTests.test_success_resets_failure_counter) ... ok
+test_timezone_and_epoch_boundaries (test_auth_service.AuthenticationTests.test_timezone_and_epoch_boundaries) ... ok
+test_totp_replay_is_rejected (test_auth_service.AuthenticationTests.test_totp_replay_is_rejected) ... ok
+test_unique_salts_for_same_password (test_auth_service.AuthenticationTests.test_unique_salts_for_same_password) ... ok
+test_username_normalization_and_password_spaces_preserved (test_auth_service.AuthenticationTests.test_username_normalization_and_password_spaces_preserved) ... ok
+test_valid_login_and_session (test_auth_service.AuthenticationTests.test_valid_login_and_session) ... ok
+test_100_seeded_time_window_properties (test_auth_service.TOTPReferenceTests.test_100_seeded_time_window_properties) ... ok
+test_rfc6238_sha1_vectors (test_auth_service.TOTPReferenceTests.test_rfc6238_sha1_vectors) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 6.878s
+
+OK

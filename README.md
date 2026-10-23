@@ -32,6 +32,8 @@ Alcuni progetti espongono solo funzioni e classi: il loro punto di ingresso eseg
 
 ## Verifiche automatiche
 
+Gli [output dei collaudi per tutti i 100 progetti](collaudi/output/README.md) riportano i comandi, gli esiti e i testi effettivamente acquisiti. Per i test `unittest`, il normale resoconto con i nomi dei test si trova nel canale stderr.
+
 | Workflow | Ambiente e perimetro |
 |---|---|
 | [P001–P080](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p001-p080.yml) | Ubuntu; strumenti e servizi distinti per gruppo di progetti |

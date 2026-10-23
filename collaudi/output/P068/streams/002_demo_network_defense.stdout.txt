@@ -1,0 +1,6 @@
+Internet -> DMZ HTTPS: True
+Internet -> DB PostgreSQL: False
+t=0: alert=False
+t=5: alert=False
+t=10: alert=True
+t=21: alert=False

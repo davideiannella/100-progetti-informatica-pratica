@@ -1,0 +1,4 @@
+Lettura: 200
+Amministrazione: 403
+Token a exp: 401
+Limite richieste: 429

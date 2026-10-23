@@ -1,0 +1,1 @@
+P018: producer-consumer PASS; sum=5050

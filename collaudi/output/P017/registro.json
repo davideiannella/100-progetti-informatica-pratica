@@ -1,0 +1,61 @@
+{
+  "project": "P017",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P017.json",
+    "bytes": 1464,
+    "sha256": "ade24f9a2d878d300312a3467b85b5839dc820772ca89c017bc8b7aab0e5d186"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "GCC C11 + UBSan"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "gcc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O1",
+        "-g",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "tests/test_ring_buffer.c",
+        "src/ring_buffer.c",
+        "-o",
+        "build/test_ring_buffer"
+      ],
+      "kind": "build",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.09,
+      "stdout_file": "streams/001_step_1.stdout.txt",
+      "stderr_file": "streams/001_step_1.stderr.txt"
+    },
+    {
+      "command": [
+        "./build/test_ring_buffer"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_ring_buffer.c",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.002,
+      "stdout_file": "streams/002_tests_test_ring_buffer.c.stdout.txt",
+      "stderr_file": "streams/002_tests_test_ring_buffer.c.stderr.txt"
+    }
+  ]
+}

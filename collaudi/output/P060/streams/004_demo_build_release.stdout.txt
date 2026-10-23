@@ -1,0 +1,4 @@
+{
+  "artifact": "release.zip",
+  "sha256": "d5cf9e77c3cbd09302a6800f76d2eaf637a7623ec9fdcb373b80c5f4e5ff66e3"
+}

@@ -1,0 +1,60 @@
+{
+  "project": "P014",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P014.json",
+    "bytes": 1958,
+    "sha256": "cb538c9f9acea01857e89ceb3638d9d457f20b1d6ef22c6439193fa835fbdd85"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "JDK 17; java -ea"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "java",
+        "-m",
+        "jdk.compiler/com.sun.tools.javac.Main",
+        "-Xlint:all",
+        "-d",
+        "build",
+        "src/SeatBooking.java",
+        "tests/SeatBookingTest.java"
+      ],
+      "kind": "build",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.667,
+      "stdout_file": "streams/001_step_1.stdout.txt",
+      "stderr_file": "streams/001_step_1.stderr.txt"
+    },
+    {
+      "command": [
+        "java",
+        "-ea",
+        "-cp",
+        "build",
+        "SeatBookingTest"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/SeatBookingTest.java",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.078,
+      "stdout_file": "streams/002_tests_SeatBookingTest.java.stdout.txt",
+      "stderr_file": "streams/002_tests_SeatBookingTest.java.stderr.txt"
+    }
+  ]
+}

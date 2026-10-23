@@ -1,0 +1,15 @@
+{
+  "health": {
+    "status": "ok"
+  },
+  "created": {
+    "id": 1,
+    "name": "router",
+    "quantity": 2
+  },
+  "fetched": {
+    "id": 1,
+    "name": "router",
+    "quantity": 2
+  }
+}

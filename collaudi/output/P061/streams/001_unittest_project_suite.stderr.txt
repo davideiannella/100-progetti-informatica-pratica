@@ -1,0 +1,14 @@
+test_100_seeded_windows_against_reference (test_p061.ObservabilityTests.test_100_seeded_windows_against_reference) ... ok
+test_empty_window_is_unknown (test_p061.ObservabilityTests.test_empty_window_is_unknown) ... ok
+test_invalid_records_are_atomic (test_p061.ObservabilityTests.test_invalid_records_are_atomic) ... ok
+test_invalid_thresholds (test_p061.ObservabilityTests.test_invalid_thresholds) ... ok
+test_original_degraded_case (test_p061.ObservabilityTests.test_original_degraded_case) ... ok
+test_original_healthy_case (test_p061.ObservabilityTests.test_original_healthy_case) ... ok
+test_structured_log_is_one_json_line (test_p061.ObservabilityTests.test_structured_log_is_one_json_line) ... ok
+test_sum_overflow_does_not_count_request (test_p061.ObservabilityTests.test_sum_overflow_does_not_count_request) ... ok
+test_threshold_equality_and_both_alerts (test_p061.ObservabilityTests.test_threshold_equality_and_both_alerts) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.007s
+
+OK

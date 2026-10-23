@@ -1,0 +1,28 @@
+test_collector_conflicting_id_rejected (test_p087.SmartMeterTests.test_collector_conflicting_id_rejected) ... ok
+test_collector_duplicate_ignored (test_p087.SmartMeterTests.test_collector_duplicate_ignored) ... ok
+test_demo_and_weighted_average (test_p087.SmartMeterTests.test_demo_and_weighted_average) ... ok
+test_empty_collector_summary (test_p087.SmartMeterTests.test_empty_collector_summary) ... ok
+test_inconsistent_energy_and_total_rejected (test_p087.SmartMeterTests.test_inconsistent_energy_and_total_rejected) ... ok
+test_initial_time_and_register (test_p087.SmartMeterTests.test_initial_time_and_register) ... ok
+test_invalid_alert_limit (test_p087.SmartMeterTests.test_invalid_alert_limit) ... ok
+test_invalid_event_schema (test_p087.SmartMeterTests.test_invalid_event_schema) ... ok
+test_invalid_identifiers (test_p087.SmartMeterTests.test_invalid_identifiers) ... ok
+test_invalid_initial_values (test_p087.SmartMeterTests.test_invalid_initial_values) ... ok
+test_invalid_power_and_time (test_p087.SmartMeterTests.test_invalid_power_and_time) ... ok
+test_meter_id_conflict_is_atomic (test_p087.SmartMeterTests.test_meter_id_conflict_is_atomic) ... ok
+test_meter_retry_is_idempotent (test_p087.SmartMeterTests.test_meter_retry_is_idempotent) ... ok
+test_missing_interval_then_replay (test_p087.SmartMeterTests.test_missing_interval_then_replay) ... ok
+test_nonincreasing_time_rejected (test_p087.SmartMeterTests.test_nonincreasing_time_rejected) ... ok
+test_overflow_rejected (test_p087.SmartMeterTests.test_overflow_rejected) ... ok
+test_overlap_and_reordered_event_rejected (test_p087.SmartMeterTests.test_overlap_and_reordered_event_rejected) ... ok
+test_power_alert_threshold_is_strict (test_p087.SmartMeterTests.test_power_alert_threshold_is_strict) ... ok
+test_seconds_to_hours (test_p087.SmartMeterTests.test_seconds_to_hours) ... ok
+test_unrepresentable_increment_rejected (test_p087.SmartMeterTests.test_unrepresentable_increment_rejected) ... ok
+test_variable_intervals (test_p087.SmartMeterTests.test_variable_intervals) ... ok
+test_wrong_device_rejected (test_p087.SmartMeterTests.test_wrong_device_rejected) ... ok
+test_zero_power_is_valid (test_p087.SmartMeterTests.test_zero_power_is_valid) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.002s
+
+OK

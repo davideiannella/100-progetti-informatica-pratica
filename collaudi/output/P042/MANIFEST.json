@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "project": "P042",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12456886835,
+      "artifact_name": "p041-p080-core-39849393701-1",
+      "member": "P042/results.json",
+      "bytes": 2157,
+      "sha256": "b2b4aa3a0eb904fd290d1fbe88f3bdd45049e5e51c9c7e8c75359eaf8d801380"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_dotnet_sdk_version.stdout.txt",
+      "source_record": "P042/results.json",
+      "source_member_or_pointer": "P042/001_dotnet_sdk_version.stdout.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "toolchain",
+      "input_bytes": 8,
+      "input_sha256": "ad418015125b9365f85d03123d06b2547b517a1effdddee93dbb5d4570d8fc03",
+      "bytes": 8,
+      "sha256": "ad418015125b9365f85d03123d06b2547b517a1effdddee93dbb5d4570d8fc03",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_dotnet_sdk_version.stderr.txt",
+      "source_record": "P042/results.json",
+      "source_member_or_pointer": "P042/001_dotnet_sdk_version.stderr.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "toolchain",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_dotnet_assertion_suite.stdout.txt",
+      "source_record": "P042/results.json",
+      "source_member_or_pointer": "P042/002_dotnet_assertion_suite.stdout.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "test_suite",
+      "input_bytes": 62,
+      "input_sha256": "c3da2e8bc4f7985e6484a2a8725ea7491228318ed3212a067fe91da0ed5f7317",
+      "bytes": 62,
+      "sha256": "c3da2e8bc4f7985e6484a2a8725ea7491228318ed3212a067fe91da0ed5f7317",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_dotnet_assertion_suite.stderr.txt",
+      "source_record": "P042/results.json",
+      "source_member_or_pointer": "P042/002_dotnet_assertion_suite.stderr.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "test_suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [
+    {
+      "step_index": 0,
+      "input_canonical_sha256": "e990f1963ef1e694025a33883613c397f0ecca07461c63f799c265c9b170c3a8",
+      "output_canonical_sha256": "167080712b0d885c2001039dca8b7b86dc1051792234f12877678fb94f325b94",
+      "transformations": {
+        "runner_workspace_prefix": 1
+      }
+    },
+    {
+      "step_index": 1,
+      "input_canonical_sha256": "e9f93b3fb6f582006432beaefaa59bade537618faefecddc064512042e49ce43",
+      "output_canonical_sha256": "23e14dcce3f6636b910c1cad6a32e85e92bca8f0ef4db128252d5a6b79421cee",
+      "transformations": {
+        "runner_workspace_prefix": 1
+      }
+    }
+  ],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 1951,
+    "sha256": "d3c835b6c5f84ae51c150ac79733db00a32c9082fc349debd1b7a0ea4b58ef40"
+  },
+  "readme": {
+    "bytes": 2942,
+    "sha256": "e4f676cd0016326875f8ed163d2159e6f08bd54412ddf25f92a720b9a38018be"
+  }
+}

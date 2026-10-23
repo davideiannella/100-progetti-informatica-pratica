@@ -1,0 +1,23 @@
+test_alert_equality_is_not_exceedance (test_p086.AirMonitorTests.test_alert_equality_is_not_exceedance) ... ok
+test_alert_event_has_origin_and_time (test_p086.AirMonitorTests.test_alert_event_has_origin_and_time) ... ok
+test_alerts_are_independent (test_p086.AirMonitorTests.test_alerts_are_independent) ... ok
+test_configurable_thresholds (test_p086.AirMonitorTests.test_configurable_thresholds) ... ok
+test_device_and_schema (test_p086.AirMonitorTests.test_device_and_schema) ... ok
+test_duplicate_timestamp_rejected (test_p086.AirMonitorTests.test_duplicate_timestamp_rejected) ... ok
+test_empty_summary (test_p086.AirMonitorTests.test_empty_summary) ... ok
+test_history_and_readings_cannot_be_edited (test_p086.AirMonitorTests.test_history_and_readings_cannot_be_edited) ... ok
+test_invalid_reading_is_atomic (test_p086.AirMonitorTests.test_invalid_reading_is_atomic) ... ok
+test_invalid_thresholds (test_p086.AirMonitorTests.test_invalid_thresholds) ... ok
+test_late_event_does_not_change_state (test_p086.AirMonitorTests.test_late_event_does_not_change_state) ... ok
+test_nonfinite_and_wrong_numeric_types (test_p086.AirMonitorTests.test_nonfinite_and_wrong_numeric_types) ... ok
+test_order_is_per_device (test_p086.AirMonitorTests.test_order_is_per_device) ... ok
+test_out_of_range (test_p086.AirMonitorTests.test_out_of_range) ... ok
+test_range_endpoints (test_p086.AirMonitorTests.test_range_endpoints) ... ok
+test_summary_real_values (test_p086.AirMonitorTests.test_summary_real_values) ... ok
+test_units_are_explicit (test_p086.AirMonitorTests.test_units_are_explicit) ... ok
+test_valid_reading (test_p086.AirMonitorTests.test_valid_reading) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.002s
+
+OK

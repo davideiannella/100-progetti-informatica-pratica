@@ -1,0 +1,1202 @@
+{
+  "project": "P056",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12456382691,
+    "artifact_name": "p056-runtime-39849393701-1",
+    "member": "P056/results.json",
+    "bytes": 432422,
+    "sha256": "47bdba4a4f483f25767ce9e744d3a315c05f7972b5356f79662990cb5e27275b"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04 x86_64",
+    "Python 3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "kind": "test_suite",
+      "name": "test_p056",
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_p056.py"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.045,
+      "unittest": null,
+      "sequence": 1,
+      "stdout_file": "streams/001_test_p056.stdout.txt",
+      "stderr_file": "streams/001_test_p056.stderr.txt"
+    },
+    {
+      "kind": "command",
+      "name": "docker_info",
+      "command": [
+        "docker",
+        "info"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.254,
+      "unittest": null,
+      "sequence": 2,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "kind_version",
+      "command": [
+        "kind",
+        "version"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.003,
+      "unittest": null,
+      "sequence": 3,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "kubectl_version",
+      "command": [
+        "kubectl",
+        "version",
+        "--client",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.035,
+      "unittest": null,
+      "sequence": 4,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "docker_build",
+      "command": [
+        "docker",
+        "build",
+        "-t",
+        "p056-demo-api:1.0",
+        "."
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 8.921,
+      "unittest": null,
+      "sequence": 5,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "kind_create",
+      "command": [
+        "kind",
+        "create",
+        "cluster",
+        "--name",
+        "<RUNTIME_NAME_001>",
+        "--image",
+        "kindest/node:v1.37.0@sha256:a1ed56cfb0e7b93589bdf97c8cd566405a265939e3620fc4f5de89adff580ae5",
+        "--wait",
+        "180s"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 39.015,
+      "unittest": null,
+      "sequence": 6,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "kind_load",
+      "command": [
+        "kind",
+        "load",
+        "docker-image",
+        "p056-demo-api:1.0",
+        "--name",
+        "<RUNTIME_NAME_001>"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 6.289,
+      "unittest": null,
+      "sequence": 7,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "apply_deployment",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "apply",
+        "-f",
+        "k8s/deployment.yaml"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.13,
+      "unittest": null,
+      "sequence": 8,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "deployment_ready",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "rollout",
+        "status",
+        "deployment/demo-api",
+        "--timeout=180s"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 10.606,
+      "unittest": null,
+      "sequence": 9,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "dns_ready",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "-n",
+        "kube-system",
+        "rollout",
+        "status",
+        "deployment/coredns",
+        "--timeout=180s"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.064,
+      "unittest": null,
+      "sequence": 10,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "cluster_versions",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "version",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.041,
+      "unittest": null,
+      "sequence": 11,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "pods",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pods",
+        "-l",
+        "app=demo-api",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.051,
+      "unittest": null,
+      "sequence": 12,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P056 three ready replicas",
+      "status": "PASS",
+      "detail": [
+        "<POD_001>",
+        "<POD_002>",
+        "<POD_003>"
+      ],
+      "sequence": 13
+    },
+    {
+      "kind": "command",
+      "name": "endpointslices",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "endpointslices",
+        "-l",
+        "kubernetes.io/service-name=demo-api",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.047,
+      "unittest": null,
+      "sequence": 14,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P056 Service has three ready endpoints",
+      "status": "PASS",
+      "detail": [
+        {
+          "addresses": [
+            "<INTERNAL_IP_001>"
+          ],
+          "conditions": {
+            "ready": true,
+            "serving": true,
+            "terminating": false
+          },
+          "nodeName": "<RUNTIME_NAME_001>-control-plane",
+          "targetRef": {
+            "kind": "Pod",
+            "name": "<POD_001>",
+            "namespace": "default",
+            "uid": "<INTERNAL_UID_001>"
+          }
+        },
+        {
+          "addresses": [
+            "<INTERNAL_IP_002>"
+          ],
+          "conditions": {
+            "ready": true,
+            "serving": true,
+            "terminating": false
+          },
+          "nodeName": "<RUNTIME_NAME_001>-control-plane",
+          "targetRef": {
+            "kind": "Pod",
+            "name": "<POD_002>",
+            "namespace": "default",
+            "uid": "<INTERNAL_UID_002>"
+          }
+        },
+        {
+          "addresses": [
+            "<INTERNAL_IP_003>"
+          ],
+          "conditions": {
+            "ready": true,
+            "serving": true,
+            "terminating": false
+          },
+          "nodeName": "<RUNTIME_NAME_001>-control-plane",
+          "targetRef": {
+            "kind": "Pod",
+            "name": "<POD_003>",
+            "namespace": "default",
+            "uid": "<INTERNAL_UID_003>"
+          }
+        }
+      ],
+      "sequence": 15
+    },
+    {
+      "kind": "command",
+      "name": "in_cluster_service",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "exec",
+        "<POD_001>",
+        "--",
+        "python",
+        "-c",
+        "import urllib.request; print(urllib.request.urlopen('http://demo-api/health',timeout=5).read().decode())"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.573,
+      "unittest": null,
+      "sequence": 16,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P056 in-cluster Service HTTP",
+      "status": "PASS",
+      "detail": "{\"status\":\"ok\"}\n",
+      "sequence": 17
+    },
+    {
+      "kind": "command",
+      "name": "in_cluster_service",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "exec",
+        "<POD_002>",
+        "--",
+        "python",
+        "-c",
+        "import urllib.request; print(urllib.request.urlopen('http://demo-api/health',timeout=5).read().decode())"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.514,
+      "unittest": null,
+      "sequence": 18,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P056 in-cluster Service HTTP",
+      "status": "PASS",
+      "detail": "{\"status\":\"ok\"}\n",
+      "sequence": 19
+    },
+    {
+      "kind": "command",
+      "name": "in_cluster_service",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "exec",
+        "<POD_003>",
+        "--",
+        "python",
+        "-c",
+        "import urllib.request; print(urllib.request.urlopen('http://demo-api/health',timeout=5).read().decode())"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.517,
+      "unittest": null,
+      "sequence": 20,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P056 in-cluster Service HTTP",
+      "status": "PASS",
+      "detail": "{\"status\":\"ok\"}\n",
+      "sequence": 21
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P056 Service HTTP via port-forward",
+      "status": "PASS",
+      "detail": [
+        200,
+        {
+          "status": "ok"
+        }
+      ],
+      "sequence": 22
+    },
+    {
+      "kind": "background_process",
+      "name": "service_forward",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "port-forward",
+        "service/demo-api",
+        "40503:80"
+      ],
+      "status": "STOPPED",
+      "exit_code": -15,
+      "note": "Termination was requested by the runner after the runtime checks.",
+      "sequence": 23,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "delete_one_pod",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "delete",
+        "pod",
+        "<POD_001>",
+        "--wait=true",
+        "--timeout=90s"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 30.719,
+      "unittest": null,
+      "sequence": 24,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "pods",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pods",
+        "-l",
+        "app=demo-api",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.049,
+      "unittest": null,
+      "sequence": 25,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P056 deleted Pod recreated",
+      "status": "PASS",
+      "detail": [
+        "<INTERNAL_UID_004>",
+        "<INTERNAL_UID_002>",
+        "<INTERNAL_UID_003>"
+      ],
+      "sequence": 26
+    },
+    {
+      "kind": "command",
+      "name": "liveness_fault_SIGSTOP",
+      "command": [
+        "docker",
+        "exec",
+        "<RUNTIME_NAME_001>-control-plane",
+        "ctr",
+        "--namespace",
+        "k8s.io",
+        "tasks",
+        "kill",
+        "--signal",
+        "SIGSTOP",
+        "<CONTAINER_ID_001>"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.052,
+      "unittest": null,
+      "sequence": 27,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.045,
+      "unittest": null,
+      "sequence": 28,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.046,
+      "unittest": null,
+      "sequence": 29,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.047,
+      "unittest": null,
+      "sequence": 30,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.046,
+      "unittest": null,
+      "sequence": 31,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.048,
+      "unittest": null,
+      "sequence": 32,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.047,
+      "unittest": null,
+      "sequence": 33,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.047,
+      "unittest": null,
+      "sequence": 34,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.046,
+      "unittest": null,
+      "sequence": 35,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.048,
+      "unittest": null,
+      "sequence": 36,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.052,
+      "unittest": null,
+      "sequence": 37,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.047,
+      "unittest": null,
+      "sequence": 38,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.05,
+      "unittest": null,
+      "sequence": 39,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.047,
+      "unittest": null,
+      "sequence": 40,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.047,
+      "unittest": null,
+      "sequence": 41,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.048,
+      "unittest": null,
+      "sequence": 42,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.046,
+      "unittest": null,
+      "sequence": 43,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.075,
+      "unittest": null,
+      "sequence": 44,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.045,
+      "unittest": null,
+      "sequence": 45,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.046,
+      "unittest": null,
+      "sequence": 46,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.049,
+      "unittest": null,
+      "sequence": 47,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.049,
+      "unittest": null,
+      "sequence": 48,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "command",
+      "name": "liveness_poll",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pod",
+        "<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.047,
+      "unittest": null,
+      "sequence": 49,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P056 liveness restart and ready",
+      "status": "PASS",
+      "detail": [
+        {
+          "allocatedResources": {
+            "cpu": "100m",
+            "memory": "128Mi"
+          },
+          "containerID": "<CONTAINER_ID_002>",
+          "image": "docker.io/library/p056-demo-api:1.0",
+          "imageID": "docker.io/library/import-2026-10-22@sha256:f22af2533879c21c907ab9c3102d933c4ac7bc2ca586f69e0fd43adba53d03aa",
+          "lastState": {
+            "terminated": {
+              "containerID": "<CONTAINER_ID_001>",
+              "exitCode": 137,
+              "finishedAt": "2026-10-22T20:33:16Z",
+              "reason": "Error",
+              "startedAt": "2026-10-22T20:31:45Z"
+            }
+          },
+          "name": "api",
+          "ready": true,
+          "resources": {
+            "limits": {
+              "cpu": "500m",
+              "memory": "512Mi"
+            },
+            "requests": {
+              "cpu": "100m",
+              "memory": "128Mi"
+            }
+          },
+          "restartCount": 1,
+          "started": true,
+          "state": {
+            "running": {
+              "startedAt": "2026-10-22T20:33:16Z"
+            }
+          },
+          "user": {
+            "linux": {
+              "gid": 1000,
+              "supplementalGroups": [
+                1000
+              ],
+              "uid": 1000
+            }
+          },
+          "volumeMounts": [
+            {
+              "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+              "name": "<SERVICEACCOUNT_VOLUME_001>",
+              "readOnly": true,
+              "recursiveReadOnly": "Disabled"
+            }
+          ]
+        }
+      ],
+      "sequence": 50
+    },
+    {
+      "kind": "command",
+      "name": "liveness_events",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "events",
+        "--field-selector",
+        "involvedObject.name=<POD_004>",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.047,
+      "unittest": null,
+      "sequence": 51,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P056 liveness failure observed",
+      "status": "PASS",
+      "detail": [
+        "Successfully assigned default/<POD_004> to <RUNTIME_NAME_001>-control-plane",
+        "Container image \"p056-demo-api:1.0\" already present on machine and can be accessed by the pod",
+        "Container created",
+        "Container started",
+        "Readiness probe failed: Get \"http://<INTERNAL_IP_004>:8000/ready\": dial tcp <INTERNAL_IP_004>:8000: connect: connection refused",
+        "Liveness probe failed: Get \"http://<INTERNAL_IP_004>:8000/health\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+        "Readiness probe failed: Get \"http://<INTERNAL_IP_004>:8000/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+        "Container api failed liveness probe, will be restarted"
+      ],
+      "sequence": 52
+    },
+    {
+      "kind": "command",
+      "name": "pods",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pods",
+        "-l",
+        "app=demo-api",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.048,
+      "unittest": null,
+      "sequence": 53,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "runtime_check",
+      "name": "P056 all replicas recovered",
+      "status": "PASS",
+      "detail": [
+        "<POD_004>",
+        "<POD_002>",
+        "<POD_003>"
+      ],
+      "sequence": 54
+    },
+    {
+      "kind": "diagnostic",
+      "name": "final_pods",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "pods",
+        "-o",
+        "wide"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.045,
+      "unittest": null,
+      "sequence": 55,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "diagnostic",
+      "name": "final_events",
+      "command": [
+        "kubectl",
+        "--context",
+        "kind-<RUNTIME_NAME_001>",
+        "get",
+        "events",
+        "-o",
+        "json"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.053,
+      "unittest": null,
+      "sequence": 56,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "cleanup",
+      "name": "kind_cleanup",
+      "command": [
+        "kind",
+        "delete",
+        "cluster",
+        "--name",
+        "<RUNTIME_NAME_001>"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p056-runtime/work/P056",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 1.676,
+      "unittest": null,
+      "sequence": 57,
+      "stream_omission": "auxiliary_infrastructure_output_linked_in_existing_public_operational_log"
+    },
+    {
+      "kind": "source_integrity",
+      "name": "original_files_unchanged",
+      "status": "PASS",
+      "files": 6,
+      "changed": [],
+      "sequence": 58
+    },
+    {
+      "kind": "coverage",
+      "name": "required_suites_and_runtime_checks",
+      "status": "PASS",
+      "suite_processes_expected": 1,
+      "suite_processes_executed": 1,
+      "runtime_checks_expected": 10,
+      "runtime_checks_passed": 10,
+      "sequence": 59
+    }
+  ]
+}

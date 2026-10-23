@@ -1,0 +1,1 @@
+test_methods=24; executed=24; failures=0; errors=0

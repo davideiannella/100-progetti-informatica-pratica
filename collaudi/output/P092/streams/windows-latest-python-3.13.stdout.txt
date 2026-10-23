@@ -1,0 +1,27 @@
+test_audit_is_copied_and_excludes_shared_secret (test_p092.UpdateTests.test_audit_is_copied_and_excludes_shared_secret) ... ok
+test_demo_reports_simulated_rollback_and_replay_rejection (test_p092.UpdateTests.test_demo_reports_simulated_rollback_and_replay_rejection) ... ok
+test_device_constructor_validation (test_p092.UpdateTests.test_device_constructor_validation) ... ok
+test_digest_types_lengths_and_non_ascii_rejected (test_p092.UpdateTests.test_digest_types_lengths_and_non_ascii_rejected) ... ok
+test_equal_older_or_invalid_current_version_rejected (test_p092.UpdateTests.test_equal_older_or_invalid_current_version_rejected) ... ok
+test_health_failure_does_not_consume_version (test_p092.UpdateTests.test_health_failure_does_not_consume_version) ... ok
+test_health_failure_restores_complete_modeled_snapshot (test_p092.UpdateTests.test_health_failure_restores_complete_modeled_snapshot) ... ok
+test_health_requires_bool_and_has_no_effect_on_invalid_input (test_p092.UpdateTests.test_health_requires_bool_and_has_no_effect_on_invalid_input) ... ok
+test_manifest_field_tampering_rejected (test_p092.UpdateTests.test_manifest_field_tampering_rejected) ... ok
+test_manifest_matches_independent_hmac_calculation (test_p092.UpdateTests.test_manifest_matches_independent_hmac_calculation) ... ok
+test_missing_extra_or_path_fields_rejected (test_p092.UpdateTests.test_missing_extra_or_path_fields_rejected) ... ok
+test_payload_contract (test_p092.UpdateTests.test_payload_contract) ... ok
+test_payload_tampering_rejected_without_state_change (test_p092.UpdateTests.test_payload_tampering_rejected_without_state_change) ... ok
+test_replay_after_apply_does_not_replace_previous (test_p092.UpdateTests.test_replay_after_apply_does_not_replace_previous) ... ok
+test_rollback_once_does_not_toggle (test_p092.UpdateTests.test_rollback_once_does_not_toggle) ... ok
+test_rollback_preserves_high_watermark_against_replay (test_p092.UpdateTests.test_rollback_preserves_high_watermark_against_replay) ... ok
+test_secret_contract (test_p092.UpdateTests.test_secret_contract) ... ok
+test_serialization_key_order_does_not_change_verification (test_p092.UpdateTests.test_serialization_key_order_does_not_change_verification) ... ok
+test_valid_update_stores_version_and_payload (test_p092.UpdateTests.test_valid_update_stores_version_and_payload) ... ok
+test_version_boundaries_are_inclusive (test_p092.UpdateTests.test_version_boundaries_are_inclusive) ... ok
+test_versions_reject_bool_nan_fraction_and_out_of_range (test_p092.UpdateTests.test_versions_reject_bool_nan_fraction_and_out_of_range) ... ok
+test_wrong_key_rejected (test_p092.UpdateTests.test_wrong_key_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.002s
+
+OK

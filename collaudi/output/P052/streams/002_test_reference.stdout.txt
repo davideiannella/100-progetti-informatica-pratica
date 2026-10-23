@@ -1,0 +1,1 @@
+P052 PASS: 400 stati confrontati con tutte le permutazioni

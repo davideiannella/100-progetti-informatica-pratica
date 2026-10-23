@@ -1,0 +1,6 @@
+riga 1: []
+riga 2: []
+riga 3: ['repeated_login_failures']
+riga 4: ['admin_login_unusual_country']
+riga 5: ['missing_country']
+riga 6: ['invalid_event']

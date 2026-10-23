@@ -1,0 +1,36 @@
+{
+  "project": "P034",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P034.json",
+    "bytes": 949,
+    "sha256": "425ede907d27ad2f95d8d3aff63f09442706a606cb01ddb5c95b9058e7030cbe"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "Python 3.12"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_p034.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_p034.py",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.06,
+      "stdout_file": "streams/001_tests_test_p034.py.stdout.txt",
+      "stderr_file": "streams/001_tests_test_p034.py.stderr.txt"
+    }
+  ]
+}

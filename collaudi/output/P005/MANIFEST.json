@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "project": "P005",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12457560243,
+      "artifact_name": "p001-p040-complete-validation",
+      "member": "P005.json",
+      "bytes": 1008,
+      "sha256": "bbbeaa4c4509b2a65f4a017d66d60ce776e5757bc571618bb02f5b3164d73bfb"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_tests_test_lru_cache.py.stdout.txt",
+      "source_record": "P005.json",
+      "source_member_or_pointer": "P005.json#/steps/0/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_tests_test_lru_cache.py.stderr.txt",
+      "source_record": "P005.json",
+      "source_member_or_pointer": "P005.json#/steps/0/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "suite",
+      "input_bytes": 106,
+      "input_sha256": "75ff54e727b57e4bd7b88956ed0c92c4b9a416e6f0976707e8fb54aa385ac0bd",
+      "bytes": 106,
+      "sha256": "75ff54e727b57e4bd7b88956ed0c92c4b9a416e6f0976707e8fb54aa385ac0bd",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [
+    {
+      "step_index": 0,
+      "input_canonical_sha256": "188b5edf381bdc9e35a31edcc0a67247e524bbbb4c807c981a51625b8c556dfd",
+      "output_canonical_sha256": "6c6c7fb7f264946f613bf99ab551acdd31d2ce9fa7f94b80948e3c8d310c7993",
+      "transformations": {
+        "python_host_prefix": 1
+      }
+    }
+  ],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 961,
+    "sha256": "ef3c55a46a6d5c9cef1515916c1252ffcd22c971430abd69aa40d8a077ba102c"
+  },
+  "readme": {
+    "bytes": 2482,
+    "sha256": "12a3ddaef4ba07865c75af3dab4b54383c7e9d3083ffec520b1443382cefa51a"
+  }
+}

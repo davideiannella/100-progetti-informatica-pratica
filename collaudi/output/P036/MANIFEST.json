@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "project": "P036",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12457560243,
+      "artifact_name": "p001-p040-complete-validation",
+      "member": "P036.json",
+      "bytes": 1548,
+      "sha256": "4df03a0a976ced79830df01b640b282f84ff190c9a837f2f6e92f373da3a546a"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_tests_test_capacity_types.py.stdout.txt",
+      "source_record": "P036.json",
+      "source_member_or_pointer": "P036.json#/steps/0/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "suite",
+      "input_bytes": 65,
+      "input_sha256": "13bcd06d611da75767f4129b2c740863fe45fb9ff07590a0ea3e05aac7adac01",
+      "bytes": 65,
+      "sha256": "13bcd06d611da75767f4129b2c740863fe45fb9ff07590a0ea3e05aac7adac01",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_tests_test_capacity_types.py.stderr.txt",
+      "source_record": "P036.json",
+      "source_member_or_pointer": "P036.json#/steps/0/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_tests_test_gym_domain.py.stdout.txt",
+      "source_record": "P036.json",
+      "source_member_or_pointer": "P036.json#/steps/1/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_tests_test_gym_domain.py.stderr.txt",
+      "source_record": "P036.json",
+      "source_member_or_pointer": "P036.json#/steps/1/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "suite",
+      "input_bytes": 105,
+      "input_sha256": "83166b089fbcb82fac63f22522fa6ae99bb5e46368cd35d756277fd463dd6346",
+      "bytes": 105,
+      "sha256": "83166b089fbcb82fac63f22522fa6ae99bb5e46368cd35d756277fd463dd6346",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [
+    {
+      "step_index": 0,
+      "input_canonical_sha256": "a70f9b84f9f3fa219888b79aa0ccd5652102a885da1a9867531000faa0d52e84",
+      "output_canonical_sha256": "d445a1daeee5c14a683979a805d00928afa9a83fe3ebfa32cc2450130dabebda",
+      "transformations": {
+        "python_host_prefix": 1
+      }
+    },
+    {
+      "step_index": 1,
+      "input_canonical_sha256": "4114e9a1beb35579476c1e05b10e16b420aeb0704b1a577e3b7d17977129a837",
+      "output_canonical_sha256": "07cd12086afccc46a28761d2c922c2f41e216eb7cb9ca8e1d69915250087797a",
+      "transformations": {
+        "python_host_prefix": 1
+      }
+    }
+  ],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 1524,
+    "sha256": "fad3e839510eae7244432cd4c41323f076f6f7c9a8a42d92f0545365eaee867e"
+  },
+  "readme": {
+    "bytes": 3062,
+    "sha256": "3643aed10c8b314b1d8f7248f55dfdc2330dab2829830565e1ac2a01b0316e31"
+  }
+}

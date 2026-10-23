@@ -1,0 +1,37 @@
+{
+  "project": "P009",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P009.json",
+    "bytes": 1014,
+    "sha256": "456ac743bfffaaf28b0eb03b30b66e0e517c0e0e5e186058ac142e8ac1530b67"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "Python 3.12",
+    "pandas 2.2.3"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_p009.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_p009.py",
+      "exit_code": 0,
+      "test_count": 3,
+      "count_basis": "unittest runtime report",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.668,
+      "stdout_file": "streams/001_tests_test_p009.py.stdout.txt",
+      "stderr_file": "streams/001_tests_test_p009.py.stderr.txt"
+    }
+  ]
+}

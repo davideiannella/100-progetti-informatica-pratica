@@ -1,0 +1,3 @@
+TLS verificato: ciao TLS
+Impronta corrispondente: True
+Hostname errato: RIFIUTATO

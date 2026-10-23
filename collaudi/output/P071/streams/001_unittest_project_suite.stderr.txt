@@ -1,0 +1,13 @@
+test_all_categories_and_input_retention (test_p071.ThreatModelTests.test_all_categories_and_input_retention) ... ok
+test_empty_fields (test_p071.ThreatModelTests.test_empty_fields) ... ok
+test_exhaustive_25_scores (test_p071.ThreatModelTests.test_exhaustive_25_scores) ... ok
+test_exhaustive_residual_225_combinations (test_p071.ThreatModelTests.test_exhaustive_residual_225_combinations) ... ok
+test_immutable_categories_and_independent_records (test_p071.ThreatModelTests.test_immutable_categories_and_independent_records) ... ok
+test_invalid_category (test_p071.ThreatModelTests.test_invalid_category) ... ok
+test_invalid_scale (test_p071.ThreatModelTests.test_invalid_scale) ... ok
+test_symmetry_and_monotonicity (test_p071.ThreatModelTests.test_symmetry_and_monotonicity) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

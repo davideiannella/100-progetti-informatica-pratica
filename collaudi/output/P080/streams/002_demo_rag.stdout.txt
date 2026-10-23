@@ -1,0 +1,204 @@
+{
+  "dataset": "Quattro documenti tecnici originali; dodici query manuali distinte dai testi",
+  "mode": "retrieval_estrattivo_senza_LLM",
+  "documents": 4,
+  "thresholds": {
+    "min_score": 0.15,
+    "min_margin": 0.05,
+    "selection": "costanti didattiche fissate prima della valutazione; non calibrate"
+  },
+  "queries": [
+    {
+      "query": "a cosa serve DNS?",
+      "expected_citation": "reti",
+      "answer": "DNS traduce nomi di dominio in indirizzi IP.",
+      "citation": "reti",
+      "score": 0.4082482904638631,
+      "abstained": false,
+      "reason": "estratto_letterale",
+      "ranking": [
+        {
+          "source": "reti",
+          "score": 0.4082482904638631
+        }
+      ],
+      "correct": true
+    },
+    {
+      "query": "nomi di dominio e indirizzi IP",
+      "expected_citation": "reti",
+      "answer": "DNS traduce nomi di dominio in indirizzi IP.",
+      "citation": "reti",
+      "score": 0.8164965809277261,
+      "abstained": false,
+      "reason": "estratto_letterale",
+      "ranking": [
+        {
+          "source": "reti",
+          "score": 0.8164965809277261
+        }
+      ],
+      "correct": true
+    },
+    {
+      "query": "che cosa collega una chiave esterna?",
+      "expected_citation": "db",
+      "answer": "Una chiave esterna collega una riga a una chiave di un’altra relazione.",
+      "citation": "db",
+      "score": 0.7698003589195009,
+      "abstained": false,
+      "reason": "estratto_letterale",
+      "ranking": [
+        {
+          "source": "db",
+          "score": 0.7698003589195009
+        }
+      ],
+      "correct": true
+    },
+    {
+      "query": "collegare una riga a una relazione",
+      "expected_citation": "db",
+      "answer": "Una chiave esterna collega una riga a una chiave di un’altra relazione.",
+      "citation": "db",
+      "score": 0.4714045207910317,
+      "abstained": false,
+      "reason": "estratto_letterale",
+      "ranking": [
+        {
+          "source": "db",
+          "score": 0.4714045207910317
+        }
+      ],
+      "correct": true
+    },
+    {
+      "query": "come evitare SQL injection con query e parametri?",
+      "expected_citation": "security",
+      "answer": "Le query parametrizzate separano il codice SQL dai dati dell’utente.",
+      "citation": "security",
+      "score": 0.5000000000000001,
+      "abstained": false,
+      "reason": "estratto_letterale",
+      "ranking": [
+        {
+          "source": "security",
+          "score": 0.5000000000000001
+        }
+      ],
+      "correct": true
+    },
+    {
+      "query": "query parametrizzate e dati utente",
+      "expected_citation": "security",
+      "answer": "Le query parametrizzate separano il codice SQL dai dati dell’utente.",
+      "citation": "security",
+      "score": 0.7071067811865476,
+      "abstained": false,
+      "reason": "estratto_letterale",
+      "ranking": [
+        {
+          "source": "security",
+          "score": 0.7071067811865476
+        }
+      ],
+      "correct": true
+    },
+    {
+      "query": "health check istanza disponibile",
+      "expected_citation": "cloud",
+      "answer": "Un health check consente di valutare se un’istanza è disponibile per ricevere traffico.",
+      "citation": "cloud",
+      "score": 0.7071067811865476,
+      "abstained": false,
+      "reason": "estratto_letterale",
+      "ranking": [
+        {
+          "source": "cloud",
+          "score": 0.7071067811865476
+        }
+      ],
+      "correct": true
+    },
+    {
+      "query": "ricevere traffico e valutare istanza",
+      "expected_citation": "cloud",
+      "answer": "Un health check consente di valutare se un’istanza è disponibile per ricevere traffico.",
+      "citation": "cloud",
+      "score": 0.7071067811865476,
+      "abstained": false,
+      "reason": "estratto_letterale",
+      "ranking": [
+        {
+          "source": "cloud",
+          "score": 0.7071067811865476
+        }
+      ],
+      "correct": true
+    },
+    {
+      "query": "unicorno galattico",
+      "expected_citation": null,
+      "answer": "Non ho una fonte sufficientemente pertinente e univoca nel corpus.",
+      "citation": null,
+      "score": 0.0,
+      "abstained": true,
+      "reason": "nessun_termine_noto",
+      "ranking": [],
+      "correct": true
+    },
+    {
+      "query": "ricetta risotto funghi",
+      "expected_citation": null,
+      "answer": "Non ho una fonte sufficientemente pertinente e univoca nel corpus.",
+      "citation": null,
+      "score": 0.0,
+      "abstained": true,
+      "reason": "nessun_termine_noto",
+      "ranking": [],
+      "correct": true
+    },
+    {
+      "query": "",
+      "expected_citation": null,
+      "answer": "Non ho una fonte sufficientemente pertinente e univoca nel corpus.",
+      "citation": null,
+      "score": 0.0,
+      "abstained": true,
+      "reason": "nessun_termine_noto",
+      "ranking": [],
+      "correct": true
+    },
+    {
+      "query": "e la di un per",
+      "expected_citation": null,
+      "answer": "Non ho una fonte sufficientemente pertinente e univoca nel corpus.",
+      "citation": null,
+      "score": 0.0,
+      "abstained": true,
+      "reason": "nessun_termine_noto",
+      "ranking": [],
+      "correct": true
+    }
+  ],
+  "correct": 12,
+  "total": 12,
+  "abstentions": 4,
+  "ambiguous_example": {
+    "answer": "Non ho una fonte sufficientemente pertinente e univoca nel corpus.",
+    "citation": null,
+    "score": 0.7071067811865476,
+    "abstained": true,
+    "reason": "fonti_ambigue",
+    "ranking": [
+      {
+        "source": "a",
+        "score": 0.7071067811865476
+      },
+      {
+        "source": "b",
+        "score": 0.7071067811865476
+      }
+    ]
+  }
+}

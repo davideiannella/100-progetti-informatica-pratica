@@ -1,0 +1,4 @@
+Permessi 0600: []
+Permessi 0644: ['group-readable', 'world-readable']
+Configurazione completa: []
+Configurazione incompleta: ['missing:permit_root_login', 'missing:automatic_security_updates']

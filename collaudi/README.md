@@ -2,6 +2,14 @@
 
 Questa cartella raccoglie i risultati dei collaudi dei laboratori di **100 progetti di informatica pratica**: le nuove esecuzioni pubbliche P001–P080, la matrice P081–P100 e le evidenze storiche conservate. Permette di confrontare esiti e output con l’ambiente effettivo di ogni prova. I sorgenti e i test originali restano invariati.
 
+## Output leggibili per ciascun progetto
+
+Apri l’[indice dei 100 progetti](output/README.md), scegli il laboratorio e leggi il suo resoconto: comandi, ambiente, codice di uscita, stdout e stderr sono distinti, così come suite, esempi dimostrativi e controlli runtime. I file TXT conservano gli stream acquisiti, con le sole trasformazioni di sanificazione dichiarate nei registri. Il rendering Markdown può normalizzare i terminatori di riga; gli hash dei TXT permettono il riscontro sui byte distribuiti.
+
+Per P001–P080 sono riutilizzati gli output del run pubblico 39849393701, senza nuove esecuzioni. Per P081–P100 il [nuovo run 39893701054](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39893701054), commit `3ab7bdfedb20a443bd71fe4e4ffe3c1dd67bd707`, registra 20 suite e 377 metodi riusciti in ciascuno dei quattro ambienti Linux/Windows con Python 3.12/3.13. La procedura ora stampa anche gli output delle suite riuscite e conserva i file negli artifact per 90 giorni. Le copie di consultazione sono conservate nel repository.
+
+Un file stdout vuoto è un risultato registrato: molti test non stampano dati. Il framework `unittest` scrive normalmente nomi ed esiti su stderr anche quando tutti i test riescono. I programmi che usano asserzioni senza stampare il nome di ogni sottocaso sono dichiarati come tali: il resoconto non ricostruisce valori o nomi che il programma non ha emesso.
+
 ## Collaudo pubblico P001–P080
 
 Il [run 39849393701](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701), commit `44cd421247ca2bfe838baa735cf6180134f80464`, ha concluso **80 progetti su 80 e cinque job su cinque con successo** il 22 ottobre 2026 su Ubuntu 24.04. Le prove comprendono MongoDB e Neo4j reali, Docker, Docker Compose e un cluster Kubernetes kind reale nel runner.
@@ -10,7 +18,7 @@ La [raccolta CI_P001_P080](CI_P001_P080/README.md) conserva riepiloghi e log ope
 
 Il primo run aveva quattro job riusciti e un errore nel controllo Neo4j aggiunto al runner; le 48 suite originali P001–P040 erano già riuscite. Il confronto e i log del fallimento restano consultabili. P001–P080 sono verificati su Ubuntu; non è una matrice nativa Windows e non sono deployment su provider cloud.
 
-## P081–P100: quattro job pubblici riusciti
+## P081–P100: precedente matrice pubblica conservata
 
 Il riferimento è il [run GitHub Actions 39701559280](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280), concluso con successo il **22 ottobre 2026**, sul commit [`32e201b1fb1258c4e7c77d32af323b966647b908`](https://github.com/davideiannella/100-progetti-informatica-pratica/commit/32e201b1fb1258c4e7c77d32af323b966647b908).
 
@@ -27,7 +35,7 @@ Le dipendenze registrate nei quattro job sono NumPy 2.3.5, SciPy 1.17.0, scikit-
 
 I riepiloghi sono stati confrontati con il JSON compreso fra `COLLAUDO_SUMMARY_BEGIN` e `COLLAUDO_SUMMARY_END` nei log: tutti e quattro coincidono. I campi aggiuntivi `job_id`, `job_name` e `run_url` identificano la provenienza. Il [riscontro dei registri](RISCONTRO_EVIDENZE.json) documenta questi confronti.
 
-Il workflow stampa il risultato aggregato di ciascuna suite; per i casi riusciti non riversa nel log pubblico tutto lo stdout/stderr dei singoli test. Per leggere anche i nomi dei test e gli output dettagliati è disponibile [OUTPUT_DETTAGLIATI_STORICI_LINUX.json](ci_P081_P100/OUTPUT_DETTAGLIATI_STORICI_LINUX.json): contiene la distinta esecuzione locale Linux del **21 ottobre 2026**, con 377 metodi e Python 3.12.14. I digest dei suoi 60 file Python coincidono con i sorgenti consegnati. I risultati non sono attribuiti ai quattro job pubblici; quel summary locale non elenca separatamente tutte le versioni delle dipendenze.
+Nel run 39701559280 lo script stampava il risultato aggregato di ciascuna suite e non pubblicava i file stdout/stderr dei casi riusciti. La procedura aggiornata e gli output della nuova esecuzione sono descritti nell’indice sopra. Per leggere anche i nomi dei test e gli output dettagliati è disponibile [OUTPUT_DETTAGLIATI_STORICI_LINUX.json](ci_P081_P100/OUTPUT_DETTAGLIATI_STORICI_LINUX.json): contiene la distinta esecuzione locale Linux del **21 ottobre 2026**, con 377 metodi e Python 3.12.14. I digest dei suoi 60 file Python coincidono con i sorgenti consegnati. I risultati non sono attribuiti ai quattro job pubblici; quel summary locale non elenca separatamente tutte le versioni delle dipendenze.
 
 ## P001–P080: evidenze storiche conservate
 

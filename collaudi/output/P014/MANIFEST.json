@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "project": "P014",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12457560243,
+      "artifact_name": "p001-p040-complete-validation",
+      "member": "P014.json",
+      "bytes": 1958,
+      "sha256": "cb538c9f9acea01857e89ceb3638d9d457f20b1d6ef22c6439193fa835fbdd85"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_step_1.stdout.txt",
+      "source_record": "P014.json",
+      "source_member_or_pointer": "P014.json#/steps/0/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "build",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_step_1.stderr.txt",
+      "source_record": "P014.json",
+      "source_member_or_pointer": "P014.json#/steps/0/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "build",
+      "input_bytes": 482,
+      "input_sha256": "5eea47587a996e40c6b927a9245dd8c7d51853ffd417219da3197abf102e4aad",
+      "bytes": 482,
+      "sha256": "5eea47587a996e40c6b927a9245dd8c7d51853ffd417219da3197abf102e4aad",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_tests_SeatBookingTest.java.stdout.txt",
+      "source_record": "P014.json",
+      "source_member_or_pointer": "P014.json#/steps/1/stdout",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "suite",
+      "input_bytes": 69,
+      "input_sha256": "a1bcec2ff7c26343f6ed43e6fea868b776780384ba17a819c17b16864a605277",
+      "bytes": 69,
+      "sha256": "a1bcec2ff7c26343f6ed43e6fea868b776780384ba17a819c17b16864a605277",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_tests_SeatBookingTest.java.stderr.txt",
+      "source_record": "P014.json",
+      "source_member_or_pointer": "P014.json#/steps/1/stderr",
+      "source_encoding": "json_decoded_utf8",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 1563,
+    "sha256": "af9a23744e19351257270e8b494e1c09e5dffd67382f2f5ab566ac111b0c7a8c"
+  },
+  "readme": {
+    "bytes": 2981,
+    "sha256": "5e2f34545950cf0f4881251ac863e1b4ada6380e6e5aea494f68c486ad64d028"
+  }
+}

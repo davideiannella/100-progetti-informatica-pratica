@@ -1,0 +1,22 @@
+test_collector_validation_error_preserves_head (test_p098.MonitorTests.test_collector_validation_error_preserves_head) ... ok
+test_conflicting_duplicate_is_rejected (test_p098.MonitorTests.test_conflicting_duplicate_is_rejected) ... ok
+test_demo_numbers (test_p098.MonitorTests.test_demo_numbers) ... ok
+test_devices_have_independent_sequences (test_p098.MonitorTests.test_devices_have_independent_sequences) ... ok
+test_duplicate_ack_has_no_second_effect (test_p098.MonitorTests.test_duplicate_ack_has_no_second_effect) ... ok
+test_invalid_event_schema_and_sequence (test_p098.MonitorTests.test_invalid_event_schema_and_sequence) ... ok
+test_invalid_identity_and_online_flag (test_p098.MonitorTests.test_invalid_identity_and_online_flag) ... ok
+test_invalid_samples_do_not_consume_sequence (test_p098.MonitorTests.test_invalid_samples_do_not_consume_sequence) ... ok
+test_lost_ack_replay_deduplicates_then_continues (test_p098.MonitorTests.test_lost_ack_replay_deduplicates_then_continues) ... ok
+test_network_error_before_acceptance_keeps_all_events (test_p098.MonitorTests.test_network_error_before_acceptance_keeps_all_events) ... ok
+test_new_event_gap_is_rejected (test_p098.MonitorTests.test_new_event_gap_is_rejected) ... ok
+test_offline_retains_fifo (test_p098.MonitorTests.test_offline_retains_fifo) ... ok
+test_partial_flush_keeps_head_and_suffix_on_error (test_p098.MonitorTests.test_partial_flush_keeps_head_and_suffix_on_error) ... ok
+test_reconnect_drains_in_order (test_p098.MonitorTests.test_reconnect_drains_in_order) ... ok
+test_restart_loses_ram_state_and_detects_sequence_conflict (test_p098.MonitorTests.test_restart_loses_ram_state_and_detects_sequence_conflict) ... ok
+test_snapshots_do_not_modify_buffer_or_collector (test_p098.MonitorTests.test_snapshots_do_not_modify_buffer_or_collector) ... ok
+test_wrong_or_missing_ack_cannot_discard_event (test_p098.MonitorTests.test_wrong_or_missing_ack_cannot_discard_event) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.002s
+
+OK

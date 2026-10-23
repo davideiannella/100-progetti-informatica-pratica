@@ -1,0 +1,30 @@
+test_100_seeded_fractional_sequences_against_decimal_reference (test_p066.RateLimitTests.test_100_seeded_fractional_sequences_against_decimal_reference) ... ok
+test_100_seeded_sequences_against_reference (test_p066.RateLimitTests.test_100_seeded_sequences_against_reference) ... ok
+test_clock_reversal_rejected_without_append (test_p066.RateLimitTests.test_clock_reversal_rejected_without_append) ... ok
+test_extreme_windows_keep_same_time_requests (test_p066.RateLimitTests.test_extreme_windows_keep_same_time_requests) ... ok
+test_invalid_parameters (test_p066.RateLimitTests.test_invalid_parameters) ... ok
+test_keys_are_independent_and_capacity_bounded (test_p066.RateLimitTests.test_keys_are_independent_and_capacity_bounded) ... ok
+test_large_integer_limiter_boundary_is_exact (test_p066.RateLimitTests.test_large_integer_limiter_boundary_is_exact) ... ok
+test_local_pipeline_denies_before_resource (test_p066.RateLimitTests.test_local_pipeline_denies_before_resource) ... ok
+test_original_limit_and_boundary (test_p066.RateLimitTests.test_original_limit_and_boundary) ... ok
+test_rounded_cutoff_does_not_expire_recent_event (test_p066.RateLimitTests.test_rounded_cutoff_does_not_expire_recent_event) ... ok
+test_100_seeded_large_integer_token_boundaries (test_p066.TokenTests.test_100_seeded_large_integer_token_boundaries) ... ok
+test_100_seeded_lifetime_and_tampering_cases (test_p066.TokenTests.test_100_seeded_lifetime_and_tampering_cases) ... ok
+test_algorithm_and_header_allowlist (test_p066.TokenTests.test_algorithm_and_header_allowlist) ... ok
+test_base64url_is_strict_and_canonical (test_p066.TokenTests.test_base64url_is_strict_and_canonical) ... ok
+test_configuration_rejected (test_p066.TokenTests.test_configuration_rejected) ... ok
+test_expiry_exact_boundary_and_fractional_now (test_p066.TokenTests.test_expiry_exact_boundary_and_fractional_now) ... ok
+test_issuer_and_audience_are_required (test_p066.TokenTests.test_issuer_and_audience_are_required) ... ok
+test_json_duplicates_and_nonfinite_values_rejected (test_p066.TokenTests.test_json_duplicates_and_nonfinite_values_rejected) ... ok
+test_large_integer_token_times_keep_exact_boundaries (test_p066.TokenTests.test_large_integer_token_times_keep_exact_boundaries) ... ok
+test_malformed_tokens_fail_as_value_error (test_p066.TokenTests.test_malformed_tokens_fail_as_value_error) ... ok
+test_missing_unknown_and_mistyped_claims (test_p066.TokenTests.test_missing_unknown_and_mistyped_claims) ... ok
+test_not_before_and_issued_at (test_p066.TokenTests.test_not_before_and_issued_at) ... ok
+test_signed_roundtrip_and_original_roles (test_p066.TokenTests.test_signed_roundtrip_and_original_roles) ... ok
+test_unknown_roles_deny_instead_of_escalating (test_p066.TokenTests.test_unknown_roles_deny_instead_of_escalating) ... ok
+test_wrong_key_and_tampered_payload (test_p066.TokenTests.test_wrong_key_and_tampered_payload) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.059s
+
+OK

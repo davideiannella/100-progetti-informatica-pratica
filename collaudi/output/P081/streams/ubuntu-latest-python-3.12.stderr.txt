@@ -1,0 +1,19 @@
+test_all_rules_are_exercised (test_p081.GuardTest.test_all_rules_are_exercised) ... ok
+test_annotation_preserves_original_text (test_p081.GuardTest.test_annotation_preserves_original_text) ... ok
+test_benign_is_still_untrusted (test_p081.GuardTest.test_benign_is_still_untrusted) ... ok
+test_case_and_whitespace (test_p081.GuardTest.test_case_and_whitespace) ... ok
+test_direct_attack_has_two_signals (test_p081.GuardTest.test_direct_attack_has_two_signals) ... ok
+test_empty_string_is_untrusted_data (test_p081.GuardTest.test_empty_string_is_untrusted_data) ... ok
+test_fixture_exposes_false_positive_and_negative (test_p081.GuardTest.test_fixture_exposes_false_positive_and_negative) ... ok
+test_instruction_policy_ignores_claimed_authority (test_p081.GuardTest.test_instruction_policy_ignores_claimed_authority) ... ok
+test_invalid_types (test_p081.GuardTest.test_invalid_types) ... ok
+test_italian_paraphrase_is_missed (test_p081.GuardTest.test_italian_paraphrase_is_missed) ... ok
+test_length_boundary (test_p081.GuardTest.test_length_boundary) ... ok
+test_quote_is_false_positive (test_p081.GuardTest.test_quote_is_false_positive) ... ok
+test_repeated_pattern_is_one_signal (test_p081.GuardTest.test_repeated_pattern_is_one_signal) ... ok
+test_returned_signals_are_independent (test_p081.GuardTest.test_returned_signals_are_independent) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.002s
+
+OK

@@ -1,0 +1,37 @@
+{
+  "project": "P024",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P024.json",
+    "bytes": 1139,
+    "sha256": "869fb4f9c8bfbdee4082ed18a62d237926ed9ce7baaaa6624dd70fe5a7d22452"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "Python 3.12",
+    "sqlite3 bundled with selected Python; database in memory"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_database.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_database.py",
+      "exit_code": 0,
+      "test_count": 4,
+      "count_basis": "unittest runtime report",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.089,
+      "stdout_file": "streams/001_tests_test_database.py.stdout.txt",
+      "stderr_file": "streams/001_tests_test_database.py.stderr.txt"
+    }
+  ]
+}

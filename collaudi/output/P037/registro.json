@@ -1,0 +1,37 @@
+{
+  "project": "P037",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P037.json",
+    "bytes": 1315,
+    "sha256": "64edc61d4d876bc8a8690c1b40990d682cb3fb35f6ec98ac16b8f31e476a8606"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "Python 3.12",
+    "FastAPI 0.143.2; Pydantic 2.14.1; HTTPX 0.28.1"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_p037.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_p037.py",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.74,
+      "stdout_file": "streams/001_tests_test_p037.py.stdout.txt",
+      "stderr_file": "streams/001_tests_test_p037.py.stderr.txt"
+    }
+  ]
+}

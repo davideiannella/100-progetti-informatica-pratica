@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "project": "P095",
+  "run_id": 39893701054,
+  "commit": "3ab7bdfedb20a443bd71fe4e4ffe3c1dd67bd707",
+  "source_records": [
+    {
+      "artifact_id": 12476170749,
+      "artifact_name": "output-p081-p100-ubuntu-latest-python-3.12",
+      "member": "summary.json",
+      "bytes": 5485,
+      "sha256": "8f0ead6eec0c6e1658742ab2768df54a691393e2acd6a86fec6a41d666b6f849"
+    },
+    {
+      "artifact_id": 12476095990,
+      "artifact_name": "output-p081-p100-ubuntu-latest-python-3.13",
+      "member": "summary.json",
+      "bytes": 5485,
+      "sha256": "b46cad959b393e3276ebbfc4c941560eaadb48b94e69e0364e11ebb7c50b34db"
+    },
+    {
+      "artifact_id": 12475927047,
+      "artifact_name": "output-p081-p100-windows-latest-python-3.12",
+      "member": "summary.json",
+      "bytes": 5730,
+      "sha256": "d1f594bc70f1b19f3a7e4a17b0a98608acb4116d572851a443048e8e2a6338f3"
+    },
+    {
+      "artifact_id": 12475826902,
+      "artifact_name": "output-p081-p100-windows-latest-python-3.13",
+      "member": "summary.json",
+      "bytes": 5730,
+      "sha256": "14e808c6137f1a35a41d4aec375b1a5357031349ab8742db224976a4112ee040"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/ubuntu-latest-python-3.12.stdout.txt",
+      "artifact_id": 12476170749,
+      "source_member_or_pointer": "P095.stdout.txt",
+      "source_encoding": "artifact_stream_file_bytes",
+      "stream": "stdout",
+      "environment": "ubuntu-latest-python-3.12",
+      "kind": "test_suite",
+      "input_bytes": 3423,
+      "input_sha256": "8e86da8d914c06420e02d7d37d4a158ec4f4aaec39bf7ab546b02541ab062c44",
+      "bytes": 3423,
+      "sha256": "8e86da8d914c06420e02d7d37d4a158ec4f4aaec39bf7ab546b02541ab062c44",
+      "transformations": {}
+    },
+    {
+      "file": "streams/ubuntu-latest-python-3.12.stderr.txt",
+      "artifact_id": 12476170749,
+      "source_member_or_pointer": "P095.stderr.txt",
+      "source_encoding": "artifact_stream_file_bytes",
+      "stream": "stderr",
+      "environment": "ubuntu-latest-python-3.12",
+      "kind": "test_suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/ubuntu-latest-python-3.13.stdout.txt",
+      "artifact_id": 12476095990,
+      "source_member_or_pointer": "P095.stdout.txt",
+      "source_encoding": "artifact_stream_file_bytes",
+      "stream": "stdout",
+      "environment": "ubuntu-latest-python-3.13",
+      "kind": "test_suite",
+      "input_bytes": 3423,
+      "input_sha256": "8e86da8d914c06420e02d7d37d4a158ec4f4aaec39bf7ab546b02541ab062c44",
+      "bytes": 3423,
+      "sha256": "8e86da8d914c06420e02d7d37d4a158ec4f4aaec39bf7ab546b02541ab062c44",
+      "transformations": {}
+    },
+    {
+      "file": "streams/ubuntu-latest-python-3.13.stderr.txt",
+      "artifact_id": 12476095990,
+      "source_member_or_pointer": "P095.stderr.txt",
+      "source_encoding": "artifact_stream_file_bytes",
+      "stream": "stderr",
+      "environment": "ubuntu-latest-python-3.13",
+      "kind": "test_suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/windows-latest-python-3.12.stdout.txt",
+      "artifact_id": 12475927047,
+      "source_member_or_pointer": "P095.stdout.txt",
+      "source_encoding": "artifact_stream_file_bytes",
+      "stream": "stdout",
+      "environment": "windows-latest-python-3.12",
+      "kind": "test_suite",
+      "input_bytes": 3454,
+      "input_sha256": "110d3e9c4b997eb26dc981cbed0f9ac2902ef3e66df0e14699ac283211008cc6",
+      "bytes": 3454,
+      "sha256": "110d3e9c4b997eb26dc981cbed0f9ac2902ef3e66df0e14699ac283211008cc6",
+      "transformations": {}
+    },
+    {
+      "file": "streams/windows-latest-python-3.12.stderr.txt",
+      "artifact_id": 12475927047,
+      "source_member_or_pointer": "P095.stderr.txt",
+      "source_encoding": "artifact_stream_file_bytes",
+      "stream": "stderr",
+      "environment": "windows-latest-python-3.12",
+      "kind": "test_suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/windows-latest-python-3.13.stdout.txt",
+      "artifact_id": 12475826902,
+      "source_member_or_pointer": "P095.stdout.txt",
+      "source_encoding": "artifact_stream_file_bytes",
+      "stream": "stdout",
+      "environment": "windows-latest-python-3.13",
+      "kind": "test_suite",
+      "input_bytes": 3454,
+      "input_sha256": "110d3e9c4b997eb26dc981cbed0f9ac2902ef3e66df0e14699ac283211008cc6",
+      "bytes": 3454,
+      "sha256": "110d3e9c4b997eb26dc981cbed0f9ac2902ef3e66df0e14699ac283211008cc6",
+      "transformations": {}
+    },
+    {
+      "file": "streams/windows-latest-python-3.13.stderr.txt",
+      "artifact_id": 12475826902,
+      "source_member_or_pointer": "P095.stderr.txt",
+      "source_encoding": "artifact_stream_file_bytes",
+      "stream": "stderr",
+      "environment": "windows-latest-python-3.13",
+      "kind": "test_suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 3007,
+    "sha256": "4855e7be8ca473d0edc1b6c99859d48c0f95eb689442c7fc1087c3248ffefe72"
+  },
+  "readme": {
+    "bytes": 17982,
+    "sha256": "59fc01067b7ba4f35f0288d9bcc659e162a89e0472168545bd09c959cae5603c"
+  }
+}

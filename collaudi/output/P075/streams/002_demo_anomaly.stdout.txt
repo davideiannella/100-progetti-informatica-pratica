@@ -1,0 +1,10 @@
+P075 — 300 normali in training; test indipendente: 100 normali e 30 anomalie
+precision: 0.750000
+recall: 1.000000
+f1: 0.857143
+false_positive_rate: 0.100000
+roc_auc: 1.000000
+alerts: 40
+matrice [[TN, FP], [FN, TP]]: [[90, 10], [0, 30]]
+offset appreso: -0.559153
+baseline senza allarmi: recall 0.000000; f1 0.000000

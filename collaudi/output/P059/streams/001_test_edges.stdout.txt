@@ -1,0 +1,1 @@
+P059 PASS: bilanciamento, tutti down e errore loader non memorizzato

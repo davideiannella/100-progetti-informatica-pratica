@@ -1,0 +1,78 @@
+{
+  "project": "P016",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P016.json",
+    "bytes": 2029,
+    "sha256": "ae102e259e6c40ccaedf0d8a5ce94553f06d5b64d8cae2eb140f8d97b1b033ed"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "GCC C11 + UBSan",
+    "Python 3.12; Linux /proc"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_cli.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_cli.py",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.244,
+      "stdout_file": "streams/001_tests_test_cli.py.stdout.txt",
+      "stderr_file": "streams/001_tests_test_cli.py.stderr.txt"
+    },
+    {
+      "command": [
+        "gcc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O1",
+        "-g",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "tests/test_process_monitor.c",
+        "-o",
+        "build/test_process_monitor"
+      ],
+      "kind": "build",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.296,
+      "stdout_file": "streams/002_step_2.stdout.txt",
+      "stderr_file": "streams/002_step_2.stderr.txt"
+    },
+    {
+      "command": [
+        "./build/test_process_monitor"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_process_monitor.c",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.064,
+      "stdout_file": "streams/003_tests_test_process_monitor.c.stdout.txt",
+      "stderr_file": "streams/003_tests_test_process_monitor.c.stderr.txt"
+    }
+  ]
+}

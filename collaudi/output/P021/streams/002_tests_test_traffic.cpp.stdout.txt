@@ -1,0 +1,1 @@
+P021: traffic simulation PASS; avgWait=0.666667

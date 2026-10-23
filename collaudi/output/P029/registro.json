@@ -1,0 +1,37 @@
+{
+  "project": "P029",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P029.json",
+    "bytes": 1087,
+    "sha256": "62280b052e98a457bc1376de6ec75272f6e0b52d9e60e57161c51447fcae4045"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "Python 3.12",
+    "sqlite3 bundled with selected Python; database in memory"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_p029.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_p029.py",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.026,
+      "stdout_file": "streams/001_tests_test_p029.py.stdout.txt",
+      "stderr_file": "streams/001_tests_test_p029.py.stderr.txt"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "artifact": "p054_api_release.zip",
+  "files": [
+    "Dockerfile",
+    "requirements.txt",
+    "src/app.py"
+  ],
+  "project": "P054",
+  "python": "3.12.15",
+  "sha256": "ee329706aa60fd4180877b5e462307b104ed30e6c88d0244f544e3db1b7854d6"
+}

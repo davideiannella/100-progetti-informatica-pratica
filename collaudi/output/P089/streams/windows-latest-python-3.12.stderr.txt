@@ -1,0 +1,23 @@
+test_all_classes_generate_rgb_images (test_cv_waste_synthetic.SyntheticCVTests.test_all_classes_generate_rgb_images) ... ok
+test_dataset_count_seed_and_bounds (test_cv_waste_synthetic.SyntheticCVTests.test_dataset_count_seed_and_bounds) ... ok
+test_features_are_finite_and_bounded (test_cv_waste_synthetic.SyntheticCVTests.test_features_are_finite_and_bounded) ... ok
+test_features_have_known_order_and_dimension (test_cv_waste_synthetic.SyntheticCVTests.test_features_have_known_order_and_dimension) ... ok
+test_features_reject_unsupported_images (test_cv_waste_synthetic.SyntheticCVTests.test_features_reject_unsupported_images) ... ok
+test_fit_receives_only_training_rows (test_cv_waste_synthetic.SyntheticCVTests.test_fit_receives_only_training_rows) ... ok
+test_generation_is_deterministic (test_cv_waste_synthetic.SyntheticCVTests.test_generation_is_deterministic) ... ok
+test_generator_rejects_unknown_class_and_rng (test_cv_waste_synthetic.SyntheticCVTests.test_generator_rejects_unknown_class_and_rng) ... ok
+test_image_size_constraints (test_cv_waste_synthetic.SyntheticCVTests.test_image_size_constraints) ... ok
+test_invalid_probability_vectors (test_cv_waste_synthetic.SyntheticCVTests.test_invalid_probability_vectors) ... ok
+test_invalid_review_thresholds (test_cv_waste_synthetic.SyntheticCVTests.test_invalid_review_thresholds) ... ok
+test_metrics_match_confusion_matrix_and_baseline (test_cv_waste_synthetic.SyntheticCVTests.test_metrics_match_confusion_matrix_and_baseline) ... ok
+test_pipeline_is_reproducible (test_cv_waste_synthetic.SyntheticCVTests.test_pipeline_is_reproducible) ... ok
+test_probability_labels_and_ties_are_explicit (test_cv_waste_synthetic.SyntheticCVTests.test_probability_labels_and_ties_are_explicit) ... ok
+test_review_counts_cover_the_test_set (test_cv_waste_synthetic.SyntheticCVTests.test_review_counts_cover_the_test_set) ... ok
+test_review_threshold_is_inclusive (test_cv_waste_synthetic.SyntheticCVTests.test_review_threshold_is_inclusive) ... ok
+test_split_is_disjoint_complete_and_balanced (test_cv_waste_synthetic.SyntheticCVTests.test_split_is_disjoint_complete_and_balanced) ... ok
+test_training_requires_enough_samples_for_stratification (test_cv_waste_synthetic.SyntheticCVTests.test_training_requires_enough_samples_for_stratification) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 1.091s
+
+OK

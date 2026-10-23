@@ -1,0 +1,80 @@
+{
+  "project": "P015",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P015.json",
+    "bytes": 2333,
+    "sha256": "e09195b03faee8e8c9512d384a59fd9c4c5704fe062440fcb765777f7a828474"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    "JDK 17; java -ea"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "java",
+        "-m",
+        "jdk.compiler/com.sun.tools.javac.Main",
+        "-Xlint:all",
+        "-d",
+        "build",
+        "src/ChatServer.java",
+        "tests/ChatIntegrationTest.java",
+        "tests/ChatShutdownTest.java"
+      ],
+      "kind": "build",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.746,
+      "stdout_file": "streams/001_step_1.stdout.txt",
+      "stderr_file": "streams/001_step_1.stderr.txt"
+    },
+    {
+      "command": [
+        "java",
+        "-ea",
+        "-cp",
+        "build",
+        "ChatIntegrationTest"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/ChatIntegrationTest.java",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.183,
+      "stdout_file": "streams/002_tests_ChatIntegrationTest.java.stdout.txt",
+      "stderr_file": "streams/002_tests_ChatIntegrationTest.java.stderr.txt"
+    },
+    {
+      "command": [
+        "java",
+        "-ea",
+        "-cp",
+        "build",
+        "ChatShutdownTest"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/ChatShutdownTest.java",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.06,
+      "stdout_file": "streams/003_tests_ChatShutdownTest.java.stdout.txt",
+      "stderr_file": "streams/003_tests_ChatShutdownTest.java.stderr.txt"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "project": "P044",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12456886835,
+    "artifact_name": "p041-p080-core-39849393701-1",
+    "member": "P044/results.json",
+    "bytes": 2800,
+    "sha256": "48bf0f9ad366233b5bdcf2162bf176479c8e3b3d0a3e179d20224ba6f4016ed4"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04 x86_64",
+    "Python 3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "kind": "command",
+      "name": "javac_compile",
+      "command": [
+        "javac",
+        "-d",
+        "build",
+        "src/DocumentVersioning.java",
+        "tests/DocumentEdgesTest.java",
+        "tests/DocumentVersioningTest.java"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P044",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.515,
+      "unittest": null,
+      "sequence": 1,
+      "stdout_file": "streams/001_javac_compile.stdout.txt",
+      "stderr_file": "streams/001_javac_compile.stderr.txt"
+    },
+    {
+      "kind": "test_suite",
+      "name": "DocumentEdgesTest",
+      "command": [
+        "java",
+        "-ea",
+        "-cp",
+        "build",
+        "DocumentEdgesTest"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P044",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.056,
+      "unittest": null,
+      "sequence": 2,
+      "stdout_file": "streams/002_DocumentEdgesTest.stdout.txt",
+      "stderr_file": "streams/002_DocumentEdgesTest.stderr.txt"
+    },
+    {
+      "kind": "test_suite",
+      "name": "DocumentVersioningTest",
+      "command": [
+        "java",
+        "-ea",
+        "-cp",
+        "build",
+        "DocumentVersioningTest"
+      ],
+      "cwd": "<RUNNER_WORKSPACE>/ci-results/p041-p080-core/work/P044",
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.033,
+      "unittest": null,
+      "sequence": 3,
+      "stdout_file": "streams/003_DocumentVersioningTest.stdout.txt",
+      "stderr_file": "streams/003_DocumentVersioningTest.stderr.txt"
+    },
+    {
+      "kind": "source_integrity",
+      "name": "original_files_unchanged",
+      "status": "PASS",
+      "files": 4,
+      "changed": [],
+      "sequence": 4
+    },
+    {
+      "kind": "coverage",
+      "name": "required_suites_and_runtime_checks",
+      "status": "PASS",
+      "suite_processes_expected": 2,
+      "suite_processes_executed": 2,
+      "runtime_checks_expected": 0,
+      "runtime_checks_passed": 0,
+      "sequence": 5
+    }
+  ]
+}

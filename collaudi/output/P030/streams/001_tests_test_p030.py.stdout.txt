@@ -1,0 +1,1 @@
+P030: view + trigger PASS

@@ -1,0 +1,19 @@
+test_alarm_is_virtual_and_independent_from_hvac (test_p097.BuildingTests.test_alarm_is_virtual_and_independent_from_hvac) ... ok
+test_boundaries_are_off (test_p097.BuildingTests.test_boundaries_are_off) ... ok
+test_cooling_uses_distinct_rate (test_p097.BuildingTests.test_cooling_uses_distinct_rate) ... ok
+test_deadband_has_no_memory_hysteresis (test_p097.BuildingTests.test_deadband_has_no_memory_hysteresis) ... ok
+test_demo_numbers (test_p097.BuildingTests.test_demo_numbers) ... ok
+test_energy_sums_power_times_duration (test_p097.BuildingTests.test_energy_sums_power_times_duration) ... ok
+test_heating_cooling_and_off (test_p097.BuildingTests.test_heating_cooling_and_off) ... ok
+test_invalid_alarm_adds_nothing (test_p097.BuildingTests.test_invalid_alarm_adds_nothing) ... ok
+test_invalid_control_does_not_change_hvac (test_p097.BuildingTests.test_invalid_control_does_not_change_hvac) ... ok
+test_invalid_duration_does_not_change_energy (test_p097.BuildingTests.test_invalid_duration_does_not_change_energy) ... ok
+test_invalid_names_and_duplicate_zones (test_p097.BuildingTests.test_invalid_names_and_duplicate_zones) ... ok
+test_invalid_temperatures_leave_previous_state (test_p097.BuildingTests.test_invalid_temperatures_leave_previous_state) ... ok
+test_occupied_requires_boolean (test_p097.BuildingTests.test_occupied_requires_boolean) ... ok
+test_unoccupied_is_eco_even_when_cold (test_p097.BuildingTests.test_unoccupied_is_eco_even_when_cold) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+OK

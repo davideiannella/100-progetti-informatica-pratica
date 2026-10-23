@@ -1,0 +1,156 @@
+{
+  "dataset": "36 ticket inventati manualmente; nessun dato cliente",
+  "split": {
+    "train": 24,
+    "test": 12,
+    "text_overlap": 0,
+    "train_ids": [
+      "a01",
+      "a02",
+      "a03",
+      "a04",
+      "a05",
+      "a06",
+      "a07",
+      "a08",
+      "f01",
+      "f02",
+      "f03",
+      "f04",
+      "f05",
+      "f06",
+      "f07",
+      "f08",
+      "t01",
+      "t02",
+      "t03",
+      "t04",
+      "t05",
+      "t06",
+      "t07",
+      "t08"
+    ],
+    "test_ids": [
+      "ha01",
+      "ha02",
+      "ha03",
+      "ha04",
+      "hf01",
+      "hf02",
+      "hf03",
+      "hf04",
+      "ht01",
+      "ht02",
+      "ht03",
+      "ht04"
+    ]
+  },
+  "classes": [
+    "accesso",
+    "fatturazione",
+    "tecnico"
+  ],
+  "accuracy": 1.0,
+  "f1_macro": 1.0,
+  "baseline_accuracy": 0.3333333333333333,
+  "confusion_matrix": [
+    [
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      4
+    ]
+  ],
+  "predictions": [
+    {
+      "id": "ha01",
+      "text": "ho dimenticato la password del mio account",
+      "truth": "accesso",
+      "prediction": "accesso"
+    },
+    {
+      "id": "ha02",
+      "text": "non arriva il codice per autenticazione",
+      "truth": "accesso",
+      "prediction": "accesso"
+    },
+    {
+      "id": "ha03",
+      "text": "le credenziali impediscono il login",
+      "truth": "accesso",
+      "prediction": "accesso"
+    },
+    {
+      "id": "ha04",
+      "text": "devo entrare ma account sospeso",
+      "truth": "accesso",
+      "prediction": "accesso"
+    },
+    {
+      "id": "hf01",
+      "text": "il pagamento ha un importo diverso dalla fattura",
+      "truth": "fatturazione",
+      "prediction": "fatturazione"
+    },
+    {
+      "id": "hf02",
+      "text": "vorrei rimborso per addebito doppio",
+      "truth": "fatturazione",
+      "prediction": "fatturazione"
+    },
+    {
+      "id": "hf03",
+      "text": "dove recupero la ricevuta del pagamento",
+      "truth": "fatturazione",
+      "prediction": "fatturazione"
+    },
+    {
+      "id": "hf04",
+      "text": "correggere indirizzo sulla fattura",
+      "truth": "fatturazione",
+      "prediction": "fatturazione"
+    },
+    {
+      "id": "ht01",
+      "text": "il server risponde lentamente durante salvataggio",
+      "truth": "tecnico",
+      "prediction": "tecnico"
+    },
+    {
+      "id": "ht02",
+      "text": "dopo aggiornamento vedo schermata bianca",
+      "truth": "tecnico",
+      "prediction": "tecnico"
+    },
+    {
+      "id": "ht03",
+      "text": "la connessione cade e la pagina non carica",
+      "truth": "tecnico",
+      "prediction": "tecnico"
+    },
+    {
+      "id": "ht04",
+      "text": "crash durante esportazione del documento",
+      "truth": "tecnico",
+      "prediction": "tecnico"
+    }
+  ],
+  "example": {
+    "input": "ho dimenticato la password",
+    "label": "accesso",
+    "reason": "classificato"
+  },
+  "oov_example": {
+    "label": null,
+    "reason": "nessun_termine_noto"
+  }
+}

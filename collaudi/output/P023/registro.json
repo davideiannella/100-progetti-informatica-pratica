@@ -1,0 +1,92 @@
+{
+  "project": "P023",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_record": {
+    "artifact_id": 12457560243,
+    "artifact_name": "p001-p040-complete-validation",
+    "member": "P023.json",
+    "bytes": 2495,
+    "sha256": "d8e3e7f89e50feae671a42a06c9d99c78535992793c3900ee741bc5f0c36578d"
+  },
+  "environment_declared": [
+    "Ubuntu 24.04",
+    ".NET SDK 8 + net8.0 runtime; no external NuGet feeds",
+    "Python 3.12; HTTP on loopback"
+  ],
+  "source_status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "dotnet",
+        "--version"
+      ],
+      "kind": "toolchain",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.096,
+      "stdout_file": "streams/001_step_1.stdout.txt",
+      "stderr_file": "streams/001_step_1.stderr.txt"
+    },
+    {
+      "command": [
+        "dotnet",
+        "restore",
+        "src/P023.csproj",
+        "--configfile",
+        "NuGet.ci.config"
+      ],
+      "kind": "restore",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.952,
+      "stdout_file": "streams/002_step_2.stdout.txt",
+      "stderr_file": "streams/002_step_2.stderr.txt"
+    },
+    {
+      "command": [
+        "dotnet",
+        "build",
+        "src/P023.csproj",
+        "--no-restore",
+        "--configuration",
+        "Debug"
+      ],
+      "kind": "build",
+      "suite_file": null,
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": null,
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 1.524,
+      "stdout_file": "streams/003_step_3.stdout.txt",
+      "stderr_file": "streams/003_step_3.stderr.txt"
+    },
+    {
+      "command": [
+        "<PYTHON_HOME>/bin/python",
+        "-B",
+        "tests/test_http.py"
+      ],
+      "kind": "suite",
+      "suite_file": "tests/test_http.py",
+      "exit_code": 0,
+      "test_count": null,
+      "count_basis": "standalone assertion program; exit status is the oracle",
+      "skipped_tests": 0,
+      "status": "PASS",
+      "seconds": 0.597,
+      "stdout_file": "streams/004_tests_test_http.py.stdout.txt",
+      "stderr_file": "streams/004_tests_test_http.py.stderr.txt"
+    }
+  ]
+}

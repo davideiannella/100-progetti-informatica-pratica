@@ -1,0 +1,1 @@
+P060: local CI gates + artifact hash PASS

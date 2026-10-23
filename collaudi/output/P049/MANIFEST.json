@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "project": "P049",
+  "run_id": 39849393701,
+  "commit": "44cd421247ca2bfe838baa735cf6180134f80464",
+  "source_records": [
+    {
+      "artifact_id": 12456886835,
+      "artifact_name": "p041-p080-core-39849393701-1",
+      "member": "P049/results.json",
+      "bytes": 2228,
+      "sha256": "26320d102e2bf475cbde6f45581d07bc870ad21e7e66434ef910c1bdb78fef7d"
+    }
+  ],
+  "streams": [
+    {
+      "file": "streams/001_test_edges.stdout.txt",
+      "source_record": "P049/results.json",
+      "source_member_or_pointer": "P049/001_test_edges.stdout.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stdout",
+      "step_index": 0,
+      "kind": "test_suite",
+      "input_bytes": 64,
+      "input_sha256": "c44f636697ebe1d7124e157db33dad87fbca270b9c476250494bef4060b15648",
+      "bytes": 64,
+      "sha256": "c44f636697ebe1d7124e157db33dad87fbca270b9c476250494bef4060b15648",
+      "transformations": {}
+    },
+    {
+      "file": "streams/001_test_edges.stderr.txt",
+      "source_record": "P049/results.json",
+      "source_member_or_pointer": "P049/001_test_edges.stderr.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stderr",
+      "step_index": 0,
+      "kind": "test_suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_test_p049.stdout.txt",
+      "source_record": "P049/results.json",
+      "source_member_or_pointer": "P049/002_test_p049.stdout.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stdout",
+      "step_index": 1,
+      "kind": "test_suite",
+      "input_bytes": 37,
+      "input_sha256": "01bb500b1a6be2894932a5dcd9134537240bfd62532f5196f76b1684ea35fcf5",
+      "bytes": 37,
+      "sha256": "01bb500b1a6be2894932a5dcd9134537240bfd62532f5196f76b1684ea35fcf5",
+      "transformations": {}
+    },
+    {
+      "file": "streams/002_test_p049.stderr.txt",
+      "source_record": "P049/results.json",
+      "source_member_or_pointer": "P049/002_test_p049.stderr.log",
+      "source_encoding": "artifact_log_file_bytes",
+      "stream": "stderr",
+      "step_index": 1,
+      "kind": "test_suite",
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": {}
+    }
+  ],
+  "metadata_changes": [
+    {
+      "step_index": 0,
+      "input_canonical_sha256": "5748010806da4f24f0fe08170cb66ca9071fa3ff7fa48d737239c3e2b6810605",
+      "output_canonical_sha256": "15fa8d551ec4e7ee0bb11f62e0639a83489db4bf7cafabf16c492ff9b75ae43d",
+      "transformations": {
+        "python_host_prefix": 1,
+        "runner_workspace_prefix": 1
+      }
+    },
+    {
+      "step_index": 1,
+      "input_canonical_sha256": "4021b12c8acb8b1b737f2c193a75fb38891913bfaec596b97d651c3d569e69e2",
+      "output_canonical_sha256": "7ff4095e983fd916fab8a3f66f00f6d92314ceb517e7fa80f692d11fb868ee78",
+      "transformations": {
+        "python_host_prefix": 1,
+        "runner_workspace_prefix": 1
+      }
+    }
+  ],
+  "omitted_infrastructure_streams": [],
+  "registro": {
+    "bytes": 1922,
+    "sha256": "2940b9189dbe179823c5846e3e85990703245bdbca7980b514d93a6bcfe155c8"
+  },
+  "readme": {
+    "bytes": 2866,
+    "sha256": "544f90347047f90fafa650fda854b60b3675a5de26e0ce76b87fdfc1b0e43dec"
+  }
+}
