@@ -36,6 +36,8 @@ python tests/test_invalid_metrics.py
 python tests/test_p031.py
 ```
 
+Questi test verificano la validazione delle misure e la costruzione del documento Python. Non richiedono un database e non eseguono `mongo/telemetry_examples.js`: il modello Python e lo script JavaScript sono due percorsi di esecuzione separati. La prova sul database reale è descritta nei collaudi documentati sotto.
+
 ## Perimetro del laboratorio
 
 - Distinguere test Python ed esecuzione MongoDB. Il modello Python serializza il timestamp in stringa ISO; lo script mongosh usa BSON Date.
@@ -57,5 +59,9 @@ Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test in
 ## Collaudi documentati
 
 Collaudo storico su Linux: le suite disponibili e i casi aggiuntivi risultano superati. Il riepilogo del gruppo P001–P040 non riporta una data puntuale; questi risultati non sono stati rieseguiti per preparare il README. Le prove del modello Python e quelle del motore di database sono evidenze separate.
+
+Nel [collaudo automatizzato del 22 ottobre 2026](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701), il runner ha eseguito lo script originale `mongo/telemetry_examples.js` tramite `mongosh` su MongoDB 8.0.14, avviato in un container Docker. Tutte le 12 asserzioni sul database reale sono risultate superate: verificano la versione del motore, l’inserimento, i tipi BSON, l’indice composto e i risultati della query con filtro per dispositivo, ordinamento temporale e limite. Le due suite Python sono state eseguite separatamente. Le evidenze sono nel [registro P031](../../collaudi/output/P031/registro.json) e nell’[output della prova sul motore](../../collaudi/output/P031/streams/003_step_3.stdout.txt); la procedura è nella funzione `engine_suite` del [runner](../../tools/ci_p001_p040/runner.py).
+
+La dicitura storica `MongoDB script STATIC QA` nell’output di `test_p031.py` non attesta l’esecuzione dello script: l’esecuzione su MongoDB è documentata separatamente come `engine_suite` nel registro.
 
 Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
