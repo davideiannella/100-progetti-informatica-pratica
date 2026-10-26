@@ -1,4 +1,6 @@
-# P002 — Analisi dei consumi domestici da CSV
+# P002: Analisi dei consumi domestici da CSV
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P002/README.md) · [Registro del collaudo](../../COLLAUDO/P002/registro.json)
 
 Elabora consumi memorizzati in CSV e verifica i risultati su dati di prova.
 

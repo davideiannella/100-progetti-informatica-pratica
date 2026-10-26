@@ -1,4 +1,6 @@
-# P057 — Una funzione per verificare immagini e metadati
+# P057: Una funzione per verificare immagini e metadati
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P057/README.md) · [Registro del collaudo](../../COLLAUDO/P057/registro.json)
 
 Valida immagini e metadati con una funzione locale e dati creati dai test.
 

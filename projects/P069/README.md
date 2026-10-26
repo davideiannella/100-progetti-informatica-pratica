@@ -1,4 +1,6 @@
-# P069 — Hardening Linux: un audit riproducibile di permessi e configurazione
+# P069: Hardening Linux: un audit riproducibile di permessi e configurazione
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P069/README.md) · [Registro del collaudo](../../COLLAUDO/P069/registro.json)
 
 Controlla permessi POSIX e configurazioni sintetiche con un audit in sola lettura.
 

@@ -1,4 +1,6 @@
-# P014 — Prenotazioni concorrenti senza duplicati
+# P014: Prenotazioni concorrenti senza duplicati
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P014/README.md) · [Registro del collaudo](../../COLLAUDO/P014/registro.json)
 
 Verifica prenotazioni concorrenti e prevenzione delle duplicazioni.
 

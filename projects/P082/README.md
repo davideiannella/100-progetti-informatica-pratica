@@ -1,4 +1,6 @@
-# P082 — Inventario di controlli AI: una checklist tracciabile
+# P082: Inventario di controlli AI: una checklist tracciabile
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P082/README.md) · [Registro del collaudo](../../COLLAUDO/P082/registro.json)
 
 Organizza una checklist locale di controlli e relative evidenze per sistemi AI.
 

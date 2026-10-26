@@ -1,4 +1,6 @@
-# P065 — Protezione Web da XSS e CSRF: contesto HTML e token di sessione
+# P065: Protezione Web da XSS e CSRF: contesto HTML e token di sessione
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P065/README.md) · [Registro del collaudo](../../COLLAUDO/P065/registro.json)
 
 Verifica codifica HTML e token di sessione con chiamate Python locali.
 

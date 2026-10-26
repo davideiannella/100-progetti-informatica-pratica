@@ -1,4 +1,6 @@
-# P068 — Segmentazione di rete con firewall e rilevamento dei login falliti
+# P068: Segmentazione di rete con firewall e rilevamento dei login falliti
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P068/README.md) · [Registro del collaudo](../../COLLAUDO/P068/registro.json)
 
 Valuta regole di rete e sequenze sintetiche di login falliti senza configurare il firewall.
 

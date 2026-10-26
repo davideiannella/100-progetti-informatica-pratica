@@ -1,4 +1,6 @@
-# P099 — Logistica locale: routing, tracking e previsioni trasparenti
+# P099: Logistica locale: routing, tracking e previsioni trasparenti
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P099/README.md) · [Registro del collaudo](../../COLLAUDO/P099/registro.json)
 
 Combina routing, tracking e previsioni in un laboratorio logistico locale.
 

@@ -1,4 +1,6 @@
-# P037 — API REST per trasporto pubblico
+# P037: API REST per trasporto pubblico
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P037/README.md) · [Registro del collaudo](../../COLLAUDO/P037/registro.json)
 
 Espone un’API locale dedicata al trasporto pubblico e ne verifica le risposte.
 

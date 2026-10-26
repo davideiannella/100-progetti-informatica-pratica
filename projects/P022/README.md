@@ -1,4 +1,6 @@
-# P022 — Nucleo .NET per manutenzioni e ordini di lavoro
+# P022: Nucleo .NET per manutenzioni e ordini di lavoro
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P022/README.md) · [Registro del collaudo](../../COLLAUDO/P022/registro.json)
 
 Modella manutenzioni e ordini di lavoro con un programma .NET locale.
 

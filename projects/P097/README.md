@@ -1,4 +1,6 @@
-# P097 — Edificio virtuale: comfort, consumo e allarmi software
+# P097: Edificio virtuale: comfort, consumo e allarmi software
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P097/README.md) · [Registro del collaudo](../../COLLAUDO/P097/registro.json)
 
 Modella comfort, consumo e allarmi di un edificio virtuale.
 

@@ -1,4 +1,6 @@
-# P019 — Coda di emergenze in C++ con priority_queue e STL
+# P019: Coda di emergenze in C++ con priority_queue e STL
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P019/README.md) · [Registro del collaudo](../../COLLAUDO/P019/registro.json)
 
 Gestisce una coda di emergenze con le strutture della libreria standard C++.
 

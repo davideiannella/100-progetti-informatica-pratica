@@ -1,4 +1,6 @@
-# P071 — Trovare le minacce prima del codice: STRIDE e priorità ordinali
+# P071: Trovare le minacce prima del codice: STRIDE e priorità ordinali
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P071/README.md) · [Registro del collaudo](../../COLLAUDO/P071/registro.json)
 
 Organizza minacce STRIDE e priorità ordinali in un registro locale.
 

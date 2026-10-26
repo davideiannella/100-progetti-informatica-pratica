@@ -1,4 +1,6 @@
-# P027 — Gestione palestra e abbonamenti
+# P027: Gestione palestra e abbonamenti
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P027/README.md) · [Registro del collaudo](../../COLLAUDO/P027/registro.json)
 
 Verifica uno schema SQLite per palestra e abbonamenti.
 

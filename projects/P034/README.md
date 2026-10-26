@@ -1,4 +1,6 @@
-# P034 — Collegare record di archivi diversi
+# P034: Collegare record di archivi diversi
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P034/README.md) · [Registro del collaudo](../../COLLAUDO/P034/registro.json)
 
 Confronta record provenienti da archivi distinti.
 

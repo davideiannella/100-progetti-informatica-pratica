@@ -1,4 +1,6 @@
-# P013 — Biblioteca digitale a oggetti
+# P013: Biblioteca digitale a oggetti
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P013/README.md) · [Registro del collaudo](../../COLLAUDO/P013/registro.json)
 
 Modella prestiti e disponibilità di una biblioteca con oggetti Java.
 

@@ -1,4 +1,6 @@
-# P093 — Fabbrica simulata: gemelli in memoria e indicatori OEE
+# P093: Fabbrica simulata: gemelli in memoria e indicatori OEE
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P093/README.md) · [Registro del collaudo](../../COLLAUDO/P093/registro.json)
 
 Calcola indicatori OEE per una fabbrica rappresentata da oggetti in memoria.
 

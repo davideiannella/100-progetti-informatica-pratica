@@ -1,4 +1,6 @@
-# P016 — Monitor di processi da riga di comando
+# P016: Monitor di processi da riga di comando
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P016/README.md) · [Registro del collaudo](../../COLLAUDO/P016/registro.json)
 
 Legge informazioni dei processi Linux dal filesystem /proc.
 

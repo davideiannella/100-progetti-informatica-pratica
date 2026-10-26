@@ -1,4 +1,6 @@
-# P095 — Telemonitoraggio simulato: metriche fittizie e revisione tecnica
+# P095: Telemonitoraggio simulato: metriche fittizie e revisione tecnica
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P095/README.md) · [Registro del collaudo](../../COLLAUDO/P095/registro.json)
 
 Elabora misure fittizie per una dimostrazione tecnica, senza uso clinico.
 

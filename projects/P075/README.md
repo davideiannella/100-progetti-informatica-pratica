@@ -1,4 +1,6 @@
-# P075 — Scoprire transazioni insolite con anomaly detection
+# P075: Scoprire transazioni insolite con anomaly detection
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P075/README.md) · [Registro del collaudo](../../COLLAUDO/P075/registro.json)
 
 Misura anomalie e falsi positivi su gruppi numerici generati dal programma.
 

@@ -1,4 +1,6 @@
-# P052 — Verificare uno stato sicuro con il banchiere
+# P052: Verificare uno stato sicuro con il banchiere
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P052/README.md) · [Registro del collaudo](../../COLLAUDO/P052/registro.json)
 
 Verifica la sicurezza di assegnazioni di risorse con l’algoritmo del banchiere.
 

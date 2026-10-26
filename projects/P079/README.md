@@ -1,4 +1,6 @@
-# P079 — Previsione della domanda di magazzino
+# P079: Previsione della domanda di magazzino
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P079/README.md) · [Registro del collaudo](../../COLLAUDO/P079/registro.json)
 
 Confronta previsioni giornaliere e ricorsive su una serie di domanda sintetica.
 

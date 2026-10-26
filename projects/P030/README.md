@@ -1,4 +1,6 @@
-# P030 — Biblioteca SQL: automatizzare regole con trigger e viste
+# P030: Biblioteca SQL: automatizzare regole con trigger e viste
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P030/README.md) · [Registro del collaudo](../../COLLAUDO/P030/registro.json)
 
 Usa trigger e viste per applicare regole a una biblioteca SQL.
 

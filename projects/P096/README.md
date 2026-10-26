@@ -1,4 +1,6 @@
-# P096 — E-commerce locale: ordini, stock e retry idempotenti
+# P096: E-commerce locale: ordini, stock e retry idempotenti
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P096/README.md) · [Registro del collaudo](../../COLLAUDO/P096/registro.json)
 
 Verifica ordini, stock e retry idempotenti in un negozio locale simulato.
 

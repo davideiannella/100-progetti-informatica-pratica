@@ -1,0 +1,32 @@
+name: Verifica collegamenti della documentazione
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.md'
+      - 'COLLAUDO/**'
+      - 'tools/check_links.py'
+      - '.github/workflows/verifica-collegamenti.yml'
+  pull_request:
+    paths:
+      - '**.md'
+      - 'COLLAUDO/**'
+      - 'tools/check_links.py'
+      - '.github/workflows/verifica-collegamenti.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  documentazione:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Controlla percorsi e sezioni collegate
+        run: python tools/check_links.py

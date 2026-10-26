@@ -1,4 +1,6 @@
-# P084 — Irrigazione simulata: soglie strette e memoria del controller
+# P084: Irrigazione simulata: soglie strette e memoria del controller
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P084/README.md) · [Registro del collaudo](../../COLLAUDO/P084/registro.json)
 
 Simula un controller di irrigazione con soglie e stato persistente fra le chiamate.
 

@@ -1,4 +1,6 @@
-# P011 — Analizzatore di log con espressioni regolari
+# P011: Analizzatore di log con espressioni regolari
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P011/README.md) · [Registro del collaudo](../../COLLAUDO/P011/registro.json)
 
 Estrae informazioni da log con espressioni regolari.
 

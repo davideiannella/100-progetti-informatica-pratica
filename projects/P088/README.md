@@ -1,4 +1,6 @@
-# P088 — Parcheggio virtuale: eventi, occupazione e idempotenza
+# P088: Parcheggio virtuale: eventi, occupazione e idempotenza
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P088/README.md) · [Registro del collaudo](../../COLLAUDO/P088/registro.json)
 
 Aggiorna l’occupazione di un parcheggio virtuale gestendo eventi ripetuti.
 

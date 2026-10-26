@@ -1,4 +1,6 @@
-# P047 — Seguire una richiesta Web su TCP
+# P047: Seguire una richiesta Web su TCP
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P047/README.md) · [Registro del collaudo](../../COLLAUDO/P047/registro.json)
 
 Ricostruisce le fasi di una richiesta Web senza configurare una rete esterna.
 

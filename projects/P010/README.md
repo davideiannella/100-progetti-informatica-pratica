@@ -1,4 +1,6 @@
-# P010 — Pipeline ETL per dati aperti
+# P010: Pipeline ETL per dati aperti
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P010/README.md) · [Registro del collaudo](../../COLLAUDO/P010/registro.json)
 
 Sperimenta una sequenza di estrazione, trasformazione e caricamento di dati.
 

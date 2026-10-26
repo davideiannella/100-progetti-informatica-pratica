@@ -1,4 +1,6 @@
-# P090 — Vibrazioni sintetiche: un segnale di attenzione manutentiva
+# P090: Vibrazioni sintetiche: un segnale di attenzione manutentiva
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P090/README.md) · [Registro del collaudo](../../COLLAUDO/P090/registro.json)
 
 Analizza vibrazioni generate dal programma per produrre segnali didattici di attenzione.
 

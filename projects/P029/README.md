@@ -1,4 +1,6 @@
-# P029 — Hotel booking senza overbooking
+# P029: Hotel booking senza overbooking
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P029/README.md) · [Registro del collaudo](../../COLLAUDO/P029/registro.json)
 
 Verifica prenotazioni alberghiere e vincoli contro l’overbooking.
 

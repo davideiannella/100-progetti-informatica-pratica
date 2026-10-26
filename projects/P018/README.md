@@ -1,4 +1,6 @@
-# P018 — Sincronizzare produttore e consumatore
+# P018: Sincronizzare produttore e consumatore
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P018/README.md) · [Registro del collaudo](../../COLLAUDO/P018/registro.json)
 
 Coordina un produttore e un consumatore con primitive pthread.
 

@@ -1,4 +1,6 @@
-# P045 — Pianificare subnet IPv4 per un campus
+# P045: Pianificare subnet IPv4 per un campus
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P045/README.md) · [Registro del collaudo](../../COLLAUDO/P045/registro.json)
 
 Convalida un piano di sottoreti IPv4 e ne stampa la configurazione didattica.
 

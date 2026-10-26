@@ -1,4 +1,6 @@
-# P061 — Capire se un servizio sta bene: log, metriche e alert
+# P061: Capire se un servizio sta bene: log, metriche e alert
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P061/README.md) · [Registro del collaudo](../../COLLAUDO/P061/registro.json)
 
 Aggrega richieste sintetiche in indicatori di disponibilità, latenza e allarme.
 

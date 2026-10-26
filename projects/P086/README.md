@@ -1,4 +1,6 @@
-# P086 — Monitoraggio ambientale: validare prima di calcolare
+# P086: Monitoraggio ambientale: validare prima di calcolare
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P086/README.md) · [Registro del collaudo](../../COLLAUDO/P086/registro.json)
 
 Convalida osservazioni ambientali sintetiche prima di calcolare gli indicatori.
 

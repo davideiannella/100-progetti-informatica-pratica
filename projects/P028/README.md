@@ -1,4 +1,6 @@
-# P028 — E-commerce: ordini, magazzino e pagamenti simulati
+# P028: E-commerce: ordini, magazzino e pagamenti simulati
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P028/README.md) · [Registro del collaudo](../../COLLAUDO/P028/registro.json)
 
 Sperimenta ordini, disponibilità di magazzino e pagamenti simulati in un database.
 

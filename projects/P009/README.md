@@ -1,4 +1,6 @@
-# P009 — Analisi socio-demografica con Pandas
+# P009: Analisi socio-demografica con Pandas
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P009/README.md) · [Registro del collaudo](../../COLLAUDO/P009/registro.json)
 
 Analizza tabelle socio-demografiche mediante pandas.
 

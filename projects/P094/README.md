@@ -1,4 +1,6 @@
-# P094 — Città sintetica: tre flussi locali, deduplicazione e indicatori
+# P094: Città sintetica: tre flussi locali, deduplicazione e indicatori
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P094/README.md) · [Registro del collaudo](../../COLLAUDO/P094/registro.json)
 
 Raccoglie tre flussi urbani sintetici e ne verifica deduplicazione e indicatori.
 

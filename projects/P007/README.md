@@ -1,4 +1,6 @@
-# P007 — Suggerimenti di testo con un Trie
+# P007: Suggerimenti di testo con un Trie
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P007/README.md) · [Registro del collaudo](../../COLLAUDO/P007/registro.json)
 
 Usa un Trie per trovare suggerimenti a partire da un prefisso.
 

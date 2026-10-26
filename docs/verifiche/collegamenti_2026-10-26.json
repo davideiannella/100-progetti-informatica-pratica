@@ -1,0 +1,221 @@
+{
+  "date": "2026-10-26",
+  "scope": "Riorganizzazione del repository e collegamenti di navigazione; nessuna nuova esecuzione dei laboratori.",
+  "relative_links_checked": 2122,
+  "relative_links_failed": 0,
+  "external_urls_checked": 23,
+  "external_urls_failed": 0,
+  "source_hashes_verified": 299,
+  "output_stream_hashes_verified": 470,
+  "project_manifests_verified": 100,
+  "test_results_and_log_bytes_changed": false,
+  "external_http_results": [
+    {
+      "url": "https://docs.docker.com/desktop/features/wsl/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/desktop/features/wsl/",
+      "content_type": "text/markdown",
+      "bytes": 5923,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:26.540151+00:00"
+    },
+    {
+      "url": "https://docs.python.org/3.12/library/venv.html",
+      "status": 200,
+      "final_url": "https://docs.python.org/3.12/library/venv.html",
+      "content_type": "text/html",
+      "bytes": 95177,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:25.062109+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39699184959",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39699184959",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 210391,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:26.064321+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 210394,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:26.190344+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280/job/119571736513",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280/job/119571736513",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 204770,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:26.149988+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280/job/119571736757",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280/job/119571736757",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 206804,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:30.241796+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280/job/119571736870",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280/job/119571736870",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 204770,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:30.013849+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280/job/119571737066",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39701559280/job/119571737066",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 206804,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:30.125810+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39847787696",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39847787696",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 228992,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:30.017767+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 226502,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:36.309800+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071206449",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071206449",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 204777,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:36.377742+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071206795",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071206795",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 212517,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:36.293945+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071206842",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071206842",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 202702,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:36.481827+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071206976",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071206976",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 202704,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:43.029782+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071207033",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701/job/120071207033",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 202828,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:42.979657+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39893701054",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39893701054",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 226004,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:43.089936+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p001-p080.yml",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p001-p080.yml",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 222220,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:43.070108+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p001-p080.yml/badge.svg?branch=main",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p001-p080.yml/badge.svg?branch=main",
+      "content_type": "image/svg+xml; charset=utf-8",
+      "bytes": 2438,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:49.059087+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p081-p100.yml",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p081-p100.yml",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 228874,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:49.210002+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p081-p100.yml/badge.svg?branch=main",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p081-p100.yml/badge.svg?branch=main",
+      "content_type": "image/svg+xml; charset=utf-8",
+      "bytes": 2390,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:49.042991+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/blob/3ab7bdfedb20a443bd71fe4e4ffe3c1dd67bd707/tools/collaudo_p081_p100.py",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/blob/3ab7bdfedb20a443bd71fe4e4ffe3c1dd67bd707/tools/collaudo_p081_p100.py",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 275086,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:49.393939+00:00"
+    },
+    {
+      "url": "https://github.com/davideiannella/100-progetti-informatica-pratica/commit/32e201b1fb1258c4e7c77d32af323b966647b908",
+      "status": 200,
+      "final_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/commit/32e201b1fb1258c4e7c77d32af323b966647b908",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 939007,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:56.390504+00:00"
+    },
+    {
+      "url": "https://learn.microsoft.com/it-it/windows/wsl/filesystems",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/it-it/windows/wsl/filesystems",
+      "content_type": "text/html",
+      "bytes": 61340,
+      "ok": true,
+      "verified_at": "2026-10-26T20:47:52.501786+00:00"
+    }
+  ]
+}

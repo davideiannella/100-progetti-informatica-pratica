@@ -1,4 +1,6 @@
-# P050 — Stimare gli access point di un magazzino
+# P050: Stimare gli access point di un magazzino
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P050/README.md) · [Registro del collaudo](../../COLLAUDO/P050/registro.json)
 
 Calcola una stima didattica degli access point necessari a un magazzino.
 

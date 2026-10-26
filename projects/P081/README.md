@@ -1,4 +1,6 @@
-# P081 — Prompt injection: annotare i documenti senza attribuire loro autorità
+# P081: Prompt injection: annotare i documenti senza attribuire loro autorità
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P081/README.md) · [Registro del collaudo](../../COLLAUDO/P081/registro.json)
 
 Annota contenuti documentali potenzialmente ostili senza trasformarli in istruzioni.
 

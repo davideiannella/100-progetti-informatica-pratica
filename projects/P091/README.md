@@ -1,4 +1,6 @@
-# P091 — Casa virtuale: stati fumo/acqua e notifiche simulate
+# P091: Casa virtuale: stati fumo/acqua e notifiche simulate
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P091/README.md) · [Registro del collaudo](../../COLLAUDO/P091/registro.json)
 
 Simula sensori e notifiche di una casa virtuale.
 

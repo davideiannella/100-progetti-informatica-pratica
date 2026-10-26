@@ -1,4 +1,6 @@
-# P012 — Ottimizzazione di consegne con programmazione dinamica
+# P012: Ottimizzazione di consegne con programmazione dinamica
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P012/README.md) · [Registro del collaudo](../../COLLAUDO/P012/registro.json)
 
 Applica la programmazione dinamica a un problema di consegne.
 

@@ -1,4 +1,6 @@
-# P041 — Motore di notifiche con il pattern Strategy
+# P041: Motore di notifiche con il pattern Strategy
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P041/README.md) · [Registro del collaudo](../../COLLAUDO/P041/registro.json)
 
 Seleziona strategie di notifica mediante un modello Java locale.
 

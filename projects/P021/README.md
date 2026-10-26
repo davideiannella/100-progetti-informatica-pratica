@@ -1,4 +1,6 @@
-# P021 — Simulare una coda di traffico
+# P021: Simulare una coda di traffico
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P021/README.md) · [Registro del collaudo](../../COLLAUDO/P021/registro.json)
 
 Simula il comportamento di una coda di traffico.
 

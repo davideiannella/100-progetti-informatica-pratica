@@ -1,4 +1,6 @@
-# P053 — Simulare FIFO, LRU e Clock per le pagine
+# P053: Simulare FIFO, LRU e Clock per le pagine
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P053/README.md) · [Registro del collaudo](../../COLLAUDO/P053/registro.json)
 
 Confronta FIFO, LRU e Clock nella sostituzione simulata delle pagine.
 

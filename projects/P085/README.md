@@ -1,4 +1,6 @@
-# P085 — Badge virtuali: autorizzazione per ruolo e audit delle richieste
+# P085: Badge virtuali: autorizzazione per ruolo e audit delle richieste
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P085/README.md) · [Registro del collaudo](../../COLLAUDO/P085/registro.json)
 
 Valuta autorizzazioni di badge virtuali e registra gli esiti delle richieste.
 

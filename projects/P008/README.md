@@ -1,4 +1,6 @@
-# P008 — Rilevatore di duplicati e quasi-duplicati
+# P008: Rilevatore di duplicati e quasi-duplicati
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P008/README.md) · [Registro del collaudo](../../COLLAUDO/P008/registro.json)
 
 Confronta record per individuare duplicazioni e somiglianze.
 

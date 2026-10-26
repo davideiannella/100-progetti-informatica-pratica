@@ -1,4 +1,6 @@
-# P036 — Progettare una palestra con UML
+# P036: Progettare una palestra con UML
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P036/README.md) · [Registro del collaudo](../../COLLAUDO/P036/registro.json)
 
 Esegue un modello a oggetti della gestione di una palestra.
 

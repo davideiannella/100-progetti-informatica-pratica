@@ -1,4 +1,6 @@
-# P064 — Difendere un’applicazione dalla SQL Injection
+# P064: Difendere un’applicazione dalla SQL Injection
+
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P064/README.md) · [Registro del collaudo](../../COLLAUDO/P064/registro.json)
 
 Cerca utenti in SQLite mantenendo separati istruzioni SQL e valori ricevuti.
 
