@@ -1,6 +1,6 @@
 # P080: Assistente con citazioni: retrieval ed estrazione, senza LLM
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P080/README.md) · [Registro del collaudo](../../COLLAUDO/P080/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P080/README.md) · [Registro del collaudo](../../collaudo/P080/registro.json)
 
 Recupera note locali con TF-IDF e restituisce estratti con identificativo della fonte.
 

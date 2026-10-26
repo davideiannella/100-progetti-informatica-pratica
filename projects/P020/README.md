@@ -1,6 +1,6 @@
 # P020: Memoria C++ con RAII e smart pointer
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P020/README.md) · [Registro del collaudo](../../COLLAUDO/P020/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P020/README.md) · [Registro del collaudo](../../collaudo/P020/registro.json)
 
 Sperimenta proprietà delle risorse e gestione della memoria con RAII e smart pointer.
 

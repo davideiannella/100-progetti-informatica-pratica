@@ -1,6 +1,6 @@
 # P015: Chat con client e server TCP
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P015/README.md) · [Registro del collaudo](../../COLLAUDO/P015/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P015/README.md) · [Registro del collaudo](../../collaudo/P015/registro.json)
 
 Prova comunicazioni TCP locali e chiusura del server mediante test di integrazione.
 

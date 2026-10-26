@@ -1,6 +1,6 @@
 # P046: VLAN e regole di accesso fra segmenti
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P046/README.md) · [Registro del collaudo](../../COLLAUDO/P046/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P046/README.md) · [Registro del collaudo](../../collaudo/P046/registro.json)
 
 Valuta segmentazione e regole di accesso con un modello locale.
 

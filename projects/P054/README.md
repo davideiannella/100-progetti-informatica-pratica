@@ -1,6 +1,6 @@
 # P054: Preparare una release riproducibile di un’API
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P054/README.md) · [Registro del collaudo](../../COLLAUDO/P054/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P054/README.md) · [Registro del collaudo](../../collaudo/P054/registro.json)
 
 Avvia un’API locale e costruisce un archivio di rilascio verificabile.
 

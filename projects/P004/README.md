@@ -1,6 +1,6 @@
 # P004: Scheduler di interventi con coda di priorità
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P004/README.md) · [Registro del collaudo](../../COLLAUDO/P004/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P004/README.md) · [Registro del collaudo](../../collaudo/P004/registro.json)
 
 Ordina interventi secondo una priorità esplicita.
 

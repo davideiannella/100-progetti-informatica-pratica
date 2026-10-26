@@ -1,6 +1,6 @@
 # P077: Leggere e smistare ticket automaticamente con NLP
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P077/README.md) · [Registro del collaudo](../../COLLAUDO/P077/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P077/README.md) · [Registro del collaudo](../../collaudo/P077/registro.json)
 
 Classifica ticket inventati e riconosce input completamente fuori vocabolario.
 

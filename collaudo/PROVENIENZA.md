@@ -114,7 +114,7 @@ import gzip
 import hashlib
 import json
 
-base = Path("COLLAUDO")
+base = Path("collaudo")
 manifest = json.loads((base / "PROVENIENZA_SANIFICAZIONE.json").read_text(encoding="utf-8"))
 for record in manifest["distribution_compression"]["archives"]:
     archive = base / record["file"]

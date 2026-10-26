@@ -1,6 +1,6 @@
 # P006: Pianificatore di percorsi su grafo
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P006/README.md) · [Registro del collaudo](../../COLLAUDO/P006/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P006/README.md) · [Registro del collaudo](../../collaudo/P006/registro.json)
 
 Calcola percorsi in un grafo e ne controlla i casi limite.
 

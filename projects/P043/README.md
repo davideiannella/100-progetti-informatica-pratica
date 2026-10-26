@@ -1,6 +1,6 @@
 # P043: Parcheggio software guidato dai test
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P043/README.md) · [Registro del collaudo](../../COLLAUDO/P043/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P043/README.md) · [Registro del collaudo](../../collaudo/P043/registro.json)
 
 Verifica le regole di un parcheggio software con test ordinari e casi limite.
 

@@ -45,7 +45,7 @@ I log nei due tentativi conservano comandi operativi, output, errori e codici di
 
 Gli ZIP originali, le parti e gli strumenti di ricomposizione non sono distribuiti nel repository. Gli originali completi restano nell’archivio personale. I digest ufficiali GitHub riguardano quei download originali; gli hash del manifest pubblico riguardano i derivati sanificati e non devono essere confrontati come se fossero lo stesso file. I registri download_verification conservano il riscontro originario dei digest e dei membri ZIP.
 
-Per verificare i log, dalla cartella `COLLAUDO/esecuzioni/2026-10-22-ubuntu`:
+Per verificare i log, dalla cartella `collaudo/esecuzioni/2026-10-22-ubuntu`:
 
 ```python
 import hashlib, json

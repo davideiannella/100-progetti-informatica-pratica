@@ -1,6 +1,6 @@
 # P063: Login sicuro: scrypt, TOTP, blocco dei tentativi e sessioni
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P063/README.md) · [Registro del collaudo](../../COLLAUDO/P063/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P063/README.md) · [Registro del collaudo](../../collaudo/P063/registro.json)
 
 Verifica password, codici TOTP, blocco dei tentativi e sessioni in un servizio locale.
 

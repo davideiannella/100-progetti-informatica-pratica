@@ -1,6 +1,6 @@
 # P048: Provare TCP e UDP con socket locali
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P048/README.md) · [Registro del collaudo](../../COLLAUDO/P048/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P048/README.md) · [Registro del collaudo](../../collaudo/P048/registro.json)
 
 Esegue scambi TCP e UDP su socket locali.
 

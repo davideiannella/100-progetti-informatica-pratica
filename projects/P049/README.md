@@ -1,6 +1,6 @@
 # P049: Trasferire file con frame e controllo di integrità
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P049/README.md) · [Registro del collaudo](../../COLLAUDO/P049/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P049/README.md) · [Registro del collaudo](../../collaudo/P049/registro.json)
 
 Verifica trasferimenti locali con frame e controllo dell’integrità.
 

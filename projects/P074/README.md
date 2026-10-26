@@ -1,6 +1,6 @@
 # P074: Classificazione del rischio di abbandono di un servizio
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P074/README.md) · [Registro del collaudo](../../COLLAUDO/P074/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P074/README.md) · [Registro del collaudo](../../collaudo/P074/registro.json)
 
 Valuta probabilità, soglie ed errori di un classificatore di abbandono sintetico.
 

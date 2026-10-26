@@ -1,6 +1,6 @@
 # P062: Ripartire dopo un guasto: replica e failover di lettura
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P062/README.md) · [Registro del collaudo](../../COLLAUDO/P062/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P062/README.md) · [Registro del collaudo](../../collaudo/P062/registro.json)
 
 Simula replica, ritardo e passaggio delle letture a una copia secondaria.
 

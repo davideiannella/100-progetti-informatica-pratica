@@ -1,6 +1,6 @@
 # P078: Computer Vision per classificare rifiuti: un laboratorio su palette sintetiche
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P078/README.md) · [Registro del collaudo](../../COLLAUDO/P078/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P078/README.md) · [Registro del collaudo](../../collaudo/P078/registro.json)
 
 Classifica palette RGB sintetiche e verifica i limiti della rappresentazione cromatica.
 

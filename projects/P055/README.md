@@ -1,6 +1,6 @@
 # P055: Collegare Web API e database con Compose
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P055/README.md) · [Registro del collaudo](../../COLLAUDO/P055/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P055/README.md) · [Registro del collaudo](../../collaudo/P055/registro.json)
 
 Affianca un esercizio SQLite locale a uno stack Web–API–PostgreSQL in container.
 

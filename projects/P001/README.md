@@ -1,6 +1,6 @@
 # P001: Gestione code in uno sportello servizi
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P001/README.md) · [Registro del collaudo](../../COLLAUDO/P001/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P001/README.md) · [Registro del collaudo](../../collaudo/P001/registro.json)
 
 Gestisce una coda di utenti e controlla l’ordine delle operazioni con test locali.
 

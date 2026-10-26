@@ -1,6 +1,6 @@
 # P038: Ticketing eventi: requisiti e diagrammi
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P038/README.md) · [Registro del collaudo](../../COLLAUDO/P038/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P038/README.md) · [Registro del collaudo](../../collaudo/P038/registro.json)
 
 Esegue un modello di biglietteria e verifica anche operazioni concorrenti.
 

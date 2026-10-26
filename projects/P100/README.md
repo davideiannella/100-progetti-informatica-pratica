@@ -1,6 +1,6 @@
 # P100: Capstone locale: metadati dei rifiuti, HMAC e SQLite
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P100/README.md) · [Registro del collaudo](../../COLLAUDO/P100/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P100/README.md) · [Registro del collaudo](../../collaudo/P100/registro.json)
 
 Integra metadati, autenticazione HMAC e SQLite in un’applicazione locale didattica.
 

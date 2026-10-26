@@ -1,6 +1,6 @@
 # Catalogo dei 100 progetti
 
-[Torna al README](../README.md) · [Preparare gli ambienti](AMBIENTI.md) · [Esiti e log](../COLLAUDO/README.md)
+[Torna al README](../README.md) · [Preparare gli ambienti](AMBIENTI.md) · [Esiti e log](../collaudo/README.md)
 
 I codici P001–P100 corrispondono ai laboratori del libro. Apri il titolo per requisiti, preparazione, avvio e test; il codice apre la cartella del progetto. La colonna ambiente è un orientamento: pacchetti, versioni documentate e limiti sono nel README collegato.
 

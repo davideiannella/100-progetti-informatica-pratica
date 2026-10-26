@@ -1,6 +1,6 @@
 # Strumenti di collaudo
 
-[Pagina principale](../README.md) · [Risultati P001–P100](../COLLAUDO/README.md)
+[Pagina principale](../README.md) · [Risultati P001–P100](../collaudo/README.md)
 
 Questi strumenti coordinano le verifiche automatiche. Per provare un singolo laboratorio, segui prima il README nella sua cartella `projects/Pnnn`.
 

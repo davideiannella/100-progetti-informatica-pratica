@@ -1,6 +1,6 @@
 # P070: Ransomware: integrità del backup e risposta all’incidente
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P070/README.md) · [Registro del collaudo](../../COLLAUDO/P070/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P070/README.md) · [Registro del collaudo](../../collaudo/P070/registro.json)
 
 Verifica byte di backup e transizioni dichiarate di un’esercitazione sugli incidenti.
 

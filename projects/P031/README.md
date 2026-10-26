@@ -1,6 +1,6 @@
 # P031: Salvare telemetria IoT in MongoDB
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P031/README.md) · [Registro del collaudo](../../COLLAUDO/P031/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P031/README.md) · [Registro del collaudo](../../collaudo/P031/registro.json)
 
 Confronta un modello Python di telemetria con esempi MongoDB separati.
 
@@ -62,7 +62,7 @@ Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test in
 
 Collaudo storico su Linux: le suite disponibili e i casi aggiuntivi risultano superati. Il riepilogo del gruppo P001–P040 non riporta una data puntuale; questi risultati non sono stati rieseguiti per preparare il README. Le prove del modello Python e quelle del motore di database sono evidenze separate.
 
-Nel [collaudo automatizzato del 22 ottobre 2026](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701), il runner ha eseguito lo script originale `mongo/telemetry_examples.js` tramite `mongosh` su MongoDB 8.0.14, avviato in un container Docker. Tutte le 12 asserzioni sul database reale sono risultate superate: verificano la versione del motore, l’inserimento, i tipi BSON, l’indice composto e i risultati della query con filtro per dispositivo, ordinamento temporale e limite. Le due suite Python sono state eseguite separatamente. Le evidenze sono nel [registro P031](../../COLLAUDO/P031/registro.json) e nell’[output della prova sul motore](../../COLLAUDO/P031/streams/003_step_3.stdout.txt); la procedura è nella funzione `engine_suite` del [runner](../../tools/ci_p001_p040/runner.py).
+Nel [collaudo automatizzato del 22 ottobre 2026](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701), il runner ha eseguito lo script originale `mongo/telemetry_examples.js` tramite `mongosh` su MongoDB 8.0.14, avviato in un container Docker. Tutte le 12 asserzioni sul database reale sono risultate superate: verificano la versione del motore, l’inserimento, i tipi BSON, l’indice composto e i risultati della query con filtro per dispositivo, ordinamento temporale e limite. Le due suite Python sono state eseguite separatamente. Le evidenze sono nel [registro P031](../../collaudo/P031/registro.json) e nell’[output della prova sul motore](../../collaudo/P031/streams/003_step_3.stdout.txt); la procedura è nella funzione `engine_suite` del [runner](../../tools/ci_p001_p040/runner.py).
 
 La dicitura storica `MongoDB script STATIC QA` nell’output di `test_p031.py` non attesta l’esecuzione dello script: l’esecuzione su MongoDB è documentata separatamente come `engine_suite` nel registro.
 

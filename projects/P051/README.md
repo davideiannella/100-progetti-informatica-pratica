@@ -1,6 +1,6 @@
 # P051: Confrontare FCFS, SJF e Round Robin
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P051/README.md) · [Registro del collaudo](../../COLLAUDO/P051/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P051/README.md) · [Registro del collaudo](../../collaudo/P051/registro.json)
 
 Confronta algoritmi di scheduling su carichi simulati.
 

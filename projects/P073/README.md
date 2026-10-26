@@ -1,6 +1,6 @@
 # P073: Previsione dei consumi energetici
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P073/README.md) · [Registro del collaudo](../../COLLAUDO/P073/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P073/README.md) · [Registro del collaudo](../../collaudo/P073/registro.json)
 
 Confronta una regressione su consumi sintetici con riferimenti semplici.
 

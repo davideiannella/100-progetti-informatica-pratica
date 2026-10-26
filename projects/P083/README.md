@@ -1,6 +1,6 @@
 # P083: Telemetria IoT locale: coda, pub/sub e collector in memoria
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P083/README.md) · [Registro del collaudo](../../COLLAUDO/P083/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P083/README.md) · [Registro del collaudo](../../collaudo/P083/registro.json)
 
 Simula telemetria, pubblicazione e raccolta di eventi interamente in memoria.
 

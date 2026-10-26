@@ -1,6 +1,6 @@
 # P025: Sistema di prenotazioni sanitarie
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P025/README.md) · [Registro del collaudo](../../COLLAUDO/P025/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P025/README.md) · [Registro del collaudo](../../collaudo/P025/registro.json)
 
 Sperimenta vincoli e operazioni di un database didattico di prenotazioni sanitarie.
 

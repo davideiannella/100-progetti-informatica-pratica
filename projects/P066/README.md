@@ -1,6 +1,6 @@
 # P066: Proteggere un’API: token firmati, ruoli e limite delle richieste
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P066/README.md) · [Registro del collaudo](../../COLLAUDO/P066/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P066/README.md) · [Registro del collaudo](../../collaudo/P066/registro.json)
 
 Combina verifica dei token, autorizzazione per ruolo e limiti delle richieste.
 

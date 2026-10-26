@@ -1,6 +1,6 @@
 # P032: Grafo di mobilità urbana
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P032/README.md) · [Registro del collaudo](../../COLLAUDO/P032/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P032/README.md) · [Registro del collaudo](../../collaudo/P032/registro.json)
 
 Rappresenta collegamenti di mobilità in Python e include un esempio Cypher separato.
 

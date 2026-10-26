@@ -1,6 +1,6 @@
 # P076: Consigliare corsi in base agli interessi: recommender system
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P076/README.md) · [Registro del collaudo](../../COLLAUDO/P076/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P076/README.md) · [Registro del collaudo](../../collaudo/P076/registro.json)
 
 Ordina corsi per similarità coseno fra vettori assegnati manualmente.
 

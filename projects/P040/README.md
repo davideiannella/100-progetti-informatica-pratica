@@ -1,6 +1,6 @@
 # P040: Segnalazioni civiche con Clean Architecture
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P040/README.md) · [Registro del collaudo](../../COLLAUDO/P040/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P040/README.md) · [Registro del collaudo](../../collaudo/P040/registro.json)
 
 Verifica i casi d’uso di segnalazioni civiche in una libreria .NET.
 

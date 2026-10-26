@@ -1,6 +1,6 @@
 # P087: Contatore virtuale: dalla potenza all’energia
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P087/README.md) · [Registro del collaudo](../../COLLAUDO/P087/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P087/README.md) · [Registro del collaudo](../../collaudo/P087/registro.json)
 
 Trasforma campioni virtuali di potenza in una stima dell’energia.
 

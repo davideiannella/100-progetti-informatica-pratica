@@ -1,6 +1,6 @@
 # P023: API .NET per attività concorrenti
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P023/README.md) · [Registro del collaudo](../../COLLAUDO/P023/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P023/README.md) · [Registro del collaudo](../../collaudo/P023/registro.json)
 
 Espone un’API .NET locale e verifica richieste HTTP concorrenti.
 

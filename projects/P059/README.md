@@ -1,6 +1,6 @@
 # P059: Modellare cache e bilanciamento fra backend sani
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P059/README.md) · [Registro del collaudo](../../COLLAUDO/P059/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P059/README.md) · [Registro del collaudo](../../collaudo/P059/registro.json)
 
 Modella cache e scelta dei backend disponibili senza contattare servizi esterni.
 

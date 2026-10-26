@@ -1,6 +1,6 @@
 # P044: Conservare versioni immutabili dei documenti
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P044/README.md) · [Registro del collaudo](../../COLLAUDO/P044/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P044/README.md) · [Registro del collaudo](../../collaudo/P044/registro.json)
 
 Conserva e confronta versioni di documenti nel modello Java.
 

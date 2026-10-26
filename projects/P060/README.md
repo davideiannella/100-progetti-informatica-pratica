@@ -1,6 +1,6 @@
 # P060: Pipeline CI con test e integrità della release
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P060/README.md) · [Registro del collaudo](../../COLLAUDO/P060/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P060/README.md) · [Registro del collaudo](../../collaudo/P060/registro.json)
 
 Esegue test e costruisce una release locale; include un esempio di workflow CI.
 

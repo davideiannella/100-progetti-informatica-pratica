@@ -1,6 +1,6 @@
 # P005: Cache LRU con accesso in tempo costante
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P005/README.md) · [Registro del collaudo](../../COLLAUDO/P005/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P005/README.md) · [Registro del collaudo](../../collaudo/P005/registro.json)
 
 Realizza una cache LRU e verifica aggiornamenti ed espulsione degli elementi.
 

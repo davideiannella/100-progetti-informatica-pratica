@@ -1,6 +1,6 @@
 # P089: Rifiuti disegnati: una pipeline di visione sintetica
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P089/README.md) · [Registro del collaudo](../../COLLAUDO/P089/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P089/README.md) · [Registro del collaudo](../../collaudo/P089/registro.json)
 
 Classifica rappresentazioni sintetiche di rifiuti senza usare fotografie di materiali reali.
 

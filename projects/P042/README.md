@@ -1,6 +1,6 @@
 # P042: Pagamenti simulati con idempotenza
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P042/README.md) · [Registro del collaudo](../../COLLAUDO/P042/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P042/README.md) · [Registro del collaudo](../../collaudo/P042/registro.json)
 
 Controlla idempotenza, conflitti e richieste concorrenti in pagamenti simulati.
 

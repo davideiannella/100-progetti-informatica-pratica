@@ -1,6 +1,6 @@
 # Preparare l’ambiente di esecuzione
 
-[Torna al README](../README.md) · [Catalogo dei progetti](CATALOGO.md) · [Esiti e log](../COLLAUDO/README.md)
+[Torna al README](../README.md) · [Catalogo dei progetti](CATALOGO.md) · [Esiti e log](../collaudo/README.md)
 
 Parti dal README del laboratorio scelto. I suoi comandi si eseguono dalla cartella `projects/Pnnn`, salvo indicazione diversa; i comandi aggregati in questa pagina si eseguono invece dalla **radice del repository**. Non occorre installare tutti i linguaggi e tutti i servizi per svolgere un singolo progetto.
 
@@ -105,7 +105,7 @@ Le versioni correttive riportate nei README e nei log identificano esecuzioni do
 
 Per una prova condivisibile annota commit, progetto, sistema operativo, versione degli strumenti, comando e risultato. Se usi Git, `git rev-parse HEAD` mostra il commit e `git status --short` indica eventuali modifiche locali. Conserva l’output completo, rimuovendo credenziali e dati personali prima di condividerlo.
 
-Il [workflow P001–P080](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p001-p080.yml) usa Ubuntu e strumenti diversi per gruppo. Il [workflow P081–P100](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p081-p100.yml) usa quattro combinazioni di sistema e Python. Leggi i job e i registri della singola esecuzione: un risultato vale per quel commit, quei casi e quell’ambiente. I dettagli delle prove storiche e dei runtime reali sono nella cartella [collaudi](../COLLAUDO/README.md).
+Il [workflow P001–P080](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p001-p080.yml) usa Ubuntu e strumenti diversi per gruppo. Il [workflow P081–P100](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p081-p100.yml) usa quattro combinazioni di sistema e Python. Leggi i job e i registri della singola esecuzione: un risultato vale per quel commit, quei casi e quell’ambiente. I dettagli delle prove storiche e dei runtime reali sono nella cartella [collaudi](../collaudo/README.md).
 
 ## Documentazione ufficiale
 

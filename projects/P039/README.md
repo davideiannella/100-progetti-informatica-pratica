@@ -1,6 +1,6 @@
 # P039: Food delivery e confini tra servizi
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P039/README.md) · [Registro del collaudo](../../COLLAUDO/P039/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P039/README.md) · [Registro del collaudo](../../collaudo/P039/registro.json)
 
 Modella ordini di consegna e separazione delle responsabilità applicative.
 

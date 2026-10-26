@@ -1,6 +1,6 @@
 # P003: Rubrica con ricerca e ordinamento
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P003/README.md) · [Registro del collaudo](../../COLLAUDO/P003/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P003/README.md) · [Registro del collaudo](../../collaudo/P003/registro.json)
 
 Organizza contatti e confronta operazioni di ricerca e ordinamento.
 

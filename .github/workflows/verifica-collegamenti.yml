@@ -5,13 +5,13 @@ on:
     branches: [main]
     paths:
       - '**.md'
-      - 'COLLAUDO/**'
+      - 'collaudo/**'
       - 'tools/check_links.py'
       - '.github/workflows/verifica-collegamenti.yml'
   pull_request:
     paths:
       - '**.md'
-      - 'COLLAUDO/**'
+      - 'collaudo/**'
       - 'tools/check_links.py'
       - '.github/workflows/verifica-collegamenti.yml'
   workflow_dispatch:

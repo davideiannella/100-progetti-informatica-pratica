@@ -1,6 +1,6 @@
 # P056: Tre repliche e controlli di salute in Kubernetes
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P056/README.md) · [Registro del collaudo](../../COLLAUDO/P056/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P056/README.md) · [Registro del collaudo](../../collaudo/P056/registro.json)
 
 Affianca un server HTTP minimale a un deployment Kubernetes con tre repliche.
 

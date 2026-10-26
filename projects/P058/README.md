@@ -1,6 +1,6 @@
 # P058: Creare backup e ripristinare senza perdere il target
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P058/README.md) · [Registro del collaudo](../../COLLAUDO/P058/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P058/README.md) · [Registro del collaudo](../../collaudo/P058/registro.json)
 
 Crea e verifica backup, controllando che un errore non distrugga la destinazione.
 

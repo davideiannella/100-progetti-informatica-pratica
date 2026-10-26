@@ -1,6 +1,6 @@
 # P026: Carriera universitaria ed esami
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P026/README.md) · [Registro del collaudo](../../COLLAUDO/P026/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P026/README.md) · [Registro del collaudo](../../collaudo/P026/registro.json)
 
 Modella una carriera universitaria e controlla i vincoli sugli esami.
 

@@ -1,6 +1,6 @@
 # P017: Buffer circolare: gestire dati continui con memoria fissa
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P017/README.md) · [Registro del collaudo](../../COLLAUDO/P017/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P017/README.md) · [Registro del collaudo](../../collaudo/P017/registro.json)
 
 Implementa un buffer circolare con capacità fissa e ne verifica le operazioni.
 

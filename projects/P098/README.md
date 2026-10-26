@@ -1,6 +1,6 @@
 # P098: Monitoraggio intermittente: FIFO in memoria, ACK e retry
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P098/README.md) · [Registro del collaudo](../../COLLAUDO/P098/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P098/README.md) · [Registro del collaudo](../../collaudo/P098/registro.json)
 
 Simula invii intermittenti con coda FIFO, conferme e tentativi successivi.
 

@@ -1,6 +1,6 @@
 # P035: Ruoli e auditing nel database
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P035/README.md) · [Registro del collaudo](../../COLLAUDO/P035/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P035/README.md) · [Registro del collaudo](../../collaudo/P035/registro.json)
 
 Sperimenta ruoli applicativi e registrazione delle operazioni in un database locale.
 

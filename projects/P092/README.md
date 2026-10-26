@@ -1,6 +1,6 @@
 # P092: Aggiornamenti IoT virtuali autenticati con HMAC e rollback in memoria
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P092/README.md) · [Registro del collaudo](../../COLLAUDO/P092/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P092/README.md) · [Registro del collaudo](../../collaudo/P092/registro.json)
 
 Verifica aggiornamenti IoT virtuali con HMAC e ripristino dello stato in memoria.
 

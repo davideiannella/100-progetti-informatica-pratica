@@ -1,6 +1,6 @@
 # P033: Analisi delle vendite con uno schema a stella
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P033/README.md) · [Registro del collaudo](../../COLLAUDO/P033/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P033/README.md) · [Registro del collaudo](../../collaudo/P033/registro.json)
 
 Esamina vendite mediante un database con schema a stella.
 

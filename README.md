@@ -21,27 +21,27 @@ Alcuni progetti espongono solo funzioni e classi: il loro punto di ingresso eseg
 
 ## Dove trovare i materiali
 
-La cartella **COLLAUDO** raccoglie tutti i progetti P001–P100. Per orientarti consulta la [guida alla struttura](docs/STRUTTURA.md).
+La cartella **collaudo** raccoglie tutti i progetti P001–P100. Per orientarti consulta la [guida alla struttura](docs/STRUTTURA.md).
 
 | Percorso | Contenuto |
 |---|---|
 | [projects](projects/README.md) | Cento cartelle autonome, da `P001` a `P100`, con README, sorgenti e test |
 | [Catalogo](docs/CATALOGO.md) | Titoli, linguaggi e collegamenti ai singoli laboratori |
 | [Ambienti](docs/AMBIENTI.md) | Interpreti, compilatori, dipendenze e differenze fra sistemi |
-| [COLLAUDO](COLLAUDO/README.md) | Esiti, log, versioni, provenienza e limiti delle prove |
+| [collaudo](collaudo/README.md) | Esiti, log, versioni, provenienza e limiti delle prove |
 | [tools](tools/README.md) | Script che coordinano i collaudi del repository |
 | [SOURCE_SHA256.json](SOURCE_SHA256.json) | Impronte dei file sorgenti per controllarne l’integrità |
 
 ## Verifiche automatiche
 
-Gli [output dei collaudi per tutti i 100 progetti](COLLAUDO/README.md) riportano i comandi, gli esiti e i testi effettivamente acquisiti. Per i test `unittest`, il normale resoconto con i nomi dei test si trova nel canale stderr.
+Gli [output dei collaudi per tutti i 100 progetti](collaudo/README.md) riportano i comandi, gli esiti e i testi effettivamente acquisiti. Per i test `unittest`, il normale resoconto con i nomi dei test si trova nel canale stderr.
 
 | Workflow | Ambiente e perimetro |
 |---|---|
 | [P001–P080](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p001-p080.yml) | Ubuntu; strumenti e servizi distinti per gruppo di progetti |
 | [P081–P100](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p081-p100.yml) | Ubuntu e Windows, ciascuno con Python 3.12 e 3.13 |
 
-I badge mostrano lo stato del workflow. Per verificare una versione, apri il relativo run e controlla **commit, job e log**. La matrice P081–P100 ripete gli stessi 377 test distinti in quattro ambienti. Le prove Ubuntu di P001–P080 non attestano una verifica nativa Windows; simulazioni e dati sintetici restano entro il perimetro descritto nei README e nei [registri](COLLAUDO/PROVENIENZA.md).
+I badge mostrano lo stato del workflow. Per verificare una versione, apri il relativo run e controlla **commit, job e log**. La matrice P081–P100 ripete gli stessi 377 test distinti in quattro ambienti. Le prove Ubuntu di P001–P080 non attestano una verifica nativa Windows; simulazioni e dati sintetici restano entro il perimetro descritto nei README e nei [registri](collaudo/PROVENIENZA.md).
 
 ## Versioni e segnalazioni
 

@@ -1,6 +1,6 @@
 # P072: Mini-SOC: trasformare log sintetici in alert verificabili
 
-[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../COLLAUDO/P072/README.md) · [Registro del collaudo](../../COLLAUDO/P072/registro.json)
+[Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P072/README.md) · [Registro del collaudo](../../collaudo/P072/registro.json)
 
 Analizza e correla log sintetici per produrre avvisi spiegabili.
 
