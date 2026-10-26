@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P034/README.md) · [Registro del collaudo](../../collaudo/P034/registro.json)
 
+**Sezione:** [Sezione 2: Database e gestione dei dati](../../docs/CATALOGO.md#sezione-2-database-e-gestione-dei-dati).
+
+**Argomenti:** Integrazione dei dati · Confronto di record · Deduplicazione.
+
 Confronta record provenienti da archivi distinti.
 
 Tutti i comandi partono dalla cartella `projects/P034`. I blocchi seguenti usano la sintassi di Linux/Bash.

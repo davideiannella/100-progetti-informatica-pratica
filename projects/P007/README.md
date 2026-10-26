@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P007/README.md) · [Registro del collaudo](../../collaudo/P007/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Strutture dati · Ricerca nel testo.
+
 Usa un Trie per trovare suggerimenti a partire da un prefisso.
 
 Tutti i comandi partono dalla cartella `projects/P007`. I blocchi seguenti usano la sintassi di Linux/Bash.

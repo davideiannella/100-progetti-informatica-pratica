@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P038/README.md) · [Registro del collaudo](../../collaudo/P038/registro.json)
 
+**Sezione:** [Sezione 3: Ingegneria e progettazione del software](../../docs/CATALOGO.md#sezione-3-ingegneria-e-progettazione-del-software).
+
+**Argomenti:** Analisi dei requisiti · UML · Concorrenza.
+
 Esegue un modello di biglietteria e verifica anche operazioni concorrenti.
 
 Tutti i comandi partono dalla cartella `projects/P038`. I blocchi seguenti usano la sintassi di Linux/Bash.

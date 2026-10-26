@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P094/README.md) · [Registro del collaudo](../../collaudo/P094/registro.json)
 
+**Sezione:** [Sezione 9: IoT e simulazione di sistemi](../../docs/CATALOGO.md#sezione-9-iot-e-simulazione-di-sistemi).
+
+**Argomenti:** IoT simulato · Integrazione dei dati · Deduplicazione.
+
 Raccoglie tre flussi urbani sintetici e ne verifica deduplicazione e indicatori.
 
 Tutti i comandi partono dalla cartella `projects/P094`. I blocchi seguenti usano la sintassi di Linux/Bash.

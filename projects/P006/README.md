@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P006/README.md) · [Registro del collaudo](../../collaudo/P006/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Grafi · Ricerca di percorsi.
+
 Calcola percorsi in un grafo e ne controlla i casi limite.
 
 Tutti i comandi partono dalla cartella `projects/P006`. I blocchi seguenti usano la sintassi di Linux/Bash.

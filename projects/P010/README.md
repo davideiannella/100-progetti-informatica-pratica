@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P010/README.md) · [Registro del collaudo](../../collaudo/P010/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Integrazione dei dati · Database · Validazione.
+
 Sperimenta una sequenza di estrazione, trasformazione e caricamento di dati.
 
 Tutti i comandi partono dalla cartella `projects/P010`. I blocchi seguenti usano la sintassi di Linux/Bash.

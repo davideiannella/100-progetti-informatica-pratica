@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P022/README.md) · [Registro del collaudo](../../collaudo/P022/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Programmazione a oggetti · Software gestionale · Test.
+
 Modella manutenzioni e ordini di lavoro con un programma .NET locale.
 
 Tutti i comandi partono dalla cartella `projects/P022`. I blocchi seguenti usano la sintassi di Linux/Bash.

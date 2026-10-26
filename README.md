@@ -3,7 +3,26 @@
 [![P001–P080 su Ubuntu](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p001-p080.yml/badge.svg?branch=main)](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p001-p080.yml)
 [![P081–P100 su Linux e Windows](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p081-p100.yml/badge.svg?branch=main)](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p081-p100.yml)
 
-Codice, test e istruzioni dei cento laboratori del libro di **Davide Iannella**. Per studenti, autodidatti con basi di programmazione e professionisti junior: programmazione, dati, reti, sistemi, sicurezza e intelligenza artificiale, con modelli ed esempi locali riproducibili.
+Codice, test e istruzioni dei cento laboratori del libro di **Davide Iannella**. Per studenti, autodidatti con basi di programmazione e professionisti junior: algoritmi, dati, progettazione del software, reti, sistemi operativi, cloud, sicurezza, intelligenza artificiale e IoT, con modelli ed esempi locali riproducibili.
+
+## Scegli una sezione
+
+I progetti seguono le stesse **dieci sezioni tematiche del libro**. Puoi procedere nell’ordine proposto oppure scegliere l’argomento che ti interessa. Il [catalogo completo](docs/CATALOGO.md) riporta ambiente e argomenti di ogni progetto; nei README trovi anche le combinazioni fra più discipline.
+
+| Sezione | Progetti | Argomento principale |
+|---|---|---|
+| 1 | P001–P023 | [Programmazione, algoritmi e strutture dati](docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati) |
+| 2 | P024–P035 | [Database e gestione dei dati](docs/CATALOGO.md#sezione-2-database-e-gestione-dei-dati) |
+| 3 | P036–P044 | [Ingegneria e progettazione del software](docs/CATALOGO.md#sezione-3-ingegneria-e-progettazione-del-software) |
+| 4 | P045–P050 | [Reti di calcolatori](docs/CATALOGO.md#sezione-4-reti-di-calcolatori) |
+| 5 | P051–P053 | [Sistemi operativi](docs/CATALOGO.md#sezione-5-sistemi-operativi) |
+| 6 | P054–P062 | [Cloud e affidabilità dei servizi](docs/CATALOGO.md#sezione-6-cloud-e-affidabilità-dei-servizi) |
+| 7 | P063–P072 | [Sicurezza informatica](docs/CATALOGO.md#sezione-7-sicurezza-informatica) |
+| 8 | P073–P082 | [Intelligenza artificiale e analisi dei dati](docs/CATALOGO.md#sezione-8-intelligenza-artificiale-e-analisi-dei-dati) |
+| 9 | P083–P094 | [IoT e simulazione di sistemi](docs/CATALOGO.md#sezione-9-iot-e-simulazione-di-sistemi) |
+| 10 | P095–P100 | [Progetti integrati](docs/CATALOGO.md#sezione-10-progetti-integrati) |
+
+La sezione Cloud comprende container, rilascio e affidabilità dei servizi; diversi laboratori usano modelli locali. La sezione IoT comprende simulazioni e dati sintetici. Ogni progetto descrive il proprio perimetro e le eventuali estensioni.
 
 ## Iniziare
 
@@ -21,12 +40,12 @@ Alcuni progetti espongono solo funzioni e classi: il loro punto di ingresso eseg
 
 ## Dove trovare i materiali
 
-La cartella **collaudo** raccoglie tutti i progetti P001–P100. Per orientarti consulta la [guida alla struttura](docs/STRUTTURA.md).
+La cartella **projects** contiene i sorgenti; **collaudo** raccoglie i risultati documentati di P001–P100. Per orientarti consulta la [guida alla struttura](docs/STRUTTURA.md).
 
 | Percorso | Contenuto |
 |---|---|
 | [projects](projects/README.md) | Cento cartelle autonome, da `P001` a `P100`, con README, sorgenti e test |
-| [Catalogo](docs/CATALOGO.md) | Titoli, linguaggi e collegamenti ai singoli laboratori |
+| [Catalogo](docs/CATALOGO.md) | Dieci sezioni, argomenti, ambienti e collegamenti ai singoli laboratori |
 | [Ambienti](docs/AMBIENTI.md) | Interpreti, compilatori, dipendenze e differenze fra sistemi |
 | [collaudo](collaudo/README.md) | Esiti, log, versioni, provenienza e limiti delle prove |
 | [tools](tools/README.md) | Script che coordinano i collaudi del repository |

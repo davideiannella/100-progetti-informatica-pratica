@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P052/README.md) · [Registro del collaudo](../../collaudo/P052/registro.json)
 
+**Sezione:** [Sezione 5: Sistemi operativi](../../docs/CATALOGO.md#sezione-5-sistemi-operativi).
+
+**Argomenti:** Sistemi operativi · Allocazione delle risorse · Verifica degli stati sicuri.
+
 Verifica la sicurezza di assegnazioni di risorse con l’algoritmo del banchiere.
 
 Tutti i comandi partono dalla cartella `projects/P052`. I blocchi seguenti usano la sintassi di Linux/Bash.

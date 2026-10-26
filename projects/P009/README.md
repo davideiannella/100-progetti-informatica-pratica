@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P009/README.md) · [Registro del collaudo](../../collaudo/P009/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Analisi dei dati · Statistica descrittiva.
+
 Analizza tabelle socio-demografiche mediante pandas.
 
 Tutti i comandi partono dalla cartella `projects/P009`. I blocchi seguenti usano la sintassi di Linux/Bash.

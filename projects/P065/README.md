@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P065/README.md) · [Registro del collaudo](../../collaudo/P065/registro.json)
 
+**Sezione:** [Sezione 7: Sicurezza informatica](../../docs/CATALOGO.md#sezione-7-sicurezza-informatica).
+
+**Argomenti:** Sicurezza web · XSS · CSRF.
+
 Verifica codifica HTML e token di sessione con chiamate Python locali.
 
 Tutti i comandi partono dalla cartella `projects/P065`. I blocchi seguenti usano la sintassi di Linux/Bash.

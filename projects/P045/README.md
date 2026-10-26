@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P045/README.md) · [Registro del collaudo](../../collaudo/P045/registro.json)
 
+**Sezione:** [Sezione 4: Reti di calcolatori](../../docs/CATALOGO.md#sezione-4-reti-di-calcolatori).
+
+**Argomenti:** Reti · Indirizzamento IPv4 · Progettazione di sottoreti.
+
 Convalida un piano di sottoreti IPv4 e ne stampa la configurazione didattica.
 
 Tutti i comandi partono dalla cartella `projects/P045`. I blocchi seguenti usano la sintassi di Linux/Bash.

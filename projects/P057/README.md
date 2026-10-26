@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P057/README.md) · [Registro del collaudo](../../collaudo/P057/registro.json)
 
+**Sezione:** [Sezione 6: Cloud e affidabilità dei servizi](../../docs/CATALOGO.md#sezione-6-cloud-e-affidabilità-dei-servizi).
+
+**Argomenti:** Elaborazione delle immagini · Validazione · Integrità dei dati.
+
 Valida immagini e metadati con una funzione locale e dati creati dai test.
 
 Tutti i comandi partono dalla cartella `projects/P057`. I blocchi seguenti usano la sintassi di Linux/Bash.

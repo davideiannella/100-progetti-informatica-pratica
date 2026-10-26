@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P070/README.md) · [Registro del collaudo](../../collaudo/P070/registro.json)
 
+**Sezione:** [Sezione 7: Sicurezza informatica](../../docs/CATALOGO.md#sezione-7-sicurezza-informatica).
+
+**Argomenti:** Sicurezza · Backup · Risposta agli incidenti.
+
 Verifica byte di backup e transizioni dichiarate di un’esercitazione sugli incidenti.
 
 Tutti i comandi partono dalla cartella `projects/P070`. I blocchi seguenti usano la sintassi di Linux/Bash.

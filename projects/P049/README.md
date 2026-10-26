@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P049/README.md) · [Registro del collaudo](../../collaudo/P049/registro.json)
 
+**Sezione:** [Sezione 4: Reti di calcolatori](../../docs/CATALOGO.md#sezione-4-reti-di-calcolatori).
+
+**Argomenti:** Reti · Protocolli · Integrità dei dati.
+
 Verifica trasferimenti locali con frame e controllo dell’integrità.
 
 Tutti i comandi partono dalla cartella `projects/P049`. I blocchi seguenti usano la sintassi di Linux/Bash.

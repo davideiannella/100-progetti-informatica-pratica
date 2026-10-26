@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P080/README.md) · [Registro del collaudo](../../collaudo/P080/registro.json)
 
+**Sezione:** [Sezione 8: Intelligenza artificiale e analisi dei dati](../../docs/CATALOGO.md#sezione-8-intelligenza-artificiale-e-analisi-dei-dati).
+
+**Argomenti:** Ricerca nei testi · Recupero di informazioni · Citazioni delle fonti.
+
 Recupera note locali con TF-IDF e restituisce estratti con identificativo della fonte.
 
 Tutti i comandi partono dalla cartella `projects/P080`. I blocchi seguenti usano la sintassi di Linux/Bash.

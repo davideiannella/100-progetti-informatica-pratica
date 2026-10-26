@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P088/README.md) · [Registro del collaudo](../../collaudo/P088/registro.json)
 
+**Sezione:** [Sezione 9: IoT e simulazione di sistemi](../../docs/CATALOGO.md#sezione-9-iot-e-simulazione-di-sistemi).
+
+**Argomenti:** IoT simulato · Gestione degli eventi · Idempotenza.
+
 Aggiorna l’occupazione di un parcheggio virtuale gestendo eventi ripetuti.
 
 Tutti i comandi partono dalla cartella `projects/P088`. I blocchi seguenti usano la sintassi di Linux/Bash.

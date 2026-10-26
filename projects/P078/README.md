@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P078/README.md) · [Registro del collaudo](../../collaudo/P078/registro.json)
 
+**Sezione:** [Sezione 8: Intelligenza artificiale e analisi dei dati](../../docs/CATALOGO.md#sezione-8-intelligenza-artificiale-e-analisi-dei-dati).
+
+**Argomenti:** Intelligenza artificiale · Visione artificiale · Immagini sintetiche.
+
 Classifica palette RGB sintetiche e verifica i limiti della rappresentazione cromatica.
 
 Tutti i comandi partono dalla cartella `projects/P078`. I blocchi seguenti usano la sintassi di Linux/Bash.

@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P029/README.md) · [Registro del collaudo](../../collaudo/P029/registro.json)
 
+**Sezione:** [Sezione 2: Database e gestione dei dati](../../docs/CATALOGO.md#sezione-2-database-e-gestione-dei-dati).
+
+**Argomenti:** Database · Transazioni · Gestione delle prenotazioni.
+
 Verifica prenotazioni alberghiere e vincoli contro l’overbooking.
 
 Tutti i comandi partono dalla cartella `projects/P029`. I blocchi seguenti usano la sintassi di Linux/Bash.

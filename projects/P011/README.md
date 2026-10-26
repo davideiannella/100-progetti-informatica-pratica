@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P011/README.md) · [Registro del collaudo](../../collaudo/P011/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Elaborazione del testo · Analisi dei log.
+
 Estrae informazioni da log con espressioni regolari.
 
 Tutti i comandi partono dalla cartella `projects/P011`. I blocchi seguenti usano la sintassi di Linux/Bash.

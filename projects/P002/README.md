@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P002/README.md) · [Registro del collaudo](../../collaudo/P002/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Analisi dei dati · File CSV.
+
 Elabora consumi memorizzati in CSV e verifica i risultati su dati di prova.
 
 Tutti i comandi partono dalla cartella `projects/P002`. I blocchi seguenti usano la sintassi di Linux/Bash.

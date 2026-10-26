@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P091/README.md) · [Registro del collaudo](../../collaudo/P091/registro.json)
 
+**Sezione:** [Sezione 9: IoT e simulazione di sistemi](../../docs/CATALOGO.md#sezione-9-iot-e-simulazione-di-sistemi).
+
+**Argomenti:** IoT simulato · Domotica · Macchine a stati.
+
 Simula sensori e notifiche di una casa virtuale.
 
 Tutti i comandi partono dalla cartella `projects/P091`. I blocchi seguenti usano la sintassi di Linux/Bash.

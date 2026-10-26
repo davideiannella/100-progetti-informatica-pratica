@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P015/README.md) · [Registro del collaudo](../../collaudo/P015/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Reti · Comunicazione client e server · Concorrenza.
+
 Prova comunicazioni TCP locali e chiusura del server mediante test di integrazione.
 
 Tutti i comandi partono dalla cartella `projects/P015`. I blocchi seguenti usano la sintassi di Linux/Bash.

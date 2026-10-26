@@ -1,6 +1,10 @@
-# P058: Creare backup e ripristinare senza perdere il target
+# P058: Creare backup e ripristinare senza perdere la destinazione
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P058/README.md) · [Registro del collaudo](../../collaudo/P058/registro.json)
+
+**Sezione:** [Sezione 6: Cloud e affidabilità dei servizi](../../docs/CATALOGO.md#sezione-6-cloud-e-affidabilità-dei-servizi).
+
+**Argomenti:** Backup · Ripristino · Integrità dei dati.
 
 Crea e verifica backup, controllando che un errore non distrugga la destinazione.
 

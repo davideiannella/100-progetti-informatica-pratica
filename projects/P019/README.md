@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P019/README.md) · [Registro del collaudo](../../collaudo/P019/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Strutture dati · Code con priorità.
+
 Gestisce una coda di emergenze con le strutture della libreria standard C++.
 
 Tutti i comandi partono dalla cartella `projects/P019`. I blocchi seguenti usano la sintassi di Linux/Bash.

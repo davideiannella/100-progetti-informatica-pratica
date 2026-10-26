@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P046/README.md) · [Registro del collaudo](../../collaudo/P046/registro.json)
 
+**Sezione:** [Sezione 4: Reti di calcolatori](../../docs/CATALOGO.md#sezione-4-reti-di-calcolatori).
+
+**Argomenti:** Reti · Segmentazione · Controllo degli accessi.
+
 Valuta segmentazione e regole di accesso con un modello locale.
 
 Tutti i comandi partono dalla cartella `projects/P046`. I blocchi seguenti usano la sintassi di Linux/Bash.

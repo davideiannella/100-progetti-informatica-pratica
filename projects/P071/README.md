@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P071/README.md) · [Registro del collaudo](../../collaudo/P071/registro.json)
 
+**Sezione:** [Sezione 7: Sicurezza informatica](../../docs/CATALOGO.md#sezione-7-sicurezza-informatica).
+
+**Argomenti:** Sicurezza · Modellazione delle minacce.
+
 Organizza minacce STRIDE e priorità ordinali in un registro locale.
 
 Tutti i comandi partono dalla cartella `projects/P071`. I blocchi seguenti usano la sintassi di Linux/Bash.

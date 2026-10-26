@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P018/README.md) · [Registro del collaudo](../../collaudo/P018/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Concorrenza · Thread · Sincronizzazione.
+
 Coordina un produttore e un consumatore con primitive pthread.
 
 Tutti i comandi partono dalla cartella `projects/P018`. I blocchi seguenti usano la sintassi di Linux/Bash.

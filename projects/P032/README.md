@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P032/README.md) · [Registro del collaudo](../../collaudo/P032/registro.json)
 
+**Sezione:** [Sezione 2: Database e gestione dei dati](../../docs/CATALOGO.md#sezione-2-database-e-gestione-dei-dati).
+
+**Argomenti:** Database a grafo · Mobilità · Ricerca di percorsi.
+
 Rappresenta collegamenti di mobilità in Python e include un esempio Cypher separato.
 
 Tutti i comandi partono dalla cartella `projects/P032`. I blocchi seguenti usano la sintassi di Linux/Bash.

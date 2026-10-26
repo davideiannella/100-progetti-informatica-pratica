@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P047/README.md) · [Registro del collaudo](../../collaudo/P047/registro.json)
 
+**Sezione:** [Sezione 4: Reti di calcolatori](../../docs/CATALOGO.md#sezione-4-reti-di-calcolatori).
+
+**Argomenti:** Reti · HTTP · TCP.
+
 Ricostruisce le fasi di una richiesta Web senza configurare una rete esterna.
 
 Tutti i comandi partono dalla cartella `projects/P047`. I blocchi seguenti usano la sintassi di Linux/Bash.

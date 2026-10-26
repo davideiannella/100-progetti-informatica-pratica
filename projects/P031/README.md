@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P031/README.md) · [Registro del collaudo](../../collaudo/P031/registro.json)
 
+**Sezione:** [Sezione 2: Database e gestione dei dati](../../docs/CATALOGO.md#sezione-2-database-e-gestione-dei-dati).
+
+**Argomenti:** Database NoSQL · IoT simulato · Telemetria.
+
 Confronta un modello Python di telemetria con esempi MongoDB separati.
 
 Tutti i comandi partono dalla cartella `projects/P031`. I blocchi seguenti usano la sintassi di Linux/Bash.

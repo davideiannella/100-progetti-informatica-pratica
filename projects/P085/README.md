@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P085/README.md) · [Registro del collaudo](../../collaudo/P085/registro.json)
 
+**Sezione:** [Sezione 9: IoT e simulazione di sistemi](../../docs/CATALOGO.md#sezione-9-iot-e-simulazione-di-sistemi).
+
+**Argomenti:** Sicurezza · Autorizzazione per ruoli · Audit.
+
 Valuta autorizzazioni di badge virtuali e registra gli esiti delle richieste.
 
 Tutti i comandi partono dalla cartella `projects/P085`. I blocchi seguenti usano la sintassi di Linux/Bash.

@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P042/README.md) · [Registro del collaudo](../../collaudo/P042/registro.json)
 
+**Sezione:** [Sezione 3: Ingegneria e progettazione del software](../../docs/CATALOGO.md#sezione-3-ingegneria-e-progettazione-del-software).
+
+**Argomenti:** Affidabilità del software · Idempotenza · Concorrenza.
+
 Controlla idempotenza, conflitti e richieste concorrenti in pagamenti simulati.
 
 Tutti i comandi partono dalla cartella `projects/P042`. I blocchi seguenti usano la sintassi di Linux/Bash.

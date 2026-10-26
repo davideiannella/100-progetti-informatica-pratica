@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P039/README.md) · [Registro del collaudo](../../collaudo/P039/registro.json)
 
+**Sezione:** [Sezione 3: Ingegneria e progettazione del software](../../docs/CATALOGO.md#sezione-3-ingegneria-e-progettazione-del-software).
+
+**Argomenti:** Architettura software · Separazione delle responsabilità.
+
 Modella ordini di consegna e separazione delle responsabilità applicative.
 
 Tutti i comandi partono dalla cartella `projects/P039`. I blocchi seguenti usano la sintassi di Linux/Bash.

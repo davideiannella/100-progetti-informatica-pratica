@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P082/README.md) · [Registro del collaudo](../../collaudo/P082/registro.json)
 
+**Sezione:** [Sezione 8: Intelligenza artificiale e analisi dei dati](../../docs/CATALOGO.md#sezione-8-intelligenza-artificiale-e-analisi-dei-dati).
+
+**Argomenti:** Governance dell’IA · Controlli · Tracciabilità.
+
 Organizza una checklist locale di controlli e relative evidenze per sistemi AI.
 
 Tutti i comandi partono dalla cartella `projects/P082`. I blocchi seguenti usano la sintassi di Linux/Bash.

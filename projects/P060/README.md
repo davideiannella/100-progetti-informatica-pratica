@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P060/README.md) · [Registro del collaudo](../../collaudo/P060/registro.json)
 
+**Sezione:** [Sezione 6: Cloud e affidabilità dei servizi](../../docs/CATALOGO.md#sezione-6-cloud-e-affidabilità-dei-servizi).
+
+**Argomenti:** DevOps · Integrazione continua · Verifica della release.
+
 Esegue test e costruisce una release locale; include un esempio di workflow CI.
 
 Tutti i comandi partono dalla cartella `projects/P060`. I blocchi seguenti usano la sintassi di Linux/Bash.

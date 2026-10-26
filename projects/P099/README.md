@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P099/README.md) · [Registro del collaudo](../../collaudo/P099/registro.json)
 
+**Sezione:** [Sezione 10: Progetti integrati](../../docs/CATALOGO.md#sezione-10-progetti-integrati).
+
+**Argomenti:** Logistica · Grafi · Previsioni di riferimento.
+
 Combina routing, tracking e previsioni in un laboratorio logistico locale.
 
 Tutti i comandi partono dalla cartella `projects/P099`. I blocchi seguenti usano la sintassi di Linux/Bash.

@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P062/README.md) · [Registro del collaudo](../../collaudo/P062/registro.json)
 
+**Sezione:** [Sezione 6: Cloud e affidabilità dei servizi](../../docs/CATALOGO.md#sezione-6-cloud-e-affidabilità-dei-servizi).
+
+**Argomenti:** Affidabilità dei sistemi · Replica · Failover simulato.
+
 Simula replica, ritardo e passaggio delle letture a una copia secondaria.
 
 Tutti i comandi partono dalla cartella `projects/P062`. I blocchi seguenti usano la sintassi di Linux/Bash.

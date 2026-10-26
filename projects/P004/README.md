@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P004/README.md) · [Registro del collaudo](../../collaudo/P004/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Algoritmi · Code con priorità.
+
 Ordina interventi secondo una priorità esplicita.
 
 Tutti i comandi partono dalla cartella `projects/P004`. I blocchi seguenti usano la sintassi di Linux/Bash.

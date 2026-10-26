@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P054/README.md) · [Registro del collaudo](../../collaudo/P054/registro.json)
 
+**Sezione:** [Sezione 6: Cloud e affidabilità dei servizi](../../docs/CATALOGO.md#sezione-6-cloud-e-affidabilità-dei-servizi).
+
+**Argomenti:** Cloud e container · Rilascio del software · API web.
+
 Avvia un’API locale e costruisce un archivio di rilascio verificabile.
 
 Tutti i comandi partono dalla cartella `projects/P054`. I blocchi seguenti usano la sintassi di Linux/Bash.

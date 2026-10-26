@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P016/README.md) · [Registro del collaudo](../../collaudo/P016/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Sistemi operativi · Linux · Monitoraggio dei processi.
+
 Legge informazioni dei processi Linux dal filesystem /proc.
 
 Tutti i comandi partono dalla cartella `projects/P016`. I blocchi seguenti usano la sintassi di Linux/Bash.

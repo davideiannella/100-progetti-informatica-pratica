@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P072/README.md) · [Registro del collaudo](../../collaudo/P072/registro.json)
 
+**Sezione:** [Sezione 7: Sicurezza informatica](../../docs/CATALOGO.md#sezione-7-sicurezza-informatica).
+
+**Argomenti:** Sicurezza · Analisi dei log · Generazione di alert.
+
 Analizza e correla log sintetici per produrre avvisi spiegabili.
 
 Tutti i comandi partono dalla cartella `projects/P072`. I blocchi seguenti usano la sintassi di Linux/Bash.

@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P037/README.md) · [Registro del collaudo](../../collaudo/P037/registro.json)
 
+**Sezione:** [Sezione 3: Ingegneria e progettazione del software](../../docs/CATALOGO.md#sezione-3-ingegneria-e-progettazione-del-software).
+
+**Argomenti:** Progettazione del software · API REST.
+
 Espone un’API locale dedicata al trasporto pubblico e ne verifica le risposte.
 
 Tutti i comandi partono dalla cartella `projects/P037`. I blocchi seguenti usano la sintassi di Linux/Bash.

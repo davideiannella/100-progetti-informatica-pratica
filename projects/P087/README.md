@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P087/README.md) · [Registro del collaudo](../../collaudo/P087/registro.json)
 
+**Sezione:** [Sezione 9: IoT e simulazione di sistemi](../../docs/CATALOGO.md#sezione-9-iot-e-simulazione-di-sistemi).
+
+**Argomenti:** IoT simulato · Energia · Integrazione numerica.
+
 Trasforma campioni virtuali di potenza in una stima dell’energia.
 
 Tutti i comandi partono dalla cartella `projects/P087`. I blocchi seguenti usano la sintassi di Linux/Bash.

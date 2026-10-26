@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P050/README.md) · [Registro del collaudo](../../collaudo/P050/registro.json)
 
+**Sezione:** [Sezione 4: Reti di calcolatori](../../docs/CATALOGO.md#sezione-4-reti-di-calcolatori).
+
+**Argomenti:** Reti wireless · Pianificazione della capacità.
+
 Calcola una stima didattica degli access point necessari a un magazzino.
 
 Tutti i comandi partono dalla cartella `projects/P050`. I blocchi seguenti usano la sintassi di Linux/Bash.

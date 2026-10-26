@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P059/README.md) · [Registro del collaudo](../../collaudo/P059/registro.json)
 
+**Sezione:** [Sezione 6: Cloud e affidabilità dei servizi](../../docs/CATALOGO.md#sezione-6-cloud-e-affidabilità-dei-servizi).
+
+**Argomenti:** Architettura dei sistemi · Cache · Bilanciamento simulato.
+
 Modella cache e scelta dei backend disponibili senza contattare servizi esterni.
 
 Tutti i comandi partono dalla cartella `projects/P059`. I blocchi seguenti usano la sintassi di Linux/Bash.

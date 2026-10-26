@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P008/README.md) · [Registro del collaudo](../../collaudo/P008/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Elaborazione del testo · Deduplicazione.
+
 Confronta record per individuare duplicazioni e somiglianze.
 
 Tutti i comandi partono dalla cartella `projects/P008`. I blocchi seguenti usano la sintassi di Linux/Bash.

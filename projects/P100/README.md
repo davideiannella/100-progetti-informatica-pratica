@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P100/README.md) · [Registro del collaudo](../../collaudo/P100/registro.json)
 
+**Sezione:** [Sezione 10: Progetti integrati](../../docs/CATALOGO.md#sezione-10-progetti-integrati).
+
+**Argomenti:** IoT simulato · Sicurezza · Database.
+
 Integra metadati, autenticazione HMAC e SQLite in un’applicazione locale didattica.
 
 Tutti i comandi partono dalla cartella `projects/P100`. I blocchi seguenti usano la sintassi di Linux/Bash.

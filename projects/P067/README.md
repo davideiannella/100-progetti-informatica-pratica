@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P067/README.md) · [Registro del collaudo](../../collaudo/P067/registro.json)
 
+**Sezione:** [Sezione 7: Sicurezza informatica](../../docs/CATALOGO.md#sezione-7-sicurezza-informatica).
+
+**Argomenti:** Sicurezza delle comunicazioni · TLS · Certificati.
+
 Esegue un handshake TLS su loopback usando certificati e chiavi temporanei.
 
 Tutti i comandi partono dalla cartella `projects/P067`. I blocchi seguenti usano la sintassi di Linux/Bash.

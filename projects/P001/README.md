@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P001/README.md) · [Registro del collaudo](../../collaudo/P001/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Algoritmi · Strutture dati · Code con priorità.
+
 Gestisce una coda di utenti e controlla l’ordine delle operazioni con test locali.
 
 Tutti i comandi partono dalla cartella `projects/P001`. I blocchi seguenti usano la sintassi di Linux/Bash.

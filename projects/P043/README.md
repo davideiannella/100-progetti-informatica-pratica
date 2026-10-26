@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P043/README.md) · [Registro del collaudo](../../collaudo/P043/registro.json)
 
+**Sezione:** [Sezione 3: Ingegneria e progettazione del software](../../docs/CATALOGO.md#sezione-3-ingegneria-e-progettazione-del-software).
+
+**Argomenti:** Test del software · Sviluppo guidato dai test.
+
 Verifica le regole di un parcheggio software con test ordinari e casi limite.
 
 Tutti i comandi partono dalla cartella `projects/P043`. I blocchi seguenti usano la sintassi di Linux/Bash.

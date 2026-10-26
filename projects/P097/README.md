@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P097/README.md) · [Registro del collaudo](../../collaudo/P097/registro.json)
 
+**Sezione:** [Sezione 10: Progetti integrati](../../docs/CATALOGO.md#sezione-10-progetti-integrati).
+
+**Argomenti:** IoT simulato · Automazione degli edifici · Gestione degli allarmi.
+
 Modella comfort, consumo e allarmi di un edificio virtuale.
 
 Tutti i comandi partono dalla cartella `projects/P097`. I blocchi seguenti usano la sintassi di Linux/Bash.

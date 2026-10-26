@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P051/README.md) · [Registro del collaudo](../../collaudo/P051/registro.json)
 
+**Sezione:** [Sezione 5: Sistemi operativi](../../docs/CATALOGO.md#sezione-5-sistemi-operativi).
+
+**Argomenti:** Sistemi operativi · Scheduling.
+
 Confronta algoritmi di scheduling su carichi simulati.
 
 Tutti i comandi partono dalla cartella `projects/P051`. I blocchi seguenti usano la sintassi di Linux/Bash.

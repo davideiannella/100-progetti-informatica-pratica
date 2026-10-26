@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P063/README.md) · [Registro del collaudo](../../collaudo/P063/registro.json)
 
+**Sezione:** [Sezione 7: Sicurezza informatica](../../docs/CATALOGO.md#sezione-7-sicurezza-informatica).
+
+**Argomenti:** Sicurezza · Autenticazione · Gestione delle sessioni.
+
 Verifica password, codici TOTP, blocco dei tentativi e sessioni in un servizio locale.
 
 Tutti i comandi partono dalla cartella `projects/P063`. I blocchi seguenti usano la sintassi di Linux/Bash.

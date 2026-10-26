@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P061/README.md) · [Registro del collaudo](../../collaudo/P061/registro.json)
 
+**Sezione:** [Sezione 6: Cloud e affidabilità dei servizi](../../docs/CATALOGO.md#sezione-6-cloud-e-affidabilità-dei-servizi).
+
+**Argomenti:** Osservabilità · Metriche · Affidabilità dei servizi.
+
 Aggrega richieste sintetiche in indicatori di disponibilità, latenza e allarme.
 
 Tutti i comandi partono dalla cartella `projects/P061`. I blocchi seguenti usano la sintassi di Linux/Bash.

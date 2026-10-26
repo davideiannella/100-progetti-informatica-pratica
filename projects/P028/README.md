@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P028/README.md) · [Registro del collaudo](../../collaudo/P028/registro.json)
 
+**Sezione:** [Sezione 2: Database e gestione dei dati](../../docs/CATALOGO.md#sezione-2-database-e-gestione-dei-dati).
+
+**Argomenti:** Database · Transazioni · Coerenza dei dati.
+
 Sperimenta ordini, disponibilità di magazzino e pagamenti simulati in un database.
 
 Tutti i comandi partono dalla cartella `projects/P028`. I blocchi seguenti usano la sintassi di Linux/Bash.

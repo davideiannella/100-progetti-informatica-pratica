@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P053/README.md) · [Registro del collaudo](../../collaudo/P053/registro.json)
 
+**Sezione:** [Sezione 5: Sistemi operativi](../../docs/CATALOGO.md#sezione-5-sistemi-operativi).
+
+**Argomenti:** Sistemi operativi · Memoria virtuale · Sostituzione delle pagine.
+
 Confronta FIFO, LRU e Clock nella sostituzione simulata delle pagine.
 
 Tutti i comandi partono dalla cartella `projects/P053`. I blocchi seguenti usano la sintassi di Linux/Bash.

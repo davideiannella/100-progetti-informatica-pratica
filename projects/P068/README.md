@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P068/README.md) · [Registro del collaudo](../../collaudo/P068/registro.json)
 
+**Sezione:** [Sezione 7: Sicurezza informatica](../../docs/CATALOGO.md#sezione-7-sicurezza-informatica).
+
+**Argomenti:** Sicurezza delle reti · Segmentazione · Analisi dei log.
+
 Valuta regole di rete e sequenze sintetiche di login falliti senza configurare il firewall.
 
 Tutti i comandi partono dalla cartella `projects/P068`. I blocchi seguenti usano la sintassi di Linux/Bash.

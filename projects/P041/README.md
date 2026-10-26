@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P041/README.md) · [Registro del collaudo](../../collaudo/P041/registro.json)
 
+**Sezione:** [Sezione 3: Ingegneria e progettazione del software](../../docs/CATALOGO.md#sezione-3-ingegneria-e-progettazione-del-software).
+
+**Argomenti:** Programmazione a oggetti · Pattern di progettazione.
+
 Seleziona strategie di notifica mediante un modello Java locale.
 
 Tutti i comandi partono dalla cartella `projects/P041`. I blocchi seguenti usano la sintassi di Linux/Bash.

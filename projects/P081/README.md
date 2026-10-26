@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P081/README.md) · [Registro del collaudo](../../collaudo/P081/registro.json)
 
+**Sezione:** [Sezione 8: Intelligenza artificiale e analisi dei dati](../../docs/CATALOGO.md#sezione-8-intelligenza-artificiale-e-analisi-dei-dati).
+
+**Argomenti:** Sicurezza dell’IA · Prompt injection · Gestione delle fonti.
+
 Annota contenuti documentali potenzialmente ostili senza trasformarli in istruzioni.
 
 Tutti i comandi partono dalla cartella `projects/P081`. I blocchi seguenti usano la sintassi di Linux/Bash.

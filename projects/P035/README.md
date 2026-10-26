@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P035/README.md) · [Registro del collaudo](../../collaudo/P035/registro.json)
 
+**Sezione:** [Sezione 2: Database e gestione dei dati](../../docs/CATALOGO.md#sezione-2-database-e-gestione-dei-dati).
+
+**Argomenti:** Sicurezza dei database · Validazione dei ruoli · Audit.
+
 Sperimenta ruoli applicativi e registrazione delle operazioni in un database locale.
 
 Tutti i comandi partono dalla cartella `projects/P035`. I blocchi seguenti usano la sintassi di Linux/Bash.

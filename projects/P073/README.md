@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P073/README.md) · [Registro del collaudo](../../collaudo/P073/registro.json)
 
+**Sezione:** [Sezione 8: Intelligenza artificiale e analisi dei dati](../../docs/CATALOGO.md#sezione-8-intelligenza-artificiale-e-analisi-dei-dati).
+
+**Argomenti:** Intelligenza artificiale · Regressione · Valutazione dei modelli.
+
 Confronta una regressione su consumi sintetici con riferimenti semplici.
 
 Tutti i comandi partono dalla cartella `projects/P073`. I blocchi seguenti usano la sintassi di Linux/Bash.

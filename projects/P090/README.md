@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P090/README.md) · [Registro del collaudo](../../collaudo/P090/registro.json)
 
+**Sezione:** [Sezione 9: IoT e simulazione di sistemi](../../docs/CATALOGO.md#sezione-9-iot-e-simulazione-di-sistemi).
+
+**Argomenti:** Intelligenza artificiale · Analisi dei segnali · Classificazione.
+
 Analizza vibrazioni generate dal programma per produrre segnali didattici di attenzione.
 
 Tutti i comandi partono dalla cartella `projects/P090`. I blocchi seguenti usano la sintassi di Linux/Bash.

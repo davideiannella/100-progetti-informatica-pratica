@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P086/README.md) · [Registro del collaudo](../../collaudo/P086/registro.json)
 
+**Sezione:** [Sezione 9: IoT e simulazione di sistemi](../../docs/CATALOGO.md#sezione-9-iot-e-simulazione-di-sistemi).
+
+**Argomenti:** IoT simulato · Validazione dei dati · Metriche.
+
 Convalida osservazioni ambientali sintetiche prima di calcolare gli indicatori.
 
 Tutti i comandi partono dalla cartella `projects/P086`. I blocchi seguenti usano la sintassi di Linux/Bash.

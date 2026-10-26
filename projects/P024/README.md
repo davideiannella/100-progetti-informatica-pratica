@@ -1,6 +1,10 @@
-# P024: Database di province comuni e imprese
+# P024: Database di province, comuni e imprese
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P024/README.md) · [Registro del collaudo](../../collaudo/P024/registro.json)
+
+**Sezione:** [Sezione 2: Database e gestione dei dati](../../docs/CATALOGO.md#sezione-2-database-e-gestione-dei-dati).
+
+**Argomenti:** Database relazionali · Modellazione dei dati.
 
 Verifica uno schema relazionale per province, comuni e imprese in SQLite.
 

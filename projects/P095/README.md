@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P095/README.md) · [Registro del collaudo](../../collaudo/P095/registro.json)
 
+**Sezione:** [Sezione 10: Progetti integrati](../../docs/CATALOGO.md#sezione-10-progetti-integrati).
+
+**Argomenti:** Validazione dei dati · Controllo degli accessi · Flussi di lavoro.
+
 Elabora misure fittizie per una dimostrazione tecnica, senza uso clinico.
 
 Tutti i comandi partono dalla cartella `projects/P095`. I blocchi seguenti usano la sintassi di Linux/Bash.

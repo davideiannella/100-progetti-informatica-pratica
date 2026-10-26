@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P066/README.md) · [Registro del collaudo](../../collaudo/P066/registro.json)
 
+**Sezione:** [Sezione 7: Sicurezza informatica](../../docs/CATALOGO.md#sezione-7-sicurezza-informatica).
+
+**Argomenti:** Sicurezza delle API · Autorizzazione · Controllo delle richieste.
+
 Combina verifica dei token, autorizzazione per ruolo e limiti delle richieste.
 
 Tutti i comandi partono dalla cartella `projects/P066`. I blocchi seguenti usano la sintassi di Linux/Bash.

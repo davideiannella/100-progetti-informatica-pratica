@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P083/README.md) · [Registro del collaudo](../../collaudo/P083/registro.json)
 
+**Sezione:** [Sezione 9: IoT e simulazione di sistemi](../../docs/CATALOGO.md#sezione-9-iot-e-simulazione-di-sistemi).
+
+**Argomenti:** IoT simulato · Telemetria · Pubblicazione e sottoscrizione.
+
 Simula telemetria, pubblicazione e raccolta di eventi interamente in memoria.
 
 Tutti i comandi partono dalla cartella `projects/P083`. I blocchi seguenti usano la sintassi di Linux/Bash.

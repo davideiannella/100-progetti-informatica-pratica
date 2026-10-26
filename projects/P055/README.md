@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P055/README.md) · [Registro del collaudo](../../collaudo/P055/registro.json)
 
+**Sezione:** [Sezione 6: Cloud e affidabilità dei servizi](../../docs/CATALOGO.md#sezione-6-cloud-e-affidabilità-dei-servizi).
+
+**Argomenti:** Cloud e container · API web · Database.
+
 Affianca un esercizio SQLite locale a uno stack Web–API–PostgreSQL in container.
 
 Tutti i comandi partono dalla cartella `projects/P055`. I blocchi seguenti usano la sintassi di Linux/Bash.

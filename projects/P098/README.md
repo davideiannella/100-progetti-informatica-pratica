@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P098/README.md) · [Registro del collaudo](../../collaudo/P098/registro.json)
 
+**Sezione:** [Sezione 10: Progetti integrati](../../docs/CATALOGO.md#sezione-10-progetti-integrati).
+
+**Argomenti:** IoT simulato · Affidabilità · Conferme e ritrasmissioni.
+
 Simula invii intermittenti con coda FIFO, conferme e tentativi successivi.
 
 Tutti i comandi partono dalla cartella `projects/P098`. I blocchi seguenti usano la sintassi di Linux/Bash.

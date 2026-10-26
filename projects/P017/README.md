@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P017/README.md) · [Registro del collaudo](../../collaudo/P017/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Strutture dati · Gestione della memoria.
+
 Implementa un buffer circolare con capacità fissa e ne verifica le operazioni.
 
 Tutti i comandi partono dalla cartella `projects/P017`. I blocchi seguenti usano la sintassi di Linux/Bash.

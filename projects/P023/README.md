@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P023/README.md) · [Registro del collaudo](../../collaudo/P023/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** API web · Concorrenza.
+
 Espone un’API .NET locale e verifica richieste HTTP concorrenti.
 
 Tutti i comandi partono dalla cartella `projects/P023`. I blocchi seguenti usano la sintassi di Linux/Bash.

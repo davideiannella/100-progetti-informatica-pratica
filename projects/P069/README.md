@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P069/README.md) · [Registro del collaudo](../../collaudo/P069/registro.json)
 
+**Sezione:** [Sezione 7: Sicurezza informatica](../../docs/CATALOGO.md#sezione-7-sicurezza-informatica).
+
+**Argomenti:** Sicurezza dei sistemi · Hardening Linux · Permessi.
+
 Controlla permessi POSIX e configurazioni sintetiche con un audit in sola lettura.
 
 Tutti i comandi partono dalla cartella `projects/P069`. I blocchi seguenti usano la sintassi di Linux/Bash.

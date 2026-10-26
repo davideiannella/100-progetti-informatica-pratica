@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P076/README.md) · [Registro del collaudo](../../collaudo/P076/registro.json)
 
+**Sezione:** [Sezione 8: Intelligenza artificiale e analisi dei dati](../../docs/CATALOGO.md#sezione-8-intelligenza-artificiale-e-analisi-dei-dati).
+
+**Argomenti:** Sistemi di raccomandazione · Similarità tra contenuti.
+
 Ordina corsi per similarità coseno fra vettori assegnati manualmente.
 
 Tutti i comandi partono dalla cartella `projects/P076`. I blocchi seguenti usano la sintassi di Linux/Bash.

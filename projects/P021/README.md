@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P021/README.md) · [Registro del collaudo](../../collaudo/P021/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Simulazione · Gestione delle code.
+
 Simula il comportamento di una coda di traffico.
 
 Tutti i comandi partono dalla cartella `projects/P021`. I blocchi seguenti usano la sintassi di Linux/Bash.

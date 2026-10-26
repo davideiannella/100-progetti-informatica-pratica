@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P089/README.md) · [Registro del collaudo](../../collaudo/P089/registro.json)
 
+**Sezione:** [Sezione 9: IoT e simulazione di sistemi](../../docs/CATALOGO.md#sezione-9-iot-e-simulazione-di-sistemi).
+
+**Argomenti:** Intelligenza artificiale · Visione artificiale · Immagini sintetiche.
+
 Classifica rappresentazioni sintetiche di rifiuti senza usare fotografie di materiali reali.
 
 Tutti i comandi partono dalla cartella `projects/P089`. I blocchi seguenti usano la sintassi di Linux/Bash.

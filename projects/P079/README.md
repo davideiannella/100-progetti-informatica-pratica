@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P079/README.md) · [Registro del collaudo](../../collaudo/P079/registro.json)
 
+**Sezione:** [Sezione 8: Intelligenza artificiale e analisi dei dati](../../docs/CATALOGO.md#sezione-8-intelligenza-artificiale-e-analisi-dei-dati).
+
+**Argomenti:** Intelligenza artificiale · Previsione · Serie temporali.
+
 Confronta previsioni giornaliere e ricorsive su una serie di domanda sintetica.
 
 Tutti i comandi partono dalla cartella `projects/P079`. I blocchi seguenti usano la sintassi di Linux/Bash.

@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P044/README.md) · [Registro del collaudo](../../collaudo/P044/registro.json)
 
+**Sezione:** [Sezione 3: Ingegneria e progettazione del software](../../docs/CATALOGO.md#sezione-3-ingegneria-e-progettazione-del-software).
+
+**Argomenti:** Versionamento dei dati · Immutabilità · Concorrenza.
+
 Conserva e confronta versioni di documenti nel modello Java.
 
 Tutti i comandi partono dalla cartella `projects/P044`. I blocchi seguenti usano la sintassi di Linux/Bash.

@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P033/README.md) · [Registro del collaudo](../../collaudo/P033/registro.json)
 
+**Sezione:** [Sezione 2: Database e gestione dei dati](../../docs/CATALOGO.md#sezione-2-database-e-gestione-dei-dati).
+
+**Argomenti:** Data warehouse · Analisi dei dati.
+
 Esamina vendite mediante un database con schema a stella.
 
 Tutti i comandi partono dalla cartella `projects/P033`. I blocchi seguenti usano la sintassi di Linux/Bash.

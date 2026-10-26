@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P020/README.md) · [Registro del collaudo](../../collaudo/P020/registro.json)
 
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Programmazione a oggetti · Gestione della memoria · Gestione delle risorse.
+
 Sperimenta proprietà delle risorse e gestione della memoria con RAII e smart pointer.
 
 Tutti i comandi partono dalla cartella `projects/P020`. I blocchi seguenti usano la sintassi di Linux/Bash.

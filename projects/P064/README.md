@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P064/README.md) · [Registro del collaudo](../../collaudo/P064/registro.json)
 
+**Sezione:** [Sezione 7: Sicurezza informatica](../../docs/CATALOGO.md#sezione-7-sicurezza-informatica).
+
+**Argomenti:** Sicurezza web · Database · SQL Injection.
+
 Cerca utenti in SQLite mantenendo separati istruzioni SQL e valori ricevuti.
 
 Tutti i comandi partono dalla cartella `projects/P064`. I blocchi seguenti usano la sintassi di Linux/Bash.

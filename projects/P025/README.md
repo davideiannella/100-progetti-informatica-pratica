@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P025/README.md) · [Registro del collaudo](../../collaudo/P025/registro.json)
 
+**Sezione:** [Sezione 2: Database e gestione dei dati](../../docs/CATALOGO.md#sezione-2-database-e-gestione-dei-dati).
+
+**Argomenti:** Database · Prenotazioni · Integrità dei dati.
+
 Sperimenta vincoli e operazioni di un database didattico di prenotazioni sanitarie.
 
 Tutti i comandi partono dalla cartella `projects/P025`. I blocchi seguenti usano la sintassi di Linux/Bash.

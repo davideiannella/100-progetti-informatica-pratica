@@ -1,6 +1,10 @@
-# P012: Ottimizzazione di consegne con programmazione dinamica
+# P012: Ottimizzazione del carico con programmazione dinamica
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P012/README.md) · [Registro del collaudo](../../collaudo/P012/registro.json)
+
+**Sezione:** [Sezione 1: Programmazione, algoritmi e strutture dati](../../docs/CATALOGO.md#sezione-1-programmazione-algoritmi-e-strutture-dati).
+
+**Argomenti:** Algoritmi · Ottimizzazione · Programmazione dinamica.
 
 Applica la programmazione dinamica a un problema di consegne.
 

@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P084/README.md) · [Registro del collaudo](../../collaudo/P084/registro.json)
 
+**Sezione:** [Sezione 9: IoT e simulazione di sistemi](../../docs/CATALOGO.md#sezione-9-iot-e-simulazione-di-sistemi).
+
+**Argomenti:** IoT simulato · Automazione a regole.
+
 Simula un controller di irrigazione con soglie e stato persistente fra le chiamate.
 
 Tutti i comandi partono dalla cartella `projects/P084`. I blocchi seguenti usano la sintassi di Linux/Bash.

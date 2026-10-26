@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P092/README.md) · [Registro del collaudo](../../collaudo/P092/registro.json)
 
+**Sezione:** [Sezione 9: IoT e simulazione di sistemi](../../docs/CATALOGO.md#sezione-9-iot-e-simulazione-di-sistemi).
+
+**Argomenti:** IoT simulato · Sicurezza · Autenticazione degli aggiornamenti.
+
 Verifica aggiornamenti IoT virtuali con HMAC e ripristino dello stato in memoria.
 
 Tutti i comandi partono dalla cartella `projects/P092`. I blocchi seguenti usano la sintassi di Linux/Bash.

@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P026/README.md) · [Registro del collaudo](../../collaudo/P026/registro.json)
 
+**Sezione:** [Sezione 2: Database e gestione dei dati](../../docs/CATALOGO.md#sezione-2-database-e-gestione-dei-dati).
+
+**Argomenti:** Database · Interrogazioni SQL · Vincoli.
+
 Modella una carriera universitaria e controlla i vincoli sugli esami.
 
 Tutti i comandi partono dalla cartella `projects/P026`. I blocchi seguenti usano la sintassi di Linux/Bash.

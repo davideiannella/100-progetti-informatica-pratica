@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P040/README.md) · [Registro del collaudo](../../collaudo/P040/registro.json)
 
+**Sezione:** [Sezione 3: Ingegneria e progettazione del software](../../docs/CATALOGO.md#sezione-3-ingegneria-e-progettazione-del-software).
+
+**Argomenti:** Architettura software · Gestione delle dipendenze.
+
 Verifica i casi d’uso di segnalazioni civiche in una libreria .NET.
 
 Tutti i comandi partono dalla cartella `projects/P040`. I blocchi seguenti usano la sintassi di Linux/Bash.

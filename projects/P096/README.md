@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P096/README.md) · [Registro del collaudo](../../collaudo/P096/registro.json)
 
+**Sezione:** [Sezione 10: Progetti integrati](../../docs/CATALOGO.md#sezione-10-progetti-integrati).
+
+**Argomenti:** Software gestionale · Gestione del magazzino · Idempotenza.
+
 Verifica ordini, stock e retry idempotenti in un negozio locale simulato.
 
 Tutti i comandi partono dalla cartella `projects/P096`. I blocchi seguenti usano la sintassi di Linux/Bash.

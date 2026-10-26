@@ -2,6 +2,10 @@
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P074/README.md) · [Registro del collaudo](../../collaudo/P074/registro.json)
 
+**Sezione:** [Sezione 8: Intelligenza artificiale e analisi dei dati](../../docs/CATALOGO.md#sezione-8-intelligenza-artificiale-e-analisi-dei-dati).
+
+**Argomenti:** Intelligenza artificiale · Classificazione · Valutazione dei modelli.
+
 Valuta probabilità, soglie ed errori di un classificatore di abbandono sintetico.
 
 Tutti i comandi partono dalla cartella `projects/P074`. I blocchi seguenti usano la sintassi di Linux/Bash.
