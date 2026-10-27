@@ -19,3 +19,11 @@
 | [.github/workflows](../.github/workflows) | Automazioni GitHub Actions |
 
 I workflow restano distinti perché usano strumenti e ambienti diversi. I risultati si consultano tutti nella stessa cartella collaudo. I file di log e le impronte dei sorgenti conservano la provenienza delle prove originali.
+
+## File delle dipendenze condivise
+
+Nella cartella principale trovi anche [requirements-p061-p080.txt](../requirements-p061-p080.txt) e [requirements-p081-p100.txt](../requirements-p081-p100.txt). Elencano i pacchetti Python e le versioni usati da più laboratori; il secondo serve anche al collaudo completo P081–P100.
+
+Gli intervalli nei nomi identificano gli ambienti condivisi di questi progetti. Le dieci sezioni tematiche del libro restano quelle del catalogo.
+
+Per svolgere un solo progetto, segui i requisiti del suo README. I comandi comuni sono nella [guida agli ambienti](AMBIENTI.md#dipendenze-python).
