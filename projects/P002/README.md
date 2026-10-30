@@ -44,6 +44,7 @@ python tests/test_p002.py
 ## Perimetro del laboratorio
 
 - Il file in `src` definisce le funzioni o le classi del progetto. I test le richiamano con dati di prova; non è prevista un’interfaccia interattiva.
+- I test controllano anche che la media resti corretta con consumi molto grandi o molto piccoli, purché finiti.
 
 ## Windows
 

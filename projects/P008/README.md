@@ -6,7 +6,7 @@
 
 **Argomenti:** Elaborazione del testo · Deduplicazione.
 
-Confronta testi dopo aver uniformato accenti, spazi e punteggiatura. Segnala le coppie che superano una soglia di somiglianza: sono possibili duplicati da esaminare, non identità dimostrate.
+Confronta testi dopo aver uniformato accenti, spazi e punteggiatura. Segnala le coppie che raggiungono o superano una soglia di somiglianza: sono possibili duplicati da esaminare, non identità dimostrate.
 
 Apri un terminale nella cartella `projects/P008` ed esegui da lì i comandi. I blocchi principali usano Bash su Linux; trovi le indicazioni per Windows nella sezione dedicata.
 

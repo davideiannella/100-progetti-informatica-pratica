@@ -2,6 +2,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import heapq
 import math
+import statistics
 from typing import Dict, List, Optional, Tuple
 VALID_PRIORITIES = {1, 2, 3}
 
@@ -75,4 +76,4 @@ class QueueManager:
         waits = [item.wait_time for item in self._served]
         if not waits:
             return {'served_count': 0, 'average_wait': 0.0, 'max_wait': 0.0}
-        return {'served_count': len(waits), 'average_wait': sum(waits) / len(waits), 'max_wait': max(waits)}
+        return {'served_count': len(waits), 'average_wait': statistics.mean(waits), 'max_wait': max(waits)}

@@ -13,4 +13,13 @@ class T(unittest.TestCase):
         self.assertEqual(r['missing'],2); self.assertEqual(r['count'],0)
     def test_negative(self):
         with self.assertRaises(ValueError): analyze_rows([{'date':'a','kwh':'-1'}])
+    def test_mean_at_float_limits(self):
+        for value in (1e308, sys.float_info.max, float.fromhex('0x0.0000000000001p-1022')):
+            with self.subTest(value=value):
+                rows = [{'date':'a','kwh':str(value)}, {'date':'b','kwh':str(value)}]
+                r = analyze_rows(rows)
+                self.assertEqual(r['mean'], value)
+                self.assertEqual(r['min'], value)
+                self.assertEqual(r['max'], value)
+                self.assertEqual(r['count'], 2)
 if __name__=='__main__': unittest.main()

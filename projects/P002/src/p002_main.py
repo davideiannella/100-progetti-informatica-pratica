@@ -18,7 +18,7 @@ def analyze_rows(rows, threshold=None):
             raise ValueError('Consumo non finito o negativo')
         values.append((r.get('date', ''), v))
     nums = [v for _, v in values]
-    result = {'count': len(nums), 'missing': missing, 'mean': statistics.fmean(nums) if nums else None, 'min': min(nums) if nums else None, 'max': max(nums) if nums else None}
+    result = {'count': len(nums), 'missing': missing, 'mean': statistics.mean(nums) if nums else None, 'min': min(nums) if nums else None, 'max': max(nums) if nums else None}
     if threshold is not None:
         result['peaks'] = [d for d, v in values if v > threshold]
     return result

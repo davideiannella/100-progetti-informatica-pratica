@@ -57,6 +57,18 @@ class QueueManagerTests(unittest.TestCase):
         q.cancel_ticket(a.ticket_id)
         self.assertEqual(q.waiting_count, 1)
 
+    def test_statistics_at_float_limits(self):
+        for wait in (1e308, sys.float_info.max, float.fromhex('0x0.0000000000001p-1022')):
+            with self.subTest(wait=wait):
+                q = QueueManager()
+                q.issue_ticket(1, 0)
+                q.issue_ticket(1, 0)
+                q.call_next(wait)
+                q.call_next(wait)
+                self.assertEqual(q.statistics(), {
+                    'served_count': 2, 'average_wait': wait, 'max_wait': wait,
+                })
+
 
 if __name__ == "__main__":
     unittest.main()

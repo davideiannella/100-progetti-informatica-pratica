@@ -44,6 +44,8 @@ python tests/test_p012.py
 ## Perimetro del laboratorio
 
 - Il file in `src` definisce le funzioni o le classi del progetto. I test le richiamano con dati di prova; non è prevista un’interfaccia interattiva.
+- I valori dei colli e il valore totale del carico devono restare entro `sys.float_info.max`, il massimo valore finito del tipo `float` (circa 1,8 × 10³⁰⁸). Il limite vale anche per i valori interi.
+- Se il valore ottimo supera questo limite, la funzione segnala `OverflowError` invece di restituire un risultato infinito o una scelta sbagliata. Gli oggetti troppo pesanti e le combinazioni che superano la capacità non contribuiscono a questo controllo.
 
 ## Windows
 

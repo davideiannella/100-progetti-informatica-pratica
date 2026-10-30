@@ -14,7 +14,7 @@ Apri un terminale nella cartella `projects/P039` ed esegui da lì i comandi. I b
 
 **Tecnologie utilizzate:** Java.
 
-- JDK Java 17 come ambiente didattico; patch del collaudo non registrata
+- JDK 17; il collaudo del 22 ottobre 2026 usa OpenJDK Temurin 17.0.20.1+1.
 
 Dipendenze:
 

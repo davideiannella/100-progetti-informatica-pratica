@@ -44,6 +44,8 @@ python tests/test_p006.py
 ## Perimetro del laboratorio
 
 - Il file in `src` definisce le funzioni o le classi del progetto. I test le richiamano con dati di prova; non è prevista un’interfaccia interattiva.
+- I pesi e il costo totale del percorso devono restare entro `sys.float_info.max`, il massimo valore finito del tipo `float` (circa 1,8 × 10³⁰⁸). Il limite vale anche quando i pesi sono interi.
+- Se esiste un percorso entro questo limite, il programma può sceglierlo anche quando altri percorsi lo superano. Se invece il costo minimo supera il limite, segnala `OverflowError`. Il risultato `(inf, [])` resta riservato a una destinazione irraggiungibile.
 
 ## Windows
 

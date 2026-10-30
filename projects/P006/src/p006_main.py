@@ -1,5 +1,6 @@
 import heapq, math
 from itertools import count
+from sys import float_info
 
 def dijkstra(graph, start, goal):
     if start not in graph or goal not in graph:
@@ -8,11 +9,11 @@ def dijkstra(graph, start, goal):
         for node, weight in edges.items():
             if node not in graph:
                 raise KeyError('Arco verso nodo assente')
-            if isinstance(weight, bool) or not isinstance(weight, (int, float)) or (not math.isfinite(weight)) or (weight < 0):
-                raise ValueError('Pesi finiti e non negativi richiesti')
-    dist = {n: math.inf for n in graph}
+            if isinstance(weight, bool) or not isinstance(weight, (int, float)) or weight < 0 or weight > float_info.max or not math.isfinite(weight):
+                raise ValueError('Usa pesi finiti non negativi, entro il massimo float')
+    # dist contiene solo i nodi raggiunti; inf indica un costo fuori limite.
+    dist = {start: 0}
     prev = {}
-    dist[start] = 0
     order = count()
     pq = [(0, next(order), start)]
     while pq:
@@ -25,12 +26,16 @@ def dijkstra(graph, start, goal):
             if w < 0:
                 raise ValueError('Dijkstra richiede pesi non negativi')
             nd = d + w
-            if nd < dist[v]:
+            if nd > float_info.max:
+                nd = math.inf
+            if v not in dist or nd < dist[v]:
                 dist[v] = nd
                 prev[v] = u
                 heapq.heappush(pq, (nd, next(order), v))
-    if math.isinf(dist[goal]):
+    if goal not in dist:
         return (math.inf, [])
+    if dist[goal] == math.inf:
+        raise OverflowError('Il costo minimo supera il limite numerico del laboratorio (massimo float)')
     path = []
     cur = goal
     while cur != start:
