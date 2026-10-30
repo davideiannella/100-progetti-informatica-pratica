@@ -64,7 +64,11 @@ Dopo l’attivazione, esegui i comandi `python` di installazione, avvio e test i
 
 ## Collaudi documentati
 
-I materiali conservati documentano un collaudo su Linux con esito positivo per le suite disponibili e le prove aggiuntive. Il riepilogo storico del gruppo P001–P040 non indica una data precisa. I test Python e le prove sul database controllano due percorsi distinti: leggi separatamente i rispettivi risultati.
+**Ultimo collaudo: 30 ottobre 2026 — superato.** Le verifiche del progetto sono riuscite su Ubuntu 24.04 nel [collaudo pubblico P001–P080](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41134634700), eseguito sul commit `35b49f130493`.
+
+### Prove precedenti
+
+Nel [collaudo del 22 ottobre 2026](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701), le verifiche della versione di allora sono riuscite su Ubuntu 24.04.
 
 Nel [collaudo automatizzato del 22 ottobre 2026](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701), il runner ha eseguito lo script originale `mongo/telemetry_examples.js` tramite `mongosh` su MongoDB 8.0.14, avviato in un container Docker. Tutte le 12 asserzioni sul database reale sono risultate superate: verificano la versione del motore, l’inserimento, i tipi BSON, l’indice composto e i risultati della query con filtro per dispositivo, ordinamento temporale e limite. Le due suite Python sono state eseguite separatamente. Le evidenze sono nel [registro P031](../../collaudo/P031/registro.json) e nell’[output della prova sul motore](../../collaudo/P031/streams/003_step_3.stdout.txt); la procedura è nella funzione `engine_suite` del [runner](../../tools/ci_p001_p040/runner.py).
 

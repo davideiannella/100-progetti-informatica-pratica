@@ -52,6 +52,13 @@ Apri l'esecuzione associata al commit che stai usando e controlla job, esiti e l
 
 I test verificano i casi e gli ambienti descritti. Il controllo di tutti i progetti non equivale a una prova matematica dell'assenza di ogni possibile errore, né a un collaudo nativo Windows dei progetti provati soltanto su Ubuntu.
 
+## Esito dei collaudi del 30 ottobre 2026
+
+- [P001–P080](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41134634700): cinque job riusciti sul commit `35b49f130493ddd03e3c16d00f373d7bfe4237a7`, inclusi i controlli dei database e dei container.
+- [P081–P100](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41133691301): quattro job riusciti sul commit `4741cc45e376c39bcddcc63d519bd579efc31c19`, su Ubuntu e Windows con Python 3.12 e 3.13.
+
+Fra queste versioni e l’aggiornamento delle date nei README, i sorgenti, i test e il manifest restano identici. È cambiata la documentazione e, per il secondo collaudo P001–P080, la selezione dell’SDK .NET. Le date nei README sono quelle delle esecuzioni effettive; le prove storiche restano distinte.
+
 ## Riferimenti tecnici
 
 - [SQLite: vincoli delle tabelle](https://www.sqlite.org/lang_createtable.html).

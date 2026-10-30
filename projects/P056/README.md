@@ -82,6 +82,10 @@ Dopo l’attivazione, usa i comandi `python` di installazione, avvio e test indi
 
 ## Collaudi documentati
 
+**Ultimo collaudo: 30 ottobre 2026 — superato.** Le verifiche del progetto sono riuscite su Ubuntu 24.04 nel [collaudo pubblico P001–P080](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41134634700), eseguito sul commit `35b49f130493`.
+
+### Prove precedenti
+
 Collaudo storico del 2026-10-16/17: Suite YAML locale; secondo tentativo kind su GitHub Actions riuscito per tre Pod pronti, Service HTTP, ricreazione Pod e liveness.
 
 Queste istruzioni sono state ricavate dai file e dai collaudi conservati.

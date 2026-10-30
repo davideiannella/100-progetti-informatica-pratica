@@ -66,6 +66,8 @@ I badge mostrano lo stato del workflow. Per verificare una versione, apri il rel
 
 Le [correzioni del 30 ottobre 2026](docs/REVISIONE_2026_10_30.md) descrivono i casi limite risolti, i test rafforzati e il rapporto con gli output storici.
 
+**Ultimo collaudo: 30 ottobre 2026.** Esito positivo per [P001–P080 su Ubuntu](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41134634700) e per [P081–P100 su Ubuntu e Windows](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41133691301). La sezione *Collaudi documentati* di ogni progetto riporta data, ambiente e collegamento alla prova.
+
 ## Versioni e segnalazioni
 
 Conserva il commit associato alla copia che usi: `main` può cambiare. Per segnalare un problema indica progetto, commit, sistema operativo, versioni, comando e messaggio completo di errore, rimuovendo dati personali e credenziali.

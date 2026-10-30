@@ -74,6 +74,10 @@ Dopo l’attivazione, usa i comandi `python` di installazione, avvio e test indi
 
 ## Collaudi documentati
 
+**Ultimo collaudo: 30 ottobre 2026 — superato.** Le verifiche del progetto sono riuscite su Ubuntu 24.04 nel [collaudo pubblico P001–P080](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41134634700), eseguito sul commit `35b49f130493`.
+
+### Prove precedenti
+
 Collaudo storico del 2026-10-16/17: Suite SQLite/configurazione locale; stack Nginx–API–PostgreSQL riuscito su GitHub Actions, persistenza dopo riavvio API e DB.
 
 Queste istruzioni sono state ricavate dai file e dai collaudi conservati.

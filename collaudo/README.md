@@ -8,6 +8,8 @@ Ogni resoconto distingue comandi, ambiente, esito, output standard (`stdout`) e 
 
 Gli output qui conservati sono registri storici datati. La [revisione del 30 ottobre 2026](../docs/REVISIONE_2026_10_30.md) distingue le correzioni attuali e le nuove esecuzioni automatiche.
 
+**Ultimo collaudo: 30 ottobre 2026.** Consulta le nuove esecuzioni riuscite: [P001–P080](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41134634700) e [P081–P100](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41133691301). Le tabelle seguenti aprono i registri storici conservati, con le rispettive date.
+
 ## Scegli una sezione
 
 La suddivisione segue l’indice del libro e il catalogo dei sorgenti.

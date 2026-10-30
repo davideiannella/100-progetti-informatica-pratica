@@ -67,4 +67,8 @@ I calcoli sui valori numerici dei permessi possono funzionare anche su Windows. 
 
 ## Collaudi documentati
 
+**Ultimo collaudo: 30 ottobre 2026 — superato.** Le verifiche del progetto sono riuscite su Ubuntu 24.04 nel [collaudo pubblico P001–P080](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41134634700), eseguito sul commit `35b49f130493`.
+
+### Prove precedenti
+
 La documentazione del 18 ottobre 2026 descrive una suite di 8 metodi di test `unittest`. I collegamenti «Output verificati» e «Registro del collaudo», all’inizio della pagina, riportano risultati, comandi e ambiente delle prove conservate.
