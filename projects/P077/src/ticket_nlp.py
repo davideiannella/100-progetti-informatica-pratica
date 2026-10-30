@@ -115,7 +115,7 @@ def experiment(train=TRAIN_DATA, test=TEST_DATA):
     counts = Counter(r[2] for r in train)
     majority = sorted(counts, key=lambda c: (-counts[c], c))[0]
     return {
-        "dataset": "36 ticket inventati manualmente; nessun dato cliente",
+        "dataset": f"{len(train) + len(test)} ticket inventati manualmente; nessun dato cliente",
         "split": {"train": len(train), "test": len(test), "text_overlap": 0,
                   "train_ids": [r[0] for r in train], "test_ids": [r[0] for r in test]},
         "classes": list(CLASSES), "accuracy": float(accuracy_score(truth, pred)),

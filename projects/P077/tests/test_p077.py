@@ -72,6 +72,24 @@ class TestTicket(unittest.TestCase):
         other=m.train_model()
         np.testing.assert_allclose(self.model.named_steps['clf'].coef_,other.named_steps['clf'].coef_,rtol=0,atol=0)
 
+    def test_dataset_count_with_extended_holdout(self):
+        extra = (
+            ('ex-a1', 'password respinta sul nuovo dispositivo', 'accesso'),
+            ('ex-a2', 'account inaccessibile dopo il cambio credenziali', 'accesso'),
+            ('ex-a3', 'codice di autenticazione scaduto prima del login', 'accesso'),
+            ('ex-f1', 'la fattura contiene un servizio mai richiesto', 'fatturazione'),
+            ('ex-f2', 'addebito presente dopo il rimborso', 'fatturazione'),
+            ('ex-f3', 'pagamento confermato senza ricevuta', 'fatturazione'),
+            ('ex-t1', 'applicazione chiusa durante il caricamento', 'tecnico'),
+            ('ex-t2', 'errore di connessione dopo il salvataggio', 'tecnico'),
+            ('ex-t3', 'schermata bloccata durante esportazione', 'tecnico'),
+        )
+        result = m.experiment(test=m.TEST_DATA + extra)
+        self.assertEqual((result['split']['train'], result['split']['test']), (24, 21))
+        self.assertEqual(result['dataset'], '45 ticket inventati manualmente; nessun dato cliente')
+        self.assertEqual(len(result['predictions']), 21)
+        self.assertAlmostEqual(result['baseline_accuracy'], 7 / 21)
+
     def test_training_order_does_not_change_labels(self):
         rows=list(m.TRAIN_DATA);random.Random(771).shuffle(rows)
         other=m.train_model(rows)

@@ -14,3 +14,5 @@ with TemporaryDirectory() as directory:
     except ValueError:
         assert target.read_text() == "dato valido"
         print("Target conservato")
+    else:
+        raise AssertionError("Il backup corrotto non è stato rifiutato")

@@ -7,8 +7,9 @@ class Zone:
     target_devices_per_ap: int
 
     def aps_needed(self):
-        if self.devices <= 0 or self.target_devices_per_ap <= 0:
-            raise ValueError("valori non validi")
+        if any(type(value) is not int or value <= 0
+               for value in (self.devices, self.target_devices_per_ap)):
+            raise ValueError("dispositivi e obiettivo per AP devono essere interi positivi")
         return (self.devices + self.target_devices_per_ap - 1)//self.target_devices_per_ap
 
 def non_overlapping_24ghz():

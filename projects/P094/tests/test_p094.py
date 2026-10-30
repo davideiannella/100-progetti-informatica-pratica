@@ -1,4 +1,6 @@
 import json
+import math
+from fractions import Fraction
 import pathlib
 import sys
 import unittest
@@ -149,6 +151,27 @@ class CityTests(unittest.TestCase):
         self.city.air_event(1e308, event_id="a1", ts=1)
         self.city.air_event(1e308, event_id="a2", ts=2)
         self.assertEqual(self.city.indicators()["pm25_avg"], 1e308)
+        maximum = sys.float_info.max
+        cases = ([maximum] * 3, [maximum] * 7,
+                 [maximum, math.nextafter(maximum, 0), maximum],
+                 [maximum, maximum, 0], [0, 0, 0], [20, 40, 50],
+                 [0.1] * 11, [5e-324] * 3, [1e-323] * 3)
+        for values in cases:
+            expected = float(sum(map(Fraction.from_float, map(float, values)), Fraction()) / len(values))
+            city = SmartCity(1)
+            for index, value in enumerate(values):
+                city.air_event(value, event_id=f"a{index}", ts=index)
+                city.traffic_event(value, event_id=f"t{index}", ts=index)
+            for field in ("pm25_avg", "traffic_avg"):
+                with self.subTest(values=values, field=field):
+                    actual = city.indicators()[field]
+                    self.assertTrue(math.isfinite(actual))
+                    self.assertLessEqual(actual, max(values))
+                    self.assertEqual(actual, expected)
+            if len(set(values)) == 1:
+                indicators = city.indicators(traffic_limit=values[0], pm25_limit=values[0])
+                self.assertFalse(indicators["traffic_alert"])
+                self.assertFalse(indicators["air_alert"])
 
     def test_demo_has_eight_records_and_two_free_stalls(self):
         result = demo()

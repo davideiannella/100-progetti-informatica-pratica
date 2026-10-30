@@ -64,8 +64,12 @@ class SmartWastePlatformTests(unittest.TestCase):
         self.assertEqual(self.store.count_events(), 0)
 
     def test_unknown_device_rejected(self):
-        with self.assertRaises(PermissionError):
-            self.platform.ingest(self.event(device_id="UNKNOWN"), "0" * 64)
+        payload = self.event(device_id="UNKNOWN")
+        # Il MAC è coerente con la chiave nota: deve fallire la ricerca del device,
+        # non il confronto del MAC dopo un eventuale fallback al device sbagliato.
+        signature = EventSigner.sign(payload, self.device.secret)
+        with self.assertRaisesRegex(PermissionError, "device sconosciuto"):
+            self.platform.ingest(payload, signature)
         self.assertEqual(self.store.count_events(), 0)
 
     def test_registry_rejects_bad_ids_duplicates_and_short_secrets(self):

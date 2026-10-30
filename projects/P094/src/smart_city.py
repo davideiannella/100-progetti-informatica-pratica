@@ -2,6 +2,7 @@
 import copy
 import json
 import math
+from statistics import mean
 
 
 def _text(value, label):
@@ -18,6 +19,10 @@ def _number(value, label):
     if not valid or value < 0:
         raise ValueError(f"{label}: numero finito non negativo richiesto.")
     return float(value)
+
+
+def _mean(values):
+    return mean(values) if values else None
 
 
 class SmartCity:
@@ -95,9 +100,8 @@ class SmartCity:
     def indicators(self, traffic_limit=80, pm25_limit=35):
         traffic_limit = _number(traffic_limit, "traffic_limit")
         pm25_limit = _number(pm25_limit, "pm25_limit")
-        # Dividere prima della somma evita l'overflow della somma di valori finiti.
-        traffic_avg = math.fsum(x / len(self._traffic) for x in self._traffic) if self._traffic else None
-        pm25_avg = math.fsum(x / len(self._air) for x in self._air) if self._air else None
+        traffic_avg = _mean(self._traffic)
+        pm25_avg = _mean(self._air)
         return {"parking_free": self.parking_free(), "parking_capacity": len(self._parking),
                 "traffic_samples": len(self._traffic), "air_samples": len(self._air),
                 "traffic_avg": traffic_avg, "pm25_avg": pm25_avg,
