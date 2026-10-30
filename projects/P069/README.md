@@ -1,4 +1,4 @@
-# P069: Hardening Linux: un audit riproducibile di permessi e configurazione
+# P069: Controllare la sicurezza di Linux: permessi e configurazione
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P069/README.md) · [Registro del collaudo](../../collaudo/P069/registro.json)
 
@@ -6,13 +6,13 @@
 
 **Argomenti:** Sicurezza dei sistemi · Hardening Linux · Permessi.
 
-Controlla permessi POSIX e configurazioni sintetiche con un audit in sola lettura.
+Il progetto controlla i permessi POSIX dei file e alcune configurazioni create per il laboratorio. L’audit legge questi dati e segnala i problemi previsti dalle regole, senza correggerli automaticamente.
 
-Tutti i comandi partono dalla cartella `projects/P069`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P069`. I comandi qui sotto sono scritti per Linux con Bash; per Windows consulta la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: Python.
+**Tecnologie utilizzate:** Python · Linux.
 
 - Python 3.12.14 (ambiente documentato)
 
@@ -22,7 +22,9 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P069. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale.
+Installa Python 3.12, poi esegui i comandi qui sotto per creare e attivare un ambiente virtuale dedicato al progetto, nella cartella `.venv`. Dopo l’attivazione, il comando `python` usa questo ambiente. Riattivalo ogni volta che apri un nuovo terminale.
+
+Le versioni elencate sono quelle degli ambienti documentati; non indicano la versione minima compatibile.
 
 ```bash
 python3.12 -m venv .venv
@@ -30,6 +32,8 @@ python3.12 -m venv .venv
 ```
 
 ## Avvio
+
+Esegui la dimostrazione per leggere le segnalazioni sui permessi e sulle configurazioni di esempio.
 
 ```bash
 python -B src/hardening_audit.py
@@ -43,20 +47,24 @@ Riproduce i casi sui permessi, sul collegamento simbolico e sulle configurazioni
 python -B worked_example.py
 ```
 
-Eseguire su Linux; da Windows usare WSL e una cartella nel filesystem Linux, per conservare la semantica dei permessi POSIX.
+Esegui l’esempio su Linux. Se usi Windows, apri WSL e salva il progetto nel filesystem Linux, così i permessi POSIX mantengono il comportamento previsto.
 
 ## Test
+
+Esegui i test automatici del progetto:
 
 ```bash
 python -B run_tests.py
 ```
 
+Nel riepilogo, `OK` indica che tutti i test eseguiti sono passati. Il report JSON riporta quanti test sono stati eseguiti e gli eventuali errori o fallimenti.
+
 ## Windows
 
-I calcoli puri sui modi numerici possono funzionare in Windows, ma gli esercizi e i test applicano chmod e confrontano bit POSIX; creano inoltre symlink. L’audit dei permessi reali va riprodotto in un filesystem Linux/WSL, senza equiparare i bit POSIX alle ACL Windows. Per riprodurre l’intero laboratorio da Windows usare WSL con una distribuzione Linux e una cartella nel filesystem Linux, non una cartella montata da C:. Nessun test Windows nativo è attestato da questo README.
+Per riprodurre l’intero laboratorio da Windows, usa WSL con una distribuzione Linux. Salva il progetto nel filesystem Linux, non in una cartella montata dall’unità C:.
+
+I calcoli sui valori numerici dei permessi possono funzionare anche su Windows. Gli esercizi e i test usano però `chmod`, controllano i bit POSIX e creano collegamenti simbolici. Questi permessi non equivalgono alle ACL, cioè alle liste di controllo degli accessi di Windows. Le prove conservate non documentano un collaudo su Windows nativo.
 
 ## Collaudi documentati
 
-Documentazione del 18 ottobre 2026: demo ed esempi acquisiti con l’ambiente indicato; suite congelata di 8 metodi unittest già verificata. Nessuna suite è stata rieseguita per preparare questo README.
-
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+La documentazione del 18 ottobre 2026 descrive una suite di 8 metodi di test `unittest`. I collegamenti «Output verificati» e «Registro del collaudo», all’inizio della pagina, riportano risultati, comandi e ambiente delle prove conservate.

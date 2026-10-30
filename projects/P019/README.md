@@ -6,13 +6,13 @@
 
 **Argomenti:** Strutture dati · Code con priorità.
 
-Gestisce una coda di emergenze con le strutture della libreria standard C++.
+Sceglie la prossima emergenza con una coda di priorità C++. Il numero di priorità più basso viene servito prima; a pari priorità vale l’ordine di arrivo.
 
-Tutti i comandi partono dalla cartella `projects/P019`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P019` ed esegui da lì i comandi. I blocchi principali usano Bash su Linux; trovi le indicazioni per Windows nella sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: C++.
+**Tecnologie utilizzate:** C++.
 
 - C++17
 
@@ -23,13 +23,15 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P019. Installare prima il compilatore o SDK indicato nei requisiti. Le versioni documentate non costituiscono una garanzia per toolchain diverse.
+Installa il compilatore o il kit di sviluppo indicato nei requisiti, poi apri un terminale Bash nella cartella del progetto. Esegui i comandi seguenti per preparare il laboratorio. Le versioni documentate non garantiscono lo stesso comportamento con strumenti diversi.
 
 ```bash
 mkdir -p build
 ```
 
 ## Avvio
+
+La demo stampa `emergenza`, la descrizione della richiesta con priorità maggiore.
 
 ```bash
 g++ -std=c++17 -Wall -Wextra -Werror src/dispatcher.cpp -o build/dispatcher
@@ -38,6 +40,8 @@ g++ -std=c++17 -Wall -Wextra -Werror src/dispatcher.cpp -o build/dispatcher
 
 ## Test
 
+Il programma stampa `P019: priority_queue PASS` se l’ordine delle richieste e il rifiuto della priorità non valida superano i controlli.
+
 ```bash
 g++ -std=c++17 -Wall -Wextra -Werror -O1 -g -fsanitize=undefined -fno-sanitize-recover=all tests/test_dispatcher.cpp -o build/test_dispatcher
 ./build/test_dispatcher
@@ -45,16 +49,16 @@ g++ -std=c++17 -Wall -Wextra -Werror -O1 -g -fsanitize=undefined -fno-sanitize-r
 
 ## Perimetro del laboratorio
 
-- Il main dimostrativo stampa la descrizione della prima emergenza estratta. Comando derivato dal sorgente.
+- Il programma dimostrativo stampa la descrizione della prima emergenza estratta. I test verificano anche l’ordine delle richieste con la stessa priorità.
 
 ## Windows
 
-Windows nativo plausibile con un compilatore C++17: non vi sono dipendenze POSIX. I flag GNU, il sanitizer e il percorso di avvio richiedono una toolchain compatibile o adattamenti; WSL permette di seguire la sequenza GNU/Linux. Nessun test Windows eseguito. Nessun test Windows nativo è attestato da questo README.
+Il sorgente usa la libreria standard C++ e non richiede interfacce POSIX. Può essere compilato anche con un compilatore C++17 per Windows, adattando le opzioni agli strumenti scelti. Qui non è documentato un collaudo su Windows.
 
-I blocchi di compilazione sono per GNU/Linux: percorsi degli eseguibili, creazione della cartella `build` e opzioni del sanitizer vanno adattati alla toolchain Windows. WSL permette di seguire la stessa sequenza Linux.
+Per usare gli stessi comandi da Windows, scegli WSL con una distribuzione Linux. Se preferisci un compilatore Windows, adatta la creazione della cartella `build`, i percorsi degli eseguibili e le opzioni del sanitizer, lo strumento che rileva alcune operazioni non definite dallo standard.
 
 ## Collaudi documentati
 
-Collaudo storico su Linux: le suite disponibili e i casi aggiuntivi risultano superati. Il riepilogo del gruppo P001–P040 non riporta una data puntuale; questi risultati non sono stati rieseguiti per preparare il README.
+Nel collaudo storico su Linux, le suite disponibili e i casi aggiuntivi hanno superato i controlli previsti. Il riepilogo storico del gruppo P001–P040 non specifica la data delle prove.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Apri **Output verificati** e **Registro del collaudo**, all’inizio di questa pagina, per consultare comandi, esiti e limiti delle prove pubblicate. Esegui i test anche sul tuo computer e ripetili dopo ogni modifica al codice.

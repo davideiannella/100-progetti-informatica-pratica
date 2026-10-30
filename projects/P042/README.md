@@ -6,13 +6,13 @@
 
 **Argomenti:** Affidabilità del software · Idempotenza · Concorrenza.
 
-Controlla idempotenza, conflitti e richieste concorrenti in pagamenti simulati.
+Ripeti una richiesta di pagamento simulato senza crearne una seconda identica. Il servizio conserva in memoria il risultato associato alla chiave e rifiuta la stessa chiave se viene riusata con un importo diverso.
 
-Tutti i comandi partono dalla cartella `projects/P042`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P042` ed esegui da lì tutti i comandi. Gli esempi usano Linux e Bash; per Windows, segui anche la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: C# / .NET.
+**Tecnologie utilizzate:** C# · .NET.
 
 - .NET SDK 8.0.426 (collaudo locale storico)
 - .NET runtime 8.0.26 (collaudo locale storico)
@@ -23,15 +23,17 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P042. Installare prima il compilatore o SDK indicato nei requisiti. Le versioni documentate non costituiscono una garanzia per toolchain diverse.
+Installa l’SDK .NET 8 indicato nei requisiti: è il pacchetto di strumenti necessario per compilare il progetto. Le versioni elencate sono quelle dei collaudi documentati; con strumenti diversi occorre ripetere le verifiche.
 
-Non sono previsti ulteriori comandi di preparazione oltre all’installazione della toolchain indicata.
+Dopo l’installazione dell’SDK non servono altri comandi di preparazione.
 
 ## Avvio
 
-Non è presente un’applicazione dimostrativa autonoma: usare i test sotto come punto di ingresso eseguibile.
+Esegui i comandi della sezione Test per provare il laboratorio. I test richiamano il codice e verificano i risultati; non c’è un’applicazione dimostrativa separata.
 
 ## Test
+
+I test ripetono le richieste, provano chiavi in conflitto e input non validi ed eseguono 100 chiamate concorrenti. Se i controlli passano, stampano un messaggio `PASS`.
 
 ```bash
 dotnet run --project tests/P042.Tests.csproj
@@ -39,14 +41,14 @@ dotnet run --project tests/P042.Tests.csproj
 
 ## Perimetro del laboratorio
 
-- Il servizio è una libreria in memoria. L’eseguibile dei test dimostra retry, conflitto, input e 100 chiamate concorrenti; non avvia un server HTTP.
+- Il servizio conserva i risultati soltanto in memoria. I test provano il reinvio della stessa richiesta (retry), i conflitti, gli input e 100 chiamate concorrenti; non avviano un server HTTP.
 
 ## Windows
 
-SDK .NET 8 e progetti SDK-style net8.0 rendono plausibile l’avvio Windows nativo; nessun uso di Bash/POSIX nei file esaminati. Nessun test Windows nativo è attestato da questo README.
+Per provare il progetto direttamente su Windows serve l’SDK .NET 8. Il progetto usa il formato SDK-style con destinazione net8.0 e non richiede Bash o strumenti POSIX. L’esecuzione nativa su Windows non è stata collaudata nelle prove documentate.
 
 ## Collaudi documentati
 
-Collaudo storico del 2026-10-16: Test locali registrati; nessun nuovo test eseguito durante questa revisione.
+Collaudo storico del 2026-10-16: Test locali registrati.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Queste istruzioni sono state ricavate dai file e dai collaudi conservati.

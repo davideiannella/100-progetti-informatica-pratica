@@ -6,13 +6,13 @@
 
 **Argomenti:** Reti · Comunicazione client e server · Concorrenza.
 
-Prova comunicazioni TCP locali e chiusura del server mediante test di integrazione.
+Scambia messaggi di testo fra client e server TCP sulla stessa macchina. Il server inoltra ogni messaggio a tutti i client collegati; i test verificano anche la chiusura delle connessioni.
 
-Tutti i comandi partono dalla cartella `projects/P015`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P015` ed esegui da lì i comandi. I blocchi principali usano Bash su Linux; trovi le indicazioni per Windows nella sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: Java.
+**Tecnologie utilizzate:** Java.
 
 - JDK 17 o successivo come base proposta; versione esatta del JDK del collaudo storico non registrata nel riepilogo consultato
 
@@ -22,7 +22,7 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P015. Installare prima il compilatore o SDK indicato nei requisiti. Le versioni documentate non costituiscono una garanzia per toolchain diverse.
+Installa il compilatore o il kit di sviluppo indicato nei requisiti, poi apri un terminale Bash nella cartella del progetto. Esegui i comandi seguenti per preparare il laboratorio. Le versioni documentate non garantiscono lo stesso comportamento con strumenti diversi.
 
 ```bash
 mkdir -p build
@@ -30,9 +30,11 @@ mkdir -p build
 
 ## Avvio
 
-Non è presente un’applicazione dimostrativa autonoma: usare i test sotto come punto di ingresso eseguibile.
+Per provare la chat, esegui i due test della sezione seguente: avviano il server, collegano i client e chiudono le connessioni. Non serve avviare un programma separato.
 
 ## Test
+
+Le due prove stampano messaggi con `PASS`: la prima verifica l’inoltro dei messaggi; la seconda controlla UTF-8 e chiusura del server con un client ancora connesso.
 
 ```bash
 javac -Xlint:all -d build src/ChatServer.java tests/ChatIntegrationTest.java tests/ChatShutdownTest.java
@@ -40,20 +42,20 @@ java -ea -cp build ChatIntegrationTest
 java -ea -cp build ChatShutdownTest
 ```
 
-Mantenere `-ea` nei comandi Java: abilita le asserzioni usate dalle verifiche.
+Conserva `-ea` nei comandi Java: abilita le asserzioni, cioè i controlli usati dal programma di verifica.
 
 ## Perimetro del laboratorio
 
-- ChatServer non contiene main; viene avviato e chiuso dai due test di integrazione.
+- `ChatServer` non contiene un metodo `main`: i due test di integrazione lo avviano e lo chiudono.
 
 ## Windows
 
-Windows nativo plausibile con JDK 17 e javac/java nel PATH. I comandi relativi non richiedono Bash o WSL. Compatibilità dedotta dai file, non collaudata su Windows. Nessun test Windows nativo è attestato da questo README.
+Puoi preparare il progetto su Windows con JDK 17 e i comandi `javac` e `java` disponibili nel terminale. La compatibilità è dedotta dai sorgenti; qui non è documentato un collaudo su Windows.
 
-I blocchi di compilazione sono per GNU/Linux: percorsi degli eseguibili, creazione della cartella `build` e opzioni del sanitizer vanno adattati alla toolchain Windows. WSL permette di seguire la stessa sequenza Linux.
+Nel Prompt dei comandi di Windows (`cmd.exe`), sostituisci `mkdir -p build` con `if not exist build mkdir build`. I comandi `javac` e `java` restano uguali: nei test conserva `-ea` per abilitare le asserzioni. WSL non è necessario.
 
 ## Collaudi documentati
 
-Collaudo storico su Linux: le suite disponibili e i casi aggiuntivi risultano superati. Il riepilogo del gruppo P001–P040 non riporta una data puntuale; questi risultati non sono stati rieseguiti per preparare il README.
+Nel collaudo storico su Linux, le suite disponibili e i casi aggiuntivi hanno superato i controlli previsti. Il riepilogo storico del gruppo P001–P040 non specifica la data delle prove.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Apri **Output verificati** e **Registro del collaudo**, all’inizio di questa pagina, per consultare comandi, esiti e limiti delle prove pubblicate. Esegui i test anche sul tuo computer e ripetili dopo ogni modifica al codice.

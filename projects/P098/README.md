@@ -1,4 +1,4 @@
-# P098: Monitoraggio intermittente: FIFO in memoria, ACK e retry
+# P098: Monitoraggio con collegamento intermittente: coda, conferme e reinvii
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P098/README.md) · [Registro del collaudo](../../collaudo/P098/registro.json)
 
@@ -6,13 +6,13 @@
 
 **Argomenti:** IoT simulato · Affidabilità · Conferme e ritrasmissioni.
 
-Simula invii intermittenti con coda FIFO, conferme e tentativi successivi.
+Il programma conserva i messaggi in una coda FIFO, cioè nell’ordine in cui arrivano, e riprova a inviarli quando il collegamento simulato torna disponibile. Un messaggio viene tolto dalla coda soltanto dopo una conferma di ricezione (ACK) che corrisponde al suo dispositivo e al suo numero progressivo.
 
 Tutti i comandi partono dalla cartella `projects/P098`. I blocchi seguenti usano la sintassi di Linux/Bash.
 
 ## Requisiti e versioni
 
-Linguaggio: Python.
+**Tecnologie utilizzate:** Python.
 
 - Python 3.12 o 3.13 come riferimento verificato
 - Python 3.12.14 (collaudo Linux storico)
@@ -27,7 +27,9 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P098. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale. Test verificati sui runner Ubuntu di GitHub Actions con Python 3.12.15 e 3.13.16 il 22 ottobre 2026.
+Installa Python 3.12, poi esegui i comandi seguenti dalla cartella `projects/P098` in Linux/Bash. Creano e attivano un ambiente virtuale nella cartella `.venv`, dove tenere separati i pacchetti del progetto. Dopo l’attivazione, `python` usa l’interprete di questo ambiente. Riattiva l’ambiente quando apri un nuovo terminale.
+
+Le versioni elencate descrivono gli ambienti già provati, non la versione minima utilizzabile in ogni situazione. I test sono stati verificati sui runner Ubuntu di GitHub Actions con Python 3.12.15 e 3.13.16 il 22 ottobre 2026.
 
 ```bash
 python3.12 -m venv .venv
@@ -40,14 +42,21 @@ python3.12 -m venv .venv
 python src/resilient_monitor.py
 ```
 
+## Cosa vedrai
+
+Il riepilogo JSON mostra 0 conferme durante l’interruzione e 2 dopo il ripristino. Alla fine la coda è vuota (`pending: 0`) e i messaggi ricevuti mantengono l’ordine 1, 2. Ripresentare un messaggio già registrato non crea una nuova copia (`replay_inserted: false`).
+
 ## Test
 
 ```bash
 python run_tests.py
 ```
 
+Alla fine dell’esecuzione, `OK` indica che tutti i test hanno avuto esito positivo.
+
 ## Perimetro del laboratorio
 
+- Il collegamento è simulato e la coda risiede in memoria. I messaggi in attesa non sopravvivono alla chiusura del programma.
 - Nessuna rete, credenziale, periferica o servizio esterno richiesto per demo e test.
 
 ## Windows
@@ -61,7 +70,7 @@ py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, usa i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, usa direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
 
 ## Collaudi documentati
 

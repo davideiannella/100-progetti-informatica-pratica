@@ -6,13 +6,13 @@
 
 **Argomenti:** Strutture dati · Gestione della memoria.
 
-Implementa un buffer circolare con capacità fissa e ne verifica le operazioni.
+Conserva un numero limitato di valori e riutilizza le stesse posizioni di memoria. Se il buffer è pieno, rifiuta il nuovo valore senza sovrascrivere quelli in attesa.
 
-Tutti i comandi partono dalla cartella `projects/P017`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P017` ed esegui da lì i comandi. I blocchi principali usano Bash su Linux; trovi le indicazioni per Windows nella sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: C.
+**Tecnologie utilizzate:** C.
 
 - C11
 
@@ -23,7 +23,7 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P017. Installare prima il compilatore o SDK indicato nei requisiti. Le versioni documentate non costituiscono una garanzia per toolchain diverse.
+Installa il compilatore o il kit di sviluppo indicato nei requisiti, poi apri un terminale Bash nella cartella del progetto. Esegui i comandi seguenti per preparare il laboratorio. Le versioni documentate non garantiscono lo stesso comportamento con strumenti diversi.
 
 ```bash
 mkdir -p build
@@ -31,9 +31,11 @@ mkdir -p build
 
 ## Avvio
 
-Non è presente un’applicazione dimostrativa autonoma: usare i test sotto come punto di ingresso eseguibile.
+Per provare il buffer, compila ed esegui il test della sezione seguente. Il sorgente del buffer è una libreria, senza un programma dimostrativo separato.
 
 ## Test
+
+Se le operazioni sul buffer rispettano i controlli previsti, il programma stampa `P017: ring buffer PASS`.
 
 ```bash
 gcc -std=c11 -Wall -Wextra -Werror -O1 -g -fsanitize=undefined -fno-sanitize-recover=all tests/test_ring_buffer.c src/ring_buffer.c -o build/test_ring_buffer
@@ -42,16 +44,16 @@ gcc -std=c11 -Wall -Wextra -Werror -O1 -g -fsanitize=undefined -fno-sanitize-rec
 
 ## Perimetro del laboratorio
 
-- Il sorgente è una libreria senza main; il programma eseguibile è tests/test_ring_buffer.c.
+- Il sorgente del buffer è una libreria senza `main`. Il programma da compilare ed eseguire per provarla è `tests/test_ring_buffer.c`.
 
 ## Windows
 
-Windows nativo plausibile con un compilatore C11: il sorgente usa solo la libreria standard. La sequenza GNU con -fsanitize=undefined va verificata per la toolchain scelta; per riprodurre il collaudo GNU/Linux usare WSL. Nessun test Windows eseguito. Nessun test Windows nativo è attestato da questo README.
+Il sorgente usa soltanto la libreria standard C e può essere compilato anche con un compilatore C11 per Windows. La compatibilità delle opzioni, in particolare `-fsanitize=undefined`, dipende dagli strumenti scelti e va verificata. Qui non è documentato un collaudo su Windows.
 
-I blocchi di compilazione sono per GNU/Linux: percorsi degli eseguibili, creazione della cartella `build` e opzioni del sanitizer vanno adattati alla toolchain Windows. WSL permette di seguire la stessa sequenza Linux.
+Per usare gli stessi comandi da Windows, scegli WSL con una distribuzione Linux. Se preferisci un compilatore Windows, adatta la creazione della cartella `build`, i percorsi degli eseguibili e le opzioni del sanitizer, lo strumento che rileva alcune operazioni non definite dallo standard.
 
 ## Collaudi documentati
 
-Collaudo storico su Linux: le suite disponibili e i casi aggiuntivi risultano superati. Il riepilogo del gruppo P001–P040 non riporta una data puntuale; questi risultati non sono stati rieseguiti per preparare il README.
+Nel collaudo storico su Linux, le suite disponibili e i casi aggiuntivi hanno superato i controlli previsti. Il riepilogo storico del gruppo P001–P040 non specifica la data delle prove.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Apri **Output verificati** e **Registro del collaudo**, all’inizio di questa pagina, per consultare comandi, esiti e limiti delle prove pubblicate. Esegui i test anche sul tuo computer e ripetili dopo ogni modifica al codice.

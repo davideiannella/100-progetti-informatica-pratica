@@ -6,6 +6,8 @@ Tutti i risultati sono raccolti in questa cartella, da **P001 a P100**. Scegli u
 
 Ogni resoconto distingue comandi, ambiente, esito, output standard (`stdout`) e diagnostica (`stderr`). Per `unittest`, anche i test riusciti sono normalmente descritti su `stderr`: il risultato va letto insieme al codice di uscita.
 
+Gli output qui conservati sono registri storici datati. La [revisione del 30 ottobre 2026](../docs/REVISIONE_2026_10_30.md) distingue le correzioni attuali e le nuove esecuzioni automatiche.
+
 ## Scegli una sezione
 
 La suddivisione segue l’indice del libro e il catalogo dei sorgenti.
@@ -32,7 +34,7 @@ La suddivisione segue l’indice del libro e il catalogo dei sorgenti.
 | P001 | Gestione code in uno sportello servizi | [Output](P001/README.md) · [Registro](P001/registro.json) | [Codice](../projects/P001/README.md) |
 | P002 | Analisi dei consumi domestici da CSV | [Output](P002/README.md) · [Registro](P002/registro.json) | [Codice](../projects/P002/README.md) |
 | P003 | Rubrica con ricerca e ordinamento | [Output](P003/README.md) · [Registro](P003/registro.json) | [Codice](../projects/P003/README.md) |
-| P004 | Scheduler di interventi con coda di priorità | [Output](P004/README.md) · [Registro](P004/registro.json) | [Codice](../projects/P004/README.md) |
+| P004 | Pianificare gli interventi con una coda di priorità | [Output](P004/README.md) · [Registro](P004/registro.json) | [Codice](../projects/P004/README.md) |
 | P005 | Cache LRU con accesso in tempo costante | [Output](P005/README.md) · [Registro](P005/registro.json) | [Codice](../projects/P005/README.md) |
 | P006 | Pianificatore di percorsi su grafo | [Output](P006/README.md) · [Registro](P006/registro.json) | [Codice](../projects/P006/README.md) |
 | P007 | Suggerimenti di testo con un Trie | [Output](P007/README.md) · [Registro](P007/registro.json) | [Codice](../projects/P007/README.md) |
@@ -48,9 +50,9 @@ La suddivisione segue l’indice del libro e il catalogo dei sorgenti.
 | P017 | Buffer circolare: gestire dati continui con memoria fissa | [Output](P017/README.md) · [Registro](P017/registro.json) | [Codice](../projects/P017/README.md) |
 | P018 | Sincronizzare produttore e consumatore | [Output](P018/README.md) · [Registro](P018/registro.json) | [Codice](../projects/P018/README.md) |
 | P019 | Coda di emergenze in C++ con priority_queue e STL | [Output](P019/README.md) · [Registro](P019/registro.json) | [Codice](../projects/P019/README.md) |
-| P020 | Memoria C++ con RAII e smart pointer | [Output](P020/README.md) · [Registro](P020/registro.json) | [Codice](../projects/P020/README.md) |
+| P020 | Gestire la memoria in C++ con RAII e smart pointer | [Output](P020/README.md) · [Registro](P020/registro.json) | [Codice](../projects/P020/README.md) |
 | P021 | Simulare una coda di traffico | [Output](P021/README.md) · [Registro](P021/registro.json) | [Codice](../projects/P021/README.md) |
-| P022 | Nucleo .NET per manutenzioni e ordini di lavoro | [Output](P022/README.md) · [Registro](P022/registro.json) | [Codice](../projects/P022/README.md) |
+| P022 | Gestire manutenzioni e ordini di lavoro con .NET | [Output](P022/README.md) · [Registro](P022/registro.json) | [Codice](../projects/P022/README.md) |
 | P023 | API .NET per attività concorrenti | [Output](P023/README.md) · [Registro](P023/registro.json) | [Codice](../projects/P023/README.md) |
 
 ## Sezione 2: Database e gestione dei dati
@@ -64,13 +66,13 @@ La suddivisione segue l’indice del libro e il catalogo dei sorgenti.
 | P026 | Carriera universitaria ed esami | [Output](P026/README.md) · [Registro](P026/registro.json) | [Codice](../projects/P026/README.md) |
 | P027 | Gestione palestra e abbonamenti | [Output](P027/README.md) · [Registro](P027/registro.json) | [Codice](../projects/P027/README.md) |
 | P028 | E-commerce: ordini, magazzino e pagamenti simulati | [Output](P028/README.md) · [Registro](P028/registro.json) | [Codice](../projects/P028/README.md) |
-| P029 | Hotel booking senza overbooking | [Output](P029/README.md) · [Registro](P029/registro.json) | [Codice](../projects/P029/README.md) |
+| P029 | Prenotazioni alberghiere senza sovrapposizioni | [Output](P029/README.md) · [Registro](P029/registro.json) | [Codice](../projects/P029/README.md) |
 | P030 | Biblioteca SQL: automatizzare regole con trigger e viste | [Output](P030/README.md) · [Registro](P030/registro.json) | [Codice](../projects/P030/README.md) |
-| P031 | Salvare telemetria IoT in MongoDB | [Output](P031/README.md) · [Registro](P031/registro.json) | [Codice](../projects/P031/README.md) |
+| P031 | Salvare le misure di sensori IoT in MongoDB | [Output](P031/README.md) · [Registro](P031/registro.json) | [Codice](../projects/P031/README.md) |
 | P032 | Grafo di mobilità urbana | [Output](P032/README.md) · [Registro](P032/registro.json) | [Codice](../projects/P032/README.md) |
 | P033 | Analisi delle vendite con uno schema a stella | [Output](P033/README.md) · [Registro](P033/registro.json) | [Codice](../projects/P033/README.md) |
 | P034 | Collegare record di archivi diversi | [Output](P034/README.md) · [Registro](P034/registro.json) | [Codice](../projects/P034/README.md) |
-| P035 | Ruoli e auditing nel database | [Output](P035/README.md) · [Registro](P035/registro.json) | [Codice](../projects/P035/README.md) |
+| P035 | Ruoli e registro delle modifiche nel database | [Output](P035/README.md) · [Registro](P035/registro.json) | [Codice](../projects/P035/README.md) |
 
 ## Sezione 3: Ingegneria e progettazione del software
 
@@ -78,10 +80,10 @@ La suddivisione segue l’indice del libro e il catalogo dei sorgenti.
 
 | Progetto | Laboratorio | Risultati | Sorgenti e istruzioni |
 |---|---|---|---|
-| P036 | Progettare una palestra con UML | [Output](P036/README.md) · [Registro](P036/registro.json) | [Codice](../projects/P036/README.md) |
+| P036 | Progettare un gestionale per palestra con UML | [Output](P036/README.md) · [Registro](P036/registro.json) | [Codice](../projects/P036/README.md) |
 | P037 | API REST per trasporto pubblico | [Output](P037/README.md) · [Registro](P037/registro.json) | [Codice](../projects/P037/README.md) |
-| P038 | Ticketing eventi: requisiti e diagrammi | [Output](P038/README.md) · [Registro](P038/registro.json) | [Codice](../projects/P038/README.md) |
-| P039 | Food delivery e confini tra servizi | [Output](P039/README.md) · [Registro](P039/registro.json) | [Codice](../projects/P039/README.md) |
+| P038 | Prenotazioni per eventi: requisiti e diagrammi | [Output](P038/README.md) · [Registro](P038/registro.json) | [Codice](../projects/P038/README.md) |
+| P039 | Consegne a domicilio e separazione dei servizi | [Output](P039/README.md) · [Registro](P039/registro.json) | [Codice](../projects/P039/README.md) |
 | P040 | Segnalazioni civiche con Clean Architecture | [Output](P040/README.md) · [Registro](P040/registro.json) | [Codice](../projects/P040/README.md) |
 | P041 | Motore di notifiche con il pattern Strategy | [Output](P041/README.md) · [Registro](P041/registro.json) | [Codice](../projects/P041/README.md) |
 | P042 | Pagamenti simulati con idempotenza | [Output](P042/README.md) · [Registro](P042/registro.json) | [Codice](../projects/P042/README.md) |
@@ -108,7 +110,7 @@ La suddivisione segue l’indice del libro e il catalogo dei sorgenti.
 | Progetto | Laboratorio | Risultati | Sorgenti e istruzioni |
 |---|---|---|---|
 | P051 | Confrontare FCFS, SJF e Round Robin | [Output](P051/README.md) · [Registro](P051/registro.json) | [Codice](../projects/P051/README.md) |
-| P052 | Verificare uno stato sicuro con il banchiere | [Output](P052/README.md) · [Registro](P052/registro.json) | [Codice](../projects/P052/README.md) |
+| P052 | Verificare uno stato sicuro con l’algoritmo del banchiere | [Output](P052/README.md) · [Registro](P052/registro.json) | [Codice](../projects/P052/README.md) |
 | P053 | Simulare FIFO, LRU e Clock per le pagine | [Output](P053/README.md) · [Registro](P053/registro.json) | [Codice](../projects/P053/README.md) |
 
 ## Sezione 6: Cloud e affidabilità dei servizi
@@ -121,10 +123,10 @@ La suddivisione segue l’indice del libro e il catalogo dei sorgenti.
 | P055 | Collegare Web API e database con Compose | [Output](P055/README.md) · [Registro](P055/registro.json) | [Codice](../projects/P055/README.md) |
 | P056 | Tre repliche e controlli di salute in Kubernetes | [Output](P056/README.md) · [Registro](P056/registro.json) | [Codice](../projects/P056/README.md) |
 | P057 | Una funzione per verificare immagini e metadati | [Output](P057/README.md) · [Registro](P057/registro.json) | [Codice](../projects/P057/README.md) |
-| P058 | Creare backup e ripristinare senza perdere la destinazione | [Output](P058/README.md) · [Registro](P058/registro.json) | [Codice](../projects/P058/README.md) |
-| P059 | Modellare cache e bilanciamento fra backend sani | [Output](P059/README.md) · [Registro](P059/registro.json) | [Codice](../projects/P059/README.md) |
+| P058 | Creare backup e verificarli prima del ripristino | [Output](P058/README.md) · [Registro](P058/registro.json) | [Codice](../projects/P058/README.md) |
+| P059 | Simulare cache e distribuzione delle richieste | [Output](P059/README.md) · [Registro](P059/registro.json) | [Codice](../projects/P059/README.md) |
 | P060 | Pipeline CI con test e integrità della release | [Output](P060/README.md) · [Registro](P060/registro.json) | [Codice](../projects/P060/README.md) |
-| P061 | Capire se un servizio sta bene: log, metriche e alert | [Output](P061/README.md) · [Registro](P061/registro.json) | [Codice](../projects/P061/README.md) |
+| P061 | Monitorare un servizio: log, metriche e avvisi | [Output](P061/README.md) · [Registro](P061/registro.json) | [Codice](../projects/P061/README.md) |
 | P062 | Ripartire dopo un guasto: replica e failover di lettura | [Output](P062/README.md) · [Registro](P062/registro.json) | [Codice](../projects/P062/README.md) |
 
 ## Sezione 7: Sicurezza informatica
@@ -137,11 +139,11 @@ La suddivisione segue l’indice del libro e il catalogo dei sorgenti.
 | P064 | Difendere un’applicazione dalla SQL Injection | [Output](P064/README.md) · [Registro](P064/registro.json) | [Codice](../projects/P064/README.md) |
 | P065 | Protezione Web da XSS e CSRF: contesto HTML e token di sessione | [Output](P065/README.md) · [Registro](P065/registro.json) | [Codice](../projects/P065/README.md) |
 | P066 | Proteggere un’API: token firmati, ruoli e limite delle richieste | [Output](P066/README.md) · [Registro](P066/registro.json) | [Codice](../projects/P066/README.md) |
-| P067 | HTTPS sotto il cofano: TLS, certificati e PKI | [Output](P067/README.md) · [Registro](P067/registro.json) | [Codice](../projects/P067/README.md) |
+| P067 | Come funziona HTTPS: TLS, certificati e PKI | [Output](P067/README.md) · [Registro](P067/registro.json) | [Codice](../projects/P067/README.md) |
 | P068 | Segmentazione di rete con firewall e rilevamento dei login falliti | [Output](P068/README.md) · [Registro](P068/registro.json) | [Codice](../projects/P068/README.md) |
-| P069 | Hardening Linux: un audit riproducibile di permessi e configurazione | [Output](P069/README.md) · [Registro](P069/registro.json) | [Codice](../projects/P069/README.md) |
+| P069 | Controllare la sicurezza di Linux: permessi e configurazione | [Output](P069/README.md) · [Registro](P069/registro.json) | [Codice](../projects/P069/README.md) |
 | P070 | Ransomware: integrità del backup e risposta all’incidente | [Output](P070/README.md) · [Registro](P070/registro.json) | [Codice](../projects/P070/README.md) |
-| P071 | Trovare le minacce prima del codice: STRIDE e priorità ordinali | [Output](P071/README.md) · [Registro](P071/registro.json) | [Codice](../projects/P071/README.md) |
+| P071 | Individuare le minacce: metodo STRIDE e priorità di intervento | [Output](P071/README.md) · [Registro](P071/registro.json) | [Codice](../projects/P071/README.md) |
 | P072 | Mini-SOC: trasformare log sintetici in alert verificabili | [Output](P072/README.md) · [Registro](P072/registro.json) | [Codice](../projects/P072/README.md) |
 
 ## Sezione 8: Intelligenza artificiale e analisi dei dati
@@ -152,14 +154,14 @@ La suddivisione segue l’indice del libro e il catalogo dei sorgenti.
 |---|---|---|---|
 | P073 | Previsione dei consumi energetici | [Output](P073/README.md) · [Registro](P073/registro.json) | [Codice](../projects/P073/README.md) |
 | P074 | Classificazione del rischio di abbandono di un servizio | [Output](P074/README.md) · [Registro](P074/registro.json) | [Codice](../projects/P074/README.md) |
-| P075 | Scoprire transazioni insolite con anomaly detection | [Output](P075/README.md) · [Registro](P075/registro.json) | [Codice](../projects/P075/README.md) |
-| P076 | Consigliare corsi in base agli interessi: recommender system | [Output](P076/README.md) · [Registro](P076/registro.json) | [Codice](../projects/P076/README.md) |
+| P075 | Rilevare anomalie nelle transazioni | [Output](P075/README.md) · [Registro](P075/registro.json) | [Codice](../projects/P075/README.md) |
+| P076 | Consigliare corsi in base agli interessi | [Output](P076/README.md) · [Registro](P076/registro.json) | [Codice](../projects/P076/README.md) |
 | P077 | Leggere e smistare ticket automaticamente con NLP | [Output](P077/README.md) · [Registro](P077/registro.json) | [Codice](../projects/P077/README.md) |
-| P078 | Computer Vision per classificare rifiuti: un laboratorio su palette sintetiche | [Output](P078/README.md) · [Registro](P078/registro.json) | [Codice](../projects/P078/README.md) |
+| P078 | Visione artificiale: un laboratorio su immagini sintetiche | [Output](P078/README.md) · [Registro](P078/registro.json) | [Codice](../projects/P078/README.md) |
 | P079 | Previsione della domanda di magazzino | [Output](P079/README.md) · [Registro](P079/registro.json) | [Codice](../projects/P079/README.md) |
-| P080 | Assistente con citazioni: retrieval ed estrazione, senza LLM | [Output](P080/README.md) · [Registro](P080/registro.json) | [Codice](../projects/P080/README.md) |
+| P080 | Assistente con citazioni: ricerca nei testi senza LLM | [Output](P080/README.md) · [Registro](P080/registro.json) | [Codice](../projects/P080/README.md) |
 | P081 | Prompt injection: annotare i documenti senza attribuire loro autorità | [Output](P081/README.md) · [Registro](P081/registro.json) | [Codice](../projects/P081/README.md) |
-| P082 | Inventario di controlli AI: una checklist tracciabile | [Output](P082/README.md) · [Registro](P082/registro.json) | [Codice](../projects/P082/README.md) |
+| P082 | Controlli per l’IA: una lista di verifica tracciabile | [Output](P082/README.md) · [Registro](P082/registro.json) | [Codice](../projects/P082/README.md) |
 
 ## Sezione 9: IoT e simulazione di sistemi
 
@@ -167,14 +169,14 @@ La suddivisione segue l’indice del libro e il catalogo dei sorgenti.
 
 | Progetto | Laboratorio | Risultati | Sorgenti e istruzioni |
 |---|---|---|---|
-| P083 | Telemetria IoT locale: coda, pub/sub e collector in memoria | [Output](P083/README.md) · [Registro](P083/registro.json) | [Codice](../projects/P083/README.md) |
+| P083 | Telemetria IoT locale: invio, raccolta e gestione dei messaggi | [Output](P083/README.md) · [Registro](P083/registro.json) | [Codice](../projects/P083/README.md) |
 | P084 | Irrigazione simulata: soglie strette e memoria del controller | [Output](P084/README.md) · [Registro](P084/registro.json) | [Codice](../projects/P084/README.md) |
 | P085 | Badge virtuali: autorizzazione per ruolo e audit delle richieste | [Output](P085/README.md) · [Registro](P085/registro.json) | [Codice](../projects/P085/README.md) |
 | P086 | Monitoraggio ambientale: validare prima di calcolare | [Output](P086/README.md) · [Registro](P086/registro.json) | [Codice](../projects/P086/README.md) |
 | P087 | Contatore virtuale: dalla potenza all’energia | [Output](P087/README.md) · [Registro](P087/registro.json) | [Codice](../projects/P087/README.md) |
 | P088 | Parcheggio virtuale: eventi, occupazione e idempotenza | [Output](P088/README.md) · [Registro](P088/registro.json) | [Codice](../projects/P088/README.md) |
-| P089 | Rifiuti disegnati: una pipeline di visione sintetica | [Output](P089/README.md) · [Registro](P089/registro.json) | [Codice](../projects/P089/README.md) |
-| P090 | Vibrazioni sintetiche: un segnale di attenzione manutentiva | [Output](P090/README.md) · [Registro](P090/registro.json) | [Codice](../projects/P090/README.md) |
+| P089 | Classificare immagini sintetiche di rifiuti | [Output](P089/README.md) · [Registro](P089/registro.json) | [Codice](../projects/P089/README.md) |
+| P090 | Vibrazioni sintetiche: riconoscere segnali anomali | [Output](P090/README.md) · [Registro](P090/registro.json) | [Codice](../projects/P090/README.md) |
 | P091 | Casa virtuale: stati fumo/acqua e notifiche simulate | [Output](P091/README.md) · [Registro](P091/registro.json) | [Codice](../projects/P091/README.md) |
 | P092 | Aggiornamenti IoT virtuali autenticati con HMAC e rollback in memoria | [Output](P092/README.md) · [Registro](P092/registro.json) | [Codice](../projects/P092/README.md) |
 | P093 | Fabbrica simulata: gemelli in memoria e indicatori OEE | [Output](P093/README.md) · [Registro](P093/registro.json) | [Codice](../projects/P093/README.md) |
@@ -187,11 +189,11 @@ La suddivisione segue l’indice del libro e il catalogo dei sorgenti.
 | Progetto | Laboratorio | Risultati | Sorgenti e istruzioni |
 |---|---|---|---|
 | P095 | Telemonitoraggio simulato: metriche fittizie e revisione tecnica | [Output](P095/README.md) · [Registro](P095/registro.json) | [Codice](../projects/P095/README.md) |
-| P096 | E-commerce locale: ordini, stock e retry idempotenti | [Output](P096/README.md) · [Registro](P096/registro.json) | [Codice](../projects/P096/README.md) |
+| P096 | E-commerce locale: ordini, magazzino e gestione dei reinvii | [Output](P096/README.md) · [Registro](P096/registro.json) | [Codice](../projects/P096/README.md) |
 | P097 | Edificio virtuale: comfort, consumo e allarmi software | [Output](P097/README.md) · [Registro](P097/registro.json) | [Codice](../projects/P097/README.md) |
-| P098 | Monitoraggio intermittente: FIFO in memoria, ACK e retry | [Output](P098/README.md) · [Registro](P098/registro.json) | [Codice](../projects/P098/README.md) |
-| P099 | Logistica locale: routing, tracking e previsioni trasparenti | [Output](P099/README.md) · [Registro](P099/registro.json) | [Codice](../projects/P099/README.md) |
-| P100 | Capstone locale: metadati dei rifiuti, HMAC e SQLite | [Output](P100/README.md) · [Registro](P100/registro.json) | [Codice](../projects/P100/README.md) |
+| P098 | Monitoraggio con collegamento intermittente: coda, conferme e reinvii | [Output](P098/README.md) · [Registro](P098/registro.json) | [Codice](../projects/P098/README.md) |
+| P099 | Logistica locale: percorsi, stato delle spedizioni e previsioni | [Output](P099/README.md) · [Registro](P099/registro.json) | [Codice](../projects/P099/README.md) |
+| P100 | Progetto finale: metadati dei rifiuti, HMAC e SQLite | [Output](P100/README.md) · [Registro](P100/registro.json) | [Codice](../projects/P100/README.md) |
 
 ## Provenienza e riproducibilità
 

@@ -6,13 +6,13 @@
 
 **Argomenti:** Simulazione industriale · Gemelli digitali · Indicatori di produzione.
 
-Calcola indicatori OEE per una fabbrica rappresentata da oggetti in memoria.
+Il programma rappresenta due macchine di una fabbrica e calcola il loro OEE, un indicatore ottenuto moltiplicando disponibilità, prestazione e qualità. Riassume i risultati e segnala quali macchine superano una soglia dimostrativa di vibrazione.
 
 Tutti i comandi partono dalla cartella `projects/P093`. I blocchi seguenti usano la sintassi di Linux/Bash.
 
 ## Requisiti e versioni
 
-Linguaggio: Python.
+**Tecnologie utilizzate:** Python.
 
 - Python 3.12 o 3.13 come riferimento verificato
 - Python 3.12.14 (collaudo Linux storico)
@@ -27,7 +27,9 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P093. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale. Test verificati sui runner Ubuntu di GitHub Actions con Python 3.12.15 e 3.13.16 il 22 ottobre 2026.
+Installa Python 3.12, poi esegui i comandi seguenti dalla cartella `projects/P093` in Linux/Bash. Creano e attivano un ambiente virtuale nella cartella `.venv`, dove tenere separati i pacchetti del progetto. Dopo l’attivazione, `python` usa l’interprete di questo ambiente. Riattiva l’ambiente quando apri un nuovo terminale.
+
+Le versioni elencate descrivono gli ambienti già provati, non la versione minima utilizzabile in ogni situazione. I test sono stati verificati sui runner Ubuntu di GitHub Actions con Python 3.12.15 e 3.13.16 il 22 ottobre 2026.
 
 ```bash
 python3.12 -m venv .venv
@@ -40,14 +42,21 @@ python3.12 -m venv .venv
 python src/smart_factory.py
 ```
 
+## Cosa vedrai
+
+Il riepilogo JSON riporta un OEE di circa il 77,08% per M1 e del 68,75% per M2. La media aritmetica dei due valori è circa il 72,92%, mentre M2 compare nell’elenco delle macchine da esaminare per la vibrazione. Nel JSON l’OEE è espresso fra 0 e 1: per leggerlo in percentuale, moltiplicalo per 100.
+
 ## Test
 
 ```bash
 python run_tests.py
 ```
 
+Alla fine dell’esecuzione, `OK` indica che tutti i test hanno avuto esito positivo.
+
 ## Perimetro del laboratorio
 
+- I dati di produzione e vibrazione sono simulati. La media dei due OEE è un riepilogo semplice, non un indicatore complessivo ponderato dell’intero stabilimento.
 - Nessuna rete, credenziale, periferica o servizio esterno richiesto per demo e test.
 
 ## Windows
@@ -61,7 +70,7 @@ py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, usa i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, usa direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
 
 ## Collaudi documentati
 

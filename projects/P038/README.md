@@ -1,4 +1,4 @@
-# P038: Ticketing eventi: requisiti e diagrammi
+# P038: Prenotazioni per eventi: requisiti e diagrammi
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P038/README.md) · [Registro del collaudo](../../collaudo/P038/registro.json)
 
@@ -6,13 +6,13 @@
 
 **Argomenti:** Analisi dei requisiti · UML · Concorrenza.
 
-Esegue un modello di biglietteria e verifica anche operazioni concorrenti.
+Gestisci prenotazioni per eventi senza superare i posti disponibili. Il servizio Java protegge le operazioni simultanee sulla stessa istanza; il test concorrente mette alla prova la prenotazione dell’ultimo posto.
 
-Tutti i comandi partono dalla cartella `projects/P038`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P038` ed esegui da lì i comandi. I blocchi seguenti usano la sintassi di Linux/Bash; per Windows consulta la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: Java.
+**Tecnologie utilizzate:** Java.
 
 - JDK Java 17 come ambiente didattico; patch del collaudo non registrata
 
@@ -22,7 +22,7 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P038. Installare prima il compilatore o SDK indicato nei requisiti. Le versioni documentate non costituiscono una garanzia per toolchain diverse.
+Installa il compilatore o il kit di sviluppo (SDK) indicato nei requisiti. Le versioni documentate descrivono gli strumenti usati nei collaudi; con strumenti diversi, verifica il risultato eseguendo i test.
 
 ```bash
 mkdir -p build
@@ -37,25 +37,27 @@ java -cp build Ticketing
 
 ## Test
 
+Il primo test controlla capienza e annullamento. Il secondo invia 100 richieste concorrenti per un solo posto e verifica che ne riesca esattamente una. Entrambi stampano `PASS` quando i rispettivi controlli sono riusciti.
+
 ```bash
 java -ea -cp build TicketingTest
 java -ea -cp build TicketingConcurrentTest
 ```
 
-Mantenere `-ea` nei comandi Java: abilita le asserzioni usate dalle verifiche.
+Mantieni `-ea` nei comandi Java: attiva le asserzioni, cioè i controlli che devono riuscire perché il test sia superato.
 
 ## Perimetro del laboratorio
 
-- La compilazione storica con -Xlint:all segnala classi ausiliarie nello stesso sorgente; tutti i test registrati sono passati. Nessuna modifica al codice proposta.
+- Con l’opzione `-Xlint:all`, il compilatore segnala che alcune classi ausiliarie si trovano nello stesso file sorgente. Nei collaudi conservati questi avvisi non hanno impedito la compilazione e tutti i test registrati sono riusciti.
 
 ## Windows
 
-Solo libreria standard Java e classpath con un’unica cartella. Nessun Bash/POSIX. Windows nativo plausibile con JDK 17, non verificato. Nessun test Windows nativo è attestato da questo README.
+Il programma usa soltanto la libreria standard Java. Il classpath, cioè il percorso in cui Java cerca le classi compilate, contiene una sola cartella. Il codice non richiede funzioni specifiche di Linux e può essere usato con un JDK 17 compatibile; i collaudi documentati in questa pagina non comprendono una prova nativa su Windows.
 
-I blocchi di compilazione sono per GNU/Linux: percorsi degli eseguibili, creazione della cartella `build` e opzioni del sanitizer vanno adattati alla toolchain Windows. WSL permette di seguire la stessa sequenza Linux.
+Nel Prompt dei comandi di Windows, crea la cartella con `if not exist build mkdir build`; in PowerShell usa `New-Item -ItemType Directory -Force build`. Con il JDK installato, i comandi `javac` e `java` riportati sopra restano uguali. Mantieni `-ea` quando esegui i test.
 
 ## Collaudi documentati
 
-Collaudo storico su Linux: le suite disponibili e i casi aggiuntivi risultano superati. Il riepilogo del gruppo P001–P040 non riporta una data puntuale; questi risultati non sono stati rieseguiti per preparare il README.
+I materiali conservati documentano un collaudo su Linux con esito positivo per le suite disponibili e le prove aggiuntive. Il riepilogo storico del gruppo P001–P040 non indica una data precisa.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Consulta **Output verificati** e **Registro del collaudo**, all’inizio della pagina, per leggere comandi, ambiente e limiti di ciascuna prova. I risultati documentati descrivono quei collaudi; per verificare la copia che stai usando, esegui i test sul tuo computer.

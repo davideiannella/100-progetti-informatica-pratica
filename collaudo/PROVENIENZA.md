@@ -1,6 +1,6 @@
 # Esiti e output dei collaudi
 
-Questa cartella raccoglie i risultati dei collaudi dei laboratori di **100 progetti di informatica pratica**: le nuove esecuzioni pubbliche P001–P080, la matrice P081–P100 e le evidenze storiche conservate. Permette di confrontare esiti e output con l’ambiente effettivo di ogni prova. I sorgenti e i test originali restano invariati.
+Questa cartella raccoglie i risultati dei collaudi dei laboratori di **100 progetti di informatica pratica**: le nuove esecuzioni pubbliche P001–P080, la matrice P081–P100 e le evidenze storiche conservate. Permette di confrontare esiti e output con l’ambiente effettivo di ogni prova. I registri conservano i risultati delle versioni provate alle date indicate. Le [correzioni del 30 ottobre 2026](../docs/REVISIONE_2026_10_30.md) aggiornano alcuni sorgenti e test; i nuovi esiti si consultano nelle esecuzioni GitHub Actions associate al relativo commit.
 
 ## Output leggibili per ciascun progetto
 

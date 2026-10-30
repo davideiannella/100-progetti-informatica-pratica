@@ -6,15 +6,15 @@
 
 **Argomenti:** Simulazione · Gestione delle code.
 
-Simula il comportamento di una coda di traffico.
+Simuli una corsia con un solo punto di servizio. Il programma conta i veicoli che terminano entro un istante scelto e calcola la loro attesa media.
 
-Tutti i comandi partono dalla cartella `projects/P021`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P021` ed esegui da lì i comandi. I blocchi seguenti usano la sintassi di Linux/Bash; per Windows consulta la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: C++.
+**Tecnologie utilizzate:** C++.
 
-- C++ C++17
+- Standard C++17.
 
 Dipendenze:
 
@@ -22,9 +22,9 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P021. Installare prima il compilatore o SDK indicato nei requisiti. Le versioni documentate non costituiscono una garanzia per toolchain diverse.
+Installa il compilatore o il kit di sviluppo (SDK) indicato nei requisiti. Le versioni documentate descrivono gli strumenti usati nei collaudi; con strumenti diversi, verifica il risultato eseguendo i test.
 
-Non sono previsti ulteriori comandi di preparazione oltre all’installazione della toolchain indicata.
+Dopo l’installazione degli strumenti richiesti, puoi passare ai comandi seguenti.
 
 ## Avvio
 
@@ -35,6 +35,8 @@ g++ -std=c++17 src/traffic.cpp -o traffic
 
 ## Test
 
+Il test controlla i tre veicoli dell’esempio, l’attesa media, la coda vuota e il rifiuto di un arrivo negativo. La scritta `PASS` indica che questi controlli sono riusciti.
+
 ```bash
 g++ -std=c++17 tests/test_traffic.cpp -o test_progetto
 ./test_progetto
@@ -42,16 +44,16 @@ g++ -std=c++17 tests/test_traffic.cpp -o test_progetto
 
 ## Perimetro del laboratorio
 
-- Il comando essenziale non riattiva automaticamente le opzioni -Wall -Wextra -Werror -O1 -g -fsanitize=undefined -fno-sanitize-recover=all del collaudo storico.
+- Il comando di compilazione mostrato sopra è quello essenziale. Non include le opzioni aggiuntive usate nel collaudo storico: `-Wall -Wextra -Werror -O1 -g -fsanitize=undefined -fno-sanitize-recover=all`. Per riprodurre anche quei controlli, serve un compilatore che le supporti.
 
 ## Windows
 
-Solo libreria standard C++, senza pthread o API POSIX. Windows nativo plausibile con compilatore C++17. Per riprodurre i controlli GNU/UBSan storici occorre una toolchain che li supporti: WSL è un’opzione, non un requisito del programma. Nessun test Windows nativo è attestato da questo README.
+Il programma usa soltanto la libreria standard C++, senza `pthread` o funzioni POSIX specifiche dei sistemi Unix. Può quindi essere compilato con strumenti C++17 compatibili su Windows, ma questa pagina non documenta un collaudo nativo Windows. Per ripetere anche i controlli GNU/UBSan del collaudo storico servono strumenti che li supportino. WSL offre un ambiente Linux su Windows ed è una possibilità, non un requisito del programma.
 
-I blocchi di compilazione sono per GNU/Linux: percorsi degli eseguibili, creazione della cartella `build` e opzioni del sanitizer vanno adattati alla toolchain Windows. WSL permette di seguire la stessa sequenza Linux.
+I comandi di compilazione mostrati usano la sintassi GNU/Linux. Su Windows adatta i percorsi degli eseguibili e le opzioni aggiuntive agli strumenti scelti. Con WSL puoi seguire la stessa sequenza Linux.
 
 ## Collaudi documentati
 
-Collaudo storico su Linux: le suite disponibili e i casi aggiuntivi risultano superati. Il riepilogo del gruppo P001–P040 non riporta una data puntuale; questi risultati non sono stati rieseguiti per preparare il README.
+I materiali conservati documentano un collaudo su Linux con esito positivo per le suite disponibili e le prove aggiuntive. Il riepilogo storico del gruppo P001–P040 non indica una data precisa.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Consulta **Output verificati** e **Registro del collaudo**, all’inizio della pagina, per leggere comandi, ambiente e limiti di ciascuna prova. I risultati documentati descrivono quei collaudi; per verificare la copia che stai usando, esegui i test sul tuo computer.

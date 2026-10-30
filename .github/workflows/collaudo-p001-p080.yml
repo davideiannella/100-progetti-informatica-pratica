@@ -56,7 +56,7 @@ jobs:
         java-version: '17'
     - uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.x
+        dotnet-version: 8.0.426
     - name: Install C and C++ compilers
       run: sudo apt-get update && sudo apt-get install --yes build-essential
     - name: Install the reviewed Python dependency set

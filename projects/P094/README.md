@@ -6,13 +6,13 @@
 
 **Argomenti:** IoT simulato · Integrazione dei dati · Deduplicazione.
 
-Raccoglie tre flussi urbani sintetici e ne verifica deduplicazione e indicatori.
+Il programma raccoglie eventi simulati su parcheggi, traffico e qualità dell’aria, evitando di contarli due volte. Calcola i posti liberi e le medie delle misure, poi prepara un riepilogo con i soli campi previsti per l’esportazione.
 
 Tutti i comandi partono dalla cartella `projects/P094`. I blocchi seguenti usano la sintassi di Linux/Bash.
 
 ## Requisiti e versioni
 
-Linguaggio: Python.
+**Tecnologie utilizzate:** Python.
 
 - Python 3.12 o 3.13 come riferimento verificato
 - Python 3.12.14 (collaudo Linux storico)
@@ -27,7 +27,9 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P094. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale. Test verificati sui runner Ubuntu di GitHub Actions con Python 3.12.15 e 3.13.16 il 22 ottobre 2026.
+Installa Python 3.12, poi esegui i comandi seguenti dalla cartella `projects/P094` in Linux/Bash. Creano e attivano un ambiente virtuale nella cartella `.venv`, dove tenere separati i pacchetti del progetto. Dopo l’attivazione, `python` usa l’interprete di questo ambiente. Riattiva l’ambiente quando apri un nuovo terminale.
+
+Le versioni elencate descrivono gli ambienti già provati, non la versione minima utilizzabile in ogni situazione. I test sono stati verificati sui runner Ubuntu di GitHub Actions con Python 3.12.15 e 3.13.16 il 22 ottobre 2026.
 
 ```bash
 python3.12 -m venv .venv
@@ -40,14 +42,21 @@ python3.12 -m venv .venv
 python src/smart_city.py
 ```
 
+## Cosa vedrai
+
+Il riepilogo JSON contiene 8 eventi registrati e 2 posti liberi su 4. La media del traffico è circa 86,67 veicoli al minuto e quella del PM2.5 è circa 36,67 µg/m³: entrambe superano le soglie dimostrative della demo, quindi le due segnalazioni sono `true`. Il reinvio di un evento già presente non ne aggiunge un altro (`duplicate_added: false`).
+
 ## Test
 
 ```bash
 python run_tests.py
 ```
 
+Alla fine dell’esecuzione, `OK` indica che tutti i test hanno avuto esito positivo.
+
 ## Perimetro del laboratorio
 
+- I tre flussi sono interamente locali e sintetici. Il riepilogo esportato seleziona soltanto alcuni campi: questa scelta, da sola, non costituisce una garanzia di anonimato per eventuali dati reali.
 - Nessuna rete, credenziale, periferica o servizio esterno richiesto per demo e test.
 
 ## Windows
@@ -61,7 +70,7 @@ py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, usa i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, usa direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
 
 ## Collaudi documentati
 

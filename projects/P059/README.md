@@ -1,4 +1,4 @@
-# P059: Modellare cache e bilanciamento fra backend sani
+# P059: Simulare cache e distribuzione delle richieste
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P059/README.md) · [Registro del collaudo](../../collaudo/P059/registro.json)
 
@@ -6,13 +6,13 @@
 
 **Argomenti:** Architettura dei sistemi · Cache · Bilanciamento simulato.
 
-Modella cache e scelta dei backend disponibili senza contattare servizi esterni.
+Simula la distribuzione delle richieste fra backend disponibili, cioè i componenti che le elaborano. Una cache conserva i risultati già ottenuti e li riusa senza chiamare di nuovo il backend. Non vengono contattati servizi esterni.
 
-Tutti i comandi partono dalla cartella `projects/P059`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P059` ed esegui da lì tutti i comandi. Gli esempi usano Linux e Bash; per Windows, segui anche la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: Python.
+**Tecnologie utilizzate:** Python.
 
 - Python 3.12.14 (collaudo locale storico)
 
@@ -22,7 +22,7 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P059. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale.
+Installa Python 3.12, poi esegui questi comandi nella cartella del progetto. L’ambiente virtuale `.venv` tiene separate le dipendenze del laboratorio; dopo l’attivazione, `python` usa l’interprete di questo ambiente. Riattivalo ogni volta che apri un nuovo terminale. Le versioni indicate descrivono i collaudi documentati e non sono necessariamente le versioni minime richieste.
 
 ```bash
 python3.12 -m venv .venv
@@ -31,9 +31,11 @@ python3.12 -m venv .venv
 
 ## Avvio
 
-Non è presente un’applicazione dimostrativa autonoma: usare i test sotto come punto di ingresso eseguibile.
+Esegui i comandi della sezione Test per provare il laboratorio. I test richiamano il codice e verificano i risultati; non c’è un’applicazione dimostrativa separata.
 
 ## Test
+
+I test controllano la rotazione fra backend, il riuso della cache e gli errori quando manca un backend disponibile o il caricamento fallisce. Se i controlli passano, stampano messaggi `PASS`.
 
 ```bash
 python tests/test_p059.py
@@ -42,23 +44,23 @@ python tests/test_edges.py
 
 ## Perimetro del laboratorio
 
-- Eseguire i comandi dalla cartella del progetto. Il modulo contiene funzioni del laboratorio; i test sono il punto di ingresso per l’esecuzione dimostrativa.
+- Esegui i comandi dalla cartella del progetto. I test mostrano come usare il codice e controllano i risultati dei casi previsti.
 
 ## Windows
 
-Il codice usa Python e moduli multipiattaforma; non sono presenti script Bash nel progetto. La plausibilità non equivale a un collaudo Windows. Nessun test Windows nativo è attestato da questo README.
+Il codice usa Python e librerie multipiattaforma, senza script Bash nel progetto. Per provare il laboratorio su Windows, prepara l’ambiente con i passaggi seguenti. L’esecuzione nativa su Windows non è stata collaudata nelle prove documentate.
 
-Per la parte Python nativa, dal **Prompt dei comandi (cmd.exe)**, nella cartella del progetto:
+Per la parte Python, apri il **Prompt dei comandi (cmd.exe)** nella cartella del progetto ed esegui:
 
 ```bat
 py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, usa i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, sostituisci `python` con `.\.venv\Scripts\python.exe`: in questo caso non serve attivare script o modificare le regole di esecuzione di PowerShell. Non copiare il comando di attivazione Bash in PowerShell.
 
 ## Collaudi documentati
 
-Collaudo storico del 2026-10-16: Test locali registrati; nessun nuovo test eseguito durante questa revisione.
+Collaudo storico del 2026-10-16: Test locali registrati.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Queste istruzioni sono state ricavate dai file e dai collaudi conservati.

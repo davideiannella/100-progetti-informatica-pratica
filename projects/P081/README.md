@@ -6,13 +6,13 @@
 
 **Argomenti:** Sicurezza dell’IA · Prompt injection · Gestione delle fonti.
 
-Annota contenuti documentali potenzialmente ostili senza trasformarli in istruzioni.
+Il programma cerca frasi sospette in cinque testi di esempio e aggiunge un’etichetta a ciascun documento. Il punto centrale è distinguere un testo da leggere da un’istruzione da eseguire: anche un documento senza segnali sospetti resta una fonte non autorizzata a impartire comandi.
 
 Tutti i comandi partono dalla cartella `projects/P081`. I blocchi seguenti usano la sintassi di Linux/Bash.
 
 ## Requisiti e versioni
 
-Linguaggio: Python.
+**Tecnologie utilizzate:** Python.
 
 - Python 3.12 o 3.13 come riferimento verificato
 - Python 3.12.14 (collaudo Linux storico)
@@ -27,7 +27,9 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P081. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale. Test verificati sui runner Ubuntu di GitHub Actions con Python 3.12.15 e 3.13.16 il 22 ottobre 2026.
+Installa Python 3.12, poi esegui i comandi seguenti dalla cartella `projects/P081` in Linux/Bash. Creano e attivano un ambiente virtuale nella cartella `.venv`, dove tenere separati i pacchetti del progetto. Dopo l’attivazione, `python` usa l’interprete di questo ambiente. Riattiva l’ambiente quando apri un nuovo terminale.
+
+Le versioni elencate descrivono gli ambienti già provati, non la versione minima utilizzabile in ogni situazione. I test sono stati verificati sui runner Ubuntu di GitHub Actions con Python 3.12.15 e 3.13.16 il 22 ottobre 2026.
 
 ```bash
 python3.12 -m venv .venv
@@ -40,14 +42,21 @@ python3.12 -m venv .venv
 python src/rag_guard.py
 ```
 
+## Cosa vedrai
+
+Il risultato in formato JSON mostra i cinque testi e le etichette assegnate. Il filtro riconosce due tentativi di attacco, ne perde uno e segnala per errore una citazione innocua; il quinto testo è riconosciuto correttamente come non sospetto. Il campo `can_use_as_instruction` resta `false` per tutti i documenti.
+
 ## Test
 
 ```bash
 python run_tests.py
 ```
 
+Alla fine dell’esecuzione, `OK` indica che tutti i test hanno avuto esito positivo.
+
 ## Perimetro del laboratorio
 
+- Il filtro usa espressioni regolari, cioè regole per cercare sequenze di testo. Non chiama un modello di IA; i cinque esempi servono a studiare il comportamento del filtro, non a misurare la sicurezza di un assistente completo.
 - Nessuna rete, credenziale, periferica o servizio esterno richiesto per demo e test.
 
 ## Windows
@@ -61,7 +70,7 @@ py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, usa i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, usa direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
 
 ## Collaudi documentati
 

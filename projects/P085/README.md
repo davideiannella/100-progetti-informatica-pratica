@@ -6,13 +6,13 @@
 
 **Argomenti:** Sicurezza · Autorizzazione per ruoli · Audit.
 
-Valuta autorizzazioni di badge virtuali e registra gli esiti delle richieste.
+Il programma decide se un badge virtuale può accedere a una zona, in base al suo ruolo e al fatto che sia ancora attivo. Ogni richiesta viene registrata con l’esito e il motivo, così puoi ricostruire sia gli accessi consentiti sia quelli negati.
 
 Tutti i comandi partono dalla cartella `projects/P085`. I blocchi seguenti usano la sintassi di Linux/Bash.
 
 ## Requisiti e versioni
 
-Linguaggio: Python.
+**Tecnologie utilizzate:** Python.
 
 - Python 3.12 o 3.13 come riferimento verificato
 - Python 3.12.14 (collaudo Linux storico)
@@ -27,7 +27,9 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P085. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale. Test verificati sui runner Ubuntu di GitHub Actions con Python 3.12.15 e 3.13.16 il 22 ottobre 2026.
+Installa Python 3.12, poi esegui i comandi seguenti dalla cartella `projects/P085` in Linux/Bash. Creano e attivano un ambiente virtuale nella cartella `.venv`, dove tenere separati i pacchetti del progetto. Dopo l’attivazione, `python` usa l’interprete di questo ambiente. Riattiva l’ambiente quando apri un nuovo terminale.
+
+Le versioni elencate descrivono gli ambienti già provati, non la versione minima utilizzabile in ogni situazione. I test sono stati verificati sui runner Ubuntu di GitHub Actions con Python 3.12.15 e 3.13.16 il 22 ottobre 2026.
 
 ```bash
 python3.12 -m venv .venv
@@ -40,14 +42,21 @@ python3.12 -m venv .venv
 python src/access.py
 ```
 
+## Cosa vedrai
+
+Il riepilogo JSON riporta 2 richieste consentite e 4 negate. Nel registro `audit` trovi tutte e 6 le richieste: sono distinguibili, per esempio, un ruolo privo del permesso necessario, un badge disattivato e un identificativo sconosciuto.
+
 ## Test
 
 ```bash
 python run_tests.py
 ```
 
+Alla fine dell’esecuzione, `OK` indica che tutti i test hanno avuto esito positivo.
+
 ## Perimetro del laboratorio
 
+- Il laboratorio verifica le autorizzazioni associate ai badge dichiarati. Non identifica la persona che presenta il badge e non usa lettori o porte fisiche.
 - Nessuna rete, credenziale, periferica o servizio esterno richiesto per demo e test.
 
 ## Windows
@@ -61,7 +70,7 @@ py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, usa i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, usa direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
 
 ## Collaudi documentati
 

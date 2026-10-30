@@ -6,13 +6,13 @@
 
 **Argomenti:** DevOps · Integrazione continua · Verifica della release.
 
-Esegue test e costruisce una release locale; include un esempio di workflow CI.
+Esegui i test e prepara un pacchetto di rilascio sul tuo computer. Il progetto include anche un workflow di integrazione continua (CI): una sequenza di attività proposta per GitHub Actions.
 
-Tutti i comandi partono dalla cartella `projects/P060`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P060` ed esegui da lì tutti i comandi. Gli esempi usano Linux e Bash; per Windows, segui anche la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: Python / GitHub Actions YAML.
+**Tecnologie utilizzate:** Python · YAML · GitHub Actions (workflow di esempio).
 
 - Python 3.12.14 (collaudo locale storico)
 - Python nel workflow 3.13 (configurato, non eseguito su GitHub Actions)
@@ -23,7 +23,7 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P060. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale.
+Installa Python 3.12, poi esegui questi comandi nella cartella del progetto. L’ambiente virtuale `.venv` tiene separate le dipendenze del laboratorio; dopo l’attivazione, `python` usa l’interprete di questo ambiente. Riattivalo ogni volta che apri un nuovo terminale. Le versioni indicate descrivono i collaudi documentati e non sono necessariamente le versioni minime richieste.
 
 ```bash
 python3.12 -m venv .venv
@@ -32,11 +32,15 @@ python3.12 -m venv .venv
 
 ## Avvio
 
+Questo comando crea `release.zip` e `release_manifest.json`. Il manifest riporta il nome dell’archivio e la sua impronta SHA-256, utile per controllarne l’integrità.
+
 ```bash
 python build_release.py
 ```
 
 ## Test
+
+I test verificano la somma, gli input non validi, gli iteratori e l’integrità del pacchetto. Se i controlli passano, il riepilogo di `unittest` termina con `OK`.
 
 ```bash
 python -m unittest discover -s tests -v
@@ -44,24 +48,24 @@ python -m unittest discover -s tests -v
 
 ## Perimetro del laboratorio
 
-- Il workflow in .github/workflows/ci.yml si attiva soltanto quando il contenuto di P060 costituisce la radice di un repository autonomo. La copia annidata in projects/P060 non viene scoperta come workflow dal repository generale. Non sono previsti deployment o pubblicazione degli artefatti.
-- Il workflow configura Python 3.13; il collaudo locale documentato usa Python 3.12.14. Il risultato locale non dimostra un’esecuzione remota né identità universale degli archivi fra sistemi operativi.
+- Per usare il workflow `.github/workflows/ci.yml` su GitHub, colloca il contenuto di P060 nella cartella principale di un repository autonomo. Dentro `projects/P060`, GitHub non lo riconosce come workflow del repository del libro. Il progetto non distribuisce l’applicazione e non pubblica i pacchetti prodotti.
+- Il workflow configura Python 3.13, mentre il collaudo locale documentato usa Python 3.12.14. Una prova riuscita sul tuo computer non dimostra che il workflow sia stato eseguito su GitHub o che i byte dello ZIP siano identici su ogni sistema operativo.
 
 ## Windows
 
-Test e builder usano la libreria standard e sono plausibili su Windows. Il workflow richiede esplicitamente ubuntu-latest, quindi non documenta una build Windows. Non è garantita l’identità dei byte ZIP fra sistemi operativi diversi. Nessun test Windows nativo è attestato da questo README.
+I test e il programma che crea il pacchetto usano la libreria standard Python e possono essere provati su Windows con i passaggi seguenti. Il workflow richiede invece `ubuntu-latest`: riguarda quindi una build Linux. Le prove documentate non comprendono Windows nativo e non garantiscono ZIP con byte identici fra sistemi operativi diversi.
 
-Per la parte Python nativa, dal **Prompt dei comandi (cmd.exe)**, nella cartella del progetto:
+Per la parte Python, apri il **Prompt dei comandi (cmd.exe)** nella cartella del progetto ed esegui:
 
 ```bat
 py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, usa i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, sostituisci `python` con `.\.venv\Scripts\python.exe`: in questo caso non serve attivare script o modificare le regole di esecuzione di PowerShell. Non copiare il comando di attivazione Bash in PowerShell.
 
 ## Collaudi documentati
 
-Collaudo storico del 2026-10-16: Test e build locali riusciti; nessuna esecuzione remota del workflow P060 e nessun deploy. Non sono stati eseguiti nuovi test.
+Collaudo storico del 2026-10-16: Test e build locali riusciti; nessuna esecuzione remota del workflow P060 e nessun deploy.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Queste istruzioni sono state ricavate dai file e dai collaudi conservati.

@@ -6,13 +6,13 @@
 
 **Argomenti:** API web · Concorrenza.
 
-Espone un’API .NET locale e verifica richieste HTTP concorrenti.
+Crei, elenchi e completi attività tramite richieste HTTP a un servizio .NET locale. I test controllano anche richieste simultanee; le attività restano in memoria e si perdono quando il servizio viene riavviato.
 
-Tutti i comandi partono dalla cartella `projects/P023`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P023` ed esegui da lì i comandi. I blocchi seguenti usano la sintassi di Linux/Bash; per Windows consulta la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: C# / Python per il test HTTP.
+**Tecnologie utilizzate:** C# · .NET · ASP.NET Core · Python.
 
 - Python 3.12.14
 - .NET Target net8.0; SDK 8.0.426 documentato per P022/P040
@@ -25,7 +25,7 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P023. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale.
+Installa Python 3.12, poi crea e attiva l’ambiente virtuale con i comandi seguenti. Dopo l’attivazione, `python` usa l’interprete dell’ambiente `.venv`. Riattiva l’ambiente ogni volta che apri un nuovo terminale. Le versioni elencate descrivono gli ambienti documentati: non sono necessariamente le versioni minime richieste.
 
 ```bash
 python3.12 -m venv .venv
@@ -39,36 +39,38 @@ dotnet build src/P023.csproj
 dotnet run --project src/P023.csproj -- --urls http://127.0.0.1:8000
 ```
 
-L’avvio del servizio resta in primo piano. Usare un altro terminale per i controlli oppure interrompere con `Ctrl+C`.
+Il servizio resta attivo nel terminale. Aprine un altro per eseguire i controlli; per arrestare il servizio, premi `Ctrl+C` nel terminale in cui lo hai avviato.
 
 ## Test
+
+Il test avvia il servizio, invia richieste HTTP e controlla anche 100 creazioni concorrenti e 30 richieste di completamento. Stampa `PASS` se i controlli previsti riescono.
 
 ```bash
 python tests/test_http.py
 ```
 
-Il build iniziale deve essere in configurazione Debug. Il test avvia e arresta autonomamente l’applicazione su una porta locale libera.
+Compila prima il progetto in configurazione Debug, come fa il comando di preparazione. Il test avvia e arresta da solo l’applicazione su una porta locale libera: non devi tenere aperto il servizio dimostrativo per eseguirlo.
 
 ## Perimetro del laboratorio
 
-- Il test non compila: cerca src/bin/Debug/net8.0/P023.dll. Un solo build Release non basta.
-- Il test accetta il percorso dotnet come primo argomento facoltativo e riscrive tests/http_test.log.
+- Il test non compila il progetto: cerca il file `src/bin/Debug/net8.0/P023.dll`. Aver compilato soltanto in configurazione Release non basta.
+- Puoi passare al test il percorso di `dotnet` come primo argomento facoltativo. A ogni esecuzione viene riscritto il log `tests/http_test.log`.
 
 ## Windows
 
-Progetti SDK .NET 8 con API portabili; nessun requisito Bash/POSIX. P023 richiede anche Python e loopback. Nessun test Windows documentato. Nessun test Windows nativo è attestato da questo README.
+Il progetto usa .NET 8 e funzioni portabili. Per il test servono anche Python e la comunicazione di loopback, cioè una connessione che resta sullo stesso computer. Il codice non richiede funzioni specifiche di Linux, ma i collaudi documentati in questa pagina non comprendono una prova nativa su Windows.
 
-Per la parte Python nativa, dal **Prompt dei comandi (cmd.exe)**, nella cartella del progetto:
+Per preparare Python su Windows, apri il **Prompt dei comandi (cmd.exe)** nella cartella del progetto ed esegui:
 
 ```bat
 py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, esegui i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, usa direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non devi attivare script né cambiare le regole di esecuzione di PowerShell. Non copiare in PowerShell il comando di attivazione Bash.
 
 ## Collaudi documentati
 
-Collaudo storico su Linux: le suite disponibili e i casi aggiuntivi risultano superati. Il riepilogo del gruppo P001–P040 non riporta una data puntuale; questi risultati non sono stati rieseguiti per preparare il README.
+I materiali conservati documentano un collaudo su Linux con esito positivo per le suite disponibili e le prove aggiuntive. Il riepilogo storico del gruppo P001–P040 non indica una data precisa.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Consulta **Output verificati** e **Registro del collaudo**, all’inizio della pagina, per leggere comandi, ambiente e limiti di ciascuna prova. I risultati documentati descrivono quei collaudi; per verificare la copia che stai usando, esegui i test sul tuo computer.

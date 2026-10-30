@@ -36,11 +36,11 @@ La sezione Cloud comprende container, rilascio e affidabilità dei servizi; dive
 2. Scegli un laboratorio nel [catalogo dei 100 progetti](docs/CATALOGO.md). Per un primo esercizio Python puoi partire da [P001](projects/P001/README.md).
 3. Prepara l’[ambiente Linux, Windows o WSL](docs/AMBIENTI.md) e segui **Requisiti**, **Preparazione** e **Test** nel README del progetto. Esegui i comandi dalla cartella indicata: i linguaggi e le dipendenze cambiano fra i laboratori.
 
-Alcuni progetti espongono solo funzioni e classi: il loro punto di ingresso eseguibile è la suite di test. Ogni README distingue l’avvio dimostrativo dalle verifiche.
+Alcuni progetti contengono funzioni e classi da provare attraverso i test. Una suite è un insieme di test eseguiti insieme: controlla che il programma rispetti le regole previste. Il README di ogni progetto indica come avviare la dimostrazione, quando presente, e come eseguire le verifiche.
 
 ## Dove trovare i materiali
 
-La cartella **projects** contiene i sorgenti; **collaudo** raccoglie i risultati documentati di P001–P100. Per orientarti consulta la [guida alla struttura](docs/STRUTTURA.md).
+I **sorgenti** sono i file con il codice da leggere ed eseguire. La cartella **projects** li raccoglie; **collaudo** raccoglie i risultati documentati di P001–P100. Per orientarti consulta la [guida alla struttura](docs/STRUTTURA.md).
 
 | Percorso | Contenuto |
 |---|---|
@@ -53,6 +53,8 @@ La cartella **projects** contiene i sorgenti; **collaudo** raccoglie i risultati
 
 ## Verifiche automatiche
 
+GitHub Actions esegue automaticamente i controlli seguendo procedure chiamate **workflow**. Ogni esecuzione, indicata come **run**, è divisa in attività chiamate **job**.
+
 Gli [output dei collaudi per tutti i 100 progetti](collaudo/README.md) riportano i comandi, gli esiti e i testi effettivamente acquisiti. Per i test `unittest`, il normale resoconto con i nomi dei test si trova nel canale stderr.
 
 | Workflow | Ambiente e perimetro |
@@ -61,6 +63,8 @@ Gli [output dei collaudi per tutti i 100 progetti](collaudo/README.md) riportano
 | [P081–P100](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/workflows/collaudo-p081-p100.yml) | Ubuntu e Windows, ciascuno con Python 3.12 e 3.13 |
 
 I badge mostrano lo stato del workflow. Per verificare una versione, apri il relativo run e controlla **commit, job e log**. La matrice P081–P100 ripete gli stessi 377 test distinti in quattro ambienti. Le prove Ubuntu di P001–P080 non attestano una verifica nativa Windows; simulazioni e dati sintetici restano entro il perimetro descritto nei README e nei [registri](collaudo/PROVENIENZA.md).
+
+Le [correzioni del 30 ottobre 2026](docs/REVISIONE_2026_10_30.md) descrivono i casi limite risolti, i test rafforzati e il rapporto con gli output storici.
 
 ## Versioni e segnalazioni
 

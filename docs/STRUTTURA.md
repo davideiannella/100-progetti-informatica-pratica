@@ -15,10 +15,10 @@
 | [projects](../projects/README.md) | Sorgenti, test, dati di esempio e istruzioni dei cento laboratori |
 | [collaudo](../collaudo/README.md) | Un solo indice e cento cartelle di risultati, da P001 a P100 |
 | [docs](README.md) | Catalogo, ambienti e guida all’organizzazione |
-| [tools](../tools/README.md) | Runner dei collaudi e strumenti di verifica |
+| [tools](../tools/README.md) | Script che eseguono i collaudi e controllano i file |
 | [.github/workflows](../.github/workflows) | Automazioni GitHub Actions |
 
-I workflow restano distinti perché usano strumenti e ambienti diversi. I risultati si consultano tutti nella stessa cartella collaudo. I file di log e le impronte dei sorgenti conservano la provenienza delle prove originali.
+Le procedure automatiche, chiamate workflow, sono distinte perché i progetti usano strumenti e ambienti diversi. Nella cartella `collaudo` trovi i risultati conservati delle prove, con data, versione del codice e ambiente. Per le esecuzioni più recenti consulta anche GitHub Actions, come spiegato nel README principale.
 
 ## File delle dipendenze condivise
 

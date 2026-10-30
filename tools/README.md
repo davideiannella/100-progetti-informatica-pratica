@@ -8,9 +8,9 @@ Per controllare i collegamenti interni dalla cartella principale esegui `python 
 
 | Strumento | Funzione |
 |---|---|
-| [Controllo collegamenti](check_links.py) | Verifica percorsi e ancore Markdown senza eseguire i laboratori |
-| [Runner P001–P040](ci_p001_p040/runner.py) | Suite dei progetti e controlli dei motori database |
-| [Runner P041–P080](ci_p041_p080/runner.py) | Suite e dimostrazioni locali del gruppo |
-| [Runner P081–P100](collaudo_p081_p100.py) | Suite Python, controllo delle impronte e raccolta degli output |
+| [Controllo collegamenti](check_links.py) | Verifica che i file e le sezioni collegate esistano, senza eseguire i laboratori |
+| [Script P001–P040](ci_p001_p040/runner.py) | Suite dei progetti e controlli dei motori database |
+| [Script P041–P080](ci_p041_p080/runner.py) | Suite e dimostrazioni locali del gruppo |
+| [Script P081–P100](collaudo_p081_p100.py) | Suite Python, controllo delle impronte e raccolta degli output |
 
-Le configurazioni esatte dei runner sono nei [workflow](../.github/workflows). Gli ambienti e i risultati delle esecuzioni documentate sono riportati nei registri di collaudo.
+I programmi che avviano più test sono chiamati anche runner. Le loro configurazioni sono nei [workflow](../.github/workflows). Gli ambienti e i risultati delle esecuzioni documentate sono riportati nei registri di collaudo.

@@ -6,13 +6,13 @@
 
 **Argomenti:** Cloud e container · API web · Database.
 
-Affianca un esercizio SQLite locale a uno stack Web–API–PostgreSQL in container.
+Avvia insieme NGINX, un’API e PostgreSQL tramite Docker Compose. Il progetto include anche un esercizio SQLite locale, separato dai servizi in container.
 
-Tutti i comandi partono dalla cartella `projects/P055`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P055` ed esegui da lì tutti i comandi. Gli esempi usano Linux e Bash; per Windows, segui anche la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: Python / SQL / YAML / Docker Compose.
+**Tecnologie utilizzate:** Python · FastAPI · Docker Compose · NGINX · PostgreSQL · SQLite.
 
 - Python 3.12.14 (collaudo locale storico)
 - Python nel container API 3.12-slim (configurato e collaudato)
@@ -31,7 +31,7 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P055. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale.
+Installa Python 3.12, poi esegui questi comandi nella cartella del progetto. L’ambiente virtuale `.venv` tiene separate le dipendenze del laboratorio; dopo l’attivazione, `python` usa l’interprete di questo ambiente. Riattivalo ogni volta che apri un nuovo terminale. Le versioni indicate descrivono i collaudi documentati e non sono necessariamente le versioni minime richieste.
 
 ```bash
 python3.12 -m venv .venv
@@ -45,7 +45,7 @@ python -m pip install -r requirements-test.txt
 docker compose up --build
 ```
 
-L’avvio del servizio resta in primo piano. Usare un altro terminale per i controlli oppure interrompere con `Ctrl+C`.
+I servizi restano attivi nel terminale. Apri un altro terminale per i controlli oppure interrompi l’esecuzione con `Ctrl+C`.
 
 ## Test
 
@@ -53,27 +53,27 @@ L’avvio del servizio resta in primo piano. Usare un altro terminale per i cont
 python tests/test_p055.py
 ```
 
-La suite Python verifica il modello SQLite e la configurazione Compose; non sostituisce una prova dello stack PostgreSQL in esecuzione.
+Questo comando verifica il modello SQLite e la configurazione Compose. Per controllare anche PostgreSQL occorre avviare e provare i servizi in container.
 
 ## Perimetro del laboratorio
 
-- Il test Python prova SQLite e la struttura Compose. L’avvio completo richiede Docker con container Linux e Compose; il collaudo PostgreSQL è un’evidenza separata dal test Python.
+- Il test Python controlla SQLite e i file di configurazione Compose. L’avvio completo richiede Docker con container Linux e Compose. I risultati del collaudo PostgreSQL sono documentati separatamente.
 
 ## Windows
 
-Le immagini nginx:1.28-alpine, postgres:17-alpine e python:3.12-slim sono Linux. Non attribuire il collaudo Linux a Windows nativo. I container e il cluster richiedono un motore Linux: su Windows usare, per esempio, Docker Desktop con backend WSL2; questo non costituisce un collaudo Windows nativo. Nessun test Windows nativo è attestato da questo README.
+Le immagini `nginx:1.28-alpine`, `postgres:17-alpine` e `python:3.12-slim` richiedono container Linux. Su Windows puoi usare, per esempio, Docker Desktop con WSL2, l’ambiente Linux di Windows. Il collaudo documentato riguarda i servizi in Linux e non dimostra un’esecuzione nativa su Windows.
 
-Per la parte Python nativa, dal **Prompt dei comandi (cmd.exe)**, nella cartella del progetto:
+Per la parte Python, apri il **Prompt dei comandi (cmd.exe)** nella cartella del progetto ed esegui:
 
 ```bat
 py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, usa i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, sostituisci `python` con `.\.venv\Scripts\python.exe`: in questo caso non serve attivare script o modificare le regole di esecuzione di PowerShell. Non copiare il comando di attivazione Bash in PowerShell.
 
 ## Collaudi documentati
 
-Collaudo storico del 2026-10-16/17: Suite SQLite/configurazione locale; stack Nginx–API–PostgreSQL riuscito su GitHub Actions, persistenza dopo riavvio API e DB. Nessuna suite rieseguita per questo README.
+Collaudo storico del 2026-10-16/17: Suite SQLite/configurazione locale; stack Nginx–API–PostgreSQL riuscito su GitHub Actions, persistenza dopo riavvio API e DB.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Queste istruzioni sono state ricavate dai file e dai collaudi conservati.

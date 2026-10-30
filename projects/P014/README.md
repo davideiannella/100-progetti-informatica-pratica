@@ -6,13 +6,13 @@
 
 **Argomenti:** Concorrenza · Sincronizzazione.
 
-Verifica prenotazioni concorrenti e prevenzione delle duplicazioni.
+Gestisce più richieste di prenotazione dello stesso posto. Un lock per posto protegge il controllo e l’assegnazione, così nella stessa istanza del servizio una sola richiesta riceve conferma.
 
-Tutti i comandi partono dalla cartella `projects/P014`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P014` ed esegui da lì i comandi. I blocchi principali usano Bash su Linux; trovi le indicazioni per Windows nella sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: Java.
+**Tecnologie utilizzate:** Java.
 
 - JDK 17 o successivo come base proposta; versione esatta del JDK del collaudo storico non registrata nel riepilogo consultato
 
@@ -22,7 +22,7 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P014. Installare prima il compilatore o SDK indicato nei requisiti. Le versioni documentate non costituiscono una garanzia per toolchain diverse.
+Installa il compilatore o il kit di sviluppo indicato nei requisiti, poi apri un terminale Bash nella cartella del progetto. Esegui i comandi seguenti per preparare il laboratorio. Le versioni documentate non garantiscono lo stesso comportamento con strumenti diversi.
 
 ```bash
 mkdir -p build
@@ -31,30 +31,34 @@ javac -Xlint:all -d build src/SeatBooking.java tests/SeatBookingTest.java
 
 ## Avvio
 
+La demo prenota un posto libero e stampa `true`.
+
 ```bash
 java -cp build SeatBooking
 ```
 
 ## Test
 
+Il test stampa `PASS` e indica una sola prenotazione riuscita sullo stesso posto, dopo cento richieste concorrenti.
+
 ```bash
 java -ea -cp build SeatBookingTest
 ```
 
-Mantenere `-ea` nei comandi Java: abilita le asserzioni usate dalle verifiche.
+Conserva `-ea` nei comandi Java: abilita le asserzioni, cioè i controlli usati dal programma di verifica.
 
 ## Perimetro del laboratorio
 
-- La preparazione compila sorgenti e test; la demo e le verifiche usano le classi così prodotte.
+- La preparazione compila sia il codice sia i test nella cartella `build`. La demo e le verifiche usano queste classi compilate.
 
 ## Windows
 
-Windows nativo plausibile con JDK 17 e javac/java nel PATH. I comandi relativi non richiedono Bash o WSL. Compatibilità dedotta dai file, non collaudata su Windows. Nessun test Windows nativo è attestato da questo README.
+Puoi preparare il progetto su Windows con JDK 17 e i comandi `javac` e `java` disponibili nel terminale. La compatibilità è dedotta dai sorgenti; qui non è documentato un collaudo su Windows.
 
-I blocchi di compilazione sono per GNU/Linux: percorsi degli eseguibili, creazione della cartella `build` e opzioni del sanitizer vanno adattati alla toolchain Windows. WSL permette di seguire la stessa sequenza Linux.
+Nel Prompt dei comandi di Windows (`cmd.exe`), sostituisci `mkdir -p build` con `if not exist build mkdir build`. I comandi `javac` e `java` restano uguali: nei test conserva `-ea` per abilitare le asserzioni. WSL non è necessario.
 
 ## Collaudi documentati
 
-Collaudo storico su Linux: le suite disponibili e i casi aggiuntivi risultano superati. Il riepilogo del gruppo P001–P040 non riporta una data puntuale; questi risultati non sono stati rieseguiti per preparare il README.
+Nel collaudo storico su Linux, le suite disponibili e i casi aggiuntivi hanno superato i controlli previsti. Il riepilogo storico del gruppo P001–P040 non specifica la data delle prove.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Apri **Output verificati** e **Registro del collaudo**, all’inizio di questa pagina, per consultare comandi, esiti e limiti delle prove pubblicate. Esegui i test anche sul tuo computer e ripetili dopo ogni modifica al codice.

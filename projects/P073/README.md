@@ -6,13 +6,13 @@
 
 **Argomenti:** Intelligenza artificiale · Regressione · Valutazione dei modelli.
 
-Confronta una regressione su consumi sintetici con riferimenti semplici.
+Il progetto stima consumi energetici generati dal programma con un modello di regressione. Confronta gli errori delle previsioni con quelli di metodi più semplici, così puoi valutare il contributo del modello.
 
-Tutti i comandi partono dalla cartella `projects/P073`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P073`. I comandi qui sotto sono scritti per Linux con Bash; per Windows consulta la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: Python.
+**Tecnologie utilizzate:** Python · NumPy · scikit-learn.
 
 - Python 3.12.14 (ambiente documentato)
 - numpy 2.3.5 (ambiente documentato)
@@ -25,7 +25,9 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P073. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale.
+Installa Python 3.12, poi esegui i comandi qui sotto per creare e attivare un ambiente virtuale dedicato al progetto, nella cartella `.venv`. Dopo l’attivazione, il comando `python` usa questo ambiente. Riattivalo ogni volta che apri un nuovo terminale.
+
+Le versioni elencate sono quelle degli ambienti documentati; non indicano la versione minima compatibile.
 
 ```bash
 python3.12 -m venv .venv
@@ -34,6 +36,8 @@ python -m pip install -r ../../requirements-p061-p080.txt
 ```
 
 ## Avvio
+
+Esegui l’esperimento per confrontare le previsioni con i valori attesi e leggere gli errori medi del modello e dei metodi di riferimento.
 
 ```bash
 python -B src/energy_regression.py
@@ -49,30 +53,32 @@ python -B examples.py
 
 ## Test
 
+Esegui i test automatici del progetto:
+
 ```bash
 python -B run_tests.py
 ```
 
+Nel riepilogo, `OK` indica che tutti i test eseguiti sono passati. Il report JSON riporta quanti test sono stati eseguiti e gli eventuali errori o fallimenti.
+
 ## Perimetro del laboratorio
 
-- Le dipendenze transitive di scikit-learn vanno installate con il pacchetto; la loro versione non è riportata nei registri qui citati.
-- Il file requirements-p061-p080.txt prepara l’ambiente condiviso del gruppo: comprende anche pacchetti non importati direttamente da questo singolo progetto.
+- L’installazione deve includere anche i pacchetti da cui dipende scikit-learn. I registri citati non elencano la versione di ogni dipendenza.
+- Il file `requirements-p061-p080.txt` prepara un ambiente condiviso dai progetti P061–P080. Per questo include anche pacchetti che questo progetto non usa direttamente.
 
 ## Windows
 
-Windows: Nativo plausibile con Python 3.12 e pacchetti numerici compatibili installati. Il progetto lavora su array, dati sintetici e file locali, senza richiamare strumenti Unix; la riproduzione numerica puntuale resta legata alle versioni registrate. Nessun test Windows nativo è attestato da questo README.
+Su Windows servono Python 3.12 e versioni compatibili dei pacchetti numerici indicati. Il progetto lavora su array, dati sintetici e file locali e non richiama strumenti Unix. Per riprodurre gli stessi risultati numerici, usa le versioni registrate. Le prove conservate non documentano un collaudo su Windows nativo.
 
-Per la parte Python nativa, dal **Prompt dei comandi (cmd.exe)**, nella cartella del progetto:
+Apri il **Prompt dei comandi (cmd.exe)** nella cartella del progetto, poi crea e attiva l’ambiente virtuale:
 
 ```bat
 py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, esegui con `python` i comandi di installazione, avvio e test indicati sopra. Se usi PowerShell, puoi richiamare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: in questo modo non devi attivare script né cambiare la policy di esecuzione. Non copiare in PowerShell il comando di attivazione scritto per Bash.
 
 ## Collaudi documentati
 
-Documentazione del 18 ottobre 2026: demo ed esempi acquisiti con l’ambiente indicato; suite congelata di 111 metodi unittest già verificata. Nessuna suite è stata rieseguita per preparare questo README.
-
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+La documentazione del 18 ottobre 2026 descrive una suite di 111 metodi di test `unittest`. I collegamenti «Output verificati» e «Registro del collaudo», all’inizio della pagina, riportano risultati, comandi e ambiente delle prove conservate.

@@ -1,4 +1,4 @@
-# P096: E-commerce locale: ordini, stock e retry idempotenti
+# P096: E-commerce locale: ordini, magazzino e gestione dei reinvii
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P096/README.md) · [Registro del collaudo](../../collaudo/P096/registro.json)
 
@@ -6,13 +6,13 @@
 
 **Argomenti:** Software gestionale · Gestione del magazzino · Idempotenza.
 
-Verifica ordini, stock e retry idempotenti in un negozio locale simulato.
+Il programma simula la creazione e l’annullamento di ordini, aggiornando le quantità disponibili in magazzino. Imparerai a gestire il reinvio della stessa richiesta senza creare un secondo ordine o sottrarre nuovamente i prodotti.
 
 Tutti i comandi partono dalla cartella `projects/P096`. I blocchi seguenti usano la sintassi di Linux/Bash.
 
 ## Requisiti e versioni
 
-Linguaggio: Python.
+**Tecnologie utilizzate:** Python.
 
 - Python 3.12 o 3.13 come riferimento verificato
 - Python 3.12.14 (collaudo Linux storico)
@@ -27,7 +27,9 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P096. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale. Test verificati sui runner Ubuntu di GitHub Actions con Python 3.12.15 e 3.13.16 il 22 ottobre 2026.
+Installa Python 3.12, poi esegui i comandi seguenti dalla cartella `projects/P096` in Linux/Bash. Creano e attivano un ambiente virtuale nella cartella `.venv`, dove tenere separati i pacchetti del progetto. Dopo l’attivazione, `python` usa l’interprete di questo ambiente. Riattiva l’ambiente quando apri un nuovo terminale.
+
+Le versioni elencate descrivono gli ambienti già provati, non la versione minima utilizzabile in ogni situazione. I test sono stati verificati sui runner Ubuntu di GitHub Actions con Python 3.12.15 e 3.13.16 il 22 ottobre 2026.
 
 ```bash
 python3.12 -m venv .venv
@@ -40,14 +42,21 @@ python3.12 -m venv .venv
 python src/ecommerce.py
 ```
 
+## Cosa vedrai
+
+Il riepilogo JSON mostra la quantità disponibile che passa da 5 a 3 dopo l’ordine e torna a 5 dopo l’annullamento con stato `REFUNDED`. Gli eventi registrati sono 2; il reinvio della creazione non ne aggiunge un altro. L’esempio restituisce anche il prodotto `B` come suggerimento.
+
 ## Test
 
 ```bash
 python run_tests.py
 ```
 
+Alla fine dell’esecuzione, `OK` indica che tutti i test hanno avuto esito positivo.
+
 ## Perimetro del laboratorio
 
+- Tutte le operazioni avvengono nello stesso programma e i dati restano in memoria. Lo stato `REFUNDED` rappresenta l’annullamento prima della spedizione con ripristino del magazzino; non viene eseguito un rimborso di denaro.
 - Nessuna rete, credenziale, periferica o servizio esterno richiesto per demo e test.
 
 ## Windows
@@ -61,7 +70,7 @@ py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, usa i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, usa direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
 
 ## Collaudi documentati
 

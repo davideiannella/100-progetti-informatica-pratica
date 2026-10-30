@@ -6,13 +6,13 @@
 
 **Argomenti:** Sistemi operativi · Linux · Monitoraggio dei processi.
 
-Legge informazioni dei processi Linux dal filesystem /proc.
+Legge il nome e la memoria residente di un processo Linux attraverso `/proc`. Il monitor distingue un PID non valido da un processo che non riesce a leggere.
 
-Tutti i comandi partono dalla cartella `projects/P016`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P016` ed esegui da lì i comandi. I blocchi principali usano Bash su Linux; trovi le indicazioni per Windows nella sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: C.
+**Tecnologie utilizzate:** C · Python · Linux.
 
 - C11
 
@@ -25,7 +25,7 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P016. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale.
+Installa gli strumenti elencati nei requisiti, compreso Python 3.12, poi apri un terminale Bash nella cartella del progetto. I comandi seguenti creano e attivano `.venv`, un ambiente Python separato per questo laboratorio. Dopo l’attivazione, `python` usa l’interprete di quell’ambiente; riattivalo ogni volta che apri un nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non la versione minima compatibile.
 
 ```bash
 python3.12 -m venv .venv
@@ -35,12 +35,16 @@ mkdir -p build
 
 ## Avvio
 
+Il monitor stampa PID, nome del processo e memoria residente in kB. Senza argomenti osserva il proprio processo; i valori possono cambiare tra le esecuzioni.
+
 ```bash
 gcc -std=c11 -Wall -Wextra -Werror src/process_monitor.c -o build/monitor
 ./build/monitor
 ```
 
 ## Test
+
+Le due prove stampano messaggi con `PASS` se i controlli riescono. Il nome del processo osservato può cambiare tra un’esecuzione e l’altra.
 
 ```bash
 gcc -std=c11 -Wall -Wextra -Werror -O1 -g -fsanitize=undefined -fno-sanitize-recover=all tests/test_process_monitor.c -o build/test_process_monitor
@@ -50,14 +54,14 @@ python tests/test_cli.py
 
 ## Perimetro del laboratorio
 
-- Senza argomenti legge il processo corrente; si può fornire un PID positivo come argomento. Comando ricavato dal main e dal comando di compilazione in tests/test_cli.py.
+- Senza argomenti, il monitor legge il processo corrente. Puoi fornire come argomento un PID positivo per osservare un altro processo.
 
 ## Windows
 
-Windows nativo non compatibile con questo sorgente, che legge /proc. Usare una distribuzione Linux in WSL per seguire invariati codice e comandi; il monitor vede i processi Linux di quell’ambiente. Nessun collaudo WSL/Windows eseguito. Per riprodurre l’intero laboratorio da Windows usare WSL con una distribuzione Linux e una cartella nel filesystem Linux, non una cartella montata da C:. Nessun test Windows nativo è attestato da questo README.
+Questo sorgente legge `/proc` e richiede Linux. Da Windows, usa WSL con una distribuzione Linux e conserva il progetto nel filesystem Linux, non in una cartella montata da `C:`. Puoi così seguire gli stessi comandi; il monitor osserverà i processi Linux di quell’ambiente. Qui non sono documentati collaudi su WSL o Windows nativo.
 
 ## Collaudi documentati
 
-Collaudo storico su Linux: le suite disponibili e i casi aggiuntivi risultano superati. Il riepilogo del gruppo P001–P040 non riporta una data puntuale; questi risultati non sono stati rieseguiti per preparare il README.
+Nel collaudo storico su Linux, le suite disponibili e i casi aggiuntivi hanno superato i controlli previsti. Il riepilogo storico del gruppo P001–P040 non specifica la data delle prove.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Apri **Output verificati** e **Registro del collaudo**, all’inizio di questa pagina, per consultare comandi, esiti e limiti delle prove pubblicate. Esegui i test anche sul tuo computer e ripetili dopo ogni modifica al codice.

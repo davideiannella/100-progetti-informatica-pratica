@@ -1,4 +1,4 @@
-# P031: Salvare telemetria IoT in MongoDB
+# P031: Salvare le misure di sensori IoT in MongoDB
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P031/README.md) · [Registro del collaudo](../../collaudo/P031/registro.json)
 
@@ -6,13 +6,13 @@
 
 **Argomenti:** Database NoSQL · IoT simulato · Telemetria.
 
-Confronta un modello Python di telemetria con esempi MongoDB separati.
+Controlli misure di sensori, come temperatura e umidità, con un modello Python. Un esempio MongoDB separato mostra come salvare le letture e cercare le più recenti di un dispositivo.
 
-Tutti i comandi partono dalla cartella `projects/P031`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P031` ed esegui da lì i comandi. I blocchi seguenti usano la sintassi di Linux/Bash; per Windows consulta la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: Python / JavaScript per mongosh.
+**Tecnologie utilizzate:** Python · MongoDB · JavaScript (mongosh).
 
 - Python 3.12.14
 - MongoDB 8.0.14
@@ -24,7 +24,7 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P031. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale.
+Installa Python 3.12, poi crea e attiva l’ambiente virtuale con i comandi seguenti. Dopo l’attivazione, `python` usa l’interprete dell’ambiente `.venv`. Riattiva l’ambiente ogni volta che apri un nuovo terminale. Le versioni elencate descrivono gli ambienti documentati: non sono necessariamente le versioni minime richieste.
 
 ```bash
 python3.12 -m venv .venv
@@ -33,7 +33,7 @@ python3.12 -m venv .venv
 
 ## Avvio
 
-Non è presente un’applicazione dimostrativa autonoma: usare i test sotto come punto di ingresso eseguibile.
+Per provare il laboratorio, esegui i test della sezione seguente: creano i dati di esempio e chiamano le operazioni previste. Non è presente un’applicazione dimostrativa separata.
 
 ## Test
 
@@ -46,28 +46,28 @@ Questi test verificano la validazione delle misure e la costruzione del document
 
 ## Perimetro del laboratorio
 
-- Distinguere test Python ed esecuzione MongoDB. Il modello Python serializza il timestamp in stringa ISO; lo script mongosh usa BSON Date.
-- Versione di mongosh e configurazione server non registrate nel log sintetico.
+- Il modello Python rappresenta il timestamp, cioè la data e l’ora della lettura, come stringa ISO. Lo script `mongosh` usa invece BSON Date. Sono due percorsi separati: per collegarli serve una conversione esplicita del tipo.
+- Il log sintetico non specifica la versione di `mongosh` né la configurazione del server.
 
 ## Windows
 
-API Python portabili e pathlib; nessun comando Bash o requisito POSIX rilevato. python deve indicare l’interprete scelto. Compatibilità dedotta dal codice, non collaudata su Windows. Per MongoDB serve separatamente un motore/client compatibile o un server raggiungibile; il modello Python non impone WSL. Nessun test Windows nativo è attestato da questo README.
+Il modello Python usa funzioni portabili e `pathlib` per i percorsi; non richiede WSL né funzioni specifiche di Linux. Per la parte MongoDB servono separatamente il database e un client compatibile, oppure un server raggiungibile. Dopo aver attivato l’ambiente, usa il suo comando `python`. I collaudi documentati in questa pagina non comprendono una prova nativa su Windows.
 
-Per la parte Python nativa, dal **Prompt dei comandi (cmd.exe)**, nella cartella del progetto:
+Per preparare Python su Windows, apri il **Prompt dei comandi (cmd.exe)** nella cartella del progetto ed esegui:
 
 ```bat
 py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, esegui i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, usa direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non devi attivare script né cambiare le regole di esecuzione di PowerShell. Non copiare in PowerShell il comando di attivazione Bash.
 
 ## Collaudi documentati
 
-Collaudo storico su Linux: le suite disponibili e i casi aggiuntivi risultano superati. Il riepilogo del gruppo P001–P040 non riporta una data puntuale; questi risultati non sono stati rieseguiti per preparare il README. Le prove del modello Python e quelle del motore di database sono evidenze separate.
+I materiali conservati documentano un collaudo su Linux con esito positivo per le suite disponibili e le prove aggiuntive. Il riepilogo storico del gruppo P001–P040 non indica una data precisa. I test Python e le prove sul database controllano due percorsi distinti: leggi separatamente i rispettivi risultati.
 
 Nel [collaudo automatizzato del 22 ottobre 2026](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/39849393701), il runner ha eseguito lo script originale `mongo/telemetry_examples.js` tramite `mongosh` su MongoDB 8.0.14, avviato in un container Docker. Tutte le 12 asserzioni sul database reale sono risultate superate: verificano la versione del motore, l’inserimento, i tipi BSON, l’indice composto e i risultati della query con filtro per dispositivo, ordinamento temporale e limite. Le due suite Python sono state eseguite separatamente. Le evidenze sono nel [registro P031](../../collaudo/P031/registro.json) e nell’[output della prova sul motore](../../collaudo/P031/streams/003_step_3.stdout.txt); la procedura è nella funzione `engine_suite` del [runner](../../tools/ci_p001_p040/runner.py).
 
-La dicitura storica `MongoDB script STATIC QA` nell’output di `test_p031.py` non attesta l’esecuzione dello script: l’esecuzione su MongoDB è documentata separatamente come `engine_suite` nel registro.
+La dicitura storica `MongoDB script STATIC QA` è parte del messaggio stampato da `test_p031.py`: quel test non legge né esegue lo script MongoDB. L’esecuzione sul database è documentata separatamente come `engine_suite` nel registro.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Consulta **Output verificati** e **Registro del collaudo**, all’inizio della pagina, per leggere comandi, ambiente e limiti di ciascuna prova. I risultati documentati descrivono quei collaudi; per verificare la copia che stai usando, esegui i test sul tuo computer.

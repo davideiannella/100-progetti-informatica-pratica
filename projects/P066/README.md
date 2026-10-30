@@ -6,13 +6,13 @@
 
 **Argomenti:** Sicurezza delle API · Autorizzazione · Controllo delle richieste.
 
-Combina verifica dei token, autorizzazione per ruolo e limiti delle richieste.
+Il progetto combina tre controlli: verifica del token firmato, permessi associati al ruolo e limite delle richieste. Le chiamate locali mostrano perché una richiesta viene accettata o rifiutata.
 
-Tutti i comandi partono dalla cartella `projects/P066`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P066`. I comandi qui sotto sono scritti per Linux con Bash; per Windows consulta la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: Python.
+**Tecnologie utilizzate:** Python.
 
 - Python 3.12.14 (ambiente documentato)
 
@@ -22,7 +22,9 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P066. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale.
+Installa Python 3.12, poi esegui i comandi qui sotto per creare e attivare un ambiente virtuale dedicato al progetto, nella cartella `.venv`. Dopo l’attivazione, il comando `python` usa questo ambiente. Riattivalo ogni volta che apri un nuovo terminale.
+
+Le versioni elencate sono quelle degli ambienti documentati; non indicano la versione minima compatibile.
 
 ```bash
 python3.12 -m venv .venv
@@ -31,31 +33,35 @@ python3.12 -m venv .venv
 
 ## Avvio
 
+Esegui la dimostrazione per vedere gli esiti della lettura autorizzata, del ruolo insufficiente, del token scaduto e del superamento del limite di richieste.
+
 ```bash
 python src/auth_api.py
 ```
 
 ## Test
 
+Esegui i test automatici del progetto:
+
 ```bash
 python run_tests.py
 ```
 
+Nel riepilogo, `OK` indica che tutti i test eseguiti sono passati. Il report JSON riporta quanti test sono stati eseguiti e gli eventuali errori o fallimenti.
+
 ## Windows
 
-Windows: Sorgente e test usano librerie Python e percorsi pathlib, senza dipendenze da comandi Unix o privilegi di amministratore rilevate nella lettura statica. Nessun test Windows nativo è attestato da questo README.
+I sorgenti e i test usano librerie Python e percorsi gestiti con `pathlib`. Dalla lettura del codice non emergono dipendenze da comandi Unix o richieste di privilegi di amministratore. Le prove conservate non documentano un collaudo su Windows nativo.
 
-Per la parte Python nativa, dal **Prompt dei comandi (cmd.exe)**, nella cartella del progetto:
+Apri il **Prompt dei comandi (cmd.exe)** nella cartella del progetto, poi crea e attiva l’ambiente virtuale:
 
 ```bat
 py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, esegui con `python` i comandi di installazione, avvio e test indicati sopra. Se usi PowerShell, puoi richiamare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: in questo modo non devi attivare script né cambiare la policy di esecuzione. Non copiare in PowerShell il comando di attivazione scritto per Bash.
 
 ## Collaudi documentati
 
-Documentazione del 18 ottobre 2026: demo ed esempi acquisiti con l’ambiente indicato; suite congelata di 25 metodi unittest già verificata. Nessuna suite è stata rieseguita per preparare questo README.
-
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+La documentazione del 18 ottobre 2026 descrive una suite di 25 metodi di test `unittest`. I collegamenti «Output verificati» e «Registro del collaudo», all’inizio della pagina, riportano risultati, comandi e ambiente delle prove conservate.

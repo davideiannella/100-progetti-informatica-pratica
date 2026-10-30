@@ -6,13 +6,13 @@
 
 **Argomenti:** Progettazione del software · API REST.
 
-Espone un’API locale dedicata al trasporto pubblico e ne verifica le risposte.
+Leggi fermate e tempi di arrivo tramite un’API locale e invii avvisi riferiti a una fermata. Il prototipo controlla i dati ricevuti e restituisce le risposte HTTP, ma non salva gli avvisi in un archivio permanente.
 
-Tutti i comandi partono dalla cartella `projects/P037`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P037` ed esegui da lì i comandi. I blocchi seguenti usano la sintassi di Linux/Bash; per Windows consulta la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: Python.
+**Tecnologie utilizzate:** Python · FastAPI · Pydantic · HTTPX · Uvicorn.
 
 - Python 3.12.14
 
@@ -22,11 +22,11 @@ Dipendenze:
 - HTTPX per TestClient e dipendenze transitive compatibili FastAPI/Starlette.
 - Uvicorn per il server ASGI; non viene avviato dal test TestClient.
 
-Le versioni dei pacchetti esterni non sono fissate nei materiali di questo progetto. Il comando di installazione resta quindi non bloccato a versioni specifiche; non si promette che riproduca esattamente l’ambiente storico.
+Il progetto non fissa le versioni dei pacchetti esterni. Il comando di installazione può quindi ottenere versioni diverse da quelle del collaudo storico: dopo l’installazione, esegui il test per verificare la combinazione disponibile.
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P037. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale.
+Installa Python 3.12, poi crea e attiva l’ambiente virtuale con i comandi seguenti. Dopo l’attivazione, `python` usa l’interprete dell’ambiente `.venv`. Riattiva l’ambiente ogni volta che apri un nuovo terminale. Le versioni elencate descrivono gli ambienti documentati: non sono necessariamente le versioni minime richieste.
 
 ```bash
 python3.12 -m venv .venv
@@ -40,9 +40,11 @@ python -m pip install fastapi httpx uvicorn
 python -m uvicorn app:app --app-dir src --host 127.0.0.1 --port 8000
 ```
 
-L’avvio del servizio resta in primo piano. Usare un altro terminale per i controlli oppure interrompere con `Ctrl+C`.
+Il servizio resta attivo nel terminale. Aprine un altro per eseguire i controlli; per arrestare il servizio, premi `Ctrl+C` nel terminale in cui lo hai avviato.
 
 ## Test
+
+Il test controlla lo stato del servizio, fermate, arrivi e invio degli avvisi. Verifica anche le risposte 400 e 404 nei casi previsti e stampa `PASS` se i controlli riescono.
 
 ```bash
 python tests/test_p037.py
@@ -50,24 +52,24 @@ python tests/test_p037.py
 
 ## Perimetro del laboratorio
 
-- Mancano requirements.txt e versioni bloccate nel progetto; il log P037 non registra le versioni esatte delle dipendenze.
-- Il log P037 riporta un avviso di deprecazione Starlette/HTTPX con suite superata; non dimostra compatibilità di future combinazioni di versioni.
+- Nella cartella del progetto non sono presenti un file `requirements.txt` né un elenco di versioni fissate. Il log sintetico P037 non riporta le versioni esatte delle dipendenze.
+- Il log P037 contiene un avviso di deprecazione Starlette/HTTPX: segnala un’interfaccia il cui uso è sconsigliato e che potrebbe essere rimossa in futuro. In quella prova il test è riuscito; l’esito non garantisce la compatibilità di combinazioni future.
 
 ## Windows
 
-File privi di dipendenze Bash/POSIX; Windows nativo plausibile con dipendenze compatibili, non fissate dal progetto. Nessun collaudo Windows. Nessun test Windows nativo è attestato da questo README.
+Il codice non richiede Bash o funzioni specifiche di Linux e può essere eseguito su Windows con pacchetti compatibili. Le loro versioni non sono fissate dal progetto; i collaudi documentati in questa pagina non comprendono una prova nativa su Windows.
 
-Per la parte Python nativa, dal **Prompt dei comandi (cmd.exe)**, nella cartella del progetto:
+Per preparare Python su Windows, apri il **Prompt dei comandi (cmd.exe)** nella cartella del progetto ed esegui:
 
 ```bat
 py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, esegui i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, usa direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non devi attivare script né cambiare le regole di esecuzione di PowerShell. Non copiare in PowerShell il comando di attivazione Bash.
 
 ## Collaudi documentati
 
-Collaudo storico su Linux: le suite disponibili e i casi aggiuntivi risultano superati. Il riepilogo del gruppo P001–P040 non riporta una data puntuale; questi risultati non sono stati rieseguiti per preparare il README.
+I materiali conservati documentano un collaudo su Linux con esito positivo per le suite disponibili e le prove aggiuntive. Il riepilogo storico del gruppo P001–P040 non indica una data precisa.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Consulta **Output verificati** e **Registro del collaudo**, all’inizio della pagina, per leggere comandi, ambiente e limiti di ciascuna prova. I risultati documentati descrivono quei collaudi; per verificare la copia che stai usando, esegui i test sul tuo computer.

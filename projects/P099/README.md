@@ -1,4 +1,4 @@
-# P099: Logistica locale: routing, tracking e previsioni trasparenti
+# P099: Logistica locale: percorsi, stato delle spedizioni e previsioni
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P099/README.md) · [Registro del collaudo](../../collaudo/P099/registro.json)
 
@@ -6,13 +6,13 @@
 
 **Argomenti:** Logistica · Grafi · Previsioni di riferimento.
 
-Combina routing, tracking e previsioni in un laboratorio logistico locale.
+Il programma presenta alcuni strumenti per la logistica: aggiorna il magazzino, cerca un percorso in una rete, registra lo stato delle spedizioni e calcola una previsione con la media degli ultimi valori. Un esempio separato stima il tempo di arrivo a partire da distanza, velocità e ritardo.
 
 Tutti i comandi partono dalla cartella `projects/P099`. I blocchi seguenti usano la sintassi di Linux/Bash.
 
 ## Requisiti e versioni
 
-Linguaggio: Python.
+**Tecnologie utilizzate:** Python.
 
 - Python 3.12 o 3.13 come riferimento verificato
 - Python 3.12.14 (collaudo Linux storico)
@@ -27,7 +27,9 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P099. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale. Test verificati sui runner Ubuntu di GitHub Actions con Python 3.12.15 e 3.13.16 il 22 ottobre 2026.
+Installa Python 3.12, poi esegui i comandi seguenti dalla cartella `projects/P099` in Linux/Bash. Creano e attivano un ambiente virtuale nella cartella `.venv`, dove tenere separati i pacchetti del progetto. Dopo l’attivazione, `python` usa l’interprete di questo ambiente. Riattiva l’ambiente quando apri un nuovo terminale.
+
+Le versioni elencate descrivono gli ambienti già provati, non la versione minima utilizzabile in ogni situazione. I test sono stati verificati sui runner Ubuntu di GitHub Actions con Python 3.12.15 e 3.13.16 il 22 ottobre 2026.
 
 ```bash
 python3.12 -m venv .venv
@@ -40,14 +42,21 @@ python3.12 -m venv .venv
 python src/logistics.py
 ```
 
+## Cosa vedrai
+
+Il riepilogo JSON mostra 6 unità disponibili e il percorso `WH → HUB → DEST`, della durata di 11 minuti. La previsione è di 14 unità e la spedizione ha stato `IN_TRANSIT`, cioè in transito. La stima di arrivo di 35 minuti appartiene all’esempio separato e non è la durata del percorso appena calcolato.
+
 ## Test
 
 ```bash
 python run_tests.py
 ```
 
+Alla fine dell’esecuzione, `OK` indica che tutti i test hanno avuto esito positivo.
+
 ## Perimetro del laboratorio
 
+- I componenti sono dimostrazioni locali con dati in memoria. Non sono collegati a mappe, corrieri o a un sistema completo di gestione delle consegne.
 - Nessuna rete, credenziale, periferica o servizio esterno richiesto per demo e test.
 
 ## Windows
@@ -61,7 +70,7 @@ py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, usa i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, usa direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
 
 ## Collaudi documentati
 

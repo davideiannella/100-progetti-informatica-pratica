@@ -2,7 +2,7 @@
 
 [Torna al README](../README.md) · [Catalogo dei progetti](CATALOGO.md) · [Esiti e log](../collaudo/README.md)
 
-Parti dal README del laboratorio scelto. I suoi comandi si eseguono dalla cartella `projects/Pnnn`, salvo indicazione diversa; i comandi aggregati in questa pagina si eseguono invece dalla **radice del repository**. Non occorre installare tutti i linguaggi e tutti i servizi per svolgere un singolo progetto.
+Parti dal README del laboratorio scelto. I suoi comandi si eseguono dalla cartella `projects/Pnnn`, salvo indicazione diversa; i comandi che verificano più progetti in questa pagina si eseguono invece dalla **radice del repository**, cioè dalla cartella principale che contiene `projects` e il README generale. Non occorre installare tutti i linguaggi e tutti i servizi per svolgere un singolo progetto.
 
 ## Scegliere il sistema
 
@@ -11,13 +11,13 @@ Parti dal README del laboratorio scelto. I suoi comandi si eseguono dalla cartel
 | P081–P100 | Python 3.12 o 3.13 su Linux oppure Windows nativo; la matrice pubblica verifica entrambi |
 | P001–P080 in generale | Linux/Ubuntu per riprodurre le sequenze Bash e i collaudi pubblici; l’eventuale portabilità Windows è descritta nel README del singolo progetto |
 | P016 | Linux: il monitor legge `/proc` e osserva i processi di quell’ambiente |
-| P018 | Linux/POSIX con `pthread` e toolchain GNU per eseguire la suite invariata |
+| P018 | Linux/POSIX con `pthread` e gli strumenti di compilazione GNU richiesti dai test |
 | P067 e P069 | Linux con filesystem POSIX per i test di permessi; da Windows usare WSL con file nel filesystem Linux |
-| P054–P056 | Runtime per container Linux; Docker, Compose e Kubernetes richiedono preparazione aggiuntiva |
+| P054–P056 | Ambiente per eseguire container Linux; Docker, Compose e Kubernetes richiedono preparazione aggiuntiva |
 
 **WSL esegue Linux su Windows: non è una prova Windows nativa.** Per lavorare da WSL, clona il repository in una cartella come `~/progetti/100-progetti-informatica-pratica`, evitando `/mnt/c` per i laboratori sui permessi. Installa gli strumenti nella distribuzione Linux e crea lì l’ambiente virtuale; non riutilizzare una `.venv` creata su Windows.
 
-I restanti progetti Python, Java o .NET possono usare API portabili, ma la lettura dei sorgenti non sostituisce una prova sul sistema scelto. P058 richiede inoltre un filesystem che supporti gli hard link; per P063 il runtime Python deve includere SQLite e `hashlib.scrypt`. I dettagli restano nei rispettivi README.
+Diversi progetti Python, Java e .NET usano funzioni disponibili su più sistemi operativi. Per sapere se funzionano nel tuo ambiente, segui il README ed esegui i test: leggere il codice non basta a confermarlo. P058 richiede inoltre un filesystem che supporti gli hard link; per P063 il runtime Python deve includere SQLite e `hashlib.scrypt`. I dettagli restano nei rispettivi README.
 
 ## Python su Linux o WSL
 
@@ -79,7 +79,7 @@ python -m pip install -r requirements-p081-p100.txt
 python -B tools/collaudo_p081_p100.py
 ```
 
-Il comando verifica il manifest, compila i file Python ed esegue le venti suite. Scrive i risultati locali in `test-results`. Per un solo progetto entra invece nella sua cartella e segui i suoi requisiti e il comando `run_tests.py`.
+Il comando confronta i file con il manifest, l’elenco delle impronte SHA-256 che permette di rilevare modifiche ai sorgenti. Poi controlla la compilazione dei file Python ed esegue le venti suite. Scrive i risultati locali in `test-results`. Per un solo progetto entra invece nella sua cartella e segui i suoi requisiti e il comando `run_tests.py`.
 
 Non tutti i laboratori hanno dipendenze esterne, e i requisiti di P001–P060 non sono raccolti nei due file condivisi. Gli esempi aggiuntivi P067–P072 si avviano con `python -B worked_example.py`, quelli P073–P076 con `python -B examples.py`, dalla cartella corrispondente; la suite resta `python -B run_tests.py`.
 
@@ -89,7 +89,7 @@ Non tutti i laboratori hanno dipendenze esterne, e i requisiti di P001–P060 no
 |---|---|
 | Java P013–P015, P038–P039, P041 e P044 | JDK 17 con `javac` e `java`; il solo runtime Java non basta a compilare |
 | C P016–P018 | Compilatore C11; per P018 supporto `pthread` e linker GNU |
-| C++ P019–P021 | Compilatore C++17; le opzioni GNU e UBSan richiedono la toolchain corrispondente |
+| C++ P019–P021 | Compilatore C++17; le opzioni GNU e UBSan richiedono gli strumenti di compilazione corrispondenti |
 | .NET P022–P023, P040 e P042 | SDK .NET 8 per i progetti `net8.0`; P023 usa anche Python per la prova HTTP |
 | SQLite P024–P030, P033 e P035 | Modulo `sqlite3` di Python; gli schemi vengono usati dai test del progetto |
 | MongoDB P031 e Neo4j P032 | Le prove del modello Python e quelle del motore reale sono distinte; per i motori servono server e client descritti nel README |

@@ -6,13 +6,13 @@
 
 **Argomenti:** Programmazione a oggetti · Pattern di progettazione.
 
-Seleziona strategie di notifica mediante un modello Java locale.
+Scegli il canale email o SMS mantenendo lo stesso servizio di notifica. Il pattern Strategy permette di sostituire il comportamento del canale; qui l’invio è simulato da una stringa.
 
-Tutti i comandi partono dalla cartella `projects/P041`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P041` ed esegui da lì tutti i comandi. Gli esempi usano Linux e Bash; per Windows, segui anche la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: Java.
+**Tecnologie utilizzate:** Java.
 
 - JDK 17.0.20 (collaudo locale storico)
 
@@ -22,7 +22,7 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P041. Installare prima il compilatore o SDK indicato nei requisiti. Le versioni documentate non costituiscono una garanzia per toolchain diverse.
+Il JDK è il kit di sviluppo Java e comprende il compilatore `javac` e il comando `java`. Installa la versione indicata nei requisiti, poi crea la cartella `build` con il comando seguente. Le versioni elencate sono quelle dei collaudi documentati; con strumenti diversi occorre ripetere le verifiche.
 
 ```bash
 mkdir -p build
@@ -30,29 +30,38 @@ mkdir -p build
 
 ## Avvio
 
-Non è presente un’applicazione dimostrativa autonoma: usare i test sotto come punto di ingresso eseguibile.
+Compila e avvia la dimostrazione dalla cartella del progetto, dopo aver creato `build` come indicato nella preparazione:
+
+```bash
+javac -d build src/Notifications.java
+java -cp build Notifications
+```
+
+Il programma stampa `EMAIL:a@b.it:ciao`: è una notifica simulata, senza invio di un’email reale.
 
 ## Test
+
+I test verificano il canale scelto, il destinatario, il messaggio e il rifiuto di un canale non registrato. Se i controlli passano, stampano un messaggio `PASS`.
 
 ```bash
 javac -d build src/Notifications.java tests/NotificationsTest.java
 java -ea -cp build NotificationsTest
 ```
 
-Mantenere `-ea` nei comandi Java: abilita le asserzioni usate dalle verifiche.
+Mantieni `-ea` nei comandi Java: attiva le asserzioni, cioè i controlli usati dai test.
 
 ## Perimetro del laboratorio
 
-- Non è presente un main applicativo autonomo: compilare e avviare le classi di test dalla cartella del progetto.
+- Il metodo `main` di `Notifications` mostra una notifica simulata. I test verificano la scelta dei canali e il rifiuto di un canale non registrato.
 
 ## Windows
 
-JDK 17 e comandi javac/java sono plausibili su Windows; i nomi dei sorgenti sono espliciti e il classpath contiene una sola directory. Nessuno script POSIX è richiesto. Nessun test Windows nativo è attestato da questo README.
+Per provare il progetto su Windows serve JDK 17. I comandi indicano tutti i file sorgenti e usano una sola cartella per le classi compilate; non servono script POSIX. L’esecuzione nativa su Windows non è stata collaudata nelle prove documentate.
 
-I blocchi di compilazione sono per GNU/Linux: percorsi degli eseguibili, creazione della cartella `build` e opzioni del sanitizer vanno adattati alla toolchain Windows. WSL permette di seguire la stessa sequenza Linux.
+Nel Prompt dei comandi Windows, crea la cartella con `mkdir build` se non esiste, poi usa gli stessi comandi `javac` e `java` riportati sopra. Con WSL puoi seguire l’intera sequenza Linux.
 
 ## Collaudi documentati
 
-Collaudo storico del 2026-10-16: Test locali registrati; nessun nuovo test eseguito durante questa revisione.
+Collaudo storico del 2026-10-16: Test locali registrati.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Queste istruzioni sono state ricavate dai file e dai collaudi conservati.

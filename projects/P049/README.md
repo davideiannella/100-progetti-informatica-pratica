@@ -8,11 +8,11 @@
 
 Verifica trasferimenti locali con frame e controllo dell’integrità.
 
-Tutti i comandi partono dalla cartella `projects/P049`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P049` ed esegui da lì tutti i comandi. Gli esempi usano Linux e Bash; per Windows, segui anche la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: Python.
+**Tecnologie utilizzate:** Python · socket · struct · hashlib.
 
 - Python 3.12.14 (collaudo locale storico)
 
@@ -22,7 +22,7 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P049. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale.
+Installa Python 3.12, poi esegui questi comandi nella cartella del progetto. L’ambiente virtuale `.venv` tiene separate le dipendenze del laboratorio; dopo l’attivazione, `python` usa l’interprete di questo ambiente. Riattivalo ogni volta che apri un nuovo terminale. Le versioni indicate descrivono i collaudi documentati e non sono necessariamente le versioni minime richieste.
 
 ```bash
 python3.12 -m venv .venv
@@ -31,9 +31,11 @@ python3.12 -m venv .venv
 
 ## Avvio
 
-Non è presente un’applicazione dimostrativa autonoma: usare i test sotto come punto di ingresso eseguibile.
+Esegui i comandi della sezione Test per provare il laboratorio. I test richiamano il codice e verificano i risultati; non c’è un’applicazione dimostrativa separata.
 
 ## Test
+
+I test verificano la ricostruzione dei dati, anche quando arrivano in più parti, e il rifiuto di nomi, dimensioni o impronte non validi. Se i controlli passano, stampano messaggi `PASS`.
 
 ```bash
 python tests/test_p049.py
@@ -42,23 +44,23 @@ python tests/test_edges.py
 
 ## Perimetro del laboratorio
 
-- Eseguire i comandi dalla cartella del progetto. Il modulo contiene funzioni del laboratorio; i test sono il punto di ingresso per l’esecuzione dimostrativa.
+- Esegui i comandi dalla cartella del progetto. I test mostrano come usare il codice e controllano i risultati dei casi previsti.
 
 ## Windows
 
-La suite usa socket.socketpair e thread: l’esecuzione è plausibile con Python 3.12 su Windows, ma la portabilità dei socket non è stata collaudata qui. Nessuno script Bash è richiesto. Nessun test Windows nativo è attestato da questo README.
+I test usano `socket.socketpair`, che crea due socket collegati, e thread per eseguire invio e ricezione in parallelo. Puoi provarli con Python 3.12 su Windows senza script Bash; il comportamento dei socket su Windows non è stato verificato nelle prove documentate.
 
-Per la parte Python nativa, dal **Prompt dei comandi (cmd.exe)**, nella cartella del progetto:
+Per la parte Python, apri il **Prompt dei comandi (cmd.exe)** nella cartella del progetto ed esegui:
 
 ```bat
 py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, usa i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, sostituisci `python` con `.\.venv\Scripts\python.exe`: in questo caso non serve attivare script o modificare le regole di esecuzione di PowerShell. Non copiare il comando di attivazione Bash in PowerShell.
 
 ## Collaudi documentati
 
-Collaudo storico del 2026-10-16: Test locali registrati; nessun nuovo test eseguito durante questa revisione.
+Collaudo storico del 2026-10-16: Test locali registrati.
 
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+Queste istruzioni sono state ricavate dai file e dai collaudi conservati.

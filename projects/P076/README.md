@@ -1,4 +1,4 @@
-# P076: Consigliare corsi in base agli interessi: recommender system
+# P076: Consigliare corsi in base agli interessi
 
 [Catalogo](../../docs/CATALOGO.md) · [Output verificati](../../collaudo/P076/README.md) · [Registro del collaudo](../../collaudo/P076/registro.json)
 
@@ -6,13 +6,13 @@
 
 **Argomenti:** Sistemi di raccomandazione · Similarità tra contenuti.
 
-Ordina corsi per similarità coseno fra vettori assegnati manualmente.
+Il progetto ordina un catalogo di corsi in base agli interessi indicati. Usa la similarità coseno per confrontare liste di valori numerici assegnati manualmente ai corsi e al profilo dell’utente.
 
-Tutti i comandi partono dalla cartella `projects/P076`. I blocchi seguenti usano la sintassi di Linux/Bash.
+Apri un terminale nella cartella `projects/P076`. I comandi qui sotto sono scritti per Linux con Bash; per Windows consulta la sezione dedicata.
 
 ## Requisiti e versioni
 
-Linguaggio: Python.
+**Tecnologie utilizzate:** Python · NumPy.
 
 - Python 3.12.14 (ambiente documentato)
 - numpy 2.3.5 (ambiente documentato)
@@ -23,7 +23,9 @@ Dipendenze:
 
 ## Preparazione
 
-Comandi per una shell Linux/Bash dalla cartella projects/P076. Installare Python 3.12 prima della preparazione; dopo l’attivazione, python indica l’interprete dell’ambiente virtuale .venv. Riattivare l’ambiente in ogni nuovo terminale. Le versioni indicate descrivono gli ambienti documentati, non un minimo universale.
+Installa Python 3.12, poi esegui i comandi qui sotto per creare e attivare un ambiente virtuale dedicato al progetto, nella cartella `.venv`. Dopo l’attivazione, il comando `python` usa questo ambiente. Riattivalo ogni volta che apri un nuovo terminale.
+
+Le versioni elencate sono quelle degli ambienti documentati; non indicano la versione minima compatibile.
 
 ```bash
 python3.12 -m venv .venv
@@ -32,6 +34,8 @@ python -m pip install -r ../../requirements-p061-p080.txt
 ```
 
 ## Avvio
+
+Esegui la dimostrazione per leggere i corsi consigliati, ordinati in base al punteggio di similarità con il profilo.
 
 ```bash
 python -B src/recommender.py
@@ -47,30 +51,32 @@ python -B examples.py
 
 ## Test
 
+Esegui i test automatici del progetto:
+
 ```bash
 python -B run_tests.py
 ```
 
+Nel riepilogo, `OK` indica che tutti i test eseguiti sono passati. Il report JSON riporta quanti test sono stati eseguiti e gli eventuali errori o fallimenti.
+
 ## Perimetro del laboratorio
 
-- Il README registra anche scikit-learn 1.8.0 nell’ambiente comune, ma src/recommender.py, run_tests.py e tests/test_p076.py non lo importano: non è una dipendenza diretta di questo progetto.
-- Il file requirements-p061-p080.txt prepara l’ambiente condiviso del gruppo: comprende anche pacchetti non importati direttamente da questo singolo progetto.
+- L’ambiente condiviso comprende anche scikit-learn 1.8.0. I file `src/recommender.py`, `run_tests.py` e `tests/test_p076.py` non lo importano: non è una dipendenza diretta di questo progetto.
+- Il file `requirements-p061-p080.txt` prepara un ambiente condiviso dai progetti P061–P080. Per questo include anche pacchetti che questo progetto non usa direttamente.
 
 ## Windows
 
-Windows: Nativo plausibile con Python 3.12 e pacchetti numerici compatibili installati. Il progetto lavora su array, dati sintetici e file locali, senza richiamare strumenti Unix; la riproduzione numerica puntuale resta legata alle versioni registrate. Nessun test Windows nativo è attestato da questo README.
+Su Windows servono Python 3.12 e versioni compatibili dei pacchetti numerici indicati. Il progetto lavora su array, dati sintetici e file locali e non richiama strumenti Unix. Per riprodurre gli stessi risultati numerici, usa le versioni registrate. Le prove conservate non documentano un collaudo su Windows nativo.
 
-Per la parte Python nativa, dal **Prompt dei comandi (cmd.exe)**, nella cartella del progetto:
+Apri il **Prompt dei comandi (cmd.exe)** nella cartella del progetto, poi crea e attiva l’ambiente virtuale:
 
 ```bat
 py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-Dopo l’attivazione, usare i comandi `python` di installazione, avvio e test indicati sopra. In alternativa, anche da PowerShell, invocare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: non serve attivare script né cambiare la policy di esecuzione. Il comando di attivazione Bash non va copiato in PowerShell.
+Dopo l’attivazione, esegui con `python` i comandi di installazione, avvio e test indicati sopra. Se usi PowerShell, puoi richiamare direttamente `.\.venv\Scripts\python.exe` al posto di `python`: in questo modo non devi attivare script né cambiare la policy di esecuzione. Non copiare in PowerShell il comando di attivazione scritto per Bash.
 
 ## Collaudi documentati
 
-Documentazione del 18 ottobre 2026: demo ed esempi acquisiti con l’ambiente indicato; suite congelata di 112 metodi unittest già verificata. Nessuna suite è stata rieseguita per preparare questo README.
-
-Queste istruzioni sono state ricavate dai file e dai collaudi conservati. La preparazione dei README non ha eseguito nuove suite né modificato il codice.
+La documentazione del 18 ottobre 2026 descrive una suite di 112 metodi di test `unittest`. I collegamenti «Output verificati» e «Registro del collaudo», all’inizio della pagina, riportano risultati, comandi e ambiente delle prove conservate.
