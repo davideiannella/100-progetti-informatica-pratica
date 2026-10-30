@@ -74,7 +74,7 @@ Dopo l’attivazione, usa i comandi `python` di installazione, avvio e test indi
 
 ## Collaudi documentati
 
-**Ultimo collaudo: 30 ottobre 2026 — superato.** Le verifiche del progetto sono riuscite su Ubuntu e Windows, con Python 3.12 e 3.13, nel [collaudo pubblico P081–P100](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41133691301), eseguito sul commit `4741cc45e376c`.
+**Ultimo collaudo: 31 ottobre 2026 — superato.** Le verifiche del progetto sono riuscite su Ubuntu e Windows, con Python 3.12 e 3.13 nel [collaudo pubblico P081–P100](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475640), eseguito sul commit `c8303920c4f4`.
 
 ### Prove precedenti
 

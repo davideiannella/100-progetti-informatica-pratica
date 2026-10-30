@@ -6,9 +6,9 @@ Tutti i risultati sono raccolti in questa cartella, da **P001 a P100**. Scegli u
 
 Ogni resoconto distingue comandi, ambiente, esito, output standard (`stdout`) e diagnostica (`stderr`). Per `unittest`, anche i test riusciti sono normalmente descritti su `stderr`: il risultato va letto insieme al codice di uscita.
 
-Gli output qui conservati sono registri storici datati. La [revisione del 30 ottobre 2026](../docs/REVISIONE_2026_10_30.md) distingue le correzioni attuali e le nuove esecuzioni automatiche.
+Gli output qui conservati sono registri storici datati. La [revisione del 31 ottobre 2026](../docs/REVISIONE_2026_10_31.md) descrive le ultime correzioni e le nuove esecuzioni automatiche.
 
-**Ultimo collaudo: 30 ottobre 2026.** Consulta le nuove esecuzioni riuscite: [P001–P080](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41134634700) e [P081–P100](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41133691301). Le tabelle seguenti aprono i registri storici conservati, con le rispettive date.
+**Ultimo collaudo: 31 ottobre 2026.** Esito positivo per [P001–P080 su Ubuntu](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475728) e per [P081–P100 su Ubuntu e Windows](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475640). Le tabelle seguenti aprono i registri storici conservati, con le rispettive date.
 
 ## Scegli una sezione
 

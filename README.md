@@ -64,9 +64,9 @@ Gli [output dei collaudi per tutti i 100 progetti](collaudo/README.md) riportano
 
 I badge mostrano lo stato del workflow. Per verificare una versione, apri il relativo run e controlla **commit, job e log**. La matrice P081–P100 ripete gli stessi 377 test distinti in quattro ambienti. Le prove Ubuntu di P001–P080 non attestano una verifica nativa Windows; simulazioni e dati sintetici restano entro il perimetro descritto nei README e nei [registri](collaudo/PROVENIENZA.md).
 
-Le [correzioni del 30 ottobre 2026](docs/REVISIONE_2026_10_30.md) descrivono i casi limite risolti, i test rafforzati e il rapporto con gli output storici.
+Le [correzioni del 31 ottobre 2026](docs/REVISIONE_2026_10_31.md) completano la [revisione del 30 ottobre](docs/REVISIONE_2026_10_30.md): descrivono i casi limite risolti, i test aggiunti e il rapporto con gli output storici.
 
-**Ultimo collaudo: 30 ottobre 2026.** Esito positivo per [P001–P080 su Ubuntu](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41134634700) e per [P081–P100 su Ubuntu e Windows](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41133691301). La sezione *Collaudi documentati* di ogni progetto riporta data, ambiente e collegamento alla prova.
+**Ultimo collaudo: 31 ottobre 2026.** Esito positivo per [P001–P080 su Ubuntu](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475728) e per [P081–P100 su Ubuntu e Windows](https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475640). La sezione *Collaudi documentati* di ogni progetto riporta data, ambiente e collegamento alla prova.
 
 ## Versioni e segnalazioni
 

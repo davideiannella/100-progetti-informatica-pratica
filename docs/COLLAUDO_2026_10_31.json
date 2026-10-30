@@ -1,0 +1,823 @@
+{
+  "repository": "davideiannella/100-progetti-informatica-pratica",
+  "technical_commit": "c8303920c4f49daa20e31e4466d3869a97174124",
+  "checked_at_utc": "2026-10-30T23:10:29.892Z",
+  "date_timezone": "Europe/Rome",
+  "runs": [
+    {
+      "id": 41142475748,
+      "group": "Documentazione",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-30T23:07:05Z",
+      "run_started_at": "2026-10-30T23:07:05Z",
+      "updated_at": "2026-10-30T23:07:15Z",
+      "head_sha": "c8303920c4f49daa20e31e4466d3869a97174124",
+      "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475748",
+      "jobs": [
+        {
+          "id": 124359786082,
+          "name": "documentazione",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-30T23:07:08Z",
+          "completed_at": "2026-10-30T23:07:14Z",
+          "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475748/job/124359786082",
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Controlla percorsi e sezioni collegate",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Post Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 8,
+              "name": "Post Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 9,
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 41142475728,
+      "group": "P001–P080",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-30T23:07:05Z",
+      "run_started_at": "2026-10-30T23:07:05Z",
+      "updated_at": "2026-10-30T23:10:11Z",
+      "head_sha": "c8303920c4f49daa20e31e4466d3869a97174124",
+      "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475728",
+      "jobs": [
+        {
+          "id": 124359785719,
+          "name": "P041-P053 and P057-P080 / Ubuntu / Python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-30T23:07:07Z",
+          "completed_at": "2026-10-30T23:08:13Z",
+          "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475728/job/124359785719",
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v7.0.1",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Run actions/setup-python@v7.1.0",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Run actions/setup-java@v6.0.0",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Run actions/setup-dotnet@v6.0.0",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Prepare evidence directory",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Install pinned project dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 8,
+              "name": "Record toolchains and effective dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 9,
+              "name": "Execute all local suites and documented demos",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 10,
+              "name": "Run actions/upload-artifact@v7.0.2",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 17,
+              "name": "Post Run actions/setup-dotnet@v6.0.0",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 18,
+              "name": "Post Run actions/setup-java@v6.0.0",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 19,
+              "name": "Post Run actions/setup-python@v7.1.0",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 20,
+              "name": "Post Run actions/checkout@v7.0.1",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 21,
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "id": 124359786035,
+          "name": "P056 / real container runtime",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-30T23:07:08Z",
+          "completed_at": "2026-10-30T23:10:10Z",
+          "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475728/job/124359786035",
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v7.0.1",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Run actions/setup-python@v7.1.0",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Prepare evidence directory",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Install pinned project dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Install historical kind and kubectl toolchains",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Record effective dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 8,
+              "name": "Execute local suites and actual Docker or Kubernetes checks",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 9,
+              "name": "Run actions/upload-artifact@v7.0.2",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 17,
+              "name": "Post Run actions/setup-python@v7.1.0",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 18,
+              "name": "Post Run actions/checkout@v7.0.1",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 19,
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "id": 124359786061,
+          "name": "P055 / real container runtime",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-30T23:07:08Z",
+          "completed_at": "2026-10-30T23:07:55Z",
+          "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475728/job/124359786061",
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v7.0.1",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Run actions/setup-python@v7.1.0",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Prepare evidence directory",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Install pinned project dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Install historical kind and kubectl toolchains",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "number": 7,
+              "name": "Record effective dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 8,
+              "name": "Execute local suites and actual Docker or Kubernetes checks",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 9,
+              "name": "Run actions/upload-artifact@v7.0.2",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 17,
+              "name": "Post Run actions/setup-python@v7.1.0",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 18,
+              "name": "Post Run actions/checkout@v7.0.1",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 19,
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "id": 124359786102,
+          "name": "P001–P040 / Python, Java, C, C++, .NET, MongoDB, Neo4j",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-30T23:07:08Z",
+          "completed_at": "2026-10-30T23:09:05Z",
+          "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475728/job/124359786102",
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Initialize containers",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Run actions/setup-java@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Run actions/setup-dotnet@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Install C and C++ compilers",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 8,
+              "name": "Install the reviewed Python dependency set",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 9,
+              "name": "Record installed package versions",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 10,
+              "name": "Execute every suite and both real database engines",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 11,
+              "name": "Preserve outcomes, including failures",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 18,
+              "name": "Post Run actions/setup-dotnet@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 19,
+              "name": "Post Run actions/setup-java@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 20,
+              "name": "Post Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 21,
+              "name": "Post Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 22,
+              "name": "Stop containers",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 23,
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "id": 124359786153,
+          "name": "P054 / real container runtime",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-30T23:07:08Z",
+          "completed_at": "2026-10-30T23:07:49Z",
+          "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475728/job/124359786153",
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v7.0.1",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Run actions/setup-python@v7.1.0",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Prepare evidence directory",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Install pinned project dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Install historical kind and kubectl toolchains",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "number": 7,
+              "name": "Record effective dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 8,
+              "name": "Execute local suites and actual Docker or Kubernetes checks",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 9,
+              "name": "Run actions/upload-artifact@v7.0.2",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 17,
+              "name": "Post Run actions/setup-python@v7.1.0",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 18,
+              "name": "Post Run actions/checkout@v7.0.1",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 19,
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 41142475640,
+      "group": "P081–P100",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-30T23:07:05Z",
+      "run_started_at": "2026-10-30T23:07:05Z",
+      "updated_at": "2026-10-30T23:07:58Z",
+      "head_sha": "c8303920c4f49daa20e31e4466d3869a97174124",
+      "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475640",
+      "jobs": [
+        {
+          "id": 124359785614,
+          "name": "windows-latest Python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-30T23:07:08Z",
+          "completed_at": "2026-10-30T23:07:46Z",
+          "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475640/job/124359785614",
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Installa le dipendenze",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Verifica integrita compila ed esegue venti suite",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Conserva stdout stderr e riepilogo dei venti progetti",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 11,
+              "name": "Post Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 12,
+              "name": "Post Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 13,
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "id": 124359785772,
+          "name": "ubuntu-latest Python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-30T23:07:08Z",
+          "completed_at": "2026-10-30T23:07:36Z",
+          "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475640/job/124359785772",
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Installa le dipendenze",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Verifica integrita compila ed esegue venti suite",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Conserva stdout stderr e riepilogo dei venti progetti",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 11,
+              "name": "Post Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 12,
+              "name": "Post Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 13,
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "id": 124359785822,
+          "name": "ubuntu-latest Python 3.13",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-30T23:07:08Z",
+          "completed_at": "2026-10-30T23:07:35Z",
+          "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475640/job/124359785822",
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Installa le dipendenze",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Verifica integrita compila ed esegue venti suite",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Conserva stdout stderr e riepilogo dei venti progetti",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 11,
+              "name": "Post Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 12,
+              "name": "Post Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 13,
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "id": 124359785942,
+          "name": "windows-latest Python 3.13",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-30T23:07:08Z",
+          "completed_at": "2026-10-30T23:07:58Z",
+          "html_url": "https://github.com/davideiannella/100-progetti-informatica-pratica/actions/runs/41142475640/job/124359785942",
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Installa le dipendenze",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Verifica integrita compila ed esegue venti suite",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Conserva stdout stderr e riepilogo dei venti progetti",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 11,
+              "name": "Post Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 12,
+              "name": "Post Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 13,
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
